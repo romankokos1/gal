@@ -1,0 +1,9 @@
+{
+  "_navod": "Ruční opravy pro přehledovou stránku. Surová data se nemění, jen jak se počítají. 'pivovary': jak se pivovar na webu někdy píše → jak ho chceš sjednotit. 'styly': kus textu z položky (název piva stačí) → styl, který se má použít místo automatického odhadu. Klíče začínající podtržítkem se ignorují.",
+  "pivovary": {
+    "_příklad Pivovar Zichovek": "Zichovec"
+  },
+  "styly": {
+    "_příklad Muselo Stout": "Stout"
+  }
+}
