@@ -1,0 +1,43 @@
+{
+  "zdroj": "https://www.galeriepiva.cz/",
+  "zmeneno": "2026-09-29 15:21",
+  "metoda": "nadpis+seznam",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "",
+      "nazev": "Facebook",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
+      "raw": "Facebook"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "",
+      "nazev": "Twitter",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
+      "raw": "Twitter"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "",
+      "nazev": "Instagram",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
+      "raw": "Instagram"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "",
+      "nazev": "Email",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
+      "raw": "Email"
+    }
+  ]
+}
