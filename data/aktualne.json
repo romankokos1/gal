@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-09-29 15:25",
+  "zmeneno": "2026-09-29 21:27",
   "metoda": "nadpis",
   "piva": [
     {
@@ -14,21 +14,21 @@
     },
     {
       "pozice": 2,
-      "pivovar": "SKJUBRU & JUNGLE JUICE(IT)",
-      "nazev": "Brezza Luppolata",
-      "stupen": "12",
-      "alkohol": "5.9",
-      "styl": "India Pale Lager (fusion, ceres, saturn)",
-      "raw": "SKJUBRU & JUNGLE JUICE(IT) – Brezza Luppolata 12°/5,9% India Pale Lager (fusion, ceres, saturn)"
+      "pivovar": "SKJUBRU & HOPFEN REBELL",
+      "nazev": "HopfenNebel",
+      "stupen": "11",
+      "alkohol": "4.7",
+      "styl": "Hazy Pale Ale (tango, ariana)",
+      "raw": "SKJUBRU & HOPFEN REBELL – HopfenNebel 11°/4,7% Hazy Pale Ale (tango, ariana)"
     },
     {
       "pozice": 3,
-      "pivovar": "SKJUBRU & FIRST STEP(SK)",
-      "nazev": "Hops Garden",
+      "pivovar": "ČERNÝ POTOKA",
+      "nazev": "Blitzkrieeg",
       "stupen": "15",
-      "alkohol": "6.3",
-      "styl": "American IPA (eldorado, enigma, equanot)",
-      "raw": "SKJUBRU & FIRST STEP(SK) – Hops Garden 15°/6,3% American IPA (eldorado, enigma, equanot)"
+      "alkohol": "6.8",
+      "styl": "American IPA",
+      "raw": "ČERNÝ POTOKA – Blitzkrieeg 15°/6,8% American IPA"
     },
     {
       "pozice": 4,
