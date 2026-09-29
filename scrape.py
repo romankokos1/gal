@@ -69,41 +69,58 @@ def fetch() -> str:
 # ---------- vytažení řádků (víc strategií, od nejpřesnější) ----------
 
 BEER_HINT = re.compile(r"\d\s*°|\d\s*%")
+NUMBERING = re.compile(r"^\s*\d{1,2}\s*[.)]\s*")
+HEADING = re.compile(r"^h[1-6]$")
+
+
+def strip_num(text: str) -> str:
+    return NUMBERING.sub("", text).strip()
+
+
+def looks_like_beers(lines: list[str]) -> bool:
+    """Pojistka proti nesmyslům (menu, sociální sítě): aspoň polovina řádků
+    musí mít stupeň nebo procenta. Jedna položka bez čísel nevadí."""
+    hits = sum(1 for l in lines if BEER_HINT.search(l))
+    return hits >= 1 and hits >= len(lines) / 2
+
+
+def lines_after_heading(h) -> list[str]:
+    """Text všech bloků za nadpisem až po další nadpis (odstavce i seznamy)."""
+    out = []
+    for el in h.find_next_siblings():
+        if HEADING.match(el.name or ""):
+            break
+        lis = el.find_all("li")
+        texts = [li.get_text(" ") for li in lis] if lis else [el.get_text(" ")]
+        for t in texts:
+            t = strip_num(clean(t))
+            if t:
+                out.append(t)
+    return out
 
 
 def extract_lines(html: str) -> tuple[list[str], str]:
     soup = BeautifulSoup(html, "html.parser")
 
-    # 1) nadpis obsahující „na čepu“ → nejbližší následující seznam
+    # 1) nadpis obsahující „na čepu“ → všechny bloky pod ním do dalšího nadpisu
     for h in soup.find_all(re.compile(r"^h[1-6]$|^p$|^strong$")):
-        if "na cepu" in norm(h.get_text()):
-            lst = h.find_next(["ol", "ul"])
-            if lst:
-                items = [clean(li.get_text(" ")) for li in lst.find_all("li")]
-                items = [i for i in items if i]
-                if items:
-                    return items, "nadpis+seznam"
+        if "na cepu" in norm(h.get_text()) and len(h.get_text()) < 40:
+            anchor = h if h.find_next_siblings() else h.parent
+            lines = lines_after_heading(anchor)
+            if lines and looks_like_beers(lines):
+                return lines, "nadpis"
 
-    # 2) libovolný seznam, jehož položky vypadají jako piva (°, %)
-    best = []
-    for lst in soup.find_all(["ol", "ul"]):
-        items = [clean(li.get_text(" ")) for li in lst.find_all("li")]
-        hits = [i for i in items if BEER_HINT.search(i)]
-        if len(hits) >= 2 and len(hits) >= len(items) / 2 and len(hits) > len(best):
-            best = items
-    if best:
-        return [i for i in best if i], "seznam-podle-obsahu"
-
-    # 3) holý text mezi „na čepu“ a dalším nadpisem sekce
-    text = soup.get_text("\n")
-    m = re.search(r"na\s+[čc]epu\s*:?(.*?)(?:\n\s*(?:Blog|Mapa|Kontakt)\s*\n|$)",
-                  text, re.I | re.S)
-    if m:
-        lines = [clean(l) for l in m.group(1).split("\n")]
-        lines = [re.sub(r"^\d+[.)]\s*", "", l) for l in lines if l]
-        lines = [l for l in lines if len(l) > 3]
-        if lines:
-            return lines, "text-za-nadpisem"
+    # 2) celá stránka: odstavce/položky, které vypadají jako piva (°, %)
+    #    (najde je, i kdyby nadpis zmizel nebo se přejmenoval)
+    lines = []
+    for el in soup.find_all(["p", "li"]):
+        if el.find(["p", "li"]):
+            continue  # jen „listové“ bloky, ať se text nezdvojuje
+        t = strip_num(clean(el.get_text(" ")))
+        if t and BEER_HINT.search(t) and len(t) < 300 and t not in lines:
+            lines.append(t)
+    if lines:
+        return lines, "podle-obsahu"
 
     return [], "nic"
 
@@ -189,7 +206,7 @@ def main() -> int:
         telegram("⚠️ Hlídač Galerie piva: nenašel jsem seznam čepů, zkontroluj parser.")
         return 1
 
-    if method != "nadpis+seznam":
+    if method != "nadpis":
         warn(f"Použita záložní metoda vytažení: {method}")
 
     # Surová záloha – vždy, bez ohledu na parsování
