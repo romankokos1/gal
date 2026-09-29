@@ -1,16 +1,16 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-09-29 21:27",
+  "zmeneno": "2026-09-29 23:37",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "SKJUBRU",
-      "nazev": "Fresh Lager",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "světlý ležák z čerstvého chmele ŽPČ",
-      "raw": "SKJUBRU – Fresh Lager 11°/4,5% světlý ležák z čerstvého chmele ŽPČ"
+      "pivovar": "SIBEERIA",
+      "nazev": "Everyday Life",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "světlý ležák",
+      "raw": "SIBEERIA – Everyday Life 12°/5,1% světlý ležák"
     },
     {
       "pozice": 2,
