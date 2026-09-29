@@ -1,52 +1,74 @@
+[README.md](https://github.com/user-attachments/files/32806606/README.md)
 # Hlídač čepů – Galerie piva
 
-Automaticky sleduje sekci **„Dnes na čepu“** na [galeriepiva.cz](https://www.galeriepiva.cz/)
-a ukládá historii toho, co se kdy narazilo a dočepovalo.
+Automaticky sleduje sekci **„Dnes na čepu“** na [galeriepiva.cz](https://www.galeriepiva.cz/),
+ukládá historii toho, co se kdy narazilo a dočepovalo, a zobrazuje ji na přehledové stránce.
 
-## Soubory v `data/`
+## Soubory
 
 | soubor | obsah |
 |---|---|
-| `aktualne.json` | aktuální nabídka (pivovar, název, stupeň, % alk., styl + surový text) |
-| `historie.csv` | jeden řádek na pivo: `narazeno` / `docepovano` |
-| `surove.txt` | surové řádky seznamu, přesně jak jsou na webu |
-| `posledni_chyba.html` | vznikne jen tehdy, když se seznam vůbec nenajde |
+| `data/log.jsonl` | **každý stav čepů přesně tak, jak byl na webu**. Základ všeho, nic se v něm nepřepisuje. |
+| `data/historie.csv` | každé naražení s datem `narazeno` / `docepovano` (odvozené z logu) |
+| `data/aktualne.json` | aktuální nabídka |
+| `data/stav.json` | kdy hlídač naposled úspěšně běžel, chyby v řadě, nečinnost |
+| `data/posledni_chyba.html` | snímek stránky, když se seznam nepodařilo najít |
+| `aliasy.json` | ruční opravy pro přehled (sloučení pivovarů, opravy stylů) |
+| `index.html` | přehled a analýza |
 
-## Odolnost vůči změnám na webu
+## Jak se hlídač chrání před chybami
 
-- Seznam se hledá třemi způsoby: podle nadpisu „na čepu“, podle obsahu seznamů (°, %)
-  a nakonec z holého textu stránky.
-- Každá položka se uloží **vždy celá jako `raw`**. Pivovar, stupeň, alkohol a styl se doplní,
-  jen když to jde. Chybějící pomlčka nebo stupeň vyvolá jen žluté varování v Actions.
-- Když se seznam nenajde vůbec, historie se **nezmění** (piva se neoznačí za dočepovaná),
-  uloží se snapshot stránky a běh skončí červeně.
-- Piva se v historii párují podle normalizovaného celého textu.
+- **Nic se neztratí kvůli parsování.** Každý stav webu jde nejdřív do `log.jsonl` jako surový
+  text. Historii jde kdykoli přepočítat z logu (`python scrape.py --rebuild`), třeba po vylepšení
+  parseru, a nic se neztratí.
+- **Překlep ≠ nové pivo.** Když obsluha u běžícího piva opraví překlep, doplní chmel nebo smaže
+  čárku, pivo zůstane v historii jako jedno. Už rozparsované údaje se nepřepíšou prázdnými.
+- **Nesmysly se nezapíšou.** Seznam musí vypadat jako piva (stupně, procenta). Menu nebo odkazy
+  na sociální sítě se nikdy nedostanou do dat.
+- **Krátký výpadek webu nevadí.** Dvě chyby po sobě se jen poznamenají (běh zůstane zelený),
+  historie se nemění. Od třetí (~6 hodin) je běh červený a přijde upozornění do Telegramu,
+  po obnovení zpráva „zase funguje“.
+- **Tiché selhání se pozná.** `stav.json` se aktualizuje jednou denně, takže stránka pozná, že
+  hlídač neběží. Když se nabídka nezmění 10 dní, přijde upozornění, že web možná nikdo
+  neaktualizuje. Denní commit zároveň drží repo aktivní, aby GitHub plánované běhy nevypnul.
+
+Časy jsou přesné zhruba na 2 hodiny a odpovídají změně na webu, ne na výčepu.
 
 ## Nastavení
 
-1. Nahraj obsah do nového repa na GitHubu.
+1. Nahraj obsah do repa na GitHubu (včetně skryté složky `.github`).
 2. *Settings → Actions → General → Workflow permissions* → **Read and write permissions**.
-3. (Volitelně) *Settings → Secrets and variables → Actions*: `TELEGRAM_TOKEN`, `TELEGRAM_CHAT_ID`.
-4. *Actions → Hlídač čepů → Run workflow* pro první běh.
+3. *Settings → Pages* → Deploy from a branch → `main`, `/ (root)`. Stránka pak běží na
+   `https://TVUJ-UCET.github.io/NAZEV-REPA/` (na bezplatném účtu musí být repo veřejné).
+4. (Volitelně) *Settings → Secrets and variables → Actions*: `TELEGRAM_TOKEN`, `TELEGRAM_CHAT_ID`.
+5. *Actions → Hlídač čepů → Run workflow* pro první běh.
 
-Běží každé 2 hodiny přes den (6–22 h). Frekvenci změníš v `.github/workflows/hlidac.yml`.
+## Přehledová stránka
 
-## Přehled a analýza (`index.html`)
+Záložky **Přehled** (teď na čepu, žebříčky pivovarů, stylů a síly), **Pivovary**, **Piva**,
+**Historie** (s exportem do Excelu) a **Časová osa**. Filtry období, hledání a klik na pivovar
+nebo styl platí napříč záložkami. Nahoře se objeví upozornění, když hlídač neběží, selhává nebo
+se nabídka dlouho nezměnila.
 
-Zapni GitHub Pages: *Settings → Pages → Build and deployment → Deploy from a branch*,
-větev `main`, složka `/ (root)`. Za minutu bude stránka na
-`https://TVUJ-UCET.github.io/galerie-piva-hlidac/` a sama si načte `data/historie.csv`
-(obnoví se s každým commitem hlídače). Pages na bezplatném účtu vyžadují veřejné repo.
+Názvy jako „Pivovar Clock“ a „Clock“ se sloučí samy. Podobné názvy (překlepy) stránka nabídne
+v záložce Pivovary; sloučíš je v `aliasy.json`:
 
-Záložky: **Přehled** (teď na čepu, žebříček pivovarů, stylů, síly), **Pivovary**, **Piva**
-(unikátní piva), **Historie** (každé naražení, export do Excelu) a **Časová osa**.
-Filtry období, hledání a klik na pivovar/styl platí pro všechny záložky.
+```json
+{
+  "pivovary": { "Zichovek": "Zichovec" },
+  "styly":    { "Muselo Stout": "Stout" }
+}
+```
 
-Lokálně stačí otevřít `index.html` a vybrat `historie.csv` ručně.
+U stylů stačí kus textu položky (třeba název piva) a styl, který se má použít místo
+automatického odhadu. Surová data se aliasy nemění.
 
-## Lokálně (skript)
+## Lokálně
 
 ```bash
 pip install -r requirements.txt
-python scrape.py
+python scrape.py              # jeden běh
+python scrape.py --rebuild    # přepočítat historie.csv z logu
 ```
+
+`index.html` jde otevřít i lokálně, `historie.csv` pak vybereš ručně.
