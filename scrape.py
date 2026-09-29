@@ -3,9 +3,13 @@
 Hlídač čepů – Galerie piva (https://www.galeriepiva.cz/)
 
 Stáhne sekci „Dnes na čepu“ a zapíše:
-  data/aktualne.json  – aktuální nabídka (jen když se změní)
-  data/historie.csv   – každé pivo s datem naražení a dočepování
-  data/surove.txt     – surové řádky seznamu (záloha nezávislá na parsování)
+  data/log.jsonl      – každý stav čepů přesně jak byl na webu (základ všeho)
+  data/historie.csv   – každé pivo s datem naražení a dočepování (odvozeno z logu)
+  data/aktualne.json  – aktuální nabídka
+  data/surove.txt     – aktuální surové řádky
+  data/stav.json      – kdy hlídač naposled běžel, chyby, nečinnost
+
+`python scrape.py --rebuild` přepočítá historie.csv z logu (např. po vylepšení parseru).
 
 Zásada: data se neztrácí kvůli parsování. Každá položka má vždy pole `raw`
 s celým textem; pivovar/stupeň/% se doplní jen tam, kde to jde.
@@ -18,6 +22,7 @@ import re
 import sys
 import unicodedata
 from datetime import datetime
+from difflib import SequenceMatcher
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -132,7 +137,7 @@ DEG = re.compile(r"(\d{1,2}(?:[.,]\d)?)\s*°")
 ABV = re.compile(r"(\d{1,2}(?:[.,]\d{1,2})?)\s*%")
 
 
-def parse_item(raw: str) -> dict:
+def parse_item(raw: str, quiet: bool = False) -> dict:
     out = {"raw": raw, "pivovar": "", "nazev": "", "stupen": "",
            "alkohol": "", "styl": ""}
     rest = raw
@@ -157,27 +162,158 @@ def parse_item(raw: str) -> dict:
         out["nazev"] = rest  # bez čísel – celý zbytek je název
 
     missing = [k for k in ("pivovar", "stupen", "alkohol") if not out[k]]
-    if missing:
+    if missing and not quiet:
         warn(f"Neúplně rozparsováno ({', '.join(missing)}): {raw}")
     return out
 
 
-# ---------- zápis ----------
+# ---------- soubory ----------
+
+HIST = DATA / "historie.csv"
+LOG = DATA / "log.jsonl"          # každý stav čepů, jak byl na webu (nic se nepřepisuje)
+STAV = DATA / "stav.json"         # heartbeat a chyby hlídače
+FAILS_BEFORE_ALERT = 3            # ~6 hodin výpadku při běhu po 2 h
+STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
+
 
 def load_history() -> list[dict]:
-    p = DATA / "historie.csv"
-    if not p.exists():
+    if not HIST.exists():
         return []
-    with p.open(encoding="utf-8", newline="") as f:
+    with HIST.open(encoding="utf-8", newline="") as f:
         return list(csv.DictReader(f))
 
 
 def save_history(rows: list[dict]):
-    with (DATA / "historie.csv").open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=HIST_COLS)
+    with HIST.open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=HIST_COLS, extrasaction="ignore")
         w.writeheader()
         w.writerows(rows)
 
+
+def load_json(p: Path, default):
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return default
+
+
+def write_if_changed(p: Path, text: str):
+    if not p.exists() or p.read_text(encoding="utf-8") != text:
+        p.write_text(text, encoding="utf-8")
+
+
+def read_log() -> list[dict]:
+    if not LOG.exists():
+        return []
+    out = []
+    for line in LOG.read_text(encoding="utf-8").splitlines():
+        try:
+            out.append(json.loads(line))
+        except ValueError:
+            warn(f"Poškozený řádek v logu přeskočen: {line[:80]}")
+    return out
+
+
+def append_log(entry: dict):
+    with LOG.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+
+def seed_log_from_history(hist: list[dict]):
+    """Starší historie vznikla bez logu – zrekonstruuje z ní jednotlivé stavy."""
+    times = sorted({t for r in hist for t in (r["narazeno"], r["docepovano"]) if t})
+    for t in times:
+        lines = [r["raw"] for r in hist
+                 if r["narazeno"] <= t and (not r["docepovano"] or r["docepovano"] > t)]
+        append_log({"cas": t, "radky": lines, "metoda": "rekonstrukce"})
+
+
+# ---------- párování piv ----------
+
+def beer_key(b: dict) -> str:
+    if b["pivovar"] and b["nazev"]:
+        return norm(b["pivovar"]) + "|" + norm(b["nazev"])
+    return norm(b["raw"])
+
+
+def ratio(a: str, b: str) -> float:
+    return SequenceMatcher(None, a, b).ratio()
+
+
+def same_beer(row: dict, b: dict) -> bool:
+    """Je nový řádek z webu totéž pivo jako řádek, který je v historii na čepu?"""
+    if row["klic"] == b["klic"]:
+        return True
+    rn, bn = norm(row["nazev"]), norm(b["nazev"])
+    rp, bp = norm(row["pivovar"]), norm(b["pivovar"])
+    if rn and bn:
+        if rn == bn and (not rp or not bp or ratio(rp, bp) >= 0.7):
+            return True          # stejný název, pivovar s překlepem / doplněný
+        if rp and rp == bp and ratio(rn, bn) >= 0.85:
+            return True          # stejný pivovar, překlep v názvu
+    # jedna strana nejde rozparsovat (chybí čárka, stupeň…) → porovnat celý text
+    if not (rp and bp and rn and bn):
+        if ratio(norm(row["raw"]), norm(b["raw"])) >= 0.85:
+            return True
+    return False
+
+
+def apply_state(hist: list[dict], lines: list[str], when: str, quiet=False):
+    """Promítne jeden stav čepů do historie. Vrací (piva, nová, dočepovaná, upravená)."""
+    beers = []
+    for i, raw in enumerate(lines, 1):
+        b = parse_item(raw, quiet=quiet)
+        b["pozice"] = i
+        b["klic"] = beer_key(b)
+        beers.append(b)
+
+    waiting = [r for r in hist if not r["docepovano"]]
+    new, updated, pending = [], [], beers
+
+    # 1. kolo: přesná shoda, 2. kolo: tolerantní – každý řádek historie max. jednou
+    for exact in (True, False):
+        left = []
+        for b in pending:
+            match = next((r for r in waiting
+                          if (r["klic"] == b["klic"] if exact else same_beer(r, b))), None)
+            if match:
+                waiting.remove(match)
+                if match["raw"] != b["raw"]:
+                    # rozparsované údaje nepřepisovat prázdnými (obsluha smaže čárku…)
+                    for k in ("pivovar", "nazev", "stupen", "alkohol", "styl"):
+                        if b[k] and (b["pivovar"] or not match["pivovar"]):
+                            match[k] = b[k]
+                    if b["pivovar"] and b["nazev"]:
+                        match["klic"] = b["klic"]
+                    match["raw"] = b["raw"]
+                    updated.append(b)
+            else:
+                left.append(b)
+        pending = left
+
+    for b in pending:
+        hist.append({**{k: b.get(k, "") for k in HIST_COLS},
+                     "narazeno": when, "docepovano": ""})
+        new.append(b)
+    for r in waiting:
+        r["docepovano"] = when
+    return beers, new, waiting, updated
+
+
+def rebuild() -> int:
+    log = read_log()
+    if not log:
+        print("::error::data/log.jsonl je prázdný, není z čeho přepočítat.")
+        return 1
+    hist = []
+    for e in log:
+        apply_state(hist, e["radky"], e["cas"], quiet=True)
+    save_history(hist)
+    print(f"Historie přepočítána z {len(log)} stavů → {len(hist)} naražení.")
+    return 0
+
+
+# ---------- upozornění ----------
 
 def telegram(text: str):
     token, chat = os.getenv("TELEGRAM_TOKEN"), os.getenv("TELEGRAM_CHAT_ID")
@@ -190,74 +326,102 @@ def telegram(text: str):
         warn(f"Telegram selhal: {e}")
 
 
+# ---------- hlavní běh ----------
+
 def main() -> int:
     DATA.mkdir(exist_ok=True)
-    now = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
+    now_dt = datetime.now(TZ)
+    now = now_dt.strftime("%Y-%m-%d %H:%M")
+    stav = load_json(STAV, {})
+    stav_before = json.dumps(stav, sort_keys=True)
 
-    html = fetch()
-    lines, method = extract_lines(html)
+    def save_stav():
+        if json.dumps(stav, sort_keys=True) != stav_before:
+            STAV.write_text(json.dumps(stav, ensure_ascii=False, indent=2) + "\n",
+                            encoding="utf-8")
+
+    # --- stažení a vytažení; jakákoli chyba se jen započítá ---
+    html, lines, method, err = "", [], "nic", ""
+    try:
+        html = fetch()
+        lines, method = extract_lines(html)
+        if not lines:
+            err = "sekce „Dnes na čepu“ nenalezena"
+    except Exception as e:  # výpadek webu, síť…
+        err = str(e)
 
     if not lines:
-        # Nic jsme nenašli: NEMĚNÍME historii (nechceme vše označit za dočepované),
-        # jen uložíme stránku pro diagnostiku a skončíme chybou.
-        (DATA / "posledni_chyba.html").write_text(html, encoding="utf-8")
-        print("::error::Sekce „Dnes na čepu“ nenalezena – stránka uložena "
-              "do data/posledni_chyba.html, historie ponechána beze změny.")
-        telegram("⚠️ Hlídač Galerie piva: nenašel jsem seznam čepů, zkontroluj parser.")
+        n = stav.get("chyby_v_rade", 0) + 1
+        stav.update(chyby_v_rade=n, posledni_chyba=now, chyba=err[:300])
+        if html:
+            (DATA / "posledni_chyba.html").write_text(html, encoding="utf-8")
+        save_stav()
+        if n < FAILS_BEFORE_ALERT:
+            # Krátký výpadek – historie se nemění, běh zůstane zelený.
+            warn(f"Chyba {n}/{FAILS_BEFORE_ALERT - 1} tolerovaných: {err}")
+            return 0
+        print(f"::error::Hlídač selhává {n}× po sobě: {err} "
+              "(historie ponechána beze změny)")
+        if n == FAILS_BEFORE_ALERT:
+            telegram(f"⚠️ Hlídač Galerie piva selhává už {n}× po sobě:\n{err}")
         return 1
 
+    # --- úspěch ---
+    if stav.get("chyby_v_rade", 0) >= FAILS_BEFORE_ALERT:
+        telegram("✅ Hlídač Galerie piva zase funguje.")
+    stav["chyby_v_rade"] = 0
+    stav.pop("chyba", None)
+    (DATA / "posledni_chyba.html").unlink(missing_ok=True)
+    # jen datum → maximálně jeden „heartbeat“ commit denně, repo zůstane aktivní
+    stav["posledni_kontrola"] = now_dt.strftime("%Y-%m-%d")
+    stav["metoda"] = method
+    stav["pocet_piv"] = len(lines)
     if method != "nadpis":
         warn(f"Použita záložní metoda vytažení: {method}")
 
-    # Surová záloha – vždy, bez ohledu na parsování
-    (DATA / "surove.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-    beers = []
-    for i, raw in enumerate(lines, 1):
-        b = parse_item(raw)
-        b["pozice"] = i
-        b["klic"] = norm(raw)
-        beers.append(b)
-
-    # --- historie ---
     hist = load_history()
-    open_rows = {r["klic"]: r for r in hist if not r["docepovano"]}
-    current = {b["klic"] for b in beers}
+    log = read_log()
+    if not log and hist:
+        seed_log_from_history(hist)
+        log = read_log()
 
-    new_beers = []
-    for b in beers:
-        if b["klic"] not in open_rows:
-            hist.append({**{k: b.get(k, "") for k in HIST_COLS},
-                         "narazeno": now, "docepovano": ""})
-            new_beers.append(b)
-    gone = [r for k, r in open_rows.items() if k not in current]
-    for r in gone:
-        r["docepovano"] = now
+    changed = not log or log[-1]["radky"] != lines
+    if changed:
+        append_log({"cas": now, "radky": lines, "metoda": method})
+        beers, new, gone, updated = apply_state(hist, lines, now)
+        save_history(hist)
+        write_if_changed(DATA / "surove.txt", "\n".join(lines) + "\n")
+        (DATA / "aktualne.json").write_text(json.dumps({
+            "zdroj": URL, "zmeneno": now, "metoda": method,
+            "piva": [{k: b[k] for k in ("pozice", "pivovar", "nazev", "stupen",
+                                         "alkohol", "styl", "raw")} for b in beers],
+        }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        if new or gone:
+            stav["posledni_zmena"] = now
+            stav.pop("upozorneno_necinnost", None)
+        msg = [f"🍺 Galerie piva – změna na čepu ({now})"]
+        msg += [f"➕ {b['raw']}" for b in new]
+        msg += [f"➖ {r['raw']}" for r in gone]
+        msg += [f"✏️ upraveno: {b['raw']}" for b in updated]
+        print("\n".join(msg))
+        if new or gone:
+            telegram("\n".join(msg))
+    else:
+        print(f"Beze změny ({len(lines)} piv, metoda {method}).")
 
-    if not new_beers and not gone:
-        print(f"Beze změny ({len(beers)} piv, metoda {method}).")
-        return 0
+    stav.setdefault("posledni_zmena", now)
+    # dlouho beze změny → jednorázové upozornění (web se možná neaktualizuje)
+    last = datetime.strptime(stav["posledni_zmena"], "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
+    idle = (now_dt - last).days
+    if idle >= STALE_DAYS and not stav.get("upozorneno_necinnost"):
+        warn(f"Nabídka se nezměnila {idle} dní.")
+        telegram(f"🤔 Galerie piva: nabídka na webu se nezměnila {idle} dní. "
+                 "Buď se netočí, nebo web nikdo neaktualizuje.")
+        stav["upozorneno_necinnost"] = now
 
-    save_history(hist)
-
-    (DATA / "aktualne.json").write_text(json.dumps({
-        "zdroj": URL,
-        "zmeneno": now,
-        "metoda": method,
-        "piva": [{k: b[k] for k in ("pozice", "pivovar", "nazev", "stupen",
-                                     "alkohol", "styl", "raw")} for b in beers],
-    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-    # chybový snapshot už není aktuální
-    (DATA / "posledni_chyba.html").unlink(missing_ok=True)
-
-    msg = [f"🍺 Galerie piva – změna na čepu ({now})"]
-    msg += [f"➕ {b['raw']}" for b in new_beers]
-    msg += [f"➖ {r['raw']}" for r in gone]
-    print("\n".join(msg))
-    telegram("\n".join(msg))
+    save_stav()
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(rebuild() if "--rebuild" in sys.argv else main())
