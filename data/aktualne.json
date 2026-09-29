@@ -1,0 +1,52 @@
+{
+  "zdroj": "https://www.galeriepiva.cz/",
+  "zmeneno": "2026-09-29 15:25",
+  "metoda": "nadpis",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "SKJUBRU",
+      "nazev": "Fresh Lager",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "světlý ležák z čerstvého chmele ŽPČ",
+      "raw": "SKJUBRU – Fresh Lager 11°/4,5% světlý ležák z čerstvého chmele ŽPČ"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "SKJUBRU & JUNGLE JUICE(IT)",
+      "nazev": "Brezza Luppolata",
+      "stupen": "12",
+      "alkohol": "5.9",
+      "styl": "India Pale Lager (fusion, ceres, saturn)",
+      "raw": "SKJUBRU & JUNGLE JUICE(IT) – Brezza Luppolata 12°/5,9% India Pale Lager (fusion, ceres, saturn)"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "SKJUBRU & FIRST STEP(SK)",
+      "nazev": "Hops Garden",
+      "stupen": "15",
+      "alkohol": "6.3",
+      "styl": "American IPA (eldorado, enigma, equanot)",
+      "raw": "SKJUBRU & FIRST STEP(SK) – Hops Garden 15°/6,3% American IPA (eldorado, enigma, equanot)"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "SKJUBRU & GALERIE PIVA",
+      "nazev": "To se Muselo Stout",
+      "stupen": "13",
+      "alkohol": "5.6",
+      "styl": "čokolado malinový stout",
+      "raw": "SKJUBRU & GALERIE PIVA – To se Muselo Stout 13°/5,6% čokolado malinový stout"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "SKJUBRU",
+      "nazev": "Breakfast of Champions",
+      "stupen": "14",
+      "alkohol": "6.4",
+      "styl": "Smootie Lassi Milkshake černým rybízem, malinou jahodou a bananem !LAKTÓZA!",
+      "raw": "SKJUBRU – Breakfast of Champions 14°/6,4% Smootie Lassi Milkshake černým rybízem, malinou jahodou a bananem !LAKTÓZA!"
+    }
+  ]
+}
