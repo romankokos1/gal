@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galerie piva – čepy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#121211; --surface:#1a1a19; --surface-2:#232321; --line:#2e2e2b;
+  --text:#f4f3ee; --text-2:#c3c2b7; --muted:#8a8980;
+  --accent:#e2a93b; --accent-soft:#e2a93b33; --accent-2:#f2c96b;
+  --radius:10px;
+  --mono:"IBM Plex Mono",ui-monospace,monospace; --sans:"IBM Plex Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 var(--sans)}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 60px}
+header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+h1{font-size:20px;margin:0;font-weight:600}
+h1 span{color:var(--accent)}
+.sub{color:var(--muted);font-family:var(--mono);font-size:12px}
+h2{font-size:13px;margin:0 0 10px;font-weight:600;color:var(--text-2);text-transform:uppercase;letter-spacing:.06em}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:14px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px}
+.kpi b{display:block;font:600 22px var(--mono);color:var(--text)}
+.kpi small{color:var(--muted);font-size:12px}
+
+/* ovládání */
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px;position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0}
+.tabs{display:flex;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:3px}
+.tabs button,.seg button{background:none;border:0;color:var(--text-2);font:500 13px var(--sans);padding:6px 12px;border-radius:6px;cursor:pointer}
+.tabs button.on,.seg button.on{background:var(--surface-2);color:var(--text)}
+.seg{display:flex;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:3px}
+input[type=search]{background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:7px 10px;font:13px var(--sans);min-width:200px;flex:1;max-width:320px}
+input[type=search]:focus{outline:1px solid var(--accent);border-color:var(--accent)}
+.chip{display:inline-flex;gap:6px;align-items:center;background:var(--accent-soft);color:var(--accent-2);border-radius:999px;padding:3px 10px;font-size:12px}
+.chip button{background:none;border:0;color:inherit;cursor:pointer;font-size:14px;padding:0}
+.btn{background:var(--surface);border:1px solid var(--line);color:var(--text-2);border-radius:8px;padding:6px 12px;font:500 12px var(--sans);cursor:pointer}
+.btn:hover{color:var(--text);border-color:var(--muted)}
+
+/* na čepu */
+.taps{display:grid;gap:8px}
+.tap{display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center;background:var(--surface-2);border-radius:8px;padding:8px 12px}
+.tap .n{font:600 16px var(--mono);color:var(--accent)}
+.tap .nm{font-weight:600}
+.tap .br{color:var(--text-2);font-size:12px}
+.tap .st{color:var(--muted);font-size:12px}
+.tap .num{font:500 12px var(--mono);color:var(--text-2);text-align:right;white-space:nowrap}
+
+/* sloupce */
+.hbars{display:grid;gap:4px}
+.hb{display:grid;grid-template-columns:minmax(90px,38%) 1fr 44px;gap:8px;align-items:center;cursor:pointer;padding:2px 4px;border-radius:6px}
+.hb:hover{background:var(--surface-2)}
+.hb .l{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--text-2);font-size:13px}
+.hb .t{height:14px;position:relative}
+.hb .f{position:absolute;left:0;top:0;bottom:0;background:var(--accent);border-radius:0 4px 4px 0;min-width:2px}
+.hb .v{font:500 12px var(--mono);color:var(--text);text-align:right}
+.note{color:var(--muted);font-size:12px;margin-top:8px}
+
+/* tabulky */
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:var(--muted);font-weight:500;font-size:12px;padding:6px 8px;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none}
+th:hover{color:var(--text)}
+th.s::after{content:" ↓";color:var(--accent)}
+th.s.asc::after{content:" ↑"}
+td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td.m{font-family:var(--mono);white-space:nowrap;color:var(--text-2)}
+td.r,th.r{text-align:right}
+tr.click{cursor:pointer}
+tr.click:hover td{background:var(--surface-2)}
+.live{color:var(--accent-2);font-size:11px;font-family:var(--mono)}
+.dim{color:var(--muted)}
+
+/* časová osa */
+.tl{position:relative}
+.tl-axis{position:relative;height:20px;margin-left:var(--lw);border-bottom:1px solid var(--line)}
+.tl-axis span{position:absolute;font:11px var(--mono);color:var(--muted);transform:translateX(-50%);white-space:nowrap}
+.tl-row{display:grid;grid-template-columns:var(--lw) 1fr;align-items:center;height:22px}
+.tl-row .l{font-size:12px;color:var(--text-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:8px}
+.tl-row .t{position:relative;height:100%;background-image:linear-gradient(to right,var(--line) 1px,transparent 1px);background-size:var(--grid) 100%}
+.tl-row .f{position:absolute;top:5px;height:12px;background:var(--accent);border-radius:4px;min-width:3px}
+.tl-row .f.open{background:var(--accent-2);box-shadow:0 0 0 1px var(--accent-2)}
+.tl-row:hover .l{color:var(--text)}
+
+#tip{position:fixed;pointer-events:none;background:#000d;border:1px solid var(--line);color:var(--text);padding:6px 9px;border-radius:6px;font-size:12px;max-width:320px;z-index:20;display:none}
+#tip b{display:block}
+#tip span{font-family:var(--mono);color:var(--text-2)}
+
+.empty{padding:40px;text-align:center;color:var(--muted)}
+.hidden{display:none!important}
+.tabs button,.seg button{white-space:nowrap}
+@media (max-width:640px){
+  .bar{position:static}
+  .tabs{width:100%;overflow-x:auto}
+  .seg{flex:1}.seg button{flex:1}
+  input[type=search]{min-width:0;max-width:none;flex-basis:100%}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Galerie piva <span>· čepy</span></h1>
+    <div class="sub" id="meta">načítám…</div>
+  </header>
+
+  <div id="loadfail" class="card hidden">
+    <p>Nepodařilo se načíst <code>data/historie.csv</code>. Na GitHub Pages se načte samo; lokálně ho vyber ručně:</p>
+    <input type="file" id="file" accept=".csv">
+  </div>
+
+  <div id="app" class="hidden">
+    <div class="bar">
+      <div class="tabs" id="tabs">
+        <button data-t="prehled" class="on">Přehled</button>
+        <button data-t="pivovary">Pivovary</button>
+        <button data-t="piva">Piva</button>
+        <button data-t="historie">Historie</button>
+        <button data-t="osa">Časová osa</button>
+      </div>
+      <div class="seg" id="range">
+        <button data-d="30">30 dní</button>
+        <button data-d="90">90 dní</button>
+        <button data-d="365">rok</button>
+        <button data-d="0" class="on">vše</button>
+      </div>
+      <input type="search" id="q" placeholder="Hledat pivo, pivovar, styl…">
+      <span id="chips"></span>
+    </div>
+
+    <div class="kpis" id="kpis"></div>
+
+    <section data-p="prehled" class="grid g2">
+      <div class="card"><h2>Teď na čepu</h2><div class="taps" id="now"></div></div>
+      <div class="card"><h2>Pivovary · počet naražení</h2><div class="hbars" id="chBrew"></div><div class="note">Kolaborace se počítají každému pivovaru zvlášť. Klik = filtr.</div></div>
+      <div class="card"><h2>Styly · počet naražení</h2><div class="hbars" id="chStyle"></div><div class="note">Styl je odvozený z popisu podle klíčových slov. Klik = filtr.</div></div>
+      <div class="card"><h2>Síla · % alkoholu</h2><div class="hbars" id="chAbv"></div></div>
+    </section>
+
+    <section data-p="pivovary" class="card hidden"><div class="tw"><table id="tBrew"></table></div></section>
+    <section data-p="piva" class="card hidden"><div class="tw"><table id="tBeer"></table></div><div class="note">Stejné pivo (pivovar + název) naražené víckrát je tu jednou.</div></section>
+    <section data-p="historie" class="card hidden">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><h2 style="margin:0">Každé naražení</h2><button class="btn" id="copy">Kopírovat pro Excel</button></div>
+      <div class="tw"><table id="tHist"></table></div>
+    </section>
+    <section data-p="osa" class="card hidden"><div class="tl" id="tl"></div></section>
+  </div>
+</div>
+<div id="tip"></div>
+
+<script>
+/* ---------- načtení ---------- */
+const $ = s => document.querySelector(s);
+const norm = s => (s||"").normalize("NFKD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+const esc = s => String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function parseCSV(t){
+  const rows=[]; let row=[], f="", q=false;
+  for(let i=0;i<t.length;i++){
+    const c=t[i];
+    if(q){ if(c==='"'){ if(t[i+1]==='"'){f+='"';i++} else q=false } else f+=c; }
+    else if(c==='"') q=true;
+    else if(c===','){row.push(f);f=""}
+    else if(c==='\n'){row.push(f);rows.push(row);row=[];f=""}
+    else if(c!=='\r') f+=c;
+  }
+  if(f||row.length){row.push(f);rows.push(row)}
+  const h=rows.shift()||[];
+  return rows.filter(r=>r.length>1).map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]??""])));
+}
+
+async function boot(){
+  try{
+    const r = await fetch("data/historie.csv",{cache:"no-store"});
+    if(!r.ok) throw 0;
+    init(await r.text());
+  }catch(e){
+    $("#meta").textContent="data nenačtena";
+    $("#loadfail").classList.remove("hidden");
+  }
+}
+$("#file").onchange = e => { const f=e.target.files[0]; if(f) f.text().then(init) };
+
+/* ---------- odvozená data ---------- */
+const STYLES = [
+  ["Milkshake / Smoothie", /milkshake|smoothie|smootie|lassi|pastry/],
+  ["Sour", /sour|gose|berliner|kyse|lambic|wild/],
+  ["IPL", /india pale lager|\bipl\b/],
+  ["NEIPA", /neipa|new england|hazy|\bne ipa/],
+  ["DIPA / TIPA", /\bdipa\b|\btipa\b|double ipa|triple ipa|imperial ipa|dvojit/],
+  ["IPA", /\bipa\b|india pale ale/],
+  ["APA / Pale Ale", /\bapa\b|pale ale/],
+  ["Stout", /stout/],
+  ["Porter", /porter/],
+  ["Pšeničné", /weiz|weiss|psenic|\bwit\b|hefe/],
+  ["Bock", /bock/],
+  ["Ležák / Lager", /lezak|lager|pils|vycepni|helles|kellerbier|zwickl/],
+  ["Tmavé", /tmav|dark|cerne|schwarz/],
+  ["Ale", /\bale\b|saison|belgic|tripel|dubbel|quad/],
+];
+const styleOf = r => { const s=norm(r.styl+" "+r.nazev+" "+(r.styl?"":r.raw)); for(const [n,re] of STYLES) if(re.test(s)) return n; return "Jiné"; };
+
+// pivovary: rozdělit kolaborace, odstranit zemi v závorce
+const brewSplit = p => (p||"").split(/\s*(?:&|\+|\bx\b|\/|,)\s*/i)
+  .map(s=>s.replace(/\(\s*[A-Za-z]{2,3}\s*\)/g,"").trim()).filter(Boolean);
+const brewDisplay = {};  // norm -> první zobrazený tvar
+
+const parseDate = s => s ? new Date(s.replace(" ","T")) : null;
+const DAY = 864e5;
+const fmtD = d => d ? d.toLocaleDateString("cs-CZ",{day:"numeric",month:"numeric",year:"2-digit"}) : "";
+const fmtDT = d => d ? d.toLocaleString("cs-CZ",{day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"}) : "";
+const fmtN = (n,d=1) => n==null||isNaN(n) ? "–" : n.toLocaleString("cs-CZ",{minimumFractionDigits:d,maximumFractionDigits:d});
+
+let ALL=[], NOW=new Date();
+function init(text){
+  NOW = new Date();
+  ALL = parseCSV(text).map(r=>{
+    const from=parseDate(r.narazeno), to=parseDate(r.docepovano);
+    const brews = brewSplit(r.pivovar);
+    brews.forEach(b=>{ const k=norm(b); if(!brewDisplay[k]) brewDisplay[k]=b; });
+    return {...r, from, to, open:!to,
+      days: from ? ((to||NOW)-from)/DAY : null,
+      brews: brews.map(norm),
+      collab: brews.length>1,
+      style: styleOf(r),
+      abv: parseFloat(r.alkohol)||null, deg: parseFloat(r.stupen)||null,
+      beerKey: (r.pivovar&&r.nazev) ? norm(r.pivovar)+"|"+norm(r.nazev) : norm(r.raw),
+      label: r.nazev || r.raw,
+      hay: norm([r.raw,r.pivovar,r.nazev,r.styl].join(" ")),
+    };
+  }).filter(r=>r.from).sort((a,b)=>a.from-b.from);
+  if(!ALL.length){ $("#meta").textContent="zatím žádná data"; return; }
+  $("#meta").textContent = `sledováno od ${fmtD(ALL[0].from)} · ${ALL.length} naražení`;
+  $("#app").classList.remove("hidden");
+  render();
+}
+
+/* ---------- filtry ---------- */
+const F = {days:0, q:"", brew:null, style:null};
+function rows(){
+  const since = F.days ? NOW - F.days*DAY : -Infinity;
+  const q = norm(F.q);
+  // v období = pivo bylo na čepu aspoň chvíli v daném období
+  return ALL.filter(r => (r.to||NOW) >= since
+    && (!q || r.hay.includes(q))
+    && (!F.brew || r.brews.includes(F.brew))
+    && (!F.style || r.style===F.style));
+}
+$("#range").onclick = e => { const b=e.target.closest("button"); if(!b) return;
+  $("#range .on").classList.remove("on"); b.classList.add("on"); F.days=+b.dataset.d; render(); };
+$("#q").oninput = e => { F.q=e.target.value; render(); };
+$("#tabs").onclick = e => { const b=e.target.closest("button"); if(!b) return; showTab(b.dataset.t); };
+function showTab(t){
+  document.querySelectorAll("#tabs button").forEach(b=>b.classList.toggle("on",b.dataset.t===t));
+  document.querySelectorAll("section[data-p]").forEach(s=>s.classList.toggle("hidden",s.dataset.p!==t));
+}
+function setFilter(k,v){ F[k]= F[k]===v ? null : v; render(); }
+function chips(){
+  const c=[];
+  if(F.brew) c.push(["brew","Pivovar: "+brewDisplay[F.brew]]);
+  if(F.style) c.push(["style","Styl: "+F.style]);
+  $("#chips").innerHTML = c.map(([k,t])=>`<span class="chip">${esc(t)} <button data-k="${k}" aria-label="zrušit">×</button></span>`).join(" ");
+}
+$("#chips").onclick = e => { const b=e.target.closest("button"); if(b){ F[b.dataset.k]=null; render(); } };
+
+/* ---------- tooltip ---------- */
+const tip=$("#tip");
+document.addEventListener("mousemove",e=>{
+  const el=e.target.closest("[data-tip]");
+  if(!el){ tip.style.display="none"; return; }
+  tip.innerHTML=el.dataset.tip; tip.style.display="block";
+  const x=Math.min(e.clientX+14, innerWidth-tip.offsetWidth-8);
+  const y=e.clientY+16+tip.offsetHeight>innerHeight ? e.clientY-tip.offsetHeight-10 : e.clientY+16;
+  tip.style.left=x+"px"; tip.style.top=y+"px";
+});
+
+/* ---------- agregace ---------- */
+function byBrewery(R){
+  const m={};
+  for(const r of R) for(const b of r.brews){
+    const o=m[b]||(m[b]={key:b,name:brewDisplay[b],taps:0,beers:new Set(),days:0,collab:0,last:null,abv:[]});
+    o.taps++; o.beers.add(r.beerKey); o.days+=r.days||0; if(r.collab) o.collab++;
+    if(!o.last||r.from>o.last) o.last=r.from; if(r.abv) o.abv.push(r.abv);
+  }
+  return Object.values(m).map(o=>({...o,beers:o.beers.size,avgDays:o.days/o.taps,
+    avgAbv:o.abv.length?o.abv.reduce((a,b)=>a+b,0)/o.abv.length:null}));
+}
+function byBeer(R){
+  const m={};
+  for(const r of R){
+    const o=m[r.beerKey]||(m[r.beerKey]={key:r.beerKey,name:r.label,pivovar:r.pivovar,style:r.style,deg:r.deg,abv:r.abv,taps:0,days:0,first:r.from,last:r.from,open:false});
+    o.taps++; o.days+=r.days||0; if(r.from>o.last) o.last=r.from; if(r.open) o.open=true;
+  }
+  return Object.values(m);
+}
+function count(R,fn){ const m={}; R.forEach(r=>{ const k=fn(r); if(k!=null) m[k]=(m[k]||0)+1 }); return m; }
+
+/* ---------- vykreslení ---------- */
+function render(){
+  chips();
+  const R=rows();
+  const open=ALL.filter(r=>r.open);
+  const closed=R.filter(r=>!r.open&&r.days!=null);
+  const avg=(a)=>a.length?a.reduce((x,y)=>x+y,0)/a.length:null;
+  const brews=byBrewery(R), beers=byBeer(R);
+
+  $("#kpis").innerHTML=[
+    [R.length,"naražení"],
+    [beers.length,"různých piv"],
+    [brews.length,"pivovarů"],
+    [fmtN(avg(closed.map(r=>r.days))),"dní průměrně na čepu"],
+    [fmtN(avg(R.filter(r=>r.abv).map(r=>r.abv))),"% alk. průměr"],
+    [fmtN(avg(R.filter(r=>r.deg).map(r=>r.deg))),"° průměr"],
+  ].map(([v,l])=>`<div class="kpi"><b>${v}</b><small>${l}</small></div>`).join("");
+
+  // teď na čepu (nezávisle na filtrech)
+  $("#now").innerHTML = open.length ? open.sort((a,b)=>(+a.pozice||0)-(+b.pozice||0)).map((r,i)=>`
+    <div class="tap"><span class="n">${i+1}</span>
+      <div><div class="nm">${esc(r.label)}</div><div class="br">${esc(r.pivovar||"")}</div><div class="st">${esc(r.styl||"")}</div></div>
+      <div class="num">${r.deg?r.deg+"°":""} ${r.abv?fmtN(r.abv)+" %":""}<br><span class="dim">${fmtN(r.days)} d</span></div></div>`).join("")
+    : `<div class="empty">nic</div>`;
+
+  hbars("#chBrew", brews.sort((a,b)=>b.taps-a.taps||a.name.localeCompare(b.name)).slice(0,12)
+    .map(o=>({l:o.name,v:o.taps,act:()=>setFilter("brew",o.key),
+      tip:`<b>${esc(o.name)}</b><span>${o.taps}× naraženo · ${o.beers} piv · ${fmtN(o.days)} dní na čepu</span>`})), brews.length>12?`+ ${brews.length-12} dalších v záložce Pivovary`:"");
+
+  const sc=count(R,r=>r.style);
+  hbars("#chStyle", Object.entries(sc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>({l:k,v,act:()=>setFilter("style",k),
+    tip:`<b>${esc(k)}</b><span>${v}× · ${fmtN(v/R.length*100,0)} %</span>`})));
+
+  const B=[[0,4,"do 4 %"],[4,5,"4–5 %"],[5,6,"5–6 %"],[6,7,"6–7 %"],[7,8,"7–8 %"],[8,10,"8–10 %"],[10,99,"10 % +"]];
+  const ab=R.filter(r=>r.abv);
+  hbars("#chAbv", B.map(([a,b,l])=>{const v=ab.filter(r=>r.abv>=a&&r.abv<b).length; return {l,v,tip:`<b>${l}</b><span>${v}× naraženo</span>`};}),
+    R.length-ab.length?`${R.length-ab.length} naražení bez uvedených %`:"", true);
+
+  table("#tBrew", brews, [
+    {k:"name",t:"Pivovar"},
+    {k:"taps",t:"Naraženo",n:1},
+    {k:"beers",t:"Různých piv",n:1},
+    {k:"days",t:"Dní na čepu",n:1,f:v=>fmtN(v)},
+    {k:"avgDays",t:"Ø dní / pivo",n:1,f:v=>fmtN(v)},
+    {k:"collab",t:"Z toho kolab.",n:1},
+    {k:"avgAbv",t:"Ø % alk.",n:1,f:v=>fmtN(v)},
+    {k:"last",t:"Naposled",n:1,m:1,f:fmtD},
+  ], "taps", o=>{ F.brew=o.key; showTab("historie"); render(); });
+
+  table("#tBeer", beers, [
+    {k:"name",t:"Pivo",f:(v,o)=>esc(v)+(o.open?' <span class="live">● na čepu</span>':"")},
+    {k:"pivovar",t:"Pivovar"},
+    {k:"style",t:"Styl"},
+    {k:"deg",t:"°",n:1,m:1,f:v=>v??"–"},
+    {k:"abv",t:"%",n:1,m:1,f:v=>fmtN(v)},
+    {k:"taps",t:"Naraženo",n:1},
+    {k:"days",t:"Dní celkem",n:1,f:v=>fmtN(v)},
+    {k:"last",t:"Naposled",n:1,m:1,f:fmtD},
+  ], "last");
+
+  table("#tHist", R, HIST_COLS, "from");
+  timeline(R);
+}
+
+const HIST_COLS=[
+  {k:"from",t:"Naraženo",n:1,m:1,f:fmtDT},
+  {k:"to",t:"Dočepováno",n:1,m:1,f:(v)=>v?fmtDT(v):'<span class="live">● na čepu</span>'},
+  {k:"days",t:"Dní",n:1,f:v=>fmtN(v)},
+  {k:"pivovar",t:"Pivovar"},
+  {k:"label",t:"Pivo"},
+  {k:"style",t:"Styl"},
+  {k:"deg",t:"°",n:1,m:1,f:v=>v??"–"},
+  {k:"abv",t:"%",n:1,m:1,f:v=>fmtN(v)},
+];
+
+function hbars(sel, items, note="", keepOrder=false){
+  const max=Math.max(1,...items.map(i=>i.v));
+  const el=$(sel);
+  el.innerHTML = items.length ? items.map((i,ix)=>`<div class="hb" data-ix="${ix}" data-tip="${esc(i.tip)}">
+    <span class="l">${esc(i.l)}</span><span class="t"><span class="f" style="width:${i.v/max*100}%"></span></span><span class="v">${i.v}</span></div>`).join("")
+    + (note?`<div class="note">${esc(note)}</div>`:"") : `<div class="empty">žádná data</div>`;
+  el.onclick = e => { const h=e.target.closest(".hb"); if(h&&items[h.dataset.ix].act) items[h.dataset.ix].act(); };
+}
+
+const SORT={};
+function table(sel, data, cols, defKey, onRow){
+  const s = SORT[sel] || (SORT[sel]={k:defKey,asc:false});
+  const col = cols.find(c=>c.k===s.k);
+  const val = v => v instanceof Date ? +v : v;
+  const d=[...data].sort((a,b)=>{
+    let x=val(a[s.k]), y=val(b[s.k]);
+    if(x==null||x==="") return 1; if(y==null||y==="") return -1;
+    const r = col&&col.n ? x-y : String(x).localeCompare(String(y),"cs");
+    return s.asc ? r : -r;
+  });
+  const el=$(sel);
+  el.innerHTML = `<thead><tr>${cols.map(c=>`<th data-k="${c.k}" class="${c.n?"r":""} ${c.k===s.k?"s"+(s.asc?" asc":""):""}">${c.t}</th>`).join("")}</tr></thead>
+    <tbody>${d.length? d.map((o,i)=>`<tr data-i="${i}" class="${onRow?"click":""}">${cols.map(c=>{
+      const v=o[c.k]; const out=c.f?c.f(v,o):esc(v??"");
+      return `<td class="${c.n?"r":""} ${c.m?"m":""}">${out}</td>`;}).join("")}</tr>`).join("")
+      : `<tr><td colspan="${cols.length}" class="empty">nic neodpovídá filtru</td></tr>`}</tbody>`;
+  el.querySelector("thead").onclick = e => { const th=e.target.closest("th"); if(!th) return;
+    if(s.k===th.dataset.k) s.asc=!s.asc; else { s.k=th.dataset.k; s.asc=!cols.find(c=>c.k===s.k).n; } render(); };
+  el.querySelector("tbody").onclick = e => { const tr=e.target.closest("tr[data-i]"); if(tr&&onRow) onRow(d[tr.dataset.i]); };
+  el._sorted=d;
+}
+
+$("#copy").onclick = () => {
+  const d=$("#tHist")._sorted||[];
+  const cell=v=>v instanceof Date? v.toLocaleString("cs-CZ") : typeof v==="number"? String(Math.round(v*100)/100).replace(".",",") : String(v??"").replace(/\t|\n/g," ");
+  const tsv=[["Naraženo","Dočepováno","Dní","Pivovar","Pivo","Styl (odvozený)","Styl (popis)","°","%","Surový text"].join("\t"),
+    ...d.map(r=>[r.from,r.to||"na čepu",r.days,r.pivovar,r.label,r.style,r.styl,r.deg,r.abv,r.raw].map(cell).join("\t"))].join("\n");
+  navigator.clipboard.writeText(tsv).then(()=>{ const b=$("#copy"); b.textContent=`Zkopírováno (${d.length})`; setTimeout(()=>b.textContent="Kopírovat pro Excel",1500); });
+};
+
+function timeline(R){
+  const el=$("#tl");
+  if(!R.length){ el.innerHTML='<div class="empty">nic neodpovídá filtru</div>'; return; }
+  const start = F.days ? Math.max(NOW-F.days*DAY, +R[0].from) : +R[0].from;
+  const span = Math.max(DAY, NOW-start);
+  const pct = t => Math.max(0,Math.min(100,(t-start)/span*100));
+  // popisky os: rozumný počet dat
+  const step = [1,2,7,14,30,61,91,182].find(d=>span/(d*DAY)<=10)||365;
+  const ticks=[]; const t0=new Date(start); t0.setHours(0,0,0,0);
+  for(let t=+t0+DAY; t<=+NOW; t+=step*DAY) ticks.push(t);
+  const lw = innerWidth<640?120:220;
+  el.style.setProperty("--lw",lw+"px");
+  el.style.setProperty("--grid",`${step*DAY/span*100}%`);
+  const rs=[...R].sort((a,b)=>b.from-a.from);
+  el.innerHTML = `<div class="tl-axis">${ticks.map(t=>`<span style="left:${pct(t)}%">${fmtD(new Date(t))}</span>`).join("")}</div>`
+    + rs.map(r=>{ const a=pct(+r.from), b=pct(+(r.to||NOW));
+      return `<div class="tl-row"><span class="l" title="${esc(r.raw)}">${esc(r.label)}</span><span class="t">
+      <span class="f ${r.open?"open":""}" style="left:${a}%;width:${Math.max(.3,b-a)}%" data-tip="<b>${esc(r.label)}</b>${esc(r.pivovar||"")}<br><span>${fmtDT(r.from)} → ${r.to?fmtDT(r.to):"na čepu"} · ${fmtN(r.days)} d</span>"></span></span></div>`; }).join("");
+}
+addEventListener("resize",()=>{ if(ALL.length) timeline(rows()); });
+
+boot();
+</script>
+</body>
+</html>
