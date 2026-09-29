@@ -92,6 +92,11 @@ tr.click:hover td{background:var(--surface-2)}
 #tip b{display:block}
 #tip span{font-family:var(--mono);color:var(--text-2)}
 
+.warn{background:#3a2a12;border:1px solid #6b4b1a;color:#f5d9a6;border-radius:var(--radius);padding:10px 14px;margin-bottom:14px;font-size:13px}
+.warn b{color:#ffe2ad}
+.status{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.dups{background:var(--surface-2);border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:12px;color:var(--text-2)}
+.dups code{font-family:var(--mono);color:var(--accent-2)}
 .empty{padding:40px;text-align:center;color:var(--muted)}
 .hidden{display:none!important}
 .tabs button,.seg button{white-space:nowrap}
@@ -134,6 +139,7 @@ tr.click:hover td{background:var(--surface-2)}
       <span id="chips"></span>
     </div>
 
+    <div id="warn"></div>
     <div class="kpis" id="kpis"></div>
 
     <section data-p="prehled" class="grid g2">
@@ -143,11 +149,11 @@ tr.click:hover td{background:var(--surface-2)}
       <div class="card"><h2>Síla · % alkoholu</h2><div class="hbars" id="chAbv"></div></div>
     </section>
 
-    <section data-p="pivovary" class="card hidden"><div class="tw"><table id="tBrew"></table></div></section>
+    <section data-p="pivovary" class="card hidden"><div id="dups"></div><div class="tw"><table id="tBrew"></table></div></section>
     <section data-p="piva" class="card hidden"><div class="tw"><table id="tBeer"></table></div><div class="note">Stejné pivo (pivovar + název) naražené víckrát je tu jednou.</div></section>
     <section data-p="historie" class="card hidden">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><h2 style="margin:0">Každé naražení</h2><button class="btn" id="copy">Kopírovat pro Excel</button></div>
-      <div class="tw"><table id="tHist"></table></div>
+      <div class="tw"><table id="tHist"></table></div><div class="note">Časy jsou přesné zhruba na 2 hodiny (interval kontroly) a odpovídají tomu, kdy se změnil web, ne výčep.</div>
     </section>
     <section data-p="osa" class="card hidden"><div class="tl" id="tl"></div></section>
   </div>
@@ -175,15 +181,12 @@ function parseCSV(t){
   return rows.filter(r=>r.length>1).map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]??""])));
 }
 
+const get = (u,text) => fetch(u,{cache:"no-store"}).then(r=>r.ok?(text?r.text():r.json()):null).catch(()=>null);
 async function boot(){
-  try{
-    const r = await fetch("data/historie.csv",{cache:"no-store"});
-    if(!r.ok) throw 0;
-    init(await r.text());
-  }catch(e){
-    $("#meta").textContent="data nenačtena";
-    $("#loadfail").classList.remove("hidden");
-  }
+  const [csv, al, st] = await Promise.all([get("data/historie.csv",1), get("aliasy.json"), get("data/stav.json")]);
+  setAliases(al); STAV = st;
+  if(csv) init(csv);
+  else { $("#meta").textContent="data nenačtena"; $("#loadfail").classList.remove("hidden"); }
 }
 $("#file").onchange = e => { const f=e.target.files[0]; if(f) f.text().then(init) };
 
@@ -204,12 +207,29 @@ const STYLES = [
   ["Tmavé", /tmav|dark|cerne|schwarz/],
   ["Ale", /\bale\b|saison|belgic|tripel|dubbel|quad/],
 ];
-const styleOf = r => { const s=norm(r.styl+" "+r.nazev+" "+(r.styl?"":r.raw)); for(const [n,re] of STYLES) if(re.test(s)) return n; return "Jiné"; };
+let STAV=null, ALIAS_B={}, ALIAS_S=[]; const ALIAS_T=new Set();
+function setAliases(a){
+  if(!a) return;
+  const use = o => Object.entries(o||{}).filter(([k,v])=>!k.startsWith("_") && typeof v==="string" && v.trim());
+  for(const [k,v] of use(a.pivovary)){ const t=norm(v); ALIAS_B[norm(k)]=t; brewDisplay[t]=v; ALIAS_T.add(t); }
+  ALIAS_S = use(a.styly).map(([k,v])=>[norm(k),v]).filter(([k])=>k);
+}
+const styleOf = r => {
+  const raw=norm(r.raw);
+  for(const [k,v] of ALIAS_S) if(raw.includes(k)) return v;          // ruční oprava
+  const s=norm(r.styl+" "+r.nazev+" "+(r.styl?"":r.raw)); for(const [n,re] of STYLES) if(re.test(s)) return n; return "Jiné"; };
 
 // pivovary: rozdělit kolaborace, odstranit zemi v závorce
 const brewSplit = p => (p||"").split(/\s*(?:&|\+|\bx\b|\/|,)\s*/i)
   .map(s=>s.replace(/\(\s*[A-Za-z]{2,3}\s*\)/g,"").trim()).filter(Boolean);
-const brewDisplay = {};  // norm -> první zobrazený tvar
+const brewDisplay = {};  // kanonický klíč -> zobrazený název
+// „Pivovar Clock“ = „Clock“; ruční aliasy mají přednost
+const GENERIC=/\b(pivovar|minipivovar|rodinny|mestsky|pivovarek|brewery|brewing|brewers|brewhouse|company|co|craft)\b/g;
+function brewCanon(name){
+  const n=norm(name); if(ALIAS_B[n]) return ALIAS_B[n];
+  const s=n.replace(GENERIC," ").replace(/\s+/g," ").trim()||n;
+  return ALIAS_B[s]||s;
+}
 
 const parseDate = s => s ? new Date(s.replace(" ","T")) : null;
 const DAY = 864e5;
@@ -223,14 +243,16 @@ function init(text){
   ALL = parseCSV(text).map(r=>{
     const from=parseDate(r.narazeno), to=parseDate(r.docepovano);
     const brews = brewSplit(r.pivovar);
-    brews.forEach(b=>{ const k=norm(b); if(!brewDisplay[k]) brewDisplay[k]=b; });
+    const keys = [...new Set(brews.map(brewCanon))];
+    brews.forEach(b=>{ const k=brewCanon(b), d=b.replace(/\b(pivovar|minipivovar)\s+/i,"");
+      if(!ALIAS_T.has(k) && (!brewDisplay[k] || d.length<brewDisplay[k].length)) brewDisplay[k]=d; });
     return {...r, from, to, open:!to,
       days: from ? ((to||NOW)-from)/DAY : null,
-      brews: brews.map(norm),
-      collab: brews.length>1,
+      brews: keys,
+      collab: keys.length>1,
       style: styleOf(r),
       abv: parseFloat(r.alkohol)||null, deg: parseFloat(r.stupen)||null,
-      beerKey: (r.pivovar&&r.nazev) ? norm(r.pivovar)+"|"+norm(r.nazev) : norm(r.raw),
+      beerKey: (keys.length&&r.nazev) ? keys.join("+")+"|"+norm(r.nazev) : norm(r.raw),
       label: r.nazev || r.raw,
       hay: norm([r.raw,r.pivovar,r.nazev,r.styl].join(" ")),
     };
@@ -238,7 +260,39 @@ function init(text){
   if(!ALL.length){ $("#meta").textContent="zatím žádná data"; return; }
   $("#meta").textContent = `sledováno od ${fmtD(ALL[0].from)} · ${ALL.length} naražení`;
   $("#app").classList.remove("hidden");
+  $("#warn").innerHTML = warnings();
+  $("#dups").innerHTML = dupes();
   render();
+}
+
+/* ---------- kontrola zdraví dat ---------- */
+function warnings(){
+  const w=[];
+  const lastChange = ALL.reduce((m,r)=>Math.max(m,+r.from,+(r.to||0)),0);
+  if(STAV){
+    const chk = STAV.posledni_kontrola ? new Date(STAV.posledni_kontrola+"T23:59") : null;
+    if(chk && (NOW-chk)/DAY > 2) w.push(`<b>Hlídač neběží</b> – poslední úspěšná kontrola ${fmtD(chk)}. Zkontroluj záložku Actions v repu.`);
+    if((STAV.chyby_v_rade||0)>=3) w.push(`<b>Hlídač selhává</b> ${STAV.chyby_v_rade}× po sobě: ${esc(STAV.chyba||"")}`);
+  }
+  const idle=(NOW-lastChange)/DAY;
+  if(lastChange && idle>7) w.push(`<b>Nabídka se nezměnila ${Math.floor(idle)} dní.</b> Buď se netočí, nebo web nikdo neaktualizuje – data za tu dobu můžou být nepřesná.`);
+  const status = STAV&&STAV.posledni_kontrola ? ` · kontrolováno ${fmtD(new Date(STAV.posledni_kontrola))}` : "";
+  $("#meta").textContent += status;
+  return w.map(x=>`<div class="warn">${x}</div>`).join("");
+}
+function lev(a,b){ const d=Array.from({length:a.length+1},(_,i)=>[i]); for(let j=1;j<=b.length;j++) d[0][j]=j;
+  for(let i=1;i<=a.length;i++) for(let j=1;j<=b.length;j++) d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));
+  return d[a.length][b.length]; }
+function dupes(){
+  const ks=[...new Set(ALL.flatMap(r=>r.brews))], out=[];
+  for(let i=0;i<ks.length;i++) for(let j=i+1;j<ks.length;j++){
+    const a=ks[i], b=ks[j], m=Math.min(a.length,b.length);
+    if(m<4) continue;
+    if(lev(a,b) <= (m>=8?2:1) || a.startsWith(b+" ") || b.startsWith(a+" ")) out.push([a,b]);
+  }
+  if(!out.length) return "";
+  return `<div class="dups">Možná jde o stejný pivovar: ${out.map(([a,b])=>`<code>${esc(brewDisplay[a])}</code> ↔ <code>${esc(brewDisplay[b])}</code>`).join(", ")}.
+    Sloučíš je v souboru <code>aliasy.json</code> v repu.</div>`;
 }
 
 /* ---------- filtry ---------- */
