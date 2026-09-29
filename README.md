@@ -31,7 +31,20 @@ a ukládá historii toho, co se kdy narazilo a dočepovalo.
 
 Běží každé 2 hodiny přes den (6–22 h). Frekvenci změníš v `.github/workflows/hlidac.yml`.
 
-## Lokálně
+## Přehled a analýza (`index.html`)
+
+Zapni GitHub Pages: *Settings → Pages → Build and deployment → Deploy from a branch*,
+větev `main`, složka `/ (root)`. Za minutu bude stránka na
+`https://TVUJ-UCET.github.io/galerie-piva-hlidac/` a sama si načte `data/historie.csv`
+(obnoví se s každým commitem hlídače). Pages na bezplatném účtu vyžadují veřejné repo.
+
+Záložky: **Přehled** (teď na čepu, žebříček pivovarů, stylů, síly), **Pivovary**, **Piva**
+(unikátní piva), **Historie** (každé naražení, export do Excelu) a **Časová osa**.
+Filtry období, hledání a klik na pivovar/styl platí pro všechny záložky.
+
+Lokálně stačí otevřít `index.html` a vybrat `historie.csv` ručně.
+
+## Lokálně (skript)
 
 ```bash
 pip install -r requirements.txt
