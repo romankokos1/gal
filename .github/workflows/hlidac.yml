@@ -1,9 +1,9 @@
-name: Hlídač čepů – Galerie piva
+name: Hlídač čepů
 
 on:
   schedule:
-    # každé 2 hodiny cca 6:17–22:17 českého času (cron je v UTC)
-    - cron: "17 4-20/2 * * *"
+    # každé 2 hodiny cca 6:17–0:17 českého času (cron je v UTC)
+    - cron: "17 4-22/2 * * *"
   workflow_dispatch:
 
 permissions:
@@ -28,17 +28,14 @@ jobs:
 
       - name: Stáhnout a zapsat čepy
         id: scrape
-        env:
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scrape.py || echo "failed=1" >> "$GITHUB_OUTPUT"
 
-      # Commit proběhne vždy – i když parser selže, uloží se diagnostický snapshot
+      # Commit proběhne vždy – i když některý podnik selže, uloží se stav a diagnostika
       - name: Commit změn
         run: |
           git config user.name  "hlidac-bot"
           git config user.email "hlidac-bot@users.noreply.github.com"
-          git add data/
+          git add -A data/
           if git diff --cached --quiet; then
             echo "Nic k commitnutí."
           else
@@ -46,8 +43,8 @@ jobs:
             git push
           fi
 
-      - name: Nahlásit selhání parseru
+      - name: Nahlásit selhání
         if: steps.scrape.outputs.failed == '1'
         run: |
-          echo "Parser nenašel seznam čepů – viz data/posledni_chyba.html"
+          echo "Některý podnik selhává déle než ~6 hodin – viz log kroku výše a data/<podnik>/stav.json"
           exit 1
