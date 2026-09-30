@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-09-29 23:37",
+  "zmeneno": "2026-09-30 16:56",
   "metoda": "nadpis",
   "piva": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pozice": 2,
-      "pivovar": "SKJUBRU & HOPFEN REBELL",
-      "nazev": "HopfenNebel",
+      "pivovar": "ONE HOPE",
+      "nazev": "Two Traces",
       "stupen": "11",
-      "alkohol": "4.7",
-      "styl": "Hazy Pale Ale (tango, ariana)",
-      "raw": "SKJUBRU & HOPFEN REBELL – HopfenNebel 11°/4,7% Hazy Pale Ale (tango, ariana)"
+      "alkohol": "5.1",
+      "styl": "Session IPA (mosaic, idaho 7)",
+      "raw": "ONE HOPE – Two Traces 11°/5,1% Session IPA (mosaic, idaho 7)"
     },
     {
       "pozice": 3,
