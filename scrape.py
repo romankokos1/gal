@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
-Hlídač čepů – Galerie piva (https://www.galeriepiva.cz/)
+Hlídač čepů – sleduje „Dnes na čepu“ ve více podnicích.
 
-Stáhne sekci „Dnes na čepu“ a zapíše:
-  data/log.jsonl      – každý stav čepů přesně jak byl na webu (základ všeho)
-  data/historie.csv   – každé pivo s datem naražení a dočepování (odvozeno z logu)
-  data/aktualne.json  – aktuální nabídka
-  data/surove.txt     – aktuální surové řádky
-  data/stav.json      – kdy hlídač naposled běžel, chyby, nečinnost
+Pro každý podnik ukládá do data/<id>/:
+  log.jsonl      – každý stav čepů přesně jak byl na webu (základ všeho)
+  historie.csv   – každé pivo s datem naražení a dočepování (odvozeno z logu)
+  aktualne.json  – aktuální nabídka
+  stav.json      – kdy hlídač naposled běžel, chyby, nečinnost
+a do data/podniky.json seznam podniků pro přehledovou stránku.
 
-`python scrape.py --rebuild` přepočítá historie.csv z logu (např. po vylepšení parseru).
+`python scrape.py --rebuild` přepočítá historie.csv všech podniků z logu.
 
 Zásada: data se neztrácí kvůli parsování. Každá položka má vždy pole `raw`
 s celým textem; pivovar/stupeň/% se doplní jen tam, kde to jde.
@@ -17,8 +17,8 @@ s celým textem; pivovar/stupeň/% se doplní jen tam, kde to jde.
 
 import csv
 import json
-import os
 import re
+import shutil
 import sys
 import unicodedata
 from datetime import datetime
@@ -29,11 +29,23 @@ from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
 
-URL = "https://www.galeriepiva.cz/"
-DATA = Path(__file__).parent / "data"
+# ---------- podniky ----------
+# id = název složky v data/ (neměnit, jinak se historie rozdělí)
+# polozky/pole = volitelný přesný výběr prvků; když selže, použijí se obecné metody
+PODNIKY = [
+    {"id": "galerie", "nazev": "Galerie piva", "url": "https://www.galeriepiva.cz/"},
+    {"id": "sedm", "nazev": "sedm°", "url": "https://www.sedmstupnu.cz/",
+     "polozky": "ul.elementor-price-list > li",
+     "pole": [".elementor-price-list-title", ".elementor-price-list-price",
+              ".elementor-price-list-description"]},
+]
+
+ROOT = Path(__file__).parent / "data"
 TZ = ZoneInfo("Europe/Prague")
 HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
              "raw", "narazeno", "docepovano"]
+FAILS_BEFORE_ERROR = 3            # ~6 hodin výpadku při běhu po 2 h
+STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
 
 
 # ---------- pomocné ----------
@@ -56,12 +68,12 @@ def warn(msg: str):
 
 # ---------- stažení ----------
 
-def fetch() -> str:
+def fetch(url: str) -> str:
     last = None
     for _ in range(3):
         try:
-            r = requests.get(URL, timeout=30, headers={
-                "User-Agent": "galerie-piva-hlidac (GitHub Actions; osobní archiv)"
+            r = requests.get(url, timeout=30, headers={
+                "User-Agent": "hlidac-cepu (GitHub Actions; osobní archiv)"
             })
             r.raise_for_status()
             r.encoding = r.apparent_encoding or "utf-8"
@@ -93,7 +105,7 @@ def lines_after_heading(h) -> list[str]:
     """Text všech bloků za nadpisem až po další nadpis (odstavce i seznamy)."""
     out = []
     for el in h.find_next_siblings():
-        if HEADING.match(el.name or ""):
+        if HEADING.match(el.name or "") or el.find(HEADING):
             break
         lis = el.find_all("li")
         texts = [li.get_text(" ") for li in lis] if lis else [el.get_text(" ")]
@@ -104,19 +116,45 @@ def lines_after_heading(h) -> list[str]:
     return out
 
 
-def extract_lines(html: str) -> tuple[list[str], str]:
+def by_selector(soup, p) -> list[str]:
+    if not p.get("polozky"):
+        return []
+    lines = []
+    for el in soup.select(p["polozky"]):
+        parts = []
+        for sel in p.get("pole", []):
+            f = el.select_one(sel)
+            if f and clean(f.get_text(" ")):
+                parts.append(clean(f.get_text(" ")))
+        t = strip_num(" | ".join(parts) if parts else clean(el.get_text(" ")))
+        if t:
+            lines.append(t)
+    return lines
+
+
+def extract_lines(html: str, p: dict) -> tuple[list[str], str]:
     soup = BeautifulSoup(html, "html.parser")
 
-    # 1) nadpis obsahující „na čepu“ → všechny bloky pod ním do dalšího nadpisu
+    # 0) přesný výběr nastavený pro podnik
+    lines = by_selector(soup, p)
+    if lines and looks_like_beers(lines):
+        return lines, "selektor"
+
+    # 1) nadpis obsahující „na čepu“ → bloky pod ním do dalšího nadpisu
+    #    (nadpis bývá zabalený v divech, proto se hledá i o pár úrovní výš)
     for h in soup.find_all(re.compile(r"^h[1-6]$|^p$|^strong$")):
         if "na cepu" in norm(h.get_text()) and len(h.get_text()) < 40:
-            anchor = h if h.find_next_siblings() else h.parent
-            lines = lines_after_heading(anchor)
-            if lines and looks_like_beers(lines):
-                return lines, "nadpis"
+            anchor = h
+            for _ in range(5):
+                if anchor is None:
+                    break
+                if anchor.find_next_sibling():
+                    lines = lines_after_heading(anchor)
+                    if lines and looks_like_beers(lines):
+                        return lines, "nadpis"
+                anchor = anchor.parent
 
     # 2) celá stránka: odstavce/položky, které vypadají jako piva (°, %)
-    #    (najde je, i kdyby nadpis zmizel nebo se přejmenoval)
     lines = []
     for el in soup.find_all(["p", "li"]):
         if el.find(["p", "li"]):
@@ -133,8 +171,10 @@ def extract_lines(html: str) -> tuple[list[str], str]:
 # ---------- rozparsování jedné položky (vše volitelné) ----------
 
 SEP = re.compile(r"\s+[–—-]\s+|\s*[–—]\s*")
-DEG = re.compile(r"(\d{1,2}(?:[.,]\d)?)\s*°")
-ABV = re.compile(r"(\d{1,2}(?:[.,]\d{1,2})?)\s*%")
+NUM = r"(\d{1,2}(?:[.,]\d{1,2})?)"
+DEG = re.compile(NUM + r"\s*°")
+ABV_LABEL = re.compile(r"(?:ABV|alk\.?|alkohol)\s*:?\s*" + NUM + r"\s*%", re.I)
+PCT = re.compile(NUM + r"\s*%")
 
 
 def parse_item(raw: str, quiet: bool = False) -> dict:
@@ -144,22 +184,35 @@ def parse_item(raw: str, quiet: bool = False) -> dict:
 
     parts = SEP.split(raw, maxsplit=1)
     if len(parts) == 2:
-        out["pivovar"], rest = parts[0].strip(), parts[1].strip()
+        out["pivovar"], rest = parts[0].strip(" |"), parts[1].strip()
 
-    d, a = DEG.search(rest), ABV.search(rest)
+    d = DEG.search(rest)
+    a = ABV_LABEL.search(rest)
+    if a:
+        # „11% | Lager, ABV 4,6%“ – procento bez ABV je ve skutečnosti stupeň
+        if not d:
+            d = next((m for m in PCT.finditer(rest)
+                      if m.end() <= a.start() or m.start() >= a.end()), None)
+            if d and float(d.group(1).replace(",", ".")) < 7:
+                d = None
+    else:
+        a = PCT.search(rest)
     if d:
         out["stupen"] = d.group(1).replace(",", ".")
     if a:
         out["alkohol"] = a.group(1).replace(",", ".")
 
-    marks = [m for m in (d, a) if m]
+    marks = sorted((m for m in (d, a) if m), key=lambda m: m.start())
     if marks:
-        first = min(m.start() for m in marks)
-        last = max(m.end() for m in marks)
-        out["nazev"] = rest[:first].strip(" /,-")
-        out["styl"] = rest[last:].strip(" /,-")
+        out["nazev"] = rest[:marks[0].start()].strip(" |/,-")
+        pieces, pos = [], marks[0].start()
+        for m in marks:
+            pieces.append(rest[pos:m.start()])
+            pos = m.end()
+        pieces.append(rest[pos:])
+        out["styl"] = " ".join(x.strip(" |/,-") for x in pieces if x.strip(" |/,-"))
     else:
-        out["nazev"] = rest  # bez čísel – celý zbytek je název
+        out["nazev"] = rest.strip(" |")  # bez čísel – celý zbytek je název
 
     missing = [k for k in ("pivovar", "stupen", "alkohol") if not out[k]]
     if missing and not quiet:
@@ -168,27 +221,6 @@ def parse_item(raw: str, quiet: bool = False) -> dict:
 
 
 # ---------- soubory ----------
-
-HIST = DATA / "historie.csv"
-LOG = DATA / "log.jsonl"          # každý stav čepů, jak byl na webu (nic se nepřepisuje)
-STAV = DATA / "stav.json"         # heartbeat a chyby hlídače
-FAILS_BEFORE_ALERT = 3            # ~6 hodin výpadku při běhu po 2 h
-STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
-
-
-def load_history() -> list[dict]:
-    if not HIST.exists():
-        return []
-    with HIST.open(encoding="utf-8", newline="") as f:
-        return list(csv.DictReader(f))
-
-
-def save_history(rows: list[dict]):
-    with HIST.open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=HIST_COLS, extrasaction="ignore")
-        w.writeheader()
-        w.writerows(rows)
-
 
 def load_json(p: Path, default):
     try:
@@ -202,30 +234,63 @@ def write_if_changed(p: Path, text: str):
         p.write_text(text, encoding="utf-8")
 
 
-def read_log() -> list[dict]:
-    if not LOG.exists():
-        return []
-    out = []
-    for line in LOG.read_text(encoding="utf-8").splitlines():
-        try:
-            out.append(json.loads(line))
-        except ValueError:
-            warn(f"Poškozený řádek v logu přeskočen: {line[:80]}")
-    return out
+class Store:
+    """Soubory jednoho podniku v data/<id>/."""
+
+    def __init__(self, pid: str):
+        self.dir = ROOT / pid
+        self.hist = self.dir / "historie.csv"
+        self.log = self.dir / "log.jsonl"
+        self.stav = self.dir / "stav.json"
+
+    def load_history(self) -> list[dict]:
+        if not self.hist.exists():
+            return []
+        with self.hist.open(encoding="utf-8", newline="") as f:
+            return list(csv.DictReader(f))
+
+    def save_history(self, rows: list[dict]):
+        with self.hist.open("w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=HIST_COLS, extrasaction="ignore")
+            w.writeheader()
+            w.writerows(rows)
+
+    def read_log(self) -> list[dict]:
+        if not self.log.exists():
+            return []
+        out = []
+        for line in self.log.read_text(encoding="utf-8").splitlines():
+            try:
+                out.append(json.loads(line))
+            except ValueError:
+                warn(f"Poškozený řádek v logu přeskočen: {line[:80]}")
+        return out
+
+    def append_log(self, entry: dict):
+        with self.log.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+    def seed_log_from_history(self, hist: list[dict]):
+        """Starší historie vznikla bez logu – zrekonstruuje z ní jednotlivé stavy."""
+        times = sorted({t for r in hist for t in (r["narazeno"], r["docepovano"]) if t})
+        for t in times:
+            lines = [r["raw"] for r in hist
+                     if r["narazeno"] <= t and (not r["docepovano"] or r["docepovano"] > t)]
+            self.append_log({"cas": t, "radky": lines, "metoda": "rekonstrukce"})
 
 
-def append_log(entry: dict):
-    with LOG.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
-
-
-def seed_log_from_history(hist: list[dict]):
-    """Starší historie vznikla bez logu – zrekonstruuje z ní jednotlivé stavy."""
-    times = sorted({t for r in hist for t in (r["narazeno"], r["docepovano"]) if t})
-    for t in times:
-        lines = [r["raw"] for r in hist
-                 if r["narazeno"] <= t and (not r["docepovano"] or r["docepovano"] > t)]
-        append_log({"cas": t, "radky": lines, "metoda": "rekonstrukce"})
+def migrate_old_layout():
+    """Původní verze ukládala Galerii přímo do data/ – přesune ji do data/galerie/."""
+    target = ROOT / "galerie"
+    old = [ROOT / n for n in ("historie.csv", "log.jsonl", "stav.json", "aktualne.json",
+                              "posledni_chyba.html")]
+    if any(p.exists() for p in old) and not (target / "historie.csv").exists():
+        target.mkdir(parents=True, exist_ok=True)
+        for p in old:
+            if p.exists():
+                shutil.move(str(p), target / p.name)
+        print("Data Galerie piva přesunuta do data/galerie/.")
+    (ROOT / "surove.txt").unlink(missing_ok=True)
 
 
 # ---------- párování piv ----------
@@ -301,50 +366,42 @@ def apply_state(hist: list[dict], lines: list[str], when: str, quiet=False):
 
 
 def rebuild() -> int:
-    log = read_log()
-    if not log:
-        print("::error::data/log.jsonl je prázdný, není z čeho přepočítat.")
-        return 1
-    hist = []
-    for e in log:
-        apply_state(hist, e["radky"], e["cas"], quiet=True)
-    save_history(hist)
-    print(f"Historie přepočítána z {len(log)} stavů → {len(hist)} naražení.")
+    migrate_old_layout()
+    for p in PODNIKY:
+        st = Store(p["id"])
+        log = st.read_log()
+        if not log:
+            print(f"{p['nazev']}: log je prázdný, přeskakuji.")
+            continue
+        hist = []
+        for e in log:
+            apply_state(hist, e["radky"], e["cas"], quiet=True)
+        st.save_history(hist)
+        print(f"{p['nazev']}: přepočítáno z {len(log)} stavů → {len(hist)} naražení.")
     return 0
 
 
-# ---------- upozornění ----------
+# ---------- jeden podnik ----------
 
-def telegram(text: str):
-    token, chat = os.getenv("TELEGRAM_TOKEN"), os.getenv("TELEGRAM_CHAT_ID")
-    if not (token and chat):
-        return
-    try:
-        requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
-                      data={"chat_id": chat, "text": text}, timeout=20)
-    except requests.RequestException as e:
-        warn(f"Telegram selhal: {e}")
-
-
-# ---------- hlavní běh ----------
-
-def main() -> int:
-    DATA.mkdir(exist_ok=True)
-    now_dt = datetime.now(TZ)
+def run_venue(p: dict, now_dt: datetime) -> bool:
+    """Vrací False, když podnik selhává déle, než je tolerance."""
+    name = p["nazev"]
+    st = Store(p["id"])
+    st.dir.mkdir(parents=True, exist_ok=True)
     now = now_dt.strftime("%Y-%m-%d %H:%M")
-    stav = load_json(STAV, {})
+    stav = load_json(st.stav, {})
     stav_before = json.dumps(stav, sort_keys=True)
 
     def save_stav():
         if json.dumps(stav, sort_keys=True) != stav_before:
-            STAV.write_text(json.dumps(stav, ensure_ascii=False, indent=2) + "\n",
-                            encoding="utf-8")
+            st.stav.write_text(json.dumps(stav, ensure_ascii=False, indent=2) + "\n",
+                               encoding="utf-8")
 
     # --- stažení a vytažení; jakákoli chyba se jen započítá ---
     html, lines, method, err = "", [], "nic", ""
     try:
-        html = fetch()
-        lines, method = extract_lines(html)
+        html = fetch(p["url"])
+        lines, method = extract_lines(html, p)
         if not lines:
             err = "sekce „Dnes na čepu“ nenalezena"
     except Exception as e:  # výpadek webu, síť…
@@ -354,73 +411,79 @@ def main() -> int:
         n = stav.get("chyby_v_rade", 0) + 1
         stav.update(chyby_v_rade=n, posledni_chyba=now, chyba=err[:300])
         if html:
-            (DATA / "posledni_chyba.html").write_text(html, encoding="utf-8")
+            (st.dir / "posledni_chyba.html").write_text(html, encoding="utf-8")
         save_stav()
-        if n < FAILS_BEFORE_ALERT:
+        if n < FAILS_BEFORE_ERROR:
             # Krátký výpadek – historie se nemění, běh zůstane zelený.
-            warn(f"Chyba {n}/{FAILS_BEFORE_ALERT - 1} tolerovaných: {err}")
-            return 0
-        print(f"::error::Hlídač selhává {n}× po sobě: {err} "
+            warn(f"{name}: chyba {n}/{FAILS_BEFORE_ERROR - 1} tolerovaných: {err}")
+            return True
+        print(f"::error::{name}: hlídač selhává {n}× po sobě: {err} "
               "(historie ponechána beze změny)")
-        if n == FAILS_BEFORE_ALERT:
-            telegram(f"⚠️ Hlídač Galerie piva selhává už {n}× po sobě:\n{err}")
-        return 1
+        return False
 
     # --- úspěch ---
-    if stav.get("chyby_v_rade", 0) >= FAILS_BEFORE_ALERT:
-        telegram("✅ Hlídač Galerie piva zase funguje.")
     stav["chyby_v_rade"] = 0
     stav.pop("chyba", None)
-    (DATA / "posledni_chyba.html").unlink(missing_ok=True)
+    (st.dir / "posledni_chyba.html").unlink(missing_ok=True)
     # jen datum → maximálně jeden „heartbeat“ commit denně, repo zůstane aktivní
     stav["posledni_kontrola"] = now_dt.strftime("%Y-%m-%d")
     stav["metoda"] = method
     stav["pocet_piv"] = len(lines)
-    if method != "nadpis":
-        warn(f"Použita záložní metoda vytažení: {method}")
+    if method not in ("selektor", "nadpis"):
+        warn(f"{name}: použita záložní metoda vytažení: {method}")
 
-    hist = load_history()
-    log = read_log()
+    hist = st.load_history()
+    log = st.read_log()
     if not log and hist:
-        seed_log_from_history(hist)
-        log = read_log()
+        st.seed_log_from_history(hist)
+        log = st.read_log()
 
-    changed = not log or log[-1]["radky"] != lines
-    if changed:
-        append_log({"cas": now, "radky": lines, "metoda": method})
+    if not log or log[-1]["radky"] != lines:
+        st.append_log({"cas": now, "radky": lines, "metoda": method})
         beers, new, gone, updated = apply_state(hist, lines, now)
-        save_history(hist)
-        write_if_changed(DATA / "surove.txt", "\n".join(lines) + "\n")
-        (DATA / "aktualne.json").write_text(json.dumps({
-            "zdroj": URL, "zmeneno": now, "metoda": method,
+        st.save_history(hist)
+        write_if_changed(st.dir / "aktualne.json", json.dumps({
+            "zdroj": p["url"], "zmeneno": now, "metoda": method,
             "piva": [{k: b[k] for k in ("pozice", "pivovar", "nazev", "stupen",
                                          "alkohol", "styl", "raw")} for b in beers],
-        }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        }, ensure_ascii=False, indent=2) + "\n")
         if new or gone:
             stav["posledni_zmena"] = now
             stav.pop("upozorneno_necinnost", None)
-        msg = [f"🍺 Galerie piva – změna na čepu ({now})"]
+        msg = [f"🍺 {name} – změna na čepu ({now})"]
         msg += [f"➕ {b['raw']}" for b in new]
         msg += [f"➖ {r['raw']}" for r in gone]
         msg += [f"✏️ upraveno: {b['raw']}" for b in updated]
         print("\n".join(msg))
-        if new or gone:
-            telegram("\n".join(msg))
     else:
-        print(f"Beze změny ({len(lines)} piv, metoda {method}).")
+        print(f"{name}: beze změny ({len(lines)} piv, metoda {method}).")
 
     stav.setdefault("posledni_zmena", now)
-    # dlouho beze změny → jednorázové upozornění (web se možná neaktualizuje)
     last = datetime.strptime(stav["posledni_zmena"], "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
     idle = (now_dt - last).days
     if idle >= STALE_DAYS and not stav.get("upozorneno_necinnost"):
-        warn(f"Nabídka se nezměnila {idle} dní.")
-        telegram(f"🤔 Galerie piva: nabídka na webu se nezměnila {idle} dní. "
-                 "Buď se netočí, nebo web nikdo neaktualizuje.")
+        warn(f"{name}: nabídka se nezměnila {idle} dní.")
         stav["upozorneno_necinnost"] = now
 
     save_stav()
-    return 0
+    return True
+
+
+def main() -> int:
+    ROOT.mkdir(exist_ok=True)
+    migrate_old_layout()
+    write_if_changed(ROOT / "podniky.json", json.dumps(
+        [{k: p[k] for k in ("id", "nazev", "url")} for p in PODNIKY],
+        ensure_ascii=False, indent=2) + "\n")
+    now_dt = datetime.now(TZ)
+    ok = True
+    for p in PODNIKY:          # jeden rozbitý podnik neblokuje ostatní
+        try:
+            ok = run_venue(p, now_dt) and ok
+        except Exception as e:
+            print(f"::error::{p['nazev']}: neočekávaná chyba: {e}")
+            ok = False
+    return 0 if ok else 1
 
 
 if __name__ == "__main__":
