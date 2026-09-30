@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/32844636/README.md)
+[README.md](https://github.com/user-attachments/files/32853068/README.md)
 # Hlídač čepů
 
 Automaticky sleduje nabídku **„Dnes na čepu“** ve více podnicích, ukládá historii toho,
@@ -8,6 +8,7 @@ co se kdy narazilo a dočepovalo, a zobrazuje ji na přehledové stránce.
 |---|---|---|
 | Galerie piva | [galeriepiva.cz](https://www.galeriepiva.cz/) | `data/galerie/` |
 | sedm° | [sedmstupnu.cz](https://www.sedmstupnu.cz/) | `data/sedm/` |
+| Pivnice Clock | [pivniceclock.cz/nabidka](https://www.pivniceclock.cz/nabidka/) | `data/clock/` |
 
 Každý podnik má vlastní data a běží nezávisle: když jeden web spadne, druhý se sbírá dál.
 
@@ -41,6 +42,10 @@ Každý podnik má vlastní data a běží nezávisle: když jeden web spadne, d
 - **Tiché selhání se pozná.** `stav.json` se aktualizuje jednou denně, takže stránka pozná, že
   hlídač neběží. Když se nabídka přes týden nezmění, ukáže stránka upozornění. Denní commit
   zároveň drží repo aktivní, aby GitHub plánované běhy nevypnul.
+
+U Pivnice Clock se bere jen tabulka „Na čepu“ (ne lahve, plechovky ani jídlo), ceny se
+ignorují, takže změna ceny se nepočítá jako změna piva. Pivovar se tam neuvádí, doplňuje se
+„Clock“. Nealko a limonáda z čepu se ukládají taky; na stránce mají vlastní styl.
 
 Časy jsou přesné zhruba na 2 hodiny a odpovídají změně na webu, ne na výčepu.
 Hlídač běží zhruba od 6:00 do půlnoci.
