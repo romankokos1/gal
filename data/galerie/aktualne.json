@@ -1,16 +1,16 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-09-30 16:56",
+  "zmeneno": "2026-09-30 22:49",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "SIBEERIA",
-      "nazev": "Everyday Life",
-      "stupen": "12",
-      "alkohol": "5.1",
+      "pivovar": "VŠERAD",
+      "nazev": "Jiřík",
+      "stupen": "11",
+      "alkohol": "4.5",
       "styl": "světlý ležák",
-      "raw": "SIBEERIA – Everyday Life 12°/5,1% světlý ležák"
+      "raw": "VŠERAD – Jiřík 11°/4,5% světlý ležák"
     },
     {
       "pozice": 2,
@@ -23,30 +23,30 @@
     },
     {
       "pozice": 3,
-      "pivovar": "ČERNÝ POTOKA",
-      "nazev": "Blitzkrieeg",
-      "stupen": "15",
-      "alkohol": "6.8",
-      "styl": "American IPA",
-      "raw": "ČERNÝ POTOKA – Blitzkrieeg 15°/6,8% American IPA"
+      "pivovar": "MAZÁK",
+      "nazev": "Rhapsody",
+      "stupen": "14",
+      "alkohol": "6",
+      "styl": "Modern IPA (nz rhapsody)",
+      "raw": "MAZÁK – Rhapsody 14°/6% Modern IPA (nz rhapsody)"
     },
     {
       "pozice": 4,
-      "pivovar": "SKJUBRU & GALERIE PIVA",
-      "nazev": "To se Muselo Stout",
-      "stupen": "13",
-      "alkohol": "5.6",
-      "styl": "čokolado malinový stout",
-      "raw": "SKJUBRU & GALERIE PIVA – To se Muselo Stout 13°/5,6% čokolado malinový stout"
+      "pivovar": "",
+      "nazev": "PINTA: El Bandido",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "pinta měsíce: mexický ležák",
+      "raw": "PINTA: El Bandido 12°/5% pinta měsíce: mexický ležák"
     },
     {
       "pozice": 5,
-      "pivovar": "SKJUBRU",
-      "nazev": "Breakfast of Champions",
-      "stupen": "14",
-      "alkohol": "6.4",
-      "styl": "Smootie Lassi Milkshake černým rybízem, malinou jahodou a bananem !LAKTÓZA!",
-      "raw": "SKJUBRU – Breakfast of Champions 14°/6,4% Smootie Lassi Milkshake černým rybízem, malinou jahodou a bananem !LAKTÓZA!"
+      "pivovar": "ZICHOVEC",
+      "nazev": "Pink Breeze",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "kyseláč s malinami, jahodami a mátou",
+      "raw": "ZICHOVEC – Pink Breeze 12°/5,1% kyseláč s malinami, jahodami a mátou"
     }
   ]
 }

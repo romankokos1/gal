@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-09-30 13:06",
+  "zmeneno": "2026-09-30 22:49",
   "metoda": "nadpis",
   "piva": [
     {
@@ -24,15 +24,6 @@
     {
       "pozice": 3,
       "pivovar": "Clock",
-      "nazev": "Goldie",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Weizenbier",
-      "raw": "11° Goldie (Weizenbier)"
-    },
-    {
-      "pozice": 4,
-      "pivovar": "Clock",
       "nazev": "Hex",
       "stupen": "11",
       "alkohol": "",
@@ -40,13 +31,22 @@
       "raw": "11° Hex (Modern Pale Ale)"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "Clock",
       "nazev": "Helga",
       "stupen": "13",
       "alkohol": "",
       "styl": "Festbier",
       "raw": "13° Helga (Festbier)"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Clock",
+      "nazev": "Podzim",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "NEIPA",
+      "raw": "13° Podzim (NEIPA)"
     },
     {
       "pozice": 6,
