@@ -1,0 +1,79 @@
+{
+  "zdroj": "https://www.sedmstupnu.cz/",
+  "zmeneno": "2026-09-30 09:28",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "brewnicorn",
+      "nazev": "pivorožec",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "Lager",
+      "raw": "brewnicorn - pivorožec | 11% | Lager, ABV 4,6%"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Nozib",
+      "nazev": "Goseteria #10",
+      "stupen": "10",
+      "alkohol": "3.7",
+      "styl": "Gose",
+      "raw": "Nozib - Goseteria #10 | 10% | Gose, ABV 3,7%"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "čestmír",
+      "nazev": "juicy bastard",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "session neipa",
+      "raw": "čestmír - juicy bastard | 12% | session neipa, ABV 5%"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "černý potoka",
+      "nazev": "disco radši ne 2",
+      "stupen": "11",
+      "alkohol": "4.8",
+      "styl": "session neipa",
+      "raw": "černý potoka - disco radši ne 2 | 11% | session neipa, ABV 4,8%"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Vik",
+      "nazev": "Groovy Storm",
+      "stupen": "15",
+      "alkohol": "5.6",
+      "styl": "NEIPA",
+      "raw": "Vik - Groovy Storm | 15% | NEIPA, ABV 5,6%"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Čestmír",
+      "nazev": "Smash APA: Krush",
+      "stupen": "12",
+      "alkohol": "5.2",
+      "styl": "APA",
+      "raw": "Čestmír - Smash APA: Krush | 12% | APA, ABV 5,2%"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Chroust",
+      "nazev": "Age Of Krush",
+      "stupen": "14",
+      "alkohol": "5.8",
+      "styl": "West Coast IPA",
+      "raw": "Chroust - Age Of Krush | 14% | West Coast IPA, ABV 5,8%"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Haksna",
+      "nazev": "Orange Stout",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "Stout",
+      "raw": "Haksna - Orange Stout | 13% | Stout, ABV 5,5%"
+    }
+  ]
+}
