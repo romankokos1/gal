@@ -218,8 +218,9 @@ $("#file").onchange = e => { const f=e.target.files[0]; if(f) f.text().then(init
 
 /* ---------- odvozená data ---------- */
 const STYLES = [
+  ["Nealko / Limonáda", /alcohol free|alkohol free|nealko|limonad|\b0 0\b|kombucha/],
   ["Milkshake / Smoothie", /milkshake|smoothie|smootie|lassi|pastry/],
-  ["Sour", /sour|gose|berliner|kyse|lambic|wild/],
+  ["Sour", /sour|gose|berliner|\bb w\b|kyse|lambic|wild/],
   ["IPL", /india pale lager|\bipl\b/],
   ["NEIPA", /neipa|new england|hazy|\bne ipa/],
   ["DIPA / TIPA", /\bdipa\b|\btipa\b|double ipa|triple ipa|imperial ipa|dvojit/],
@@ -229,7 +230,7 @@ const STYLES = [
   ["Porter", /porter/],
   ["Pšeničné", /weiz|weiss|psenic|\bwit\b|hefe/],
   ["Bock", /bock/],
-  ["Ležák / Lager", /lezak|lager|pils|vycepni|helles|kellerbier|zwickl/],
+  ["Ležák / Lager", /lezak|lager|pils|vycepni|helles|kellerbier|zwickl|festbier|marzen|marz/],
   ["Tmavé", /tmav|dark|cerne|schwarz/],
   ["Ale", /\bale\b|saison|belgic|tripel|dubbel|quad/],
 ];
