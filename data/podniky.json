@@ -8,5 +8,10 @@
     "id": "sedm",
     "nazev": "sedm°",
     "url": "https://www.sedmstupnu.cz/"
+  },
+  {
+    "id": "clock",
+    "nazev": "Pivnice Clock",
+    "url": "https://www.pivniceclock.cz/nabidka/"
   }
 ]

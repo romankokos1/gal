@@ -1,0 +1,70 @@
+{
+  "zdroj": "https://www.pivniceclock.cz/nabidka/",
+  "zmeneno": "2026-09-30 13:06",
+  "metoda": "nadpis",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Clock",
+      "nazev": "Hektor",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "Výčepní",
+      "raw": "10° Hektor (Výčepní)"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Clock",
+      "nazev": "Nina",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "Raspberry B.W.",
+      "raw": "10° Nina (Raspberry B.W.)"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Clock",
+      "nazev": "Goldie",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Weizenbier",
+      "raw": "11° Goldie (Weizenbier)"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Clock",
+      "nazev": "Hex",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Modern Pale Ale",
+      "raw": "11° Hex (Modern Pale Ale)"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Clock",
+      "nazev": "Helga",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "Festbier",
+      "raw": "13° Helga (Festbier)"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Clock",
+      "nazev": "Bezovka",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Limonáda",
+      "raw": "Bezovka (Limonáda)"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Clock",
+      "nazev": "Leviticus",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Alcohol Free",
+      "raw": "Leviticus (Alcohol Free)"
+    }
+  ]
+}
