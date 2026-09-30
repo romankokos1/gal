@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Galerie piva – čepy</title>
+<title>Hlídač čepů</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -92,6 +92,8 @@ tr.click:hover td{background:var(--surface-2)}
 #tip b{display:block}
 #tip span{font-family:var(--mono);color:var(--text-2)}
 
+.venue button{font-weight:600}
+.venue button.on{background:var(--accent);color:#1a1405}
 .warn{background:#3a2a12;border:1px solid #6b4b1a;color:#f5d9a6;border-radius:var(--radius);padding:10px 14px;margin-bottom:14px;font-size:13px}
 .warn b{color:#ffe2ad}
 .status{font-family:var(--mono);font-size:12px;color:var(--muted)}
@@ -111,12 +113,13 @@ tr.click:hover td{background:var(--surface-2)}
 <body>
 <div class="wrap">
   <header>
-    <h1>Galerie piva <span>· čepy</span></h1>
+    <h1>Hlídač <span>čepů</span></h1>
+    <div class="seg venue hidden" id="venue"></div>
     <div class="sub" id="meta">načítám…</div>
   </header>
 
   <div id="loadfail" class="card hidden">
-    <p>Nepodařilo se načíst <code>data/historie.csv</code>. Na GitHub Pages se načte samo; lokálně ho vyber ručně:</p>
+    <p>Nepodařilo se načíst historii podniku. Na GitHub Pages se načte samo; lokálně ho vyber ručně:</p>
     <input type="file" id="file" accept=".csv">
   </div>
 
@@ -182,11 +185,34 @@ function parseCSV(t){
 }
 
 const get = (u,text) => fetch(u,{cache:"no-store"}).then(r=>r.ok?(text?r.text():r.json()):null).catch(()=>null);
+let VENUES=[], VENUE=null;
 async function boot(){
-  const [csv, al, st] = await Promise.all([get("data/historie.csv",1), get("aliasy.json"), get("data/stav.json")]);
-  setAliases(al); STAV = st;
+  const [list, al] = await Promise.all([get("data/podniky.json"), get("aliasy.json")]);
+  setAliases(al);
+  // starší verze bez podniky.json měla data přímo v data/
+  VENUES = (list&&list.length) ? list.map(v=>({...v, base:`data/${v.id}/`})) : [{id:"", nazev:"Galerie piva", base:"data/"}];
+  const vb=$("#venue");
+  vb.innerHTML = VENUES.map(v=>`<button data-v="${esc(v.id)}">${esc(v.nazev)}</button>`).join("");
+  if(VENUES.length>1) vb.classList.remove("hidden");
+  vb.onclick = e => { const b=e.target.closest("button"); if(b) loadVenue(b.dataset.v); };
+  const want = decodeURIComponent(location.hash.slice(1));
+  loadVenue(VENUES.some(v=>v.id===want) ? want : VENUES[0].id);
+}
+async function loadVenue(id){
+  VENUE = VENUES.find(v=>v.id===id);
+  document.querySelectorAll("#venue button").forEach(b=>b.classList.toggle("on", b.dataset.v===id));
+  if(id) history.replaceState(null,"","#"+encodeURIComponent(id));
+  document.title = "Hlídač čepů · " + VENUE.nazev;
+  F.brew=null; F.style=null;
+  for(const k of Object.keys(brewDisplay)) if(!ALIAS_T.has(k)) delete brewDisplay[k];
+  $("#meta").textContent="načítám…";
+  const [csv, st] = await Promise.all([get(VENUE.base+"historie.csv",1), get(VENUE.base+"stav.json")]);
+  if(VENUE.id!==id) return;           // mezitím přepnuto jinam
+  STAV = st;
+  $("#loadfail").classList.add("hidden");
   if(csv) init(csv);
-  else { $("#meta").textContent="data nenačtena"; $("#loadfail").classList.remove("hidden"); }
+  else if(location.protocol==="file:"){ $("#app").classList.add("hidden"); $("#meta").textContent="data nenačtena"; $("#loadfail").classList.remove("hidden"); }
+  else { $("#app").classList.add("hidden"); $("#meta").textContent="zatím žádná data – hlídač je stáhne při příštím běhu"; }
 }
 $("#file").onchange = e => { const f=e.target.files[0]; if(f) f.text().then(init) };
 
@@ -247,7 +273,7 @@ function init(text){
     brews.forEach(b=>{ const k=brewCanon(b), d=b.replace(/\b(pivovar|minipivovar)\s+/i,"");
       if(!ALIAS_T.has(k) && (!brewDisplay[k] || d.length<brewDisplay[k].length)) brewDisplay[k]=d; });
     return {...r, from, to, open:!to,
-      days: from ? ((to||NOW)-from)/DAY : null,
+      days: from ? Math.max(0,((to||NOW)-from)/DAY) : null,
       brews: keys,
       collab: keys.length>1,
       style: styleOf(r),
@@ -257,7 +283,7 @@ function init(text){
       hay: norm([r.raw,r.pivovar,r.nazev,r.styl].join(" ")),
     };
   }).filter(r=>r.from).sort((a,b)=>a.from-b.from);
-  if(!ALL.length){ $("#meta").textContent="zatím žádná data"; return; }
+  if(!ALL.length){ $("#app").classList.add("hidden"); $("#meta").textContent="zatím žádná data"; return; }
   $("#meta").textContent = `sledováno od ${fmtD(ALL[0].from)} · ${ALL.length} naražení`;
   $("#app").classList.remove("hidden");
   $("#warn").innerHTML = warnings();
