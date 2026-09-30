@@ -38,6 +38,9 @@ PODNIKY = [
      "polozky": "ul.elementor-price-list > li",
      "pole": [".elementor-price-list-title", ".elementor-price-list-price",
               ".elementor-price-list-description"]},
+    # pivovarská pivnice – na čepu jen vlastní piva, pivovar se v textu neuvádí
+    {"id": "clock", "nazev": "Pivnice Clock", "url": "https://www.pivniceclock.cz/nabidka/",
+     "pivovar": "Clock"},
 ]
 
 ROOT = Path(__file__).parent / "data"
@@ -86,6 +89,7 @@ def fetch(url: str) -> str:
 # ---------- vytažení řádků (víc strategií, od nejpřesnější) ----------
 
 BEER_HINT = re.compile(r"\d\s*°|\d\s*%")
+PRICE = re.compile(r"^\s*\d+(?:[.,]\d+)?\s*(?:,-)?\s*(?:Kč|CZK|,-)\s*$", re.I)
 NUMBERING = re.compile(r"^\s*\d{1,2}\s*[.)]\s*")
 HEADING = re.compile(r"^h[1-6]$")
 
@@ -108,12 +112,24 @@ def lines_after_heading(h) -> list[str]:
         if HEADING.match(el.name or "") or el.find(HEADING):
             break
         lis = el.find_all("li")
-        texts = [li.get_text(" ") for li in lis] if lis else [el.get_text(" ")]
+        trs = [tr for tr in el.find_all("tr") if tr.find("td")]
+        if trs:
+            texts = [row_text(tr) for tr in trs]
+        elif lis:
+            texts = [li.get_text(" ") for li in lis]
+        else:
+            texts = [el.get_text(" ")]
         for t in texts:
             t = strip_num(clean(t))
             if t:
                 out.append(t)
     return out
+
+
+def row_text(tr) -> str:
+    """Řádek tabulky bez buněk s cenou (změna ceny není změna piva)."""
+    cells = [clean(td.get_text(" ")) for td in tr.find_all("td")]
+    return " | ".join(c for c in cells if c and not PRICE.match(c))
 
 
 def by_selector(soup, p) -> list[str]:
@@ -177,7 +193,10 @@ ABV_LABEL = re.compile(r"(?:ABV|alk\.?|alkohol)\s*:?\s*" + NUM + r"\s*%", re.I)
 PCT = re.compile(NUM + r"\s*%")
 
 
-def parse_item(raw: str, quiet: bool = False) -> dict:
+PAREN = re.compile(r"^(.*?)\s*\(([^()]*)\)\s*$")
+
+
+def parse_item(raw: str, quiet: bool = False, default_brewery: str = "") -> dict:
     out = {"raw": raw, "pivovar": "", "nazev": "", "stupen": "",
            "alkohol": "", "styl": ""}
     rest = raw
@@ -211,10 +230,24 @@ def parse_item(raw: str, quiet: bool = False) -> dict:
             pos = m.end()
         pieces.append(rest[pos:])
         out["styl"] = " ".join(x.strip(" |/,-") for x in pieces if x.strip(" |/,-"))
+        if not out["nazev"] and out["styl"]:
+            # „10° Hektor (Výčepní)“ – stupeň na začátku, styl v závorce
+            m = PAREN.match(out["styl"])
+            out["nazev"], out["styl"] = (m.group(1), m.group(2)) if m and m.group(1) \
+                else (out["styl"], "")
     else:
-        out["nazev"] = rest.strip(" |")  # bez čísel – celý zbytek je název
+        m = PAREN.match(rest.strip(" |"))
+        if m and m.group(1):
+            out["nazev"], out["styl"] = m.group(1).strip(" |"), m.group(2)
+        else:
+            out["nazev"] = rest.strip(" |")  # bez čísel – celý zbytek je název
 
-    missing = [k for k in ("pivovar", "stupen", "alkohol") if not out[k]]
+    if not out["pivovar"] and default_brewery:
+        out["pivovar"] = default_brewery
+
+    missing = [k for k in ("pivovar", "nazev") if not out[k]]
+    if not (out["stupen"] or out["alkohol"]):
+        missing.append("stupeň i %")
     if missing and not quiet:
         warn(f"Neúplně rozparsováno ({', '.join(missing)}): {raw}")
     return out
@@ -323,11 +356,12 @@ def same_beer(row: dict, b: dict) -> bool:
     return False
 
 
-def apply_state(hist: list[dict], lines: list[str], when: str, quiet=False):
+def apply_state(hist: list[dict], lines: list[str], when: str, quiet=False,
+                default_brewery: str = ""):
     """Promítne jeden stav čepů do historie. Vrací (piva, nová, dočepovaná, upravená)."""
     beers = []
     for i, raw in enumerate(lines, 1):
-        b = parse_item(raw, quiet=quiet)
+        b = parse_item(raw, quiet=quiet, default_brewery=default_brewery)
         b["pozice"] = i
         b["klic"] = beer_key(b)
         beers.append(b)
@@ -375,7 +409,8 @@ def rebuild() -> int:
             continue
         hist = []
         for e in log:
-            apply_state(hist, e["radky"], e["cas"], quiet=True)
+            apply_state(hist, e["radky"], e["cas"], quiet=True,
+                        default_brewery=p.get("pivovar", ""))
         st.save_history(hist)
         print(f"{p['nazev']}: přepočítáno z {len(log)} stavů → {len(hist)} naražení.")
     return 0
@@ -440,7 +475,8 @@ def run_venue(p: dict, now_dt: datetime) -> bool:
 
     if not log or log[-1]["radky"] != lines:
         st.append_log({"cas": now, "radky": lines, "metoda": method})
-        beers, new, gone, updated = apply_state(hist, lines, now)
+        beers, new, gone, updated = apply_state(hist, lines, now,
+                                                default_brewery=p.get("pivovar", ""))
         st.save_history(hist)
         write_if_changed(st.dir / "aktualne.json", json.dumps({
             "zdroj": p["url"], "zmeneno": now, "metoda": method,
