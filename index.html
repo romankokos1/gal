@@ -101,6 +101,7 @@ input[type=search]:focus{outline:1px solid var(--accent);border-color:var(--acce
 .tap .nm{font-weight:600}
 .tap .br{color:var(--text-2);font-size:12px}
 .tap .st{color:var(--muted);font-size:12px}
+.tap .nx{color:var(--accent-ink);font-size:12px;margin-top:2px}
 .tap .num{font:500 12px var(--mono);color:var(--text-2);text-align:right;white-space:nowrap}
 
 /* vodorovné sloupce */
@@ -604,7 +605,7 @@ function renderPrehled(R){
   const now=$("#now");
   now.innerHTML = open.length ? open.sort((a,b)=>(+a.pozice||0)-(+b.pozice||0)).map((r,i)=>`
     <div class="tap" data-beer="${esc(r.beerKey)}"><span class="n">${i+1}</span>
-      <div><div class="nm">${esc(r.label)}</div><div class="br">${esc(r.pivovar||"")}</div><div class="st">${esc(r.styl||"")}</div></div>
+      <div><div class="nm">${esc(r.label)}</div><div class="br">${esc(r.pivovar||"")}</div><div class="st">${esc(r.styl||"")}</div>${r.dalsi?`<div class="nx">→ potom: ${esc(r.dalsi)}</div>`:""}</div>
       <div class="num">${r.deg?r.deg+"°":""} ${r.abv?fmtN(r.abv)+" %":""}<br><span class="dim">${fmtN(r.days)} d</span></div></div>`).join("")
     : `<div class="empty">nic</div>`;
 
@@ -882,7 +883,8 @@ function openBeer(key){
   const others=byBeer(ALLX.filter(r=>r.beerKey!==key && r.brews.some(b=>r0.brews.includes(b)))).sort((a,b)=>b.last-a.last).slice(0,6);
   const nowOn=R.filter(r=>r.open);
   openSheet(head("Pivo", r0.label, `${brewLinks(r0.brews)}${r0.styl?` · ${esc(r0.styl)}`:""} <span class="pill acc">${esc(r0.style)}</span>`
-      + (nowOn.length?`<br><span class="live">● teď na čepu: ${nowOn.map(r=>esc(r.venueName)).join(", ")}</span>`:""))
+      + (nowOn.length?`<br><span class="live">● teď na čepu: ${nowOn.map(r=>esc(r.venueName)).join(", ")}</span>`:"")
+      + (nowOn.some(r=>r.dalsi)?`<br><span class="dim">potom poteče: ${esc(nowOn.find(r=>r.dalsi).dalsi)}</span>`:""))
     + mstats([
       deg?[deg+"°","stupeň"]:null, abv?[fmtN(abv)+" %","alkohol"]:null,
       [R.length+"×","naraženo"], [Object.keys(vc).length,"podniků"],
