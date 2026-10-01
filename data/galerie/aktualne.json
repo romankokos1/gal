@@ -1,25 +1,25 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-09-30 22:49",
+  "zmeneno": "2026-10-01 16:35",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "VŠERAD",
-      "nazev": "Jiřík",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "světlý ležák",
-      "raw": "VŠERAD – Jiřík 11°/4,5% světlý ležák"
+      "pivovar": "HOPE",
+      "nazev": "Souhra",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "světlý ležák (saaz shine, premiant)",
+      "raw": "HOPE – Souhra 12°/5,1% světlý ležák (saaz shine, premiant)"
     },
     {
       "pozice": 2,
-      "pivovar": "ONE HOPE",
+      "pivovar": "HOPE",
       "nazev": "Two Traces",
       "stupen": "11",
       "alkohol": "5.1",
-      "styl": "Session IPA (mosaic, idaho 7)",
-      "raw": "ONE HOPE – Two Traces 11°/5,1% Session IPA (mosaic, idaho 7)"
+      "styl": "Session IPA (mosaic, idaho 7) //NEXT// ČERNÝ POTOKA – Monoceros 11°/4,7% session Hazy IPA (chinook, citra, columbus)",
+      "raw": "HOPE – Two Traces 11°/5,1% Session IPA (mosaic, idaho 7) //NEXT// ČERNÝ POTOKA – Monoceros 11°/4,7% session Hazy IPA (chinook, citra, columbus)"
     },
     {
       "pozice": 3,
