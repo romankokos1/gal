@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-01 16:35",
+  "zmeneno": "2026-10-01 20:25",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,16 +10,18 @@
       "stupen": "12",
       "alkohol": "5.1",
       "styl": "světlý ležák (saaz shine, premiant)",
+      "dalsi": "",
       "raw": "HOPE – Souhra 12°/5,1% světlý ležák (saaz shine, premiant)"
     },
     {
       "pozice": 2,
-      "pivovar": "HOPE",
-      "nazev": "Two Traces",
+      "pivovar": "ČERNÝ POTOKA",
+      "nazev": "Monoceros",
       "stupen": "11",
-      "alkohol": "5.1",
-      "styl": "Session IPA (mosaic, idaho 7) //NEXT// ČERNÝ POTOKA – Monoceros 11°/4,7% session Hazy IPA (chinook, citra, columbus)",
-      "raw": "HOPE – Two Traces 11°/5,1% Session IPA (mosaic, idaho 7) //NEXT// ČERNÝ POTOKA – Monoceros 11°/4,7% session Hazy IPA (chinook, citra, columbus)"
+      "alkohol": "4.7",
+      "styl": "session Hazy IPA (chinook, citra, columbus)",
+      "dalsi": "",
+      "raw": "ČERNÝ POTOKA – Monoceros 11°/4,7% session Hazy IPA (chinook, citra, columbus)"
     },
     {
       "pozice": 3,
@@ -28,15 +30,17 @@
       "stupen": "14",
       "alkohol": "6",
       "styl": "Modern IPA (nz rhapsody)",
+      "dalsi": "",
       "raw": "MAZÁK – Rhapsody 14°/6% Modern IPA (nz rhapsody)"
     },
     {
       "pozice": 4,
-      "pivovar": "",
-      "nazev": "PINTA: El Bandido",
+      "pivovar": "PINTA",
+      "nazev": "El Bandido",
       "stupen": "12",
       "alkohol": "5",
       "styl": "pinta měsíce: mexický ležák",
+      "dalsi": "",
       "raw": "PINTA: El Bandido 12°/5% pinta měsíce: mexický ležák"
     },
     {
@@ -46,6 +50,7 @@
       "stupen": "12",
       "alkohol": "5.1",
       "styl": "kyseláč s malinami, jahodami a mátou",
+      "dalsi": "",
       "raw": "ZICHOVEC – Pink Breeze 12°/5,1% kyseláč s malinami, jahodami a mátou"
     }
   ]

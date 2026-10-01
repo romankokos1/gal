@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-01 16:53",
+  "zmeneno": "2026-10-01 20:25",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,6 +55,16 @@
     },
     {
       "pozice": 6,
+      "pivovar": "Falkon",
+      "nazev": "Nova 02",
+      "stupen": "10",
+      "alkohol": "4.2",
+      "styl": "Pale Ale",
+      "dalsi": "",
+      "raw": "Falkon - Nova 02 | 10% | Pale Ale, ABV 4,2%"
+    },
+    {
+      "pozice": 7,
       "pivovar": "Haksna",
       "nazev": "Nest In West",
       "stupen": "15",
@@ -64,7 +74,7 @@
       "raw": "Haksna - Nest In West | 15% | West Coast IPA, ABV 6,5%"
     },
     {
-      "pozice": 7,
+      "pozice": 8,
       "pivovar": "Haksna",
       "nazev": "Orange Stout",
       "stupen": "13",
