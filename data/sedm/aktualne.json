@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-01 20:25",
+  "zmeneno": "2026-10-02 01:52",
   "metoda": "selektor",
   "piva": [
     {
@@ -72,16 +72,6 @@
       "styl": "West Coast IPA",
       "dalsi": "",
       "raw": "Haksna - Nest In West | 15% | West Coast IPA, ABV 6,5%"
-    },
-    {
-      "pozice": 8,
-      "pivovar": "Haksna",
-      "nazev": "Orange Stout",
-      "stupen": "13",
-      "alkohol": "5.5",
-      "styl": "Stout",
-      "dalsi": "",
-      "raw": "Haksna - Orange Stout | 13% | Stout, ABV 5,5%"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-01 20:25",
+  "zmeneno": "2026-10-02 01:52",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,8 +10,8 @@
       "stupen": "12",
       "alkohol": "5.1",
       "styl": "světlý ležák (saaz shine, premiant)",
-      "dalsi": "",
-      "raw": "HOPE – Souhra 12°/5,1% světlý ležák (saaz shine, premiant)"
+      "dalsi": "SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák",
+      "raw": "HOPE – Souhra 12°/5,1% světlý ležák (saaz shine, premiant) //NEXT// SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák"
     },
     {
       "pozice": 2,
@@ -20,8 +20,8 @@
       "stupen": "11",
       "alkohol": "4.7",
       "styl": "session Hazy IPA (chinook, citra, columbus)",
-      "dalsi": "",
-      "raw": "ČERNÝ POTOKA – Monoceros 11°/4,7% session Hazy IPA (chinook, citra, columbus)"
+      "dalsi": "MATUŠKA – California 12°/5,3%/45IBU APA (saaz, cascade)",
+      "raw": "ČERNÝ POTOKA – Monoceros 11°/4,7% session Hazy IPA (chinook, citra, columbus) //NEXT// MATUŠKA – California 12°/5,3%/45IBU APA (saaz, cascade)"
     },
     {
       "pozice": 3,
@@ -30,8 +30,8 @@
       "stupen": "14",
       "alkohol": "6",
       "styl": "Modern IPA (nz rhapsody)",
-      "dalsi": "",
-      "raw": "MAZÁK – Rhapsody 14°/6% Modern IPA (nz rhapsody)"
+      "dalsi": "FRANKIES + KOSMIX – Sinatra 16°/7%/25IBU New England IPA (motueka, citra, nelson, superdelic)",
+      "raw": "MAZÁK – Rhapsody 14°/6% Modern IPA (nz rhapsody) //NEXT// FRANKIES + KOSMIX – Sinatra 16°/7%/25IBU New England IPA (motueka, citra, nelson, superdelic)"
     },
     {
       "pozice": 4,
@@ -40,18 +40,18 @@
       "stupen": "12",
       "alkohol": "5",
       "styl": "pinta měsíce: mexický ležák",
-      "dalsi": "",
-      "raw": "PINTA: El Bandido 12°/5% pinta měsíce: mexický ležák"
+      "dalsi": "PIVOVAR VIK – Paper Guillotine 23°/10%/65IBU DDH Triple IPA (citra, simcoe)",
+      "raw": "PINTA: El Bandido 12°/5% pinta měsíce: mexický ležák //NEXT// PIVOVAR VIK – Paper Guillotine 23°/10%/65IBU DDH Triple IPA (citra, simcoe)"
     },
     {
       "pozice": 5,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Pink Breeze",
+      "pivovar": "PIVOVAR VIK",
+      "nazev": "Jungle Juice",
       "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "kyseláč s malinami, jahodami a mátou",
-      "dalsi": "",
-      "raw": "ZICHOVEC – Pink Breeze 12°/5,1% kyseláč s malinami, jahodami a mátou"
+      "alkohol": "5",
+      "styl": "kyseláč s ananasem, mučenkou a guavou",
+      "dalsi": "HOPPYDOG – Hafananas 12°/4,1% Gose s ananasem, mangem, koriandrem a solí",
+      "raw": "PIVOVAR VIK – Jungle Juice 12°/5% kyseláč s ananasem, mučenkou a guavou //NEXT// HOPPYDOG – Hafananas 12°/4,1% Gose s ananasem, mangem, koriandrem a solí"
     }
   ]
 }
