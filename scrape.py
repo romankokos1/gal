@@ -46,7 +46,10 @@ PODNIKY = [
 ROOT = Path(__file__).parent / "data"
 TZ = ZoneInfo("Europe/Prague")
 HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
-             "raw", "narazeno", "docepovano"]
+             "raw", "narazeno", "docepovano", "dalsi"]
+# Zvýšit při každé změně parsování/párování → historie se při příštím běhu
+# sama přepočítá z logu (log se nikdy nemění).
+PARSER_VERSION = 2
 FAILS_BEFORE_ERROR = 3            # ~6 hodin výpadku při běhu po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
 
@@ -96,6 +99,12 @@ HEADING = re.compile(r"^h[1-6]$")
 
 def strip_num(text: str) -> str:
     return NUMBERING.sub("", text).strip()
+
+
+def is_junk(line: str) -> bool:
+    """Prázdný kohout / oddělovač („---“, „–“, „volno“…) není pivo."""
+    letters = re.findall(r"[^\W\d_]", line)
+    return len(letters) < 2 or bool(re.fullmatch(r"\s*(prázdn\w*|volno|empty|tbd)\s*", line, re.I))
 
 
 def looks_like_beers(lines: list[str]) -> bool:
@@ -149,6 +158,11 @@ def by_selector(soup, p) -> list[str]:
 
 
 def extract_lines(html: str, p: dict) -> tuple[list[str], str]:
+    lines, method = _extract(html, p)
+    return [l for l in lines if not is_junk(l)], method
+
+
+def _extract(html: str, p: dict) -> tuple[list[str], str]:
     soup = BeautifulSoup(html, "html.parser")
 
     # 0) přesný výběr nastavený pro podnik
@@ -187,6 +201,9 @@ def extract_lines(html: str, p: dict) -> tuple[list[str], str]:
 # ---------- rozparsování jedné položky (vše volitelné) ----------
 
 SEP = re.compile(r"\s+[–—-]\s+|\s*[–—]\s*")
+COLON = re.compile(r"^([^\d:]{2,30}):\s+(.+)$")      # „PINTA: El Bandido 12°…“
+# „… //NEXT// další pivo“ – poznámka, co poteče potom; do údajů piva nepatří
+NEXT_RE = re.compile(r"\s*/{1,3}\s*(?:next|další|dalsi|následuje|nasleduje|pak|potom)\s*:?\s*/{0,3}\s*", re.I)
 NUM = r"(\d{1,2}(?:[.,]\d{1,2})?)"
 DEG = re.compile(NUM + r"\s*°")
 ABV_LABEL = re.compile(r"(?:ABV|alk\.?|alkohol)\s*:?\s*" + NUM + r"\s*%", re.I)
@@ -198,12 +215,21 @@ PAREN = re.compile(r"^(.*?)\s*\(([^()]*)\)\s*$")
 
 def parse_item(raw: str, quiet: bool = False, default_brewery: str = "") -> dict:
     out = {"raw": raw, "pivovar": "", "nazev": "", "stupen": "",
-           "alkohol": "", "styl": ""}
-    rest = raw
+           "alkohol": "", "styl": "", "dalsi": ""}
+    main = raw
+    nx = NEXT_RE.split(raw, maxsplit=1)
+    if len(nx) == 2:
+        main, out["dalsi"] = nx[0].strip(), nx[1].strip()
+    out["main"] = main
+    rest = main
 
-    parts = SEP.split(raw, maxsplit=1)
+    parts = SEP.split(main, maxsplit=1)
     if len(parts) == 2:
         out["pivovar"], rest = parts[0].strip(" |"), parts[1].strip()
+    else:
+        m = COLON.match(main)
+        if m:
+            out["pivovar"], rest = m.group(1).strip(), m.group(2).strip()
 
     d = DEG.search(rest)
     a = ABV_LABEL.search(rest)
@@ -249,7 +275,7 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "") -> dict
     if not (out["stupen"] or out["alkohol"]):
         missing.append("stupeň i %")
     if missing and not quiet:
-        warn(f"Neúplně rozparsováno ({', '.join(missing)}): {raw}")
+        warn(f"Neúplně rozparsováno ({', '.join(missing)}): {main}")
     return out
 
 
@@ -338,6 +364,18 @@ def ratio(a: str, b: str) -> float:
     return SequenceMatcher(None, a, b).ratio()
 
 
+def similar_brewery(a: str, b: str) -> bool:
+    """„ONE HOPE“ = „HOPE“, „SKJUBRU & X“ = „SKJUBRU“, překlep v názvu."""
+    if not a or not b or ratio(a, b) >= 0.7:
+        return True
+    ta, tb = set(a.split()), set(b.split())
+    return ta <= tb or tb <= ta
+
+
+def main_text(row: dict) -> str:
+    return norm(NEXT_RE.split(row["raw"], maxsplit=1)[0])
+
+
 def same_beer(row: dict, b: dict) -> bool:
     """Je nový řádek z webu totéž pivo jako řádek, který je v historii na čepu?"""
     if row["klic"] == b["klic"]:
@@ -345,13 +383,13 @@ def same_beer(row: dict, b: dict) -> bool:
     rn, bn = norm(row["nazev"]), norm(b["nazev"])
     rp, bp = norm(row["pivovar"]), norm(b["pivovar"])
     if rn and bn:
-        if rn == bn and (not rp or not bp or ratio(rp, bp) >= 0.7):
-            return True          # stejný název, pivovar s překlepem / doplněný
+        if rn == bn and similar_brewery(rp, bp):
+            return True          # stejný název, pivovar s překlepem / doplněný / zkrácený
         if rp and rp == bp and ratio(rn, bn) >= 0.85:
             return True          # stejný pivovar, překlep v názvu
     # jedna strana nejde rozparsovat (chybí čárka, stupeň…) → porovnat celý text
     if not (rp and bp and rn and bn):
-        if ratio(norm(row["raw"]), norm(b["raw"])) >= 0.85:
+        if ratio(main_text(row), norm(b["main"])) >= 0.85:
             return True
     return False
 
@@ -360,7 +398,7 @@ def apply_state(hist: list[dict], lines: list[str], when: str, quiet=False,
                 default_brewery: str = ""):
     """Promítne jeden stav čepů do historie. Vrací (piva, nová, dočepovaná, upravená)."""
     beers = []
-    for i, raw in enumerate(lines, 1):
+    for i, raw in enumerate([l for l in lines if not is_junk(l)], 1):
         b = parse_item(raw, quiet=quiet, default_brewery=default_brewery)
         b["pozice"] = i
         b["klic"] = beer_key(b)
@@ -379,6 +417,7 @@ def apply_state(hist: list[dict], lines: list[str], when: str, quiet=False,
                 waiting.remove(match)
                 if match["raw"] != b["raw"]:
                     # rozparsované údaje nepřepisovat prázdnými (obsluha smaže čárku…)
+                    match["dalsi"] = b["dalsi"]
                     for k in ("pivovar", "nazev", "stupen", "alkohol", "styl"):
                         if b[k] and (b["pivovar"] or not match["pivovar"]):
                             match[k] = b[k]
@@ -481,7 +520,7 @@ def run_venue(p: dict, now_dt: datetime) -> bool:
         write_if_changed(st.dir / "aktualne.json", json.dumps({
             "zdroj": p["url"], "zmeneno": now, "metoda": method,
             "piva": [{k: b[k] for k in ("pozice", "pivovar", "nazev", "stupen",
-                                         "alkohol", "styl", "raw")} for b in beers],
+                                         "alkohol", "styl", "dalsi", "raw")} for b in beers],
         }, ensure_ascii=False, indent=2) + "\n")
         if new or gone:
             stav["posledni_zmena"] = now
@@ -508,6 +547,11 @@ def run_venue(p: dict, now_dt: datetime) -> bool:
 def main() -> int:
     ROOT.mkdir(exist_ok=True)
     migrate_old_layout()
+    ver = ROOT / "verze_parseru.txt"
+    if not ver.exists() or ver.read_text().strip() != str(PARSER_VERSION):
+        print(f"Nová verze parseru ({PARSER_VERSION}) – přepočítávám historii z logu.")
+        rebuild()
+        ver.write_text(f"{PARSER_VERSION}\n")
     write_if_changed(ROOT / "podniky.json", json.dumps(
         [{k: p[k] for k in ("id", "nazev", "url")} for p in PODNIKY],
         ensure_ascii=False, indent=2) + "\n")
