@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-09-30 16:56",
+  "zmeneno": "2026-10-01 16:53",
   "metoda": "selektor",
   "piva": [
     {
@@ -10,6 +10,7 @@
       "stupen": "11",
       "alkohol": "4.6",
       "styl": "Lager",
+      "dalsi": "",
       "raw": "brewnicorn - pivorožec | 11% | Lager, ABV 4,6%"
     },
     {
@@ -19,6 +20,7 @@
       "stupen": "13",
       "alkohol": "5.3",
       "styl": "Sour",
+      "dalsi": "",
       "raw": "Vik x Sedm° - 7Vikend With The Hunters | 13% | Sour, ABV 5,3%"
     },
     {
@@ -28,6 +30,7 @@
       "stupen": "12",
       "alkohol": "5",
       "styl": "session neipa",
+      "dalsi": "",
       "raw": "čestmír - juicy bastard | 12% | session neipa, ABV 5%"
     },
     {
@@ -37,6 +40,7 @@
       "stupen": "11",
       "alkohol": "4.8",
       "styl": "session neipa",
+      "dalsi": "",
       "raw": "černý potoka - disco radši ne 2 | 11% | session neipa, ABV 4,8%"
     },
     {
@@ -46,33 +50,27 @@
       "stupen": "15",
       "alkohol": "5.6",
       "styl": "NEIPA",
+      "dalsi": "",
       "raw": "Vik - Groovy Storm | 15% | NEIPA, ABV 5,6%"
     },
     {
       "pozice": 6,
-      "pivovar": "",
-      "nazev": "---",
-      "stupen": "",
-      "alkohol": "",
-      "styl": "",
-      "raw": "---"
-    },
-    {
-      "pozice": 7,
       "pivovar": "Haksna",
       "nazev": "Nest In West",
       "stupen": "15",
       "alkohol": "6.5",
       "styl": "West Coast IPA",
+      "dalsi": "",
       "raw": "Haksna - Nest In West | 15% | West Coast IPA, ABV 6,5%"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Haksna",
       "nazev": "Orange Stout",
       "stupen": "13",
       "alkohol": "5.5",
       "styl": "Stout",
+      "dalsi": "",
       "raw": "Haksna - Orange Stout | 13% | Stout, ABV 5,5%"
     }
   ]
