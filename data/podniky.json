@@ -28,5 +28,10 @@
     "id": "vratnice",
     "nazev": "Vrátnice",
     "url": "https://vratnice.cz/"
+  },
+  {
+    "id": "polepsovna",
+    "nazev": "Polepšovna",
+    "url": "https://www.pivnicepolepsovna.cz/"
   }
 ]

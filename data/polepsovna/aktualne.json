@@ -1,0 +1,87 @@
+{
+  "zdroj": "https://www.pivnicepolepsovna.cz/",
+  "zmeneno": "2026-10-02 13:18",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "BUDVAR",
+      "nazev": "BUDVAR 33",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "SVĚTLÝ LEŽÁK",
+      "dalsi": "",
+      "raw": "BUDVAR 33, SVĚTLÝ LEŽÁK | BUDVAR"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "CLOCK",
+      "nazev": "GLEE",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "GLUTEN REDUCED PALE ALE",
+      "dalsi": "",
+      "raw": "GLEE 11°, GLUTEN REDUCED PALE ALE | CLOCK"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "VOLT",
+      "nazev": "BATERKA",
+      "stupen": "15",
+      "alkohol": "",
+      "styl": "IPA",
+      "dalsi": "",
+      "raw": "BATERKA 15°, IPA | VOLT"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "BUDVAR",
+      "nazev": "BUDVAR NEALKO",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "BUDVAR NEALKO | BUDVAR"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "NOZIB",
+      "nazev": "TROPICAL GETAWAY",
+      "stupen": "14",
+      "alkohol": "",
+      "styl": "SOUR ALE",
+      "dalsi": "",
+      "raw": "TROPICAL GETAWAY 14°, SOUR ALE | NOZIB"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "VOLT",
+      "nazev": "DYNAMO",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "SVĚTLÝ LEŽÁK",
+      "dalsi": "",
+      "raw": "DYNAMO 10°, SVĚTLÝ LEŽÁK | VOLT"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "VOLT/COBOLIS",
+      "nazev": "VODIČ",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "APA NEALKO PIVO",
+      "dalsi": "",
+      "raw": "VODIČ , APA NEALKO PIVO | VOLT/COBOLIS"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "THE BARN BEER CO.",
+      "nazev": "DIVERSITY",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "MILKSHAKE NEIPA",
+      "dalsi": "",
+      "raw": "DIVERSITY 12°, MILKSHAKE NEIPA | THE BARN BEER CO."
+    }
+  ]
+}
