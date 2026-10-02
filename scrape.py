@@ -52,6 +52,12 @@ PODNIKY = [
     # (obecná záloha podle obsahu by tu brala popisy jako piva, proto jen_selektor)
     {"id": "vratnice", "nazev": "Vrátnice", "url": "https://vratnice.cz/",
      "bloky": "#na-cepu p", "format": "nazev-stupen-styl-pivovar", "jen_selektor": True},
+    # Webflow, záložka „Pivo“: „GLEE 11°, GLUTEN REDUCED PALE ALE“ + pivovar zvlášť
+    # (na stránce jsou i zbytky šablony „FUSCE ALI“, proto jen přesný výběr)
+    {"id": "polepsovna", "nazev": "Polepšovna", "url": "https://www.pivnicepolepsovna.cz/",
+     "polozky": '.w-tab-pane[data-w-tab="Pivo"] .home_2_career_item',
+     "pole": [".heading-style-h5", ".home_2_career_top-wrapper > div:last-child"],
+     "format": "nazev-styl|pivovar", "jen_selektor": True},
 ]
 
 ROOT = Path(__file__).parent / "data"
@@ -60,7 +66,7 @@ HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
              "raw", "narazeno", "docepovano", "dalsi"]
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
-PARSER_VERSION = 5
+PARSER_VERSION = 6
 FAILS_BEFORE_ERROR = 3            # ~6 hodin výpadku při běhu po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
 
@@ -280,7 +286,8 @@ def _extract(html: str, p: dict) -> tuple[list[str], str]:
             if lines and looks_like_beers(lines):
                 return lines, "bloky"
     lines = by_selector(soup, p)
-    if lines and looks_like_beers(lines):
+    if lines and (looks_like_beers(lines) or
+                  (p.get("jen_selektor") and not any(len(l) > 300 for l in lines))):
         return lines, "selektor"
     if p.get("jen_selektor"):
         return [], "nic"
@@ -343,6 +350,22 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
     out["main"] = main
     main = DEC_SPACE.sub(r"\1,\2", main)
     rest = main
+
+    if fmt == "nazev-styl|pivovar" and " | " in main:
+        left, _, brew = main.rpartition(" | ")
+        out["pivovar"] = brew.strip()
+        d = DEG.search(left)
+        if d:
+            out["stupen"] = d.group(1).replace(",", ".")
+            out["nazev"] = left[:d.start()].strip(" ,")
+            out["styl"] = left[d.end():].strip(" ,")
+        else:
+            nm, _, st = left.partition(",")
+            out["nazev"], out["styl"] = nm.strip(" ,"), st.strip(" ,")
+        a = ABV_LABEL.search(left) or PCT.search(left)
+        if a:
+            out["alkohol"] = a.group(1).replace(",", ".")
+        return out
 
     if fmt == "nazev-stupen-styl-pivovar":
         core, _, tail = main.partition(" · ")
