@@ -1,5 +1,9 @@
 {
-  "chyby_v_rade": 1,
+  "chyby_v_rade": 0,
   "posledni_chyba": "2026-10-02 12:58",
-  "chyba": "Stránku se nepodařilo stáhnout: 401 Client Error: Unauthorized for url: https://www.beerandfriends.eu/beer-and-friends"
+  "zpusob_stazeni": "prohlizec",
+  "posledni_kontrola": "2026-10-02",
+  "metoda": "selektor",
+  "pocet_piv": 6,
+  "posledni_zmena": "2026-10-02 13:04"
 }
