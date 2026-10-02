@@ -13,5 +13,20 @@
     "id": "clock",
     "nazev": "Pivnice Clock",
     "url": "https://www.pivniceclock.cz/nabidka/"
+  },
+  {
+    "id": "kmp",
+    "nazev": "KMP Plzeň",
+    "url": "https://www.klubmalychpivovaru.cz/"
+  },
+  {
+    "id": "beerandfriends",
+    "nazev": "Beer and Friends",
+    "url": "https://www.beerandfriends.eu/beer-and-friends"
+  },
+  {
+    "id": "vratnice",
+    "nazev": "Vrátnice",
+    "url": "https://vratnice.cz/"
   }
 ]

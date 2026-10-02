@@ -1,0 +1,107 @@
+{
+  "zdroj": "https://www.klubmalychpivovaru.cz/",
+  "zmeneno": "2026-10-02 12:58",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "",
+      "nazev": "KMP Ležák #73",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Permon",
+      "nazev": "Tropical Fruit Sour",
+      "stupen": "8",
+      "alkohol": "3.8",
+      "styl": "kyseláč mango, marakuja, guava",
+      "dalsi": "",
+      "raw": "Permon - Tropical Fruit Sour, kyseláč mango, marakuja, guava, 8° sv. nef., 3, 8% vol. Alc, 6 IBU"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Zlatá Kráva",
+      "nazev": "Farm APA",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "American Pale Ale",
+      "dalsi": "",
+      "raw": "Zlatá Kráva - Farm APA, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc, 46 IBU"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "",
+      "nazev": "NOZIB <-",
+      "stupen": "12",
+      "alkohol": "6",
+      "styl": "Oak Aged Dry-Hopped Saison",
+      "dalsi": "",
+      "raw": "NOZIB <-, Oak Aged Dry-Hopped Saison, 12° sv. nef., 6% vol. Alc, 25 IBU"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Permon",
+      "nazev": "Hazy Citra",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "Hazy Pale Ale",
+      "dalsi": "",
+      "raw": "Permon - Hazy Citra, Hazy Pale Ale, 13° sv. nef., 5, 5% vol. Alc, 20 IBU"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "",
+      "nazev": "Kasteel Rouge",
+      "stupen": "18",
+      "alkohol": "8",
+      "styl": "belgický višňový speciál",
+      "dalsi": "",
+      "raw": "Kasteel Rouge, belgický višňový speciál, 18° tm., 8% vol. Alc"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "",
+      "nazev": "Filou",
+      "stupen": "18",
+      "alkohol": "8.5",
+      "styl": "Belgian Tripel",
+      "dalsi": "",
+      "raw": "Filou, Belgian Tripel, 18° sv., 8, 5% vol. , 35 IBU"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "",
+      "nazev": "Barista Chocolate Quad",
+      "stupen": "24",
+      "alkohol": "11",
+      "styl": "Belgian Dark Strong Ale",
+      "dalsi": "",
+      "raw": "Barista Chocolate Quad, Belgian Dark Strong Ale, 24° tm. nef., 11% vol. Alc"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "",
+      "nazev": "Kasteel Donker",
+      "stupen": "24",
+      "alkohol": "11",
+      "styl": "Belgian Quadrupel",
+      "dalsi": "",
+      "raw": "Kasteel Donker, Belgian Quadrupel, 24° tm., 11% vol. Alc"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Bacchus",
+      "nazev": "Frambozenbier",
+      "stupen": "14",
+      "alkohol": "5",
+      "styl": "Raspberry Gueuze",
+      "dalsi": "",
+      "raw": "Bacchus - Frambozenbier, Raspberry Gueuze, 14° sv. nef., 5% vol. Alc"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "zdroj": "https://vratnice.cz/",
+  "zmeneno": "2026-10-02 12:58",
+  "metoda": "bloky",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Vrátnice",
+      "nazev": "Vrátnice 10°",
+      "stupen": "10",
+      "alkohol": "3.9",
+      "styl": "světlé výčepní",
+      "dalsi": "",
+      "raw": "Vrátnice 10° světlé výčepní – piv.Vrátnice · ABV 3,9 %"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Vrátnice",
+      "nazev": "Vrátnice 11°",
+      "stupen": "11",
+      "alkohol": "4.3",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Vrátnice 11° světlý ležák – piv. Vrátnice · ABV 4,3 %"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Trilobit",
+      "nazev": "Trilobit 12°",
+      "stupen": "12",
+      "alkohol": "5.0",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Trilobit 12° světlý ležák – piv. Trilobit · ABV 5,0 %"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Radouš",
+      "nazev": "Radoush Stout",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Radoush Stout 12° – pivovar Radouš (Druztová) · ABV 5 %"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Clock",
+      "nazev": "No Idols! West Coast IPA",
+      "stupen": "14",
+      "alkohol": "6.1",
+      "styl": "",
+      "dalsi": "",
+      "raw": "No Idols! West Coast IPA 14 °– piv.Clock (Potštejn) · ABV 6,1 %"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "MadCat",
+      "nazev": "Sin Kitty",
+      "stupen": "14",
+      "alkohol": "7",
+      "styl": "Sour Ale",
+      "dalsi": "",
+      "raw": "Sin Kitty 14° Sour Ale – p.MadCat (Kamenice u Jihlavy) · ABV 7 %"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Vrátnice",
+      "nazev": "Vrátnice APA Kam”č”ale",
+      "stupen": "10.8",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Vrátnice APA Kam”č”ale 10,8° – piv. Vrátnice"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Antoš",
+      "nazev": "Raspberry Sour Ale",
+      "stupen": "13",
+      "alkohol": "5.0",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Raspberry Sour Ale 13° – p.Antoš (Slaný) · ABV 5,0 %"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Hoppy Dog",
+      "nazev": "Goro White IPA",
+      "stupen": "14",
+      "alkohol": "5.8",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Goro White IPA 14° – p. Hoppy Dog (Vítkovice) · ABV 5.8 %"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Kristýna",
+      "nazev": "Korálek NEIPA",
+      "stupen": "13",
+      "alkohol": "5.7",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Korálek NEIPA 13 °– pivovar Kristýna (Hrádek n.Nisou) · ABV 5,7 %"
+    }
+  ]
+}
