@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-02 19:52",
+  "zmeneno": "2026-10-03 00:14",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,8 +10,8 @@
       "stupen": "12",
       "alkohol": "5.1",
       "styl": "světlý ležák",
-      "dalsi": "",
-      "raw": "SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák"
+      "dalsi": "DOBRÁK – Stodvanáctka 12°/4,9%/32IBU světlý ležák",
+      "raw": "SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák //NEXT// DOBRÁK – Stodvanáctka 12°/4,9%/32IBU světlý ležák"
     },
     {
       "pozice": 2,
@@ -20,8 +20,8 @@
       "stupen": "12",
       "alkohol": "5.3",
       "styl": "APA (saaz, cascade)",
-      "dalsi": "",
-      "raw": "MATUŠKA – California 12°/5,3%/45IBU APA (saaz, cascade)"
+      "dalsi": "NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)",
+      "raw": "MATUŠKA – California 12°/5,3%/45IBU APA (saaz, cascade) //NEXT// NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)"
     },
     {
       "pozice": 3,
@@ -30,18 +30,18 @@
       "stupen": "16",
       "alkohol": "7",
       "styl": "New England IPA (motueka, citra, nelson, superdelic)",
-      "dalsi": "",
-      "raw": "FRANKIES + KOSMIX – Sinatra 16°/7%/25IBU New England IPA (motueka, citra, nelson, superdelic)"
+      "dalsi": "MORDÝŘ – WC IPA 14°/6,1% West Coast IPA (citra, centennial, chinook)",
+      "raw": "FRANKIES + KOSMIX – Sinatra 16°/7%/25IBU New England IPA (motueka, citra, nelson, superdelic) //NEXT// MORDÝŘ – WC IPA 14°/6,1% West Coast IPA (citra, centennial, chinook)"
     },
     {
       "pozice": 4,
-      "pivovar": "PINTA",
-      "nazev": "El Bandido",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "pinta měsíce: mexický ležák",
-      "dalsi": "PIVOVAR VIK – Paper Guillotine 23°/10%/65IBU DDH Triple IPA (citra, simcoe)",
-      "raw": "PINTA: El Bandido 12°/5% pinta měsíce: mexický ležák //NEXT// PIVOVAR VIK – Paper Guillotine 23°/10%/65IBU DDH Triple IPA (citra, simcoe)"
+      "pivovar": "PIVOVAR VIK",
+      "nazev": "Paper Guillotine",
+      "stupen": "23",
+      "alkohol": "10",
+      "styl": "DDH Triple IPA (citra, simcoe)",
+      "dalsi": "ČESTMÍR – Astro Creep 14°/5,9% Oatmeal Stout",
+      "raw": "PIVOVAR VIK – Paper Guillotine 23°/10%/65IBU DDH Triple IPA (citra, simcoe) //NEXT// ČESTMÍR – Astro Creep 14°/5,9% Oatmeal Stout"
     },
     {
       "pozice": 5,

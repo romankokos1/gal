@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-02 19:52",
+  "zmeneno": "2026-10-03 00:14",
   "metoda": "selektor",
   "piva": [
     {
@@ -36,22 +36,22 @@
     {
       "pozice": 4,
       "pivovar": "",
-      "nazev": "NOZIB <-",
+      "nazev": "NOZIB <- Fresh Tap #002",
       "stupen": "12",
-      "alkohol": "6",
-      "styl": "Oak Aged Dry-Hopped Saison",
+      "alkohol": "5",
+      "styl": "American Session IPA",
       "dalsi": "",
-      "raw": "NOZIB <-, Oak Aged Dry-Hopped Saison, 12° sv. nef., 6% vol. Alc, 25 IBU"
+      "raw": "NOZIB <- Fresh Tap #002, American Session IPA, 12° sv. nef., 5% vol. Alc"
     },
     {
       "pozice": 5,
-      "pivovar": "Permon",
-      "nazev": "Hazy Citra",
-      "stupen": "13",
-      "alkohol": "5.5",
-      "styl": "Hazy Pale Ale",
+      "pivovar": "Plzeňský Bandita",
+      "nazev": "Most Wanted IPA",
+      "stupen": "14",
+      "alkohol": "6.2",
+      "styl": "sv.",
       "dalsi": "",
-      "raw": "Permon - Hazy Citra, Hazy Pale Ale, 13° sv. nef., 5, 5% vol. Alc, 20 IBU"
+      "raw": "Plzeňský Bandita - Most Wanted IPA, 14° sv.nef., 6, 2% vol. Alc"
     },
     {
       "pozice": 6,
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Bacchus",
-      "nazev": "Frambozenbier",
-      "stupen": "14",
-      "alkohol": "5",
-      "styl": "Raspberry Gueuze",
+      "pivovar": "Libertas",
+      "nazev": "Bohemian Lager",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Bacchus - Frambozenbier, Raspberry Gueuze, 14° sv. nef., 5% vol. Alc"
+      "raw": "Libertas - Bohemian Lager, světlý ležák, 11° sv. nef., 4, 6% vol. Alc, 35 IBU"
     }
   ]
 }

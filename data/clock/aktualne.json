@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-10-02 19:52",
+  "zmeneno": "2026-10-03 00:14",
   "metoda": "nadpis",
   "piva": [
     {
@@ -16,22 +16,22 @@
     {
       "pozice": 2,
       "pivovar": "Clock",
-      "nazev": "Nina",
-      "stupen": "10",
-      "alkohol": "",
-      "styl": "Raspberry B.W.",
-      "dalsi": "",
-      "raw": "10° Nina (Raspberry B.W.)"
-    },
-    {
-      "pozice": 3,
-      "pivovar": "Clock",
       "nazev": "Glee",
       "stupen": "11",
       "alkohol": "",
       "styl": "Gluten Reduced PA",
       "dalsi": "",
       "raw": "11° Glee (Gluten Reduced PA)"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Clock",
+      "nazev": "Pineapple",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Session IPA",
+      "dalsi": "",
+      "raw": "11° Pineapple (Session IPA)"
     },
     {
       "pozice": 4,
