@@ -82,6 +82,8 @@ h3{font-size:12px;margin:0 0 6px;font-weight:600;color:var(--muted);text-transfo
 .seg{display:flex;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:3px}
 .venue button{font-weight:600}
 .venue button.on{background:var(--accent);color:var(--on-accent)}
+header.many .venue{display:none!important}
+header.many select.venue-sel{display:block}
 select.venue-sel{display:none;background:var(--accent);color:var(--on-accent);border:0;border-radius:8px;padding:7px 10px;font:600 14px var(--sans)}
 input[type=search]{background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:7px 10px;font:13px var(--sans);min-width:200px;flex:1;max-width:320px}
 input[type=search]:focus{outline:1px solid var(--accent);border-color:var(--accent)}
@@ -102,6 +104,11 @@ input[type=search]:focus{outline:1px solid var(--accent);border-color:var(--acce
 .tap .br{color:var(--text-2);font-size:12px}
 .tap .st{color:var(--muted);font-size:12px}
 .tap .nx{color:var(--accent-ink);font-size:12px;margin-top:2px}
+.soon{margin-top:14px;border-top:1px dashed var(--line);padding-top:10px}
+.soon h3{margin-bottom:6px}
+.soon div{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:3px 0;color:var(--text-2)}
+.soon b{font-weight:600;color:var(--text)}
+.soon span.m{font:12px var(--mono);color:var(--muted);white-space:nowrap}
 .tap .num{font:500 12px var(--mono);color:var(--text-2);text-align:right;white-space:nowrap}
 
 /* vodorovné sloupce */
@@ -265,7 +272,7 @@ svg.line .hit{fill:transparent;cursor:default}
     <section data-p="prehled">
       <div class="kpis" id="kpis"></div>
       <div class="grid g2 ov">
-        <div class="card a-now"><h2>Teď na čepu</h2><div class="taps" id="now"></div></div>
+        <div class="card a-now"><h2>Teď na čepu</h2><div class="taps" id="now"></div><div id="soon"></div></div>
         <div class="card a-brew"><h2>Pivovary · počet naražení</h2><div class="hbars" id="chBrew"></div><div class="note">Kolaborace se počítají každému pivovaru zvlášť. Klik = karta pivovaru.</div></div>
         <div class="card a-style"><h2>Styly · počet naražení</h2><div class="hbars" id="chStyle"></div><div class="note">Styl je odvozený z popisu podle klíčových slov. Klik = filtr.</div></div>
         <div class="card a-abv"><h2>Síla · % alkoholu</h2><div class="hbars" id="chAbv"></div></div>
@@ -369,8 +376,8 @@ function showTab(t){
 const STYLES = [
   ["Nealko / Limonáda", /alcohol free|alkohol free|nealko|limonad|\b0 0\b|kombucha/],
   ["Milkshake / Smoothie", /milkshake|smoothie|smootie|lassi|pastry/],
-  ["Sour", /sour|gose|berliner|\bb w\b|kyse|lambic|wild/],
-  ["IPL", /india pale lager|\bipl\b/],
+  ["Sour", /sour|gose|berliner|\bb w\b|kyse|lambic|gueuze|geuze|kriek|framboise|frambozen|wild/],
+  ["IPL", /india pale lager|\bipl\b|\bi p lager/],
   ["NEIPA", /neipa|new england|hazy|\bne ipa/],
   ["DIPA / TIPA", /\bdipa\b|\btipa\b|double ipa|triple ipa|imperial ipa|dvojit/],
   ["IPA", /\bipa\b|india pale ale/],
@@ -436,14 +443,16 @@ async function boot(){
   // starší verze bez podniky.json měla data přímo v data/
   VENUES = (list&&list.length) ? list.map(v=>({...v, base:`data/${v.id}/`})) : [{id:"", nazev:"Galerie piva", base:"data/"}];
   await Promise.all(VENUES.map(async v=>{
-    const [csv, st] = await Promise.all([get(v.base+"historie.csv",1), get(v.base+"stav.json")]);
-    DATA[v.id] = {rows: csv ? build(csv, v) : [], stav: st, ok: !!csv};
+    const [csv, st, soon] = await Promise.all([get(v.base+"historie.csv",1), get(v.base+"stav.json"), get(v.base+"pripraveno.json")]);
+    DATA[v.id] = {rows: csv ? build(csv, v) : [], stav: st, ok: !!csv, soon: Array.isArray(soon) ? soon : []};
   }));
   ALLX = VENUES.flatMap(v=>DATA[v.id].rows);
   const vb=$("#venue"), vs=$("#venueSel");
   vb.innerHTML = VENUES.map(v=>`<button data-v="${esc(v.id)}">${esc(v.nazev)}</button>`).join("");
   vs.innerHTML = VENUES.map(v=>`<option value="${esc(v.id)}">${esc(v.nazev)}</option>`).join("");
   if(VENUES.length>1){ vb.classList.remove("hidden"); vs.classList.remove("hidden"); }
+  // víc podniků se do řady tlačítek nevejde → i na desktopu rozbalovací seznam
+  document.querySelector("header").classList.toggle("many", VENUES.length>5);
   vb.onclick = e => { const b=e.target.closest("button"); if(b) selectVenue(b.dataset.v); };
   vs.onchange = () => selectVenue(vs.value);
   const want = decodeURIComponent(location.hash.slice(1));
@@ -608,6 +617,8 @@ function renderPrehled(R){
       <div><div class="nm">${esc(r.label)}</div><div class="br">${esc(r.pivovar||"")}</div><div class="st">${esc(r.styl||"")}</div>${r.dalsi?`<div class="nx">→ potom: ${esc(r.dalsi)}</div>`:""}</div>
       <div class="num">${r.deg?r.deg+"°":""} ${r.abv?fmtN(r.abv)+" %":""}<br><span class="dim">${fmtN(r.days)} d</span></div></div>`).join("")
     : `<div class="empty">nic</div>`;
+  const soon = DATA[VENUE.id].soon || [];
+  $("#soon").innerHTML = soon.length ? `<div class="soon"><h3>Připraveno k naražení</h3>${soon.map(b=>`<div><span><b>${esc(b.nazev||b.raw)}</b>${b.pivovar?` · ${esc(b.pivovar)}`:""}${b.styl?` <span class="dim">· ${esc(b.styl)}</span>`:""}</span><span class="m">${b.stupen?esc(b.stupen)+"° ":""}${b.alkohol?fmtN(+b.alkohol)+" %":""}</span></div>`).join("")}</div>` : "";
 
   hbars("#chBrew", brews.sort((a,b)=>b.taps-a.taps||a.name.localeCompare(b.name)).slice(0,12)
     .map(o=>({l:o.name,v:o.taps,act:()=>openBrew(o.key),
