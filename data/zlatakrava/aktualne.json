@@ -1,0 +1,87 @@
+{
+  "zdroj": "https://zk.vhost.cz/",
+  "zmeneno": "2026-10-02 13:29",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Zlatá kráva",
+      "nazev": "PLNOTUČNÁ",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "Spodně kvašený světlý ležák",
+      "dalsi": "",
+      "raw": "Zlatá kráva | 12 PLNOTUČNÁ | Spodně kvašený světlý ležák. Klasické české pivo s lahodnou plností, vyváženou chmelovou chutí, jemným řízem a zlatavou barvou."
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Zlatá kráva",
+      "nazev": "YELLOW COW",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "Neobyčejné spojení sladů, chmele a citronů dalo vznik tomuto lahodnému pivu",
+      "dalsi": "",
+      "raw": "Zlatá kráva | 12 YELLOW COW | Neobyčejné spojení sladů, chmele a citronů dalo vznik tomuto lahodnému pivu"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Zlatá kráva",
+      "nazev": "TRACTOR IPA",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Svrchně kvašený světlý speciál India Pale Ale, má jemnou chmelovou vůni citrusových…",
+      "dalsi": "",
+      "raw": "Zlatá kráva | TRACTOR IPA | Svrchně kvašený světlý speciál India Pale Ale, má jemnou chmelovou vůni citrusových plodů, v doznívání je pak výrazná chmelová hořkost."
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Zlatá kráva",
+      "nazev": "LOW CARB ALE N0 COW",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Svrchně kvašený Farm House ALE s jemnou a tropickou hořkostí chmelů Azacca, Tango a Citra",
+      "dalsi": "",
+      "raw": "Zlatá kráva | LOW CARB ALE N0 COW | Svrchně kvašený Farm House ALE s jemnou a tropickou hořkostí chmelů Azacca, Tango a Citra."
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Zlatá kráva",
+      "nazev": "KISS THE COW",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Malinovo rybízový kyseláč",
+      "dalsi": "",
+      "raw": "Zlatá kráva | KISS THE COW | Malinovo rybízový kyseláč"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Zlatá kráva",
+      "nazev": "VOODOO CRYO NEIPA VOL.7",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "7. varianta šťavnaté NEIPA nabouchaná chmely Trident a Cryo Motueka",
+      "dalsi": "",
+      "raw": "Zlatá kráva | 13 VOODOO CRYO NEIPA VOL.7 | 7. varianta šťavnaté NEIPA nabouchaná chmely Trident a Cryo Motueka."
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Zlatá kráva",
+      "nazev": "END OF SUMMER APA",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Rakytníkovo pomerančová APA",
+      "dalsi": "",
+      "raw": "Zlatá kráva | 11 END OF SUMMER APA | Rakytníkovo pomerančová APA."
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Zlatá kráva",
+      "nazev": "FARM APA",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Lehké, svěží pivo chmelené v procesu výroby americkým chmelem, díky němuž pivo dosahuje…",
+      "dalsi": "",
+      "raw": "Zlatá kráva | 11 FARM APA | Lehké, svěží pivo chmelené v procesu výroby americkým chmelem, díky němuž pivo dosahuje osvěžujících tónů grepu či citronové kůry."
+    }
+  ]
+}
