@@ -41,6 +41,16 @@ PODNIKY = [
     # pivovarská pivnice – na čepu jen vlastní piva, pivovar se v textu neuvádí
     {"id": "clock", "nazev": "Pivnice Clock", "url": "https://www.pivniceclock.cz/nabidka/",
      "pivovar": "Clock"},
+    # Klub malých pivovarů Plzeň – „Pivovar - Název, styl, 12° sv. nef., 4, 8% vol. Alc, 35 IBU“
+    {"id": "kmp", "nazev": "KMP Plzeň", "url": "https://www.klubmalychpivovaru.cz/",
+     "polozky": "#BeersNaCepu .name-beer:not(#BeerSlot0)"},
+    # „NÁZEV – Styl (Pivovar) · abv 4,9 %“, pod nabídkou „Připraveno k naražení“
+    {"id": "beerandfriends", "nazev": "Beer and Friends", "url": "https://www.beerandfriends.eu/beer-and-friends",
+     "polozky": ".field-name-field-nacepu p", "format": "nazev-styl-(pivovar)"},
+    # očíslované bloky „5) Název 14° styl – piv.Pivovar (Město)  0,4l  94Kč“ + odstavec s popisem
+    # (obecná záloha podle obsahu by tu brala popisy jako piva, proto jen_selektor)
+    {"id": "vratnice", "nazev": "Vrátnice", "url": "https://vratnice.cz/",
+     "bloky": "#na-cepu p", "format": "nazev-stupen-styl-pivovar", "jen_selektor": True},
 ]
 
 ROOT = Path(__file__).parent / "data"
@@ -49,7 +59,7 @@ HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
              "raw", "narazeno", "docepovano", "dalsi"]
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
-PARSER_VERSION = 2
+PARSER_VERSION = 5
 FAILS_BEFORE_ERROR = 3            # ~6 hodin výpadku při běhu po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
 
@@ -104,13 +114,28 @@ def strip_num(text: str) -> str:
 def is_junk(line: str) -> bool:
     """Prázdný kohout / oddělovač („---“, „–“, „volno“…) není pivo."""
     letters = re.findall(r"[^\W\d_]", line)
+    if re.search(r"na\s+čepu|on\s+tap", line, re.I) and not re.search(r"\d", line):
+        return True    # nadpis sekce („TENTO TÝDEN NA ČEPU / ON TAP THIS WEEK“)
     return len(letters) < 2 or bool(re.fullmatch(r"\s*(prázdn\w*|volno|empty|tbd)\s*", line, re.I))
+
+
+UPCOMING = re.compile(r"připraveno|pripraveno|ready\s+to\s+tap|coming\s+soon|brzy\s+na\s+čepu|chystáme", re.I)
+
+
+def split_upcoming(lines: list[str]) -> tuple[list[str], list[str]]:
+    """Odřízne seznam „Připraveno k naražení“ – ten ještě neteče."""
+    for i, l in enumerate(lines):
+        if UPCOMING.search(l) and not re.search(r"\d\s*[°%]", l):
+            return lines[:i], lines[i + 1:]
+    return lines, []
 
 
 def looks_like_beers(lines: list[str]) -> bool:
     """Pojistka proti nesmyslům (menu, sociální sítě): aspoň polovina řádků
     musí mít stupeň nebo procenta. Jedna položka bez čísel nevadí."""
     hits = sum(1 for l in lines if BEER_HINT.search(l))
+    if any(len(re.findall(r"\d\s*°", l)) > 2 for l in lines):
+        return False   # víc piv slepených do jednoho řádku – špatně vytaženo
     return hits >= 1 and hits >= len(lines) / 2
 
 
@@ -157,6 +182,30 @@ def by_selector(soup, p) -> list[str]:
     return lines
 
 
+BLOCK_HEAD = re.compile(r"^\s*\d{1,2}\s*\)\s*")
+VOLUME_TAIL = re.compile(r"\s+\d+(?:[.,]\d+)?\s*l\b.*$", re.I)       # „0,5l / 0,3l 59Kč / 49Kč“
+ABV_DESC = re.compile(r"(?:ABV|Alc|Alk|alkoholu)\.?\s*:?\s*(\d{1,2}(?:[.,]\d{1,2})?)\s*%", re.I)
+
+
+def by_blocks(soup, sel: str) -> list[str]:
+    """Očíslovaná hlavička piva + první odstavec pod ní (popis), z něj jen % alkoholu."""
+    items, cur = [], None
+    for el in soup.select(sel):
+        t = clean(el.get_text(" "))
+        if not t:
+            continue
+        if BLOCK_HEAD.match(t):
+            cur = {"h": VOLUME_TAIL.sub("", BLOCK_HEAD.sub("", t)).strip(), "d": ""}
+            items.append(cur)
+        elif cur is not None and not cur["d"]:
+            cur["d"] = t
+    out = []
+    for it in items:
+        m = ABV_DESC.search(it["d"])
+        out.append(it["h"] + (f" · ABV {m.group(1)} %" if m else ""))
+    return out
+
+
 def extract_lines(html: str, p: dict) -> tuple[list[str], str]:
     lines, method = _extract(html, p)
     return [l for l in lines if not is_junk(l)], method
@@ -166,9 +215,16 @@ def _extract(html: str, p: dict) -> tuple[list[str], str]:
     soup = BeautifulSoup(html, "html.parser")
 
     # 0) přesný výběr nastavený pro podnik
+    if p.get("bloky"):
+        for sel in (p["bloky"], "p"):
+            lines = by_blocks(soup, sel)
+            if lines and looks_like_beers(lines):
+                return lines, "bloky"
     lines = by_selector(soup, p)
     if lines and looks_like_beers(lines):
         return lines, "selektor"
+    if p.get("jen_selektor"):
+        return [], "nic"
 
     # 1) nadpis obsahující „na čepu“ → bloky pod ním do dalšího nadpisu
     #    (nadpis bývá zabalený v divech, proto se hledá i o pár úrovní výš)
@@ -203,6 +259,8 @@ def _extract(html: str, p: dict) -> tuple[list[str], str]:
 SEP = re.compile(r"\s+[–—-]\s+|\s*[–—]\s*")
 COLON = re.compile(r"^([^\d:]{2,30}):\s+(.+)$")      # „PINTA: El Bandido 12°…“
 # „… //NEXT// další pivo“ – poznámka, co poteče potom; do údajů piva nepatří
+DEC_SPACE = re.compile(r"(\d),\s+(\d{1,2})(?=\s*%)")   # „4, 8%“ → „4,8%“
+STYLE_NOISE = re.compile(r"\b\d+\s*IBU\b|\bvol\.?(?:\s*alc\.?)?|\b(?:sv|tm|pol|polotm|nef|filtr)\.(?=\s|,|$)", re.I)
 NEXT_RE = re.compile(r"\s*/{1,3}\s*(?:next|další|dalsi|následuje|nasleduje|pak|potom)\s*:?\s*/{0,3}\s*", re.I)
 NUM = r"(\d{1,2}(?:[.,]\d{1,2})?)"
 DEG = re.compile(NUM + r"\s*°")
@@ -213,7 +271,10 @@ PCT = re.compile(NUM + r"\s*%")
 PAREN = re.compile(r"^(.*?)\s*\(([^()]*)\)\s*$")
 
 
-def parse_item(raw: str, quiet: bool = False, default_brewery: str = "") -> dict:
+NSB = re.compile(r"^(?P<nazev>.+?)\s+[–—-]\s+(?P<styl>.*?)\s*\((?P<pivovar>[^()]+)\)\s*(?P<rest>.*)$")
+
+
+def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: str = "") -> dict:
     out = {"raw": raw, "pivovar": "", "nazev": "", "stupen": "",
            "alkohol": "", "styl": "", "dalsi": ""}
     main = raw
@@ -221,7 +282,48 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "") -> dict
     if len(nx) == 2:
         main, out["dalsi"] = nx[0].strip(), nx[1].strip()
     out["main"] = main
+    main = DEC_SPACE.sub(r"\1,\2", main)
     rest = main
+
+    if fmt == "nazev-stupen-styl-pivovar":
+        core, _, tail = main.partition(" · ")
+        seps = list(re.finditer(r"\s*[–—]\s*|\s+-\s+", core))
+        if seps:
+            left, right = core[:seps[-1].start()], core[seps[-1].end():]
+            brew = re.sub(r"^(?:pivovar|pivov\.|piv\.|p\.)\s*", "", right.strip(), flags=re.I)
+            out["pivovar"] = re.sub(r"\s*\([^)]*\)\s*$", "", brew).strip()
+            d = DEG.search(left)
+            if d:
+                out["stupen"] = d.group(1).replace(",", ".")
+                out["nazev"] = left[:d.start()].strip(" ,")
+                out["styl"] = left[d.end():].strip(" ,")
+            else:
+                out["nazev"] = left.strip()
+            # „Vrátnice 10°“ a „Vrátnice 11°“ – stejný název jako pivovar, rozliší je stupeň
+            if out["stupen"] and (not out["nazev"] or norm(out["nazev"]) == norm(out["pivovar"])):
+                out["nazev"] = f"{out['nazev']} {out['stupen'].replace('.', ',')}°".strip()
+            a = ABV_LABEL.search(tail) or PCT.search(tail)
+            if a:
+                out["alkohol"] = a.group(1).replace(",", ".")
+            if not out["pivovar"] and default_brewery:
+                out["pivovar"] = default_brewery
+            return out
+
+    if fmt == "nazev-styl-(pivovar)":
+        m = NSB.match(main)
+        if m:
+            out["pivovar"], out["nazev"] = m["pivovar"].strip(), m["nazev"].strip()
+            out["styl"] = m["styl"].strip(" ,·|")
+            d, a = DEG.search(m["rest"]), ABV_LABEL.search(m["rest"]) or PCT.search(m["rest"])
+            if d:
+                out["stupen"] = d.group(1).replace(",", ".")
+            if a:
+                out["alkohol"] = a.group(1).replace(",", ".")
+            if not out["pivovar"] and default_brewery:
+                out["pivovar"] = default_brewery
+            if not (out["stupen"] or out["alkohol"]) and not quiet:
+                warn(f"Neúplně rozparsováno (stupeň i %): {main}")
+            return out
 
     parts = SEP.split(main, maxsplit=1)
     if len(parts) == 2:
@@ -267,6 +369,15 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "") -> dict
             out["nazev"], out["styl"] = m.group(1).strip(" |"), m.group(2)
         else:
             out["nazev"] = rest.strip(" |")  # bez čísel – celý zbytek je název
+
+    # „Název, styl, …“ – styl je za první čárkou názvu
+    if ", " in out["nazev"]:
+        out["nazev"], extra = out["nazev"].split(", ", 1)
+        out["styl"] = ", ".join(x for x in (extra.strip(" ,"), out["styl"]) if x)
+    if out["styl"]:
+        st = STYLE_NOISE.sub(" ", out["styl"])
+        st = re.sub(r"\s*,\s*(?:,\s*)+", ", ", re.sub(r"\s+", " ", st))
+        out["styl"] = st.strip(" ,|/-")
 
     if not out["pivovar"] and default_brewery:
         out["pivovar"] = default_brewery
@@ -395,11 +506,11 @@ def same_beer(row: dict, b: dict) -> bool:
 
 
 def apply_state(hist: list[dict], lines: list[str], when: str, quiet=False,
-                default_brewery: str = ""):
+                default_brewery: str = "", fmt: str = ""):
     """Promítne jeden stav čepů do historie. Vrací (piva, nová, dočepovaná, upravená)."""
     beers = []
     for i, raw in enumerate([l for l in lines if not is_junk(l)], 1):
-        b = parse_item(raw, quiet=quiet, default_brewery=default_brewery)
+        b = parse_item(raw, quiet=quiet, default_brewery=default_brewery, fmt=fmt)
         b["pozice"] = i
         b["klic"] = beer_key(b)
         beers.append(b)
@@ -449,7 +560,7 @@ def rebuild() -> int:
         hist = []
         for e in log:
             apply_state(hist, e["radky"], e["cas"], quiet=True,
-                        default_brewery=p.get("pivovar", ""))
+                        default_brewery=p.get("pivovar", ""), fmt=p.get("format", ""))
         st.save_history(hist)
         print(f"{p['nazev']}: přepočítáno z {len(log)} stavů → {len(hist)} naražení.")
     return 0
@@ -472,10 +583,11 @@ def run_venue(p: dict, now_dt: datetime) -> bool:
                                encoding="utf-8")
 
     # --- stažení a vytažení; jakákoli chyba se jen započítá ---
-    html, lines, method, err = "", [], "nic", ""
+    html, lines, upcoming, method, err = "", [], [], "nic", ""
     try:
         html = fetch(p["url"])
         lines, method = extract_lines(html, p)
+        lines, upcoming = split_upcoming(lines)
         if not lines:
             err = "sekce „Dnes na čepu“ nenalezena"
     except Exception as e:  # výpadek webu, síť…
@@ -506,6 +618,13 @@ def run_venue(p: dict, now_dt: datetime) -> bool:
     if method not in ("selektor", "nadpis"):
         warn(f"{name}: použita záložní metoda vytažení: {method}")
 
+    # připraveno k naražení – jen aktuální stav, do historie nepatří
+    write_if_changed(st.dir / "pripraveno.json", json.dumps([
+        {k: b[k] for k in ("pivovar", "nazev", "stupen", "alkohol", "styl", "raw")}
+        for b in (parse_item(l, quiet=True, default_brewery=p.get("pivovar", ""),
+                             fmt=p.get("format", "")) for l in upcoming)
+    ], ensure_ascii=False, indent=2) + "\n")
+
     hist = st.load_history()
     log = st.read_log()
     if not log and hist:
@@ -515,7 +634,7 @@ def run_venue(p: dict, now_dt: datetime) -> bool:
     if not log or log[-1]["radky"] != lines:
         st.append_log({"cas": now, "radky": lines, "metoda": method})
         beers, new, gone, updated = apply_state(hist, lines, now,
-                                                default_brewery=p.get("pivovar", ""))
+                                                default_brewery=p.get("pivovar", ""), fmt=p.get("format", ""))
         st.save_history(hist)
         write_if_changed(st.dir / "aktualne.json", json.dumps({
             "zdroj": p["url"], "zmeneno": now, "metoda": method,
