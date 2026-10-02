@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-02 01:52",
+  "zmeneno": "2026-10-02 19:52",
   "metoda": "selektor",
   "piva": [
     {
@@ -72,6 +72,16 @@
       "styl": "West Coast IPA",
       "dalsi": "",
       "raw": "Haksna - Nest In West | 15% | West Coast IPA, ABV 6,5%"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "hope",
+      "nazev": "ta moko",
+      "stupen": "14",
+      "alkohol": "5.4",
+      "styl": "rye hazy ipa",
+      "dalsi": "",
+      "raw": "hope - ta moko | 14% | rye hazy ipa, ABV 5,4%"
     }
   ]
 }

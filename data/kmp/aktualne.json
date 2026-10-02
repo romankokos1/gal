@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-02 12:58",
+  "zmeneno": "2026-10-02 19:52",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "Permon",
-      "nazev": "Tropical Fruit Sour",
-      "stupen": "8",
-      "alkohol": "3.8",
-      "styl": "kyseláč mango, marakuja, guava",
+      "nazev": "Joe in the Garden Apricot - Salt",
+      "stupen": "12",
+      "alkohol": "5.8",
+      "styl": "kyseláč s meruňkami a mořskou solí",
       "dalsi": "",
-      "raw": "Permon - Tropical Fruit Sour, kyseláč mango, marakuja, guava, 8° sv. nef., 3, 8% vol. Alc, 6 IBU"
+      "raw": "Permon - Joe in the Garden Apricot - Salt, kyseláč s meruňkami a mořskou solí, 12° sv. nef., 5, 8% vol. Alc, 5 IBU"
     },
     {
       "pozice": 3,

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-09-30 22:49",
+  "zmeneno": "2026-10-02 19:52",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,6 +10,7 @@
       "stupen": "10",
       "alkohol": "",
       "styl": "Výčepní",
+      "dalsi": "",
       "raw": "10° Hektor (Výčepní)"
     },
     {
@@ -19,34 +20,38 @@
       "stupen": "10",
       "alkohol": "",
       "styl": "Raspberry B.W.",
+      "dalsi": "",
       "raw": "10° Nina (Raspberry B.W.)"
     },
     {
       "pozice": 3,
       "pivovar": "Clock",
-      "nazev": "Hex",
+      "nazev": "Glee",
       "stupen": "11",
       "alkohol": "",
-      "styl": "Modern Pale Ale",
-      "raw": "11° Hex (Modern Pale Ale)"
+      "styl": "Gluten Reduced PA",
+      "dalsi": "",
+      "raw": "11° Glee (Gluten Reduced PA)"
     },
     {
       "pozice": 4,
-      "pivovar": "Clock",
-      "nazev": "Helga",
-      "stupen": "13",
-      "alkohol": "",
-      "styl": "Festbier",
-      "raw": "13° Helga (Festbier)"
-    },
-    {
-      "pozice": 5,
       "pivovar": "Clock",
       "nazev": "Podzim",
       "stupen": "13",
       "alkohol": "",
       "styl": "NEIPA",
+      "dalsi": "",
       "raw": "13° Podzim (NEIPA)"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Clock",
+      "nazev": "Twist",
+      "stupen": "14",
+      "alkohol": "",
+      "styl": "Red IPA",
+      "dalsi": "",
+      "raw": "14° Twist (Red IPA)"
     },
     {
       "pozice": 6,
@@ -55,6 +60,7 @@
       "stupen": "",
       "alkohol": "",
       "styl": "Limonáda",
+      "dalsi": "",
       "raw": "Bezovka (Limonáda)"
     },
     {
@@ -64,6 +70,7 @@
       "stupen": "",
       "alkohol": "",
       "styl": "Alcohol Free",
+      "dalsi": "",
       "raw": "Leviticus (Alcohol Free)"
     }
   ]

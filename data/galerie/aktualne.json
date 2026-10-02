@@ -1,37 +1,37 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-02 01:52",
+  "zmeneno": "2026-10-02 19:52",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "HOPE",
-      "nazev": "Souhra",
+      "pivovar": "SIBEERIA",
+      "nazev": "Everyday Life",
       "stupen": "12",
       "alkohol": "5.1",
-      "styl": "světlý ležák (saaz shine, premiant)",
-      "dalsi": "SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák",
-      "raw": "HOPE – Souhra 12°/5,1% světlý ležák (saaz shine, premiant) //NEXT// SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák"
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "ČERNÝ POTOKA",
-      "nazev": "Monoceros",
-      "stupen": "11",
-      "alkohol": "4.7",
-      "styl": "session Hazy IPA (chinook, citra, columbus)",
-      "dalsi": "MATUŠKA – California 12°/5,3%/45IBU APA (saaz, cascade)",
-      "raw": "ČERNÝ POTOKA – Monoceros 11°/4,7% session Hazy IPA (chinook, citra, columbus) //NEXT// MATUŠKA – California 12°/5,3%/45IBU APA (saaz, cascade)"
+      "pivovar": "MATUŠKA",
+      "nazev": "California",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "APA (saaz, cascade)",
+      "dalsi": "",
+      "raw": "MATUŠKA – California 12°/5,3%/45IBU APA (saaz, cascade)"
     },
     {
       "pozice": 3,
-      "pivovar": "MAZÁK",
-      "nazev": "Rhapsody",
-      "stupen": "14",
-      "alkohol": "6",
-      "styl": "Modern IPA (nz rhapsody)",
-      "dalsi": "FRANKIES + KOSMIX – Sinatra 16°/7%/25IBU New England IPA (motueka, citra, nelson, superdelic)",
-      "raw": "MAZÁK – Rhapsody 14°/6% Modern IPA (nz rhapsody) //NEXT// FRANKIES + KOSMIX – Sinatra 16°/7%/25IBU New England IPA (motueka, citra, nelson, superdelic)"
+      "pivovar": "FRANKIES + KOSMIX",
+      "nazev": "Sinatra",
+      "stupen": "16",
+      "alkohol": "7",
+      "styl": "New England IPA (motueka, citra, nelson, superdelic)",
+      "dalsi": "",
+      "raw": "FRANKIES + KOSMIX – Sinatra 16°/7%/25IBU New England IPA (motueka, citra, nelson, superdelic)"
     },
     {
       "pozice": 4,
