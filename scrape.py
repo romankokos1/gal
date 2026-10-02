@@ -17,6 +17,7 @@ s celým textem; pivovar/stupeň/% se doplní jen tam, kde to jde.
 
 import csv
 import json
+import os
 import re
 import shutil
 import sys
@@ -84,18 +85,76 @@ def warn(msg: str):
 
 # ---------- stažení ----------
 
-def fetch(url: str) -> str:
-    last = None
-    for _ in range(3):
+OWN_HEADERS = {"User-Agent": "hlidac-cepu (GitHub Actions; osobní archiv)"}
+BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.8",
+}
+BLOCKED = {401, 403, 406, 429, 503}
+
+
+def _get(url: str, headers: dict) -> requests.Response:
+    r = requests.get(url, timeout=30, headers=headers)
+    r.encoding = r.apparent_encoding or "utf-8"
+    return r
+
+
+def fetch_browser(url: str) -> str:
+    """Poslední možnost: skutečný prohlížeč (Playwright), když web odmítá skripty."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        if not os.getenv("GITHUB_ACTIONS"):
+            raise
+        # v GitHub Actions se prohlížeč doinstaluje jen tehdy, když je opravdu potřeba
+        import subprocess
+        print("Instaluji Playwright + Chromium (web odmítá běžné stažení)…")
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "playwright"], check=True)
+        subprocess.run([sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"],
+                       check=True, stdout=subprocess.DEVNULL)
+        from playwright.sync_api import sync_playwright
+    with sync_playwright() as pw:
+        b = pw.chromium.launch()
         try:
-            r = requests.get(url, timeout=30, headers={
-                "User-Agent": "hlidac-cepu (GitHub Actions; osobní archiv)"
-            })
-            r.raise_for_status()
-            r.encoding = r.apparent_encoding or "utf-8"
-            return r.text
-        except requests.RequestException as e:
-            last = e
+            pg = b.new_page(locale="cs-CZ", user_agent=BROWSER_HEADERS["User-Agent"])
+            resp = pg.goto(url, wait_until="domcontentloaded", timeout=45000)
+            pg.wait_for_timeout(1500)
+            if resp and resp.status >= 400:
+                raise RuntimeError(f"prohlížeč dostal HTTP {resp.status}")
+            return pg.content()
+        finally:
+            b.close()
+
+
+def fetch(url: str, p: dict | None = None) -> str:
+    """Stáhne stránku. Když web odmítne skript (401/403…), zkusí hlavičky prohlížeče
+    a nakonec skutečný prohlížeč. Úspěšnou cestu si pamatuje v p['_cesta']."""
+    p = p if p is not None else {}
+    last = None
+    order = ["vlastni", "hlavicky", "prohlizec"]
+    if p.get("_cesta") in ("hlavicky", "prohlizec"):  # minule vlastní hlavička neprošla
+        order = order[1:]
+    for way in order:
+        for _ in range(2 if way != "prohlizec" else 1):
+            try:
+                if way == "prohlizec":
+                    html = fetch_browser(url)
+                else:
+                    r = _get(url, OWN_HEADERS if way == "vlastni" else BROWSER_HEADERS)
+                    if r.status_code in BLOCKED:
+                        last = f"HTTP {r.status_code} ({way})"
+                        break                         # opakovat stejně nemá smysl → další způsob
+                    r.raise_for_status()
+                    html = r.text
+                p["_cesta"] = way
+                return html
+            except ImportError:
+                last = f"{last}; prohlížeč (Playwright) není nainstalovaný"
+                break
+            except Exception as e:                    # síť, timeout…
+                last = f"{e} ({way})"
     raise RuntimeError(f"Stránku se nepodařilo stáhnout: {last}")
 
 
@@ -585,7 +644,12 @@ def run_venue(p: dict, now_dt: datetime) -> bool:
     # --- stažení a vytažení; jakákoli chyba se jen započítá ---
     html, lines, upcoming, method, err = "", [], [], "nic", ""
     try:
-        html = fetch(p["url"])
+        p["_cesta"] = stav.get("zpusob_stazeni", "")
+        html = fetch(p["url"], p)
+        if p["_cesta"] == "vlastni":
+            stav.pop("zpusob_stazeni", None)
+        else:
+            stav["zpusob_stazeni"] = p["_cesta"]
         lines, method = extract_lines(html, p)
         lines, upcoming = split_upcoming(lines)
         if not lines:
