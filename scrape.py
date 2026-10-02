@@ -45,6 +45,10 @@ PODNIKY = [
     # Klub malých pivovarů Plzeň – „Pivovar - Název, styl, 12° sv. nef., 4, 8% vol. Alc, 35 IBU“
     {"id": "kmp", "nazev": "KMP Plzeň", "url": "https://www.klubmalychpivovaru.cz/",
      "polozky": "#BeersNaCepu .name-beer:not(#BeerSlot0)"},
+    # Zlatá kráva Bandaska – TV menu: pivovar | „12 PLNOTUČNÁ“ (číslo = stupně) | popis
+    {"id": "zlatakrava", "nazev": "Zlatá kráva Bandaska", "url": "https://zk.vhost.cz/",
+     "polozky": "tr.polozka", "pole": [".pivovar", ".nazev", ".popis"],
+     "format": "pivovar|nazev|popis", "jen_selektor": True},
     # „NÁZEV – Styl (Pivovar) · abv 4,9 %“, pod nabídkou „Připraveno k naražení“
     {"id": "beerandfriends", "nazev": "Beer and Friends", "url": "https://www.beerandfriends.eu/beer-and-friends",
      "polozky": ".field-name-field-nacepu p", "format": "nazev-styl-(pivovar)"},
@@ -66,7 +70,7 @@ HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
              "raw", "narazeno", "docepovano", "dalsi"]
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
-PARSER_VERSION = 6
+PARSER_VERSION = 7
 FAILS_BEFORE_ERROR = 3            # ~6 hodin výpadku při běhu po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
 
@@ -350,6 +354,21 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
     out["main"] = main
     main = DEC_SPACE.sub(r"\1,\2", main)
     rest = main
+
+    if fmt == "pivovar|nazev|popis" and " | " in main:
+        parts = [x.strip() for x in main.split(" | ")]
+        out["pivovar"], out["nazev"] = parts[0], parts[1] if len(parts) > 1 else ""
+        m = re.match(r"^(\d{1,2}(?:[.,]\d)?)\s*°?\s+(.+)$", out["nazev"])
+        if m:                                   # „12 PLNOTUČNÁ“ → 12°, Plnotučná
+            out["stupen"], out["nazev"] = m.group(1).replace(",", "."), m.group(2)
+        popis = parts[2] if len(parts) > 2 else ""
+        # styl = první věta popisu (ne „7. varianta…“), zkrácená na celé slovo
+        st = re.split(r"(?<=\w{3}[.!?])\s", popis, maxsplit=1)[0].rstrip(".")
+        out["styl"] = st if len(st) <= 90 else st[:90].rsplit(" ", 1)[0].rstrip(",") + "…"
+        a = ABV_LABEL.search(popis)
+        if a:
+            out["alkohol"] = a.group(1).replace(",", ".")
+        return out
 
     if fmt == "nazev-styl|pivovar" and " | " in main:
         left, _, brew = main.rpartition(" | ")
