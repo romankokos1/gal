@@ -54,6 +54,7 @@ header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14p
 h1{font-size:20px;margin:0;font-weight:600}
 h1 span{color:var(--accent)}
 .sub{color:var(--muted);font-family:var(--mono);font-size:12px;flex:1;min-width:200px}
+.sub b{color:var(--text-2);font-weight:500}
 h2{font-size:13px;margin:0 0 10px;font-weight:600;color:var(--text-2);text-transform:uppercase;letter-spacing:.06em}
 h3{font-size:12px;margin:0 0 6px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;min-width:0}
@@ -172,15 +173,29 @@ svg.line .dot{fill:var(--accent);stroke:var(--surface);stroke-width:2}
 svg.line .hit{fill:transparent;cursor:default}
 
 /* časová osa */
-.tl{position:relative}
-.tl-axis{position:relative;height:20px;margin-left:var(--lw);border-bottom:1px solid var(--line)}
-.tl-axis span{position:absolute;font:11px var(--mono);color:var(--muted);transform:translateX(-50%);white-space:nowrap}
-.tl-row{display:grid;grid-template-columns:var(--lw) 1fr;align-items:center;height:22px}
-.tl-row .l{font-size:12px;color:var(--text-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:8px}
-.tl-row .t{position:relative;height:100%;background-image:linear-gradient(to right,var(--line) 1px,transparent 1px);background-size:var(--grid) 100%}
-.tl-row .f{position:absolute;top:5px;height:12px;background:var(--accent);border-radius:4px;min-width:3px;cursor:pointer}
-.tl-row .f.open{background:var(--accent-ink)}
-.tl-row:hover .l{color:var(--text)}
+.tl-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.tl-bar .note{margin:0}
+.tl-wrap{overflow-x:auto;overflow-y:hidden;border:1px solid var(--line);border-radius:8px;-webkit-overflow-scrolling:touch}
+.tl-in{position:relative;min-width:100%}
+.tl-grid{position:absolute;top:0;bottom:0;pointer-events:none}
+.tl-grid .d{position:absolute;top:0;bottom:0;border-left:1px solid var(--line)}
+.tl-grid .d.we{background:var(--surface-2)}
+.tl-grid .h{position:absolute;top:34px;bottom:0;border-left:1px dashed var(--line);opacity:.6}
+.tl-grid .now{position:absolute;top:0;bottom:0;border-left:2px solid var(--c2);z-index:3}
+.tl-head{display:flex;position:sticky;top:0;z-index:4;height:34px;background:var(--surface);border-bottom:1px solid var(--line)}
+.tl-head .lc,.tl-row .lc{position:sticky;left:0;z-index:5;background:var(--surface);flex:none;width:var(--lw);border-right:1px solid var(--line)}
+.tl-head .ax{position:relative;flex:none}
+.tl-head .ax span{position:absolute;top:4px;font:11px/1.25 var(--mono);color:var(--muted);white-space:nowrap;padding-left:5px}
+.tl-head .ax span b{display:block;color:var(--text-2);font-weight:500}
+.tl-head .ax span.hr{top:18px;font-size:10px;opacity:.8}
+.tl-row{display:flex;height:24px;align-items:center;position:relative}
+.tl-row .lc{font-size:12px;color:var(--text-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 8px;line-height:24px;height:24px}
+.tl-row .t{position:relative;height:100%;flex:none}
+.tl-row .f{position:absolute;top:5px;height:14px;background:var(--accent);border-radius:4px;min-width:4px;cursor:pointer;z-index:2;overflow:hidden;
+  font:500 10px/14px var(--sans);color:var(--on-accent);padding:0 5px;white-space:nowrap;text-overflow:ellipsis}
+.tl-row .f.open{background:var(--accent-ink);border-radius:4px 0 0 4px}
+.tl-row:hover .lc{color:var(--text)}
+.tl-row:hover .t{background:color-mix(in srgb,var(--accent) 6%,transparent)}
 
 #tip{position:fixed;pointer-events:none;background:var(--tip-bg);color:var(--tip-text);padding:6px 9px;border-radius:6px;font-size:12px;max-width:320px;z-index:60;display:none}
 #tip b{display:block}
@@ -194,6 +209,28 @@ svg.line .hit{fill:transparent;cursor:default}
 .summary .kpi b{font-size:18px}
 .empty{padding:40px;text-align:center;color:var(--muted)}
 .hidden{display:none!important}
+
+/* tabulky jako karty na mobilu */
+table.cards caption{display:none}
+@media (max-width:640px){
+  table.cards{display:block}
+  table.cards thead{display:none}
+  table.cards caption{display:flex;gap:6px;align-items:center;margin-bottom:10px;caption-side:top;font-size:12px;color:var(--muted)}
+  table.cards caption select{flex:1;min-width:0;background:var(--surface-2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 8px;font:13px var(--sans)}
+  table.cards caption button{background:var(--surface-2);color:var(--text);border:1px solid var(--line);border-radius:8px;width:34px;height:32px;font-size:15px}
+  table.cards tbody{display:grid;gap:8px}
+  table.cards tr{display:flex;flex-wrap:wrap;gap:3px 14px;background:var(--surface-2);border-radius:10px;padding:9px 12px;border:1px solid transparent}
+  table.cards tr.click:active{border-color:var(--accent)}
+  table.cards tr.click:hover td{background:none}
+  table.cards td{display:block;border:0;padding:0;font-size:12px;color:var(--text-2);text-align:left!important}
+  table.cards td.hide-m{display:block}
+  table.cards td[data-l]:not([data-l=""])::before{content:attr(data-l) " ";color:var(--muted);font-family:var(--sans)}
+  table.cards td[data-u]::after{content:attr(data-u)}
+  table.cards td.pm{order:-2;flex-basis:100%;font-size:14px;font-weight:600;color:var(--text)}
+  table.cards td.sm{order:-1;flex-basis:100%;font-size:12px;color:var(--text-2);margin-top:-2px}
+  table.cards td.pm::before,table.cards td.sm::before{content:none!important}
+  table.cards td.empty{flex-basis:100%;text-align:center!important}
+}
 
 /* karta (pivovar / pivo) */
 #sheet{position:fixed;inset:0;z-index:50;background:#0006;display:flex;align-items:flex-start;justify-content:center;padding:6vh 16px;overflow:auto}
@@ -217,7 +254,8 @@ svg.line .hit{fill:transparent;cursor:default}
   h1{font-size:18px}
   .sub{order:5;flex-basis:100%;min-width:0}
   .venue{display:none!important}
-  select.venue-sel{display:block;margin-left:auto;max-width:55vw}
+  header{flex-wrap:wrap}
+  select.venue-sel{display:block;flex:1 1 0;min-width:0;max-width:none}
   .bar{position:static;padding:0}
   .seg#range{flex:1}.seg#range button{flex:1;justify-content:center;padding:6px 4px}
   input[type=search]{min-width:0;max-width:none;flex-basis:100%}
@@ -306,7 +344,12 @@ svg.line .hit{fill:transparent;cursor:default}
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px"><h2 style="margin:0">Každé naražení</h2><button class="btn" id="copy">Kopírovat pro Excel</button></div>
       <div class="tw"><table id="tHist"></table></div><div class="note">Časy jsou přesné zhruba na 2 hodiny (interval kontroly) a odpovídají tomu, kdy se změnil web, ne výčep.</div>
     </section>
-    <section data-p="osa" class="card hidden"><div class="tl" id="tl"></div></section>
+    <section data-p="osa" class="card hidden">
+      <div class="tl-bar"><div class="seg" id="zoom">
+        <button data-z="den">Den</button><button data-z="tyden" class="on">Týden</button><button data-z="mesic">Měsíc</button><button data-z="vse">Vše</button>
+      </div><span class="note">Osa se posouvá do strany, otevře se na dnešku. Červená čára = teď, šedě víkendy.</span></div>
+      <div class="tl-wrap" id="tlWrap"><div class="tl-in" id="tl"></div></div>
+    </section>
   </div>
 </div>
 <div id="sheet" class="hidden" role="dialog" aria-modal="true"><div class="panel" id="panel"></div></div>
@@ -413,16 +456,42 @@ function brewCanon(name){
   return ALIAS_B[s]||s;
 }
 
+/* ---------- sjednocení velikosti písmen (jen zobrazení, data se nemění) ---------- */
+// zkratky a kódy zemí, které mají zůstat velkými písmeny
+const SMALL=new Set("of the and a an in on with to for at by de la".split(" "));
+const ACR=new Set("WC NE IPA APA NEIPA DIPA TIPA IIPA IPL DDH TDH NZ ESB XPA EPA PA BW KMP IBU ABV EPM DH II III IV IT SK CZ DE BE US USA UK DK NL PL AT FR ES".split(" "));
+const CZ_DIA=/[ěščřžýáíéůúťďň]/i;
+const cap=w=>w.charAt(0).toUpperCase()+w.slice(1);
+function nice(s, kind){
+  if(!s) return s;
+  const L=s.match(/\p{L}/gu)||[];
+  if(L.length<2) return s;
+  const upper=L.filter(c=>c!==c.toLowerCase()).length/L.length;
+  if(upper>0.8){                                   // VELKÁ PÍSMENA
+    // pivovar a anglické názvy: Každé Slovo; české názvy a styly: jen první písmeno
+    const title = kind==="pivovar" || !CZ_DIA.test(s);
+    let first=true;
+    return s.toLowerCase().replace(/\p{L}[\p{L}'’*]*/gu, w=>{
+      if(ACR.has(w.toUpperCase())){ first=false; return w.toUpperCase(); }
+      const out = first ? cap(w) : (title && !SMALL.has(w)) ? cap(w) : w; first=false; return out;
+    });
+  }
+  if(upper===0){                                   // vše malými
+    return kind==="pivovar" ? s.replace(/\p{L}+/gu, cap) : kind==="styl" ? s : cap(s);
+  }
+  return s;                                        // normální zápis nechat
+}
+
 /* ---------- načtení všech podniků ---------- */
 const get = (u,text) => fetch(u,{cache:"no-store"}).then(r=>r.ok?(text?r.text():r.json()):null).catch(()=>null);
-let VENUES=[], VENUE=null, DATA={}, ALL=[], ALLX=[], STAV=null, NOW=new Date();
+let BEH=null, VENUES=[], VENUE=null, DATA={}, ALL=[], ALLX=[], STAV=null, NOW=new Date();
 
 function build(text, v){
   return parseCSV(text).map(r=>{
     const from=parseDate(r.narazeno), to=parseDate(r.docepovano);
     const brews = brewSplit(r.pivovar);
     const keys = [...new Set(brews.map(brewCanon))];
-    brews.forEach(b=>{ const k=brewCanon(b), d=b.replace(/\b(pivovar|minipivovar)\s+/i,"");
+    brews.forEach(b=>{ const k=brewCanon(b), d=nice(b.replace(/\b(pivovar|minipivovar)\s+/i,""),"pivovar");
       if(!ALIAS_T.has(k) && (!brewDisplay[k] || d.length<brewDisplay[k].length)) brewDisplay[k]=d; });
     return {...r, from, to, open:!to, venue:v.id, venueName:v.nazev,
       days: from ? Math.max(0,((to||NOW)-from)/DAY) : null,
@@ -430,7 +499,8 @@ function build(text, v){
       style: styleOf(r),
       abv: parseFloat(r.alkohol)||null, deg: parseFloat(r.stupen)||null,
       beerKey: (keys.length&&r.nazev) ? keys.join("+")+"|"+norm(r.nazev) : norm(r.raw),
-      label: r.nazev || r.raw,
+      label: nice(r.nazev,"nazev") || r.raw,
+      pivovar: nice(r.pivovar,"pivovar"), styl: nice(r.styl,"styl"), pivovarRaw: r.pivovar,
       hay: norm([r.raw,r.pivovar,r.nazev,r.styl].join(" ")),
     };
   }).filter(r=>r.from).sort((a,b)=>a.from-b.from);
@@ -438,7 +508,8 @@ function build(text, v){
 
 async function boot(){
   NOW=new Date();
-  const [list, al] = await Promise.all([get("data/podniky.json"), get("aliasy.json")]);
+  const [list, al, beh] = await Promise.all([get("data/podniky.json"), get("aliasy.json"), get("data/posledni_beh.json")]);
+  BEH = beh;
   setAliases(al);
   // starší verze bez podniky.json měla data přímo v data/
   VENUES = (list&&list.length) ? list.map(v=>({...v, base:`data/${v.id}/`})) : [{id:"", nazev:"Galerie piva", base:"data/"}];
@@ -478,12 +549,27 @@ function selectVenue(id){
     return;
   }
   if(!ALL.length){ $("#app").classList.add("hidden"); $("#meta").textContent="zatím žádná data"; return; }
-  $("#meta").textContent = `sledováno od ${fmtD(ALL[0].from)} · ${ALL.length} naražení` +
-    (STAV&&STAV.posledni_kontrola ? ` · kontrolováno ${fmtD(new Date(STAV.posledni_kontrola))}` : "");
+  $("#meta").innerHTML = metaLine();
   $("#app").classList.remove("hidden");
   $("#warn").innerHTML = warnings();
   $("#dups").innerHTML = dupes();
   render();
+}
+
+const fmtWhen = d => { if(!d) return "";
+  const today=new Date(NOW); today.setHours(0,0,0,0);
+  const day=new Date(d); day.setHours(0,0,0,0);
+  const diff=Math.round((today-day)/DAY);
+  const hm=d.toLocaleTimeString("cs-CZ",{hour:"2-digit",minute:"2-digit"});
+  return diff===0 ? `dnes ${hm}` : diff===1 ? `včera ${hm}` : `${fmtD(d)} ${hm}`; };
+function metaLine(){
+  const lastChange = new Date(ALL.reduce((m,r)=>Math.max(m,+r.from,+(r.to||0)),0));
+  const check = BEH&&BEH.cas ? parseDate(BEH.cas) : (STAV&&STAV.posledni_kontrola ? new Date(STAV.posledni_kontrola+"T00:00") : null);
+  const exact = !!(BEH&&BEH.cas);
+  const bad = BEH&&BEH.podniky&&BEH.podniky[VENUE.id]==="chyba" || (STAV&&STAV.chyby_v_rade>0);
+  return `<span title="Kdy hlídač naposled stáhl web podniku">kontrola <b>${check?(exact?fmtWhen(check):fmtD(check)):"?"}</b>${bad?' <span style="color:var(--c2)">⚠</span>':""}</span>`
+    + ` · <span title="Kdy se naposled změnila nabídka na čepu">změna nabídky <b>${fmtWhen(lastChange)}</b></span>`
+    + ` · <span class="dim">od ${fmtD(ALL[0].from)}, ${ALL.length} naražení</span>`;
 }
 
 /* ---------- kontrola zdraví dat ---------- */
@@ -491,7 +577,7 @@ function warnings(){
   const w=[];
   const lastChange = ALL.reduce((m,r)=>Math.max(m,+r.from,+(r.to||0)),0);
   if(STAV){
-    const chk = STAV.posledni_kontrola ? new Date(STAV.posledni_kontrola+"T23:59") : null;
+    const chk = BEH&&BEH.cas ? parseDate(BEH.cas) : STAV.posledni_kontrola ? new Date(STAV.posledni_kontrola+"T23:59") : null;
     if(chk && (NOW-chk)/DAY > 2) w.push(`<b>Hlídač neběží</b> – poslední úspěšná kontrola ${fmtD(chk)}. Zkontroluj záložku Actions v repu.`);
     if((STAV.chyby_v_rade||0)>=3) w.push(`<b>Hlídač selhává</b> ${STAV.chyby_v_rade}× po sobě: ${esc(STAV.chyba||"")}`);
   }
@@ -614,11 +700,11 @@ function renderPrehled(R){
   const now=$("#now");
   now.innerHTML = open.length ? open.sort((a,b)=>(+a.pozice||0)-(+b.pozice||0)).map((r,i)=>`
     <div class="tap" data-beer="${esc(r.beerKey)}"><span class="n">${i+1}</span>
-      <div><div class="nm">${esc(r.label)}</div><div class="br">${esc(r.pivovar||"")}</div><div class="st">${esc(r.styl||"")}</div>${r.dalsi?`<div class="nx">→ potom: ${esc(r.dalsi)}</div>`:""}</div>
+      <div><div class="nm">${esc(r.label)}</div><div class="br">${esc(r.pivovar||"")}</div><div class="st">${esc(r.styl||"")}</div>${r.dalsi?`<div class="nx">→ potom: ${esc(nice(r.dalsi,"nazev"))}</div>`:""}</div>
       <div class="num">${r.deg?r.deg+"°":""} ${r.abv?fmtN(r.abv)+" %":""}<br><span class="dim">${fmtN(r.days)} d</span></div></div>`).join("")
     : `<div class="empty">nic</div>`;
   const soon = DATA[VENUE.id].soon || [];
-  $("#soon").innerHTML = soon.length ? `<div class="soon"><h3>Připraveno k naražení</h3>${soon.map(b=>`<div><span><b>${esc(b.nazev||b.raw)}</b>${b.pivovar?` · ${esc(b.pivovar)}`:""}${b.styl?` <span class="dim">· ${esc(b.styl)}</span>`:""}</span><span class="m">${b.stupen?esc(b.stupen)+"° ":""}${b.alkohol?fmtN(+b.alkohol)+" %":""}</span></div>`).join("")}</div>` : "";
+  $("#soon").innerHTML = soon.length ? `<div class="soon"><h3>Připraveno k naražení</h3>${soon.map(b=>`<div><span><b>${esc(nice(b.nazev,"nazev")||b.raw)}</b>${b.pivovar?` · ${esc(nice(b.pivovar,"pivovar"))}`:""}${b.styl?` <span class="dim">· ${esc(nice(b.styl,"styl"))}</span>`:""}</span><span class="m">${b.stupen?esc(b.stupen)+"° ":""}${b.alkohol?fmtN(+b.alkohol)+" %":""}</span></div>`).join("")}</div>` : "";
 
   hbars("#chBrew", brews.sort((a,b)=>b.taps-a.taps||a.name.localeCompare(b.name)).slice(0,12)
     .map(o=>({l:o.name,v:o.taps,act:()=>openBrew(o.key),
@@ -730,37 +816,37 @@ function lineChart(sel, pts, fmt){
 /* ---------- tabulky podniku ---------- */
 function renderPivovary(R){
   table("#tBrew", byBrewery(R), [
-    {k:"name",t:"Pivovar"},
-    {k:"taps",t:"Naraženo",n:1},
-    {k:"beers",t:"Různých piv",n:1},
-    {k:"days",t:"Dní na čepu",n:1,f:v=>fmtN(v),h:1},
-    {k:"avgDays",t:"Ø dní / pivo",n:1,f:v=>fmtN(v)},
-    {k:"collab",t:"Z toho kolab.",n:1,h:1},
-    {k:"avgAbv",t:"Ø % alk.",n:1,f:v=>fmtN(v),h:1},
-    {k:"last",t:"Naposled",n:1,m:1,f:fmtD},
+    {k:"name",t:"Pivovar",pm:1},
+    {k:"taps",t:"Naraženo",n:1,lm:"",u:"× naraženo"},
+    {k:"beers",t:"Různých piv",n:1,lm:"",u:" piv"},
+    {k:"days",t:"Dní na čepu",n:1,f:v=>fmtN(v),h:1,lm:"",u:" dní celkem"},
+    {k:"avgDays",t:"Ø dní / pivo",n:1,f:v=>fmtN(v),lm:"Ø",u:" d/pivo"},
+    {k:"collab",t:"Z toho kolab.",n:1,h:1,lm:"kolab."},
+    {k:"avgAbv",t:"Ø % alk.",n:1,f:v=>fmtN(v),h:1,lm:"Ø",u:" %"},
+    {k:"last",t:"Naposled",n:1,m:1,f:fmtD,lm:"naposled"},
   ], "taps", o=>openBrew(o.key));
 }
 function renderPiva(R){
   table("#tBeer", byBeer(R), [
-    {k:"name",t:"Pivo",f:(v,o)=>esc(v)+(o.open?' <span class="live">● na čepu</span>':"")},
-    {k:"pivovar",t:"Pivovar"},
-    {k:"style",t:"Styl",h:1},
-    {k:"deg",t:"°",n:1,m:1,f:v=>v??"–"},
-    {k:"abv",t:"%",n:1,m:1,f:v=>fmtN(v)},
-    {k:"taps",t:"Naraženo",n:1},
-    {k:"days",t:"Dní celkem",n:1,f:v=>fmtN(v),h:1},
-    {k:"last",t:"Naposled",n:1,m:1,f:fmtD},
+    {k:"name",t:"Pivo",pm:1,f:(v,o)=>esc(v)+(o.open?' <span class="live">● na čepu</span>':"")},
+    {k:"pivovar",t:"Pivovar",sm:1},
+    {k:"style",t:"Styl",h:1,lm:""},
+    {k:"deg",t:"°",n:1,m:1,f:v=>v??"–",lm:"",u:"°"},
+    {k:"abv",t:"%",n:1,m:1,f:v=>fmtN(v),lm:"",u:" %"},
+    {k:"taps",t:"Naraženo",n:1,lm:"",u:"×"},
+    {k:"days",t:"Dní celkem",n:1,f:v=>fmtN(v),h:1,lm:"",u:" dní"},
+    {k:"last",t:"Naposled",n:1,m:1,f:fmtD,lm:"naposled"},
   ], "last", o=>openBeer(o.key));
 }
 const HIST_COLS=[
-  {k:"from",t:"Naraženo",n:1,m:1,f:fmtDT},
-  {k:"to",t:"Dočepováno",n:1,m:1,f:(v)=>v?fmtDT(v):'<span class="live">● na čepu</span>',h:1},
-  {k:"days",t:"Dní",n:1,f:v=>fmtN(v)},
-  {k:"pivovar",t:"Pivovar"},
-  {k:"label",t:"Pivo"},
-  {k:"style",t:"Styl",h:1},
-  {k:"deg",t:"°",n:1,m:1,f:v=>v??"–",h:1},
-  {k:"abv",t:"%",n:1,m:1,f:v=>fmtN(v),h:1},
+  {k:"from",t:"Naraženo",n:1,m:1,f:fmtDT,lm:"od"},
+  {k:"to",t:"Dočepováno",n:1,m:1,f:(v)=>v?fmtDT(v):'<span class="live">● na čepu</span>',h:1,lm:"do"},
+  {k:"days",t:"Dní",n:1,f:v=>fmtN(v),lm:"",u:" d"},
+  {k:"pivovar",t:"Pivovar",sm:1},
+  {k:"label",t:"Pivo",pm:1},
+  {k:"style",t:"Styl",h:1,lm:""},
+  {k:"deg",t:"°",n:1,m:1,f:v=>v??"–",h:1,lm:"",u:"°"},
+  {k:"abv",t:"%",n:1,m:1,f:v=>fmtN(v),h:1,lm:"",u:" %"},
 ];
 
 /* ---------- napříč podniky ---------- */
@@ -772,18 +858,18 @@ function renderNapric(){
   $("#xSum").innerHTML = `<div class="kpi"><b>${brews.length}</b><small>pivovarů celkem</small></div>
     <div class="kpi"><b>${shared}</b><small>ve víc podnicích</small></div>` +
     VENUES.map(v=>`<div class="kpi"><b>${only[v.id]}</b><small>jen ${esc(v.nazev)}</small></div>`).join("");
-  const cols=[{k:"name",t:"Pivovar"}];
-  VENUES.forEach(v=>cols.push({k:"v_"+v.id,t:v.nazev,n:1,f:x=>x?x:'<span class="dim">–</span>'}));
-  cols.push({k:"nVenues",t:"Podniků",n:1},{k:"taps",t:"Celkem",n:1},
+  const cols=[{k:"name",t:"Pivovar",pm:1}];
+  VENUES.forEach(v=>cols.push({k:"v_"+v.id,t:v.nazev,n:1,z:1,f:x=>x?x:'<span class="dim">–</span>'}));
+  cols.push({k:"nVenues",t:"Podniků",n:1,lm:"",u:" podn."},{k:"taps",t:"Celkem",n:1,lm:"celkem",u:"×"},
     {k:"where",t:"",f:(x,o)=> o.nVenues===nV&&nV>1 ? '<span class="pill acc">všude</span>' : o.nVenues===1 ? `<span class="pill">jen ${esc(venueName(Object.keys(o.venues)[0]))}</span>` : ""});
   table("#tX", brews.map(o=>({...o, where:o.nVenues, ...Object.fromEntries(VENUES.map(v=>["v_"+v.id,o.venues[v.id]||0]))})), cols, "nVenues", o=>openBrew(o.key));
   const sb=byBeer(R).filter(b=>b.nVenues>1);
   table("#tXBeer", sb, [
-    {k:"name",t:"Pivo"},
-    {k:"pivovar",t:"Pivovar"},
-    {k:"nVenues",t:"Kde",f:(x,o)=>venuePills(o.venues)},
-    {k:"taps",t:"Naraženo",n:1},
-    {k:"last",t:"Naposled",n:1,m:1,f:fmtD},
+    {k:"name",t:"Pivo",pm:1},
+    {k:"pivovar",t:"Pivovar",sm:1},
+    {k:"nVenues",t:"Kde",f:(x,o)=>venuePills(o.venues),lm:""},
+    {k:"taps",t:"Naraženo",n:1,lm:"",u:"×"},
+    {k:"last",t:"Naposled",n:1,m:1,f:fmtD,lm:"naposled"},
   ], "last", o=>openBeer(o.key));
 }
 
@@ -798,6 +884,8 @@ function hbars(sel, items, note=""){
 }
 
 const SORT={};
+// sloupec: k=klíč, t=nadpis, n=číslo, m=mono, h=skrýt v úzké tabulce,
+// pm/sm = hlavní/vedlejší řádek karty na mobilu, lm = popisek v kartě, u = jednotka v kartě
 function table(sel, data, cols, defKey, onRow){
   const s = SORT[sel] || (SORT[sel]={k:defKey,asc:false});
   const col = cols.find(c=>c.k===s.k) || cols[0];
@@ -809,13 +897,21 @@ function table(sel, data, cols, defKey, onRow){
     return s.asc ? r : -r;
   });
   const el=$(sel);
-  el.innerHTML = `<thead><tr>${cols.map(c=>`<th data-k="${c.k}" class="${c.n?"r":""} ${c.h?"hide-m":""} ${c.k===col.k?"s"+(s.asc?" asc":""):""}">${esc(c.t)}</th>`).join("")}</tr></thead>
+  el.classList.add("cards");
+  const sortable = cols.filter(c=>c.t);
+  el.innerHTML = `<caption>řadit <select aria-label="Řadit podle">${sortable.map(c=>`<option value="${c.k}" ${c.k===col.k?"selected":""}>${esc(c.lm||c.t)}</option>`).join("")}</select>
+      <button type="button" aria-label="Obrátit pořadí">${s.asc?"↑":"↓"}</button></caption>
+    <thead><tr>${cols.map(c=>`<th data-k="${c.k}" class="${c.n?"r":""} ${c.h?"hide-m":""} ${c.k===col.k?"s"+(s.asc?" asc":""):""}">${esc(c.t)}</th>`).join("")}</tr></thead>
     <tbody>${d.length? d.map((o,i)=>`<tr data-i="${i}" class="${onRow?"click":""}">${cols.map(c=>{
       const v=o[c.k]; const out=c.f?c.f(v,o):esc(v??"");
-      return `<td class="${c.n?"r":""} ${c.m?"m":""} ${c.h?"hide-m":""}">${out}</td>`;}).join("")}</tr>`).join("")
+      const has = v!=null && v!=="" && out!=="–" && !(c.z && !v);
+      if(!has && !c.pm && (c.lm!==undefined || c.u || c.z)) return `<td class="${c.n?"r":""} ${c.h?"hide-m":""}" style="display:none"></td>`;
+      return `<td class="${c.n?"r":""} ${c.m?"m":""} ${c.h?"hide-m":""} ${c.pm?"pm":""} ${c.sm?"sm":""}" data-l="${esc(c.lm!==undefined?c.lm:c.t)}"${c.u&&has?` data-u="${esc(c.u)}"`:""}>${out}</td>`;}).join("")}</tr>`).join("")
       : `<tr><td colspan="${cols.length}" class="empty">nic neodpovídá filtru</td></tr>`}</tbody>`;
   el.querySelector("thead").onclick = e => { const th=e.target.closest("th"); if(!th) return;
     if(s.k===th.dataset.k) s.asc=!s.asc; else { s.k=th.dataset.k; s.asc=!(cols.find(c=>c.k===s.k)||{}).n; } render(); };
+  el.querySelector("caption select").onchange = e => { s.k=e.target.value; s.asc=!(cols.find(c=>c.k===s.k)||{}).n; render(); };
+  el.querySelector("caption button").onclick = () => { s.asc=!s.asc; render(); };
   el.querySelector("tbody").onclick = e => { const tr=e.target.closest("tr[data-i]"); if(tr&&onRow) onRow(d[tr.dataset.i]); };
   el._sorted=d;
 }
@@ -828,22 +924,51 @@ $("#copy").onclick = () => {
   navigator.clipboard.writeText(tsv).then(()=>{ const b=$("#copy"); b.textContent=`Zkopírováno (${d.length})`; setTimeout(()=>b.textContent="Kopírovat pro Excel",1500); });
 };
 
+// přiblížení = kolik pixelů má jeden den (u „Vše“ se vejde celé období)
+let ZOOM = store.get("zoom") || "tyden";
+const ZOOM_PX = {den:480, tyden:110, mesic:34};
+$("#zoom").onclick = e => { const b=e.target.closest("button"); if(!b) return; ZOOM=b.dataset.z; store.set("zoom",ZOOM); timeline(rows()); };
+const DOW=["ne","po","út","st","čt","pá","so"];
 function timeline(R){
-  const el=$("#tl");
+  document.querySelectorAll("#zoom button").forEach(b=>b.classList.toggle("on",b.dataset.z===ZOOM));
+  const el=$("#tl"), wrap=$("#tlWrap");
   if(!R.length){ el.innerHTML='<div class="empty">nic neodpovídá filtru</div>'; return; }
-  const start = F.days ? Math.max(NOW-F.days*DAY, +R[0].from) : +R[0].from;
-  const span = Math.max(DAY, NOW-start);
-  const pct = t => Math.max(0,Math.min(100,(t-start)/span*100));
-  const step = [1,2,7,14,30,61,91,182].find(d=>span/(d*DAY)<=(innerWidth<640?4:10))||365;
-  const ticks=[]; const t0=new Date(start); t0.setHours(0,0,0,0);
-  for(let t=+t0+DAY; t<=+NOW; t+=step*DAY) ticks.push(t);
-  el.style.setProperty("--lw",(innerWidth<640?110:220)+"px");
-  el.style.setProperty("--grid",`${step*DAY/span*100}%`);
-  const rs=[...R].sort((a,b)=>b.from-a.from);
-  el.innerHTML = `<div class="tl-axis">${ticks.map(t=>`<span style="left:${pct(t)}%">${fmtD(new Date(t))}</span>`).join("")}</div>`
-    + rs.map(r=>{ const a=pct(+r.from), b=pct(+(r.to||NOW));
-      return `<div class="tl-row"><span class="l" title="${esc(r.raw)}">${esc(r.label)}</span><span class="t">
-      <span class="f ${r.open?"open":""}" data-beer="${esc(r.beerKey)}" style="left:${a}%;width:${Math.max(.3,b-a)}%" ${T(`<b>${esc(r.label)}</b>${esc(r.pivovar||"")}<br><span>${fmtDT(r.from)} → ${r.to?fmtDT(r.to):"na čepu"} · ${fmtN(r.days)} d</span>`)}></span></span></div>`; }).join("");
+  const LW = innerWidth<640 ? 110 : 200;
+  const first = F.days ? Math.max(NOW-F.days*DAY, +R[0].from) : +R[0].from;
+  const d0 = new Date(first); d0.setHours(0,0,0,0);
+  const end = new Date(NOW); end.setHours(24,0,0,0);                 // do konce dneška
+  const days = Math.max(1, Math.round((end-d0)/DAY));
+  const avail = Math.max(300, wrap.clientWidth - LW - 2);
+  const pxDay = ZOOM==="vse" ? avail/days : Math.max(ZOOM_PX[ZOOM], avail/days);   // krátké období vyplní šířku
+  const W = Math.round(days*pxDay);
+  const x = t => (t-d0)/DAY*pxDay;
+  el.style.setProperty("--lw",LW+"px"); el.style.width=(LW+W)+"px";
+
+  // popisky dnů: hustota podle místa
+  const every = pxDay>=60 ? 1 : pxDay>=26 ? 2 : pxDay>=12 ? 7 : 14;
+  let head="", grid="";
+  for(let i=0;i<days;i++){
+    const d=new Date(+d0+i*DAY), dow=d.getDay();
+    grid+=`<div class="d ${dow===0||dow===6?"we":""}" style="left:${i*pxDay}px;width:${pxDay}px"></div>`;
+    const show = every===7||every===14 ? (dow===1 && (every===7 || Math.round(i/7)%2===0)) : i%every===0;
+    if(show) head+=`<span style="left:${i*pxDay}px">${pxDay>=40?`<b>${DOW[dow]}</b>`:""}${d.getDate()}. ${d.getMonth()+1}.</span>`;
+    if(pxDay>=240) for(const h of [6,12,18]){
+      grid+=`<div class="h" style="left:${(i+h/24)*pxDay}px"></div>`;
+      head+=`<span class="hr" style="left:${(i+h/24)*pxDay}px">${h}:00</span>`;
+    }
+  }
+  grid+=`<div class="now" style="left:${x(+NOW)}px" ${T(`<b>teď</b><span>${fmtDT(NOW)}</span>`)}></div>`;
+
+  // nahoře to, co teče teď / dotéklo nedávno
+  const rs=[...R].sort((a,b)=>(+(b.to||NOW))-(+(a.to||NOW)) || b.from-a.from);
+  el.innerHTML = `<div class="tl-grid" style="left:${LW}px;width:${W}px">${grid}</div>
+    <div class="tl-head"><div class="lc"></div><div class="ax" style="width:${W}px">${head}</div></div>`
+    + rs.map(r=>{
+      const a=Math.max(0,x(+r.from)), b=x(+(r.to||NOW)), w=Math.max(4,b-a);
+      return `<div class="tl-row"><span class="lc" title="${esc(r.raw)}">${esc(r.label)}</span><span class="t" style="width:${W}px">
+      <span class="f ${r.open?"open":""}" data-beer="${esc(r.beerKey)}" style="left:${a}px;width:${w}px" ${T(`<b>${esc(r.label)}</b>${esc(r.pivovar||"")}<br><span>${fmtDT(r.from)} → ${r.to?fmtDT(r.to):"na čepu"} · ${fmtN(r.days)} d</span>`)}>${w>60?esc(r.label):""}</span></span></div>`; }).join("");
+  // otevřít na dnešku (vpravo), ne na začátku historie
+  wrap.scrollLeft = wrap.scrollWidth;
 }
 let rsT; addEventListener("resize",()=>{ clearTimeout(rsT); rsT=setTimeout(()=>{ if(TAB==="osa"||TAB==="vyvoj") render(); },150); });
 
