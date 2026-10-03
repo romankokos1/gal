@@ -781,13 +781,19 @@ def main() -> int:
         [{k: p[k] for k in ("id", "nazev", "url")} for p in PODNIKY],
         ensure_ascii=False, indent=2) + "\n")
     now_dt = datetime.now(TZ)
-    ok = True
+    ok, vysledky = True, {}
     for p in PODNIKY:          # jeden rozbitý podnik neblokuje ostatní
         try:
-            ok = run_venue(p, now_dt) and ok
+            r = run_venue(p, now_dt)
         except Exception as e:
             print(f"::error::{p['nazev']}: neočekávaná chyba: {e}")
-            ok = False
+            r = False
+        vysledky[p["id"]] = "ok" if r else "chyba"
+        ok = ok and r
+    # čas posledního běhu pro stránku (malý soubor, mění se při každém běhu)
+    (ROOT / "posledni_beh.json").write_text(json.dumps(
+        {"cas": now_dt.strftime("%Y-%m-%d %H:%M"), "podniky": vysledky},
+        ensure_ascii=False) + "\n", encoding="utf-8")
     return 0 if ok else 1
 
 
