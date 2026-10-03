@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-03 00:14",
+  "zmeneno": "2026-10-03 21:14",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "SIBEERIA",
-      "nazev": "Everyday Life",
+      "pivovar": "DOBRÁK",
+      "nazev": "Stodvanáctka",
       "stupen": "12",
-      "alkohol": "5.1",
+      "alkohol": "4.9",
       "styl": "světlý ležák",
-      "dalsi": "DOBRÁK – Stodvanáctka 12°/4,9%/32IBU světlý ležák",
-      "raw": "SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák //NEXT// DOBRÁK – Stodvanáctka 12°/4,9%/32IBU světlý ležák"
+      "dalsi": "",
+      "raw": "DOBRÁK – Stodvanáctka 12°/4,9%/32IBU světlý ležák"
     },
     {
       "pozice": 2,
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "FRANKIES + KOSMIX",
-      "nazev": "Sinatra",
-      "stupen": "16",
-      "alkohol": "7",
-      "styl": "New England IPA (motueka, citra, nelson, superdelic)",
-      "dalsi": "MORDÝŘ – WC IPA 14°/6,1% West Coast IPA (citra, centennial, chinook)",
-      "raw": "FRANKIES + KOSMIX – Sinatra 16°/7%/25IBU New England IPA (motueka, citra, nelson, superdelic) //NEXT// MORDÝŘ – WC IPA 14°/6,1% West Coast IPA (citra, centennial, chinook)"
+      "pivovar": "MORDÝŘ",
+      "nazev": "WC IPA",
+      "stupen": "14",
+      "alkohol": "6.1",
+      "styl": "West Coast IPA (citra, centennial, chinook)",
+      "dalsi": "",
+      "raw": "MORDÝŘ – WC IPA 14°/6,1% West Coast IPA (citra, centennial, chinook)"
     },
     {
       "pozice": 4,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "PIVOVAR VIK",
-      "nazev": "Jungle Juice",
+      "pivovar": "HOPPYDOG",
+      "nazev": "Hafananas",
       "stupen": "12",
-      "alkohol": "5",
-      "styl": "kyseláč s ananasem, mučenkou a guavou",
-      "dalsi": "HOPPYDOG – Hafananas 12°/4,1% Gose s ananasem, mangem, koriandrem a solí",
-      "raw": "PIVOVAR VIK – Jungle Juice 12°/5% kyseláč s ananasem, mučenkou a guavou //NEXT// HOPPYDOG – Hafananas 12°/4,1% Gose s ananasem, mangem, koriandrem a solí"
+      "alkohol": "4.1",
+      "styl": "Gose s ananasem, mangem, koriandrem a solí",
+      "dalsi": "",
+      "raw": "HOPPYDOG – Hafananas 12°/4,1% Gose s ananasem, mangem, koriandrem a solí"
     }
   ]
 }
