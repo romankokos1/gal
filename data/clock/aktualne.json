@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-10-03 00:14",
+  "zmeneno": "2026-10-04 18:51",
   "metoda": "nadpis",
   "piva": [
     {
@@ -16,32 +16,32 @@
     {
       "pozice": 2,
       "pivovar": "Clock",
-      "nazev": "Glee",
+      "nazev": "Goldie",
       "stupen": "11",
       "alkohol": "",
-      "styl": "Gluten Reduced PA",
+      "styl": "Weizenbier",
       "dalsi": "",
-      "raw": "11° Glee (Gluten Reduced PA)"
+      "raw": "11° Goldie (Weizenbier)"
     },
     {
       "pozice": 3,
       "pivovar": "Clock",
-      "nazev": "Pineapple",
-      "stupen": "11",
+      "nazev": "Black Dog",
+      "stupen": "12",
       "alkohol": "",
-      "styl": "Session IPA",
+      "styl": "DDH Lager",
       "dalsi": "",
-      "raw": "11° Pineapple (Session IPA)"
+      "raw": "12° Black Dog (DDH Lager)"
     },
     {
       "pozice": 4,
       "pivovar": "Clock",
-      "nazev": "Podzim",
-      "stupen": "13",
+      "nazev": "Clock",
+      "stupen": "12",
       "alkohol": "",
-      "styl": "NEIPA",
+      "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "13° Podzim (NEIPA)"
+      "raw": "12° Clock (American Pale Ale)"
     },
     {
       "pozice": 5,

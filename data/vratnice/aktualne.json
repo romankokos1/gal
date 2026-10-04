@@ -1,6 +1,6 @@
 {
   "zdroj": "https://vratnice.cz/",
-  "zmeneno": "2026-10-02 12:58",
+  "zmeneno": "2026-10-04 18:51",
   "metoda": "bloky",
   "piva": [
     {
@@ -8,60 +8,60 @@
       "pivovar": "Vrátnice",
       "nazev": "Vrátnice 10°",
       "stupen": "10",
-      "alkohol": "3.9",
+      "alkohol": "",
       "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "Vrátnice 10° světlé výčepní – piv.Vrátnice · ABV 3,9 %"
+      "raw": "Vrátnice 10° světlé výčepní – piv.Vrátnice"
     },
     {
       "pozice": 2,
       "pivovar": "Vrátnice",
       "nazev": "Vrátnice 11°",
       "stupen": "11",
-      "alkohol": "4.3",
+      "alkohol": "",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Vrátnice 11° světlý ležák – piv. Vrátnice · ABV 4,3 %"
+      "raw": "Vrátnice 11° světlý ležák – piv. Vrátnice"
     },
     {
       "pozice": 3,
-      "pivovar": "Trilobit",
-      "nazev": "Trilobit 12°",
+      "pivovar": "Vrátnice",
+      "nazev": "Vrátnice 12°",
       "stupen": "12",
-      "alkohol": "5.0",
+      "alkohol": "",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Trilobit 12° světlý ležák – piv. Trilobit · ABV 5,0 %"
+      "raw": "Vrátnice 12° světlý ležák – piv. Vrátnice"
     },
     {
       "pozice": 4,
-      "pivovar": "Radouš",
-      "nazev": "Radoush Stout",
-      "stupen": "12",
-      "alkohol": "5",
+      "pivovar": "Cobolis",
+      "nazev": "Brut IPA Alcatraz",
+      "stupen": "18",
+      "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Radoush Stout 12° – pivovar Radouš (Druztová) · ABV 5 %"
+      "raw": "Brut IPA Alcatraz 18° – pivovar Cobolis (Praha)"
     },
     {
       "pozice": 5,
-      "pivovar": "Clock",
-      "nazev": "No Idols! West Coast IPA",
-      "stupen": "14",
-      "alkohol": "6.1",
+      "pivovar": "Blud",
+      "nazev": "Gose Já-lovec",
+      "stupen": "11",
+      "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "No Idols! West Coast IPA 14 °– piv.Clock (Potštejn) · ABV 6,1 %"
+      "raw": "Gose Já-lovec 11 °– piv.Blud (Bludov)"
     },
     {
       "pozice": 6,
-      "pivovar": "MadCat",
-      "nazev": "Sin Kitty",
-      "stupen": "14",
-      "alkohol": "7",
-      "styl": "Sour Ale",
+      "pivovar": "Čestmír",
+      "nazev": "Session NEIPA",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "Superdelic&Mosaic&Galaxy",
       "dalsi": "",
-      "raw": "Sin Kitty 14° Sour Ale – p.MadCat (Kamenice u Jihlavy) · ABV 7 %"
+      "raw": "Session NEIPA 12° Superdelic&Mosaic&Galaxy– p.Čestmír"
     },
     {
       "pozice": 7,
@@ -75,33 +75,33 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Antoš",
-      "nazev": "Raspberry Sour Ale",
-      "stupen": "13",
-      "alkohol": "5.0",
+      "pivovar": "Hendrych",
+      "nazev": "H11 Grapefruit Sour Ale",
+      "stupen": "11",
+      "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Raspberry Sour Ale 13° – p.Antoš (Slaný) · ABV 5,0 %"
+      "raw": "H11 Grapefruit Sour Ale 11° – p.Hendrych (Vrchlabí)"
     },
     {
       "pozice": 9,
-      "pivovar": "Hoppy Dog",
-      "nazev": "Goro White IPA",
-      "stupen": "14",
-      "alkohol": "5.8",
+      "pivovar": "Trilobit",
+      "nazev": "Summer APA",
+      "stupen": "11",
+      "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Goro White IPA 14° – p. Hoppy Dog (Vítkovice) · ABV 5.8 %"
+      "raw": "Summer APA 11° – p. Trilobit (Praha)"
     },
     {
       "pozice": 10,
-      "pivovar": "Kristýna",
-      "nazev": "Korálek NEIPA",
-      "stupen": "13",
-      "alkohol": "5.7",
+      "pivovar": "MadCat",
+      "nazev": "Chaton Blanc Bière Blanche",
+      "stupen": "11",
+      "alkohol": "4.5",
       "styl": "",
       "dalsi": "",
-      "raw": "Korálek NEIPA 13 °– pivovar Kristýna (Hrádek n.Nisou) · ABV 5,7 %"
+      "raw": "Chaton Blanc Bière Blanche 11 °– p.MadCat (Kamenice u Jihlavy) · ABV 4,5 %"
     }
   ]
 }

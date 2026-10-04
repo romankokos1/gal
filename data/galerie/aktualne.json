@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-03 21:14",
+  "zmeneno": "2026-10-04 18:51",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,18 +10,18 @@
       "stupen": "12",
       "alkohol": "4.9",
       "styl": "světlý ležák",
-      "dalsi": "",
-      "raw": "DOBRÁK – Stodvanáctka 12°/4,9%/32IBU světlý ležák"
+      "dalsi": "CHROUST – Světlé 11°/5,1%/20IBU světlý ležák typu helles (hallertau mittelfrüh)",
+      "raw": "DOBRÁK – Stodvanáctka 12°/4,9%/32IBU světlý ležák //NEXT// CHROUST – Světlé 11°/5,1%/20IBU světlý ležák typu helles (hallertau mittelfrüh)"
     },
     {
       "pozice": 2,
-      "pivovar": "MATUŠKA",
-      "nazev": "California",
+      "pivovar": "PIVEČKA",
+      "nazev": "Japanese Style",
       "stupen": "12",
-      "alkohol": "5.3",
-      "styl": "APA (saaz, cascade)",
+      "alkohol": "5",
+      "styl": "session Cold IPA s yuzu a jasmínovým květem (sorachi ace)",
       "dalsi": "NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)",
-      "raw": "MATUŠKA – California 12°/5,3%/45IBU APA (saaz, cascade) //NEXT// NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)"
+      "raw": "PIVEČKA – Japanese Style 12°/5%/25IBU session Cold IPA s yuzu a jasmínovým květem (sorachi ace) //NEXT// NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)"
     },
     {
       "pozice": 3,
