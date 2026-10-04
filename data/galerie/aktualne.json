@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-04 18:51",
+  "zmeneno": "2026-10-04 21:22",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "DOBRÁK",
-      "nazev": "Stodvanáctka",
-      "stupen": "12",
-      "alkohol": "4.9",
-      "styl": "světlý ležák",
-      "dalsi": "CHROUST – Světlé 11°/5,1%/20IBU světlý ležák typu helles (hallertau mittelfrüh)",
-      "raw": "DOBRÁK – Stodvanáctka 12°/4,9%/32IBU světlý ležák //NEXT// CHROUST – Světlé 11°/5,1%/20IBU světlý ležák typu helles (hallertau mittelfrüh)"
+      "pivovar": "CHROUST",
+      "nazev": "Světlé",
+      "stupen": "11",
+      "alkohol": "5.1",
+      "styl": "světlý ležák typu helles (hallertau mittelfrüh)",
+      "dalsi": "",
+      "raw": "CHROUST – Světlé 11°/5,1%/20IBU světlý ležák typu helles (hallertau mittelfrüh)"
     },
     {
       "pozice": 2,
