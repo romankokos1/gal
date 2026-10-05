@@ -1,7 +1,7 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-04 21:22",
-  "metoda": "nadpis",
+  "zmeneno": "2026-10-05 02:56",
+  "metoda": "podle-obsahu",
   "piva": [
     {
       "pozice": 1,
@@ -10,28 +10,28 @@
       "stupen": "11",
       "alkohol": "5.1",
       "styl": "světlý ležák typu helles (hallertau mittelfrüh)",
-      "dalsi": "",
-      "raw": "CHROUST – Světlé 11°/5,1%/20IBU světlý ležák typu helles (hallertau mittelfrüh)"
+      "dalsi": "CLOCK – Helga 13°/5,5%/25IBU světlý ležák typu festbier (hallertau blanc, perle) //NEXT// SIBEERIA – Modus 11°/4,5% světlý ležák (saaz shine)",
+      "raw": "CHROUST – Světlé 11°/5,1%/20IBU světlý ležák typu helles (hallertau mittelfrüh) //NEXT// CLOCK – Helga 13°/5,5%/25IBU světlý ležák typu festbier (hallertau blanc, perle) //NEXT// SIBEERIA – Modus 11°/4,5% světlý ležák (saaz shine)"
     },
     {
       "pozice": 2,
       "pivovar": "PIVEČKA",
-      "nazev": "Japanese Style",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "session Cold IPA s yuzu a jasmínovým květem (sorachi ace)",
+      "nazev": "Sunny",
+      "stupen": "10",
+      "alkohol": "4",
+      "styl": "Milfshake New England Pale Ale s LAKTOZOU (talus, sabro,sorachi ace, motueka)",
       "dalsi": "NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)",
-      "raw": "PIVEČKA – Japanese Style 12°/5%/25IBU session Cold IPA s yuzu a jasmínovým květem (sorachi ace) //NEXT// NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)"
+      "raw": "PIVEČKA – Sunny 10°/4%/22IBU Milfshake New England Pale Ale s LAKTOZOU (talus, sabro,sorachi ace, motueka) //NEXT// NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)"
     },
     {
       "pozice": 3,
-      "pivovar": "MORDÝŘ",
-      "nazev": "WC IPA",
+      "pivovar": "ZICHOVEC",
+      "nazev": "GWBC Best Of Show 2026",
       "stupen": "14",
-      "alkohol": "6.1",
-      "styl": "West Coast IPA (citra, centennial, chinook)",
-      "dalsi": "",
-      "raw": "MORDÝŘ – WC IPA 14°/6,1% West Coast IPA (citra, centennial, chinook)"
+      "alkohol": "6",
+      "styl": "NEIPA (idaho 7, mosaic, sabro)",
+      "dalsi": "ZICHOVEC – Sv. Václav 14°/6% silné pivo světlý ležák",
+      "raw": "ZICHOVEC – GWBC Best Of Show 2026 14°/6% NEIPA (idaho 7, mosaic, sabro) //NEXT// ZICHOVEC – Sv. Václav 14°/6% silné pivo světlý ležák"
     },
     {
       "pozice": 4,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "HOPPYDOG",
-      "nazev": "Hafananas",
-      "stupen": "12",
-      "alkohol": "4.1",
-      "styl": "Gose s ananasem, mangem, koriandrem a solí",
+      "pivovar": "MAZÁK",
+      "nazev": "Pear Gose",
+      "stupen": "11",
+      "alkohol": "4.7",
+      "styl": "Gose s hruškou, koriandrem a solí",
       "dalsi": "",
-      "raw": "HOPPYDOG – Hafananas 12°/4,1% Gose s ananasem, mangem, koriandrem a solí"
+      "raw": "MAZÁK – Pear Gose 11°/4,7% Gose s hruškou, koriandrem a solí"
     }
   ]
 }
