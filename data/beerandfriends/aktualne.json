@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.beerandfriends.eu/beer-and-friends",
-  "zmeneno": "2026-10-02 13:04",
+  "zmeneno": "2026-10-05 11:45",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,33 +25,33 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Twinberg",
-      "nazev": "MOUSTACHE",
+      "pivovar": "Hope",
+      "nazev": "TATTOO YOU 1: TA MAKO",
       "stupen": "",
-      "alkohol": "5.6",
-      "styl": "New England IPA",
+      "alkohol": "5.4",
+      "styl": "NE IPA",
       "dalsi": "",
-      "raw": "MOUSTACHE – New England IPA (Twinberg) · abv 5,6 %"
+      "raw": "TATTOO YOU 1: TA MAKO – NE IPA (Hope) · abv 5,4 %"
     },
     {
       "pozice": 4,
-      "pivovar": "Potmehúd",
-      "nazev": "ACID THEORY",
+      "pivovar": "Fracek",
+      "nazev": "HOPCHARGED SUMMER",
       "stupen": "",
       "alkohol": "5.5",
-      "styl": "Sour New England IPA",
+      "styl": "Session IPA",
       "dalsi": "",
-      "raw": "ACID THEORY – Sour New England IPA (Potmehúd) · abv 5,5 %"
+      "raw": "HOPCHARGED SUMMER – Session IPA (Fracek) · abv 5,5 %"
     },
     {
       "pozice": 5,
       "pivovar": "Fracek",
-      "nazev": "LAGERF*CK 3: BROOVAN",
+      "nazev": "STILL WET",
       "stupen": "",
-      "alkohol": "4.6",
-      "styl": "I.P.Lager",
+      "alkohol": "4.4",
+      "styl": "Fresh Hop Lager",
       "dalsi": "",
-      "raw": "LAGERF*CK 3: BROOVAN – I.P.Lager (Fracek) · abv 4,6 %"
+      "raw": "STILL WET – Fresh Hop Lager (Fracek) · abv 4,4 %"
     },
     {
       "pozice": 6,

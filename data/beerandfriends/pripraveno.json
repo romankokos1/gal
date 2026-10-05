@@ -1,26 +1,26 @@
 [
   {
-    "pivovar": "Chroust",
-    "nazev": "AGE OF KRUSH",
-    "stupen": "",
-    "alkohol": "5.8",
-    "styl": "American IPA",
-    "raw": "AGE OF KRUSH – American IPA (Chroust) · abv 5,8 %"
-  },
-  {
-    "pivovar": "Čierny Kameň",
-    "nazev": "PIŇA COLLAPSE",
-    "stupen": "",
-    "alkohol": "4.4",
-    "styl": "Fruited Pastry Sour",
-    "raw": "PIŇA COLLAPSE – Fruited Pastry Sour (Čierny Kameň) · abv 4,4 %"
-  },
-  {
     "pivovar": "Pioneer",
     "nazev": "NZ HOPLINE",
     "stupen": "",
     "alkohol": "5",
     "styl": "New Zealand Pale Ale",
     "raw": "NZ HOPLINE – New Zealand Pale Ale (Pioneer) · abv 5 %"
+  },
+  {
+    "pivovar": "Fracek/Vik",
+    "nazev": "MINTY FETISH",
+    "stupen": "",
+    "alkohol": "3.7",
+    "styl": "Berliner Weisse",
+    "raw": "MINTY FETISH – Berliner Weisse (Fracek/Vik) · abv 3,7 %"
+  },
+  {
+    "pivovar": "The Barn",
+    "nazev": "BARNEY´S ODYSSEY",
+    "stupen": "",
+    "alkohol": "6.5",
+    "styl": "New England IPA",
+    "raw": "BARNEY´S ODYSSEY – New England IPA (The Barn) · abv 6,5 %"
   }
 ]
