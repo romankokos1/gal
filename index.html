@@ -564,9 +564,12 @@ const fmtWhen = d => { if(!d) return "";
   return diff===0 ? `dnes ${hm}` : diff===1 ? `včera ${hm}` : `${fmtD(d)} ${hm}`; };
 function metaLine(){
   const lastChange = new Date(ALL.reduce((m,r)=>Math.max(m,+r.from,+(r.to||0)),0));
-  const check = BEH&&BEH.cas ? parseDate(BEH.cas) : (STAV&&STAV.posledni_kontrola ? new Date(STAV.posledni_kontrola+"T00:00") : null);
-  const exact = !!(BEH&&BEH.cas);
-  const bad = BEH&&BEH.podniky&&BEH.podniky[VENUE.id]==="chyba" || (STAV&&STAV.chyby_v_rade>0);
+  // časy kontrol jsou po podnicích (Galerie se kontroluje častěji); starší formát měl jen společný čas
+  const vb = BEH&&BEH.podniky ? BEH.podniky[VENUE.id] : null;
+  const vcas = vb&&typeof vb==="object" ? vb.cas : (BEH&&BEH.cas);
+  const check = vcas ? parseDate(vcas) : (STAV&&STAV.posledni_kontrola ? new Date(STAV.posledni_kontrola+"T00:00") : null);
+  const exact = !!vcas;
+  const bad = (vb==="chyba" || (vb&&vb.stav==="chyba")) || (STAV&&STAV.chyby_v_rade>0);
   return `<span title="Kdy hlídač naposled stáhl web podniku">kontrola <b>${check?(exact?fmtWhen(check):fmtD(check)):"?"}</b>${bad?' <span style="color:var(--c2)">⚠</span>':""}</span>`
     + ` · <span title="Kdy se naposled změnila nabídka na čepu">změna nabídky <b>${fmtWhen(lastChange)}</b></span>`
     + ` · <span class="dim">od ${fmtD(ALL[0].from)}, ${ALL.length} naražení</span>`;
@@ -577,7 +580,8 @@ function warnings(){
   const w=[];
   const lastChange = ALL.reduce((m,r)=>Math.max(m,+r.from,+(r.to||0)),0);
   if(STAV){
-    const chk = BEH&&BEH.cas ? parseDate(BEH.cas) : STAV.posledni_kontrola ? new Date(STAV.posledni_kontrola+"T23:59") : null;
+    const vb = BEH&&BEH.podniky ? BEH.podniky[VENUE.id] : null, vcas = vb&&typeof vb==="object" ? vb.cas : (BEH&&BEH.cas);
+    const chk = vcas ? parseDate(vcas) : STAV.posledni_kontrola ? new Date(STAV.posledni_kontrola+"T23:59") : null;
     if(chk && (NOW-chk)/DAY > 2) w.push(`<b>Hlídač neběží</b> – poslední úspěšná kontrola ${fmtD(chk)}. Zkontroluj záložku Actions v repu.`);
     if((STAV.chyby_v_rade||0)>=3) w.push(`<b>Hlídač selhává</b> ${STAV.chyby_v_rade}× po sobě: ${esc(STAV.chyba||"")}`);
   }
