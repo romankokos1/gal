@@ -2,8 +2,9 @@ name: Hlídač čepů
 
 on:
   schedule:
-    # každé 2 hodiny cca 6:17–0:17 českého času (cron je v UTC)
-    - cron: "17 4-22/2 * * *"
+    # každých 30 min cca 6–1 h českého času (cron je v UTC); který podnik se stáhne,
+    # rozhoduje scrape.py podle interval_min (Galerie 30 min, ostatní 2 h)
+    - cron: "17,47 4-22 * * *"
   workflow_dispatch:
 
 permissions:
@@ -28,7 +29,8 @@ jobs:
 
       - name: Stáhnout a zapsat čepy
         id: scrape
-        run: python scrape.py || echo "failed=1" >> "$GITHUB_OUTPUT"
+        # ruční spuštění (Run workflow) stáhne všechny podniky hned
+        run: python scrape.py ${{ github.event_name == 'workflow_dispatch' && '--vse' || '' }} || echo "failed=1" >> "$GITHUB_OUTPUT"
 
       # Commit proběhne vždy – i když některý podnik selže, uloží se stav a diagnostika
       - name: Commit změn
