@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-05 13:30",
+  "zmeneno": "2026-10-05 20:24",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "brewnicorn",
-      "nazev": "pivorožec",
-      "stupen": "11",
-      "alkohol": "4.6",
+      "pivovar": "kynšperský zajíc",
+      "nazev": "světlý ležák",
+      "stupen": "12",
+      "alkohol": "5.2",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "brewnicorn - pivorožec | 11% | Lager, ABV 4,6%"
+      "raw": "kynšperský zajíc - světlý ležák | 12% | Lager, ABV 5,2%"
     },
     {
       "pozice": 2,
