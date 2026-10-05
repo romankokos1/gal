@@ -34,7 +34,8 @@ from bs4 import BeautifulSoup
 # id = název složky v data/ (neměnit, jinak se historie rozdělí)
 # polozky/pole = volitelný přesný výběr prvků; když selže, použijí se obecné metody
 PODNIKY = [
-    {"id": "galerie", "nazev": "Galerie piva", "url": "https://www.galeriepiva.cz/"},
+    # interval_min = jak často podnik stahovat (výchozí 120); workflow běží každých 30 min
+    {"id": "galerie", "nazev": "Galerie piva", "url": "https://www.galeriepiva.cz/", "interval_min": 30},
     {"id": "sedm", "nazev": "sedm°", "url": "https://www.sedmstupnu.cz/",
      "polozky": "ul.elementor-price-list > li",
      "pole": [".elementor-price-list-title", ".elementor-price-list-price",
@@ -71,7 +72,8 @@ HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
 PARSER_VERSION = 7
-FAILS_BEFORE_ERROR = 3            # ~6 hodin výpadku při běhu po 2 h
+FAILS_BEFORE_ERROR = 3            # tolik neúspěšných stažení po sobě se toleruje
+DEFAULT_INTERVAL_MIN = 120        # podniky bez interval_min se stahují po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
 
 
@@ -781,19 +783,29 @@ def main() -> int:
         [{k: p[k] for k in ("id", "nazev", "url")} for p in PODNIKY],
         ensure_ascii=False, indent=2) + "\n")
     now_dt = datetime.now(TZ)
+    now = now_dt.strftime("%Y-%m-%d %H:%M")
+    force = "--vse" in sys.argv               # ruční spuštění: stáhnout všechno hned
+    beh_file = ROOT / "posledni_beh.json"
+    prev = load_json(beh_file, {}).get("podniky", {})
     ok, vysledky = True, {}
     for p in PODNIKY:          # jeden rozbitý podnik neblokuje ostatní
+        last = prev.get(p["id"]) if isinstance(prev.get(p["id"]), dict) else {}
+        interval = p.get("interval_min", DEFAULT_INTERVAL_MIN)
+        if not force and last.get("cas"):
+            age = (now_dt - datetime.strptime(last["cas"], "%Y-%m-%d %H:%M").replace(tzinfo=TZ)).total_seconds() / 60
+            if age < interval - 10:            # 10 min rezerva na zpoždění cronu
+                vysledky[p["id"]] = last        # ještě není na řadě
+                continue
         try:
             r = run_venue(p, now_dt)
         except Exception as e:
             print(f"::error::{p['nazev']}: neočekávaná chyba: {e}")
             r = False
-        vysledky[p["id"]] = "ok" if r else "chyba"
+        vysledky[p["id"]] = {"cas": now, "stav": "ok" if r else "chyba"}
         ok = ok and r
-    # čas posledního běhu pro stránku (malý soubor, mění se při každém běhu)
-    (ROOT / "posledni_beh.json").write_text(json.dumps(
-        {"cas": now_dt.strftime("%Y-%m-%d %H:%M"), "podniky": vysledky},
-        ensure_ascii=False) + "\n", encoding="utf-8")
+    # časy kontrol pro stránku (malý soubor)
+    beh_file.write_text(json.dumps({"cas": now, "podniky": vysledky}, ensure_ascii=False) + "\n",
+                        encoding="utf-8")
     return 0 if ok else 1
 
 
