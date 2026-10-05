@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-05 20:24",
+  "zmeneno": "2026-10-05 21:10",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "CHROUST",
-      "nazev": "SIBEERIA – Modus",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "světlý ležák (saaz shine)",
-      "dalsi": "CLOCK – Helga 13°/5,5%/25IBU světlý ležák typu festbier (hallertau blanc, perle)",
-      "raw": "CHROUST – SIBEERIA – Modus 11°/4,5% světlý ležák (saaz shine) //NEXT// CLOCK – Helga 13°/5,5%/25IBU světlý ležák typu festbier (hallertau blanc, perle)"
+      "pivovar": "CLOCK",
+      "nazev": "Helga",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "světlý ležák typu festbier (hallertau blanc, perle)",
+      "dalsi": "",
+      "raw": "CLOCK – Helga 13°/5,5%/25IBU světlý ležák typu festbier (hallertau blanc, perle)"
     },
     {
       "pozice": 2,
