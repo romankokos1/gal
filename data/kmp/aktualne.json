@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-03 00:14",
+  "zmeneno": "2026-10-05 15:48",
   "metoda": "selektor",
   "piva": [
     {
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Libertas",
-      "nazev": "Bohemian Lager",
-      "stupen": "11",
-      "alkohol": "4.6",
-      "styl": "světlý ležák",
+      "pivovar": "",
+      "nazev": "U Lenocha",
+      "stupen": "10",
+      "alkohol": "3.8",
+      "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "Libertas - Bohemian Lager, světlý ležák, 11° sv. nef., 4, 6% vol. Alc, 35 IBU"
+      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3, 8% vol. Alc, 34 IBU"
     }
   ]
 }
