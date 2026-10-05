@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-02 19:52",
+  "zmeneno": "2026-10-05 13:30",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,23 +25,23 @@
     },
     {
       "pozice": 3,
-      "pivovar": "čestmír",
-      "nazev": "juicy bastard",
+      "pivovar": "falkon",
+      "nazev": "házená",
       "stupen": "12",
       "alkohol": "5",
-      "styl": "session neipa",
+      "styl": "session hazy ipa",
       "dalsi": "",
-      "raw": "čestmír - juicy bastard | 12% | session neipa, ABV 5%"
+      "raw": "falkon - házená | 12% | session hazy ipa, ABV 5%"
     },
     {
       "pozice": 4,
-      "pivovar": "černý potoka",
-      "nazev": "disco radši ne 2",
-      "stupen": "11",
-      "alkohol": "4.8",
-      "styl": "session neipa",
+      "pivovar": "the barn",
+      "nazev": "xxtravaganza",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "extra pale ale",
       "dalsi": "",
-      "raw": "černý potoka - disco radši ne 2 | 11% | session neipa, ABV 4,8%"
+      "raw": "the barn - xxtravaganza | 13% | extra pale ale, ABV 5,5%"
     },
     {
       "pozice": 5,

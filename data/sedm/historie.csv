@@ -1,8 +1,8 @@
 klic,pivovar,nazev,stupen,alkohol,styl,raw,narazeno,docepovano,dalsi
 brewnicorn|pivorozec,brewnicorn,pivorožec,11,4.6,Lager,"brewnicorn - pivorožec | 11% | Lager, ABV 4,6%",2026-09-30 09:28,,
 nozib|goseteria 10,Nozib,Goseteria #10,10,3.7,Gose,"Nozib - Goseteria #10 | 10% | Gose, ABV 3,7%",2026-09-30 09:28,2026-09-30 16:56,
-cestmir|juicy bastard,čestmír,juicy bastard,12,5,session neipa,"čestmír - juicy bastard | 12% | session neipa, ABV 5%",2026-09-30 09:28,,
-cerny potoka|disco radsi ne 2,černý potoka,disco radši ne 2,11,4.8,session neipa,"černý potoka - disco radši ne 2 | 11% | session neipa, ABV 4,8%",2026-09-30 09:28,,
+cestmir|juicy bastard,čestmír,juicy bastard,12,5,session neipa,"čestmír - juicy bastard | 12% | session neipa, ABV 5%",2026-09-30 09:28,2026-10-05 13:30,
+cerny potoka|disco radsi ne 2,černý potoka,disco radši ne 2,11,4.8,session neipa,"černý potoka - disco radši ne 2 | 11% | session neipa, ABV 4,8%",2026-09-30 09:28,2026-10-05 13:30,
 vik|groovy storm,Vik,Groovy Storm,15,5.6,NEIPA,"Vik - Groovy Storm | 15% | NEIPA, ABV 5,6%",2026-09-30 09:28,,
 cestmir|smash apa krush,Čestmír,Smash APA: Krush,12,5.2,APA,"Čestmír - Smash APA: Krush | 12% | APA, ABV 5,2%",2026-09-30 09:28,2026-09-30 16:56,
 chroust|age of krush,Chroust,Age Of Krush,14,5.8,West Coast IPA,"Chroust - Age Of Krush | 14% | West Coast IPA, ABV 5,8%",2026-09-30 09:28,2026-09-30 16:56,
@@ -11,3 +11,5 @@ vik x sedm|7vikend with the hunters,Vik x Sedm°,7Vikend With The Hunters,13,5.3
 haksna|nest in west,Haksna,Nest In West,15,6.5,West Coast IPA,"Haksna - Nest In West | 15% | West Coast IPA, ABV 6,5%",2026-09-30 16:56,,
 falkon|nova 02,Falkon,Nova 02,10,4.2,Pale Ale,"Falkon - Nova 02 | 10% | Pale Ale, ABV 4,2%",2026-10-01 20:25,,
 hope|ta moko,hope,ta moko,14,5.4,rye hazy ipa,"hope - ta moko | 14% | rye hazy ipa, ABV 5,4%",2026-10-02 19:52,,
+falkon|hazena,falkon,házená,12,5,session hazy ipa,"falkon - házená | 12% | session hazy ipa, ABV 5%",2026-10-05 13:30,,
+the barn|xxtravaganza,the barn,xxtravaganza,13,5.5,extra pale ale,"the barn - xxtravaganza | 13% | extra pale ale, ABV 5,5%",2026-10-05 13:30,,
