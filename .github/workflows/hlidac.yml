@@ -1,10 +1,13 @@
 name: Hlídač čepů
 
+# GitHub plánované běhy často zpožďuje o hodiny nebo vynechává, takže půlhodinový
+# cron nejde dodržet. Proto jeden běh zůstane aktivní až ~5,5 h a každých 30 min
+# sám zkontroluje podniky (který je na řadě, rozhoduje scrape.py podle interval_min:
+# Galerie 30 min, ostatní 2 h). Cron ho jen několikrát denně „probudí“.
 on:
   schedule:
-    # každých 30 min cca 6–1 h českého času (cron je v UTC); který podnik se stáhne,
-    # rozhoduje scrape.py podle interval_min (Galerie 30 min, ostatní 2 h)
-    - cron: "17,47 4-22 * * *"
+    # cca 6:05, 9:05, 12:05, 15:05, 18:05, 21:05, 0:05 českého letního času (cron je v UTC)
+    - cron: "5 4-22/3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -12,11 +15,12 @@ permissions:
 
 concurrency:
   group: hlidac
-  cancel-in-progress: false
+  cancel-in-progress: false   # nový běh počká, až starý dohlídá → navazují na sebe
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
 
@@ -27,26 +31,46 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Stáhnout a zapsat čepy
+      - name: Hlídat čepy (opakovaně každých 30 min)
         id: scrape
-        # ruční spuštění (Run workflow) stáhne všechny podniky hned
-        run: python scrape.py ${{ github.event_name == 'workflow_dispatch' && '--vse' || '' }} || echo "failed=1" >> "$GITHUB_OUTPUT"
-
-      # Commit proběhne vždy – i když některý podnik selže, uloží se stav a diagnostika
-      - name: Commit změn
+        env:
+          RUCNE: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           git config user.name  "hlidac-bot"
           git config user.email "hlidac-bot@users.noreply.github.com"
-          git add -A data/
-          if git diff --cached --quiet; then
-            echo "Nic k commitnutí."
-          else
-            git commit -m "Čepy $(TZ=Europe/Prague date '+%Y-%m-%d %H:%M')"
-            git push
-          fi
+          start=$(date +%s)
+          failed=0
+          while true; do
+            # vzít případné nové verze skriptu i dat (kdybys mezitím něco nahrál)
+            git pull -q --rebase --autostash || true
+
+            if [ "$RUCNE" = "true" ]; then
+              python scrape.py --vse || failed=1     # ruční spuštění: všechno hned, jednou
+            else
+              python scrape.py || failed=1
+            fi
+
+            git add -A data/
+            if ! git diff --cached --quiet; then
+              git commit -q -m "Čepy $(TZ=Europe/Prague date '+%Y-%m-%d %H:%M')"
+              for i in 1 2 3; do
+                git push -q && break
+                git pull -q --rebase --autostash || true
+              done
+            fi
+
+            [ "$RUCNE" = "true" ] && break
+            # skončit po ~5 h (další běh naváže) nebo v noci mezi 1. a 6. hodinou
+            hour=$(TZ=Europe/Prague date +%-H)
+            if [ $(( $(date +%s) - start )) -gt 18000 ] || { [ "$hour" -ge 1 ] && [ "$hour" -lt 6 ]; }; then
+              break
+            fi
+            sleep 1800
+          done
+          echo "failed=$failed" >> "$GITHUB_OUTPUT"
 
       - name: Nahlásit selhání
         if: steps.scrape.outputs.failed == '1'
         run: |
-          echo "Některý podnik selhává déle než ~6 hodin – viz log kroku výše a data/<podnik>/stav.json"
+          echo "Některý podnik selhává déle než tolerance – viz log kroku výše a data/<podnik>/stav.json"
           exit 1
