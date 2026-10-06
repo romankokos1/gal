@@ -68,10 +68,10 @@ PODNIKY = [
 ROOT = Path(__file__).parent / "data"
 TZ = ZoneInfo("Europe/Prague")
 HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
-             "raw", "narazeno", "docepovano", "dalsi"]
+             "raw", "narazeno", "docepovano", "dalsi", "odhad"]
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
-PARSER_VERSION = 7
+PARSER_VERSION = 8
 FAILS_BEFORE_ERROR = 3            # tolik neúspěšných stažení po sobě se toleruje
 DEFAULT_INTERVAL_MIN = 120        # podniky bez interval_min se stahují po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
@@ -431,6 +431,12 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
     parts = SEP.split(main, maxsplit=1)
     if len(parts) == 2:
         out["pivovar"], rest = parts[0].strip(" |"), parts[1].strip()
+        # „CHROUST – SIBEERIA – Modus“ = kolaborace: druhý pivovar VELKÝMI před další pomlčkou
+        more = SEP.split(rest, maxsplit=1)
+        if (len(more) == 2 and out["pivovar"].isupper() and more[0].strip().isupper()
+                and len(more[0].split()) <= 3 and not BEER_HINT.search(more[0])):
+            out["pivovar"] = out["pivovar"] + " & " + more[0].strip()
+            rest = more[1].strip()
     else:
         m = COLON.match(main)
         if m:
@@ -608,9 +614,30 @@ def same_beer(row: dict, b: dict) -> bool:
     return False
 
 
+def parse_announced(beers: list[dict], upcoming: list[str], default_brewery="", fmt="") -> dict:
+    """Ohlášená piva: „→ potom: …“ u piva na čepu a seznam „Připraveno k naražení“."""
+    out = {}
+    # (text, formát, nositel) – nositel = pivo na čepu, u kterého „→ potom“ stojí
+    texts = [(b["dalsi"], "", b) for b in beers if b.get("dalsi")] + [(u, fmt, None) for u in upcoming]
+    for raw, f, carrier in texts:
+        if is_junk(raw):
+            continue
+        a = parse_item(raw, quiet=True, default_brewery=default_brewery, fmt=f)
+        a["klic"] = beer_key(a)
+        a["_nositel"] = ({"klic": carrier.get("klic") or beer_key(carrier), "nazev": carrier["nazev"],
+                          "pivovar": carrier["pivovar"], "raw": carrier["raw"]} if carrier else None)
+        out.setdefault(a["klic"], a)
+    return out
+
+
 def apply_state(hist: list[dict], lines: list[str], when: str, quiet=False,
-                default_brewery: str = "", fmt: str = ""):
-    """Promítne jeden stav čepů do historie. Vrací (piva, nová, dočepovaná, upravená)."""
+                default_brewery: str = "", fmt: str = "",
+                upcoming: list[str] | None = None, ann: dict | None = None, prev_when: str = ""):
+    """Promítne jeden stav čepů do historie. Vrací (piva, nová, dočepovaná, upravená, odhadnutá).
+
+    ann = stav ohlášených piv {klic: (pivo, od_kdy)} – mění se na místě.
+    Ohlášené pivo, které z ohlášení zmizí a hlídač ho nikdy neviděl na čepu, se zapíše
+    jako odhad (teklo někdy mezi předchozím a tímto stavem – mezi kontrolami se nestihlo zachytit)."""
     beers = []
     for i, raw in enumerate([l for l in lines if not is_junk(l)], 1):
         b = parse_item(raw, quiet=quiet, default_brewery=default_brewery, fmt=fmt)
@@ -645,11 +672,51 @@ def apply_state(hist: list[dict], lines: list[str], when: str, quiet=False,
 
     for b in pending:
         hist.append({**{k: b.get(k, "") for k in HIST_COLS},
-                     "narazeno": when, "docepovano": ""})
+                     "narazeno": when, "docepovano": "", "odhad": ""})
         new.append(b)
     for r in waiting:
         r["docepovano"] = when
-    return beers, new, waiting, updated
+
+    guessed = []
+    if ann is not None:
+        now_ann = parse_announced(beers, upcoming or [], default_brewery, fmt)
+        for key, (a, since) in list(ann.items()):
+            if key in now_ann or any(same_beer(x, a) for x in now_ann.values()):
+                continue                                   # pořád ohlášené
+            del ann[key]
+            row = {"klic": a["klic"], "nazev": a["nazev"], "pivovar": a["pivovar"], "raw": a["raw"]}
+            if any(same_beer(row, b) for b in beers):
+                continue                                   # teď teče – zapsané normálně
+            nos = a.get("_nositel")
+            if nos and any(same_beer(nos, b) for b in beers):
+                continue                                   # předchůdce pořád teče → jen změna plánu
+            if not nos and not waiting:
+                continue                                   # nic nedoteklo → nemohlo nastoupit
+            if any(r["narazeno"] >= since and same_beer(r, a) for r in hist):
+                continue                                   # už teklo a hlídač ho viděl
+            if not prev_when:
+                continue
+            hist.append({**{k: a.get(k, "") for k in HIST_COLS},
+                         "narazeno": prev_when, "docepovano": when, "odhad": "1"})
+            guessed.append(a)
+        for key, a in now_ann.items():
+            if key not in ann and not any(same_beer(
+                    {"klic": a["klic"], "nazev": a["nazev"], "pivovar": a["pivovar"], "raw": a["raw"]}, b)
+                    for b in beers):
+                ann[key] = (a, when)
+    return beers, new, waiting, updated, guessed
+
+
+def replay(log: list[dict], p: dict):
+    """Postaví historii z celého logu (stejně při běhu i při přepočtu).
+    Vrací (historie, výsledek posledního kroku)."""
+    hist, ann, prev, last = [], {}, "", None
+    for e in log:
+        last = apply_state(hist, e["radky"], e["cas"], quiet=True,
+                           default_brewery=p.get("pivovar", ""), fmt=p.get("format", ""),
+                           upcoming=e.get("pripraveno", []), ann=ann, prev_when=prev)
+        prev = e["cas"]
+    return hist, last
 
 
 def rebuild() -> int:
@@ -660,10 +727,7 @@ def rebuild() -> int:
         if not log:
             print(f"{p['nazev']}: log je prázdný, přeskakuji.")
             continue
-        hist = []
-        for e in log:
-            apply_state(hist, e["radky"], e["cas"], quiet=True,
-                        default_brewery=p.get("pivovar", ""), fmt=p.get("format", ""))
+        hist, _ = replay(log, p)
         st.save_history(hist)
         print(f"{p['nazev']}: přepočítáno z {len(log)} stavů → {len(hist)} naražení.")
     return 0
@@ -726,23 +790,19 @@ def run_venue(p: dict, now_dt: datetime) -> bool:
     if method not in ("selektor", "nadpis"):
         warn(f"{name}: použita záložní metoda vytažení: {method}")
 
-    # připraveno k naražení – jen aktuální stav, do historie nepatří
-    write_if_changed(st.dir / "pripraveno.json", json.dumps([
-        {k: b[k] for k in ("pivovar", "nazev", "stupen", "alkohol", "styl", "raw")}
-        for b in (parse_item(l, quiet=True, default_brewery=p.get("pivovar", ""),
-                             fmt=p.get("format", "")) for l in upcoming)
-    ], ensure_ascii=False, indent=2) + "\n")
-
     hist = st.load_history()
     log = st.read_log()
     if not log and hist:
         st.seed_log_from_history(hist)
         log = st.read_log()
 
-    if not log or log[-1]["radky"] != lines:
-        st.append_log({"cas": now, "radky": lines, "metoda": method})
-        beers, new, gone, updated = apply_state(hist, lines, now,
-                                                default_brewery=p.get("pivovar", ""), fmt=p.get("format", ""))
+    if not log or log[-1]["radky"] != lines or log[-1].get("pripraveno", []) != upcoming:
+        entry = {"cas": now, "radky": lines, "metoda": method}
+        if upcoming:
+            entry["pripraveno"] = upcoming
+        st.append_log(entry)
+        log.append(entry)
+        hist, (beers, new, gone, updated, guessed) = replay(log, p)
         st.save_history(hist)
         write_if_changed(st.dir / "aktualne.json", json.dumps({
             "zdroj": p["url"], "zmeneno": now, "metoda": method,
@@ -756,9 +816,20 @@ def run_venue(p: dict, now_dt: datetime) -> bool:
         msg += [f"➕ {b['raw']}" for b in new]
         msg += [f"➖ {r['raw']}" for r in gone]
         msg += [f"✏️ upraveno: {b['raw']}" for b in updated]
+        msg += [f"≈ odhad (teklo mezi kontrolami): {a['raw']}" for a in guessed]
         print("\n".join(msg))
     else:
         print(f"{name}: beze změny ({len(lines)} piv, metoda {method}).")
+        beers = [dict(parse_item(l, quiet=True, default_brewery=p.get("pivovar", ""),
+                                 fmt=p.get("format", ""))) for l in lines if not is_junk(l)]
+
+    # připraveno k naražení (+ „→ potom“ poznámky) – jen aktuální stav pro stránku a deník
+    on_tap = [{"klic": beer_key(b), "nazev": b["nazev"], "pivovar": b["pivovar"], "raw": b["raw"]} for b in beers]
+    soon = [a for a in parse_announced(beers, upcoming, p.get("pivovar", ""), p.get("format", "")).values()
+            if not any(same_beer(r, a) for r in on_tap)]
+    write_if_changed(st.dir / "pripraveno.json", json.dumps(
+        [{k: a[k] for k in ("pivovar", "nazev", "stupen", "alkohol", "styl", "raw")} for a in soon],
+        ensure_ascii=False, indent=2) + "\n")
 
     stav.setdefault("posledni_zmena", now)
     last = datetime.strptime(stav["posledni_zmena"], "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
