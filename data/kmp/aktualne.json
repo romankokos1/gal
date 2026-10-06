@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-05 15:48",
+  "zmeneno": "2026-10-06 13:20",
   "metoda": "selektor",
   "piva": [
     {
@@ -76,12 +76,12 @@
     {
       "pozice": 8,
       "pivovar": "",
-      "nazev": "Barista Chocolate Quad",
-      "stupen": "24",
-      "alkohol": "11",
-      "styl": "Belgian Dark Strong Ale",
+      "nazev": "Hofbräu",
+      "stupen": "13",
+      "alkohol": "6.3",
+      "styl": "Oktoberfestbier",
       "dalsi": "",
-      "raw": "Barista Chocolate Quad, Belgian Dark Strong Ale, 24° tm. nef., 11% vol. Alc"
+      "raw": "Hofbräu, Oktoberfestbier, 13° sv., 6, 3% vol. Alc, 23 IBU"
     },
     {
       "pozice": 9,
