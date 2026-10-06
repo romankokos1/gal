@@ -193,6 +193,7 @@ svg.line .hit{fill:transparent;cursor:default}
 .tl-row .t{position:relative;height:100%;flex:none}
 .tl-row .f{position:absolute;height:14px;background:var(--accent);border-radius:4px;min-width:4px;cursor:pointer;z-index:2;overflow:hidden;
   font:500 10px/14px var(--sans);color:var(--on-accent);padding:0 5px;white-space:nowrap;text-overflow:ellipsis}
+.tl-row .f.est{background:transparent;border:1.5px dashed var(--accent);color:var(--accent-ink)}
 .tl-row .f.open{background:var(--accent-ink);border-radius:4px 0 0 4px}
 .tl-row:hover .lc{color:var(--text)}
 .tl-row:hover .t{background:color-mix(in srgb,var(--accent) 6%,transparent)}
@@ -342,7 +343,7 @@ table.cards caption{display:none}
 
     <section data-p="historie" class="card hidden">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px"><h2 style="margin:0">Každé naražení</h2><button class="btn" id="copy">Kopírovat pro Excel</button></div>
-      <div class="tw"><table id="tHist"></table></div><div class="note">Časy jsou přesné zhruba na 2 hodiny (interval kontroly) a odpovídají tomu, kdy se změnil web, ne výčep.</div>
+      <div class="tw"><table id="tHist"></table></div><div class="note">Časy odpovídají tomu, kdy se změnil web (ne výčep), s přesností na interval kontroly. ≈ = odhad: pivo ohlášené jako další („potom“ / připraveno), které se mezi kontrolami stihlo narazit i dopít.</div>
     </section>
     <section data-p="osa" class="card hidden">
       <div class="tl-bar"><div class="seg" id="zoom">
@@ -361,7 +362,7 @@ const $ = s => document.querySelector(s);
 const norm = s => (s||"").normalize("NFKD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
 const esc = s => String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const T = html => `data-tip="${esc(html)}"`;   // tooltip (HTML uvnitř už musí mít escapovaný text)
-const avg = a => a.length ? a.reduce((x,y)=>x+y,0)/a.length : null;
+const avg = a => { a=a.filter(x=>x!=null&&!isNaN(x)); return a.length ? a.reduce((x,y)=>x+y,0)/a.length : null; };
 const DAY = 864e5;
 const parseDate = s => s ? new Date(s.replace(" ","T")) : null;
 const fmtD = d => d ? d.toLocaleDateString("cs-CZ",{day:"numeric",month:"numeric",year:"2-digit"}) : "";
@@ -494,7 +495,9 @@ function build(text, v){
     brews.forEach(b=>{ const k=brewCanon(b), d=nice(b.replace(/\b(pivovar|minipivovar)\s+/i,""),"pivovar");
       if(!ALIAS_T.has(k) && (!brewDisplay[k] || d.length<brewDisplay[k].length)) brewDisplay[k]=d; });
     return {...r, from, to, open:!to, venue:v.id, venueName:v.nazev,
-      days: from ? Math.max(0,((to||NOW)-from)/DAY) : null,
+      odhad: r.odhad==="1",
+      // u odhadu (pivo zachycené jen z ohlášení „→ potom“) skutečnou délku neznáme
+      days: from && r.odhad!=="1" ? Math.max(0,((to||NOW)-from)/DAY) : null,
       brews: keys, collab: keys.length>1,
       style: styleOf(r),
       abv: parseFloat(r.alkohol)||null, deg: parseFloat(r.stupen)||null,
@@ -843,7 +846,7 @@ function renderPiva(R){
   ], "last", o=>openBeer(o.key));
 }
 const HIST_COLS=[
-  {k:"from",t:"Naraženo",n:1,m:1,f:fmtDT,lm:"od"},
+  {k:"from",t:"Naraženo",n:1,m:1,f:(v,o)=>(o.odhad?'<span title="Odhad: pivo bylo ohlášené jako další a mezi kontrolami se stihlo narazit i dopít">≈ </span>':"")+fmtDT(v),lm:"od"},
   {k:"to",t:"Dočepováno",n:1,m:1,f:(v)=>v?fmtDT(v):'<span class="live">● na čepu</span>',h:1,lm:"do"},
   {k:"days",t:"Dní",n:1,f:v=>fmtN(v),lm:"",u:" d"},
   {k:"pivovar",t:"Pivovar",sm:1},
@@ -971,7 +974,8 @@ function timeline(R){
   const rows=[...groups.values()].sort((a,b)=>lastEnd(b)-lastEnd(a) || Math.max(...b.map(r=>+r.from))-Math.max(...a.map(r=>+r.from)));
   // u dočepovaných ubrat 2 px, ať se dva sudy po sobě nespojí v jeden pruh
   const bar=(r,lane)=>{ const a=Math.max(0,x(+r.from)), b=x(+(r.to||NOW)), w=Math.max(4,b-a-(r.to?2:0));
-    return `<span class="f ${r.open?"open":""}" data-beer="${esc(r.beerKey)}" style="left:${a}px;width:${w}px;top:${5+lane*18}px" ${T(`<b>${esc(r.label)}</b>${esc(r.pivovar||"")}<br><span>${fmtDT(r.from)} → ${r.to?fmtDT(r.to):"na čepu"} · ${fmtN(r.days)} d</span>`)}>${w>60?esc(r.label):""}</span>`; };
+    const when = r.odhad ? `≈ někdy mezi ${fmtDT(r.from)} a ${fmtDT(r.to)} (odhad z ohlášení „potom“)` : `${fmtDT(r.from)} → ${r.to?fmtDT(r.to):"na čepu"} · ${fmtN(r.days)} d`;
+    return `<span class="f ${r.open?"open":""} ${r.odhad?"est":""}" data-beer="${esc(r.beerKey)}" style="left:${a}px;width:${w}px;top:${5+lane*18}px" ${T(`<b>${esc(r.label)}</b>${esc(r.pivovar||"")}<br><span>${when}</span>`)}>${w>60?(r.odhad?"≈ ":"")+esc(r.label):""}</span>`; };
   el.innerHTML = `<div class="tl-grid" style="left:${LW}px;width:${W}px">${grid}</div>
     <div class="tl-head"><div class="lc"></div><div class="ax" style="width:${W}px">${head}</div></div>`
     + rows.map(g=>{ const r0=g[0];
@@ -1041,8 +1045,9 @@ function openBeer(key){
       [fmtN(R.reduce((s,r)=>s+(r.days||0),0)),"dní celkem"],
       closed.length>1?[fmtN(avg(closed.map(r=>r.days))),"Ø dní na čepu"]:null,
     ])
+    + (R.some(r=>r.odhad)?`<section class="note">≈ = odhad: pivo bylo ohlášené jako další a mezi dvěma kontrolami se stihlo narazit i dopít, přesný čas neznáme.</section>`:"")
     + `<section><h3>Kdy a kde teklo</h3><div class="tw"><table><thead><tr><th>Podnik</th><th class="r">Naraženo</th><th class="r">Dočepováno</th><th class="r">Dní</th></tr></thead><tbody>
-      ${R.map(r=>`<tr><td>${esc(r.venueName)}</td><td class="r m">${fmtDT(r.from)}</td><td class="r m">${r.to?fmtDT(r.to):'<span class="live">● na čepu</span>'}</td><td class="r">${fmtN(r.days)}</td></tr>`).join("")}</tbody></table></div></section>`
+      ${R.map(r=>`<tr><td>${esc(r.venueName)}</td><td class="r m">${r.odhad?"≈ ":""}${fmtDT(r.from)}</td><td class="r m">${r.to?fmtDT(r.to):'<span class="live">● na čepu</span>'}</td><td class="r">${fmtN(r.days)}</td></tr>`).join("")}</tbody></table></div></section>`
     + (others.length?`<section><h3>Další piva pivovaru</h3>${others.map(b=>`<button class="pill link" data-beer="${esc(b.key)}" style="text-decoration:none">${esc(b.name)}</button>`).join("")}</section>`:"")
     + `<section><h3>Jak to bylo napsané na webu</h3>${raws.map(t=>`<div class="raw">${esc(t)}</div>`).join("")}</section>`);
 }
