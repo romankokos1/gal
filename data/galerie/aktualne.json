@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-06 18:59",
+  "zmeneno": "2026-10-06 23:29",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "ZICHOVEC",
-      "nazev": "GWBC Best Of Show 2026",
-      "stupen": "14",
-      "alkohol": "6",
-      "styl": "NEIPA (idaho 7, mosaic, sabro)",
-      "dalsi": "SIBEERIA – Hekla 19°/8% Double Hazy IPA (ekuanot, azacca, azacca cgx, dolcita)",
-      "raw": "ZICHOVEC – GWBC Best Of Show 2026 14°/6% NEIPA (idaho 7, mosaic, sabro) //NEXT// SIBEERIA – Hekla 19°/8% Double Hazy IPA (ekuanot, azacca, azacca cgx, dolcita)"
+      "pivovar": "SIBEERIA",
+      "nazev": "Hekla",
+      "stupen": "19",
+      "alkohol": "8",
+      "styl": "Double Hazy IPA (ekuanot, azacca, azacca cgx, dolcita)",
+      "dalsi": "",
+      "raw": "SIBEERIA – Hekla 19°/8% Double Hazy IPA (ekuanot, azacca, azacca cgx, dolcita)"
     },
     {
       "pozice": 4,
