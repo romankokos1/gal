@@ -1,8 +1,9 @@
 {
-  "chyby_v_rade": 0,
+  "chyby_v_rade": 1,
   "posledni_kontrola": "2026-10-06",
   "metoda": "selektor",
   "pocet_piv": 10,
   "posledni_zmena": "2026-10-06 13:20",
-  "posledni_chyba": "2026-10-04 11:30"
+  "posledni_chyba": "2026-10-06 22:53",
+  "chyba": "Stránku se nepodařilo stáhnout: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.klubmalychpivovaru.cz/\", waiting until \"domcontentloaded\"\n (prohlizec)"
 }
