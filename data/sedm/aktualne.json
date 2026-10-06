@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-05 20:24",
+  "zmeneno": "2026-10-06 16:50",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Vik",
-      "nazev": "Groovy Storm",
-      "stupen": "15",
-      "alkohol": "5.6",
-      "styl": "NEIPA",
+      "pivovar": "The Barn x Falkon",
+      "nazev": "Ummagumma",
+      "stupen": "17",
+      "alkohol": "7",
+      "styl": "TDH NEIPA",
       "dalsi": "",
-      "raw": "Vik - Groovy Storm | 15% | NEIPA, ABV 5,6%"
+      "raw": "The Barn x Falkon - Ummagumma | 17% | TDH NEIPA, ABV 7%"
     },
     {
       "pozice": 6,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Haksna",
-      "nazev": "Nest In West",
-      "stupen": "15",
+      "pivovar": "Valeč",
+      "nazev": "Vilma",
+      "stupen": "13",
       "alkohol": "6.5",
       "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "Haksna - Nest In West | 15% | West Coast IPA, ABV 6,5%"
+      "raw": "Valeč - Vilma | 13% | West Coast IPA, ABV 6,5%"
     },
     {
       "pozice": 8,
