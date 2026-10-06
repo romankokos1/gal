@@ -1,22 +1,6 @@
 [
   {
     "pivovar": "SIBEERIA",
-    "nazev": "Everyday Life",
-    "stupen": "12",
-    "alkohol": "5.1",
-    "styl": "světlý ležák",
-    "raw": "SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák"
-  },
-  {
-    "pivovar": "NĚMÝ MEDVĚD",
-    "nazev": "Kojot",
-    "stupen": "10",
-    "alkohol": "4",
-    "styl": "IPL (nectaron, krush)",
-    "raw": "NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)"
-  },
-  {
-    "pivovar": "SIBEERIA",
     "nazev": "Hekla",
     "stupen": "19",
     "alkohol": "8",

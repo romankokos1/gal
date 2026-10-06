@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-06 15:11",
+  "zmeneno": "2026-10-06 18:59",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "CLOCK",
-      "nazev": "Helga",
-      "stupen": "13",
-      "alkohol": "5.5",
-      "styl": "světlý ležák typu festbier (hallertau blanc, perle)",
-      "dalsi": "SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák",
-      "raw": "CLOCK – Helga 13°/5,5%/25IBU světlý ležák typu festbier (hallertau blanc, perle) //NEXT// SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák"
+      "pivovar": "SIBEERIA",
+      "nazev": "Everyday Life",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "PIVEČKA",
-      "nazev": "Sunny",
+      "pivovar": "NĚMÝ MEDVĚD",
+      "nazev": "Kojot",
       "stupen": "10",
       "alkohol": "4",
-      "styl": "Milfshake New England Pale Ale s LAKTOZOU (talus, sabro,sorachi ace, motueka)",
-      "dalsi": "NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)",
-      "raw": "PIVEČKA – Sunny 10°/4%/22IBU Milfshake New England Pale Ale s LAKTOZOU (talus, sabro,sorachi ace, motueka) //NEXT// NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)"
+      "styl": "IPL (nectaron, krush)",
+      "dalsi": "",
+      "raw": "NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)"
     },
     {
       "pozice": 3,
