@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-05 21:10",
+  "zmeneno": "2026-10-06 15:11",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,8 +10,8 @@
       "stupen": "13",
       "alkohol": "5.5",
       "styl": "světlý ležák typu festbier (hallertau blanc, perle)",
-      "dalsi": "",
-      "raw": "CLOCK – Helga 13°/5,5%/25IBU světlý ležák typu festbier (hallertau blanc, perle)"
+      "dalsi": "SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák",
+      "raw": "CLOCK – Helga 13°/5,5%/25IBU světlý ležák typu festbier (hallertau blanc, perle) //NEXT// SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák"
     },
     {
       "pozice": 2,
@@ -30,28 +30,28 @@
       "stupen": "14",
       "alkohol": "6",
       "styl": "NEIPA (idaho 7, mosaic, sabro)",
-      "dalsi": "ZICHOVEC – Sv. Václav 14°/6% silné pivo světlý ležák",
-      "raw": "ZICHOVEC – GWBC Best Of Show 2026 14°/6% NEIPA (idaho 7, mosaic, sabro) //NEXT// ZICHOVEC – Sv. Václav 14°/6% silné pivo světlý ležák"
+      "dalsi": "SIBEERIA – Hekla 19°/8% Double Hazy IPA (ekuanot, azacca, azacca cgx, dolcita)",
+      "raw": "ZICHOVEC – GWBC Best Of Show 2026 14°/6% NEIPA (idaho 7, mosaic, sabro) //NEXT// SIBEERIA – Hekla 19°/8% Double Hazy IPA (ekuanot, azacca, azacca cgx, dolcita)"
     },
     {
       "pozice": 4,
-      "pivovar": "PIVOVAR VIK",
-      "nazev": "Paper Guillotine",
-      "stupen": "23",
-      "alkohol": "10",
-      "styl": "DDH Triple IPA (citra, simcoe)",
-      "dalsi": "ČESTMÍR – Astro Creep 14°/5,9% Oatmeal Stout",
-      "raw": "PIVOVAR VIK – Paper Guillotine 23°/10%/65IBU DDH Triple IPA (citra, simcoe) //NEXT// ČESTMÍR – Astro Creep 14°/5,9% Oatmeal Stout"
+      "pivovar": "ČESTMÍR",
+      "nazev": "Astro Creep",
+      "stupen": "14",
+      "alkohol": "5.9",
+      "styl": "Oatmeal Stout",
+      "dalsi": "",
+      "raw": "ČESTMÍR – Astro Creep 14°/5,9% Oatmeal Stout"
     },
     {
       "pozice": 5,
-      "pivovar": "MAZÁK",
-      "nazev": "Pear Gose",
-      "stupen": "11",
-      "alkohol": "4.7",
-      "styl": "Gose s hruškou, koriandrem a solí",
+      "pivovar": "ZICHOVEC",
+      "nazev": "Raspberry Sour",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "kyseláč s malinama",
       "dalsi": "",
-      "raw": "MAZÁK – Pear Gose 11°/4,7% Gose s hruškou, koriandrem a solí"
+      "raw": "ZICHOVEC – Raspberry Sour 12°/5,1% kyseláč s malinama"
     }
   ]
 }
