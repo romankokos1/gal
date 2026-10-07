@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-07 12:58",
+  "zmeneno": "2026-10-07 14:59",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -21,7 +21,7 @@
       "alkohol": "5.8",
       "styl": "kyseláč s meruňkami a mořskou solí",
       "dalsi": "",
-      "raw": "Permon - Joe in the Garden Apricot - Salt, kyseláč s meruňkami a mořskou solí, 12° sv. nef., 5, 8% vol. Alc, 5 IBU"
+      "raw": "Permon - Joe in the Garden Apricot - Salt, kyseláč s meruňkami a mořskou solí, 12° sv. nef., 5,8% vol. Alc, 5 IBU"
     },
     {
       "pozice": 3,
@@ -31,7 +31,7 @@
       "alkohol": "4.6",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Zlatá Kráva - Farm APA, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc, 46 IBU"
+      "raw": "Zlatá Kráva - Farm APA, American Pale Ale, 11° sv. nef., 4,6% vol. Alc, 46 IBU"
     },
     {
       "pozice": 4,
@@ -51,7 +51,7 @@
       "alkohol": "6.3",
       "styl": "Oktoberfestbier",
       "dalsi": "",
-      "raw": "Hofbräu, Oktoberfestbier, 13° sv., 6, 3% vol. Alc, 23 IBU"
+      "raw": "Hofbräu, Oktoberfestbier, 13° sv., 6,3% vol. Alc, 23 IBU"
     },
     {
       "pozice": 6,
@@ -61,7 +61,7 @@
       "alkohol": "8.5",
       "styl": "Belgian Tripel",
       "dalsi": "",
-      "raw": "Filou, Belgian Tripel, 18° sv., 8, 5% vol. , 35 IBU"
+      "raw": "Filou, Belgian Tripel, 18° sv., 8,5% vol. , 35 IBU"
     },
     {
       "pozice": 7,
@@ -91,7 +91,7 @@
       "alkohol": "3.8",
       "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3, 8% vol. Alc, 34 IBU"
+      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3,8% vol. Alc, 34 IBU"
     }
   ]
 }
