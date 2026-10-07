@@ -1,20 +1,10 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-10-04 18:51",
+  "zmeneno": "2026-10-07 21:17",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Clock",
-      "nazev": "Hektor",
-      "stupen": "10",
-      "alkohol": "",
-      "styl": "Výčepní",
-      "dalsi": "",
-      "raw": "10° Hektor (Výčepní)"
-    },
-    {
-      "pozice": 2,
       "pivovar": "Clock",
       "nazev": "Goldie",
       "stupen": "11",
@@ -24,7 +14,7 @@
       "raw": "11° Goldie (Weizenbier)"
     },
     {
-      "pozice": 3,
+      "pozice": 2,
       "pivovar": "Clock",
       "nazev": "Black Dog",
       "stupen": "12",
@@ -34,7 +24,7 @@
       "raw": "12° Black Dog (DDH Lager)"
     },
     {
-      "pozice": 4,
+      "pozice": 3,
       "pivovar": "Clock",
       "nazev": "Clock",
       "stupen": "12",
@@ -44,7 +34,7 @@
       "raw": "12° Clock (American Pale Ale)"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "Clock",
       "nazev": "Twist",
       "stupen": "14",
@@ -54,7 +44,7 @@
       "raw": "14° Twist (Red IPA)"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Clock",
       "nazev": "Bezovka",
       "stupen": "",
@@ -64,7 +54,7 @@
       "raw": "Bezovka (Limonáda)"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Clock",
       "nazev": "Leviticus",
       "stupen": "",

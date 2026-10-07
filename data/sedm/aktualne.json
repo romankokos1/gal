@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-06 16:50",
+  "zmeneno": "2026-10-07 21:17",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "hope",
-      "nazev": "ta moko",
-      "stupen": "14",
-      "alkohol": "5.4",
-      "styl": "rye hazy ipa",
+      "pivovar": "The Barn",
+      "nazev": "Hybrid Theory",
+      "stupen": "17",
+      "alkohol": "7",
+      "styl": "DDH IPA",
       "dalsi": "",
-      "raw": "hope - ta moko | 14% | rye hazy ipa, ABV 5,4%"
+      "raw": "The Barn - Hybrid Theory | 17% | DDH IPA, ABV 7%"
     }
   ]
 }
