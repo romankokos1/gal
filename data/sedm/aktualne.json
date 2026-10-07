@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-07 21:17",
+  "zmeneno": "2026-10-07 23:19",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Falkon",
-      "nazev": "Nova 02",
-      "stupen": "10",
-      "alkohol": "4.2",
-      "styl": "Pale Ale",
+      "pivovar": "Vik",
+      "nazev": "Fresh APA #2",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "APA",
       "dalsi": "",
-      "raw": "Falkon - Nova 02 | 10% | Pale Ale, ABV 4,2%"
+      "raw": "Vik - Fresh APA #2 | 11% | APA, ABV 4,6%"
     },
     {
       "pozice": 7,
