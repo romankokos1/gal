@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-06 13:20",
+  "zmeneno": "2026-10-07 12:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,36 +45,6 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Plzeňský Bandita",
-      "nazev": "Most Wanted IPA",
-      "stupen": "14",
-      "alkohol": "6.2",
-      "styl": "sv.",
-      "dalsi": "",
-      "raw": "Plzeňský Bandita - Most Wanted IPA, 14° sv.nef., 6, 2% vol. Alc"
-    },
-    {
-      "pozice": 6,
-      "pivovar": "",
-      "nazev": "Kasteel Rouge",
-      "stupen": "18",
-      "alkohol": "8",
-      "styl": "belgický višňový speciál",
-      "dalsi": "",
-      "raw": "Kasteel Rouge, belgický višňový speciál, 18° tm., 8% vol. Alc"
-    },
-    {
-      "pozice": 7,
-      "pivovar": "",
-      "nazev": "Filou",
-      "stupen": "18",
-      "alkohol": "8.5",
-      "styl": "Belgian Tripel",
-      "dalsi": "",
-      "raw": "Filou, Belgian Tripel, 18° sv., 8, 5% vol. , 35 IBU"
-    },
-    {
-      "pozice": 8,
       "pivovar": "",
       "nazev": "Hofbräu",
       "stupen": "13",
@@ -84,7 +54,17 @@
       "raw": "Hofbräu, Oktoberfestbier, 13° sv., 6, 3% vol. Alc, 23 IBU"
     },
     {
-      "pozice": 9,
+      "pozice": 6,
+      "pivovar": "",
+      "nazev": "Filou",
+      "stupen": "18",
+      "alkohol": "8.5",
+      "styl": "Belgian Tripel",
+      "dalsi": "",
+      "raw": "Filou, Belgian Tripel, 18° sv., 8, 5% vol. , 35 IBU"
+    },
+    {
+      "pozice": 7,
       "pivovar": "",
       "nazev": "Kasteel Donker",
       "stupen": "24",
@@ -94,7 +74,17 @@
       "raw": "Kasteel Donker, Belgian Quadrupel, 24° tm., 11% vol. Alc"
     },
     {
-      "pozice": 10,
+      "pozice": 8,
+      "pivovar": "",
+      "nazev": "Kasteel Rouge",
+      "stupen": "18",
+      "alkohol": "8",
+      "styl": "belgický višňový speciál",
+      "dalsi": "",
+      "raw": "Kasteel Rouge, belgický višňový speciál, 18° tm., 8% vol. Alc"
+    },
+    {
+      "pozice": 9,
       "pivovar": "",
       "nazev": "U Lenocha",
       "stupen": "10",

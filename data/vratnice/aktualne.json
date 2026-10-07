@@ -1,37 +1,37 @@
 {
   "zdroj": "https://vratnice.cz/",
-  "zmeneno": "2026-10-04 18:51",
+  "zmeneno": "2026-10-07 12:58",
   "metoda": "bloky",
   "piva": [
     {
       "pozice": 1,
       "pivovar": "Vrátnice",
-      "nazev": "Vrátnice 10°",
+      "nazev": "Vrátnice Václav",
       "stupen": "10",
       "alkohol": "",
       "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "Vrátnice 10° světlé výčepní – piv.Vrátnice"
+      "raw": "Vrátnice Václav 10° světlé výčepní – Vrátnice"
     },
     {
       "pozice": 2,
       "pivovar": "Vrátnice",
-      "nazev": "Vrátnice 11°",
+      "nazev": "Vrátnice Kamil",
       "stupen": "11",
       "alkohol": "",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Vrátnice 11° světlý ležák – piv. Vrátnice"
+      "raw": "Vrátnice Kamil 11° světlý ležák – Vrátnice"
     },
     {
       "pozice": 3,
       "pivovar": "Vrátnice",
-      "nazev": "Vrátnice 12°",
+      "nazev": "Vrátnice Vojtěch",
       "stupen": "12",
       "alkohol": "",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Vrátnice 12° světlý ležák – piv. Vrátnice"
+      "raw": "Vrátnice Vojtěch 12° světlý ležák – Vrátnice"
     },
     {
       "pozice": 4,
@@ -41,17 +41,17 @@
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Brut IPA Alcatraz 18° – pivovar Cobolis (Praha)"
+      "raw": "Brut IPA Alcatraz 18° – Cobolis (Praha)"
     },
     {
       "pozice": 5,
-      "pivovar": "Blud",
-      "nazev": "Gose Já-lovec",
-      "stupen": "11",
+      "pivovar": "MadCat",
+      "nazev": "Mango-Piña-Coco Sour Ale",
+      "stupen": "10",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Gose Já-lovec 11 °– piv.Blud (Bludov)"
+      "raw": "Mango-Piña-Coco Sour Ale 10 °– p.MadCat (Kamenice u Jihlavy)"
     },
     {
       "pozice": 6,
@@ -61,7 +61,7 @@
       "alkohol": "",
       "styl": "Superdelic&Mosaic&Galaxy",
       "dalsi": "",
-      "raw": "Session NEIPA 12° Superdelic&Mosaic&Galaxy– p.Čestmír"
+      "raw": "Session NEIPA 12° Superdelic&Mosaic&Galaxy– Čestmír (Br.n.L.)"
     },
     {
       "pozice": 7,
@@ -71,17 +71,17 @@
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Vrátnice APA Kam”č”ale 10,8° – piv. Vrátnice"
+      "raw": "Vrátnice APA Kam”č”ale 10,8° – Vrátnice"
     },
     {
       "pozice": 8,
-      "pivovar": "Hendrych",
-      "nazev": "H11 Grapefruit Sour Ale",
+      "pivovar": "Hoppy Dog",
+      "nazev": "Malinois Double Red Sour Ale",
       "stupen": "11",
       "alkohol": "",
-      "styl": "",
+      "styl": "malina&višeň",
       "dalsi": "",
-      "raw": "H11 Grapefruit Sour Ale 11° – p.Hendrych (Vrchlabí)"
+      "raw": "Malinois Double Red Sour Ale 11° malina&višeň – Hoppy Dog (Vítkovice)"
     },
     {
       "pozice": 9,
@@ -91,7 +91,7 @@
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Summer APA 11° – p. Trilobit (Praha)"
+      "raw": "Summer APA 11° – Trilobit (Praha)"
     },
     {
       "pozice": 10,
@@ -101,7 +101,7 @@
       "alkohol": "4.5",
       "styl": "",
       "dalsi": "",
-      "raw": "Chaton Blanc Bière Blanche 11 °– p.MadCat (Kamenice u Jihlavy) · ABV 4,5 %"
+      "raw": "Chaton Blanc Bière Blanche 11 °– MadCat (Kamenice u Jihlavy) · ABV 4,5 %"
     }
   ]
 }
