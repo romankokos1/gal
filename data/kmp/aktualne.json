@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-07 14:59",
+  "zmeneno": "2026-10-07 17:00",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -21,7 +21,7 @@
       "alkohol": "5.8",
       "styl": "kyseláč s meruňkami a mořskou solí",
       "dalsi": "",
-      "raw": "Permon - Joe in the Garden Apricot - Salt, kyseláč s meruňkami a mořskou solí, 12° sv. nef., 5,8% vol. Alc, 5 IBU"
+      "raw": "Permon - Joe in the Garden Apricot - Salt, kyseláč s meruňkami a mořskou solí, 12° sv. nef., 5, 8% vol. Alc, 5 IBU"
     },
     {
       "pozice": 3,
@@ -31,7 +31,7 @@
       "alkohol": "4.6",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Zlatá Kráva - Farm APA, American Pale Ale, 11° sv. nef., 4,6% vol. Alc, 46 IBU"
+      "raw": "Zlatá Kráva - Farm APA, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc, 46 IBU"
     },
     {
       "pozice": 4,
@@ -51,30 +51,40 @@
       "alkohol": "6.3",
       "styl": "Oktoberfestbier",
       "dalsi": "",
-      "raw": "Hofbräu, Oktoberfestbier, 13° sv., 6,3% vol. Alc, 23 IBU"
+      "raw": "Hofbräu, Oktoberfestbier, 13° sv., 6, 3% vol. Alc, 23 IBU"
     },
     {
       "pozice": 6,
-      "pivovar": "",
-      "nazev": "Filou",
-      "stupen": "18",
-      "alkohol": "8.5",
-      "styl": "Belgian Tripel",
+      "pivovar": "Stadioner",
+      "nazev": "Maorihead",
+      "stupen": "13",
+      "alkohol": "5.6",
+      "styl": "India Pale ager",
       "dalsi": "",
-      "raw": "Filou, Belgian Tripel, 18° sv., 8,5% vol. , 35 IBU"
+      "raw": "Stadioner - Maorihead, India Pale ager, 13° sv. nef., 5, 6% vol. Alc"
     },
     {
       "pozice": 7,
-      "pivovar": "",
-      "nazev": "Kasteel Donker",
-      "stupen": "24",
-      "alkohol": "11",
-      "styl": "Belgian Quadrupel",
+      "pivovar": "Stadioner",
+      "nazev": "Požárník",
+      "stupen": "10",
+      "alkohol": "4.2",
+      "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "Kasteel Donker, Belgian Quadrupel, 24° tm., 11% vol. Alc"
+      "raw": "Stadioner - Požárník, světlé výčepní, 10° sv. nef., 4, 2% vol. Alc"
     },
     {
       "pozice": 8,
+      "pivovar": "Stadioner",
+      "nazev": "Profesor",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Stadioner - Profesor, světlý ležák, 12° sv. nef., 5, 1% vol. Alc"
+    },
+    {
+      "pozice": 9,
       "pivovar": "",
       "nazev": "Kasteel Rouge",
       "stupen": "18",
@@ -84,14 +94,14 @@
       "raw": "Kasteel Rouge, belgický višňový speciál, 18° tm., 8% vol. Alc"
     },
     {
-      "pozice": 9,
+      "pozice": 10,
       "pivovar": "",
       "nazev": "U Lenocha",
       "stupen": "10",
       "alkohol": "3.8",
       "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3,8% vol. Alc, 34 IBU"
+      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3, 8% vol. Alc, 34 IBU"
     }
   ]
 }
