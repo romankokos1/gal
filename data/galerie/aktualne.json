@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-06 23:29",
+  "zmeneno": "2026-10-07 18:00",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "SIBEERIA",
-      "nazev": "Everyday Life",
-      "stupen": "12",
-      "alkohol": "5.1",
+      "pivovar": "MAZÁK",
+      "nazev": "Extra Hořká za studena chmelená",
+      "stupen": "11",
+      "alkohol": "4.4",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "SIBEERIA – Everyday Life 12°/5,1%/38IBU světlý ležák"
+      "raw": "MAZÁK – Extra Hořká za studena chmelená 11°/4,4% světlý ležák"
     },
     {
       "pozice": 2,
