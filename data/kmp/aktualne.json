@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-08 13:16",
+  "zmeneno": "2026-10-08 21:13",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Stadioner",
-      "nazev": "Požárník",
-      "stupen": "10",
-      "alkohol": "4.2",
-      "styl": "světlé výčepní",
+      "pivovar": "Zhůřák",
+      "nazev": "Mosaic Smog",
+      "stupen": "13",
+      "alkohol": "5.8",
+      "styl": "Kveik NEIPA",
       "dalsi": "",
-      "raw": "Stadioner - Požárník, světlé výčepní, 10° sv. nef., 4, 2% vol. Alc"
+      "raw": "Zhůřák - Mosaic Smog, Kveik NEIPA, 13° sv. nef., 5, 8% vol. Alc"
     },
     {
       "pozice": 8,
