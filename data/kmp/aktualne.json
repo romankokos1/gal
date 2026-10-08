@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-07 17:00",
+  "zmeneno": "2026-10-08 13:16",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,23 +15,23 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Permon",
-      "nazev": "Joe in the Garden Apricot - Salt",
+      "pivovar": "The Barn Beer Co.",
+      "nazev": "Gosebumps Citrus Fusion",
       "stupen": "12",
-      "alkohol": "5.8",
-      "styl": "kyseláč s meruňkami a mořskou solí",
+      "alkohol": "4.5",
+      "styl": "kyseláč s pomerančem, mandarinkou a calamansi",
       "dalsi": "",
-      "raw": "Permon - Joe in the Garden Apricot - Salt, kyseláč s meruňkami a mořskou solí, 12° sv. nef., 5, 8% vol. Alc, 5 IBU"
+      "raw": "The Barn Beer Co. - Gosebumps Citrus Fusion, kyseláč s pomerančem, mandarinkou a calamansi, 12° sv. nef., 4, 5% vol. Alc, 10 IBU"
     },
     {
       "pozice": 3,
-      "pivovar": "Zlatá Kráva",
-      "nazev": "Farm APA",
-      "stupen": "11",
-      "alkohol": "4.6",
+      "pivovar": "Frankies",
+      "nazev": "Frank APPA",
+      "stupen": "12",
+      "alkohol": "4.9",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Zlatá Kráva - Farm APA, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc, 46 IBU"
+      "raw": "Frankies - Frank APPA, American Pale Ale, 12° sv. nef., 4, 9% vol. Alc"
     },
     {
       "pozice": 4,
@@ -59,9 +59,9 @@
       "nazev": "Maorihead",
       "stupen": "13",
       "alkohol": "5.6",
-      "styl": "India Pale ager",
+      "styl": "India Pale Lager",
       "dalsi": "",
-      "raw": "Stadioner - Maorihead, India Pale ager, 13° sv. nef., 5, 6% vol. Alc"
+      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5, 6% vol. Alc"
     },
     {
       "pozice": 7,
