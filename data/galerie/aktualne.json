@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-07 18:00",
+  "zmeneno": "2026-10-08 13:46",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Raspberry Sour",
+      "pivovar": "ČESTMÍR",
+      "nazev": "Tropical Sour",
       "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "kyseláč s malinama",
+      "alkohol": "5.4",
+      "styl": "kyseláč s mangem, marakujou a ananasem",
       "dalsi": "",
-      "raw": "ZICHOVEC – Raspberry Sour 12°/5,1% kyseláč s malinama"
+      "raw": "ČESTMÍR – Tropical Sour 12°/5,4% kyseláč s mangem, marakujou a ananasem"
     }
   ]
 }
