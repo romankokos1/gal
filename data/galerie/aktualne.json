@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-08 16:17",
+  "zmeneno": "2026-10-08 18:17",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "NĚMÝ MEDVĚD",
-      "nazev": "Kojot",
-      "stupen": "10",
-      "alkohol": "4",
-      "styl": "IPL (nectaron, krush)",
+      "pivovar": "NOZIB",
+      "nazev": "BANZAI",
+      "stupen": "11",
+      "alkohol": "5.1",
+      "styl": "Northern Session IPA (sorachi ace)",
       "dalsi": "",
-      "raw": "NĚMÝ MEDVĚD – Kojot 10°/4%/24IBU IPL (nectaron, krush)"
+      "raw": "NOZIB – BANZAI 11°/5,1% Northern Session IPA (sorachi ace)"
     },
     {
       "pozice": 3,
