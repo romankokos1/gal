@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-09 17:16",
+  "zmeneno": "2026-10-09 20:44",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "MAZÁK",
-      "nazev": "Extra Hořká za studena chmelena",
+      "pivovar": "ZÁHORA",
+      "nazev": "SAAZ",
       "stupen": "11",
       "alkohol": "4.4",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "MAZÁK – Extra Hořká za studena chmelena 11°/4,4% světlý ležák"
+      "raw": "ZÁHORA – SAAZ 11°/4,4% světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "NOZIB",
-      "nazev": "BANZAI",
+      "pivovar": "MAZÁK",
+      "nazev": "Taiheke",
       "stupen": "11",
-      "alkohol": "5.1",
-      "styl": "Northern Session IPA (sorachi ace)",
+      "alkohol": "4.4",
+      "styl": "India Pale Lager",
       "dalsi": "",
-      "raw": "NOZIB – BANZAI 11°/5,1% Northern Session IPA (sorachi ace)"
+      "raw": "MAZÁK – Taiheke 11°/4,4% India Pale Lager"
     },
     {
       "pozice": 3,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "ČESTMÍR",
-      "nazev": "Astro Creep",
-      "stupen": "14",
-      "alkohol": "5.9",
-      "styl": "Oatmeal Stout",
+      "pivovar": "ZICHOVEC",
+      "nazev": "Robin na Grepu",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "APA infuzovaná grepem",
       "dalsi": "",
-      "raw": "ČESTMÍR – Astro Creep 14°/5,9% Oatmeal Stout"
+      "raw": "ZICHOVEC – Robin na Grepu 12°/5,1% APA infuzovaná grepem"
     },
     {
       "pozice": 5,

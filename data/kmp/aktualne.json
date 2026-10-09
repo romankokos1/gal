@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-09 17:16",
+  "zmeneno": "2026-10-09 20:44",
   "metoda": "selektor",
   "piva": [
     {
@@ -36,12 +36,12 @@
     {
       "pozice": 4,
       "pivovar": "",
-      "nazev": "NOZIB <- Fresh Tap #002",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "American Session IPA",
+      "nazev": "Permon P.I.P.A.",
+      "stupen": "14",
+      "alkohol": "5.8",
+      "styl": "India Pale Ale",
       "dalsi": "",
-      "raw": "NOZIB <- Fresh Tap #002, American Session IPA, 12° sv. nef., 5% vol. Alc"
+      "raw": "Permon P.I.P.A., India Pale Ale, 14° sv. nef., 5, 8% vol. Alc"
     },
     {
       "pozice": 5,

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-10-08 21:13",
+  "zmeneno": "2026-10-09 20:44",
   "metoda": "nadpis",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "Clock",
-      "nazev": "Clock",
-      "stupen": "12",
+      "nazev": "Glee",
+      "stupen": "11",
       "alkohol": "",
-      "styl": "American Pale Ale",
+      "styl": "Gluten Reduced PA",
       "dalsi": "",
-      "raw": "12° Clock (American Pale Ale)"
+      "raw": "11° Glee (Gluten Reduced PA)"
     },
     {
       "pozice": 3,

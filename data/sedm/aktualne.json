@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-07 23:19",
+  "zmeneno": "2026-10-09 20:44",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "kynšperský zajíc",
-      "nazev": "světlý ležák",
+      "pivovar": "Preisler",
+      "nazev": "Tvrdá Práce",
       "stupen": "12",
       "alkohol": "5.2",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "kynšperský zajíc - světlý ležák | 12% | Lager, ABV 5,2%"
+      "raw": "Preisler - Tvrdá Práce | 12% | Lager, ABV 5,2%"
     },
     {
       "pozice": 2,
@@ -25,16 +25,6 @@
     },
     {
       "pozice": 3,
-      "pivovar": "falkon",
-      "nazev": "házená",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "session hazy ipa",
-      "dalsi": "",
-      "raw": "falkon - házená | 12% | session hazy ipa, ABV 5%"
-    },
-    {
-      "pozice": 4,
       "pivovar": "the barn",
       "nazev": "xxtravaganza",
       "stupen": "13",
@@ -44,7 +34,7 @@
       "raw": "the barn - xxtravaganza | 13% | extra pale ale, ABV 5,5%"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "The Barn x Falkon",
       "nazev": "Ummagumma",
       "stupen": "17",
@@ -54,7 +44,7 @@
       "raw": "The Barn x Falkon - Ummagumma | 17% | TDH NEIPA, ABV 7%"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Vik",
       "nazev": "Fresh APA #2",
       "stupen": "11",
@@ -64,7 +54,7 @@
       "raw": "Vik - Fresh APA #2 | 11% | APA, ABV 4,6%"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Valeč",
       "nazev": "Vilma",
       "stupen": "13",
@@ -74,7 +64,7 @@
       "raw": "Valeč - Vilma | 13% | West Coast IPA, ABV 6,5%"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "The Barn",
       "nazev": "Hybrid Theory",
       "stupen": "17",
