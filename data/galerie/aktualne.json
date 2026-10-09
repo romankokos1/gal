@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-09 20:44",
+  "zmeneno": "2026-10-09 23:15",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "ZÁHORA",
-      "nazev": "SAAZ",
-      "stupen": "11",
-      "alkohol": "4.4",
+      "pivovar": "MAZÁK",
+      "nazev": "Old Bohemia",
+      "stupen": "12",
+      "alkohol": "5",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "ZÁHORA – SAAZ 11°/4,4% světlý ležák"
+      "raw": "MAZÁK – Old Bohemia 12°/5% světlý ležák"
     },
     {
       "pozice": 2,
