@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-09 15:16",
+  "zmeneno": "2026-10-09 17:16",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -21,7 +21,7 @@
       "alkohol": "4.5",
       "styl": "kyseláč s pomerančem, mandarinkou a calamansi",
       "dalsi": "",
-      "raw": "The Barn Beer Co. - Gosebumps Citrus Fusion, kyseláč s pomerančem, mandarinkou a calamansi, 12° sv. nef., 4,5% vol. Alc, 10 IBU"
+      "raw": "The Barn Beer Co. - Gosebumps Citrus Fusion, kyseláč s pomerančem, mandarinkou a calamansi, 12° sv. nef., 4, 5% vol. Alc, 10 IBU"
     },
     {
       "pozice": 3,
@@ -31,7 +31,7 @@
       "alkohol": "4.9",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Frankies - Frank APPA, American Pale Ale, 12° sv. nef., 4,9% vol. Alc"
+      "raw": "Frankies - Frank APPA, American Pale Ale, 12° sv. nef., 4, 9% vol. Alc"
     },
     {
       "pozice": 4,
@@ -51,7 +51,7 @@
       "alkohol": "4.6",
       "styl": "Märzen",
       "dalsi": "",
-      "raw": "Zlatá Kráva - Märzen Dog, Märzen, 13° sv. nef., 4,6% vol. Alc"
+      "raw": "Zlatá Kráva - Märzen Dog, Märzen, 13° sv. nef., 4, 6% vol. Alc"
     },
     {
       "pozice": 6,
@@ -61,7 +61,7 @@
       "alkohol": "5.6",
       "styl": "India Pale Lager",
       "dalsi": "",
-      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5,6% vol. Alc"
+      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5, 6% vol. Alc"
     },
     {
       "pozice": 7,
@@ -71,7 +71,7 @@
       "alkohol": "5.8",
       "styl": "Kveik NEIPA",
       "dalsi": "",
-      "raw": "Zhůřák - Mosaic Smog, Kveik NEIPA, 13° sv. nef., 5,8% vol. Alc"
+      "raw": "Zhůřák - Mosaic Smog, Kveik NEIPA, 13° sv. nef., 5, 8% vol. Alc"
     },
     {
       "pozice": 8,
@@ -81,7 +81,7 @@
       "alkohol": "5.1",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Stadioner - Profesor, světlý ležák, 12° sv. nef., 5,1% vol. Alc"
+      "raw": "Stadioner - Profesor, světlý ležák, 12° sv. nef., 5, 1% vol. Alc"
     },
     {
       "pozice": 9,
@@ -101,7 +101,7 @@
       "alkohol": "3.8",
       "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3,8% vol. Alc, 34 IBU"
+      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3, 8% vol. Alc, 34 IBU"
     }
   ]
 }

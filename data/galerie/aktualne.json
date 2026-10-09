@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-09 16:46",
+  "zmeneno": "2026-10-09 17:16",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "HOSTOMICE",
-      "nazev": "Fabián",
-      "stupen": "12",
-      "alkohol": "4.5",
+      "pivovar": "MAZÁK",
+      "nazev": "Extra Hořká za studena chmelena",
+      "stupen": "11",
+      "alkohol": "4.4",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "HOSTOMICE – Fabián 12°/4,5% světlý ležák"
+      "raw": "MAZÁK – Extra Hořká za studena chmelena 11°/4,4% světlý ležák"
     },
     {
       "pozice": 2,
