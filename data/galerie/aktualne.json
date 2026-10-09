@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-08 21:13",
+  "zmeneno": "2026-10-09 16:46",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "SIBEERIA",
-      "nazev": "Hekla",
-      "stupen": "19",
-      "alkohol": "8",
-      "styl": "Double Hazy IPA (ekuanot, azacca, azacca cgx, dolcita)",
+      "pivovar": "MATUŠKA",
+      "nazev": "Raptor",
+      "stupen": "15",
+      "alkohol": "6.3",
+      "styl": "IPA (cascade, amarillo)",
       "dalsi": "",
-      "raw": "SIBEERIA – Hekla 19°/8% Double Hazy IPA (ekuanot, azacca, azacca cgx, dolcita)"
+      "raw": "MATUŠKA – Raptor 15°/6,3% IPA (cascade, amarillo)"
     },
     {
       "pozice": 4,
