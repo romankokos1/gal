@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-09 20:44",
+  "zmeneno": "2026-10-09 22:45",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,6 +25,16 @@
     },
     {
       "pozice": 3,
+      "pivovar": "Haksna",
+      "nazev": "Dolce Far Niente",
+      "stupen": "14",
+      "alkohol": "6",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "Haksna - Dolce Far Niente | 14% | NEIPA, ABV 6%"
+    },
+    {
+      "pozice": 4,
       "pivovar": "the barn",
       "nazev": "xxtravaganza",
       "stupen": "13",
@@ -32,16 +42,6 @@
       "styl": "extra pale ale",
       "dalsi": "",
       "raw": "the barn - xxtravaganza | 13% | extra pale ale, ABV 5,5%"
-    },
-    {
-      "pozice": 4,
-      "pivovar": "The Barn x Falkon",
-      "nazev": "Ummagumma",
-      "stupen": "17",
-      "alkohol": "7",
-      "styl": "TDH NEIPA",
-      "dalsi": "",
-      "raw": "The Barn x Falkon - Ummagumma | 17% | TDH NEIPA, ABV 7%"
     },
     {
       "pozice": 5,
