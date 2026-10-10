@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-10 19:44",
+  "zmeneno": "2026-10-10 21:45",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Stadioner",
-      "nazev": "Profesor",
-      "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "světlý ležák",
+      "pivovar": "Volt",
+      "nazev": "Mex-Ray",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "Mexican Lager",
       "dalsi": "",
-      "raw": "Stadioner - Profesor, světlý ležák, 12° sv. nef., 5, 1% vol. Alc"
+      "raw": "Volt - Mex-Ray, Mexican Lager, 11° sv. nef., 4, 5% vol. Alc, 20 IBU"
     },
     {
       "pozice": 9,
