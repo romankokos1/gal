@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-10 16:33",
+  "zmeneno": "2026-10-10 19:44",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Zlatá Kráva",
-      "nazev": "Märzen Dog",
-      "stupen": "13",
-      "alkohol": "4.6",
-      "styl": "Märzen",
+      "pivovar": "Brána",
+      "nazev": "Karl l.",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "Weissbier",
       "dalsi": "",
-      "raw": "Zlatá Kráva - Märzen Dog, Märzen, 13° sv. nef., 4, 6% vol. Alc"
+      "raw": "Brána - Karl l., Weissbier, 12° sv. nef., 5, 3% vol. Alc"
     },
     {
       "pozice": 6,
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "",
-      "nazev": "U Lenocha",
-      "stupen": "10",
-      "alkohol": "3.8",
-      "styl": "světlé výčepní",
+      "pivovar": "Hubertus Kácov",
+      "nazev": "Medium",
+      "stupen": "11",
+      "alkohol": "4.4",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3, 8% vol. Alc, 34 IBU"
+      "raw": "Hubertus Kácov - Medium, světlý ležák, 11° sv. nef., 4, 4% vol. Alc, 31 IBU"
     }
   ]
 }

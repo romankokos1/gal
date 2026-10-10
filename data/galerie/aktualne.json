@@ -1,47 +1,47 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-10 14:32",
+  "zmeneno": "2026-10-10 19:44",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "MAZÁK",
-      "nazev": "Old Bohemia",
+      "pivovar": "SKJUBRU",
+      "nazev": "Fresh Lager",
       "stupen": "12",
-      "alkohol": "5",
+      "alkohol": "4.9",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "MAZÁK – Old Bohemia 12°/5% světlý ležák"
+      "raw": "SKJUBRU – Fresh Lager 12°/4,9% světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "MAZÁK",
-      "nazev": "Taiheke",
-      "stupen": "11",
-      "alkohol": "4.4",
-      "styl": "India Pale Lager",
+      "pivovar": "CHROUST",
+      "nazev": "Judo Jellyfish",
+      "stupen": "12",
+      "alkohol": "4.9",
+      "styl": "Session West Coast IPA (straty, simcoe, amarilla, centennial)",
       "dalsi": "",
-      "raw": "MAZÁK – Taiheke 11°/4,4% India Pale Lager"
+      "raw": "CHROUST – Judo Jellyfish 12°/4,9% Session West Coast IPA (straty, simcoe, amarilla, centennial)"
     },
     {
       "pozice": 3,
-      "pivovar": "MATUŠKA",
-      "nazev": "Raptor",
-      "stupen": "15",
-      "alkohol": "6.3",
-      "styl": "IPA (cascade, amarillo)",
+      "pivovar": "ČESTMÍR",
+      "nazev": "Nine IPA",
+      "stupen": "14",
+      "alkohol": "6.2",
+      "styl": "IPA (citra, krush, sabro)",
       "dalsi": "",
-      "raw": "MATUŠKA – Raptor 15°/6,3% IPA (cascade, amarillo)"
+      "raw": "ČESTMÍR – Nine IPA 14°/6,2% IPA (citra, krush, sabro)"
     },
     {
       "pozice": 4,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Robin na Grepu",
-      "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "APA infuzovaná grepem",
+      "pivovar": "SIBEERIA",
+      "nazev": "Podzim",
+      "stupen": "18",
+      "alkohol": "8",
+      "styl": "Double Black IPA (HBC 638, el dorado, columbus cryo)",
       "dalsi": "",
-      "raw": "ZICHOVEC – Robin na Grepu 12°/5,1% APA infuzovaná grepem"
+      "raw": "SIBEERIA – Podzim 18°/8% Double Black IPA (HBC 638, el dorado, columbus cryo)"
     },
     {
       "pozice": 5,
