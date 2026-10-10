@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-09 20:44",
+  "zmeneno": "2026-10-10 12:31",
   "metoda": "selektor",
   "piva": [
     {
@@ -86,12 +86,12 @@
     {
       "pozice": 9,
       "pivovar": "",
-      "nazev": "Kasteel Rouge",
-      "stupen": "18",
-      "alkohol": "8",
-      "styl": "belgický višňový speciál",
+      "nazev": "Kasteel Tropical",
+      "stupen": "14",
+      "alkohol": "7",
+      "styl": "Belgický speciál s tropickým ovocem",
       "dalsi": "",
-      "raw": "Kasteel Rouge, belgický višňový speciál, 18° tm., 8% vol. Alc"
+      "raw": "Kasteel Tropical, Belgický speciál s tropickým ovocem, 14° sv., 7% vol. Alc"
     },
     {
       "pozice": 10,
