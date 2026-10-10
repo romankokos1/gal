@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-10 12:31",
+  "zmeneno": "2026-10-10 16:33",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Frankies",
-      "nazev": "Frank APPA",
+      "pivovar": "Nachmelená Opice",
+      "nazev": "Sun APA",
       "stupen": "12",
-      "alkohol": "4.9",
+      "alkohol": "5.2",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Frankies - Frank APPA, American Pale Ale, 12° sv. nef., 4, 9% vol. Alc"
+      "raw": "Nachmelená Opice - Sun APA, American Pale Ale, 12° sv. nef., 5, 2% vol. Alc, 36 IBU"
     },
     {
       "pozice": 4,
