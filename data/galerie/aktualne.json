@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-09 23:15",
+  "zmeneno": "2026-10-10 14:32",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "ČESTMÍR",
-      "nazev": "Tropical Sour",
-      "stupen": "12",
-      "alkohol": "5.4",
-      "styl": "kyseláč s mangem, marakujou a ananasem",
+      "pivovar": "SIBEERIA & BEER GEEK",
+      "nazev": "Margherita Juice",
+      "stupen": "13",
+      "alkohol": "4.5",
+      "styl": "Gose w/ Tomato & Basil",
       "dalsi": "",
-      "raw": "ČESTMÍR – Tropical Sour 12°/5,4% kyseláč s mangem, marakujou a ananasem"
+      "raw": "SIBEERIA & BEER GEEK – Margherita Juice 13°/4,5% Gose w/ Tomato & Basil"
     }
   ]
 }
