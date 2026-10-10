@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-10 19:44",
+  "zmeneno": "2026-10-10 22:46",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "CHROUST",
-      "nazev": "Judo Jellyfish",
+      "pivovar": "ZICHOVEC",
+      "nazev": "Robin na Grepu",
       "stupen": "12",
-      "alkohol": "4.9",
-      "styl": "Session West Coast IPA (straty, simcoe, amarilla, centennial)",
+      "alkohol": "5",
+      "styl": "APA infuzovaná grepem",
       "dalsi": "",
-      "raw": "CHROUST – Judo Jellyfish 12°/4,9% Session West Coast IPA (straty, simcoe, amarilla, centennial)"
+      "raw": "ZICHOVEC – Robin na Grepu 12°/5% APA infuzovaná grepem"
     },
     {
       "pozice": 3,
