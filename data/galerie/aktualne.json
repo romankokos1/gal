@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-10 22:46",
+  "zmeneno": "2026-10-11 15:15",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "SKJUBRU",
-      "nazev": "Fresh Lager",
-      "stupen": "12",
-      "alkohol": "4.9",
+      "pivovar": "ČESTMÍR",
+      "nazev": "Čest",
+      "stupen": "11",
+      "alkohol": "4.5",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "SKJUBRU – Fresh Lager 12°/4,9% světlý ležák"
+      "raw": "ČESTMÍR – Čest 11°/4,5% světlý ležák"
     },
     {
       "pozice": 2,
