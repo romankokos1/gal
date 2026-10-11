@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-10 21:45",
+  "zmeneno": "2026-10-12 00:00",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -21,7 +21,7 @@
       "alkohol": "4.5",
       "styl": "kyseláč s pomerančem, mandarinkou a calamansi",
       "dalsi": "",
-      "raw": "The Barn Beer Co. - Gosebumps Citrus Fusion, kyseláč s pomerančem, mandarinkou a calamansi, 12° sv. nef., 4, 5% vol. Alc, 10 IBU"
+      "raw": "The Barn Beer Co. - Gosebumps Citrus Fusion, kyseláč s pomerančem, mandarinkou a calamansi, 12° sv. nef., 4,5% vol. Alc, 10 IBU"
     },
     {
       "pozice": 3,
@@ -31,7 +31,7 @@
       "alkohol": "5.2",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Nachmelená Opice - Sun APA, American Pale Ale, 12° sv. nef., 5, 2% vol. Alc, 36 IBU"
+      "raw": "Nachmelená Opice - Sun APA, American Pale Ale, 12° sv. nef., 5,2% vol. Alc, 36 IBU"
     },
     {
       "pozice": 4,
@@ -41,7 +41,7 @@
       "alkohol": "5.8",
       "styl": "India Pale Ale",
       "dalsi": "",
-      "raw": "Permon P.I.P.A., India Pale Ale, 14° sv. nef., 5, 8% vol. Alc"
+      "raw": "Permon P.I.P.A., India Pale Ale, 14° sv. nef., 5,8% vol. Alc"
     },
     {
       "pozice": 5,
@@ -51,7 +51,7 @@
       "alkohol": "5.3",
       "styl": "Weissbier",
       "dalsi": "",
-      "raw": "Brána - Karl l., Weissbier, 12° sv. nef., 5, 3% vol. Alc"
+      "raw": "Brána - Karl l., Weissbier, 12° sv. nef., 5,3% vol. Alc"
     },
     {
       "pozice": 6,
@@ -61,7 +61,7 @@
       "alkohol": "5.6",
       "styl": "India Pale Lager",
       "dalsi": "",
-      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5, 6% vol. Alc"
+      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5,6% vol. Alc"
     },
     {
       "pozice": 7,
@@ -71,7 +71,7 @@
       "alkohol": "5.8",
       "styl": "Kveik NEIPA",
       "dalsi": "",
-      "raw": "Zhůřák - Mosaic Smog, Kveik NEIPA, 13° sv. nef., 5, 8% vol. Alc"
+      "raw": "Zhůřák - Mosaic Smog, Kveik NEIPA, 13° sv. nef., 5,8% vol. Alc"
     },
     {
       "pozice": 8,
@@ -81,7 +81,7 @@
       "alkohol": "4.5",
       "styl": "Mexican Lager",
       "dalsi": "",
-      "raw": "Volt - Mex-Ray, Mexican Lager, 11° sv. nef., 4, 5% vol. Alc, 20 IBU"
+      "raw": "Volt - Mex-Ray, Mexican Lager, 11° sv. nef., 4,5% vol. Alc, 20 IBU"
     },
     {
       "pozice": 9,
@@ -101,7 +101,7 @@
       "alkohol": "4.4",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Hubertus Kácov - Medium, světlý ležák, 11° sv. nef., 4, 4% vol. Alc, 31 IBU"
+      "raw": "Hubertus Kácov - Medium, světlý ležák, 11° sv. nef., 4,4% vol. Alc, 31 IBU"
     }
   ]
 }
