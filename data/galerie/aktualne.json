@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-11 15:15",
+  "zmeneno": "2026-10-11 16:15",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "SIBEERIA & BEER GEEK",
-      "nazev": "Margherita Juice",
-      "stupen": "13",
-      "alkohol": "4.5",
-      "styl": "Gose w/ Tomato & Basil",
+      "pivovar": "HOPE",
+      "nazev": "Secesní citróny",
+      "stupen": "10",
+      "alkohol": "3.9",
+      "styl": "Sour se sicilským citronem",
       "dalsi": "",
-      "raw": "SIBEERIA & BEER GEEK – Margherita Juice 13°/4,5% Gose w/ Tomato & Basil"
+      "raw": "HOPE – Secesní citróny 10°/3,9% Sour se sicilským citronem"
     }
   ]
 }
