@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-10-11 19:58",
+  "zmeneno": "2026-10-11 21:59",
   "metoda": "nadpis",
   "piva": [
     {
@@ -26,6 +26,16 @@
     {
       "pozice": 3,
       "pivovar": "Clock",
+      "nazev": "Goldie",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Weizenbier",
+      "dalsi": "",
+      "raw": "11° Goldie (Weizenbier)"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Clock",
       "nazev": "Podzim",
       "stupen": "13",
       "alkohol": "",
@@ -34,7 +44,7 @@
       "raw": "13° Podzim (NEIPA)"
     },
     {
-      "pozice": 4,
+      "pozice": 5,
       "pivovar": "Clock",
       "nazev": "Twist",
       "stupen": "14",
@@ -44,7 +54,7 @@
       "raw": "14° Twist (Red IPA)"
     },
     {
-      "pozice": 5,
+      "pozice": 6,
       "pivovar": "Clock",
       "nazev": "Bezovka",
       "stupen": "",
@@ -54,7 +64,7 @@
       "raw": "Bezovka (Limonáda)"
     },
     {
-      "pozice": 6,
+      "pozice": 7,
       "pivovar": "Clock",
       "nazev": "Leviticus",
       "stupen": "",
