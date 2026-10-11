@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-11 16:15",
+  "zmeneno": "2026-10-11 19:58",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Robin na Grepu",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "APA infuzovaná grepem",
+      "pivovar": "POTMEHÚD",
+      "nazev": "SMaSH the Rhapzody",
+      "stupen": "12.5",
+      "alkohol": "5.3",
+      "styl": "APA",
       "dalsi": "",
-      "raw": "ZICHOVEC – Robin na Grepu 12°/5% APA infuzovaná grepem"
+      "raw": "POTMEHÚD – SMaSH the Rhapzody 12,5°/5,3% APA"
     },
     {
       "pozice": 3,

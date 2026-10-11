@@ -1,50 +1,60 @@
 {
   "zdroj": "https://www.beerandfriends.eu/beer-and-friends",
-  "zmeneno": "2026-10-06 16:50",
+  "zmeneno": "2026-10-11 19:58",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Fracek",
-      "nazev": "FINA CERVA",
+      "pivovar": "Fracek/Vik",
+      "nazev": "MINTY FETISH",
       "stupen": "",
-      "alkohol": "4.9",
-      "styl": "Catharina Sour",
+      "alkohol": "4.7",
+      "styl": "Berliner Weisse",
       "dalsi": "",
-      "raw": "FINA CERVA – Catharina Sour (Fracek) · abv 4,9 %"
+      "raw": "MINTY FETISH – Berliner Weisse (Fracek/Vik) · abv 4,7 %"
     },
     {
       "pozice": 2,
-      "pivovar": "Fracek",
-      "nazev": "DINGO STAR",
+      "pivovar": "Chroust",
+      "nazev": "AGE OF KRUSH",
       "stupen": "",
-      "alkohol": "6",
-      "styl": "DDH Extra Pale Ale",
+      "alkohol": "5.8",
+      "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "DINGO STAR – DDH Extra Pale Ale (Fracek) · abv 6 %"
+      "raw": "AGE OF KRUSH – West Coast IPA (Chroust) · abv 5,8 %"
     },
     {
       "pozice": 3,
       "pivovar": "Hope",
-      "nazev": "TATTOO YOU 1: TA MAKO",
+      "nazev": "HOPE",
       "stupen": "",
       "alkohol": "5.4",
-      "styl": "NE IPA",
+      "styl": "Rye New England IPA",
       "dalsi": "",
-      "raw": "TATTOO YOU 1: TA MAKO – NE IPA (Hope) · abv 5,4 %"
+      "raw": "HOPE – Rye New England IPA (Hope) · abv 5,4 %"
     },
     {
       "pozice": 4,
-      "pivovar": "Fracek",
-      "nazev": "HOPCHARGED SUMMER",
+      "pivovar": "Falkon",
+      "nazev": "HÁZENÁ",
       "stupen": "",
-      "alkohol": "5.5",
-      "styl": "Session IPA",
+      "alkohol": "5",
+      "styl": "Hazy Session IPA",
       "dalsi": "",
-      "raw": "HOPCHARGED SUMMER – Session IPA (Fracek) · abv 5,5 %"
+      "raw": "HÁZENÁ – Hazy Session IPA (Falkon) · abv 5 %"
     },
     {
       "pozice": 5,
+      "pivovar": "Pioneer",
+      "nazev": "NZ HOPLINE",
+      "stupen": "",
+      "alkohol": "5",
+      "styl": "New Zealand Pale Ale",
+      "dalsi": "",
+      "raw": "NZ HOPLINE – New Zealand Pale Ale (Pioneer) · abv 5 %"
+    },
+    {
+      "pozice": 6,
       "pivovar": "Fracek",
       "nazev": "STILL WET",
       "stupen": "",
@@ -54,14 +64,34 @@
       "raw": "STILL WET – Fresh Hop Lager (Fracek) · abv 4,4 %"
     },
     {
-      "pozice": 6,
+      "pozice": 7,
       "pivovar": "Fracek",
-      "nazev": "ORIGINÁL LEŽÁK 11",
+      "nazev": "NO COMPASS",
+      "stupen": "",
+      "alkohol": "5",
+      "styl": "New Zealand Pils",
+      "dalsi": "",
+      "raw": "NO COMPASS – New Zealand Pils (Fracek) · abv 5 %"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Fracek",
+      "nazev": "FINA CERVA",
+      "stupen": "",
+      "alkohol": "4.9",
+      "styl": "Catharina Sour",
+      "dalsi": "",
+      "raw": "FINA CERVA – Catharina Sour (Fracek) · abv 4,9 %"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Fracek",
+      "nazev": "HOPCHARGED SUMMER",
       "stupen": "",
       "alkohol": "4.5",
-      "styl": "Pilsner",
+      "styl": "Session IPA",
       "dalsi": "",
-      "raw": "ORIGINÁL LEŽÁK 11 – Pilsner (Fracek) · abv 4,5 %"
+      "raw": "HOPCHARGED SUMMER – Session IPA (Fracek) · abv 4,5 %"
     }
   ]
 }
