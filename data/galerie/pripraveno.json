@@ -1,21 +1,5 @@
 [
   {
-    "pivovar": "HULVÁT",
-    "nazev": "Svatováclavské",
-    "stupen": "12",
-    "alkohol": "4.8",
-    "styl": "světlý ležák",
-    "raw": "HULVÁT – Svatováclavské 12°/4,8%/40IBU světlý ležák"
-  },
-  {
-    "pivovar": "VÁCLAV",
-    "nazev": "Murica",
-    "stupen": "11",
-    "alkohol": "4.5",
-    "styl": "APA (citra, cascade, citra cryo, cascade cryo)",
-    "raw": "VÁCLAV – Murica 11°/4,5% APA (citra, cascade, citra cryo, cascade cryo)"
-  },
-  {
     "pivovar": "PIVOVAR VIK",
     "nazev": "Fluff Off",
     "stupen": "24",

@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-12 20:01",
+  "zmeneno": "2026-10-12 22:27",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "ČESTMÍR",
-      "nazev": "Čest",
-      "stupen": "11",
-      "alkohol": "4.5",
+      "pivovar": "HULVÁT",
+      "nazev": "Svatováclavské",
+      "stupen": "12",
+      "alkohol": "4.8",
       "styl": "světlý ležák",
-      "dalsi": "HULVÁT – Svatováclavské 12°/4,8%/40IBU světlý ležák",
-      "raw": "ČESTMÍR – Čest 11°/4,5% světlý ležák //NEXT// HULVÁT – Svatováclavské 12°/4,8%/40IBU světlý ležák"
+      "dalsi": "",
+      "raw": "HULVÁT – Svatováclavské 12°/4,8%/40IBU světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "POTMEHÚD",
-      "nazev": "SMaSH the Rhapzody",
-      "stupen": "12.5",
-      "alkohol": "5.3",
-      "styl": "APA",
-      "dalsi": "VÁCLAV – Murica 11°/4,5% APA (citra, cascade, citra cryo, cascade cryo)",
-      "raw": "POTMEHÚD – SMaSH the Rhapzody 12,5°/5,3% APA //NEXT// VÁCLAV – Murica 11°/4,5% APA (citra, cascade, citra cryo, cascade cryo)"
+      "pivovar": "VÁCLAV",
+      "nazev": "Murica",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "APA (citra, cascade, citra cryo, cascade cryo)",
+      "dalsi": "",
+      "raw": "VÁCLAV – Murica 11°/4,5% APA (citra, cascade, citra cryo, cascade cryo)"
     },
     {
       "pozice": 3,
