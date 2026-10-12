@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-09 22:45",
+  "zmeneno": "2026-10-12 17:44",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Haksna",
-      "nazev": "Dolce Far Niente",
-      "stupen": "14",
-      "alkohol": "6",
-      "styl": "NEIPA",
+      "pivovar": "Sibeeria",
+      "nazev": "Virgin ONRB",
+      "stupen": "12",
+      "alkohol": "4.9",
+      "styl": "Sour",
       "dalsi": "",
-      "raw": "Haksna - Dolce Far Niente | 14% | NEIPA, ABV 6%"
+      "raw": "Sibeeria - Virgin ONRB | 12% | Sour, ABV 4,9%"
     },
     {
       "pozice": 4,
@@ -45,16 +45,26 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Vik",
-      "nazev": "Fresh APA #2",
-      "stupen": "11",
-      "alkohol": "4.6",
-      "styl": "APA",
+      "pivovar": "Chroust",
+      "nazev": "Judo Jellyfish",
+      "stupen": "12",
+      "alkohol": "4.9",
+      "styl": "Session West Coast IPA",
       "dalsi": "",
-      "raw": "Vik - Fresh APA #2 | 11% | APA, ABV 4,6%"
+      "raw": "Chroust - Judo Jellyfish | 12% | Session West Coast IPA, ABV 4,9%"
     },
     {
       "pozice": 6,
+      "pivovar": "Haksna",
+      "nazev": "Dolce Far Niente",
+      "stupen": "14",
+      "alkohol": "6",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "Haksna - Dolce Far Niente | 14% | NEIPA, ABV 6%"
+    },
+    {
+      "pozice": 7,
       "pivovar": "Valeč",
       "nazev": "Vilma",
       "stupen": "13",
@@ -64,7 +74,7 @@
       "raw": "Valeč - Vilma | 13% | West Coast IPA, ABV 6,5%"
     },
     {
-      "pozice": 7,
+      "pozice": 8,
       "pivovar": "The Barn",
       "nazev": "Hybrid Theory",
       "stupen": "17",
