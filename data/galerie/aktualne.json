@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-11 19:58",
+  "zmeneno": "2026-10-12 13:50",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "ČESTMÍR",
-      "nazev": "Nine IPA",
+      "pivovar": "HOPE",
+      "nazev": "Tattoo You #1: Tā Moko",
       "stupen": "14",
-      "alkohol": "6.2",
-      "styl": "IPA (citra, krush, sabro)",
+      "alkohol": "5.4",
+      "styl": "New Zealand Rye Hazy IPA (nelson)",
       "dalsi": "",
-      "raw": "ČESTMÍR – Nine IPA 14°/6,2% IPA (citra, krush, sabro)"
+      "raw": "HOPE – Tattoo You #1: Tā Moko 14°/5,4% New Zealand Rye Hazy IPA (nelson)"
     },
     {
       "pozice": 4,

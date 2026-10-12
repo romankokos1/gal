@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-12 00:00",
+  "zmeneno": "2026-10-12 13:50",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,23 +25,23 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Nachmelená Opice",
-      "nazev": "Sun APA",
+      "pivovar": "Permon",
+      "nazev": "P.A.P.A.",
       "stupen": "12",
-      "alkohol": "5.2",
+      "alkohol": "5",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Nachmelená Opice - Sun APA, American Pale Ale, 12° sv. nef., 5,2% vol. Alc, 36 IBU"
+      "raw": "Permon - P.A.P.A., American Pale Ale, 12° sv. nef., 5% vol. Alc, 35 IBU"
     },
     {
       "pozice": 4,
-      "pivovar": "",
-      "nazev": "Permon P.I.P.A.",
-      "stupen": "14",
-      "alkohol": "5.8",
-      "styl": "India Pale Ale",
+      "pivovar": "Permon",
+      "nazev": "Zaříkávač Chmele",
+      "stupen": "17",
+      "alkohol": "7.5",
+      "styl": "Double IPA",
       "dalsi": "",
-      "raw": "Permon P.I.P.A., India Pale Ale, 14° sv. nef., 5,8% vol. Alc"
+      "raw": "Permon - Zaříkávač Chmele, Double IPA, 17° sv. nef., 7,5% vol. Alc, 100 IBU"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Stadioner",
-      "nazev": "Maorihead",
-      "stupen": "13",
-      "alkohol": "5.6",
-      "styl": "India Pale Lager",
+      "pivovar": "Blud",
+      "nazev": "Černota",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "Irish Dry Stout",
       "dalsi": "",
-      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5,6% vol. Alc"
+      "raw": "Blud - Černota, Irish Dry Stout, 11° tm. nef., 4,6% vol. Alc"
     },
     {
       "pozice": 7,
