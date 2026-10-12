@@ -1,6 +1,6 @@
 {
   "zdroj": "https://vratnice.cz/",
-  "zmeneno": "2026-10-07 12:58",
+  "zmeneno": "2026-10-12 15:51",
   "metoda": "bloky",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Cobolis",
-      "nazev": "Brut IPA Alcatraz",
-      "stupen": "18",
+      "pivovar": "Blud",
+      "nazev": "Crispy džus West Coast IPA",
+      "stupen": "14",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Brut IPA Alcatraz 18° – Cobolis (Praha)"
+      "raw": "Crispy džus West Coast IPA 14 ° – Blud (Bludov)"
     },
     {
       "pozice": 5,
@@ -56,12 +56,12 @@
     {
       "pozice": 6,
       "pivovar": "Čestmír",
-      "nazev": "Session NEIPA",
-      "stupen": "12",
+      "nazev": "Letní Mlha Hazy Pale Ale",
+      "stupen": "10",
       "alkohol": "",
-      "styl": "Superdelic&Mosaic&Galaxy",
+      "styl": "",
       "dalsi": "",
-      "raw": "Session NEIPA 12° Superdelic&Mosaic&Galaxy– Čestmír (Br.n.L.)"
+      "raw": "Letní Mlha Hazy Pale Ale 10° – Čestmír (Br.n.L.)"
     },
     {
       "pozice": 7,
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Trilobit",
-      "nazev": "Summer APA",
-      "stupen": "11",
+      "pivovar": "Uhříněves",
+      "nazev": "American Pale Ale",
+      "stupen": "12",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Summer APA 11° – Trilobit (Praha)"
+      "raw": "American Pale Ale 12° – Uhříněves (Praha)"
     },
     {
       "pozice": 10,

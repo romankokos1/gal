@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "pivovar": "HULVÁT",
+    "nazev": "Svatováclavské",
+    "stupen": "12",
+    "alkohol": "4.8",
+    "styl": "světlý ležák",
+    "raw": "HULVÁT – Svatováclavské 12°/4,8%/40IBU světlý ležák"
+  },
+  {
+    "pivovar": "VÁCLAV",
+    "nazev": "Murica",
+    "stupen": "11",
+    "alkohol": "4.5",
+    "styl": "APA (citra, cascade, citra cryo, cascade cryo)",
+    "raw": "VÁCLAV – Murica 11°/4,5% APA (citra, cascade, citra cryo, cascade cryo)"
+  },
+  {
+    "pivovar": "MAZÁK",
+    "nazev": "Banana Joy",
+    "stupen": "14",
+    "alkohol": "6",
+    "styl": "lactose free Milkshake IPA s banánem, suš. mlékem a vanilkou (sabro, cashmere)",
+    "raw": "MAZÁK – Banana Joy 14°/6% lactose free Milkshake IPA s banánem, suš. mlékem a vanilkou (sabro, cashmere)"
+  },
+  {
+    "pivovar": "PIVOVAR VIK",
+    "nazev": "Fluff Off",
+    "stupen": "24",
+    "alkohol": "8.1",
+    "styl": "Imperial Gose s višní, malinou, borůvkou, vanilkou a marshmallow",
+    "raw": "PIVOVAR VIK – Fluff Off 24°/8,1% Imperial Gose s višní, malinou, borůvkou, vanilkou a marshmallow"
+  }
+]

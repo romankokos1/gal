@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-12 13:50",
+  "zmeneno": "2026-10-12 15:51",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,8 +10,8 @@
       "stupen": "11",
       "alkohol": "4.5",
       "styl": "světlý ležák",
-      "dalsi": "",
-      "raw": "ČESTMÍR – Čest 11°/4,5% světlý ležák"
+      "dalsi": "HULVÁT – Svatováclavské 12°/4,8%/40IBU světlý ležák",
+      "raw": "ČESTMÍR – Čest 11°/4,5% světlý ležák //NEXT// HULVÁT – Svatováclavské 12°/4,8%/40IBU světlý ležák"
     },
     {
       "pozice": 2,
@@ -20,8 +20,8 @@
       "stupen": "12.5",
       "alkohol": "5.3",
       "styl": "APA",
-      "dalsi": "",
-      "raw": "POTMEHÚD – SMaSH the Rhapzody 12,5°/5,3% APA"
+      "dalsi": "VÁCLAV – Murica 11°/4,5% APA (citra, cascade, citra cryo, cascade cryo)",
+      "raw": "POTMEHÚD – SMaSH the Rhapzody 12,5°/5,3% APA //NEXT// VÁCLAV – Murica 11°/4,5% APA (citra, cascade, citra cryo, cascade cryo)"
     },
     {
       "pozice": 3,
@@ -40,8 +40,8 @@
       "stupen": "18",
       "alkohol": "8",
       "styl": "Double Black IPA (HBC 638, el dorado, columbus cryo)",
-      "dalsi": "",
-      "raw": "SIBEERIA – Podzim 18°/8% Double Black IPA (HBC 638, el dorado, columbus cryo)"
+      "dalsi": "MAZÁK – Banana Joy 14°/6% lactose free Milkshake IPA s banánem, suš. mlékem a vanilkou (sabro, cashmere)",
+      "raw": "SIBEERIA – Podzim 18°/8% Double Black IPA (HBC 638, el dorado, columbus cryo) //NEXT// MAZÁK – Banana Joy 14°/6% lactose free Milkshake IPA s banánem, suš. mlékem a vanilkou (sabro, cashmere)"
     },
     {
       "pozice": 5,
@@ -50,8 +50,8 @@
       "stupen": "10",
       "alkohol": "3.9",
       "styl": "Sour se sicilským citronem",
-      "dalsi": "",
-      "raw": "HOPE – Secesní citróny 10°/3,9% Sour se sicilským citronem"
+      "dalsi": "PIVOVAR VIK – Fluff Off 24°/8,1% Imperial Gose s višní, malinou, borůvkou, vanilkou a marshmallow",
+      "raw": "HOPE – Secesní citróny 10°/3,9% Sour se sicilským citronem //NEXT// PIVOVAR VIK – Fluff Off 24°/8,1% Imperial Gose s višní, malinou, borůvkou, vanilkou a marshmallow"
     }
   ]
 }
