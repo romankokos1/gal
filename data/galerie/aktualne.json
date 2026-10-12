@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-12 15:51",
+  "zmeneno": "2026-10-12 20:01",
   "metoda": "nadpis",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "SIBEERIA",
-      "nazev": "Podzim",
-      "stupen": "18",
-      "alkohol": "8",
-      "styl": "Double Black IPA (HBC 638, el dorado, columbus cryo)",
-      "dalsi": "MAZÁK – Banana Joy 14°/6% lactose free Milkshake IPA s banánem, suš. mlékem a vanilkou (sabro, cashmere)",
-      "raw": "SIBEERIA – Podzim 18°/8% Double Black IPA (HBC 638, el dorado, columbus cryo) //NEXT// MAZÁK – Banana Joy 14°/6% lactose free Milkshake IPA s banánem, suš. mlékem a vanilkou (sabro, cashmere)"
+      "pivovar": "MAZÁK",
+      "nazev": "Banana Joy",
+      "stupen": "14",
+      "alkohol": "6",
+      "styl": "lactose free Milkshake IPA s banánem, suš. mlékem a vanilkou (sabro, cashmere)",
+      "dalsi": "",
+      "raw": "MAZÁK – Banana Joy 14°/6% lactose free Milkshake IPA s banánem, suš. mlékem a vanilkou (sabro, cashmere)"
     },
     {
       "pozice": 5,
