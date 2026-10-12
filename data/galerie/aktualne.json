@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-12 22:27",
+  "zmeneno": "2026-10-13 00:41",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,8 +10,8 @@
       "stupen": "12",
       "alkohol": "4.8",
       "styl": "světlý ležák",
-      "dalsi": "",
-      "raw": "HULVÁT – Svatováclavské 12°/4,8%/40IBU světlý ležák"
+      "dalsi": "JUNGBERG – Hořický PP 12°/4,9% světlý ležák",
+      "raw": "HULVÁT – Svatováclavské 12°/4,8%/40IBU světlý ležák //NEXT// JUNGBERG – Hořický PP 12°/4,9% světlý ležák"
     },
     {
       "pozice": 2,
@@ -20,8 +20,8 @@
       "stupen": "11",
       "alkohol": "4.5",
       "styl": "APA (citra, cascade, citra cryo, cascade cryo)",
-      "dalsi": "",
-      "raw": "VÁCLAV – Murica 11°/4,5% APA (citra, cascade, citra cryo, cascade cryo)"
+      "dalsi": "MATUŠKA – California 12°/5,2%/45IBU APA (saaz, cascade)",
+      "raw": "VÁCLAV – Murica 11°/4,5% APA (citra, cascade, citra cryo, cascade cryo) //NEXT// MATUŠKA – California 12°/5,2%/45IBU APA (saaz, cascade)"
     },
     {
       "pozice": 3,
@@ -30,8 +30,8 @@
       "stupen": "14",
       "alkohol": "5.4",
       "styl": "New Zealand Rye Hazy IPA (nelson)",
-      "dalsi": "",
-      "raw": "HOPE – Tattoo You #1: Tā Moko 14°/5,4% New Zealand Rye Hazy IPA (nelson)"
+      "dalsi": "SIBEERIA – Lollihop Grapefruit 15°/6,6%/60IBU West Coast IPA s grepem (citra, mosaic)",
+      "raw": "HOPE – Tattoo You #1: Tā Moko 14°/5,4% New Zealand Rye Hazy IPA (nelson) //NEXT// SIBEERIA – Lollihop Grapefruit 15°/6,6%/60IBU West Coast IPA s grepem (citra, mosaic)"
     },
     {
       "pozice": 4,
@@ -50,8 +50,8 @@
       "stupen": "10",
       "alkohol": "3.9",
       "styl": "Sour se sicilským citronem",
-      "dalsi": "PIVOVAR VIK – Fluff Off 24°/8,1% Imperial Gose s višní, malinou, borůvkou, vanilkou a marshmallow",
-      "raw": "HOPE – Secesní citróny 10°/3,9% Sour se sicilským citronem //NEXT// PIVOVAR VIK – Fluff Off 24°/8,1% Imperial Gose s višní, malinou, borůvkou, vanilkou a marshmallow"
+      "dalsi": "VÁCLAV – Volej Si Švestky! 12°/4,9% kyseláč with švestka",
+      "raw": "HOPE – Secesní citróny 10°/3,9% Sour se sicilským citronem //NEXT// VÁCLAV – Volej Si Švestky! 12°/4,9% kyseláč with švestka"
     }
   ]
 }
