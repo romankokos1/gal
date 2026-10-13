@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-13 19:40",
+  "zmeneno": "2026-10-13 20:10",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "HULVÁT",
-      "nazev": "Svatováclavské",
+      "pivovar": "JUNGBERG",
+      "nazev": "Hořický PP",
       "stupen": "12",
-      "alkohol": "4.8",
+      "alkohol": "4.9",
       "styl": "světlý ležák",
-      "dalsi": "JUNGBERG – Hořický PP 12°/4,9% světlý ležák",
-      "raw": "HULVÁT – Svatováclavské 12°/4,8%/40IBU světlý ležák //NEXT// JUNGBERG – Hořický PP 12°/4,9% světlý ležák"
+      "dalsi": "",
+      "raw": "JUNGBERG – Hořický PP 12°/4,9% světlý ležák"
     },
     {
       "pozice": 2,
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "HOPE",
-      "nazev": "Tattoo You #1: Tā Moko",
-      "stupen": "14",
-      "alkohol": "5.4",
-      "styl": "New Zealand Rye Hazy IPA (nelson)",
-      "dalsi": "SIBEERIA – Lollihop Grapefruit 15°/6,6%/60IBU West Coast IPA s grepem (citra, mosaic)",
-      "raw": "HOPE – Tattoo You #1: Tā Moko 14°/5,4% New Zealand Rye Hazy IPA (nelson) //NEXT// SIBEERIA – Lollihop Grapefruit 15°/6,6%/60IBU West Coast IPA s grepem (citra, mosaic)"
+      "pivovar": "SIBEERIA",
+      "nazev": "Lollihop Grapefruit",
+      "stupen": "15",
+      "alkohol": "6.6",
+      "styl": "West Coast IPA s grepem (citra, mosaic)",
+      "dalsi": "",
+      "raw": "SIBEERIA – Lollihop Grapefruit 15°/6,6%/60IBU West Coast IPA s grepem (citra, mosaic)"
     },
     {
       "pozice": 4,
