@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-12 15:51",
+  "zmeneno": "2026-10-13 13:01",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,16 +15,6 @@
     },
     {
       "pozice": 2,
-      "pivovar": "The Barn Beer Co.",
-      "nazev": "Gosebumps Citrus Fusion",
-      "stupen": "12",
-      "alkohol": "4.5",
-      "styl": "kyseláč s pomerančem, mandarinkou a calamansi",
-      "dalsi": "",
-      "raw": "The Barn Beer Co. - Gosebumps Citrus Fusion, kyseláč s pomerančem, mandarinkou a calamansi, 12° sv. nef., 4, 5% vol. Alc, 10 IBU"
-    },
-    {
-      "pozice": 3,
       "pivovar": "Permon",
       "nazev": "P.A.P.A.",
       "stupen": "12",
@@ -34,7 +24,7 @@
       "raw": "Permon - P.A.P.A., American Pale Ale, 12° sv. nef., 5% vol. Alc, 35 IBU"
     },
     {
-      "pozice": 4,
+      "pozice": 3,
       "pivovar": "Permon",
       "nazev": "Zaříkávač Chmele",
       "stupen": "17",
@@ -44,7 +34,7 @@
       "raw": "Permon - Zaříkávač Chmele, Double IPA, 17° sv. nef., 7, 5% vol. Alc, 100 IBU"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "Brána",
       "nazev": "Karl l.",
       "stupen": "12",
@@ -54,7 +44,7 @@
       "raw": "Brána - Karl l., Weissbier, 12° sv. nef., 5, 3% vol. Alc"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Blud",
       "nazev": "Černota",
       "stupen": "11",
@@ -64,7 +54,7 @@
       "raw": "Blud - Černota, Irish Dry Stout, 11° tm. nef., 4, 6% vol. Alc"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Zichovec",
       "nazev": "Juicy Lucy",
       "stupen": "15",
@@ -74,7 +64,7 @@
       "raw": "Zichovec - Juicy Lucy, New England IPA, 15° sv. nef., 6, 5% vol. Alc, 50 IBU"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Volt",
       "nazev": "Mex-Ray",
       "stupen": "11",
@@ -84,7 +74,7 @@
       "raw": "Volt - Mex-Ray, Mexican Lager, 11° sv. nef., 4, 5% vol. Alc, 20 IBU"
     },
     {
-      "pozice": 9,
+      "pozice": 8,
       "pivovar": "",
       "nazev": "Kasteel Tropical",
       "stupen": "14",
@@ -94,7 +84,7 @@
       "raw": "Kasteel Tropical, Belgický speciál s tropickým ovocem, 14° sv., 7% vol. Alc"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Hubertus Kácov",
       "nazev": "Medium",
       "stupen": "11",
