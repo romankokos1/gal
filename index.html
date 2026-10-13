@@ -147,6 +147,9 @@ tr.click{cursor:pointer}
 tr.click:hover td{background:var(--surface-2)}
 .live{color:var(--accent-ink);font-size:11px;font-family:var(--mono);white-space:nowrap}
 .dim{color:var(--muted)}
+.xhead{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.xhead h2{margin:0}.xhead .seg button{padding:4px 10px;font-size:12px}
+td.heat{font-variant-numeric:tabular-nums}
 .pill{display:inline-block;font-size:11px;padding:1px 7px;border-radius:999px;background:var(--surface-2);color:var(--text-2);margin:1px 4px 1px 0;white-space:nowrap;border:1px solid var(--line)}
 .pill.acc{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
 
@@ -225,6 +228,8 @@ table.cards caption{display:none}
   table.cards tr.click:hover td{background:none}
   table.cards td{display:block;border:0;padding:0;font-size:12px;color:var(--text-2);text-align:left!important}
   table.cards td.hide-m{display:block}
+  table.cards td.nil{display:none!important}
+  table.cards td.heat{padding:0 5px;border-radius:5px}
   table.cards td[data-l]:not([data-l=""])::before{content:attr(data-l) " ";color:var(--muted);font-family:var(--sans)}
   table.cards td[data-u]::after{content:attr(data-u)}
   table.cards td.pm{order:-2;flex-basis:100%;font-size:14px;font-weight:600;color:var(--text)}
@@ -335,10 +340,14 @@ table.cards caption{display:none}
     <section data-p="napric" class="hidden">
       <div class="summary" id="xSum"></div>
       <div class="grid">
-        <div class="card"><h2>Pivovary ve všech podnicích</h2><div class="tw"><table id="tX"></table></div>
-          <div class="note">Tenhle pohled je vždy za všechny podniky dohromady; období, hledání a filtr stylu platí.</div></div>
+        <div class="card"><div class="xhead"><h2>Pivovary ve všech podnicích</h2>
+            <div class="seg" id="xMode"><button data-m="n" class="on">počet</button><button data-m="pct">% nabídky</button></div></div>
+          <div class="tw"><table id="tX"></table></div>
+          <div class="note" id="xNote"></div></div>
         <div class="card"><h2>Stejné pivo ve víc podnicích</h2><div class="tw"><table id="tXBeer"></table></div></div>
       </div>
+      <div class="card" style="margin-top:14px"><h2>Novinky za posledních 7 dní</h2><div class="tw"><table id="tXNew"></table></div>
+        <div class="note">Piva nově naražená v kterémkoli podniku. Opakované naražení stejného piva ve stejném podniku se nepočítá, první stažení nového podniku taky ne. <span class="pill acc">poprvé</span> = hlídač ho ještě nikde neviděl. Hledání a filtr stylu platí, období ne.</div></div>
     </section>
 
     <section data-p="historie" class="card hidden">
@@ -857,6 +866,17 @@ const HIST_COLS=[
 ];
 
 /* ---------- napříč podniky ---------- */
+let XMODE="n";
+$("#xMode").onclick = e => { const b=e.target.closest("button"); if(!b) return;
+  XMODE=b.dataset.m; document.querySelectorAll("#xMode button").forEach(x=>x.classList.toggle("on",x===b)); render(); };
+// podbarvení podle podílu pivovaru na nabídce podniku (i v režimu „počet“, ať jsou podniky srovnatelné)
+function heat(share){
+  if(!share) return "";
+  const a=Math.min(1,share/0.3)**0.7, pct=Math.round(8+a*67);
+  return `background:color-mix(in srgb, var(--accent) ${pct}%, transparent)${pct>45?";color:var(--on-accent)":""}`;
+}
+const fmtShare = x => !x ? '<span class="dim">–</span>' : x<0.005 ? "<1 %" : Math.round(x*100)+" %";
+
 function renderNapric(){
   const R=filt(ALLX,false);
   const brews=byBrewery(R), nV=VENUES.length;
@@ -865,11 +885,21 @@ function renderNapric(){
   $("#xSum").innerHTML = `<div class="kpi"><b>${brews.length}</b><small>pivovarů celkem</small></div>
     <div class="kpi"><b>${shared}</b><small>ve víc podnicích</small></div>` +
     VENUES.map(v=>`<div class="kpi"><b>${only[v.id]}</b><small>jen ${esc(v.nazev)}</small></div>`).join("");
+  // kolik naražení měl každý podnik v období = základ pro podíly
+  const vTot=count(R,r=>r.venue);
+  const pct = XMODE==="pct";
   const cols=[{k:"name",t:"Pivovar",pm:1}];
-  VENUES.forEach(v=>cols.push({k:"v_"+v.id,t:v.nazev,n:1,z:1,f:x=>x?x:'<span class="dim">–</span>'}));
+  VENUES.forEach(v=>cols.push({k:"v_"+v.id,t:v.nazev,n:1,z:1,
+    f:(x,o)=> pct ? fmtShare(x) : (x?x:'<span class="dim">–</span>'),
+    bg:(x,o)=>heat((o.venues[v.id]||0)/(vTot[v.id]||1))}));
   cols.push({k:"nVenues",t:"Podniků",n:1,lm:"",u:" podn."},{k:"taps",t:"Celkem",n:1,lm:"celkem",u:"×"},
     {k:"where",t:"",f:(x,o)=> o.nVenues===nV&&nV>1 ? '<span class="pill acc">všude</span>' : o.nVenues===1 ? `<span class="pill">jen ${esc(venueName(Object.keys(o.venues)[0]))}</span>` : ""});
-  table("#tX", brews.map(o=>({...o, where:o.nVenues, ...Object.fromEntries(VENUES.map(v=>["v_"+v.id,o.venues[v.id]||0]))})), cols, "nVenues", o=>openBrew(o.key));
+  table("#tX", brews.map(o=>({...o, where:o.nVenues, ...Object.fromEntries(VENUES.map(v=>["v_"+v.id,
+    pct ? (o.venues[v.id]||0)/(vTot[v.id]||1) : (o.venues[v.id]||0)]))})), cols, "nVenues", o=>openBrew(o.key));
+  $("#xNote").innerHTML = (pct
+    ? "Podíl pivovaru na všech naraženích podniku ve zvoleném období (kolaborace se počítá oběma pivovarům, takže součet může přesáhnout 100 %). Celkem = počet naražení."
+    : "Počet naražení pivovaru v podniku.")
+    + " Barva vždy ukazuje podíl na nabídce podniku, takže podniky jdou srovnat bez ohledu na počet kohoutů a délku sledování. Období, hledání a filtr stylu platí.";
   const sb=byBeer(R).filter(b=>b.nVenues>1);
   table("#tXBeer", sb, [
     {k:"name",t:"Pivo",pm:1},
@@ -878,6 +908,35 @@ function renderNapric(){
     {k:"taps",t:"Naraženo",n:1,lm:"",u:"×"},
     {k:"last",t:"Naposled",n:1,m:1,f:fmtD,lm:"naposled"},
   ], "last", o=>openBeer(o.key));
+  renderNovinky();
+}
+
+function renderNovinky(){
+  const since=NOW-7*DAY, q=norm(F.q);
+  const vStart={}, firstAny={}, seen={};
+  for(const r of ALLX){            // ALLX je seřazené podle naražení
+    if(!vStart[r.venue]) vStart[r.venue]=+r.from;
+    if(!firstAny[r.beerKey]) firstAny[r.beerKey]=r;
+  }
+  const out=[];
+  for(const r of ALLX){
+    const k=r.venue+"|"+r.beerKey, again=seen[k]; seen[k]=1;
+    if(again || +r.from<since || +r.from===vStart[r.venue]) continue;   // opakované / první stažení podniku
+    if(q && !r.hay.includes(q)) continue;
+    if(F.style && r.style!==F.style) continue;
+    const before=[...new Set(ALLX.filter(x=>x.beerKey===r.beerKey && x.from<r.from && x.venue!==r.venue).map(x=>x.venue))];
+    out.push({...r, novelty: firstAny[r.beerKey]===r ? 2 : 1, before});
+  }
+  table("#tXNew", out, [
+    {k:"label",t:"Pivo",pm:1},
+    {k:"pivovar",t:"Pivovar",sm:1},
+    {k:"venueName",t:"Podnik",lm:""},
+    {k:"style",t:"Styl",lm:"",h:1},
+    {k:"from",t:"Naraženo",n:1,m:1,f:fmtWhen,lm:""},
+    {k:"open",t:"Stav",f:x=>x?'<span class="pill acc">na čepu</span>':'<span class="dim">dopito</span>',lm:""},
+    {k:"novelty",t:"Novinka",n:1,lm:"",f:(x,o)=> x===2 ? '<span class="pill acc">poprvé</span>'
+      : `<span class="dim">dřív v:</span> ${o.before.map(id=>`<span class="pill">${esc(venueName(id))}</span>`).join("")}`},
+  ], "from", o=>openBeer(o.beerKey));
 }
 
 /* ---------- společné kreslení ---------- */
@@ -912,8 +971,9 @@ function table(sel, data, cols, defKey, onRow){
     <tbody>${d.length? d.map((o,i)=>`<tr data-i="${i}" class="${onRow?"click":""}">${cols.map(c=>{
       const v=o[c.k]; const out=c.f?c.f(v,o):esc(v??"");
       const has = v!=null && v!=="" && out!=="–" && !(c.z && !v);
-      if(!has && !c.pm && (c.lm!==undefined || c.u || c.z)) return `<td class="${c.n?"r":""} ${c.h?"hide-m":""}" style="display:none"></td>`;
-      return `<td class="${c.n?"r":""} ${c.m?"m":""} ${c.h?"hide-m":""} ${c.pm?"pm":""} ${c.sm?"sm":""}" data-l="${esc(c.lm!==undefined?c.lm:c.t)}"${c.u&&has?` data-u="${esc(c.u)}"`:""}>${out}</td>`;}).join("")}</tr>`).join("")
+      // prázdná buňka: v tabulce pomlčka (sloupce drží), v mobilní kartě se skryje
+      if(!has && !c.pm && (c.lm!==undefined || c.u || c.z)) return `<td class="${c.n?"r":""} ${c.h?"hide-m":""} nil">${out&&out!=="–"?out:'<span class="dim">–</span>'}</td>`;
+      return `<td class="${c.n?"r":""} ${c.m?"m":""} ${c.h?"hide-m":""} ${c.pm?"pm":""} ${c.sm?"sm":""} ${c.bg?"heat":""}"${c.bg?` style="${c.bg(v,o)}"`:""} data-l="${esc(c.lm!==undefined?c.lm:c.t)}"${c.u&&has?` data-u="${esc(c.u)}"`:""}>${out}</td>`;}).join("")}</tr>`).join("")
       : `<tr><td colspan="${cols.length}" class="empty">nic neodpovídá filtru</td></tr>`}</tbody>`;
   el.querySelector("thead").onclick = e => { const th=e.target.closest("th"); if(!th) return;
     if(s.k===th.dataset.k) s.asc=!s.asc; else { s.k=th.dataset.k; s.asc=!(cols.find(c=>c.k===s.k)||{}).n; } render(); };
