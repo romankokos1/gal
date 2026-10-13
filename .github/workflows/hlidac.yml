@@ -1,21 +1,23 @@
 name: Hlídač čepů
 
-# GitHub plánované běhy často zpožďuje o hodiny nebo vynechává, takže půlhodinový
-# cron nejde dodržet. Proto jeden běh zůstane aktivní až ~5,5 h a každých 30 min
-# sám zkontroluje podniky (který je na řadě, rozhoduje scrape.py podle interval_min:
-# Galerie 30 min, ostatní 2 h). Cron ho jen několikrát denně „probudí“.
+# GitHub plánované běhy (cron) zpožďuje o hodiny nebo úplně vynechává – reálně
+# jich přišlo ~3 denně. Proto se hlídač drží sám: jeden běh ~5 h každých 30 min
+# kontroluje podniky (kdo je na řadě, rozhoduje scrape.py podle interval_min)
+# a na konci sám spustí další běh. Řetěz tak běží nepřetržitě, cron je jen záloha
+# pro případ, že se přetrhne. V noci (1–6 h) běh jen čeká a nic nestahuje.
+# Veřejné repo má minuty Actions zdarma, takže nepřetržitý běh nic nestojí.
 on:
   schedule:
-    # cca 6:05, 9:05, 12:05, 15:05, 18:05, 21:05, 0:05 českého letního času (cron je v UTC)
-    - cron: "5 4-22/3 * * *"
-  workflow_dispatch:
+    - cron: "17 */2 * * *"     # záloha; když už běh jede, jen čeká ve frontě
+  workflow_dispatch:             # ruční spuštění = hned stáhne všechno a pak normálně hlídá dál
 
 permissions:
   contents: write
+  actions: write                 # aby mohl spustit navazující běh
 
 concurrency:
   group: hlidac
-  cancel-in-progress: false   # nový běh počká, až starý dohlídá → navazují na sebe
+  cancel-in-progress: false      # nový běh počká, až starý dohlídá (ve frontě je max. jeden)
 
 jobs:
   scrape:
@@ -31,43 +33,47 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Hlídat čepy (opakovaně každých 30 min)
+      - name: Hlídat čepy (každých 30 min, ~5 h)
         id: scrape
         env:
-          RUCNE: ${{ github.event_name == 'workflow_dispatch' }}
+          RUCNE: ${{ github.event_name == 'workflow_dispatch' && github.actor != 'github-actions[bot]' }}
         run: |
           git config user.name  "hlidac-bot"
           git config user.email "hlidac-bot@users.noreply.github.com"
           start=$(date +%s)
           failed=0
+          first=1
           while true; do
-            # vzít případné nové verze skriptu i dat (kdybys mezitím něco nahrál)
-            git pull -q --rebase --autostash || true
-
-            if [ "$RUCNE" = "true" ]; then
-              python scrape.py --vse || failed=1     # ruční spuštění: všechno hned, jednou
-            else
-              python scrape.py || failed=1
-            fi
-
-            git add -A data/
-            if ! git diff --cached --quiet; then
-              git commit -q -m "Čepy $(TZ=Europe/Prague date '+%Y-%m-%d %H:%M')"
-              for i in 1 2 3; do
-                git push -q && break
-                git pull -q --rebase --autostash || true
-              done
-            fi
-
-            [ "$RUCNE" = "true" ] && break
-            # skončit po ~5 h (další běh naváže) nebo v noci mezi 1. a 6. hodinou
             hour=$(TZ=Europe/Prague date +%-H)
-            if [ $(( $(date +%s) - start )) -gt 18000 ] || { [ "$hour" -ge 1 ] && [ "$hour" -lt 6 ]; }; then
-              break
+            vse=""
+            [ "$first" = 1 ] && [ "$RUCNE" = "true" ] && vse="--vse"   # ruční spuštění: hned všechno
+            if [ -z "$vse" ] && [ "$hour" -ge 1 ] && [ "$hour" -lt 6 ]; then
+              echo "noc – nestahuji"
+            else
+              # vzít případné nové verze skriptu i dat (kdybys mezitím něco nahrál)
+              git pull -q --rebase --autostash || true
+              python scrape.py $vse || failed=1
+
+              git add -A data/
+              if ! git diff --cached --quiet; then
+                git commit -q -m "Čepy $(TZ=Europe/Prague date '+%Y-%m-%d %H:%M')"
+                for i in 1 2 3; do
+                  git push -q && break
+                  git pull -q --rebase --autostash || true
+                done
+              fi
             fi
+            first=0
+            [ $(( $(date +%s) - start )) -gt 18000 ] && break    # po ~5 h předat dalšímu běhu
             sleep 1800
           done
           echo "failed=$failed" >> "$GITHUB_OUTPUT"
+
+      - name: Spustit navazující běh
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run hlidac.yml --repo "$GITHUB_REPOSITORY" --ref "$GITHUB_REF_NAME"
 
       - name: Nahlásit selhání
         if: steps.scrape.outputs.failed == '1'
