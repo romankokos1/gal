@@ -15,6 +15,11 @@
     "url": "https://www.pivniceclock.cz/nabidka/"
   },
   {
+    "id": "kmpcb",
+    "nazev": "KMP České Budějovice",
+    "url": "https://www.kmpcb.cz/"
+  },
+  {
     "id": "kmp",
     "nazev": "KMP Plzeň",
     "url": "https://www.klubmalychpivovaru.cz/"
