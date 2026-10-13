@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-12 17:44",
+  "zmeneno": "2026-10-13 23:41",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Valeč",
-      "nazev": "Vilma",
-      "stupen": "13",
-      "alkohol": "6.5",
+      "pivovar": "Václav",
+      "nazev": "Bitter Bush",
+      "stupen": "14",
+      "alkohol": "6",
       "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "Valeč - Vilma | 13% | West Coast IPA, ABV 6,5%"
+      "raw": "Václav - Bitter Bush | 14% | West Coast IPA, ABV 6%"
     },
     {
       "pozice": 8,
