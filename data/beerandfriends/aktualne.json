@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.beerandfriends.eu/beer-and-friends",
-  "zmeneno": "2026-10-11 19:58",
+  "zmeneno": "2026-10-13 17:39",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Fracek/Vik",
-      "nazev": "MINTY FETISH",
+      "pivovar": "Fracek",
+      "nazev": "FINA CERVA",
       "stupen": "",
-      "alkohol": "4.7",
-      "styl": "Berliner Weisse",
+      "alkohol": "4.9",
+      "styl": "Catharina Sour",
       "dalsi": "",
-      "raw": "MINTY FETISH – Berliner Weisse (Fracek/Vik) · abv 4,7 %"
+      "raw": "FINA CERVA – Catharina Sour (Fracek) · abv 4,9 %"
     },
     {
       "pozice": 2,
@@ -25,33 +25,33 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Hope",
-      "nazev": "HOPE",
+      "pivovar": "The Barn/Falkon",
+      "nazev": "UMMAGUMMA",
       "stupen": "",
-      "alkohol": "5.4",
-      "styl": "Rye New England IPA",
+      "alkohol": "7",
+      "styl": "New England IPA",
       "dalsi": "",
-      "raw": "HOPE – Rye New England IPA (Hope) · abv 5,4 %"
+      "raw": "UMMAGUMMA – New England IPA (The Barn/Falkon) · abv 7 %"
     },
     {
       "pozice": 4,
-      "pivovar": "Falkon",
-      "nazev": "HÁZENÁ",
+      "pivovar": "Fracek",
+      "nazev": "HOPCHARGED SUMMER",
       "stupen": "",
-      "alkohol": "5",
-      "styl": "Hazy Session IPA",
+      "alkohol": "4.5",
+      "styl": "Session IPA",
       "dalsi": "",
-      "raw": "HÁZENÁ – Hazy Session IPA (Falkon) · abv 5 %"
+      "raw": "HOPCHARGED SUMMER – Session IPA (Fracek) · abv 4,5 %"
     },
     {
       "pozice": 5,
-      "pivovar": "Pioneer",
-      "nazev": "NZ HOPLINE",
+      "pivovar": "Fracek",
+      "nazev": "NO COMPASS",
       "stupen": "",
       "alkohol": "5",
-      "styl": "New Zealand Pale Ale",
+      "styl": "New Zealand Pils",
       "dalsi": "",
-      "raw": "NZ HOPLINE – New Zealand Pale Ale (Pioneer) · abv 5 %"
+      "raw": "NO COMPASS – New Zealand Pils (Fracek) · abv 5 %"
     },
     {
       "pozice": 6,
@@ -65,33 +65,33 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Fracek",
-      "nazev": "NO COMPASS",
+      "pivovar": "Twinberg",
+      "nazev": "HOPPY WHALE 8",
       "stupen": "",
-      "alkohol": "5",
-      "styl": "New Zealand Pils",
+      "alkohol": "5.6",
+      "styl": "New England IPA",
       "dalsi": "",
-      "raw": "NO COMPASS – New Zealand Pils (Fracek) · abv 5 %"
+      "raw": "HOPPY WHALE 8 – New England IPA (Twinberg) · abv 5,6 %"
     },
     {
       "pozice": 8,
-      "pivovar": "Fracek",
-      "nazev": "FINA CERVA",
+      "pivovar": "Čierny Kameň",
+      "nazev": "PIŇA COLLAPSE",
       "stupen": "",
-      "alkohol": "4.9",
-      "styl": "Catharina Sour",
+      "alkohol": "4.4",
+      "styl": "Pastry Sour",
       "dalsi": "",
-      "raw": "FINA CERVA – Catharina Sour (Fracek) · abv 4,9 %"
+      "raw": "PIŇA COLLAPSE – Pastry Sour (Čierny Kameň) · abv 4,4 %"
     },
     {
       "pozice": 9,
-      "pivovar": "Fracek",
-      "nazev": "HOPCHARGED SUMMER",
+      "pivovar": "The Barn",
+      "nazev": "XXTRAVAGANZA",
       "stupen": "",
-      "alkohol": "4.5",
-      "styl": "Session IPA",
+      "alkohol": "5.5",
+      "styl": "Extra Pale Ale",
       "dalsi": "",
-      "raw": "HOPCHARGED SUMMER – Session IPA (Fracek) · abv 4,5 %"
+      "raw": "XXTRAVAGANZA – Extra Pale Ale (The Barn) · abv 5,5 %"
     }
   ]
 }
