@@ -43,6 +43,11 @@ PODNIKY = [
     # pivovarská pivnice – na čepu jen vlastní piva, pivovar se v textu neuvádí
     {"id": "clock", "nazev": "Pivnice Clock", "url": "https://www.pivniceclock.cz/nabidka/",
      "pivovar": "Clock"},
+    # Klub malých pivovarů České Budějovice – sloupec „ČEPUJEME“, jedna položka s řádky
+    # oddělenými <br>: „1. Popelín HOŘKÁ 10° sv.nef.“ (pivovar = první slovo / známý víceslovný)
+    {"id": "kmpcb", "nazev": "KMP České Budějovice", "url": "https://www.kmpcb.cz/",
+     "polozky": "ul.pricing:has(.price:-soup-contains('ČEPUJEME')) ul.editContent > li",
+     "radky_br": True, "format": "pivovar nazev", "jen_selektor": True},
     # Klub malých pivovarů Plzeň – „Pivovar - Název, styl, 12° sv. nef., 4, 8% vol. Alc, 35 IBU“
     {"id": "kmp", "nazev": "KMP Plzeň", "url": "https://www.klubmalychpivovaru.cz/",
      "polozky": "#BeersNaCepu .name-beer:not(#BeerSlot0)"},
@@ -71,7 +76,7 @@ HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
              "raw", "narazeno", "docepovano", "dalsi", "odhad"]
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
-PARSER_VERSION = 8
+PARSER_VERSION = 9
 FAILS_BEFORE_ERROR = 3            # tolik neúspěšných stažení po sobě se toleruje
 DEFAULT_INTERVAL_MIN = 120        # podniky bez interval_min se stahují po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
@@ -242,6 +247,14 @@ def by_selector(soup, p) -> list[str]:
         return []
     lines = []
     for el in soup.select(p["polozky"]):
+        if p.get("radky_br"):                 # víc piv v jednom prvku, řádky odděluje <br>
+            for br in el.find_all("br"):
+                br.replace_with("\n")
+            for t in el.get_text().split("\n"):
+                t = strip_num(clean(t))
+                if t:
+                    lines.append(t)
+            continue
         parts = []
         for sel in p.get("pole", []):
             f = el.select_one(sel)
@@ -343,6 +356,33 @@ PCT = re.compile(NUM + r"\s*%")
 PAREN = re.compile(r"^(.*?)\s*\(([^()]*)\)\s*$")
 
 
+# pivovary o více slovech pro formát „Pivovar Název 12° styl“ (jinak = první slovo)
+MULTI_BREWERIES = [
+    "Zlatá kráva", "Černý potoka", "Nachmelená opice", "Hubertus Kácov", "Plzeňský bandita",
+    "Kynšperský zajíc", "Hoppy Dog", "Němý medvěd", "The Barn", "Lucky Bastard", "Beer Geek",
+    "Dva kohouti", "Černá hora", "Nová Paka", "Velké Popovice", "Pivovarský dvůr", "Bad Flash",
+    "Hostomický ječmínek", "Magic Road", "Mad Scientist", "To Øl",
+    "Svatý Norbert", "U Fleků", "Kamenice nad Lipou", "Starý Plzenec", "Velký Rybník",
+]
+_MULTI_N = sorted((norm(b) for b in MULTI_BREWERIES if " " in b), key=len, reverse=True)
+KMP_NOISE = re.compile(r"\b(?:sv|svě?tl|tm|tmav|polotm|pol|nef|nefiltr|filtr)\.", re.I)
+
+
+def split_brewery(text: str) -> tuple[str, str]:
+    """„Zlatá kráva Farm APA 11°“ → („Zlatá kráva“, „Farm APA 11°“); jinak první slovo.
+    „Pivovar X …“ bere i další slovo."""
+    words = text.split()
+    if not words:
+        return "", ""
+    n = norm(text)
+    for b in _MULTI_N:
+        if n == b or n.startswith(b + " "):
+            k = len(b.split())
+            return " ".join(words[:k]), " ".join(words[k:])
+    k = 2 if norm(words[0]) in ("pivovar", "minipivovar") and len(words) > 2 else 1
+    return " ".join(words[:k]), " ".join(words[k:])
+
+
 NSB = re.compile(r"^(?P<nazev>.+?)\s+[–—-]\s+(?P<styl>.*?)\s*\((?P<pivovar>[^()]+)\)\s*(?P<rest>.*)$")
 
 
@@ -429,7 +469,16 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
             return out
 
     parts = SEP.split(main, maxsplit=1)
-    if len(parts) == 2:
+    if fmt == "pivovar nazev":
+        out["pivovar"], rest = split_brewery(main)
+        rest = re.sub(r"(?<=%)\s*(?:Alc|Alk|vol)\.?", " ", KMP_NOISE.sub(" ", rest), flags=re.I)
+        rest = clean(rest)
+        if not BEER_HINT.search(rest):
+            m = re.match(r"^(.*?)\s+(nealko|alkohol free|0[,.]0)\s*$", rest, re.I)
+            if m:                                  # „NYKOLA Grep NEALKO“
+                out["nazev"], out["styl"] = m.group(1), "Nealko"
+                return out
+    elif len(parts) == 2:
         out["pivovar"], rest = parts[0].strip(" |"), parts[1].strip()
         # „CHROUST – SIBEERIA – Modus“ = kolaborace: druhý pivovar VELKÝMI před další pomlčkou
         more = SEP.split(rest, maxsplit=1)
@@ -487,6 +536,13 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
         st = STYLE_NOISE.sub(" ", out["styl"])
         st = re.sub(r"\s*,\s*(?:,\s*)+", ", ", re.sub(r"\s+", " ", st))
         out["styl"] = st.strip(" ,|/-")
+
+    if fmt == "pivovar nazev" and not out["styl"]:
+        m = re.search(r"ležák|výčepní|polotmav|tmav|pšeni", out["nazev"], re.I)
+        if m:                                      # „Habakuk ležák 11° sv.nef.“
+            out["styl"] = {"ležák": "Ležák", "výčepní": "Výčepní",
+                           "polotmav": "Polotmavé", "tmav": "Tmavé", "pšeni": "Pšeničné"
+                           }[m.group(0).lower()]
 
     if not out["pivovar"] and default_brewery:
         out["pivovar"] = default_brewery
