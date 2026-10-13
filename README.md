@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/32853068/README.md)
+[README.md](https://github.com/user-attachments/files/33384774/README.md)
 # Hlídač čepů
 
 Automaticky sleduje nabídku **„Dnes na čepu“** ve více podnicích, ukládá historii toho,
@@ -9,6 +9,7 @@ co se kdy narazilo a dočepovalo, a zobrazuje ji na přehledové stránce.
 | Galerie piva | [galeriepiva.cz](https://www.galeriepiva.cz/) | `data/galerie/` |
 | sedm° | [sedmstupnu.cz](https://www.sedmstupnu.cz/) | `data/sedm/` |
 | Pivnice Clock | [pivniceclock.cz/nabidka](https://www.pivniceclock.cz/nabidka/) | `data/clock/` |
+| KMP České Budějovice | [kmpcb.cz](https://www.kmpcb.cz/) | `data/kmpcb/` |
 
 Každý podnik má vlastní data a běží nezávisle: když jeden web spadne, druhý se sbírá dál.
 
