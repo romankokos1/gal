@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-13 20:10",
+  "zmeneno": "2026-10-13 22:11",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "VÁCLAV",
-      "nazev": "Murica",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "APA (citra, cascade, citra cryo, cascade cryo)",
-      "dalsi": "MATUŠKA – California 12°/5,2%/45IBU APA (saaz, cascade)",
-      "raw": "VÁCLAV – Murica 11°/4,5% APA (citra, cascade, citra cryo, cascade cryo) //NEXT// MATUŠKA – California 12°/5,2%/45IBU APA (saaz, cascade)"
+      "pivovar": "MATUŠKA",
+      "nazev": "California",
+      "stupen": "12",
+      "alkohol": "5.2",
+      "styl": "APA (saaz, cascade)",
+      "dalsi": "",
+      "raw": "MATUŠKA – California 12°/5,2%/45IBU APA (saaz, cascade)"
     },
     {
       "pozice": 3,
