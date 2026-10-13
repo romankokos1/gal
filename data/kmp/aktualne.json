@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-13 13:01",
+  "zmeneno": "2026-10-13 21:40",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,16 +75,6 @@
     },
     {
       "pozice": 8,
-      "pivovar": "",
-      "nazev": "Kasteel Tropical",
-      "stupen": "14",
-      "alkohol": "7",
-      "styl": "Belgický speciál s tropickým ovocem",
-      "dalsi": "",
-      "raw": "Kasteel Tropical, Belgický speciál s tropickým ovocem, 14° sv., 7% vol. Alc"
-    },
-    {
-      "pozice": 9,
       "pivovar": "Hubertus Kácov",
       "nazev": "Medium",
       "stupen": "11",
