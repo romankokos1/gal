@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-13 23:41",
+  "zmeneno": "2026-10-14 17:35",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Preisler",
-      "nazev": "Tvrdá Práce",
-      "stupen": "12",
-      "alkohol": "5.2",
+      "pivovar": "Vik",
+      "nazev": "gumboot #6",
+      "stupen": "11",
+      "alkohol": "4.6",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Preisler - Tvrdá Práce | 12% | Lager, ABV 5,2%"
+      "raw": "Vik - gumboot #6 | 11% | Lager, ABV 4,6%"
     },
     {
       "pozice": 2,

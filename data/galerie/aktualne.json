@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-13 22:11",
+  "zmeneno": "2026-10-14 17:35",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "JUNGBERG",
-      "nazev": "Hořický PP",
+      "pivovar": "SKJUBRU",
+      "nazev": "Fresh Lager",
       "stupen": "12",
       "alkohol": "4.9",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "JUNGBERG – Hořický PP 12°/4,9% světlý ležák"
+      "raw": "SKJUBRU – Fresh Lager 12°/4,9% světlý ležák"
     },
     {
       "pozice": 2,
