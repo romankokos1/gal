@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-14 17:35",
+  "zmeneno": "2026-10-14 20:06",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "VÁCLAV",
-      "nazev": "Volej Si Švestky!",
-      "stupen": "12",
-      "alkohol": "4.9",
-      "styl": "kyseláč with švestka",
+      "pivovar": "VIK",
+      "nazev": "Fluff Off",
+      "stupen": "24",
+      "alkohol": "8.1",
+      "styl": "Imperial Gose w. višeň, malina, borůvka, vanilka a marshmallow",
       "dalsi": "",
-      "raw": "VÁCLAV – Volej Si Švestky! 12°/4,9% kyseláč with švestka"
+      "raw": "VIK – Fluff Off 24°/8,1% Imperial Gose w. višeň, malina, borůvka, vanilka a marshmallow"
     }
   ]
 }
