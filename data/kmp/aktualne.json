@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-14 19:36",
+  "zmeneno": "2026-10-14 21:36",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Permon",
-      "nazev": "P.A.P.A.",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "American Pale Ale",
+      "pivovar": "Fenek",
+      "nazev": "This Feeling!",
+      "stupen": "14",
+      "alkohol": "6.2",
+      "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "Permon - P.A.P.A., American Pale Ale, 12° sv. nef., 5% vol. Alc, 35 IBU"
+      "raw": "Fenek - This Feeling!, West Coast IPA, 14° sv. nef., 6, 2% vol. Alc"
     },
     {
       "pozice": 4,
