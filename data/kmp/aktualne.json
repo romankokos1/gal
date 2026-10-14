@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-14 15:34",
+  "zmeneno": "2026-10-14 19:36",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,33 +55,53 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Brána",
-      "nazev": "Karl l.",
-      "stupen": "12",
-      "alkohol": "5.3",
-      "styl": "Weissbier",
+      "pivovar": "Fenek",
+      "nazev": "Bonaventura",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "Session IPA",
       "dalsi": "",
-      "raw": "Brána - Karl l., Weissbier, 12° sv. nef., 5, 3% vol. Alc"
+      "raw": "Fenek - Bonaventura, Session IPA, 11° sv. nef., 4, 5% vol. Alc"
     },
     {
       "pozice": 7,
-      "pivovar": "Zichovec",
-      "nazev": "Juicy Lucy",
-      "stupen": "15",
-      "alkohol": "6.5",
+      "pivovar": "Fenek",
+      "nazev": "Fog",
+      "stupen": "13",
+      "alkohol": "5.8",
       "styl": "New England IPA",
       "dalsi": "",
-      "raw": "Zichovec - Juicy Lucy, New England IPA, 15° sv. nef., 6, 5% vol. Alc, 50 IBU"
+      "raw": "Fenek - Fog, New England IPA, 13° sv. nef., 5, 8% vol. Alc"
     },
     {
       "pozice": 8,
-      "pivovar": "Hubertus Kácov",
-      "nazev": "Medium",
+      "pivovar": "Fenek",
+      "nazev": "Rubusour",
+      "stupen": "10",
+      "alkohol": "4",
+      "styl": "malinový kyseláč",
+      "dalsi": "",
+      "raw": "Fenek - Rubusour, malinový kyseláč, 10° sv. nef., 4% vol. Alc"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Fenek",
+      "nazev": "Fresh Saaz",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "světlý ležák se zeleným chmelem",
+      "dalsi": "",
+      "raw": "Fenek - Fresh Saaz, světlý ležák se zeleným chmelem, 12° sv. nef., 4, 8% vol. Alc"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "",
+      "nazev": "Fenek",
       "stupen": "11",
-      "alkohol": "4.4",
+      "alkohol": "4.6",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Hubertus Kácov - Medium, světlý ležák, 11° sv. nef., 4, 4% vol. Alc, 31 IBU"
+      "raw": "Fenek, světlý ležák, 11° sv. nef., 4, 6% vol. Alc"
     }
   ]
 }
