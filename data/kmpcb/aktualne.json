@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-10-13 14:34",
+  "zmeneno": "2026-10-14 13:34",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Popelín",
-      "nazev": "HOŘKÁ",
+      "pivovar": "Jílovice",
+      "nazev": "",
       "stupen": "10",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Popelín HOŘKÁ 10° sv.nef."
+      "raw": "Jílovice 10° sv.nef."
     },
     {
       "pozice": 2,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Stadioner",
-      "nazev": "PROFESOR",
+      "pivovar": "Strážský",
+      "nazev": "HOFMISTR",
       "stupen": "12",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Stadioner PROFESOR 12° sv.nef."
+      "raw": "Strážský HOFMISTR 12° sv.nef."
     },
     {
       "pozice": 6,

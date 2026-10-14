@@ -1,9 +1,9 @@
 klic,pivovar,nazev,stupen,alkohol,styl,raw,narazeno,docepovano,dalsi,odhad
-popelin|horka,Popelín,HOŘKÁ,10,,,Popelín HOŘKÁ 10° sv.nef.,2026-10-13 14:34,,,
+popelin|horka,Popelín,HOŘKÁ,10,,,Popelín HOŘKÁ 10° sv.nef.,2026-10-13 14:34,2026-10-14 13:34,,
 habakuk|lezak,Habakuk,ležák,11,,Ležák,Habakuk ležák 11° sv.nef.,2026-10-13 14:34,,,
 jilovice|lezak,Jílovice,ležák,11,,Ležák,Jílovice ležák 11° sv.nef.,2026-10-13 14:34,,,
 hulvat|polo,Hulvát,POLO,11,,,Hulvát POLO 11° polotm.nef.,2026-10-13 14:34,,,
-stadioner|profesor,Stadioner,PROFESOR,12,,,Stadioner PROFESOR 12° sv.nef.,2026-10-13 14:34,,,
+stadioner|profesor,Stadioner,PROFESOR,12,,,Stadioner PROFESOR 12° sv.nef.,2026-10-13 14:34,2026-10-14 13:34,,
 c krumlov|lezak,Č.Krumlov,ležák,12,,Ležák,Č.Krumlov ležák 12° sv.nef.,2026-10-13 14:34,,,
 rozmberk|vidensky lezak,Rožmberk,VÍDEŇSKÝ ležák,12,,Ležák,Rožmberk VÍDEŇSKÝ ležák 12° sv.nef.,2026-10-13 14:34,,,
 sibeeria|czech pilsner,Sibeeria,Czech Pilsner,13,,,Sibeeria Czech Pilsner 13° sv.nef.,2026-10-13 14:34,,,
@@ -19,3 +19,5 @@ magicroad|road to upside,MagicRoad,Road To Upside,,4.5,Pastry SOUR (PL/CZ),"Magi
 kasteel|rouge,Kasteel,Rouge,,8,(BELGIE - VIŠEŇ),Kasteel Rouge 8%Alc. (BELGIE - VIŠEŇ),2026-10-13 14:34,,,
 cestmir|astro creep,Čestmír,Astro Creep,14,,STOUT,Čestmír Astro Creep 14° STOUT,2026-10-13 14:34,,,
 postriziny|nykola grep,Postřižiny,NYKOLA Grep,,,Nealko,Postřižiny NYKOLA Grep NEALKO,2026-10-13 14:34,,,
+jilovice 10 sv nef,Jílovice,,10,,,Jílovice 10° sv.nef.,2026-10-14 13:34,,,
+strazsky|hofmistr,Strážský,HOFMISTR,12,,,Strážský HOFMISTR 12° sv.nef.,2026-10-14 13:34,,,
