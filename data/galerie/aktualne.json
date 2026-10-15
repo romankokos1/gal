@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-15 07:47",
+  "zmeneno": "2026-10-15 16:20",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "CHROUST",
-      "nazev": "Světlé",
-      "stupen": "11",
-      "alkohol": "5.1",
+      "pivovar": "PACOV",
+      "nazev": "Divočina",
+      "stupen": "12",
+      "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "CHROUST – Světlé 11°/5,1% světlý ležák"
+      "raw": "PACOV – Divočina 12°/4,8% světlý ležák"
     },
     {
       "pozice": 2,
