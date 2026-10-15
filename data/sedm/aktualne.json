@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-14 17:35",
+  "zmeneno": "2026-10-15 17:50",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,23 +35,23 @@
     },
     {
       "pozice": 4,
-      "pivovar": "the barn",
-      "nazev": "xxtravaganza",
-      "stupen": "13",
-      "alkohol": "5.5",
-      "styl": "extra pale ale",
+      "pivovar": "fracek",
+      "nazev": "lagerf*ck 3: Broovan",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "india pale lager",
       "dalsi": "",
-      "raw": "the barn - xxtravaganza | 13% | extra pale ale, ABV 5,5%"
+      "raw": "fracek - lagerf*ck 3: Broovan | 12% | india pale lager, ABV 5,1%"
     },
     {
       "pozice": 5,
-      "pivovar": "Chroust",
-      "nazev": "Judo Jellyfish",
-      "stupen": "12",
-      "alkohol": "4.9",
-      "styl": "Session West Coast IPA",
+      "pivovar": "blud",
+      "nazev": "černota",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "irish dry stout",
       "dalsi": "",
-      "raw": "Chroust - Judo Jellyfish | 12% | Session West Coast IPA, ABV 4,9%"
+      "raw": "blud - černota | 11% | irish dry stout, ABV 4,6%"
     },
     {
       "pozice": 6,
