@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-15 17:50",
+  "zmeneno": "2026-10-15 19:51",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,33 +35,33 @@
     },
     {
       "pozice": 4,
-      "pivovar": "fracek",
-      "nazev": "lagerf*ck 3: Broovan",
+      "pivovar": "Fracek",
+      "nazev": "Lagerf*ck 3: Broovan",
       "stupen": "12",
       "alkohol": "5.1",
       "styl": "india pale lager",
       "dalsi": "",
-      "raw": "fracek - lagerf*ck 3: Broovan | 12% | india pale lager, ABV 5,1%"
+      "raw": "Fracek - Lagerf*ck 3: Broovan | 12% | india pale lager, ABV 5,1%"
     },
     {
       "pozice": 5,
-      "pivovar": "blud",
-      "nazev": "černota",
+      "pivovar": "Blud",
+      "nazev": "Černota",
       "stupen": "11",
       "alkohol": "4.6",
-      "styl": "irish dry stout",
+      "styl": "Irish Dry Stout",
       "dalsi": "",
-      "raw": "blud - černota | 11% | irish dry stout, ABV 4,6%"
+      "raw": "Blud - Černota | 11% | Irish Dry Stout, ABV 4,6%"
     },
     {
       "pozice": 6,
-      "pivovar": "Haksna",
-      "nazev": "Dolce Far Niente",
-      "stupen": "14",
-      "alkohol": "6",
-      "styl": "NEIPA",
+      "pivovar": "Václav",
+      "nazev": "Munich Vice",
+      "stupen": "12",
+      "alkohol": "5.2",
+      "styl": "Bavarian Hazy Ale",
       "dalsi": "",
-      "raw": "Haksna - Dolce Far Niente | 14% | NEIPA, ABV 6%"
+      "raw": "Václav - Munich Vice | 12% | Bavarian Hazy Ale, ABV5,2%"
     },
     {
       "pozice": 7,
@@ -76,12 +76,12 @@
     {
       "pozice": 8,
       "pivovar": "The Barn",
-      "nazev": "Hybrid Theory",
-      "stupen": "17",
-      "alkohol": "7",
-      "styl": "DDH IPA",
+      "nazev": "Barney's Odyssey",
+      "stupen": "16",
+      "alkohol": "6.5",
+      "styl": "NEIPA",
       "dalsi": "",
-      "raw": "The Barn - Hybrid Theory | 17% | DDH IPA, ABV 7%"
+      "raw": "The Barn - Barney's Odyssey | 16% | NEIPA, ABV 6,5%"
     }
   ]
 }
