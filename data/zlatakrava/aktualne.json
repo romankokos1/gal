@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zk.vhost.cz/",
-  "zmeneno": "2026-10-02 13:29",
+  "zmeneno": "2026-10-15 13:49",
   "metoda": "selektor",
   "piva": [
     {
@@ -26,12 +26,12 @@
     {
       "pozice": 3,
       "pivovar": "Zlatá kráva",
-      "nazev": "TRACTOR IPA",
-      "stupen": "",
+      "nazev": "MÄRZEN DOG",
+      "stupen": "13",
       "alkohol": "",
-      "styl": "Svrchně kvašený světlý speciál India Pale Ale, má jemnou chmelovou vůni citrusových…",
+      "styl": "Spodně kvašený bavorský pivní styl",
       "dalsi": "",
-      "raw": "Zlatá kráva | TRACTOR IPA | Svrchně kvašený světlý speciál India Pale Ale, má jemnou chmelovou vůni citrusových plodů, v doznívání je pak výrazná chmelová hořkost."
+      "raw": "Zlatá kráva | 13 MÄRZEN DOG | Spodně kvašený bavorský pivní styl. Bohatá sladová vůně s tóny vídeňského sladu. Barva je tmavě zlatá. V chuti je dominantní sladová sladkost, chmelová hořkost je střední."
     },
     {
       "pozice": 4,
