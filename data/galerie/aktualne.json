@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-14 20:36",
+  "zmeneno": "2026-10-15 07:47",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,33 +15,33 @@
     },
     {
       "pozice": 2,
-      "pivovar": "MATUŠKA",
-      "nazev": "California",
+      "pivovar": "CLOCK",
+      "nazev": "Fresh Hop Ale Most 2026",
       "stupen": "12",
-      "alkohol": "5.2",
-      "styl": "APA (saaz, cascade)",
+      "alkohol": "5",
+      "styl": "Single Hop APA",
       "dalsi": "",
-      "raw": "MATUŠKA – California 12°/5,2%/45IBU APA (saaz, cascade)"
+      "raw": "CLOCK – Fresh Hop Ale Most 2026 12°/5%/50IBU Single Hop APA"
     },
     {
       "pozice": 3,
-      "pivovar": "SIBEERIA",
-      "nazev": "Lollihop Grapefruit",
-      "stupen": "15",
-      "alkohol": "6.6",
-      "styl": "West Coast IPA s grepem (citra, mosaic)",
+      "pivovar": "PIVO PREISLER",
+      "nazev": "Geralt Z Riwaky",
+      "stupen": "16",
+      "alkohol": "7",
+      "styl": "NEIPA (rhapzody, nelson, riwaka)",
       "dalsi": "",
-      "raw": "SIBEERIA – Lollihop Grapefruit 15°/6,6%/60IBU West Coast IPA s grepem (citra, mosaic)"
+      "raw": "PIVO PREISLER – Geralt Z Riwaky 16°/7%/20IBU NEIPA (rhapzody, nelson, riwaka)"
     },
     {
       "pozice": 4,
-      "pivovar": "MAZÁK",
-      "nazev": "Banana Joy",
-      "stupen": "14",
-      "alkohol": "6",
-      "styl": "lactose free Milkshake IPA s banánem, suš. mlékem a vanilkou (sabro, cashmere)",
+      "pivovar": "OBORA",
+      "nazev": "Pšenka",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "Wheat Beer",
       "dalsi": "",
-      "raw": "MAZÁK – Banana Joy 14°/6% lactose free Milkshake IPA s banánem, suš. mlékem a vanilkou (sabro, cashmere)"
+      "raw": "OBORA – Pšenka 12°/5,1% Wheat Beer"
     },
     {
       "pozice": 5,
