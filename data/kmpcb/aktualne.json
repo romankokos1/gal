@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-10-14 13:34",
+  "zmeneno": "2026-10-15 11:48",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Habakuk",
-      "nazev": "ležák",
+      "pivovar": "Zvíkovská",
+      "nazev": "Zlatá labuť",
       "stupen": "11",
       "alkohol": "",
-      "styl": "Ležák",
+      "styl": "",
       "dalsi": "",
-      "raw": "Habakuk ležák 11° sv.nef."
+      "raw": "Zvíkovská Zlatá labuť 11° sv.nef."
     },
     {
       "pozice": 3,
@@ -115,6 +115,16 @@
     },
     {
       "pozice": 12,
+      "pivovar": "->",
+      "nazev": "Chroust Kiwi v Mlze",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "New England Pale ALE",
+      "dalsi": "",
+      "raw": "-> Chroust Kiwi v Mlze 12° New England Pale ALE"
+    },
+    {
+      "pozice": 13,
       "pivovar": "Mazák",
       "nazev": "NECTARON",
       "stupen": "13",
@@ -124,7 +134,7 @@
       "raw": "Mazák NECTARON 13° Single Hop ALE"
     },
     {
-      "pozice": 13,
+      "pozice": 14,
       "pivovar": "Cobolis",
       "nazev": "NEpropadejte!PAnice",
       "stupen": "14",
@@ -134,7 +144,7 @@
       "raw": "Cobolis NEpropadejte!PAnice 14° NEIPA"
     },
     {
-      "pozice": 14,
+      "pozice": 15,
       "pivovar": "Zichovec",
       "nazev": "Juicy Lucy",
       "stupen": "15",
@@ -144,7 +154,7 @@
       "raw": "Zichovec Juicy Lucy 15° NEIPA"
     },
     {
-      "pozice": 15,
+      "pozice": 16,
       "pivovar": "Chroust",
       "nazev": "Lučiny & Bučiny",
       "stupen": "12",
@@ -154,7 +164,7 @@
       "raw": "Chroust Lučiny & Bučiny 12° Gose"
     },
     {
-      "pozice": 16,
+      "pozice": 17,
       "pivovar": "Obora",
       "nazev": "Philadelphia SOUR",
       "stupen": "12",
@@ -164,7 +174,7 @@
       "raw": "Obora Philadelphia SOUR 12° (Mango/Maracuja)"
     },
     {
-      "pozice": 17,
+      "pozice": 18,
       "pivovar": "MagicRoad",
       "nazev": "Road To Upside",
       "stupen": "",
@@ -174,7 +184,7 @@
       "raw": "MagicRoad Road To Upside 4,5%Alc. Pastry SOUR (PL/CZ)"
     },
     {
-      "pozice": 18,
+      "pozice": 19,
       "pivovar": "Kasteel",
       "nazev": "Rouge",
       "stupen": "",
@@ -184,7 +194,7 @@
       "raw": "Kasteel Rouge 8%Alc. (BELGIE - VIŠEŇ)"
     },
     {
-      "pozice": 19,
+      "pozice": 20,
       "pivovar": "Čestmír",
       "nazev": "Astro Creep",
       "stupen": "14",
@@ -194,7 +204,7 @@
       "raw": "Čestmír Astro Creep 14° STOUT"
     },
     {
-      "pozice": 20,
+      "pozice": 21,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",
