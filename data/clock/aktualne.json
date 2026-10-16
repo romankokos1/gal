@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-10-15 19:51",
+  "zmeneno": "2026-10-16 15:04",
   "metoda": "nadpis",
   "piva": [
     {
@@ -26,22 +26,22 @@
     {
       "pozice": 3,
       "pivovar": "Clock",
-      "nazev": "Glee",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Gluten Reduced PA",
-      "dalsi": "",
-      "raw": "11° Glee (Gluten Reduced PA)"
-    },
-    {
-      "pozice": 4,
-      "pivovar": "Clock",
       "nazev": "Goldie",
       "stupen": "11",
       "alkohol": "",
       "styl": "Weizenbier",
       "dalsi": "",
       "raw": "11° Goldie (Weizenbier)"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Clock",
+      "nazev": "Hex",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Modern Pale Ale",
+      "dalsi": "",
+      "raw": "11° Hex (Modern Pale Ale)"
     },
     {
       "pozice": 5,
