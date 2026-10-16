@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-15 16:20",
+  "zmeneno": "2026-10-16 14:04",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "PACOV",
-      "nazev": "Divočina",
+      "pivovar": "OBORA",
+      "nazev": "Ježibaba",
       "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "světlý ležák",
+      "alkohol": "5",
+      "styl": "načervenalý ležák (žpč, rubín)",
       "dalsi": "",
-      "raw": "PACOV – Divočina 12°/4,8% světlý ležák"
+      "raw": "OBORA – Ježibaba 12°/5%/29IBU načervenalý ležák (žpč, rubín)"
     },
     {
       "pozice": 2,
-      "pivovar": "CLOCK",
-      "nazev": "Fresh Hop Ale Most 2026",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "Single Hop APA",
+      "pivovar": "MAZÁK",
+      "nazev": "Genotype",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "session IPA s podílem ovsa (genotype 5464, cip 076)",
       "dalsi": "",
-      "raw": "CLOCK – Fresh Hop Ale Most 2026 12°/5%/50IBU Single Hop APA"
+      "raw": "MAZÁK – Genotype 11°/4,5%/40IBU session IPA s podílem ovsa (genotype 5464, cip 076)"
     },
     {
       "pozice": 3,
