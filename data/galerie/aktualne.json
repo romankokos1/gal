@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-16 21:37",
+  "zmeneno": "2026-10-16 23:07",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,23 +25,23 @@
     },
     {
       "pozice": 3,
-      "pivovar": "PIVO PREISLER",
-      "nazev": "Geralt Z Riwaky",
-      "stupen": "16",
-      "alkohol": "7",
-      "styl": "NEIPA (rhapzody, nelson, riwaka)",
-      "dalsi": "BLUD – Crispy Džus 14°/6,3% West Coast IPA (citra, simcoe)",
-      "raw": "PIVO PREISLER – Geralt Z Riwaky 16°/7%/20IBU NEIPA (rhapzody, nelson, riwaka) //NEXT// BLUD – Crispy Džus 14°/6,3% West Coast IPA (citra, simcoe)"
+      "pivovar": "BLUD",
+      "nazev": "Crispy Džus",
+      "stupen": "14",
+      "alkohol": "6.3",
+      "styl": "West Coast IPA (citra, simcoe)",
+      "dalsi": "",
+      "raw": "BLUD – Crispy Džus 14°/6,3% West Coast IPA (citra, simcoe)"
     },
     {
       "pozice": 4,
-      "pivovar": "OBORA",
-      "nazev": "Pšenka",
-      "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "Wheat Beer",
+      "pivovar": "CLOCK",
+      "nazev": "Red Baron",
+      "stupen": "13",
+      "alkohol": "5.4",
+      "styl": "polotmavý nakouřený ležák (hallertau blanc, spalter select)",
       "dalsi": "SKJUBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,2% Stout s čokoládou a malinou",
-      "raw": "OBORA – Pšenka 12°/5,1% Wheat Beer //NEXT// SKJUBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,2% Stout s čokoládou a malinou"
+      "raw": "CLOCK – Red Baron 13°/5,4%/27IBU polotmavý nakouřený ležák (hallertau blanc, spalter select) //NEXT// SKJUBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,2% Stout s čokoládou a malinou"
     },
     {
       "pozice": 5,
