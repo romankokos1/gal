@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-16 18:36",
+  "zmeneno": "2026-10-16 21:37",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "OBORA",
-      "nazev": "Ježibaba",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "načervenalý ležák (žpč, rubín)",
+      "pivovar": "VŠERAD",
+      "nazev": "Jiřík",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "OBORA – Ježibaba 12°/5%/29IBU načervenalý ležák (žpč, rubín)"
+      "raw": "VŠERAD – Jiřík 11°/4,6%/31IBU světlý ležák"
     },
     {
       "pozice": 2,
