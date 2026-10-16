@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-16 15:04",
+  "zmeneno": "2026-10-16 17:05",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -21,7 +21,7 @@
       "alkohol": "4.5",
       "styl": "Mexican Lager",
       "dalsi": "",
-      "raw": "Volt - Mex-Ray, Mexican Lager, 11° sv. nef., 4,5% vol. Alc, 20 IBU"
+      "raw": "Volt - Mex-Ray, Mexican Lager, 11° sv. nef., 4, 5% vol. Alc, 20 IBU"
     },
     {
       "pozice": 3,
@@ -41,7 +41,7 @@
       "alkohol": "5.2",
       "styl": "pšeničné",
       "dalsi": "",
-      "raw": "Plzeňský Bandita, pšeničné, 13° sv. nef., 5,2% vol. Alc, 18 IBU"
+      "raw": "Plzeňský Bandita, pšeničné, 13° sv. nef., 5, 2% vol. Alc, 18 IBU"
     },
     {
       "pozice": 5,
@@ -51,17 +51,17 @@
       "alkohol": "4.6",
       "styl": "Irish Dry Stout",
       "dalsi": "",
-      "raw": "Blud - Černota, Irish Dry Stout, 11° tm. nef., 4,6% vol. Alc"
+      "raw": "Blud - Černota, Irish Dry Stout, 11° tm. nef., 4, 6% vol. Alc"
     },
     {
       "pozice": 6,
-      "pivovar": "Fenek",
-      "nazev": "Bonaventura",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "Session IPA",
+      "pivovar": "Volt",
+      "nazev": "Protinožec",
+      "stupen": "13",
+      "alkohol": "6",
+      "styl": "Australian Pale Ale",
       "dalsi": "",
-      "raw": "Fenek - Bonaventura, Session IPA, 11° sv. nef., 4,5% vol. Alc"
+      "raw": "Volt - Protinožec, Australian Pale Ale, 13° sv. nef., 6% vol. Alc, 28 IBU"
     },
     {
       "pozice": 7,
@@ -71,7 +71,7 @@
       "alkohol": "5.8",
       "styl": "New England IPA",
       "dalsi": "",
-      "raw": "Fenek - Fog, New England IPA, 13° sv. nef., 5,8% vol. Alc"
+      "raw": "Fenek - Fog, New England IPA, 13° sv. nef., 5, 8% vol. Alc"
     },
     {
       "pozice": 8,
@@ -91,17 +91,17 @@
       "alkohol": "4.9",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Plzeňský Bandita, světlý ležák, 12° sv. nef., 4,9% vol. Alc, 34 IBU"
+      "raw": "Plzeňský Bandita, světlý ležák, 12° sv. nef., 4, 9% vol. Alc, 34 IBU"
     },
     {
       "pozice": 10,
-      "pivovar": "",
-      "nazev": "Fenek",
-      "stupen": "11",
-      "alkohol": "4.6",
-      "styl": "světlý ležák",
+      "pivovar": "Stadioner",
+      "nazev": "Požárník",
+      "stupen": "10",
+      "alkohol": "4.2",
+      "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "Fenek, světlý ležák, 11° sv. nef., 4,6% vol. Alc"
+      "raw": "Stadioner - Požárník, světlé výčepní, 10° sv. nef., 4, 2% vol. Alc"
     }
   ]
 }
