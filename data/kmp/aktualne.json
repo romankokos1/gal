@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-16 17:05",
+  "zmeneno": "2026-10-16 21:06",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Volt",
-      "nazev": "Mex-Ray",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "Mexican Lager",
+      "pivovar": "",
+      "nazev": "Kasteel Rubus Framboise",
+      "stupen": "18",
+      "alkohol": "7",
+      "styl": "Belgický malinový speciál",
       "dalsi": "",
-      "raw": "Volt - Mex-Ray, Mexican Lager, 11° sv. nef., 4, 5% vol. Alc, 20 IBU"
+      "raw": "Kasteel Rubus Framboise, Belgický malinový speciál, 18° tm. nef., 7% vol. Alc"
     },
     {
       "pozice": 3,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Blud",
-      "nazev": "Černota",
-      "stupen": "11",
-      "alkohol": "4.6",
+      "pivovar": "",
+      "nazev": "Radouš",
+      "stupen": "12",
+      "alkohol": "4.9",
       "styl": "Irish Dry Stout",
       "dalsi": "",
-      "raw": "Blud - Černota, Irish Dry Stout, 11° tm. nef., 4, 6% vol. Alc"
+      "raw": "Radouš, Irish Dry Stout, 12° tm. nef., 4, 9% vol. Alc, 40 IBU"
     },
     {
       "pozice": 6,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Fenek",
-      "nazev": "Fog",
+      "pivovar": "Nomu Brew Co.",
+      "nazev": "Drift",
       "stupen": "13",
-      "alkohol": "5.8",
-      "styl": "New England IPA",
+      "alkohol": "6.1",
+      "styl": "Cold IPA",
       "dalsi": "",
-      "raw": "Fenek - Fog, New England IPA, 13° sv. nef., 5, 8% vol. Alc"
+      "raw": "Nomu Brew Co. - Drift, Cold IPA, 13° sv. nef., 6, 1% vol. Alc, 55 IBU"
     },
     {
       "pozice": 8,
