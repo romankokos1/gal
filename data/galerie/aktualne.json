@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-16 14:04",
+  "zmeneno": "2026-10-16 14:34",
   "metoda": "nadpis",
   "piva": [
     {
@@ -30,8 +30,8 @@
       "stupen": "16",
       "alkohol": "7",
       "styl": "NEIPA (rhapzody, nelson, riwaka)",
-      "dalsi": "",
-      "raw": "PIVO PREISLER – Geralt Z Riwaky 16°/7%/20IBU NEIPA (rhapzody, nelson, riwaka)"
+      "dalsi": "BLUD – Crispy Džus 14°/6,3% West Coast IPA (citra, simcoe)",
+      "raw": "PIVO PREISLER – Geralt Z Riwaky 16°/7%/20IBU NEIPA (rhapzody, nelson, riwaka) //NEXT// BLUD – Crispy Džus 14°/6,3% West Coast IPA (citra, simcoe)"
     },
     {
       "pozice": 4,
@@ -40,8 +40,8 @@
       "stupen": "12",
       "alkohol": "5.1",
       "styl": "Wheat Beer",
-      "dalsi": "",
-      "raw": "OBORA – Pšenka 12°/5,1% Wheat Beer"
+      "dalsi": "SKJUBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,2% Stout s čokoládou a malinou",
+      "raw": "OBORA – Pšenka 12°/5,1% Wheat Beer //NEXT// SKJUBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,2% Stout s čokoládou a malinou"
     },
     {
       "pozice": 5,
@@ -50,8 +50,8 @@
       "stupen": "24",
       "alkohol": "8.1",
       "styl": "Imperial Gose w. višeň, malina, borůvka, vanilka a marshmallow",
-      "dalsi": "",
-      "raw": "VIK – Fluff Off 24°/8,1% Imperial Gose w. višeň, malina, borůvka, vanilka a marshmallow"
+      "dalsi": "SIBEERIA – Margherita Juice 13°/4,5% Gose s rajčetem, bazalkou, koriandrem a solí",
+      "raw": "VIK – Fluff Off 24°/8,1% Imperial Gose w. višeň, malina, borůvka, vanilka a marshmallow //NEXT// SIBEERIA – Margherita Juice 13°/4,5% Gose s rajčetem, bazalkou, koriandrem a solí"
     }
   ]
 }
