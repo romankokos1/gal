@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-16 14:34",
+  "zmeneno": "2026-10-16 18:36",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "VIK",
-      "nazev": "Fluff Off",
-      "stupen": "24",
-      "alkohol": "8.1",
-      "styl": "Imperial Gose w. višeň, malina, borůvka, vanilka a marshmallow",
-      "dalsi": "SIBEERIA – Margherita Juice 13°/4,5% Gose s rajčetem, bazalkou, koriandrem a solí",
-      "raw": "VIK – Fluff Off 24°/8,1% Imperial Gose w. višeň, malina, borůvka, vanilka a marshmallow //NEXT// SIBEERIA – Margherita Juice 13°/4,5% Gose s rajčetem, bazalkou, koriandrem a solí"
+      "pivovar": "SIBEERIA",
+      "nazev": "Margherita Juice",
+      "stupen": "13",
+      "alkohol": "4.5",
+      "styl": "Gose s rajčetem, bazalkou, koriandrem a solí",
+      "dalsi": "",
+      "raw": "SIBEERIA – Margherita Juice 13°/4,5% Gose s rajčetem, bazalkou, koriandrem a solí"
     }
   ]
 }
