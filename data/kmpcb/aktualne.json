@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-10-15 11:48",
+  "zmeneno": "2026-10-16 11:03",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,6 +65,16 @@
     },
     {
       "pozice": 7,
+      "pivovar": "-> Kynšperský",
+      "nazev": "ZAJÍC",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "-> Kynšperský ZAJÍC 12° sv.nef."
+    },
+    {
+      "pozice": 8,
       "pivovar": "Rožmberk",
       "nazev": "VÍDEŇSKÝ ležák",
       "stupen": "12",
@@ -74,17 +84,17 @@
       "raw": "Rožmberk VÍDEŇSKÝ ležák 12° sv.nef."
     },
     {
-      "pozice": 8,
-      "pivovar": "Sibeeria",
-      "nazev": "Czech Pilsner",
-      "stupen": "13",
+      "pozice": 9,
+      "pivovar": "-> Kamenice nad",
+      "nazev": "Lipou JANTAR",
+      "stupen": "11",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Sibeeria Czech Pilsner 13° sv.nef."
+      "raw": "-> Kamenice nad Lipou JANTAR 11° sv.nef."
     },
     {
-      "pozice": 9,
+      "pozice": 10,
       "pivovar": "Maisel's",
       "nazev": "Weisse",
       "stupen": "12",
@@ -94,7 +104,7 @@
       "raw": "Maisel's Weisse 12° pšeničné"
     },
     {
-      "pozice": 10,
+      "pozice": 11,
       "pivovar": "Zlatá kráva",
       "nazev": "Farm APA",
       "stupen": "11",
@@ -104,7 +114,7 @@
       "raw": "Zlatá kráva Farm APA 11°"
     },
     {
-      "pozice": 11,
+      "pozice": 12,
       "pivovar": "Clock",
       "nazev": "APA",
       "stupen": "12",
@@ -114,7 +124,7 @@
       "raw": "Clock APA 12°"
     },
     {
-      "pozice": 12,
+      "pozice": 13,
       "pivovar": "->",
       "nazev": "Chroust Kiwi v Mlze",
       "stupen": "12",
@@ -124,7 +134,7 @@
       "raw": "-> Chroust Kiwi v Mlze 12° New England Pale ALE"
     },
     {
-      "pozice": 13,
+      "pozice": 14,
       "pivovar": "Mazák",
       "nazev": "NECTARON",
       "stupen": "13",
@@ -134,7 +144,7 @@
       "raw": "Mazák NECTARON 13° Single Hop ALE"
     },
     {
-      "pozice": 14,
+      "pozice": 15,
       "pivovar": "Cobolis",
       "nazev": "NEpropadejte!PAnice",
       "stupen": "14",
@@ -144,7 +154,7 @@
       "raw": "Cobolis NEpropadejte!PAnice 14° NEIPA"
     },
     {
-      "pozice": 15,
+      "pozice": 16,
       "pivovar": "Zichovec",
       "nazev": "Juicy Lucy",
       "stupen": "15",
@@ -154,7 +164,7 @@
       "raw": "Zichovec Juicy Lucy 15° NEIPA"
     },
     {
-      "pozice": 16,
+      "pozice": 17,
       "pivovar": "Chroust",
       "nazev": "Lučiny & Bučiny",
       "stupen": "12",
@@ -164,7 +174,7 @@
       "raw": "Chroust Lučiny & Bučiny 12° Gose"
     },
     {
-      "pozice": 17,
+      "pozice": 18,
       "pivovar": "Obora",
       "nazev": "Philadelphia SOUR",
       "stupen": "12",
@@ -174,7 +184,7 @@
       "raw": "Obora Philadelphia SOUR 12° (Mango/Maracuja)"
     },
     {
-      "pozice": 18,
+      "pozice": 19,
       "pivovar": "MagicRoad",
       "nazev": "Road To Upside",
       "stupen": "",
@@ -184,7 +194,7 @@
       "raw": "MagicRoad Road To Upside 4,5%Alc. Pastry SOUR (PL/CZ)"
     },
     {
-      "pozice": 19,
+      "pozice": 20,
       "pivovar": "Kasteel",
       "nazev": "Rouge",
       "stupen": "",
@@ -194,7 +204,7 @@
       "raw": "Kasteel Rouge 8%Alc. (BELGIE - VIŠEŇ)"
     },
     {
-      "pozice": 20,
+      "pozice": 21,
       "pivovar": "Čestmír",
       "nazev": "Astro Creep",
       "stupen": "14",
@@ -204,7 +214,7 @@
       "raw": "Čestmír Astro Creep 14° STOUT"
     },
     {
-      "pozice": 21,
+      "pozice": 22,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",
