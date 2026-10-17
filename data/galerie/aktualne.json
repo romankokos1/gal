@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-16 23:38",
+  "zmeneno": "2026-10-17 21:09",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "VŠERAD",
-      "nazev": "Jiřík",
+      "pivovar": "MAZÁK",
+      "nazev": "Extra Hořká Za Studena Chmelená",
       "stupen": "11",
-      "alkohol": "4.6",
-      "styl": "světlý ležák",
-      "dalsi": "MAZÁK – Extra Hořká Za Studena Chmelená 11°/4,4%/44IBU světlý ležák (žpč, agnus)",
-      "raw": "VŠERAD – Jiřík 11°/4,6%/31IBU světlý ležák //NEXT// MAZÁK – Extra Hořká Za Studena Chmelená 11°/4,4%/44IBU světlý ležák (žpč, agnus)"
+      "alkohol": "4.4",
+      "styl": "světlý ležák (žpč, agnus)",
+      "dalsi": "",
+      "raw": "MAZÁK – Extra Hořká Za Studena Chmelená 11°/4,4%/44IBU světlý ležák (žpč, agnus)"
     },
     {
       "pozice": 2,
