@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-16 21:06",
+  "zmeneno": "2026-10-17 20:39",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Fenek",
-      "nazev": "Rubusour",
-      "stupen": "10",
-      "alkohol": "4",
-      "styl": "malinový kyseláč",
+      "pivovar": "CLOCK",
+      "nazev": "Black Currant Sour",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "kyseláč s černým rybízem",
       "dalsi": "",
-      "raw": "Fenek - Rubusour, malinový kyseláč, 10° sv. nef., 4% vol. Alc"
+      "raw": "CLOCK - Black Currant Sour, kyseláč s černým rybízem, 12° sv. nef., 5, 1% vol. Alc, 5 IBU"
     },
     {
       "pozice": 9,
