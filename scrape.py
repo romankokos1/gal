@@ -68,17 +68,25 @@ PODNIKY = [
      "polozky": '.w-tab-pane[data-w-tab="Pivo"] .home_2_career_item',
      "pole": [".heading-style-h5", ".home_2_career_top-wrapper > div:last-child"],
      "format": "nazev-styl|pivovar", "jen_selektor": True},
+    # Automat Matuška – tabulka čepů je Google Apps Script vložený do stránky (Readymag).
+    # Stahuje se přímo adresa skriptu; v odpovědi je HTML tabulky jako zakódovaný text.
+    # Řádek = dvě piva vedle sebe (název, styl, °, ABV, IBU, cena + prázdný sloupec mezi).
+    # Cizí piva: „PREISLER - NELSONA PILS?“ / „CLOCK: KRYSTUS“, vlastní bez pivovaru.
+    {"id": "matuska-dejvice", "nazev": "Automat Matuška Dejvice",
+     "url": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
+     "apps_script": True, "pulky": 6, "format": "matuska", "pivovar": "Matuška",
+     "cesta": "hlavicky", "jen_selektor": True},
+    {"id": "matuska-jzp", "nazev": "Automat Matuška JZP",
+     "url": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
+     "apps_script": True, "pulky": 6, "format": "matuska", "pivovar": "Matuška",
+     "cesta": "hlavicky", "jen_selektor": True},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
 # (obyčejně i přes prohlížeč) do data/_pruzkum/<id>/, nic nesbírá a na stránce se neukáže.
 # Až bude podnik nastavený v PODNIKY, řádek odsud smaž.
 PRUZKUM = [
-    # 2. kolo: nabídka je v okně Google Apps Scriptu vloženém do stránky
-    {"id": "matuska-dejvice", "kolo": 2,
-     "url": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec"},
-    {"id": "matuska-jzp", "kolo": 2,
-     "url": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec"},
+    # {"id": "novy-podnik", "url": "https://…"},
 ]
 
 ROOT = Path(__file__).parent / "data"
@@ -301,15 +309,63 @@ def by_blocks(soup, sel: str) -> list[str]:
     return out
 
 
+def _js_unescape(s: str) -> str:
+    def r(m):
+        c = m.group(1)
+        if c[0] in "xu" and len(c) > 1:
+            return chr(int(c[1:], 16))
+        return {"n": "\n", "t": "\t", "r": "\r"}.get(c, c)
+    return re.sub(r"\\(x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|.)", r, s, flags=re.S)
+
+
+def apps_script_html(page: str) -> str:
+    """Google Apps Script (…/exec) posílá HTML aplikace jako text v JavaScriptu
+    („userHtml“), zakódovaný dvakrát (JS řetězec + JSON). Vrátí ho jako obyčejné HTML."""
+    i = page.find("userHtml\\x22")
+    if i < 0:
+        i = page.find('userHtml"')
+        if i < 0:
+            return ""
+        txt = page[i:]
+    else:
+        txt = _js_unescape(page[i:i + 500000])
+    k = txt.find(":", len("userHtml")) + 1
+    html, _ = json.JSONDecoder().raw_decode(txt[k:].lstrip())
+    return html
+
+
+def by_halves(soup, n: int) -> list[str]:
+    """Řádek tabulky se dvěma pivy vedle sebe: skupiny po n buňkách oddělené prázdným sloupcem.
+    Bere se název, styl, stupeň a ABV (cena a IBU ne – změna ceny není změna piva)."""
+    out = []
+    for tr in soup.select("table tr"):
+        cells = [clean(td.get_text(" ")) for td in tr.find_all(["td", "th"])]
+        i = 0
+        while i + n <= len(cells):
+            ch = cells[i:i + n]
+            if ch[0]:                                     # prázdný kohout / záhlaví = bez názvu
+                out.append(" | ".join(ch[:4]))
+            i += n + 1
+    return out
+
+
 def extract_lines(html: str, p: dict) -> tuple[list[str], str]:
     lines, method = _extract(html, p)
     return [l for l in lines if not is_junk(l)], method
 
 
 def _extract(html: str, p: dict) -> tuple[list[str], str]:
+    if p.get("apps_script"):
+        html = apps_script_html(html)
+        if not html:
+            return [], "nic"
     soup = BeautifulSoup(html, "html.parser")
 
     # 0) přesný výběr nastavený pro podnik
+    if p.get("pulky"):
+        lines = by_halves(soup, p["pulky"])
+        if lines and looks_like_beers(lines):
+            return lines, "selektor"
     if p.get("bloky"):
         for sel in (p["bloky"], "p"):
             lines = by_blocks(soup, sel)
@@ -419,6 +475,23 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
         st = re.split(r"(?<=\w{3}[.!?])\s", popis, maxsplit=1)[0].rstrip(".")
         out["styl"] = st if len(st) <= 90 else st[:90].rsplit(" ", 1)[0].rstrip(",") + "…"
         a = ABV_LABEL.search(popis)
+        if a:
+            out["alkohol"] = a.group(1).replace(",", ".")
+        return out
+
+    if fmt == "matuska" and " | " in main:
+        parts = [x.strip() for x in main.split(" | ")]
+        name = parts[0]
+        m = re.match(r"^(.+?)\s*(?::\s*|\s[-–]\s*|[-–]\s+)(.+)$", name)
+        if m:                                   # „PREISLER - NELSONA PILS?“, „CLOCK: KRYSTUS“
+            out["pivovar"], out["nazev"] = m.group(1).strip(), m.group(2).strip()
+        else:
+            out["pivovar"], out["nazev"] = default_brewery, name
+        out["styl"] = parts[1] if len(parts) > 1 else ""
+        d = DEG.search(parts[2]) if len(parts) > 2 else None
+        a = PCT.search(parts[3]) if len(parts) > 3 else None
+        if d:
+            out["stupen"] = d.group(1).replace(",", ".")
         if a:
             out["alkohol"] = a.group(1).replace(",", ".")
         return out
@@ -819,7 +892,7 @@ def run_venue(p: dict, now_dt: datetime) -> bool:
     # --- stažení a vytažení; jakákoli chyba se jen započítá ---
     html, lines, upcoming, method, err = "", [], [], "nic", ""
     try:
-        p["_cesta"] = stav.get("zpusob_stazeni", "")
+        p["_cesta"] = stav.get("zpusob_stazeni", "") or p.get("cesta", "")
         html = fetch(p["url"], p)
         if p["_cesta"] == "vlastni":
             stav.pop("zpusob_stazeni", None)
