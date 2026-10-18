@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-10-18 09:59",
+  "zmeneno": "2026-10-18 18:02",
   "metoda": "selektor",
   "piva": [
     {
@@ -76,12 +76,12 @@
     {
       "pozice": 8,
       "pivovar": "Matuška",
-      "nazev": "SVATOVÁCLAVSKÉ",
+      "nazev": "SVĚTLÉ",
       "stupen": "13",
       "alkohol": "5.5",
-      "styl": "WET HOP LAGER",
+      "styl": "LAGER",
       "dalsi": "",
-      "raw": "SVATOVÁCLAVSKÉ | WET HOP LAGER | 13° | 5,5 %"
+      "raw": "SVĚTLÉ | LAGER | 13° | 5,5 %"
     }
   ]
 }

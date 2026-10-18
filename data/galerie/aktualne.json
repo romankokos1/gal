@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-18 17:32",
+  "zmeneno": "2026-10-18 18:02",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "MAZÁK",
-      "nazev": "Extra Hořká Za Studena Chmelená",
+      "pivovar": "PIVEČKA",
+      "nazev": "Kazbek",
       "stupen": "11",
-      "alkohol": "4.4",
-      "styl": "světlý ležák (žpč, agnus)",
-      "dalsi": "PIVEČKA – Kazbek 11°/4,5%/30IBU jednochmelový světlý ležák",
-      "raw": "MAZÁK – Extra Hořká Za Studena Chmelená 11°/4,4%/44IBU světlý ležák (žpč, agnus) //NEXT// PIVEČKA – Kazbek 11°/4,5%/30IBU jednochmelový světlý ležák"
+      "alkohol": "4.5",
+      "styl": "jednochmelový světlý ležák",
+      "dalsi": "",
+      "raw": "PIVEČKA – Kazbek 11°/4,5%/30IBU jednochmelový světlý ležák"
     },
     {
       "pozice": 2,
