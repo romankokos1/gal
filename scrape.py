@@ -74,8 +74,11 @@ PODNIKY = [
 # (obyčejně i přes prohlížeč) do data/_pruzkum/<id>/, nic nesbírá a na stránce se neukáže.
 # Až bude podnik nastavený v PODNIKY, řádek odsud smaž.
 PRUZKUM = [
-    {"id": "matuska-dejvice", "url": "https://automatmatuska.cz/aktualne-na-cepu-dejvice/"},
-    {"id": "matuska-jzp", "url": "https://automatmatuska.cz/aktualne-na-cepu-jzp/"},
+    # 2. kolo: nabídka je v okně Google Apps Scriptu vloženém do stránky
+    {"id": "matuska-dejvice", "kolo": 2,
+     "url": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec"},
+    {"id": "matuska-jzp", "kolo": 2,
+     "url": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec"},
 ]
 
 ROOT = Path(__file__).parent / "data"
@@ -910,13 +913,16 @@ def pruzkum():
     """Jednorázově uloží stránky z PRUZKUM pro nastavení nového podniku."""
     for p in PRUZKUM:
         d = ROOT / "_pruzkum" / p["id"]
-        if (d / "hotovo.txt").exists():
+        kolo = p.get("kolo", 1)
+        done = d / ("hotovo.txt" if kolo == 1 else f"hotovo{kolo}.txt")
+        if done.exists():
             continue
+        pre = "" if kolo == 1 else f"k{kolo}_"
         d.mkdir(parents=True, exist_ok=True)
         info = []
         try:
             r = _get(p["url"], BROWSER_HEADERS)
-            (d / "stazeno.html").write_text(r.text, encoding="utf-8")
+            (d / f"{pre}stazeno.html").write_text(r.text, encoding="utf-8")
             info.append(f"obyčejné stažení: HTTP {r.status_code}, {len(r.text)} znaků")
         except Exception as e:
             info.append(f"obyčejné stažení selhalo: {e}")
@@ -932,16 +938,23 @@ def pruzkum():
                     pg.on("response", lambda resp: reqs.append(f"{resp.status} {resp.request.resource_type} {resp.url}"))
                     pg.goto(p["url"], wait_until="networkidle", timeout=60000)
                     pg.wait_for_timeout(5000)
-                    (d / "prohlizec.html").write_text(pg.content(), encoding="utf-8")
-                    (d / "prohlizec.txt").write_text(pg.inner_text("body"), encoding="utf-8")
-                    (d / "pozadavky.txt").write_text("\n".join(reqs) + "\n", encoding="utf-8")
-                    pg.screenshot(path=str(d / "snimek.png"), full_page=True)
+                    (d / f"{pre}prohlizec.html").write_text(pg.content(), encoding="utf-8")
+                    (d / f"{pre}prohlizec.txt").write_text(pg.inner_text("body"), encoding="utf-8")
+                    (d / f"{pre}pozadavky.txt").write_text("\n".join(reqs) + "\n", encoding="utf-8")
+                    pg.screenshot(path=str(d / f"{pre}snimek.png"), full_page=True)
+                    # obsah vložených oken (iframe) – text v nich inner_text stránky nevidí
+                    for i, fr in enumerate(pg.frames):
+                        try:
+                            (d / f"{pre}ramec{i}.html").write_text(
+                                f"<!-- {fr.url} -->\n" + fr.content(), encoding="utf-8")
+                        except Exception as e:
+                            info.append(f"rámec {i} nejde přečíst: {e}")
                     info.append("prohlížeč: uloženo")
                 finally:
                     b.close()
         except Exception as e:
             info.append(f"prohlížeč selhal: {e}")
-        (d / "hotovo.txt").write_text("\n".join(info) + "\n", encoding="utf-8")
+        done.write_text("\n".join(info) + "\n", encoding="utf-8")
         print(f"Průzkum {p['id']}: " + "; ".join(info))
 
 
