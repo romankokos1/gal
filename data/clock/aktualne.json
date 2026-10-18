@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-10-16 15:04",
+  "zmeneno": "2026-10-18 16:01",
   "metoda": "nadpis",
   "piva": [
     {
@@ -16,16 +16,6 @@
     {
       "pozice": 2,
       "pivovar": "Clock",
-      "nazev": "Emily",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Sour Cherry Gose",
-      "dalsi": "",
-      "raw": "11° Emily (Sour Cherry Gose)"
-    },
-    {
-      "pozice": 3,
-      "pivovar": "Clock",
       "nazev": "Goldie",
       "stupen": "11",
       "alkohol": "",
@@ -34,7 +24,7 @@
       "raw": "11° Goldie (Weizenbier)"
     },
     {
-      "pozice": 4,
+      "pozice": 3,
       "pivovar": "Clock",
       "nazev": "Hex",
       "stupen": "11",
@@ -42,6 +32,16 @@
       "styl": "Modern Pale Ale",
       "dalsi": "",
       "raw": "11° Hex (Modern Pale Ale)"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Clock",
+      "nazev": "BlackCurrant",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "Sour Ale",
+      "dalsi": "",
+      "raw": "12° BlackCurrant (Sour Ale)"
     },
     {
       "pozice": 5,
