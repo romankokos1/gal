@@ -1,10 +1,42 @@
 [
   {
+    "pivovar": "PIVEČKA",
+    "nazev": "Kazbek",
+    "stupen": "11",
+    "alkohol": "4.5",
+    "styl": "jednochmelový světlý ležák",
+    "raw": "PIVEČKA – Kazbek 11°/4,5%/30IBU jednochmelový světlý ležák"
+  },
+  {
+    "pivovar": "MAZÁK",
+    "nazev": "Farmaczech",
+    "stupen": "10",
+    "alkohol": "4",
+    "styl": "Farmhouse Ale (juno, ceres, saturn)",
+    "raw": "MAZÁK – Farmaczech 10°/4% Farmhouse Ale (juno, ceres, saturn)"
+  },
+  {
+    "pivovar": "SIBEERIA",
+    "nazev": "Radiant Noise",
+    "stupen": "17",
+    "alkohol": "6.8",
+    "styl": "NEIPA (mosaic, idaho 7, chinook)",
+    "raw": "SIBEERIA – Radiant Noise 17°/6,8% NEIPA (mosaic, idaho 7, chinook)"
+  },
+  {
     "pivovar": "SKJUBRU + GALERIE PIVA",
     "nazev": "Tohle Se Muselo Stout",
     "stupen": "13",
     "alkohol": "6.2",
     "styl": "Stout s čokoládou a malinou",
     "raw": "SKJUBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,2% Stout s čokoládou a malinou"
+  },
+  {
+    "pivovar": "FALKON",
+    "nazev": "Botanik",
+    "stupen": "",
+    "alkohol": "4.1",
+    "styl": "Gose with fresh mint, rosemary and juniper berries",
+    "raw": "FALKON – Botanik 4,1% Gose with fresh mint, rosemary and juniper berries"
   }
 ]

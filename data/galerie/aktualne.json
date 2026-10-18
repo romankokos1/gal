@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-17 21:09",
+  "zmeneno": "2026-10-18 16:32",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,8 +10,8 @@
       "stupen": "11",
       "alkohol": "4.4",
       "styl": "světlý ležák (žpč, agnus)",
-      "dalsi": "",
-      "raw": "MAZÁK – Extra Hořká Za Studena Chmelená 11°/4,4%/44IBU světlý ležák (žpč, agnus)"
+      "dalsi": "PIVEČKA – Kazbek 11°/4,5%/30IBU jednochmelový světlý ležák",
+      "raw": "MAZÁK – Extra Hořká Za Studena Chmelená 11°/4,4%/44IBU světlý ležák (žpč, agnus) //NEXT// PIVEČKA – Kazbek 11°/4,5%/30IBU jednochmelový světlý ležák"
     },
     {
       "pozice": 2,
@@ -20,8 +20,8 @@
       "stupen": "11",
       "alkohol": "4.5",
       "styl": "session IPA s podílem ovsa (genotype 5464, cip 076)",
-      "dalsi": "",
-      "raw": "MAZÁK – Genotype 11°/4,5%/40IBU session IPA s podílem ovsa (genotype 5464, cip 076)"
+      "dalsi": "MAZÁK – Farmaczech 10°/4% Farmhouse Ale (juno, ceres, saturn)",
+      "raw": "MAZÁK – Genotype 11°/4,5%/40IBU session IPA s podílem ovsa (genotype 5464, cip 076) //NEXT// MAZÁK – Farmaczech 10°/4% Farmhouse Ale (juno, ceres, saturn)"
     },
     {
       "pozice": 3,
@@ -30,8 +30,8 @@
       "stupen": "14",
       "alkohol": "6.3",
       "styl": "West Coast IPA (citra, simcoe)",
-      "dalsi": "",
-      "raw": "BLUD – Crispy Džus 14°/6,3% West Coast IPA (citra, simcoe)"
+      "dalsi": "SIBEERIA – Radiant Noise 17°/6,8% NEIPA (mosaic, idaho 7, chinook)",
+      "raw": "BLUD – Crispy Džus 14°/6,3% West Coast IPA (citra, simcoe) //NEXT// SIBEERIA – Radiant Noise 17°/6,8% NEIPA (mosaic, idaho 7, chinook)"
     },
     {
       "pozice": 4,
@@ -50,8 +50,8 @@
       "stupen": "13",
       "alkohol": "4.5",
       "styl": "Gose s rajčetem, bazalkou, koriandrem a solí",
-      "dalsi": "",
-      "raw": "SIBEERIA – Margherita Juice 13°/4,5% Gose s rajčetem, bazalkou, koriandrem a solí"
+      "dalsi": "FALKON – Botanik 4,1% Gose with fresh mint, rosemary and juniper berries",
+      "raw": "SIBEERIA – Margherita Juice 13°/4,5% Gose s rajčetem, bazalkou, koriandrem a solí //NEXT// FALKON – Botanik 4,1% Gose with fresh mint, rosemary and juniper berries"
     }
   ]
 }
