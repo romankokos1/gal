@@ -70,6 +70,14 @@ PODNIKY = [
      "format": "nazev-styl|pivovar", "jen_selektor": True},
 ]
 
+# Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
+# (obyčejně i přes prohlížeč) do data/_pruzkum/<id>/, nic nesbírá a na stránce se neukáže.
+# Až bude podnik nastavený v PODNIKY, řádek odsud smaž.
+PRUZKUM = [
+    {"id": "matuska-dejvice", "url": "https://automatmatuska.cz/aktualne-na-cepu-dejvice/"},
+    {"id": "matuska-jzp", "url": "https://automatmatuska.cz/aktualne-na-cepu-jzp/"},
+]
+
 ROOT = Path(__file__).parent / "data"
 TZ = ZoneInfo("Europe/Prague")
 HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
@@ -898,8 +906,51 @@ def run_venue(p: dict, now_dt: datetime) -> bool:
     return True
 
 
+def pruzkum():
+    """Jednorázově uloží stránky z PRUZKUM pro nastavení nového podniku."""
+    for p in PRUZKUM:
+        d = ROOT / "_pruzkum" / p["id"]
+        if (d / "hotovo.txt").exists():
+            continue
+        d.mkdir(parents=True, exist_ok=True)
+        info = []
+        try:
+            r = _get(p["url"], BROWSER_HEADERS)
+            (d / "stazeno.html").write_text(r.text, encoding="utf-8")
+            info.append(f"obyčejné stažení: HTTP {r.status_code}, {len(r.text)} znaků")
+        except Exception as e:
+            info.append(f"obyčejné stažení selhalo: {e}")
+        try:
+            fetch_browser("about:blank")            # jen kvůli případné instalaci Playwrightu
+            from playwright.sync_api import sync_playwright
+            with sync_playwright() as pw:
+                b = pw.chromium.launch()
+                try:
+                    pg = b.new_page(locale="cs-CZ", user_agent=BROWSER_HEADERS["User-Agent"],
+                                    viewport={"width": 1400, "height": 2000})
+                    reqs = []
+                    pg.on("response", lambda resp: reqs.append(f"{resp.status} {resp.request.resource_type} {resp.url}"))
+                    pg.goto(p["url"], wait_until="networkidle", timeout=60000)
+                    pg.wait_for_timeout(5000)
+                    (d / "prohlizec.html").write_text(pg.content(), encoding="utf-8")
+                    (d / "prohlizec.txt").write_text(pg.inner_text("body"), encoding="utf-8")
+                    (d / "pozadavky.txt").write_text("\n".join(reqs) + "\n", encoding="utf-8")
+                    pg.screenshot(path=str(d / "snimek.png"), full_page=True)
+                    info.append("prohlížeč: uloženo")
+                finally:
+                    b.close()
+        except Exception as e:
+            info.append(f"prohlížeč selhal: {e}")
+        (d / "hotovo.txt").write_text("\n".join(info) + "\n", encoding="utf-8")
+        print(f"Průzkum {p['id']}: " + "; ".join(info))
+
+
 def main() -> int:
     ROOT.mkdir(exist_ok=True)
+    try:
+        pruzkum()
+    except Exception as e:                      # průzkum nesmí shodit sběr dat
+        warn(f"průzkum selhal: {e}")
     migrate_old_layout()
     ver = ROOT / "verze_parseru.txt"
     if not ver.exists() or ver.read_text().strip() != str(PARSER_VERSION):
