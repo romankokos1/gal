@@ -1,0 +1,11 @@
+200 document https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec
+200 stylesheet https://script.google.com/static/macros/client/css/2208734863-mae_html_css_ltr.css
+200 stylesheet https://fonts.googleapis.com/icon?family=Material+Icons
+200 script https://script.google.com/static/macros/client/js/1675891922-warden_bin_i18n_warden__cs.js
+200 document https://n-bn4znakazdce7uzpombmfpcepumhlbns3q3ozha-0lu-script.googleusercontent.com/userCodeAppPanel
+200 script https://n-bn4znakazdce7uzpombmfpcepumhlbns3q3ozha-0lu-script.googleusercontent.com/static/macros/client/js/2426533027-mae_html_user_bin_i18n_mae_html_user__cs.js
+200 document https://n-bn4znakazdce7uzpombmfpcepumhlbns3q3ozha-0lu-script.googleusercontent.com/blank
+200 stylesheet https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap
+301 script https://www.google.com/jsapi
+200 script https://www.gstatic.com/charts/loader.js
+200 xhr https://script.google.com/wardeninit?_reqid=28031&rt=j
