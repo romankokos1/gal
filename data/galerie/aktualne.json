@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-18 16:32",
+  "zmeneno": "2026-10-18 17:02",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "BLUD",
-      "nazev": "Crispy Džus",
-      "stupen": "14",
-      "alkohol": "6.3",
-      "styl": "West Coast IPA (citra, simcoe)",
-      "dalsi": "SIBEERIA – Radiant Noise 17°/6,8% NEIPA (mosaic, idaho 7, chinook)",
-      "raw": "BLUD – Crispy Džus 14°/6,3% West Coast IPA (citra, simcoe) //NEXT// SIBEERIA – Radiant Noise 17°/6,8% NEIPA (mosaic, idaho 7, chinook)"
+      "pivovar": "SIBEERIA",
+      "nazev": "Radiant Noise",
+      "stupen": "17",
+      "alkohol": "6.8",
+      "styl": "NEIPA (mosaic, idaho 7, chinook)",
+      "dalsi": "",
+      "raw": "SIBEERIA – Radiant Noise 17°/6,8% NEIPA (mosaic, idaho 7, chinook)"
     },
     {
       "pozice": 4,
