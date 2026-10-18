@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-17 20:39",
+  "zmeneno": "2026-10-18 20:02",
   "metoda": "selektor",
   "piva": [
     {
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "",
-      "nazev": "Plzeňský Bandita",
+      "pivovar": "Hubertus Kácov",
+      "nazev": "Zelený Chmel",
       "stupen": "12",
-      "alkohol": "4.9",
-      "styl": "světlý ležák",
+      "alkohol": "4.7",
+      "styl": "světlý ležák s čerstvým chmelem",
       "dalsi": "",
-      "raw": "Plzeňský Bandita, světlý ležák, 12° sv. nef., 4, 9% vol. Alc, 34 IBU"
+      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4, 7% vol. Alc"
     },
     {
       "pozice": 10,

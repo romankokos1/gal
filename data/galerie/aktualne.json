@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-18 18:02",
+  "zmeneno": "2026-10-18 20:02",
   "metoda": "nadpis",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "MAZÁK",
-      "nazev": "Genotype",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "session IPA s podílem ovsa (genotype 5464, cip 076)",
-      "dalsi": "MAZÁK – Farmaczech 10°/4% Farmhouse Ale (juno, ceres, saturn)",
-      "raw": "MAZÁK – Genotype 11°/4,5%/40IBU session IPA s podílem ovsa (genotype 5464, cip 076) //NEXT// MAZÁK – Farmaczech 10°/4% Farmhouse Ale (juno, ceres, saturn)"
+      "nazev": "Farmaczech",
+      "stupen": "10",
+      "alkohol": "4",
+      "styl": "Farmhouse Ale (juno, ceres, saturn)",
+      "dalsi": "",
+      "raw": "MAZÁK – Farmaczech 10°/4% Farmhouse Ale (juno, ceres, saturn)"
     },
     {
       "pozice": 3,
