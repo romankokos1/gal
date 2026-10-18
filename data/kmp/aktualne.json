@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-18 20:02",
+  "zmeneno": "2026-10-19 00:04",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -41,7 +41,7 @@
       "alkohol": "5.2",
       "styl": "pšeničné",
       "dalsi": "",
-      "raw": "Plzeňský Bandita, pšeničné, 13° sv. nef., 5, 2% vol. Alc, 18 IBU"
+      "raw": "Plzeňský Bandita, pšeničné, 13° sv. nef., 5,2% vol. Alc, 18 IBU"
     },
     {
       "pozice": 5,
@@ -51,7 +51,7 @@
       "alkohol": "4.9",
       "styl": "Irish Dry Stout",
       "dalsi": "",
-      "raw": "Radouš, Irish Dry Stout, 12° tm. nef., 4, 9% vol. Alc, 40 IBU"
+      "raw": "Radouš, Irish Dry Stout, 12° tm. nef., 4,9% vol. Alc, 40 IBU"
     },
     {
       "pozice": 6,
@@ -71,7 +71,7 @@
       "alkohol": "6.1",
       "styl": "Cold IPA",
       "dalsi": "",
-      "raw": "Nomu Brew Co. - Drift, Cold IPA, 13° sv. nef., 6, 1% vol. Alc, 55 IBU"
+      "raw": "Nomu Brew Co. - Drift, Cold IPA, 13° sv. nef., 6,1% vol. Alc, 55 IBU"
     },
     {
       "pozice": 8,
@@ -81,7 +81,7 @@
       "alkohol": "5.1",
       "styl": "kyseláč s černým rybízem",
       "dalsi": "",
-      "raw": "CLOCK - Black Currant Sour, kyseláč s černým rybízem, 12° sv. nef., 5, 1% vol. Alc, 5 IBU"
+      "raw": "CLOCK - Black Currant Sour, kyseláč s černým rybízem, 12° sv. nef., 5,1% vol. Alc, 5 IBU"
     },
     {
       "pozice": 9,
@@ -91,7 +91,7 @@
       "alkohol": "4.7",
       "styl": "světlý ležák s čerstvým chmelem",
       "dalsi": "",
-      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4, 7% vol. Alc"
+      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4,7% vol. Alc"
     },
     {
       "pozice": 10,
@@ -101,7 +101,7 @@
       "alkohol": "4.2",
       "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "Stadioner - Požárník, světlé výčepní, 10° sv. nef., 4, 2% vol. Alc"
+      "raw": "Stadioner - Požárník, světlé výčepní, 10° sv. nef., 4,2% vol. Alc"
     }
   ]
 }
