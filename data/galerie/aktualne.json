@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-18 20:02",
+  "zmeneno": "2026-10-18 23:04",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "PIVEČKA",
-      "nazev": "Kazbek",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "jednochmelový světlý ležák",
+      "pivovar": "",
+      "nazev": "světlý ležák",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
       "dalsi": "",
-      "raw": "PIVEČKA – Kazbek 11°/4,5%/30IBU jednochmelový světlý ležák"
+      "raw": "světlý ležák"
     },
     {
       "pozice": 2,
@@ -50,8 +50,8 @@
       "stupen": "",
       "alkohol": "4.1",
       "styl": "Gose with fresh mint, rosemary and juniper berries",
-      "dalsi": "",
-      "raw": "FALKON – Botanik 4,1% Gose with fresh mint, rosemary and juniper berries"
+      "dalsi": "CHROUST – Ice Tea Sour 4,5% kyseláč s limetkou a jasmínovým a sencha čajem",
+      "raw": "FALKON – Botanik 4,1% Gose with fresh mint, rosemary and juniper berries //NEXT// CHROUST – Ice Tea Sour 4,5% kyseláč s limetkou a jasmínovým a sencha čajem"
     }
   ]
 }
