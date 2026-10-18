@@ -1,0 +1,87 @@
+{
+  "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
+  "zmeneno": "2026-10-18 09:59",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Matuška",
+      "nazev": "DESÍTKA",
+      "stupen": "10",
+      "alkohol": "4.2",
+      "styl": "LAGER",
+      "dalsi": "",
+      "raw": "DESÍTKA | LAGER | 10° | 4,2 %"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "6",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
+      "dalsi": "",
+      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Matuška",
+      "nazev": "DVANÁCTKA",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "LAGER",
+      "dalsi": "",
+      "raw": "DVANÁCTKA | LAGER | 12° | 5,1 %"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "OBORA",
+      "nazev": "MALINA",
+      "stupen": "12",
+      "alkohol": "4.2",
+      "styl": "PHILADELPHIA SOUR",
+      "dalsi": "",
+      "raw": "OBORA: MALINA | PHILADELPHIA SOUR | 12° | 4,2 %"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Matuška",
+      "nazev": "CALIFORNIA",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "AMERICAN PALE ALE",
+      "dalsi": "",
+      "raw": "CALIFORNIA | AMERICAN PALE ALE | 12° | 5,3 %"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Matuška",
+      "nazev": "FRESH ERIS",
+      "stupen": "11",
+      "alkohol": "4.9",
+      "styl": "WET HOP PALE ALE",
+      "dalsi": "",
+      "raw": "FRESH ERIS | WET HOP PALE ALE | 11° | 4,9 %"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Matuška",
+      "nazev": "ZLATÁ RAKETA",
+      "stupen": "17",
+      "alkohol": "7",
+      "styl": "INDIA PALE ALE",
+      "dalsi": "",
+      "raw": "ZLATÁ RAKETA | INDIA PALE ALE | 17° | 7 %"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Matuška",
+      "nazev": "SVATOVÁCLAVSKÉ",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "WET HOP LAGER",
+      "dalsi": "",
+      "raw": "SVATOVÁCLAVSKÉ | WET HOP LAGER | 13° | 5,5 %"
+    }
+  ]
+}

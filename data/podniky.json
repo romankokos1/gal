@@ -43,5 +43,15 @@
     "id": "polepsovna",
     "nazev": "Polepšovna",
     "url": "https://www.pivnicepolepsovna.cz/"
+  },
+  {
+    "id": "matuska-dejvice",
+    "nazev": "Automat Matuška Dejvice",
+    "url": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec"
+  },
+  {
+    "id": "matuska-jzp",
+    "nazev": "Automat Matuška JZP",
+    "url": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec"
   }
 ]

@@ -1,0 +1,107 @@
+{
+  "zdroj": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
+  "zmeneno": "2026-10-18 09:59",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Matuška",
+      "nazev": "DESÍTKA",
+      "stupen": "10",
+      "alkohol": "4.2",
+      "styl": "LAGER",
+      "dalsi": "",
+      "raw": "DESÍTKA | LAGER | 10° | 4,2 %"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Matuška",
+      "nazev": "ZLATÁ RAKETA",
+      "stupen": "17",
+      "alkohol": "7",
+      "styl": "INDIA PALE ALE",
+      "dalsi": "",
+      "raw": "ZLATÁ RAKETA | INDIA PALE ALE | 17° | 7 %"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Matuška",
+      "nazev": "DVANÁCTKA",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "LAGER",
+      "dalsi": "",
+      "raw": "DVANÁCTKA | LAGER | 12° | 5,1 %"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Matuška",
+      "nazev": "WET HOP",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "LAGER",
+      "dalsi": "",
+      "raw": "WET HOP | LAGER | 13° | 5,5 %"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Matuška",
+      "nazev": "CALIFORNIA",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "AMERICAN PALE ALE",
+      "dalsi": "",
+      "raw": "CALIFORNIA | AMERICAN PALE ALE | 12° | 5,3 %"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "7",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
+      "dalsi": "",
+      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Matuška",
+      "nazev": "APOLLO GALAXY",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "PALE ALE",
+      "dalsi": "",
+      "raw": "APOLLO GALAXY | PALE ALE | 13° | 5,5 %"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "PREISLER",
+      "nazev": "NELSONA PILS?",
+      "stupen": "12",
+      "alkohol": "5.4",
+      "styl": "NZ PILS",
+      "dalsi": "",
+      "raw": "PREISLER - NELSONA PILS? | NZ PILS | 12° | 5,4 %"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Matuška",
+      "nazev": "RAPTOR",
+      "stupen": "15",
+      "alkohol": "6.3",
+      "styl": "INDIA PALE ALE",
+      "dalsi": "",
+      "raw": "RAPTOR | INDIA PALE ALE | 15° | 6,3 %"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "SIBEERIA",
+      "nazev": "MANGO MARAKUJA SORBET",
+      "stupen": "11",
+      "alkohol": "3.9",
+      "styl": "SOUR ALE",
+      "dalsi": "",
+      "raw": "SIBEERIA - MANGO MARAKUJA SORBET | SOUR ALE | 11° | 3,9 %"
+    }
+  ]
+}
