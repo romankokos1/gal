@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-18 17:02",
+  "zmeneno": "2026-10-18 17:32",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "SIBEERIA",
-      "nazev": "Margherita Juice",
-      "stupen": "13",
-      "alkohol": "4.5",
-      "styl": "Gose s rajčetem, bazalkou, koriandrem a solí",
-      "dalsi": "FALKON – Botanik 4,1% Gose with fresh mint, rosemary and juniper berries",
-      "raw": "SIBEERIA – Margherita Juice 13°/4,5% Gose s rajčetem, bazalkou, koriandrem a solí //NEXT// FALKON – Botanik 4,1% Gose with fresh mint, rosemary and juniper berries"
+      "pivovar": "FALKON",
+      "nazev": "Botanik",
+      "stupen": "",
+      "alkohol": "4.1",
+      "styl": "Gose with fresh mint, rosemary and juniper berries",
+      "dalsi": "",
+      "raw": "FALKON – Botanik 4,1% Gose with fresh mint, rosemary and juniper berries"
     }
   ]
 }
