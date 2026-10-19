@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-19 19:59",
+  "zmeneno": "2026-10-19 22:00",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,16 +65,6 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Václav",
-      "nazev": "Bitter Bush",
-      "stupen": "14",
-      "alkohol": "6",
-      "styl": "West Coast IPA",
-      "dalsi": "",
-      "raw": "Václav - Bitter Bush | 14% | West Coast IPA, ABV 6%"
-    },
-    {
-      "pozice": 8,
       "pivovar": "The Barn",
       "nazev": "Barney's Odyssey",
       "stupen": "16",
