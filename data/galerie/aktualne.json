@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-19 14:27",
+  "zmeneno": "2026-10-19 21:30",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "FALKON",
-      "nazev": "Botanik",
+      "pivovar": "CHROUST",
+      "nazev": "Ice Tea Sour",
       "stupen": "",
-      "alkohol": "4.1",
-      "styl": "Gose with fresh mint, rosemary and juniper berries",
-      "dalsi": "CHROUST – Ice Tea Sour 4,5% kyseláč s limetkou a jasmínovým a sencha čajem",
-      "raw": "FALKON – Botanik 4,1% Gose with fresh mint, rosemary and juniper berries //NEXT// CHROUST – Ice Tea Sour 4,5% kyseláč s limetkou a jasmínovým a sencha čajem"
+      "alkohol": "4.5",
+      "styl": "kyseláč s limetkou a jasmínovým a sencha čajem",
+      "dalsi": "",
+      "raw": "CHROUST – Ice Tea Sour 4,5% kyseláč s limetkou a jasmínovým a sencha čajem"
     }
   ]
 }
