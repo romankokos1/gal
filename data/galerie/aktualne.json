@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-19 21:30",
+  "zmeneno": "2026-10-19 23:00",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "MORDÝŘ",
-      "nazev": "světlý ležák",
+      "pivovar": "MAZÁK",
+      "nazev": "Extra Hořká",
       "stupen": "11",
       "alkohol": "4.8",
-      "styl": "",
+      "styl": "Světlý ležák",
       "dalsi": "",
-      "raw": "MORDÝŘ – světlý ležák 11°/4,8%"
+      "raw": "MAZÁK – Extra Hořká 11°/4,8% Světlý ležák"
     },
     {
       "pozice": 2,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "CLOCK",
-      "nazev": "Red Baron",
+      "pivovar": "SKJUBRU + GALERIE PIVA",
+      "nazev": "Tohle Se Muselo Stout",
       "stupen": "13",
-      "alkohol": "5.4",
-      "styl": "polotmavý nakouřený ležák (hallertau blanc, spalter select)",
-      "dalsi": "SKJUBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,2% Stout s čokoládou a malinou",
-      "raw": "CLOCK – Red Baron 13°/5,4%/27IBU polotmavý nakouřený ležák (hallertau blanc, spalter select) //NEXT// SKJUBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,2% Stout s čokoládou a malinou"
+      "alkohol": "6.2",
+      "styl": "Stout s čokoládou a malinou",
+      "dalsi": "",
+      "raw": "SKJUBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,2% Stout s čokoládou a malinou"
     },
     {
       "pozice": 5,
