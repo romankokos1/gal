@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-19 17:58",
+  "zmeneno": "2026-10-19 19:59",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Vik",
-      "nazev": "gumboot #6",
-      "stupen": "11",
-      "alkohol": "4.6",
+      "pivovar": "Jungberg",
+      "nazev": "300 Kurven",
+      "stupen": "10",
+      "alkohol": "4.2",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Vik - gumboot #6 | 11% | Lager, ABV 4,6%"
+      "raw": "Jungberg - 300 Kurven | 10% | Lager, ABV 4,2%"
     },
     {
       "pozice": 2,

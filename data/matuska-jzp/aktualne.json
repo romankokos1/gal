@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-10-18 18:02",
+  "zmeneno": "2026-10-19 19:59",
   "metoda": "selektor",
   "piva": [
     {
@@ -76,12 +76,12 @@
     {
       "pozice": 8,
       "pivovar": "Matuška",
-      "nazev": "SVĚTLÉ",
+      "nazev": "WET HOP",
       "stupen": "13",
       "alkohol": "5.5",
-      "styl": "LAGER",
+      "styl": "WET HOP LAGER",
       "dalsi": "",
-      "raw": "SVĚTLÉ | LAGER | 13° | 5,5 %"
+      "raw": "WET HOP | WET HOP LAGER | 13° | 5,5 %"
     }
   ]
 }

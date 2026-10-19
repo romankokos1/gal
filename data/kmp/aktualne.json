@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-19 17:58",
+  "zmeneno": "2026-10-19 19:59",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Nomu Brew Co.",
-      "nazev": "Drift",
-      "stupen": "13",
-      "alkohol": "6.1",
-      "styl": "Cold IPA",
+      "pivovar": "Chroust",
+      "nazev": "Age of Krush Fresh Hop",
+      "stupen": "14",
+      "alkohol": "5.8",
+      "styl": "West Coast IPA se zeleným chmelem",
       "dalsi": "",
-      "raw": "Nomu Brew Co. - Drift, Cold IPA, 13° sv. nef., 6, 1% vol. Alc, 55 IBU"
+      "raw": "Chroust - Age of Krush Fresh Hop, West Coast IPA se zeleným chmelem, 14° sv. nef., 5, 8% vol. Alc"
     },
     {
       "pozice": 8,
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Stadioner",
-      "nazev": "Požárník",
-      "stupen": "10",
-      "alkohol": "4.2",
-      "styl": "světlé výčepní",
+      "pivovar": "Volt",
+      "nazev": "Zdroj",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Stadioner - Požárník, světlé výčepní, 10° sv. nef., 4, 2% vol. Alc"
+      "raw": "Volt - Zdroj, světlý ležák, 12° sv. nef., 5% vol. Alc"
     }
   ]
 }
