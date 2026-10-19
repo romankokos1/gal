@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-19 11:56",
+  "zmeneno": "2026-10-19 15:57",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Volt",
-      "nazev": "Protinožec",
-      "stupen": "13",
-      "alkohol": "6",
-      "styl": "Australian Pale Ale",
+      "pivovar": "The Barn Beer Co.",
+      "nazev": "Randy",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Volt - Protinožec, Australian Pale Ale, 13° sv. nef., 6% vol. Alc, 28 IBU"
+      "raw": "The Barn Beer Co. - Randy, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc"
     },
     {
       "pozice": 7,
