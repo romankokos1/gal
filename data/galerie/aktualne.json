@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-18 23:04",
+  "zmeneno": "2026-10-19 14:27",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "",
+      "pivovar": "MORDÝŘ",
       "nazev": "světlý ležák",
-      "stupen": "",
-      "alkohol": "",
+      "stupen": "11",
+      "alkohol": "4.8",
       "styl": "",
       "dalsi": "",
-      "raw": "světlý ležák"
+      "raw": "MORDÝŘ – světlý ležák 11°/4,8%"
     },
     {
       "pozice": 2,
