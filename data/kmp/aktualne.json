@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-19 15:57",
+  "zmeneno": "2026-10-19 17:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "",
-      "nazev": "Plzeňský Bandita",
-      "stupen": "13",
-      "alkohol": "5.2",
-      "styl": "pšeničné",
+      "pivovar": "Kojetín",
+      "nazev": "Kočkodan",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "polotmavý ležák, polo.",
       "dalsi": "",
-      "raw": "Plzeňský Bandita, pšeničné, 13° sv. nef., 5, 2% vol. Alc, 18 IBU"
+      "raw": "Kojetín - Kočkodan, polotmavý ležák, 12° polo. nef., 4, 8% vol. Alc, 25 IBU"
     },
     {
       "pozice": 5,

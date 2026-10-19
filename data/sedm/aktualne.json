@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-15 19:51",
+  "zmeneno": "2026-10-19 17:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Sibeeria",
-      "nazev": "Virgin ONRB",
-      "stupen": "12",
-      "alkohol": "4.9",
+      "pivovar": "Skjubru",
+      "nazev": "Cherries Only Fools",
+      "stupen": "10",
+      "alkohol": "4.2",
       "styl": "Sour",
       "dalsi": "",
-      "raw": "Sibeeria - Virgin ONRB | 12% | Sour, ABV 4,9%"
+      "raw": "Skjubru - Cherries Only Fools | 10% | Sour, ABV 4,2%"
     },
     {
       "pozice": 4,
