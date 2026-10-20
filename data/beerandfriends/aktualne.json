@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.beerandfriends.eu/beer-and-friends",
-  "zmeneno": "2026-10-13 17:39",
+  "zmeneno": "2026-10-20 17:29",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,33 +15,33 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Chroust",
-      "nazev": "AGE OF KRUSH",
+      "pivovar": "Fracek",
+      "nazev": "DINGO STAR",
       "stupen": "",
-      "alkohol": "5.8",
-      "styl": "West Coast IPA",
+      "alkohol": "6",
+      "styl": "DDH Extra Pale Ale",
       "dalsi": "",
-      "raw": "AGE OF KRUSH – West Coast IPA (Chroust) · abv 5,8 %"
+      "raw": "DINGO STAR – DDH Extra Pale Ale (Fracek) · abv 6 %"
     },
     {
       "pozice": 3,
-      "pivovar": "The Barn/Falkon",
-      "nazev": "UMMAGUMMA",
+      "pivovar": "Twinberg",
+      "nazev": "HOPPY WHALE 8",
       "stupen": "",
-      "alkohol": "7",
+      "alkohol": "5.6",
       "styl": "New England IPA",
       "dalsi": "",
-      "raw": "UMMAGUMMA – New England IPA (The Barn/Falkon) · abv 7 %"
+      "raw": "HOPPY WHALE 8 – New England IPA (Twinberg) · abv 5,6 %"
     },
     {
       "pozice": 4,
-      "pivovar": "Fracek",
-      "nazev": "HOPCHARGED SUMMER",
+      "pivovar": "The Barn",
+      "nazev": "XXTRAVAGANZA",
       "stupen": "",
-      "alkohol": "4.5",
-      "styl": "Session IPA",
+      "alkohol": "5.5",
+      "styl": "Northern X-Pale",
       "dalsi": "",
-      "raw": "HOPCHARGED SUMMER – Session IPA (Fracek) · abv 4,5 %"
+      "raw": "XXTRAVAGANZA – Northern X-Pale (The Barn) · abv 5,5 %"
     },
     {
       "pozice": 5,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Twinberg",
-      "nazev": "HOPPY WHALE 8",
+      "pivovar": "Čierny Kameň",
+      "nazev": "SMRTIHLAV",
       "stupen": "",
-      "alkohol": "5.6",
-      "styl": "New England IPA",
+      "alkohol": "6.2",
+      "styl": "DDH American IPA",
       "dalsi": "",
-      "raw": "HOPPY WHALE 8 – New England IPA (Twinberg) · abv 5,6 %"
+      "raw": "SMRTIHLAV – DDH American IPA (Čierny Kameň) · abv 6,2 %"
     },
     {
       "pozice": 8,
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "The Barn",
-      "nazev": "XXTRAVAGANZA",
+      "pivovar": "Fracek",
+      "nazev": "LAZY CHARBONNAY",
       "stupen": "",
-      "alkohol": "5.5",
-      "styl": "Extra Pale Ale",
+      "alkohol": "5",
+      "styl": "Grisette",
       "dalsi": "",
-      "raw": "XXTRAVAGANZA – Extra Pale Ale (The Barn) · abv 5,5 %"
+      "raw": "LAZY CHARBONNAY – Grisette (Fracek) · abv 5 %"
     }
   ]
 }

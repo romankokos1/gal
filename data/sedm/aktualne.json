@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-19 22:00",
+  "zmeneno": "2026-10-20 17:29",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,6 +65,16 @@
     },
     {
       "pozice": 7,
+      "pivovar": "Nomu",
+      "nazev": "Drift",
+      "stupen": "14",
+      "alkohol": "6.1",
+      "styl": "Cold IPA",
+      "dalsi": "",
+      "raw": "Nomu - Drift | 14% | Cold IPA, ABV 6,1%"
+    },
+    {
+      "pozice": 8,
       "pivovar": "The Barn",
       "nazev": "Barney's Odyssey",
       "stupen": "16",
