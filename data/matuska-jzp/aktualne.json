@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-10-19 19:59",
+  "zmeneno": "2026-10-20 11:27",
   "metoda": "selektor",
   "piva": [
     {
@@ -66,12 +66,12 @@
     {
       "pozice": 7,
       "pivovar": "Matuška",
-      "nazev": "ZLATÁ RAKETA",
-      "stupen": "17",
-      "alkohol": "7",
+      "nazev": "RAPTOR",
+      "stupen": "15",
+      "alkohol": "6.3",
       "styl": "INDIA PALE ALE",
       "dalsi": "",
-      "raw": "ZLATÁ RAKETA | INDIA PALE ALE | 17° | 7 %"
+      "raw": "RAPTOR | INDIA PALE ALE | 15° | 6,3 %"
     },
     {
       "pozice": 8,

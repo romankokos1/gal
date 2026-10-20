@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-20 00:00",
+  "zmeneno": "2026-10-20 11:27",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -41,7 +41,7 @@
       "alkohol": "4.8",
       "styl": "polotmavý ležák, polo.",
       "dalsi": "",
-      "raw": "Kojetín - Kočkodan, polotmavý ležák, 12° polo. nef., 4,8% vol. Alc, 25 IBU"
+      "raw": "Kojetín - Kočkodan, polotmavý ležák, 12° polo. nef., 4, 8% vol. Alc, 25 IBU"
     },
     {
       "pozice": 5,
@@ -51,7 +51,7 @@
       "alkohol": "4.9",
       "styl": "Irish Dry Stout",
       "dalsi": "",
-      "raw": "Radouš, Irish Dry Stout, 12° tm. nef., 4,9% vol. Alc, 40 IBU"
+      "raw": "Radouš, Irish Dry Stout, 12° tm. nef., 4, 9% vol. Alc, 40 IBU"
     },
     {
       "pozice": 6,
@@ -61,7 +61,7 @@
       "alkohol": "4.6",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "The Barn Beer Co. - Randy, American Pale Ale, 11° sv. nef., 4,6% vol. Alc"
+      "raw": "The Barn Beer Co. - Randy, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc"
     },
     {
       "pozice": 7,
@@ -71,7 +71,7 @@
       "alkohol": "5.8",
       "styl": "West Coast IPA se zeleným chmelem",
       "dalsi": "",
-      "raw": "Chroust - Age of Krush Fresh Hop, West Coast IPA se zeleným chmelem, 14° sv. nef., 5,8% vol. Alc"
+      "raw": "Chroust - Age of Krush Fresh Hop, West Coast IPA se zeleným chmelem, 14° sv. nef., 5, 8% vol. Alc"
     },
     {
       "pozice": 8,
@@ -81,7 +81,7 @@
       "alkohol": "5.1",
       "styl": "kyseláč s černým rybízem",
       "dalsi": "",
-      "raw": "CLOCK - Black Currant Sour, kyseláč s černým rybízem, 12° sv. nef., 5,1% vol. Alc, 5 IBU"
+      "raw": "CLOCK - Black Currant Sour, kyseláč s černým rybízem, 12° sv. nef., 5, 1% vol. Alc, 5 IBU"
     },
     {
       "pozice": 9,
@@ -91,7 +91,7 @@
       "alkohol": "4.7",
       "styl": "světlý ležák s čerstvým chmelem",
       "dalsi": "",
-      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4,7% vol. Alc"
+      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4, 7% vol. Alc"
     },
     {
       "pozice": 10,
