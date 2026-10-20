@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-20 16:29",
+  "zmeneno": "2026-10-20 21:01",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "MAZÁK",
-      "nazev": "Farmaczech",
-      "stupen": "10",
-      "alkohol": "4",
-      "styl": "Farmhouse Ale (juno, ceres, saturn)",
-      "dalsi": "RAVEN – Cold As Buffalo 12°/5,2%/40IBU Cold Pale Ale (cryo loral, agnus)",
-      "raw": "MAZÁK – Farmaczech 10°/4% Farmhouse Ale (juno, ceres, saturn) //NEXT// RAVEN – Cold As Buffalo 12°/5,2%/40IBU Cold Pale Ale (cryo loral, agnus)"
+      "pivovar": "RAVEN",
+      "nazev": "Cold As Buffalo",
+      "stupen": "12",
+      "alkohol": "5.2",
+      "styl": "Cold Pale Ale (cryo loral, agnus)",
+      "dalsi": "",
+      "raw": "RAVEN – Cold As Buffalo 12°/5,2%/40IBU Cold Pale Ale (cryo loral, agnus)"
     },
     {
       "pozice": 3,
