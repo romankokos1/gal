@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-19 23:00",
+  "zmeneno": "2026-10-20 14:59",
   "metoda": "nadpis",
   "piva": [
     {
@@ -20,8 +20,8 @@
       "stupen": "10",
       "alkohol": "4",
       "styl": "Farmhouse Ale (juno, ceres, saturn)",
-      "dalsi": "",
-      "raw": "MAZÁK – Farmaczech 10°/4% Farmhouse Ale (juno, ceres, saturn)"
+      "dalsi": "RAVEN – Cold As Buffalo 12°/5,2%/40IBU Cold Pale Ale (cryo loral, agnus)",
+      "raw": "MAZÁK – Farmaczech 10°/4% Farmhouse Ale (juno, ceres, saturn) //NEXT// RAVEN – Cold As Buffalo 12°/5,2%/40IBU Cold Pale Ale (cryo loral, agnus)"
     },
     {
       "pozice": 3,
@@ -30,8 +30,8 @@
       "stupen": "17",
       "alkohol": "6.8",
       "styl": "NEIPA (mosaic, idaho 7, chinook)",
-      "dalsi": "",
-      "raw": "SIBEERIA – Radiant Noise 17°/6,8% NEIPA (mosaic, idaho 7, chinook)"
+      "dalsi": "NOZIB – Stencil 6,7%/65IBU West Coast IPA (simcoe, strata)",
+      "raw": "SIBEERIA – Radiant Noise 17°/6,8% NEIPA (mosaic, idaho 7, chinook) //NEXT// NOZIB – Stencil 6,7%/65IBU West Coast IPA (simcoe, strata)"
     },
     {
       "pozice": 4,

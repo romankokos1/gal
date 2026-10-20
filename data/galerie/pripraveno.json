@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "pivovar": "RAVEN",
+    "nazev": "Cold As Buffalo",
+    "stupen": "12",
+    "alkohol": "5.2",
+    "styl": "Cold Pale Ale (cryo loral, agnus)",
+    "raw": "RAVEN – Cold As Buffalo 12°/5,2%/40IBU Cold Pale Ale (cryo loral, agnus)"
+  },
+  {
+    "pivovar": "NOZIB",
+    "nazev": "Stencil",
+    "stupen": "",
+    "alkohol": "6.7",
+    "styl": "West Coast IPA (simcoe, strata)",
+    "raw": "NOZIB – Stencil 6,7%/65IBU West Coast IPA (simcoe, strata)"
+  }
+]
