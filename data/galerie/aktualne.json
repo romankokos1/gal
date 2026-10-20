@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-20 14:59",
+  "zmeneno": "2026-10-20 16:29",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "SIBEERIA",
-      "nazev": "Radiant Noise",
-      "stupen": "17",
-      "alkohol": "6.8",
-      "styl": "NEIPA (mosaic, idaho 7, chinook)",
-      "dalsi": "NOZIB – Stencil 6,7%/65IBU West Coast IPA (simcoe, strata)",
-      "raw": "SIBEERIA – Radiant Noise 17°/6,8% NEIPA (mosaic, idaho 7, chinook) //NEXT// NOZIB – Stencil 6,7%/65IBU West Coast IPA (simcoe, strata)"
+      "pivovar": "NOZIB",
+      "nazev": "Stencil",
+      "stupen": "",
+      "alkohol": "6.7",
+      "styl": "West Coast IPA (simcoe, strata)",
+      "dalsi": "",
+      "raw": "NOZIB – Stencil 6,7%/65IBU West Coast IPA (simcoe, strata)"
     },
     {
       "pozice": 4,
