@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-20 11:27",
+  "zmeneno": "2026-10-20 19:30",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,16 +45,6 @@
     },
     {
       "pozice": 5,
-      "pivovar": "",
-      "nazev": "Radouš",
-      "stupen": "12",
-      "alkohol": "4.9",
-      "styl": "Irish Dry Stout",
-      "dalsi": "",
-      "raw": "Radouš, Irish Dry Stout, 12° tm. nef., 4, 9% vol. Alc, 40 IBU"
-    },
-    {
-      "pozice": 6,
       "pivovar": "The Barn Beer Co.",
       "nazev": "Randy",
       "stupen": "11",
@@ -64,7 +54,7 @@
       "raw": "The Barn Beer Co. - Randy, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Chroust",
       "nazev": "Age of Krush Fresh Hop",
       "stupen": "14",
@@ -74,7 +64,7 @@
       "raw": "Chroust - Age of Krush Fresh Hop, West Coast IPA se zeleným chmelem, 14° sv. nef., 5, 8% vol. Alc"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "CLOCK",
       "nazev": "Black Currant Sour",
       "stupen": "12",
@@ -84,7 +74,7 @@
       "raw": "CLOCK - Black Currant Sour, kyseláč s černým rybízem, 12° sv. nef., 5, 1% vol. Alc, 5 IBU"
     },
     {
-      "pozice": 9,
+      "pozice": 8,
       "pivovar": "Hubertus Kácov",
       "nazev": "Zelený Chmel",
       "stupen": "12",
@@ -94,7 +84,7 @@
       "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4, 7% vol. Alc"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Volt",
       "nazev": "Zdroj",
       "stupen": "12",

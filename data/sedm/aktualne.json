@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-20 17:29",
+  "zmeneno": "2026-10-20 19:30",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,16 +35,6 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Fracek",
-      "nazev": "Lagerf*ck 3: Broovan",
-      "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "india pale lager",
-      "dalsi": "",
-      "raw": "Fracek - Lagerf*ck 3: Broovan | 12% | india pale lager, ABV 5,1%"
-    },
-    {
-      "pozice": 5,
       "pivovar": "Blud",
       "nazev": "Černota",
       "stupen": "11",
@@ -54,7 +44,7 @@
       "raw": "Blud - Černota | 11% | Irish Dry Stout, ABV 4,6%"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Václav",
       "nazev": "Munich Vice",
       "stupen": "12",
@@ -64,7 +54,7 @@
       "raw": "Václav - Munich Vice | 12% | Bavarian Hazy Ale, ABV5,2%"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Nomu",
       "nazev": "Drift",
       "stupen": "14",
@@ -74,7 +64,7 @@
       "raw": "Nomu - Drift | 14% | Cold IPA, ABV 6,1%"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "The Barn",
       "nazev": "Barney's Odyssey",
       "stupen": "16",
