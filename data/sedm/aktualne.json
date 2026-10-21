@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-20 19:30",
+  "zmeneno": "2026-10-21 11:23",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,6 +35,16 @@
     },
     {
       "pozice": 4,
+      "pivovar": "Obora",
+      "nazev": "Ale NE",
+      "stupen": "12",
+      "alkohol": "4.7",
+      "styl": "Session NEIPA",
+      "dalsi": "",
+      "raw": "Obora - Ale NE | 12% | Session NEIPA, ABV 4,7%"
+    },
+    {
+      "pozice": 5,
       "pivovar": "Blud",
       "nazev": "Černota",
       "stupen": "11",
@@ -44,7 +54,7 @@
       "raw": "Blud - Černota | 11% | Irish Dry Stout, ABV 4,6%"
     },
     {
-      "pozice": 5,
+      "pozice": 6,
       "pivovar": "Václav",
       "nazev": "Munich Vice",
       "stupen": "12",
@@ -54,7 +64,7 @@
       "raw": "Václav - Munich Vice | 12% | Bavarian Hazy Ale, ABV5,2%"
     },
     {
-      "pozice": 6,
+      "pozice": 7,
       "pivovar": "Nomu",
       "nazev": "Drift",
       "stupen": "14",
@@ -62,16 +72,6 @@
       "styl": "Cold IPA",
       "dalsi": "",
       "raw": "Nomu - Drift | 14% | Cold IPA, ABV 6,1%"
-    },
-    {
-      "pozice": 7,
-      "pivovar": "The Barn",
-      "nazev": "Barney's Odyssey",
-      "stupen": "16",
-      "alkohol": "6.5",
-      "styl": "NEIPA",
-      "dalsi": "",
-      "raw": "The Barn - Barney's Odyssey | 16% | NEIPA, ABV 6,5%"
     }
   ]
 }

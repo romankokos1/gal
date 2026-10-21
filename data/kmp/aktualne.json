@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-20 19:30",
+  "zmeneno": "2026-10-21 11:23",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,16 +25,6 @@
     },
     {
       "pozice": 3,
-      "pivovar": "The Barn Beer Co.",
-      "nazev": "Hybrid Theory",
-      "stupen": "17",
-      "alkohol": "7",
-      "styl": "DDH Hazy India Pale Ale",
-      "dalsi": "",
-      "raw": "The Barn Beer Co. - Hybrid Theory, DDH Hazy India Pale Ale, 17° sv. nef., 7% vol. Alc, 40 IBU"
-    },
-    {
-      "pozice": 4,
       "pivovar": "Kojetín",
       "nazev": "Kočkodan",
       "stupen": "12",
@@ -44,7 +34,7 @@
       "raw": "Kojetín - Kočkodan, polotmavý ležák, 12° polo. nef., 4, 8% vol. Alc, 25 IBU"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "The Barn Beer Co.",
       "nazev": "Randy",
       "stupen": "11",
@@ -54,7 +44,7 @@
       "raw": "The Barn Beer Co. - Randy, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Chroust",
       "nazev": "Age of Krush Fresh Hop",
       "stupen": "14",
@@ -64,7 +54,7 @@
       "raw": "Chroust - Age of Krush Fresh Hop, West Coast IPA se zeleným chmelem, 14° sv. nef., 5, 8% vol. Alc"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "CLOCK",
       "nazev": "Black Currant Sour",
       "stupen": "12",
@@ -74,17 +64,7 @@
       "raw": "CLOCK - Black Currant Sour, kyseláč s černým rybízem, 12° sv. nef., 5, 1% vol. Alc, 5 IBU"
     },
     {
-      "pozice": 8,
-      "pivovar": "Hubertus Kácov",
-      "nazev": "Zelený Chmel",
-      "stupen": "12",
-      "alkohol": "4.7",
-      "styl": "světlý ležák s čerstvým chmelem",
-      "dalsi": "",
-      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4, 7% vol. Alc"
-    },
-    {
-      "pozice": 9,
+      "pozice": 7,
       "pivovar": "Volt",
       "nazev": "Zdroj",
       "stupen": "12",

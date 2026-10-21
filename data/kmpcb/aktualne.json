@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-10-20 11:27",
+  "zmeneno": "2026-10-21 11:23",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,16 +45,6 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Hulvát",
-      "nazev": "POLO",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Hulvát POLO 11° polotm.nef."
-    },
-    {
-      "pozice": 6,
       "pivovar": "Kynšperský ZAJÍC",
       "nazev": "",
       "stupen": "12",
@@ -62,6 +52,16 @@
       "styl": "",
       "dalsi": "",
       "raw": "Kynšperský ZAJÍC 12° sv.nef."
+    },
+    {
+      "pozice": 6,
+      "pivovar": "->",
+      "nazev": "Hulvát ležák",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "Ležák",
+      "dalsi": "",
+      "raw": "-> Hulvát ležák 12° sv.nef."
     },
     {
       "pozice": 7,
@@ -175,26 +175,16 @@
     },
     {
       "pozice": 18,
-      "pivovar": "Kasteel",
-      "nazev": "Rouge",
-      "stupen": "",
-      "alkohol": "8",
-      "styl": "(BELGIE - VIŠEŇ)",
+      "pivovar": "Mazák",
+      "nazev": "Baltic PORTER",
+      "stupen": "18",
+      "alkohol": "",
+      "styl": "tmavé",
       "dalsi": "",
-      "raw": "Kasteel Rouge 8%Alc. (BELGIE - VIŠEŇ)"
+      "raw": "Mazák Baltic PORTER 18° tmavé nef."
     },
     {
       "pozice": 19,
-      "pivovar": "Čestmír",
-      "nazev": "Astro Creep",
-      "stupen": "14",
-      "alkohol": "",
-      "styl": "STOUT",
-      "dalsi": "",
-      "raw": "Čestmír Astro Creep 14° STOUT"
-    },
-    {
-      "pozice": 20,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",
