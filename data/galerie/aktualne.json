@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-21 18:58",
+  "zmeneno": "2026-10-21 20:28",
   "metoda": "nadpis",
   "piva": [
     {
@@ -26,12 +26,12 @@
     {
       "pozice": 3,
       "pivovar": "NOZIB",
-      "nazev": "Stencil",
+      "nazev": "Cold as Equanot",
       "stupen": "14",
-      "alkohol": "6.7",
-      "styl": "West Coast IPA (simcoe, strata)",
+      "alkohol": "6.5",
+      "styl": "Cold IPA (equanot)",
       "dalsi": "",
-      "raw": "NOZIB – Stencil 14°/6,7%/65IBU West Coast IPA (simcoe, strata)"
+      "raw": "NOZIB – Cold as Equanot 14°/6,5% Cold IPA (equanot)"
     },
     {
       "pozice": 4,
