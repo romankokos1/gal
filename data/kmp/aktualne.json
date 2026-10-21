@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-21 11:23",
+  "zmeneno": "2026-10-21 17:27",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,16 +25,36 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Kojetín",
-      "nazev": "Kočkodan",
+      "pivovar": "Poutník",
+      "nazev": "Kvasnicový",
       "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "polotmavý ležák, polo.",
+      "alkohol": "5",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Kojetín - Kočkodan, polotmavý ležák, 12° polo. nef., 4, 8% vol. Alc, 25 IBU"
+      "raw": "Poutník - Kvasnicový, světlý ležák, 12° sv., 5% vol. Alc"
     },
     {
       "pozice": 4,
+      "pivovar": "Poutník",
+      "nazev": "Extra hořký",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Poutník - Extra hořký, světlý ležák, 12° sv., 5% vol. Alc"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Poutník",
+      "nazev": "Lucie",
+      "stupen": "11",
+      "alkohol": "5",
+      "styl": "tmavý ležák",
+      "dalsi": "",
+      "raw": "Poutník - Lucie, tmavý ležák, 11° tm., 5% vol. Alc"
+    },
+    {
+      "pozice": 6,
       "pivovar": "The Barn Beer Co.",
       "nazev": "Randy",
       "stupen": "11",
@@ -44,7 +64,7 @@
       "raw": "The Barn Beer Co. - Randy, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc"
     },
     {
-      "pozice": 5,
+      "pozice": 7,
       "pivovar": "Chroust",
       "nazev": "Age of Krush Fresh Hop",
       "stupen": "14",
@@ -54,7 +74,7 @@
       "raw": "Chroust - Age of Krush Fresh Hop, West Coast IPA se zeleným chmelem, 14° sv. nef., 5, 8% vol. Alc"
     },
     {
-      "pozice": 6,
+      "pozice": 8,
       "pivovar": "CLOCK",
       "nazev": "Black Currant Sour",
       "stupen": "12",
@@ -64,7 +84,17 @@
       "raw": "CLOCK - Black Currant Sour, kyseláč s černým rybízem, 12° sv. nef., 5, 1% vol. Alc, 5 IBU"
     },
     {
-      "pozice": 7,
+      "pozice": 9,
+      "pivovar": "Kojetín",
+      "nazev": "Kočkodan",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "polotmavý ležák, polo.",
+      "dalsi": "",
+      "raw": "Kojetín - Kočkodan, polotmavý ležák, 12° polo. nef., 4, 8% vol. Alc, 25 IBU"
+    },
+    {
+      "pozice": 10,
       "pivovar": "Volt",
       "nazev": "Zdroj",
       "stupen": "12",
