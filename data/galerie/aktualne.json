@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-20 23:01",
+  "zmeneno": "2026-10-21 15:26",
   "metoda": "nadpis",
   "piva": [
     {
@@ -27,11 +27,11 @@
       "pozice": 3,
       "pivovar": "NOZIB",
       "nazev": "Stencil",
-      "stupen": "",
+      "stupen": "14",
       "alkohol": "6.7",
       "styl": "West Coast IPA (simcoe, strata)",
       "dalsi": "",
-      "raw": "NOZIB – Stencil 6,7%/65IBU West Coast IPA (simcoe, strata)"
+      "raw": "NOZIB – Stencil 14°/6,7%/65IBU West Coast IPA (simcoe, strata)"
     },
     {
       "pozice": 4,
