@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-21 20:28",
+  "zmeneno": "2026-10-21 20:58",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "CHROUST",
-      "nazev": "Ice Tea Sour",
-      "stupen": "",
+      "pivovar": "SKJUBRU",
+      "nazev": "Orange Yourself",
+      "stupen": "11",
       "alkohol": "4.5",
-      "styl": "kyseláč s limetkou a jasmínovým a sencha čajem",
+      "styl": "sour ale s pomerančem a kávou",
       "dalsi": "",
-      "raw": "CHROUST – Ice Tea Sour 4,5% kyseláč s limetkou a jasmínovým a sencha čajem"
+      "raw": "SKJUBRU – Orange Yourself 11°/4,5% sour ale s pomerančem a kávou"
     }
   ]
 }
