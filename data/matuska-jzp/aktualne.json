@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-10-20 11:27",
+  "zmeneno": "2026-10-21 23:29",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "OBORA",
-      "nazev": "MALINA",
-      "stupen": "12",
-      "alkohol": "4.2",
-      "styl": "PHILADELPHIA SOUR",
+      "pivovar": "Matuška",
+      "nazev": "FRESH ERIS",
+      "stupen": "11",
+      "alkohol": "4.9",
+      "styl": "WET HOP PALE ALE",
       "dalsi": "",
-      "raw": "OBORA: MALINA | PHILADELPHIA SOUR | 12° | 4,2 %"
+      "raw": "FRESH ERIS | WET HOP PALE ALE | 11° | 4,9 %"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Matuška",
-      "nazev": "FRESH ERIS",
+      "pivovar": "OBORA",
+      "nazev": "GUAVA & CALAMANSI",
       "stupen": "11",
-      "alkohol": "4.9",
-      "styl": "WET HOP PALE ALE",
+      "alkohol": "3.8",
+      "styl": "PHILADELPHIA SOUR",
       "dalsi": "",
-      "raw": "FRESH ERIS | WET HOP PALE ALE | 11° | 4,9 %"
+      "raw": "OBORA: GUAVA & CALAMANSI | PHILADELPHIA SOUR | 11° | 3,8 %"
     },
     {
       "pozice": 7,
