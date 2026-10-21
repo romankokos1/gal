@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-21 17:27",
+  "zmeneno": "2026-10-21 21:28",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "",
-      "nazev": "Kasteel Rubus Framboise",
+      "nazev": "Kasteel Rouge",
       "stupen": "18",
-      "alkohol": "7",
-      "styl": "Belgický malinový speciál",
+      "alkohol": "8",
+      "styl": "belgický višňový speciál",
       "dalsi": "",
-      "raw": "Kasteel Rubus Framboise, Belgický malinový speciál, 18° tm. nef., 7% vol. Alc"
+      "raw": "Kasteel Rouge, belgický višňový speciál, 18° tm., 8% vol. Alc"
     },
     {
       "pozice": 3,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Chroust",
-      "nazev": "Age of Krush Fresh Hop",
-      "stupen": "14",
-      "alkohol": "5.8",
-      "styl": "West Coast IPA se zeleným chmelem",
+      "pivovar": "Matuška",
+      "nazev": "Apollo Galaxy",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Chroust - Age of Krush Fresh Hop, West Coast IPA se zeleným chmelem, 14° sv. nef., 5, 8% vol. Alc"
+      "raw": "Matuška - Apollo Galaxy, American Pale Ale, 13° sv. nef., 5, 5% vol. Alc"
     },
     {
       "pozice": 8,
