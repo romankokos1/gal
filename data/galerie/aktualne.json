@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-22 16:28",
+  "zmeneno": "2026-10-22 20:08",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Fresh Saaz 2026",
+      "pivovar": "SIBEERIA",
+      "nazev": "Everyday Life",
       "stupen": "12",
       "alkohol": "5.1",
-      "styl": "světlý ležák z čerstvého chmele",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "ZICHOVEC – Fresh Saaz 2026 12°/5,1% světlý ležák z čerstvého chmele"
+      "raw": "SIBEERIA – Everyday Life 12°/5,1% světlý ležák"
     },
     {
       "pozice": 2,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "SKJUBRU + GALERIE PIVA",
-      "nazev": "Tohle Se Muselo Stout",
-      "stupen": "13",
-      "alkohol": "6.2",
-      "styl": "Stout s čokoládou a malinou",
+      "pivovar": "VIK",
+      "nazev": "Deep Woods",
+      "stupen": "",
+      "alkohol": "8.8",
+      "styl": "Double West Coast IPA (citra, simcoe, idaho 7)",
       "dalsi": "",
-      "raw": "SKJUBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,2% Stout s čokoládou a malinou"
+      "raw": "VIK – Deep Woods 8,8%/70IBU Double West Coast IPA (citra, simcoe, idaho 7)"
     },
     {
       "pozice": 5,
