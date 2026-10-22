@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-22 11:26",
+  "zmeneno": "2026-10-22 15:27",
   "metoda": "selektor",
   "piva": [
     {
@@ -36,12 +36,12 @@
     {
       "pozice": 4,
       "pivovar": "Poutník",
-      "nazev": "Extra hořký",
-      "stupen": "12",
-      "alkohol": "5",
+      "nazev": "Kvasnicový",
+      "stupen": "11",
+      "alkohol": "4.5",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Poutník - Extra hořký, světlý ležák, 12° sv., 5% vol. Alc"
+      "raw": "Poutník - Kvasnicový, světlý ležák, 11° sv., 4, 5% vol. Alc"
     },
     {
       "pozice": 5,
