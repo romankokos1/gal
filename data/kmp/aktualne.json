@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-21 21:28",
+  "zmeneno": "2026-10-22 11:26",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Poutník",
-      "nazev": "Kvasnicový",
+      "pivovar": "Radouš",
+      "nazev": "Pilsner Ilgner",
       "stupen": "12",
-      "alkohol": "5",
+      "alkohol": "4.5",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Poutník - Kvasnicový, světlý ležák, 12° sv., 5% vol. Alc"
+      "raw": "Radouš - Pilsner Ilgner, světlý ležák, 12° sv. nef., 4, 5% vol. Alc, 38 IBU"
     },
     {
       "pozice": 4,
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Volt",
-      "nazev": "Zdroj",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "světlý ležák",
+      "pivovar": "Permon",
+      "nazev": "Pumpkin Ale",
+      "stupen": "15",
+      "alkohol": "6.5",
+      "styl": "dýňový Pale Ale",
       "dalsi": "",
-      "raw": "Volt - Zdroj, světlý ležák, 12° sv. nef., 5% vol. Alc"
+      "raw": "Permon - Pumpkin Ale, dýňový Pale Ale, 15° sv. nef., 6, 5% vol. Alc, 60 IBU"
     }
   ]
 }

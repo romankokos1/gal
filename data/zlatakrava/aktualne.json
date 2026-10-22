@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zk.vhost.cz/",
-  "zmeneno": "2026-10-15 13:49",
+  "zmeneno": "2026-10-22 11:26",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "Zlatá kráva",
-      "nazev": "YELLOW COW",
-      "stupen": "12",
+      "nazev": "TRACTOR IPA",
+      "stupen": "14",
       "alkohol": "",
-      "styl": "Neobyčejné spojení sladů, chmele a citronů dalo vznik tomuto lahodnému pivu",
+      "styl": "Pivo s měděným odstínem má jemnou chmelovou vůni citrusových plodů, v doznívání je pak…",
       "dalsi": "",
-      "raw": "Zlatá kráva | 12 YELLOW COW | Neobyčejné spojení sladů, chmele a citronů dalo vznik tomuto lahodnému pivu"
+      "raw": "Zlatá kráva | 14 TRACTOR IPA | Pivo s měděným odstínem má jemnou chmelovou vůni citrusových plodů, v doznívání je pak výrazná chmelová hořkost."
     },
     {
       "pozice": 3,
