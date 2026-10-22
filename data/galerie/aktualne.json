@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-22 14:57",
+  "zmeneno": "2026-10-22 16:28",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "ČESTMÍR",
-      "nazev": "Brandejs",
+      "pivovar": "ZICHOVEC",
+      "nazev": "Fresh Saaz 2026",
       "stupen": "12",
-      "alkohol": "4.9",
-      "styl": "světlý ležák",
-      "dalsi": "ZICHOVEC – Fresh Saaz 2026 12°/5,1% světlý ležák z čerstvého chmele",
-      "raw": "ČESTMÍR – Brandejs 12°/4,9% světlý ležák //NEXT// ZICHOVEC – Fresh Saaz 2026 12°/5,1% světlý ležák z čerstvého chmele"
+      "alkohol": "5.1",
+      "styl": "světlý ležák z čerstvého chmele",
+      "dalsi": "",
+      "raw": "ZICHOVEC – Fresh Saaz 2026 12°/5,1% světlý ležák z čerstvého chmele"
     },
     {
       "pozice": 2,
