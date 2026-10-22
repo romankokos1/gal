@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-22 15:27",
+  "zmeneno": "2026-10-22 19:38",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Poutník",
-      "nazev": "Lucie",
-      "stupen": "11",
-      "alkohol": "5",
-      "styl": "tmavý ležák",
+      "pivovar": "SQBRU",
+      "nazev": "Tohle se muselo Stout",
+      "stupen": "13",
+      "alkohol": "6.2",
+      "styl": "Stout s malinami a čokoládou",
       "dalsi": "",
-      "raw": "Poutník - Lucie, tmavý ležák, 11° tm., 5% vol. Alc"
+      "raw": "SQBRU - Tohle se muselo Stout, Stout s malinami a čokoládou, 13° tm. nef., 6, 2% vol. Alc"
     },
     {
       "pozice": 6,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Matuška",
-      "nazev": "Apollo Galaxy",
+      "pivovar": "Permon",
+      "nazev": "Hazy Citra",
       "stupen": "13",
       "alkohol": "5.5",
-      "styl": "American Pale Ale",
+      "styl": "Hazy Pale Ale",
       "dalsi": "",
-      "raw": "Matuška - Apollo Galaxy, American Pale Ale, 13° sv. nef., 5, 5% vol. Alc"
+      "raw": "Permon - Hazy Citra, Hazy Pale Ale, 13° sv. nef., 5, 5% vol. Alc, 20 IBU"
     },
     {
       "pozice": 8,
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Kojetín",
-      "nazev": "Kočkodan",
-      "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "polotmavý ležák, polo.",
+      "pivovar": "Sibeeria + Namachan Brewing",
+      "nazev": "Smoke Lady",
+      "stupen": "14",
+      "alkohol": "5.5",
+      "styl": "Rauchbier",
       "dalsi": "",
-      "raw": "Kojetín - Kočkodan, polotmavý ležák, 12° polo. nef., 4, 8% vol. Alc, 25 IBU"
+      "raw": "Sibeeria + Namachan Brewing - Smoke Lady, Rauchbier, 14° tm. nef., 5, 5% vol. Alc"
     },
     {
       "pozice": 10,
