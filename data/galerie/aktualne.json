@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-23 17:24",
+  "zmeneno": "2026-10-23 20:26",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "NOZIB",
-      "nazev": "Cold as Equanot",
-      "stupen": "14",
+      "pivovar": "MAZÁK",
+      "nazev": "Podzimí IPA",
+      "stupen": "15",
       "alkohol": "6.5",
-      "styl": "Cold IPA (equanot)",
+      "styl": "IPA (mosaic, citra, simcoe)",
       "dalsi": "",
-      "raw": "NOZIB – Cold as Equanot 14°/6,5% Cold IPA (equanot)"
+      "raw": "MAZÁK – Podzimí IPA 15°/6,5% IPA (mosaic, citra, simcoe)"
     },
     {
       "pozice": 4,
