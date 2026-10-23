@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-23 19:25",
+  "zmeneno": "2026-10-23 21:26",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Jungberg",
-      "nazev": "300 Kurven",
-      "stupen": "10",
-      "alkohol": "4.2",
+      "pivovar": "Kladno-Kročehlavy",
+      "nazev": "Kladenský Ležák",
+      "stupen": "12",
+      "alkohol": "5.2",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Jungberg - 300 Kurven | 10% | Lager, ABV 4,2%"
+      "raw": "Kladno-Kročehlavy - Kladenský Ležák | 12% | Lager, ABV 5,2%"
     },
     {
       "pozice": 2,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Chroust",
-      "nazev": "Ice Tea Sour",
-      "stupen": "11",
-      "alkohol": "4.5",
+      "pivovar": "SQBRU",
+      "nazev": "Cherries Only Fools",
+      "stupen": "10",
+      "alkohol": "4.2",
       "styl": "Sour",
       "dalsi": "",
-      "raw": "Chroust - Ice Tea Sour | 11% | Sour, ABV 4,5%"
+      "raw": "SQBRU - Cherries Only Fools | 10% | Sour, ABV 4,2%"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Chroust",
-      "nazev": "Jet Lag",
-      "stupen": "12",
-      "alkohol": "5.2",
-      "styl": "APA",
+      "pivovar": "Čestmír",
+      "nazev": "Nocturno",
+      "stupen": "13",
+      "alkohol": "5.7",
+      "styl": "IPA",
       "dalsi": "",
-      "raw": "Chroust - Jet Lag | 12% | APA, ABV 5,2%"
+      "raw": "Čestmír - Nocturno | 13% | IPA, ABV 5,7%"
     },
     {
       "pozice": 7,
