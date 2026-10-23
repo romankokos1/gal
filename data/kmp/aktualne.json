@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-23 17:24",
+  "zmeneno": "2026-10-23 19:25",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "CLOCK",
-      "nazev": "Black Currant Sour",
-      "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "kyseláč s černým rybízem",
+      "pivovar": "Chroust",
+      "nazev": "Rybízový knedlík",
+      "stupen": "20",
+      "alkohol": "6",
+      "styl": "Pastry Sour s červeným rybízem, vanilkou a skořicí",
       "dalsi": "",
-      "raw": "CLOCK - Black Currant Sour, kyseláč s černým rybízem, 12° sv. nef., 5, 1% vol. Alc, 5 IBU"
+      "raw": "Chroust - Rybízový knedlík, Pastry Sour s červeným rybízem, vanilkou a skořicí, 20° sv. nef., 6% vol. Alc, 5 IBU"
     },
     {
       "pozice": 9,

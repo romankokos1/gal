@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-23 17:24",
+  "zmeneno": "2026-10-23 19:25",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Chroust",
-      "nazev": "Age Of Krush Fresh Hop",
-      "stupen": "14",
-      "alkohol": "5.8",
-      "styl": "West Coast IPA",
+      "pivovar": "Václav",
+      "nazev": "Munich VIce",
+      "stupen": "12",
+      "alkohol": "5.2",
+      "styl": "Bavarian Hazy Ale",
       "dalsi": "",
-      "raw": "Chroust - Age Of Krush Fresh Hop | 14% | West Coast IPA, ABV 5,8%"
+      "raw": "Václav - Munich VIce | 12% | Bavarian Hazy Ale, ABV 5,2%"
     }
   ]
 }
