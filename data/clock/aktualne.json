@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-10-22 11:26",
+  "zmeneno": "2026-10-23 11:22",
   "metoda": "nadpis",
   "piva": [
     {
@@ -46,12 +46,12 @@
     {
       "pozice": 5,
       "pivovar": "Clock",
-      "nazev": "Twist",
+      "nazev": "Antonio",
       "stupen": "14",
       "alkohol": "",
-      "styl": "Red IPA",
+      "styl": "Grapefruit Brut IPA",
       "dalsi": "",
-      "raw": "14° Twist (Red IPA)"
+      "raw": "14° Antonio (Grapefruit Brut IPA)"
     },
     {
       "pozice": 6,
