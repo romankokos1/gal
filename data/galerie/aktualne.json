@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-23 20:26",
+  "zmeneno": "2026-10-23 23:57",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "CHROUST",
-      "nazev": "Světlé",
+      "pivovar": "CLOCK",
+      "nazev": "Anežka",
       "stupen": "11",
-      "alkohol": "5.1",
-      "styl": "světlý ležák",
+      "alkohol": "4.8",
+      "styl": "světlý ležák se sníženým lepkem",
       "dalsi": "",
-      "raw": "CHROUST – Světlé 11°/5,1% světlý ležák"
+      "raw": "CLOCK – Anežka 11°/4,8% světlý ležák se sníženým lepkem"
     },
     {
       "pozice": 2,
@@ -26,12 +26,12 @@
     {
       "pozice": 3,
       "pivovar": "MAZÁK",
-      "nazev": "Podzimí IPA",
+      "nazev": "Podzimní IPA",
       "stupen": "15",
       "alkohol": "6.5",
       "styl": "IPA (mosaic, citra, simcoe)",
       "dalsi": "",
-      "raw": "MAZÁK – Podzimí IPA 15°/6,5% IPA (mosaic, citra, simcoe)"
+      "raw": "MAZÁK – Podzimní IPA 15°/6,5% IPA (mosaic, citra, simcoe)"
     },
     {
       "pozice": 4,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "SKJUBRU",
-      "nazev": "Orange Yourself",
+      "pivovar": "OBORA",
+      "nazev": "Guava & Calamansi",
       "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "sour ale s pomerančem a kávou",
+      "alkohol": "3.8",
+      "styl": "sour ale s guavou a calamansi",
       "dalsi": "",
-      "raw": "SKJUBRU – Orange Yourself 11°/4,5% sour ale s pomerančem a kávou"
+      "raw": "OBORA – Guava & Calamansi 11°/3,8% sour ale s guavou a calamansi"
     }
   ]
 }
