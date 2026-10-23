@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-22 19:38",
+  "zmeneno": "2026-10-23 17:24",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Radouš",
-      "nazev": "Pilsner Ilgner",
+      "pivovar": "Hubertus Kácov",
+      "nazev": "Zelený Chmel",
       "stupen": "12",
-      "alkohol": "4.5",
-      "styl": "světlý ležák",
+      "alkohol": "4.7",
+      "styl": "světlý ležák s čerstvým chmelem",
       "dalsi": "",
-      "raw": "Radouš - Pilsner Ilgner, světlý ležák, 12° sv. nef., 4, 5% vol. Alc, 38 IBU"
+      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4, 7% vol. Alc"
     },
     {
       "pozice": 4,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "The Barn Beer Co.",
-      "nazev": "Randy",
-      "stupen": "11",
-      "alkohol": "4.6",
-      "styl": "American Pale Ale",
+      "pivovar": "Radouš",
+      "nazev": "Magický Motýl",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "Session India Pale Ale",
       "dalsi": "",
-      "raw": "The Barn Beer Co. - Randy, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc"
+      "raw": "Radouš - Magický Motýl, Session India Pale Ale, 12° sv. nef., 5% vol. Alc"
     },
     {
       "pozice": 7,

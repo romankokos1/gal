@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-23 16:24",
+  "zmeneno": "2026-10-23 17:24",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "ČERNÝ POTOKA",
-      "nazev": "Cold Fish",
-      "stupen": "11",
-      "alkohol": "4.6",
-      "styl": "session Hazy IPA (columbus, enigma, mosaic)",
+      "pivovar": "CHROUST",
+      "nazev": "Jet Lag",
+      "stupen": "12",
+      "alkohol": "5.2",
+      "styl": "APA (dolcita, citra, simcoe)",
       "dalsi": "",
-      "raw": "ČERNÝ POTOKA – Cold Fish 11°/4,6% session Hazy IPA (columbus, enigma, mosaic)"
+      "raw": "CHROUST – Jet Lag 12°/5,2% APA (dolcita, citra, simcoe)"
     },
     {
       "pozice": 3,

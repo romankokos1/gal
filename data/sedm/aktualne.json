@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-22 17:28",
+  "zmeneno": "2026-10-23 17:24",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Preisler",
-      "nazev": "Tvrdá Práce",
-      "stupen": "12",
-      "alkohol": "5.2",
+      "pivovar": "Jungberg",
+      "nazev": "300 Kurven",
+      "stupen": "10",
+      "alkohol": "4.2",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Preisler - Tvrdá Práce | 12% | Lager, ABV 5,2%"
+      "raw": "Jungberg - 300 Kurven | 10% | Lager, ABV 4,2%"
     },
     {
       "pozice": 2,
