@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-10-23 13:23",
+  "zmeneno": "2026-10-24 10:54",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,66 +65,36 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Zvíkovský",
-      "nazev": "RARÁŠEK",
-      "stupen": "11",
+      "pivovar": "Schneider",
+      "nazev": "Weisse TAP7",
+      "stupen": "13",
       "alkohol": "",
       "styl": "pšeničné",
       "dalsi": "",
-      "raw": "Zvíkovský RARÁŠEK 11° pšeničné"
+      "raw": "Schneider Weisse TAP7 13° pšeničné"
     },
     {
       "pozice": 8,
       "pivovar": "Č.Potoka",
-      "nazev": "SIMONSIDE",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Best Bitter ALE",
-      "dalsi": "",
-      "raw": "Č.Potoka SIMONSIDE 11° Best Bitter ALE"
-    },
-    {
-      "pozice": 9,
-      "pivovar": "->",
-      "nazev": "Č.Potoka No Signal From Most",
+      "nazev": "No Signal From Most",
       "stupen": "11",
       "alkohol": "",
       "styl": "Session IPA",
       "dalsi": "",
-      "raw": "-> Č.Potoka No Signal From Most 11° Session IPA"
+      "raw": "Č.Potoka No Signal From Most 11° Session IPA"
     },
     {
-      "pozice": 10,
-      "pivovar": "Potmehúd",
-      "nazev": "SMaSH Rhapzody",
-      "stupen": "12.5",
-      "alkohol": "",
-      "styl": "ALE",
-      "dalsi": "",
-      "raw": "Potmehúd SMaSH Rhapzody 12,5° ALE"
-    },
-    {
-      "pozice": 11,
-      "pivovar": "->",
-      "nazev": "Zichovec MOSAIC ALE",
-      "stupen": "12",
+      "pozice": 9,
+      "pivovar": "Zichovec",
+      "nazev": "Mosaic ALE 12",
+      "stupen": "",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "-> Zichovec MOSAIC ALE 12°"
+      "raw": "Zichovec Mosaic ALE 12"
     },
     {
-      "pozice": 12,
-      "pivovar": "HoppyDog",
-      "nazev": "New Dog LUNA",
-      "stupen": "13",
-      "alkohol": "",
-      "styl": "NEIPA",
-      "dalsi": "",
-      "raw": "HoppyDog New Dog LUNA 13° NEIPA"
-    },
-    {
-      "pozice": 13,
+      "pozice": 10,
       "pivovar": "Clock",
       "nazev": "TWIST",
       "stupen": "14",
@@ -134,27 +104,17 @@
       "raw": "Clock TWIST 14° Red IPA"
     },
     {
-      "pozice": 14,
-      "pivovar": "Permon",
-      "nazev": "Sherpa",
-      "stupen": "16",
-      "alkohol": "",
-      "styl": "IPA",
-      "dalsi": "",
-      "raw": "Permon Sherpa 16° IPA"
-    },
-    {
-      "pozice": 15,
-      "pivovar": "->",
-      "nazev": "Čestmír TIWANAKU",
+      "pozice": 11,
+      "pivovar": "Čestmír",
+      "nazev": "TIWANAKU",
       "stupen": "17",
       "alkohol": "",
       "styl": "NEIPA",
       "dalsi": "",
-      "raw": "-> Čestmír TIWANAKU 17° NEIPA"
+      "raw": "Čestmír TIWANAKU 17° NEIPA"
     },
     {
-      "pozice": 16,
+      "pozice": 12,
       "pivovar": "Louka",
       "nazev": "BREAKFAST#001",
       "stupen": "11",
@@ -164,17 +124,7 @@
       "raw": "Louka BREAKFAST#001 11° Pastry Sour ALE"
     },
     {
-      "pozice": 17,
-      "pivovar": "Zichovec",
-      "nazev": "SOUR",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "Raspberry",
-      "dalsi": "",
-      "raw": "Zichovec SOUR 12° Raspberry"
-    },
-    {
-      "pozice": 18,
+      "pozice": 13,
       "pivovar": "->",
       "nazev": "Chroust Ice Tea SOUR",
       "stupen": "11",
@@ -184,17 +134,17 @@
       "raw": "-> Chroust Ice Tea SOUR 11°"
     },
     {
-      "pozice": 19,
-      "pivovar": "MagicRoad",
-      "nazev": "Road To Upside",
+      "pozice": 14,
+      "pivovar": "FunkyFluid",
+      "nazev": "Gelato: Passion Fruit",
       "stupen": "",
-      "alkohol": "4.5",
-      "styl": "Pastry SOUR (PL/CZ)",
+      "alkohol": "5.5",
+      "styl": "Mango, Peach, Pastry SOUR (PL)",
       "dalsi": "",
-      "raw": "MagicRoad Road To Upside 4,5%Alc. Pastry SOUR (PL/CZ)"
+      "raw": "FunkyFluid Gelato: Passion Fruit, Mango, Peach 5,5%Alc. Pastry SOUR (PL)"
     },
     {
-      "pozice": 20,
+      "pozice": 15,
       "pivovar": "Mazák",
       "nazev": "Baltic PORTER",
       "stupen": "18",
@@ -204,7 +154,7 @@
       "raw": "Mazák Baltic PORTER 18° tmavé nef."
     },
     {
-      "pozice": 21,
+      "pozice": 16,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",
