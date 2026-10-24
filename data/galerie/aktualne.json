@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-23 23:57",
+  "zmeneno": "2026-10-24 18:27",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,23 +15,23 @@
     },
     {
       "pozice": 2,
-      "pivovar": "CHROUST",
-      "nazev": "Jet Lag",
-      "stupen": "12",
+      "pivovar": "URPUTNÉ PÍPY",
+      "nazev": "Apalucha",
+      "stupen": "11",
       "alkohol": "5.2",
-      "styl": "APA (dolcita, citra, simcoe)",
+      "styl": "APA",
       "dalsi": "",
-      "raw": "CHROUST – Jet Lag 12°/5,2% APA (dolcita, citra, simcoe)"
+      "raw": "URPUTNÉ PÍPY – Apalucha 11°/5,2% APA"
     },
     {
       "pozice": 3,
-      "pivovar": "MAZÁK",
-      "nazev": "Podzimní IPA",
-      "stupen": "15",
-      "alkohol": "6.5",
-      "styl": "IPA (mosaic, citra, simcoe)",
+      "pivovar": "NOZIB",
+      "nazev": "Hazy Citra",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "Single Hop NEIPA",
       "dalsi": "",
-      "raw": "MAZÁK – Podzimní IPA 15°/6,5% IPA (mosaic, citra, simcoe)"
+      "raw": "NOZIB – Hazy Citra 13°/5,5%/40IBU Single Hop NEIPA"
     },
     {
       "pozice": 4,
