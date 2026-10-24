@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-24 16:56",
+  "zmeneno": "2026-10-24 20:57",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Poutník",
-      "nazev": "Kvasnicový",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "světlý ležák",
+      "pivovar": "Permon",
+      "nazev": "Sokolovská Desítka",
+      "stupen": "10",
+      "alkohol": "4",
+      "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "Poutník - Kvasnicový, světlý ležák, 11° sv., 4, 5% vol. Alc"
+      "raw": "Permon - Sokolovská Desítka, světlé výčepní, 10° sv. nef., 4% vol. Alc, 30 IBU"
     },
     {
       "pozice": 5,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Zichovec",
-      "nazev": "Juicy Lucy",
-      "stupen": "15",
-      "alkohol": "6.5",
-      "styl": "New England IPA",
+      "pivovar": "Permon",
+      "nazev": "Hazy Citra",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "Hazy Pale Ale",
       "dalsi": "",
-      "raw": "Zichovec - Juicy Lucy, New England IPA, 15° sv. nef., 6, 5% vol. Alc, 50 IBU"
+      "raw": "Permon - Hazy Citra, Hazy Pale Ale, 13° sv. nef., 5, 5% vol. Alc, 20 IBU"
     },
     {
       "pozice": 8,
