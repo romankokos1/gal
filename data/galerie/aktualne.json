@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-24 18:27",
+  "zmeneno": "2026-10-24 21:58",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "CLOCK",
-      "nazev": "Anežka",
-      "stupen": "11",
-      "alkohol": "4.8",
-      "styl": "světlý ležák se sníženým lepkem",
+      "pivovar": "VALEČ",
+      "nazev": "Úroda 2026 Eris",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "světlý ležák z čerstvého chmele",
       "dalsi": "",
-      "raw": "CLOCK – Anežka 11°/4,8% světlý ležák se sníženým lepkem"
+      "raw": "VALEČ – Úroda 2026 Eris 12°/5% světlý ležák z čerstvého chmele"
     },
     {
       "pozice": 2,
