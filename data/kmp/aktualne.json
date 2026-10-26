@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-24 20:57",
+  "zmeneno": "2026-10-26 11:10",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Permon",
-      "nazev": "Hazy Citra",
-      "stupen": "13",
-      "alkohol": "5.5",
-      "styl": "Hazy Pale Ale",
+      "pivovar": "Zichovec",
+      "nazev": "Juicy Lucy",
+      "stupen": "15",
+      "alkohol": "6.5",
+      "styl": "New England IPA",
       "dalsi": "",
-      "raw": "Permon - Hazy Citra, Hazy Pale Ale, 13° sv. nef., 5, 5% vol. Alc, 20 IBU"
+      "raw": "Zichovec - Juicy Lucy, New England IPA, 15° sv. nef., 6, 5% vol. Alc, 50 IBU"
     },
     {
       "pozice": 8,
