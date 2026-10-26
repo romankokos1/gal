@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-24 21:58",
+  "zmeneno": "2026-10-26 14:11",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "VALEČ",
-      "nazev": "Úroda 2026 Eris",
+      "pivovar": "JUNGBERG",
+      "nazev": "Hořický ležák PP",
       "stupen": "12",
-      "alkohol": "5",
-      "styl": "světlý ležák z čerstvého chmele",
+      "alkohol": "4.9",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "VALEČ – Úroda 2026 Eris 12°/5% světlý ležák z čerstvého chmele"
+      "raw": "JUNGBERG – Hořický ležák PP 12°/4,9% světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "URPUTNÉ PÍPY",
-      "nazev": "Apalucha",
+      "pivovar": "SIBEERIA",
+      "nazev": "Fresh Hop Czech Pale Ale",
       "stupen": "11",
       "alkohol": "5.2",
-      "styl": "APA",
+      "styl": "APA (juno, ceres)",
       "dalsi": "",
-      "raw": "URPUTNÉ PÍPY – Apalucha 11°/5,2% APA"
+      "raw": "SIBEERIA – Fresh Hop Czech Pale Ale 11°/5,2% APA (juno, ceres)"
     },
     {
       "pozice": 3,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "VIK",
-      "nazev": "Deep Woods",
-      "stupen": "",
-      "alkohol": "8.8",
-      "styl": "Double West Coast IPA (citra, simcoe, idaho 7)",
+      "pivovar": "ZICHOVEC",
+      "nazev": "Sv. Václav",
+      "stupen": "14",
+      "alkohol": "6",
+      "styl": "světlý ležák (žpč)",
       "dalsi": "",
-      "raw": "VIK – Deep Woods 8,8%/70IBU Double West Coast IPA (citra, simcoe, idaho 7)"
+      "raw": "ZICHOVEC – Sv. Václav 14°/6% světlý ležák (žpč)"
     },
     {
       "pozice": 5,
