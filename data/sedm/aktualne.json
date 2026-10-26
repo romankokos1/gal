@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-23 21:26",
+  "zmeneno": "2026-10-26 19:13",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Václav",
-      "nazev": "Munich VIce",
-      "stupen": "12",
-      "alkohol": "5.2",
-      "styl": "Bavarian Hazy Ale",
+      "pivovar": "Nozib",
+      "nazev": "bone dry",
+      "stupen": "14",
+      "alkohol": "6.6",
+      "styl": "neipa",
       "dalsi": "",
-      "raw": "Václav - Munich VIce | 12% | Bavarian Hazy Ale, ABV 5,2%"
+      "raw": "Nozib - bone dry | 14% | neipa, ABV 6,6%"
     }
   ]
 }
