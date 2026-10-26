@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-26 11:10",
+  "zmeneno": "2026-10-26 17:12",
   "metoda": "selektor",
   "piva": [
     {
@@ -36,12 +36,12 @@
     {
       "pozice": 4,
       "pivovar": "Permon",
-      "nazev": "Sokolovská Desítka",
-      "stupen": "10",
-      "alkohol": "4",
-      "styl": "světlé výčepní",
+      "nazev": "Sherpa",
+      "stupen": "16",
+      "alkohol": "7.5",
+      "styl": "India Pale Ale",
       "dalsi": "",
-      "raw": "Permon - Sokolovská Desítka, světlé výčepní, 10° sv. nef., 4% vol. Alc, 30 IBU"
+      "raw": "Permon - Sherpa, India Pale Ale, 16° sv. nef., 7, 5% vol. Alc, 62 IBU"
     },
     {
       "pozice": 5,
@@ -96,12 +96,12 @@
     {
       "pozice": 10,
       "pivovar": "Permon",
-      "nazev": "Pumpkin Ale",
-      "stupen": "15",
-      "alkohol": "6.5",
-      "styl": "dýňový Pale Ale",
+      "nazev": "Sokolovská Desítka",
+      "stupen": "10",
+      "alkohol": "4",
+      "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "Permon - Pumpkin Ale, dýňový Pale Ale, 15° sv. nef., 6, 5% vol. Alc, 60 IBU"
+      "raw": "Permon - Sokolovská Desítka, světlé výčepní, 10° sv. nef., 4% vol. Alc, 30 IBU"
     }
   ]
 }
