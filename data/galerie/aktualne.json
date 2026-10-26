@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-26 14:11",
+  "zmeneno": "2026-10-26 18:43",
   "metoda": "nadpis",
   "piva": [
     {
@@ -17,21 +17,21 @@
       "pozice": 2,
       "pivovar": "SIBEERIA",
       "nazev": "Fresh Hop Czech Pale Ale",
-      "stupen": "11",
-      "alkohol": "5.2",
+      "stupen": "12",
+      "alkohol": "5.1",
       "styl": "APA (juno, ceres)",
       "dalsi": "",
-      "raw": "SIBEERIA – Fresh Hop Czech Pale Ale 11°/5,2% APA (juno, ceres)"
+      "raw": "SIBEERIA – Fresh Hop Czech Pale Ale 12°/5,1% APA (juno, ceres)"
     },
     {
       "pozice": 3,
-      "pivovar": "NOZIB",
-      "nazev": "Hazy Citra",
-      "stupen": "13",
-      "alkohol": "5.5",
-      "styl": "Single Hop NEIPA",
+      "pivovar": "ČESTMÍR",
+      "nazev": "Tiwanaku",
+      "stupen": "17",
+      "alkohol": "7.2",
+      "styl": "Double NEIPA (galaxy, sabro)",
       "dalsi": "",
-      "raw": "NOZIB – Hazy Citra 13°/5,5%/40IBU Single Hop NEIPA"
+      "raw": "ČESTMÍR – Tiwanaku 17°/7,2%/43IBU Double NEIPA (galaxy, sabro)"
     },
     {
       "pozice": 4,
