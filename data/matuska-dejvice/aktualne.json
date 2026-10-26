@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
-  "zmeneno": "2026-10-18 09:59",
+  "zmeneno": "2026-10-26 15:11",
   "metoda": "selektor",
   "piva": [
     {
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "SIBEERIA",
-      "nazev": "MANGO MARAKUJA SORBET",
+      "pivovar": "Matuška",
+      "nazev": "FRESH ERIS",
       "stupen": "11",
-      "alkohol": "3.9",
-      "styl": "SOUR ALE",
+      "alkohol": "4.9",
+      "styl": "PALE ALE",
       "dalsi": "",
-      "raw": "SIBEERIA - MANGO MARAKUJA SORBET | SOUR ALE | 11° | 3,9 %"
+      "raw": "FRESH ERIS | PALE ALE | 11° | 4,9 %"
     }
   ]
 }
