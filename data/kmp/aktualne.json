@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-26 17:12",
+  "zmeneno": "2026-10-26 21:13",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "SQBRU",
-      "nazev": "Tohle se muselo Stout",
-      "stupen": "13",
-      "alkohol": "6.2",
-      "styl": "Stout s malinami a čokoládou",
+      "pivovar": "Brew Dog",
+      "nazev": "Black Heart",
+      "stupen": "11",
+      "alkohol": "4.1",
+      "styl": "Irish Dry Stout",
       "dalsi": "",
-      "raw": "SQBRU - Tohle se muselo Stout, Stout s malinami a čokoládou, 13° tm. nef., 6, 2% vol. Alc"
+      "raw": "Brew Dog - Black Heart, Irish Dry Stout, 11° tm., 4, 1% vol. Alc"
     },
     {
       "pozice": 6,
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Sibeeria + Namachan Brewing",
-      "nazev": "Smoke Lady",
-      "stupen": "14",
-      "alkohol": "5.5",
-      "styl": "Rauchbier",
+      "pivovar": "SQBRU",
+      "nazev": "Brezza Luppolata",
+      "stupen": "13",
+      "alkohol": "5.9",
+      "styl": "India Pale Lager",
       "dalsi": "",
-      "raw": "Sibeeria + Namachan Brewing - Smoke Lady, Rauchbier, 14° tm. nef., 5, 5% vol. Alc"
+      "raw": "SQBRU - Brezza Luppolata, India Pale Lager, 13° sv. nef., 5, 9% vol. Alc"
     },
     {
       "pozice": 10,
