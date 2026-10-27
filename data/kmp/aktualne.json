@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-27 12:51",
+  "zmeneno": "2026-10-27 18:53",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,23 +65,23 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Zichovec",
-      "nazev": "Juicy Lucy",
-      "stupen": "15",
-      "alkohol": "6.5",
-      "styl": "New England IPA",
+      "pivovar": "The Barn Beer Co.",
+      "nazev": "Xxtravaganza",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "Northern Extra Pale Ale",
       "dalsi": "",
-      "raw": "Zichovec - Juicy Lucy, New England IPA, 15° sv. nef., 6, 5% vol. Alc, 50 IBU"
+      "raw": "The Barn Beer Co. - Xxtravaganza, Northern Extra Pale Ale, 13° sv. nef., 5, 5% vol. Alc, 40 IBU"
     },
     {
       "pozice": 8,
-      "pivovar": "Chroust",
-      "nazev": "Rybízový knedlík",
-      "stupen": "20",
-      "alkohol": "6",
-      "styl": "Pastry Sour s červeným rybízem, vanilkou a skořicí",
+      "pivovar": "SQBRU",
+      "nazev": "Apricot Eclipse",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "kyseláč s meruňkami, calamansi a černým rybízem",
       "dalsi": "",
-      "raw": "Chroust - Rybízový knedlík, Pastry Sour s červeným rybízem, vanilkou a skořicí, 20° sv. nef., 6% vol. Alc, 5 IBU"
+      "raw": "SQBRU - Apricot Eclipse, kyseláč s meruňkami, calamansi a černým rybízem, 11° sv. nef., 4, 5% vol. Alc"
     },
     {
       "pozice": 9,

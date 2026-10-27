@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-26 19:13",
+  "zmeneno": "2026-10-27 18:53",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Preisler x Sedm° x ChIŽ",
-      "nazev": "Problém Trpaslíků V Mlze",
+      "pivovar": "vik x sedm",
+      "nazev": "7vikend with the hunters",
       "stupen": "13",
-      "alkohol": "6.2",
-      "styl": "Hazy IPA",
+      "alkohol": "5.3",
+      "styl": "sour",
       "dalsi": "",
-      "raw": "Preisler x Sedm° x ChIŽ - Problém Trpaslíků V Mlze | 13% | Hazy IPA, ABV 6,2%"
+      "raw": "vik x sedm - 7vikend with the hunters | 13% | sour, ABV 5,3%"
     },
     {
       "pozice": 3,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "SQBRU",
-      "nazev": "Cherries Only Fools",
-      "stupen": "10",
-      "alkohol": "4.2",
-      "styl": "Sour",
+      "pivovar": "",
+      "nazev": "obora- ale ne",
+      "stupen": "12",
+      "alkohol": "4.7",
+      "styl": "session neipa",
       "dalsi": "",
-      "raw": "SQBRU - Cherries Only Fools | 10% | Sour, ABV 4,2%"
+      "raw": "obora- ale ne | 12% | session neipa, ABV 4,7%"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Čestmír",
-      "nazev": "Nocturno",
-      "stupen": "13",
-      "alkohol": "5.7",
-      "styl": "IPA",
+      "pivovar": "",
+      "nazev": "blud . crispy džus",
+      "stupen": "14",
+      "alkohol": "6.4",
+      "styl": "west coast IPA",
       "dalsi": "",
-      "raw": "Čestmír - Nocturno | 13% | IPA, ABV 5,7%"
+      "raw": "blud . crispy džus | 14% | west coast IPA, ABV 6,4%"
     },
     {
       "pozice": 7,
