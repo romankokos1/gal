@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-27 19:54",
+  "zmeneno": "2026-10-27 21:25",
   "metoda": "nadpis",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Sv. Václav",
-      "stupen": "14",
-      "alkohol": "6",
-      "styl": "světlý ležák (žpč)",
-      "dalsi": "CLOCK – No Idols!: Pineapple IPA 11°/4,5%/40IBU session IPA s ananasem",
-      "raw": "ZICHOVEC – Sv. Václav 14°/6% světlý ležák (žpč) //NEXT// CLOCK – No Idols!: Pineapple IPA 11°/4,5%/40IBU session IPA s ananasem"
+      "pivovar": "CLOCK",
+      "nazev": "No Idols!: Pineapple IPA",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "session IPA s ananasem",
+      "dalsi": "",
+      "raw": "CLOCK – No Idols!: Pineapple IPA 11°/4,5%/40IBU session IPA s ananasem"
     },
     {
       "pozice": 5,
