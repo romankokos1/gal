@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-26 21:13",
+  "zmeneno": "2026-10-27 12:51",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Hubertus Kácov",
-      "nazev": "Zelený Chmel",
-      "stupen": "12",
-      "alkohol": "4.7",
-      "styl": "světlý ležák s čerstvým chmelem",
+      "pivovar": "Permon",
+      "nazev": "Zelený chmel",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "světlý ležák se zeleným chmelem",
       "dalsi": "",
-      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4, 7% vol. Alc"
+      "raw": "Permon - Zelený chmel, světlý ležák se zeleným chmelem, 11° sv. nef., 4, 5% vol. Alc, 37 IBU"
     },
     {
       "pozice": 4,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Brew Dog",
+      "pivovar": "Brewdog",
       "nazev": "Black Heart",
       "stupen": "11",
       "alkohol": "4.1",
       "styl": "Irish Dry Stout",
       "dalsi": "",
-      "raw": "Brew Dog - Black Heart, Irish Dry Stout, 11° tm., 4, 1% vol. Alc"
+      "raw": "Brewdog - Black Heart, Irish Dry Stout, 11° tm., 4, 1% vol. Alc"
     },
     {
       "pozice": 6,
