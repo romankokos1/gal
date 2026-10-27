@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "pivovar": "ZICHOVEC",
+    "nazev": "Juicy Lucy",
+    "stupen": "15",
+    "alkohol": "6.5",
+    "styl": "NEIPA",
+    "raw": "ZICHOVEC – Juicy Lucy 15°/6,5%/50IBU NEIPA"
+  },
+  {
+    "pivovar": "CLOCK",
+    "nazev": "No Idols!: Pineapple IPA",
+    "stupen": "11",
+    "alkohol": "4.5",
+    "styl": "session IPA s ananasem",
+    "raw": "CLOCK – No Idols!: Pineapple IPA 11°/4,5%/40IBU session IPA s ananasem"
+  }
+]

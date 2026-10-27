@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-27 13:51",
+  "zmeneno": "2026-10-27 19:54",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "MAZÁK",
-      "nazev": "Extra Hořká",
+      "pivovar": "PROKOPÁK",
+      "nazev": "Vochmelka",
       "stupen": "11",
-      "alkohol": "4.4",
-      "styl": "světlý ležák",
+      "alkohol": "4.5",
+      "styl": "světlý ležák z čerstvého žpč",
       "dalsi": "",
-      "raw": "MAZÁK – Extra Hořká 11°/4,4%/44IBU světlý ležák"
+      "raw": "PROKOPÁK – Vochmelka 11°/4,5% světlý ležák z čerstvého žpč"
     },
     {
       "pozice": 2,
-      "pivovar": "ČERNÝ POTOKA",
-      "nazev": "Cold Fish",
+      "pivovar": "VÁCLAV",
+      "nazev": "Murica",
       "stupen": "11",
-      "alkohol": "4.6",
-      "styl": "session Hazy IPA (columbus, enigma, mosaic)",
+      "alkohol": "4.3",
+      "styl": "APA (citra, cascade, obojí i v cryo verzi)",
       "dalsi": "",
-      "raw": "ČERNÝ POTOKA – Cold Fish 11°/4,6% session Hazy IPA (columbus, enigma, mosaic)"
+      "raw": "VÁCLAV – Murica 11°/4,3% APA (citra, cascade, obojí i v cryo verzi)"
     },
     {
       "pozice": 3,
@@ -30,8 +30,8 @@
       "stupen": "17",
       "alkohol": "7.2",
       "styl": "Double NEIPA (galaxy, sabro)",
-      "dalsi": "",
-      "raw": "ČESTMÍR – Tiwanaku 17°/7,2%/35IBU Double NEIPA (galaxy, sabro)"
+      "dalsi": "ZICHOVEC – Juicy Lucy 15°/6,5%/50IBU NEIPA",
+      "raw": "ČESTMÍR – Tiwanaku 17°/7,2%/35IBU Double NEIPA (galaxy, sabro) //NEXT// ZICHOVEC – Juicy Lucy 15°/6,5%/50IBU NEIPA"
     },
     {
       "pozice": 4,
@@ -40,8 +40,8 @@
       "stupen": "14",
       "alkohol": "6",
       "styl": "světlý ležák (žpč)",
-      "dalsi": "",
-      "raw": "ZICHOVEC – Sv. Václav 14°/6% světlý ležák (žpč)"
+      "dalsi": "CLOCK – No Idols!: Pineapple IPA 11°/4,5%/40IBU session IPA s ananasem",
+      "raw": "ZICHOVEC – Sv. Václav 14°/6% světlý ležák (žpč) //NEXT// CLOCK – No Idols!: Pineapple IPA 11°/4,5%/40IBU session IPA s ananasem"
     },
     {
       "pozice": 5,
