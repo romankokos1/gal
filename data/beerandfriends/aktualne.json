@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.beerandfriends.eu/beer-and-friends",
-  "zmeneno": "2026-10-20 17:29",
+  "zmeneno": "2026-10-27 10:50",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Fracek",
-      "nazev": "FINA CERVA",
+      "pivovar": "Čierny Kameň",
+      "nazev": "PIŇA COLLAPSE",
       "stupen": "",
-      "alkohol": "4.9",
-      "styl": "Catharina Sour",
+      "alkohol": "4.4",
+      "styl": "Pastry Sour",
       "dalsi": "",
-      "raw": "FINA CERVA – Catharina Sour (Fracek) · abv 4,9 %"
+      "raw": "PIŇA COLLAPSE – Pastry Sour (Čierny Kameň) · abv 4,4 %"
     },
     {
       "pozice": 2,
-      "pivovar": "Fracek",
-      "nazev": "DINGO STAR",
+      "pivovar": "Hope",
+      "nazev": "CALL ME CERES",
       "stupen": "",
-      "alkohol": "6",
-      "styl": "DDH Extra Pale Ale",
+      "alkohol": "5.4",
+      "styl": "Cold IPA",
       "dalsi": "",
-      "raw": "DINGO STAR – DDH Extra Pale Ale (Fracek) · abv 6 %"
+      "raw": "CALL ME CERES – Cold IPA (Hope) · abv 5,4 %"
     },
     {
       "pozice": 3,
@@ -46,12 +46,12 @@
     {
       "pozice": 5,
       "pivovar": "Fracek",
-      "nazev": "NO COMPASS",
+      "nazev": "LAGERF*CK 3:BROOVAN",
       "stupen": "",
-      "alkohol": "5",
-      "styl": "New Zealand Pils",
+      "alkohol": "5.1",
+      "styl": "I.P.Lager",
       "dalsi": "",
-      "raw": "NO COMPASS – New Zealand Pils (Fracek) · abv 5 %"
+      "raw": "LAGERF*CK 3:BROOVAN – I.P.Lager (Fracek) · abv 5,1 %**"
     },
     {
       "pozice": 6,
@@ -65,33 +65,33 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Čierny Kameň",
-      "nazev": "SMRTIHLAV",
+      "pivovar": "Čestmír",
+      "nazev": "TIWANAKU",
       "stupen": "",
-      "alkohol": "6.2",
-      "styl": "DDH American IPA",
+      "alkohol": "7.2",
+      "styl": "Double New England IPA",
       "dalsi": "",
-      "raw": "SMRTIHLAV – DDH American IPA (Čierny Kameň) · abv 6,2 %"
+      "raw": "TIWANAKU – Double New England IPA (Čestmír) · abv 7,2 %"
     },
     {
       "pozice": 8,
-      "pivovar": "Čierny Kameň",
-      "nazev": "PIŇA COLLAPSE",
+      "pivovar": "Fracek",
+      "nazev": "FINA CERVA",
       "stupen": "",
-      "alkohol": "4.4",
-      "styl": "Pastry Sour",
+      "alkohol": "4.9",
+      "styl": "Catharina Sour",
       "dalsi": "",
-      "raw": "PIŇA COLLAPSE – Pastry Sour (Čierny Kameň) · abv 4,4 %"
+      "raw": "FINA CERVA – Catharina Sour (Fracek) · abv 4,9 %"
     },
     {
       "pozice": 9,
       "pivovar": "Fracek",
-      "nazev": "LAZY CHARBONNAY",
+      "nazev": "HOPCHARGED SUMMER",
       "stupen": "",
-      "alkohol": "5",
-      "styl": "Grisette",
+      "alkohol": "4.5",
+      "styl": "Session IPA",
       "dalsi": "",
-      "raw": "LAZY CHARBONNAY – Grisette (Fracek) · abv 5 %"
+      "raw": "HOPCHARGED SUMMER – Session IPA (Fracek) · abv 4,5 %"
     }
   ]
 }
