@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-26 18:43",
+  "zmeneno": "2026-10-27 13:51",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "JUNGBERG",
-      "nazev": "Hořický ležák PP",
-      "stupen": "12",
-      "alkohol": "4.9",
+      "pivovar": "MAZÁK",
+      "nazev": "Extra Hořká",
+      "stupen": "11",
+      "alkohol": "4.4",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "JUNGBERG – Hořický ležák PP 12°/4,9% světlý ležák"
+      "raw": "MAZÁK – Extra Hořká 11°/4,4%/44IBU světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "SIBEERIA",
-      "nazev": "Fresh Hop Czech Pale Ale",
-      "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "APA (juno, ceres)",
+      "pivovar": "ČERNÝ POTOKA",
+      "nazev": "Cold Fish",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "session Hazy IPA (columbus, enigma, mosaic)",
       "dalsi": "",
-      "raw": "SIBEERIA – Fresh Hop Czech Pale Ale 12°/5,1% APA (juno, ceres)"
+      "raw": "ČERNÝ POTOKA – Cold Fish 11°/4,6% session Hazy IPA (columbus, enigma, mosaic)"
     },
     {
       "pozice": 3,
@@ -31,7 +31,7 @@
       "alkohol": "7.2",
       "styl": "Double NEIPA (galaxy, sabro)",
       "dalsi": "",
-      "raw": "ČESTMÍR – Tiwanaku 17°/7,2%/43IBU Double NEIPA (galaxy, sabro)"
+      "raw": "ČESTMÍR – Tiwanaku 17°/7,2%/35IBU Double NEIPA (galaxy, sabro)"
     },
     {
       "pozice": 4,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "OBORA",
-      "nazev": "Guava & Calamansi",
-      "stupen": "11",
-      "alkohol": "3.8",
-      "styl": "sour ale s guavou a calamansi",
+      "pivovar": "POTMEHÚD",
+      "nazev": "Acid Theory",
+      "stupen": "15",
+      "alkohol": "5.5",
+      "styl": "Sour IPA (citra, mosaic, nelson)",
       "dalsi": "",
-      "raw": "OBORA – Guava & Calamansi 11°/3,8% sour ale s guavou a calamansi"
+      "raw": "POTMEHÚD – Acid Theory 15°/5,5% Sour IPA (citra, mosaic, nelson)"
     }
   ]
 }
