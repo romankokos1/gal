@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-27 21:25",
+  "zmeneno": "2026-10-28 00:56",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "PROKOPÁK",
-      "nazev": "Vochmelka",
+      "pivovar": "MAZÁK",
+      "nazev": "Svatomartinský",
       "stupen": "11",
       "alkohol": "4.5",
-      "styl": "světlý ležák z čerstvého žpč",
+      "styl": "světlý ležák z čerstvého chmele (saaz shine, vital, sládek)",
       "dalsi": "",
-      "raw": "PROKOPÁK – Vochmelka 11°/4,5% světlý ležák z čerstvého žpč"
+      "raw": "MAZÁK – Svatomartinský 11°/4,5%/30IBU světlý ležák z čerstvého chmele (saaz shine, vital, sládek)"
     },
     {
       "pozice": 2,
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "ČESTMÍR",
-      "nazev": "Tiwanaku",
-      "stupen": "17",
-      "alkohol": "7.2",
-      "styl": "Double NEIPA (galaxy, sabro)",
-      "dalsi": "ZICHOVEC – Juicy Lucy 15°/6,5%/50IBU NEIPA",
-      "raw": "ČESTMÍR – Tiwanaku 17°/7,2%/35IBU Double NEIPA (galaxy, sabro) //NEXT// ZICHOVEC – Juicy Lucy 15°/6,5%/50IBU NEIPA"
+      "pivovar": "SIBEERIA",
+      "nazev": "Lollihop",
+      "stupen": "15",
+      "alkohol": "6.6",
+      "styl": "West Coast IPA (mosaic, citra)",
+      "dalsi": "",
+      "raw": "SIBEERIA – Lollihop 15°/6,6%/75IBU West Coast IPA (mosaic, citra)"
     },
     {
       "pozice": 4,
