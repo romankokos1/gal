@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-27 18:53",
+  "zmeneno": "2026-10-27 20:54",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Radouš",
-      "nazev": "Magický Motýl",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "Session India Pale Ale",
+      "pivovar": "",
+      "nazev": "Plzeňský Bandita",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Radouš - Magický Motýl, Session India Pale Ale, 12° sv. nef., 5% vol. Alc"
+      "raw": "Plzeňský Bandita, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc, 40 IBU"
     },
     {
       "pozice": 7,
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Permon",
-      "nazev": "Sokolovská Desítka",
+      "pivovar": "",
+      "nazev": "U Lenocha",
       "stupen": "10",
-      "alkohol": "4",
+      "alkohol": "3.8",
       "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "Permon - Sokolovská Desítka, světlé výčepní, 10° sv. nef., 4% vol. Alc, 30 IBU"
+      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3, 8% vol. Alc, 34 IBU"
     }
   ]
 }
