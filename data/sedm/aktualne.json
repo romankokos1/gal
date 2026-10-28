@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-28 17:39",
+  "zmeneno": "2026-10-28 23:41",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Kladno-Kročehlavy",
-      "nazev": "Kladenský Ležák",
-      "stupen": "12",
-      "alkohol": "5.2",
+      "pivovar": "kamenice",
+      "nazev": "kamenická",
+      "stupen": "10",
+      "alkohol": "4.2",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Kladno-Kročehlavy - Kladenský Ležák | 12% | Lager, ABV 5,2%"
+      "raw": "kamenice - kamenická | 10% | Lager, ABV 4,2%"
     },
     {
       "pozice": 2,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Chroust",
-      "nazev": "Narozeninový Mrkvový Dort",
-      "stupen": "20",
-      "alkohol": "6",
-      "styl": "Pastry Sour",
+      "pivovar": "Preisler x sedm x chiž",
+      "nazev": "problém trpaslíků v mlze",
+      "stupen": "13",
+      "alkohol": "6.2",
+      "styl": "hazy ipa",
       "dalsi": "",
-      "raw": "Chroust - Narozeninový Mrkvový Dort | 20% | Pastry Sour, ABV 6%"
+      "raw": "Preisler x sedm x chiž - problém trpaslíků v mlze | 13% | hazy ipa, ABV 6,2%"
     },
     {
       "pozice": 6,
