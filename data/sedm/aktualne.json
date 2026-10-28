@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-27 18:53",
+  "zmeneno": "2026-10-28 17:39",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Preisler",
-      "nazev": "Gerald Z Riwaky",
-      "stupen": "16",
-      "alkohol": "6.8",
-      "styl": "NEIPA",
+      "pivovar": "Chroust",
+      "nazev": "hoptopia",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "APA",
       "dalsi": "",
-      "raw": "Preisler - Gerald Z Riwaky | 16% | NEIPA, ABV 6,8%"
+      "raw": "Chroust - hoptopia | 12% | APA, ABV 5,3%"
     },
     {
       "pozice": 4,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Chroust x Moon Lark",
-      "nazev": "Baltic Express",
+      "pivovar": "jungberg",
+      "nazev": "lotus",
       "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "Session Hazy IPA",
+      "alkohol": "5.1",
+      "styl": "pale ale",
       "dalsi": "",
-      "raw": "Chroust x Moon Lark - Baltic Express | 12% | Session Hazy IPA, ABV 4,8%"
+      "raw": "jungberg - lotus | 12% | pale ale, ABV 5,1%"
     },
     {
       "pozice": 8,
