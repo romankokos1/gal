@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-28 14:08",
+  "zmeneno": "2026-10-28 19:10",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "VÁCLAV",
-      "nazev": "Murica",
+      "pivovar": "SIBEERIA",
+      "nazev": "One festival",
       "stupen": "11",
-      "alkohol": "4.3",
-      "styl": "APA (citra, cascade, obojí i v cryo verzi)",
+      "alkohol": "5.3",
+      "styl": "west coast pilsner ( riwaka, strata cgx, cascade, wakalu)",
       "dalsi": "",
-      "raw": "VÁCLAV – Murica 11°/4,3% APA (citra, cascade, obojí i v cryo verzi)"
+      "raw": "SIBEERIA – One festival 11°/5,3% west coast pilsner ( riwaka, strata cgx, cascade, wakalu)"
     },
     {
       "pozice": 3,
