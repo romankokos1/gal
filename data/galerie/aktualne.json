@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-28 00:56",
+  "zmeneno": "2026-10-28 14:08",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "SIBEERIA",
-      "nazev": "Lollihop",
+      "pivovar": "ZICHOVEC",
+      "nazev": "Juicy Lucy",
       "stupen": "15",
-      "alkohol": "6.6",
-      "styl": "West Coast IPA (mosaic, citra)",
+      "alkohol": "6.5",
+      "styl": "New England IPA",
       "dalsi": "",
-      "raw": "SIBEERIA – Lollihop 15°/6,6%/75IBU West Coast IPA (mosaic, citra)"
+      "raw": "ZICHOVEC – Juicy Lucy 15°/6,5%/50 IBU New England IPA"
     },
     {
       "pozice": 4,
