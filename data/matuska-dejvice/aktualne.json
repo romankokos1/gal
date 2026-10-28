@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
-  "zmeneno": "2026-10-26 15:11",
+  "zmeneno": "2026-10-28 21:40",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "7",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "Matuška",
+      "nazev": "ŽEMLOVKA",
+      "stupen": "17",
+      "alkohol": "6.3",
+      "styl": "SOUR ALE",
       "dalsi": "",
-      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
+      "raw": "ŽEMLOVKA | SOUR ALE | 17° | 6,3 %"
     },
     {
       "pozice": 7,
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "PREISLER",
-      "nazev": "NELSONA PILS?",
-      "stupen": "12",
-      "alkohol": "5.4",
-      "styl": "NZ PILS",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "7",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "PREISLER - NELSONA PILS? | NZ PILS | 12° | 5,4 %"
+      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
     },
     {
       "pozice": 9,
