@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-10-22 11:26",
+  "zmeneno": "2026-10-28 15:38",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Matuška",
-      "nazev": "FRESH ERIS",
-      "stupen": "11",
-      "alkohol": "4.9",
-      "styl": "WET HOP PALE ALE",
+      "pivovar": "OBORA",
+      "nazev": "MANGO MARAKUJA",
+      "stupen": "12",
+      "alkohol": "4.5",
+      "styl": "PHILADELPHIA SOUR",
       "dalsi": "",
-      "raw": "FRESH ERIS | WET HOP PALE ALE | 11° | 4,9 %"
+      "raw": "OBORA: MANGO MARAKUJA | PHILADELPHIA SOUR | 12° | 4,5 %"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "OBORA",
-      "nazev": "GUAVA & CALAMANSI",
+      "pivovar": "Matuška",
+      "nazev": "FRESH ERIS",
       "stupen": "11",
-      "alkohol": "3.8",
-      "styl": "SOUR ALE",
+      "alkohol": "4.9",
+      "styl": "WET HOP PALE ALE",
       "dalsi": "",
-      "raw": "OBORA: GUAVA & CALAMANSI | SOUR ALE | 11° | 3,8 %"
+      "raw": "FRESH ERIS | WET HOP PALE ALE | 11° | 4,9 %"
     },
     {
       "pozice": 7,

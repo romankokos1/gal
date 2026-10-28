@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-10-24 16:56",
+  "zmeneno": "2026-10-28 15:38",
   "metoda": "nadpis",
   "piva": [
     {
@@ -26,16 +26,6 @@
     {
       "pozice": 3,
       "pivovar": "Clock",
-      "nazev": "Pineapple",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Session IPA",
-      "dalsi": "",
-      "raw": "11° Pineapple (Session IPA)"
-    },
-    {
-      "pozice": 4,
-      "pivovar": "Clock",
       "nazev": "BlackCurrant",
       "stupen": "12",
       "alkohol": "",
@@ -44,14 +34,24 @@
       "raw": "12° BlackCurrant (Sour Ale)"
     },
     {
+      "pozice": 4,
+      "pivovar": "Clock",
+      "nazev": "Clock",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "American Pale Ale",
+      "dalsi": "",
+      "raw": "12° Clock (American Pale Ale)"
+    },
+    {
       "pozice": 5,
       "pivovar": "Clock",
-      "nazev": "Twist",
-      "stupen": "14",
+      "nazev": "Red Baron",
+      "stupen": "13",
       "alkohol": "",
-      "styl": "Red IPA",
+      "styl": "Smoked Lager",
       "dalsi": "",
-      "raw": "14° Twist (Red IPA)"
+      "raw": "13° Red Baron (Smoked Lager)"
     },
     {
       "pozice": 6,
