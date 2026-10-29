@@ -93,8 +93,22 @@ PODNIKY = [
 # (obyčejně i přes prohlížeč) do data/_pruzkum/<id>/, nic nesbírá a na stránce se neukáže.
 # Až bude podnik nastavený v PODNIKY, řádek odsud smaž.
 PRUZKUM = [
-    # kontrola, jak stránka opravdu vypadá (nastavení Falkenštejna je zatím odhad)
-    {"id": "falkenstejn", "url": "https://www.pivofalkenstejn.cz/restaurace/napojovy-listek.html"},
+    # hromadný průzkum pražských podniků (29. 10. 2026)
+    {"id": "beergeek", "url": "https://beergeek.cz/menu/"},
+    {"id": "crafthouse", "url": "https://www.crafthouse.cz/en/"},
+    {"id": "nubeerbar", "url": "https://nubeerbar.cz/online-menu"},
+    {"id": "beerknir", "url": "https://beerknir.cz/"},
+    {"id": "dcdyne", "url": "https://dcdyne.com/"},
+    {"id": "zlycasy", "url": "https://zlycasy.eu/section:spodni-bar/cepovana-piva"},
+    {"id": "badflash-karlin", "url": "https://badflash-karlin.cz/menu"},
+    {"id": "badflash-krymska", "url": "https://badflash-krymska.cz/online-menu"},
+    {"id": "kulovyblesk", "url": "https://www.restauracekulovyblesk.cz/dnesnacepu"},
+    {"id": "praguebeermuseum", "url": "https://praguebeermuseum.cz/en/"},
+    {"id": "pivovarskyklub", "url": "http://www.pivovarskyklub.com/pivo/"},
+    {"id": "dvakohouti", "url": "https://www.dvakohouti.cz/"},
+    {"id": "beerspot", "url": "https://beerspotprague.cz/beer-list/"},
+    {"id": "drinkoteka", "url": "https://drinkoteka.cz/"},
+    {"id": "pivnici-praha", "url": "https://www.pivnici.cz/na-cepu/praha/podrobne/"},
 ]
 
 ROOT = Path(__file__).parent / "data"
@@ -103,7 +117,7 @@ HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
              "raw", "narazeno", "docepovano", "dalsi", "odhad"]
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
-PARSER_VERSION = 9
+PARSER_VERSION = 10
 FAILS_BEFORE_ERROR = 3            # tolik neúspěšných stažení po sobě se toleruje
 DEFAULT_INTERVAL_MIN = 120        # podniky bez interval_min se stahují po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
@@ -362,6 +376,7 @@ def extract_lines(html: str, p: dict) -> tuple[list[str], str]:
     if p.get("bez_objemu"):          # „Světák 11° | 0,5 l | 0,3 l“ → „Světák 11°“
         lines = [clean(re.sub(r"\s*\|?\s*\b\d+(?:[.,]\d+)?\s*l\b\.?|\s*\|\s*(?=\||$)", " ", l)).strip(" |")
                  for l in lines]
+        lines = list(dict.fromkeys(lines))   # stejné pivo v řádku 0,5 l i 0,3 l = jedno pivo
     return [l for l in lines if not is_junk(l)], method
 
 
@@ -863,7 +878,8 @@ def replay(log: list[dict], p: dict):
     Vrací (historie, výsledek posledního kroku)."""
     hist, ann, prev, last = [], {}, "", None
     for e in log:
-        last = apply_state(hist, e["radky"], e["cas"], quiet=True,
+        radky = list(dict.fromkeys(e["radky"])) if p.get("bez_objemu") else e["radky"]
+        last = apply_state(hist, radky, e["cas"], quiet=True,
                            default_brewery=p.get("pivovar", ""), fmt=p.get("format", ""),
                            upcoming=e.get("pripraveno", []), ann=ann, prev_when=prev)
         prev = e["cas"]
@@ -1025,7 +1041,7 @@ def pruzkum():
                     (d / f"{pre}prohlizec.html").write_text(pg.content(), encoding="utf-8")
                     (d / f"{pre}prohlizec.txt").write_text(pg.inner_text("body"), encoding="utf-8")
                     (d / f"{pre}pozadavky.txt").write_text("\n".join(reqs) + "\n", encoding="utf-8")
-                    pg.screenshot(path=str(d / f"{pre}snimek.png"), full_page=True)
+                    pg.screenshot(path=str(d / f"{pre}snimek.jpg"), full_page=True, type="jpeg", quality=45)
                     # obsah vložených oken (iframe) – text v nich inner_text stránky nevidí
                     for i, fr in enumerate(pg.frames):
                         try:
