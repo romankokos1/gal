@@ -1,0 +1,2 @@
+obyčejné stažení: HTTP 200, 116333 znaků
+prohlížeč: uloženo

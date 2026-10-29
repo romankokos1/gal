@@ -1,0 +1,5 @@
+obyčejné stažení selhalo: HTTPSConnectionPool(host='www.restauracekulovyblesk.cz', port=443): Max retries exceeded with url: /dnesnacepu (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.restauracekulovyblesk.cz'. (_ssl.c:1010)")))
+prohlížeč selhal: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.restauracekulovyblesk.cz/dnesnacepu
+Call log:
+  - navigating to "https://www.restauracekulovyblesk.cz/dnesnacepu", waiting until "networkidle"
+

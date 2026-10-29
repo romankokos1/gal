@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivofalkenstejn.cz/restaurace/napojovy-listek.html",
-  "zmeneno": "2026-10-29 21:20",
+  "zmeneno": "2026-10-29 21:37",
   "metoda": "nadpis",
   "piva": [
     {
@@ -16,125 +16,55 @@
     {
       "pozice": 2,
       "pivovar": "Falkenštejn",
-      "nazev": "Světák",
-      "stupen": "11",
+      "nazev": "Ostroff",
+      "stupen": "12",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Světák 11°"
+      "raw": "Ostroff 12°"
     },
     {
       "pozice": 3,
       "pivovar": "Falkenštejn",
-      "nazev": "Ostroff",
-      "stupen": "12",
+      "nazev": "Dittrich",
+      "stupen": "14",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Ostroff 12°"
+      "raw": "Dittrich 14°"
     },
     {
       "pozice": 4,
       "pivovar": "Falkenštejn",
-      "nazev": "Ostroff",
-      "stupen": "12",
+      "nazev": "Svižnej Emil",
+      "stupen": "9",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Ostroff 12°"
+      "raw": "Svižnej Emil 9°"
     },
     {
       "pozice": 5,
       "pivovar": "Falkenštejn",
-      "nazev": "Dittrich",
-      "stupen": "14",
+      "nazev": "Deset!",
+      "stupen": "10",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Dittrich 14°"
+      "raw": "Deset! 10°"
     },
     {
       "pozice": 6,
       "pivovar": "Falkenštejn",
-      "nazev": "Dittrich",
-      "stupen": "14",
+      "nazev": "Desperát",
+      "stupen": "11",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Dittrich 14°"
+      "raw": "Desperát 11°"
     },
     {
       "pozice": 7,
-      "pivovar": "Falkenštejn",
-      "nazev": "Svižnej Emil",
-      "stupen": "9",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Svižnej Emil 9°"
-    },
-    {
-      "pozice": 8,
-      "pivovar": "Falkenštejn",
-      "nazev": "Svižnej Emil",
-      "stupen": "9",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Svižnej Emil 9°"
-    },
-    {
-      "pozice": 9,
-      "pivovar": "Falkenštejn",
-      "nazev": "Deset!",
-      "stupen": "10",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Deset! 10°"
-    },
-    {
-      "pozice": 10,
-      "pivovar": "Falkenštejn",
-      "nazev": "Deset!",
-      "stupen": "10",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Deset! 10°"
-    },
-    {
-      "pozice": 11,
-      "pivovar": "Falkenštejn",
-      "nazev": "Desperát",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Desperát 11°"
-    },
-    {
-      "pozice": 12,
-      "pivovar": "Falkenštejn",
-      "nazev": "Desperát",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Desperát 11°"
-    },
-    {
-      "pozice": 13,
-      "pivovar": "Falkenštejn",
-      "nazev": "Rudoch",
-      "stupen": "13",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Rudoch 13°"
-    },
-    {
-      "pozice": 14,
       "pivovar": "Falkenštejn",
       "nazev": "Rudoch",
       "stupen": "13",

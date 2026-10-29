@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head>
+  <title>TapList App | BeerGeek Bar</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style type="text/css">
+    BODY { background-color:#fff; color:#000; padding:0px; margin:0px; font-family:'Helvetica Neue', Helvetica, Arial; font-weight:300; -webkit-font-smoothing: subpixel-antialiased !important; }
+
+    #ONTAP { width:100%; table-layout:fixed; }
+    #ONTAP TD { height:70px; vertical-align:middle; padding:0; border-bottom:#f1f1f1 1px solid; }
+    #ONTAP TD.im { width:45px !important; padding-left:3px; line-height:100%; }
+    #ONTAP TD.im SPAN { display:inline-block; position:relative; width:31px; height:50px; margin:0; padding:0; }
+    #ONTAP TD.im SPAN SPAN { position:absolute; top:0; left:0; margin:36px 0 0 3px; height:12px; width:20px; color:#000; font:11px Arial; }
+    #ONTAP SPAN.white { color:#fff !important; }
+    #ONTAP TR:first-child TD { border-top:#f1f1f1 1px solid; }
+    #ONTAP H3 { color:#000; padding:0; margin:0 0 3px 0; font-family:'Open Sans', Arial; font-size:18px; font-weight:400; width:95%; overflow:hidden; white-space:nowrap; text-overflow: ellipsis; }
+    #ONTAP DIV { color:#333; padding:0; margin:0 0 2px 0; font-family:'Helvetica Neue', Arial; font-size:13px; font-style:italic; font-weight:300; width:95%; overflow:hidden; white-space:nowrap; text-overflow: ellipsis; }
+    #ONTAP IMG { height:50px; width:31px; border:none; }
+    #ONTAP IMG.none { height:48px; width:29px; border:rgba(0,0,0,0.2) 1px solid; }
+    #ONTAP TD.pr { width:60px !important; font-size:14px; white-space:nowrap; }
+    #ONTAP TD.pr VAL { display:inline-block; font-style:normal; vertical-align:top; background-color:#aaa; font-size:10px; color:#fff; padding:0px 3px 0px 3px; margin:2px 4px 0 0; border-radius:2px; }
+    #ONTAP TD.pr EM { font-style:normal; font-size:10px; margin-left:2px; }
+    #ONTAP TD.pr DIV { font-style:normal; }
+    #ONTAP TD.pr DIV + DIV { margin-top:5px; }
+  </style>
+<style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_dialog{background:#525252b3;position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:700;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v4/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v4/ya/r/3rhSv5V8j3o.gif) #fff no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:#0006;inset:0;min-height:100%;position:absolute;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba),to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:#fff 0 1px 1px -1px inset;color:#fff;font:700 14px Helvetica,sans-serif;text-overflow:ellipsis;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2),to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:700 12px Helvetica,sans-serif;margin:2px -12px;padding:2px 6px 3px;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:700;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v4/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4A4A4A;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4A4A4A;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v4/y2/r/onuUJj0tCqE.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+</style></head>
+<body>
+
+<script src="https://connect.facebook.net/en_US/bundle/sdk.js/" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script><script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1522364238033297',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+  <table width="100%" id="ONTAP"><tbody><tr><td class="im"><span><img src="/img/-.gif" class="none"><span>1</span></span></td><td>&nbsp;</td></tr>
+<tr><td class="im"><span><img src="/logo/fehernyul.png"><span class="white">2</span></span></td><td><h3>Fehér Nyúl Good Omen</h3><div>Imperial Pastry Stout, 8.2% ABV, HU</div></td></tr>
+<tr><td class="im"><span><img src="/logo/fehernyul.png"><span class="white">3</span></span></td><td><h3>Fehér Nyúl/Metalhead Down In A Hole</h3><div>Double IPA, 8.5% ABV, HU</div></td></tr>
+<tr><td class="im"><span><img src="/logo/parom.png"><span class="black">4</span></span></td><td><h3>Parom Veles</h3><div>Session IPA, 11°, 4.5% ABV, SK</div></td></tr>
+<tr><td class="im"><span><img src="/logo/parom.png"><span class="black">5</span></span></td><td><h3>Parom Öjebyn</h3><div>Blackcurrant Sour Ale, 11°, 4.6% ABV, SK</div></td></tr>
+<tr><td class="im"><span><img src="/logo/parom.png"><span class="black">6</span></span></td><td><h3>Parom Kračúň</h3><div>Nitro Milk White Stout, 15°, 6.5% ABV, SK</div></td></tr>
+<tr><td class="im"><span><img src="/logo/parom.png"><span class="black">7</span></span></td><td><h3>Parom Mangolica</h3><div>Calamansi &amp; Mango APA, 12°, 5.3% ABV, SK</div></td></tr>
+<tr><td class="im"><span><img src="/logo/boon.png"><span class="white">8</span></span></td><td><h3>Boon Foeder #101</h3><div>2-Year Unblended Oude Lambiek, 6.5% ABV, BE</div></td></tr>
+<tr><td class="im"><span><img src="/logo/fehernyul.png"><span class="white">9</span></span></td><td><h3>Fehér Nyúl RAFA</h3><div>Sour IPA, 6.8% ABV, HU</div></td></tr>
+<tr><td class="im"><span><img src="/logo/kasteelrouge.png"><span class="white">10</span></span></td><td><h3>Vanhonsebrouck Kasteel Rouge</h3><div>Belgian Strong Cherry Ale, 8% ABV, BE</div></td></tr>
+<tr><td class="im"><span><img src="/logo/schlenkerla.png"><span class="black">11</span></span></td><td><h3>Schlenkerla/PINTA á la Grodziskie</h3><div>Grodziskie, 2.9% ABV, DE</div></td></tr>
+<tr><td class="im"><span><img src="/img/-.gif" class="none"><span>12</span></span></td><td>&nbsp;</td></tr>
+<tr><td class="im"><span><img src="/logo/pintanew.png"><span class="white">13</span></span></td><td><h3>Pinta Bullseye</h3><div>Ordinary Bitter, 3.5% ABV, PL</div></td></tr>
+<tr><td class="im"><span><img src="/logo/beergeek.png"><span class="white">14</span></span></td><td><h3>The Kernel London Brick</h3><div>Red Rye Ale, 7% ABV, GB</div></td></tr>
+<tr><td class="im"><span><img src="/logo/blechbrut.png"><span class="black">15</span></span></td><td><h3>Fehér Nyúl/Blech Brut Paranormal</h3><div>Triple NEIPA, 9.2% ABV, HU</div></td></tr>
+<tr><td class="im"><span><img src="/logo/fehernyul.png"><span class="white">16</span></span></td><td><h3>Fehér Nyúl Almond Liqueur BA Imp. Stout</h3><div>BA Imperial Stout, 12.3% ABV, HU</div></td></tr>
+<tr><td class="im"><span><img src="/logo/cerny_potoka.png"><span class="black">17</span></span></td><td><h3>Černý Potoka Sirius</h3><div>Bohemian Pilsner, 5.2% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/clock.png"><span class="white">18</span></span></td><td><h3>Clock Lazarus</h3><div>Alcohol-Free Passion fruit Sour Ale, 0.5% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/pioneer.png"><span class="black">19</span></span></td><td><h3>Pioneer Beer Nordis</h3><div>Northern IPA, 5.9% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/vinohradsky.png"><span class="black">20</span></span></td><td><h3>Vinohradský Pivovar Seaman</h3><div>Traditional Gose, 3.9% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/obora.png"><span class="black">21</span></span></td><td><h3>Obora Ty Jantare!</h3><div>BA Fruited Wild Ale, 7% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/obora.png"><span class="black">22</span></span></td><td><h3>Obora Palm Drive</h3><div>Session IPA, 5.4% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/kladnokrocehlavy.png"><span class="black">23</span></span></td><td><h3>Kročehlavy Kladenské světlé 10°</h3><div>Pale Lager, 4.2% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/cestmir.png"><span class="black">24</span></span></td><td><h3>Čestmír Ratamahatta</h3><div>American IPA, 7% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/sibeeria.png"><span class="white">25</span></span></td><td><h3>Sibeeria Liquid Luck</h3><div>American Pale Ale, 11°, 4.3% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/sibeeria.png"><span class="white">26</span></span></td><td><h3>Sibeeria/Fehér Nyúl One Makes You Larger</h3><div>Pastry Sour Ale w/Lemon, 6% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/sibeeria.png"><span class="white">27</span></span></td><td><h3>Sibeeria Coco</h3><div>Porter w/ Coconut &amp; Vanilla, 4.7% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/sibeeria.png"><span class="white">28</span></span></td><td><h3>Sibeeria Fresh Hop Czech Pale Ale 2025</h3><div>Fresh Hop Pale Ale, 4.8% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/sibeeria.png"><span class="white">29</span></span></td><td><h3>Sibeeria Big Maple Tree</h3><div>Imperial Stout w/Maple Syrup, 30°, 10.8% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/sibeeria.png"><span class="white">30</span></span></td><td><h3>Sibeeria Hopnotic</h3><div>DDH Double IPA, 8% ABV, CZ</div></td></tr>
+<tr><td class="im"><span><img src="/logo/sibeeria.png"><span class="white">31</span></span></td><td><h3>Sibeeria Yummy Pineapple, Papaya &amp; Coconut</h3><div>FROZEN Pastry Sour Ale, 6.1% ABV, CZ</div></td></tr></tbody></table>
+
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div></body></html>

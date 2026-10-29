@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-29 19:58",
+  "zmeneno": "2026-10-29 21:37",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,17 +11,17 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
       "pivovar": "",
-      "nazev": "Kasteel Rouge",
-      "stupen": "18",
-      "alkohol": "8",
-      "styl": "belgický višňový speciál",
+      "nazev": "Kasteel Tropical",
+      "stupen": "14",
+      "alkohol": "7",
+      "styl": "Belgický speciál s tropickým ovocem",
       "dalsi": "",
-      "raw": "Kasteel Rouge, belgický višňový speciál, 18° tm., 8% vol. Alc"
+      "raw": "Kasteel Tropical, Belgický speciál s tropickým ovocem, 14° sv., 7% vol. Alc"
     },
     {
       "pozice": 3,
@@ -31,7 +31,7 @@
       "alkohol": "4.5",
       "styl": "světlý ležák se zeleným chmelem",
       "dalsi": "",
-      "raw": "Permon - Zelený chmel, světlý ležák se zeleným chmelem, 11° sv. nef., 4, 5% vol. Alc, 37 IBU"
+      "raw": "Permon - Zelený chmel, světlý ležák se zeleným chmelem, 11° sv. nef., 4,5% vol. Alc, 37 IBU"
     },
     {
       "pozice": 4,
@@ -41,7 +41,7 @@
       "alkohol": "6.2",
       "styl": "sv.",
       "dalsi": "",
-      "raw": "Plzeňský Bandita - Most Wanted IPA, 14° sv.nef., 6, 2% vol. Alc"
+      "raw": "Plzeňský Bandita - Most Wanted IPA, 14° sv.nef., 6,2% vol. Alc"
     },
     {
       "pozice": 5,
@@ -51,7 +51,7 @@
       "alkohol": "4.1",
       "styl": "Irish Dry Stout",
       "dalsi": "",
-      "raw": "Brewdog - Black Heart, Irish Dry Stout, 11° tm., 4, 1% vol. Alc"
+      "raw": "Brewdog - Black Heart, Irish Dry Stout, 11° tm., 4,1% vol. Alc"
     },
     {
       "pozice": 6,
@@ -61,7 +61,7 @@
       "alkohol": "4.6",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Plzeňský Bandita, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc, 40 IBU"
+      "raw": "Plzeňský Bandita, American Pale Ale, 11° sv. nef., 4,6% vol. Alc, 40 IBU"
     },
     {
       "pozice": 7,
@@ -71,7 +71,7 @@
       "alkohol": "5.5",
       "styl": "Hazy Pale Ale",
       "dalsi": "",
-      "raw": "Permon - Hazy Citra, Hazy Pale Ale, 13° sv. nef., 5, 5% vol. Alc, 20 IBU"
+      "raw": "Permon - Hazy Citra, Hazy Pale Ale, 13° sv. nef., 5,5% vol. Alc, 20 IBU"
     },
     {
       "pozice": 8,
@@ -81,7 +81,7 @@
       "alkohol": "4.5",
       "styl": "kyseláč s meruňkami, calamansi a černým rybízem",
       "dalsi": "",
-      "raw": "SQBRU - Apricot Eclipse, kyseláč s meruňkami, calamansi a černým rybízem, 11° sv. nef., 4, 5% vol. Alc"
+      "raw": "SQBRU - Apricot Eclipse, kyseláč s meruňkami, calamansi a černým rybízem, 11° sv. nef., 4,5% vol. Alc"
     },
     {
       "pozice": 9,
@@ -91,7 +91,7 @@
       "alkohol": "5.6",
       "styl": "India Pale Lager",
       "dalsi": "",
-      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5, 6% vol. Alc"
+      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5,6% vol. Alc"
     },
     {
       "pozice": 10,
@@ -101,7 +101,7 @@
       "alkohol": "3.8",
       "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3, 8% vol. Alc, 34 IBU"
+      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3,8% vol. Alc, 34 IBU"
     }
   ]
 }
