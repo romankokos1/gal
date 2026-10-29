@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-29 13:26",
+  "zmeneno": "2026-10-29 13:56",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,43 +15,43 @@
     },
     {
       "pozice": 2,
-      "pivovar": "SIBEERIA",
-      "nazev": "One festival",
-      "stupen": "11",
-      "alkohol": "5.3",
-      "styl": "west coast pilsner ( riwaka, strata cgx, cascade, wakalu)",
+      "pivovar": "SEVEN ISLANDS (GRE)",
+      "nazev": "Citra Crush",
+      "stupen": "",
+      "alkohol": "6.5",
+      "styl": "NEIPA ( citra bbc hops)",
       "dalsi": "",
-      "raw": "SIBEERIA – One festival 11°/5,3% west coast pilsner ( riwaka, strata cgx, cascade, wakalu)"
+      "raw": "SEVEN ISLANDS (GRE) – Citra Crush 6,5%/40 IBU NEIPA ( citra bbc hops)"
     },
     {
       "pozice": 3,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Juicy Lucy",
-      "stupen": "15",
-      "alkohol": "6.5",
-      "styl": "New England IPA",
+      "pivovar": "SEVEN ISLANDS (GRE) & HARLAND (USA)",
+      "nazev": "Coastal Dominion",
+      "stupen": "",
+      "alkohol": "8",
+      "styl": "DDH Double NEIPA (citra ,strata, krush)",
       "dalsi": "",
-      "raw": "ZICHOVEC – Juicy Lucy 15°/6,5%/50 IBU New England IPA"
+      "raw": "SEVEN ISLANDS (GRE) & HARLAND (USA) – Coastal Dominion 8%/25 IBU DDH Double NEIPA (citra ,strata, krush)"
     },
     {
       "pozice": 4,
-      "pivovar": "CLOCK",
-      "nazev": "No Idols!: Pineapple IPA",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "session IPA s ananasem",
+      "pivovar": "SEVEN ISLANDS (GRE) & BARREL THEORY (USA)",
+      "nazev": "Hop Massacre",
+      "stupen": "",
+      "alkohol": "9.2",
+      "styl": "Triple Hazy IPA (citra , hbc630, cryo pop)",
       "dalsi": "",
-      "raw": "CLOCK – No Idols!: Pineapple IPA 11°/4,5%/40IBU session IPA s ananasem"
+      "raw": "SEVEN ISLANDS (GRE) & BARREL THEORY (USA) – Hop Massacre 9,2%/90IBU Triple Hazy IPA (citra , hbc630, cryo pop)"
     },
     {
       "pozice": 5,
-      "pivovar": "POTMEHÚD",
-      "nazev": "Acid Theory",
-      "stupen": "15",
-      "alkohol": "5.5",
-      "styl": "Sour IPA (citra, mosaic, nelson)",
+      "pivovar": "SEVEN ISLANDS (GRE)",
+      "nazev": "Hop Slayer Passionfruit",
+      "stupen": "",
+      "alkohol": "6.5",
+      "styl": "DDH NEIPA s mučenkou (citra, galaxy)",
       "dalsi": "",
-      "raw": "POTMEHÚD – Acid Theory 15°/5,5% Sour IPA (citra, mosaic, nelson)"
+      "raw": "SEVEN ISLANDS (GRE) – Hop Slayer Passionfruit 6,5%/40 IBU DDH NEIPA s mučenkou (citra, galaxy)"
     }
   ]
 }

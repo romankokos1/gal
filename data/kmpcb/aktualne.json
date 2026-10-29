@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-10-29 11:55",
+  "zmeneno": "2026-10-29 13:56",
   "metoda": "selektor",
   "piva": [
     {
@@ -106,12 +106,12 @@
     {
       "pozice": 11,
       "pivovar": "BrewDog",
-      "nazev": "Ellvis Juice",
+      "nazev": "Elvis Juice",
       "stupen": "",
       "alkohol": "6.5",
       "styl": "Citrus IPA (UK - Skotsko)",
       "dalsi": "",
-      "raw": "BrewDog Ellvis Juice 6,5%Alc. Citrus IPA (UK - Skotsko)"
+      "raw": "BrewDog Elvis Juice 6,5%Alc. Citrus IPA (UK - Skotsko)"
     },
     {
       "pozice": 12,
