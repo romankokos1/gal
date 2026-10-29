@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-29 13:56",
+  "zmeneno": "2026-10-29 19:58",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "SEVEN ISLANDS (GRE)",
-      "nazev": "Citra Crush",
-      "stupen": "",
-      "alkohol": "6.5",
-      "styl": "NEIPA ( citra bbc hops)",
+      "pivovar": "SIBEERIA",
+      "nazev": "One Festival",
+      "stupen": "11",
+      "alkohol": "5.3",
+      "styl": "West Coast Pilsner",
       "dalsi": "",
-      "raw": "SEVEN ISLANDS (GRE) – Citra Crush 6,5%/40 IBU NEIPA ( citra bbc hops)"
+      "raw": "SIBEERIA – One Festival 11°/5,3% West Coast Pilsner"
     },
     {
       "pozice": 3,
@@ -41,7 +41,7 @@
       "alkohol": "9.2",
       "styl": "Triple Hazy IPA (citra , hbc630, cryo pop)",
       "dalsi": "",
-      "raw": "SEVEN ISLANDS (GRE) & BARREL THEORY (USA) – Hop Massacre 9,2%/90IBU Triple Hazy IPA (citra , hbc630, cryo pop)"
+      "raw": "SEVEN ISLANDS (GRE) & BARREL THEORY (USA) – Hop Massacre 9,2%/30IBU Triple Hazy IPA (citra , hbc630, cryo pop)"
     },
     {
       "pozice": 5,
