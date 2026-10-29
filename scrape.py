@@ -64,10 +64,12 @@ PODNIKY = [
      "bloky": "#na-cepu p", "format": "nazev-stupen-styl-pivovar", "jen_selektor": True},
     # Webflow, záložka „Pivo“: „GLEE 11°, GLUTEN REDUCED PALE ALE“ + pivovar zvlášť
     # (na stránce jsou i zbytky šablony „FUSCE ALI“, proto jen přesný výběr)
-    {"id": "polepsovna", "nazev": "Polepšovna", "url": "https://www.pivnicepolepsovna.cz/",
-     "polozky": '.w-tab-pane[data-w-tab="Pivo"] .home_2_career_item',
-     "pole": [".heading-style-h5", ".home_2_career_top-wrapper > div:last-child"],
-     "format": "nazev-styl|pivovar", "jen_selektor": True},
+    # Polepšovna vyřazena 29. 10. 2026 – data zůstávají v data/polepsovna/, na stránce se
+    # neukazuje. Pro návrat stačí řádek odkomentovat.
+    # {"id": "polepsovna", "nazev": "Polepšovna", "url": "https://www.pivnicepolepsovna.cz/",
+    #  "polozky": '.w-tab-pane[data-w-tab="Pivo"] .home_2_career_item',
+    #  "pole": [".heading-style-h5", ".home_2_career_top-wrapper > div:last-child"],
+    #  "format": "nazev-styl|pivovar", "jen_selektor": True},
     # Automat Matuška – tabulka čepů je Google Apps Script vložený do stránky (Readymag).
     # Stahuje se přímo adresa skriptu; v odpovědi je HTML tabulky jako zakódovaný text.
     # Řádek = dvě piva vedle sebe (název, styl, °, ABV, IBU, cena + prázdný sloupec mezi).
@@ -80,13 +82,19 @@ PODNIKY = [
      "url": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
      "apps_script": True, "pulky": 6, "format": "matuska", "pivovar": "Matuška",
      "cesta": "hlavicky", "jen_selektor": True},
+    # Pivovar Falkenštejn (Krásná Lípa) – nápojový lístek, tabulka pod nadpisem „Piva na čepu“:
+    # jen vlastní piva, název + stupně + ceny za 0,5/0,3 l. Objemy a ceny se zahazují.
+    {"id": "falkenstejn", "nazev": "Falkenštejn",
+     "url": "https://www.pivofalkenstejn.cz/restaurace/napojovy-listek.html",
+     "pivovar": "Falkenštejn", "bez_objemu": True},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
 # (obyčejně i přes prohlížeč) do data/_pruzkum/<id>/, nic nesbírá a na stránce se neukáže.
 # Až bude podnik nastavený v PODNIKY, řádek odsud smaž.
 PRUZKUM = [
-    # {"id": "novy-podnik", "url": "https://…"},
+    # kontrola, jak stránka opravdu vypadá (nastavení Falkenštejna je zatím odhad)
+    {"id": "falkenstejn", "url": "https://www.pivofalkenstejn.cz/restaurace/napojovy-listek.html"},
 ]
 
 ROOT = Path(__file__).parent / "data"
@@ -351,6 +359,9 @@ def by_halves(soup, n: int) -> list[str]:
 
 def extract_lines(html: str, p: dict) -> tuple[list[str], str]:
     lines, method = _extract(html, p)
+    if p.get("bez_objemu"):          # „Světák 11° | 0,5 l | 0,3 l“ → „Světák 11°“
+        lines = [clean(re.sub(r"\s*\|?\s*\b\d+(?:[.,]\d+)?\s*l\b\.?|\s*\|\s*(?=\||$)", " ", l)).strip(" |")
+                 for l in lines]
     return [l for l in lines if not is_junk(l)], method
 
 
