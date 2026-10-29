@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-27 20:54",
+  "zmeneno": "2026-10-29 11:55",
   "metoda": "selektor",
   "piva": [
     {
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "SQBRU",
-      "nazev": "Brezza Luppolata",
+      "pivovar": "Stadioner",
+      "nazev": "Maorihead",
       "stupen": "13",
-      "alkohol": "5.9",
+      "alkohol": "5.6",
       "styl": "India Pale Lager",
       "dalsi": "",
-      "raw": "SQBRU - Brezza Luppolata, India Pale Lager, 13° sv. nef., 5, 9% vol. Alc"
+      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5, 6% vol. Alc"
     },
     {
       "pozice": 10,

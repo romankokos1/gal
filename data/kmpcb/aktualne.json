@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-10-24 10:54",
+  "zmeneno": "2026-10-29 11:55",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,46 +25,56 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Pioneer",
-      "nazev": "REZIDENT",
+      "pivovar": "Zvíkovská",
+      "nazev": "labuť",
       "stupen": "11",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Pioneer REZIDENT 11° sv.nef."
+      "raw": "Zvíkovská labuť 11° sv.nef."
     },
     {
       "pozice": 4,
-      "pivovar": "Axiom",
-      "nazev": "Griffin IPL",
+      "pivovar": "Rampušák",
+      "nazev": "IPL",
       "stupen": "11",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Axiom Griffin IPL 11° sv.nef."
+      "raw": "Rampušák IPL 11° sv.nef."
     },
     {
       "pozice": 5,
-      "pivovar": "Cobolis",
-      "nazev": "PRAOTEC",
+      "pivovar": "Hulvát",
+      "nazev": "ležák",
       "stupen": "12",
       "alkohol": "",
-      "styl": "",
+      "styl": "Ležák",
       "dalsi": "",
-      "raw": "Cobolis PRAOTEC 12° sv.nef."
+      "raw": "Hulvát ležák 12° sv.nef."
     },
     {
       "pozice": 6,
-      "pivovar": "Kynšperský ZAJÍC",
-      "nazev": "",
+      "pivovar": "Zlatá kráva",
+      "nazev": "PLNOTUČNÁ",
       "stupen": "12",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Kynšperský ZAJÍC 12° sv.nef."
+      "raw": "Zlatá kráva PLNOTUČNÁ 12° sv.nef."
     },
     {
       "pozice": 7,
+      "pivovar": "Kamenice nad Lipou",
+      "nazev": "",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Kamenice nad Lipou 13° polotm.nef."
+    },
+    {
+      "pozice": 8,
       "pivovar": "Schneider",
       "nazev": "Weisse TAP7",
       "stupen": "13",
@@ -74,37 +84,47 @@
       "raw": "Schneider Weisse TAP7 13° pšeničné"
     },
     {
-      "pozice": 8,
-      "pivovar": "Č.Potoka",
-      "nazev": "No Signal From Most",
+      "pozice": 9,
+      "pivovar": "Cobolis",
+      "nazev": "NEVADA",
       "stupen": "11",
       "alkohol": "",
-      "styl": "Session IPA",
+      "styl": "APA",
       "dalsi": "",
-      "raw": "Č.Potoka No Signal From Most 11° Session IPA"
-    },
-    {
-      "pozice": 9,
-      "pivovar": "Zichovec",
-      "nazev": "Mosaic ALE 12",
-      "stupen": "",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Zichovec Mosaic ALE 12"
+      "raw": "Cobolis NEVADA 11° APA"
     },
     {
       "pozice": 10,
-      "pivovar": "Clock",
-      "nazev": "TWIST",
-      "stupen": "14",
+      "pivovar": "Pioneer",
+      "nazev": "NZ Hopline",
+      "stupen": "12",
       "alkohol": "",
-      "styl": "Red IPA",
+      "styl": "New Zealand Pale ALE",
       "dalsi": "",
-      "raw": "Clock TWIST 14° Red IPA"
+      "raw": "Pioneer NZ Hopline 12° New Zealand Pale ALE"
     },
     {
       "pozice": 11,
+      "pivovar": "BrewDog",
+      "nazev": "Ellvis Juice",
+      "stupen": "",
+      "alkohol": "6.5",
+      "styl": "Citrus IPA (UK - Skotsko)",
+      "dalsi": "",
+      "raw": "BrewDog Ellvis Juice 6,5%Alc. Citrus IPA (UK - Skotsko)"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "Matuška",
+      "nazev": "RAPTOR",
+      "stupen": "15",
+      "alkohol": "",
+      "styl": "IPA",
+      "dalsi": "",
+      "raw": "Matuška RAPTOR 15° IPA"
+    },
+    {
+      "pozice": 13,
       "pivovar": "Čestmír",
       "nazev": "TIWANAKU",
       "stupen": "17",
@@ -114,27 +134,17 @@
       "raw": "Čestmír TIWANAKU 17° NEIPA"
     },
     {
-      "pozice": 12,
-      "pivovar": "Louka",
-      "nazev": "BREAKFAST#001",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Pastry Sour ALE",
-      "dalsi": "",
-      "raw": "Louka BREAKFAST#001 11° Pastry Sour ALE"
-    },
-    {
-      "pozice": 13,
-      "pivovar": "->",
-      "nazev": "Chroust Ice Tea SOUR",
+      "pozice": 14,
+      "pivovar": "Chroust",
+      "nazev": "Ice Tea SOUR",
       "stupen": "11",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "-> Chroust Ice Tea SOUR 11°"
+      "raw": "Chroust Ice Tea SOUR 11°"
     },
     {
-      "pozice": 14,
+      "pozice": 15,
       "pivovar": "FunkyFluid",
       "nazev": "Gelato: Passion Fruit",
       "stupen": "",
@@ -144,7 +154,7 @@
       "raw": "FunkyFluid Gelato: Passion Fruit, Mango, Peach 5,5%Alc. Pastry SOUR (PL)"
     },
     {
-      "pozice": 15,
+      "pozice": 16,
       "pivovar": "Mazák",
       "nazev": "Baltic PORTER",
       "stupen": "18",
@@ -154,7 +164,7 @@
       "raw": "Mazák Baltic PORTER 18° tmavé nef."
     },
     {
-      "pozice": 16,
+      "pozice": 17,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",
