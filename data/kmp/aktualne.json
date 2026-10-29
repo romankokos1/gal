@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-29 11:55",
+  "zmeneno": "2026-10-29 15:56",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Permon",
-      "nazev": "Sherpa",
-      "stupen": "16",
-      "alkohol": "7.5",
-      "styl": "India Pale Ale",
+      "pivovar": "Plzeňský Bandita",
+      "nazev": "Most Wanted IPA",
+      "stupen": "14",
+      "alkohol": "6.2",
+      "styl": "sv.",
       "dalsi": "",
-      "raw": "Permon - Sherpa, India Pale Ale, 16° sv. nef., 7, 5% vol. Alc, 62 IBU"
+      "raw": "Plzeňský Bandita - Most Wanted IPA, 14° sv.nef., 6, 2% vol. Alc"
     },
     {
       "pozice": 5,
