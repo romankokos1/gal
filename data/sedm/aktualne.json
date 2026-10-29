@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-28 23:41",
+  "zmeneno": "2026-10-29 21:20",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "",
-      "nazev": "obora- ale ne",
+      "pivovar": "obora",
+      "nazev": "švarc",
       "stupen": "12",
       "alkohol": "4.7",
-      "styl": "session neipa",
+      "styl": "dark lager",
       "dalsi": "",
-      "raw": "obora- ale ne | 12% | session neipa, ABV 4,7%"
+      "raw": "obora - švarc | 12% | dark lager, ABV 4,7%"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "",
-      "nazev": "blud . crispy džus",
+      "pivovar": "blud",
+      "nazev": "crispy džus",
       "stupen": "14",
       "alkohol": "6.4",
       "styl": "west coast IPA",
       "dalsi": "",
-      "raw": "blud . crispy džus | 14% | west coast IPA, ABV 6,4%"
+      "raw": "blud - crispy džus | 14% | west coast IPA, ABV 6,4%"
     },
     {
       "pozice": 7,

@@ -1,0 +1,114 @@
+E-SHOP / FANSHOP
+CZ
+Nápojový lístek
+Piva na čepu
+0.5l	Světák 11°	62 Kč
+0.3l	Světák 11°	48 Kč
+0.5l	Ostroff 12°	65 Kč
+0.3l	Ostroff 12°	50 Kč
+0.5l	Dittrich 14°	69 Kč
+0.3l	Dittrich 14°	53 Kč
+0.5l	Svižnej Emil 9°	62 Kč
+0.3l	Svižnej Emil 9°	48 Kč
+0.5l	Deset! 10°	59 Kč
+0.3l	Deset! 10°	46 Kč
+0.5l	Desperát 11°	69 Kč
+0.3l	Desperát 11°	53 Kč
+0.5l	Rudoch 13°	72 Kč
+0.3l	Rudoch 13°	55 Kč
+Pivní degustační set
+1ks	4 x 0,15l vzorky piv Falkenštějn	145 Kč
+Nealkoholické pivo a pivní mixy
+0.5l	Nealko Bakalář (za studena chmelený)	59 Kč
+0.3l	Nealko Bakalář (za studena chmelený)	46 Kč
+0.5l	Radler Falkenštejn (Světák+sprite) - A	62 Kč
+0.3l	Radler Falkenštejn (Světák+sprite) - A	48 Kč
+0.5l	Nealko Radler (Bakalář+sprite) - N	59 Kč
+0.3l	Nealko Radler (Bakalář+sprite) - N	46 Kč
+Nealko
+0.5l	Naše limonáda (malina/jahoda/mango-yuzu/ levandule)	75 Kč
+0.25l	Naše limonáda (malina/jahoda/mango-yuzu/ levandule)	50 Kč
+0.5l	Točená Kofola	52 Kč
+0.3l	Točená Kofola	38 Kč
+0.33l	Coca-Cola (klasik/ zero)	59 Kč
+0.33l	Sprite	59 Kč
+0.25l	Curiosa džus (pomeranč/ jablko/ jahoda)	59 Kč
+0.25l	Kinley Tonic (Klasik/ Ginger)	56 Kč
+0.33l	Römmerquelle (neperlivá/ jemně perlivá/ lemongras)	49 Kč
+0.5l	Sodová voda	25 Kč
+0.25l	Sodová voda	15 Kč
+1l	Voda kohoutková	40 Kč
+0.5l	Voda kohoutková	20 Kč
+Káva
+30ml	Espresso (7g)	59 Kč
+60ml	Double espresso (14g)	75 Kč
+30ml	Espresso macchiato (7g)	65 Kč
+60ml	Espresso lungo (7g)	65 Kč
+180ml	Americano (7g)	65 Kč
+150ml	Cappuccino (7g)	75 Kč
+280ml	Caffé latte (7g)	79 Kč
+160ml	Flat white (14g)	79 Kč
+200ml	Turecká káva (7g)	49 Kč
+Teplé nápoje
+200ml	Čaj (černý/ zelený/ bylinkový/ ovocný)	45 Kč
+200ml	Čaj z čerstvé máty/zázvoru	60 Kč
+200ml	Horké jablko se skořicí	65 Kč
+200ml	Horká švestka (slivovice 0,02)	80 Kč
+200ml	Grog (rum tuzemský 0,04)	65 Kč
+200ml	Horká Višňička/ Jeřabinka (likér 0,04)	89 Kč
+200ml	Svařené víno	79 Kč
+Červené víno
+0.75l	Markéta Cuveé, Morava-Velkopavlovická,zemské,suché	390 Kč
+0.15l	Markéta Cuveé, Morava-Velkopavlovická,zemské,suché	89 Kč
+0.75l	Primitivo del Salento - Salentini, Itálie, suché	390 Kč
+0.15l	Primitivo del Salento - Salentini, Itálie, suché	89 Kč
+0.75l	Fusion (Cabernet Moravia+Sauvignon, Vinařství Tomáš Režný - naturální suché)	450 Kč
+0.15l	Fusion (Cabernet Moravia+Sauvignon, Vinařství Tomáš Režný - naturální suché)	95 Kč
+0.75l	Côte du Rhône Villages AOC,Vinařství Lavau,Francie-suché	410 Kč
+Bílé víno
+0.75l	Cuvée RVNG - speciální edice vín Decanté, zemské, suché	360 Kč
+0.15l	Cuvée RVNG - speciální edice vín Decanté, zemské, suché	79 Kč
+0.75l	Rulandské šedé (Vinařství Lahofer, oblast Morava, pozdní sběr, polosuché)	360 Kč
+0.15l	Rulandské šedé (Vinařství Lahofer, oblast Morava, pozdní sběr, polosuché)	79 Kč
+0.75l	Ryzlink rýnský (Vinařství Tomáš Režný - oblast Morava Bořetice, naturální suché)	450 Kč
+0.15l	Ryzlink rýnský (Vinařství Tomáš Režný - oblast Morava Bořetice, naturální suché)	95 Kč
+0.75l	Pálava - Vinařství Bílkovi, Velké Bílovice, pozdní sběr, polosladké	390 Kč
+0.15l	Pálava - Vinařství Bílkovi, Velké Bílovice, pozdní sběr, polosladké	89 Kč
+0.75l	Pinot Grigio D.O.C., Vinařství Mezzacorona,Itálie,oblast Trenino,suché	370 Kč
+Šumivá vína, sekty
+0.75l	Prosecco Treviso Borga D.O.C., Vinařství Borga, Itálie, extra dry	420 Kč
+0.75l	Sekt Bohemia demi/brut	320 Kč
+Míchané nápoje
+	Gin & Tonic (alko)	125 Kč
+	Gin a Tonic Mango (alko)	139 Kč
+	Gin & Tonic FREE (Gin 0 %) (nealko)	119 Kč
+	Ledová švestka (alko)	129 Kč
+	Aperol Spritz (alko)	129 Kč
+Cider
+0.33l	Cider KAUBOY (vinný/ jablečný)	80 Kč
+Alkoholické nápoje
+0.04l	Falk zázvorovice (místní produkt)	85 Kč
+0.04l	Višňička/ Jeřabinka/ Mandlička	89 Kč
+0.04l	Becherovka	60 Kč
+0.04l	Jägermeister	60 Kč
+0.04l	Fernet Stock	59 Kč
+0.04l	Peprmintový likér	49 Kč
+0.04l	Slivovice/Hruškovice (místní produkt, Galli Distillery)	85 Kč
+0.04l	Děčínská jeřabinka (místní produkt, Grešík)	70 Kč
+0.04l	Staročeská kmínka (místní produkt, Grešík)	70 Kč
+0.04l	Rum Tuzemský (Bouzov)	49 Kč
+0.04l	Vodka SKYY	59 Kč
+0.04l	Gin Brokers (klasický, pink)	65 Kč
+0.04l	Jack Daniels	80 Kč
+0.04l	Jameson	75 Kč
+0.04l	Legendario elixír (Kuba)	75 Kč
+0.04l	Canerock (Jamajka)	120 Kč
+0.04l	A.H.Riise Non Plus Ultra (Panenské ostrovy)	199 Kč
+0.04l	Appleton Estate 12 let (Jamajka)	125 Kč
+0.04l	Planteray XO (Karibik/Francie)	125 Kč
+0.04l	Planteray ISLE OF FIJI (Francie)	125 Kč
+ODBĚR NOVINEK
+© 2026 Pivovar Falkenštejn s.r.o.
+Naše webové stránky používají cookies
+Kliknutím na "Přijmout vše a pokračovat" přijmete všechny typy souborů cookie nebo klepnutím na "Zjistit více a přizpůsobit" můžete zjistit více informací o souborech cookie a změnit jejich nastavení. Náš web používá soubory cookies, které jsou nezbytné k jeho fungování. S vaším souhlasem budeme používat také další soubory cookies a zpracovávat vaše osobní údaje pro analýzu chování a vytváření statistik. Váš souhlas a nastavení můžete kdykoliv odvolat nebo změnit odkazem "Nastavení cookies" umístěným v zápatí. Podrobné informace o cookies naleznete kliknutím na tlačítko "Zjistit více". Informace o zpracování osobních údajů naleznete na stránce GDPR.
+Zjistit více a přizpůsobitPřijmout vše a pokračovat
