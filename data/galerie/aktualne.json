@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-29 22:08",
+  "zmeneno": "2026-10-29 22:38",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "SEVEN ISLANDS (GRE)",
-      "nazev": "Hop Slayer Passionfruit",
-      "stupen": "",
-      "alkohol": "6.5",
-      "styl": "DDH NEIPA s mučenkou (citra, galaxy)",
+      "pivovar": "CHROUST",
+      "nazev": "Ostružinový kompot",
+      "stupen": "11",
+      "alkohol": "4.7",
+      "styl": "Sour Ale s ostružinou",
       "dalsi": "",
-      "raw": "SEVEN ISLANDS (GRE) – Hop Slayer Passionfruit 6,5%/40 IBU DDH NEIPA s mučenkou (citra, galaxy)"
+      "raw": "CHROUST – Ostružinový kompot 11°/4,7% Sour Ale s ostružinou"
     }
   ]
 }
