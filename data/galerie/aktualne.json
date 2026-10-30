@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-29 23:08",
+  "zmeneno": "2026-10-30 14:06",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,6 +25,16 @@
     },
     {
       "pozice": 3,
+      "pivovar": "ZICHOVEC",
+      "nazev": "Juicy Lucy",
+      "stupen": "15",
+      "alkohol": "6.5",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "ZICHOVEC – Juicy Lucy 15°/6,5% NEIPA"
+    },
+    {
+      "pozice": 4,
       "pivovar": "SEVEN ISLANDS (GRE) & HARLAND (USA)",
       "nazev": "Coastal Dominion",
       "stupen": "",
@@ -32,16 +42,6 @@
       "styl": "DDH Double NEIPA (citra ,strata, krush)",
       "dalsi": "",
       "raw": "SEVEN ISLANDS (GRE) & HARLAND (USA) – Coastal Dominion 8%/25 IBU DDH Double NEIPA (citra ,strata, krush)"
-    },
-    {
-      "pozice": 4,
-      "pivovar": "SEVEN ISLANDS (GRE) & BARREL THEORY (USA)",
-      "nazev": "Hop Massacre",
-      "stupen": "",
-      "alkohol": "9.2",
-      "styl": "Triple Hazy IPA (citra , hbc630, cryo pop)",
-      "dalsi": "",
-      "raw": "SEVEN ISLANDS (GRE) & BARREL THEORY (USA) – Hop Massacre 9,2%/30IBU Triple Hazy IPA (citra , hbc630, cryo pop)"
     },
     {
       "pozice": 5,
