@@ -53,5 +53,40 @@
     "id": "falkenstejn",
     "nazev": "Falkenštejn",
     "url": "https://www.pivofalkenstejn.cz/restaurace/napojovy-listek.html"
+  },
+  {
+    "id": "beergeek",
+    "nazev": "BeerGeek Bar",
+    "url": "https://beergeek.cz/menu/"
+  },
+  {
+    "id": "crafthouse",
+    "nazev": "Craft House",
+    "url": "https://www.crafthouse.cz/en/"
+  },
+  {
+    "id": "nubeerbar",
+    "nazev": "Nubeerbar",
+    "url": "https://nubeerbar.cz/online-menu"
+  },
+  {
+    "id": "beerknir",
+    "nazev": "Beer Knír",
+    "url": "https://beerknir.cz/"
+  },
+  {
+    "id": "dcdyne",
+    "nazev": "Decentní dýně",
+    "url": "https://dcdyne.com/"
+  },
+  {
+    "id": "beerspot",
+    "nazev": "The Beer Spot",
+    "url": "https://beerspotprague.cz/beer-list/"
+  },
+  {
+    "id": "drinkoteka",
+    "nazev": "Drinkøtéka",
+    "url": "https://drinkoteka.cz/"
   }
 ]

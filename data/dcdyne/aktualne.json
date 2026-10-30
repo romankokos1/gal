@@ -1,0 +1,67 @@
+{
+  "zdroj": "https://dcdyne.com/",
+  "zmeneno": "2026-10-30 11:04",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "CLOCK",
+      "nazev": "Leviticus ležák",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Nealko",
+      "dalsi": "",
+      "raw": "NEALKO -Leviticus ležák (CLOCK)"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Čestmír",
+      "nazev": "Ananas, mango, maracuja SOUR",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Ananas, mango, maracuja SOUR (Čestmír)"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Čestmír",
+      "nazev": "Session NEIPA",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Session NEIPA 12° (Čestmír)"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Jungberg",
+      "nazev": "PP",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "ležák",
+      "dalsi": "",
+      "raw": "PP 12° ležák (Jungberg)"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Jungberg",
+      "nazev": "Decentní ALE",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Decentní ALE 11° (pivovar Jungberg)"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Jungberg",
+      "nazev": "300 Kurven",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "výčepní",
+      "dalsi": "",
+      "raw": "300 Kurven 10° - výčepní (Jungberg)"
+    }
+  ]
+}

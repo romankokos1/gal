@@ -1,0 +1,227 @@
+{
+  "zdroj": "https://www.crafthouse.cz/en/",
+  "zmeneno": "2026-10-30 11:04",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Čestmír",
+      "nazev": "Světlý ležák MÍR",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "Pilsner - Czech / Bohemian",
+      "dalsi": "",
+      "raw": "Světlý ležák 12° MÍR | Pilsner - Czech / Bohemian | 5% ABV | Pivovar Čestmír / CZ"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Raven",
+      "nazev": "Unicorn Milk",
+      "stupen": "",
+      "alkohol": "5.5",
+      "styl": "IPA - Milkshake",
+      "dalsi": "",
+      "raw": "Unicorn Milk | IPA - Milkshake | 5.5% ABV | Pivovar Raven / CZ"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Vik",
+      "nazev": "WILLY WONKA - Dark Lager",
+      "stupen": "",
+      "alkohol": "5.3",
+      "styl": "Lager - Dark",
+      "dalsi": "",
+      "raw": "WILLY WONKA - Dark Lager | Lager - Dark | 5.3% ABV | Pivovar Vik / CZ"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Hradecký Klenot",
+      "nazev": "Apricot Symphony",
+      "stupen": "",
+      "alkohol": "6.2",
+      "styl": "Sour - Smoothie / Pastry",
+      "dalsi": "",
+      "raw": "Apricot Symphony | Sour - Smoothie / Pastry | 6.2% ABV | Hradecký Klenot /"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Potmehúd",
+      "nazev": "Acid Theory",
+      "stupen": "",
+      "alkohol": "5.5",
+      "styl": "IPA - Sour",
+      "dalsi": "",
+      "raw": "Acid Theory | IPA - Sour | 5.5% ABV | Pivovar Potmehúd / CZ"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "ZICHOVEC",
+      "nazev": "Robin na Grepu 12",
+      "stupen": "",
+      "alkohol": "5.1",
+      "styl": "Pale Ale - American",
+      "dalsi": "",
+      "raw": "Robin na Grepu 12 | Pale Ale - American | 5.1% ABV | Pivovar ZICHOVEC / CZ"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Vik",
+      "nazev": "Gumboot #5",
+      "stupen": "",
+      "alkohol": "4.6",
+      "styl": "Sour - Fruited Gose",
+      "dalsi": "",
+      "raw": "Gumboot #5 | Sour - Fruited Gose | 4.6% ABV | Pivovar Vik /"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Clock",
+      "nazev": "Twist",
+      "stupen": "",
+      "alkohol": "5.8",
+      "styl": "IPA - Red",
+      "dalsi": "",
+      "raw": "Twist | IPA - Red | 5.8% ABV | Pivovar Clock / CZ"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Volt",
+      "nazev": "Reaktor",
+      "stupen": "",
+      "alkohol": "7.3",
+      "styl": "IPA - Brut",
+      "dalsi": "",
+      "raw": "Reaktor | IPA - Brut | 7.3% ABV | Pivovar Volt / CZ"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Sibeeria",
+      "nazev": "Radiant Noise",
+      "stupen": "",
+      "alkohol": "6.8",
+      "styl": "IPA - New England / Hazy",
+      "dalsi": "",
+      "raw": "Radiant Noise | IPA - New England / Hazy | 6.8% ABV | Sibeeria Brewery / CZ"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "NOZIB Special Brews",
+      "nazev": "CALI TWIST NZ Chinook + NZ Cascade",
+      "stupen": "",
+      "alkohol": "5.7",
+      "styl": "Pale Ale - American",
+      "dalsi": "",
+      "raw": "CALI TWIST NZ Chinook + NZ Cascade | Pale Ale - American | 5.7% ABV | NOZIB Special Brews / CZ"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "Chroust",
+      "nazev": "Age of Krush Fresh Hop",
+      "stupen": "",
+      "alkohol": "5.8",
+      "styl": "IPA - American",
+      "dalsi": "",
+      "raw": "Age of Krush Fresh Hop | IPA - American | 5.8% ABV | Chroust / CZ"
+    },
+    {
+      "pozice": 13,
+      "pivovar": "Potmehúd",
+      "nazev": "Weizenbock",
+      "stupen": "",
+      "alkohol": "7.3",
+      "styl": "Bock - Weizenbock",
+      "dalsi": "",
+      "raw": "Weizenbock | Bock - Weizenbock | 7.3% ABV | Pivovar Potmehúd /"
+    },
+    {
+      "pozice": 14,
+      "pivovar": "Čestmír",
+      "nazev": "NZ NEIPA – KORU (Riwaka / Nelson Sauvin / Motueka)",
+      "stupen": "",
+      "alkohol": "4.5",
+      "styl": "IPA - New England / Hazy",
+      "dalsi": "",
+      "raw": "NZ NEIPA – KORU (Riwaka / Nelson Sauvin / Motueka) | IPA - New England / Hazy | 4.5% ABV | Pivovar Čestmír / CZ"
+    },
+    {
+      "pozice": 15,
+      "pivovar": "ZICHOVEC",
+      "nazev": "Nectar of Happiness 17",
+      "stupen": "",
+      "alkohol": "7",
+      "styl": "IPA - New England / Hazy",
+      "dalsi": "",
+      "raw": "Nectar of Happiness 17 | IPA - New England / Hazy | 7% ABV | Pivovar ZICHOVEC / CZ"
+    },
+    {
+      "pozice": 16,
+      "pivovar": "Sibeeria",
+      "nazev": "Smoke Lady",
+      "stupen": "",
+      "alkohol": "5.5",
+      "styl": "Rauchbier",
+      "dalsi": "",
+      "raw": "Smoke Lady | Rauchbier | 5.5% ABV | Sibeeria Brewery / CZ"
+    },
+    {
+      "pozice": 17,
+      "pivovar": "Permon",
+      "nazev": "Sherpa",
+      "stupen": "",
+      "alkohol": "7.5",
+      "styl": "IPA - American",
+      "dalsi": "",
+      "raw": "Sherpa | IPA - American | 7.5% ABV | Pivovar Permon / CZ"
+    },
+    {
+      "pozice": 18,
+      "pivovar": "Mazák",
+      "nazev": "Baltic Porter",
+      "stupen": "",
+      "alkohol": "6.8",
+      "styl": "Porter - Baltic",
+      "dalsi": "",
+      "raw": "Baltic Porter | Porter - Baltic | 6.8% ABV | Pivovar Mazák / CZ"
+    },
+    {
+      "pozice": 19,
+      "pivovar": "Volt",
+      "nazev": "Blackout",
+      "stupen": "",
+      "alkohol": "6.5",
+      "styl": "Stout - Irish Dry",
+      "dalsi": "",
+      "raw": "Blackout | Stout - Irish Dry | 6.5% ABV | Pivovar Volt / CZ"
+    },
+    {
+      "pozice": 20,
+      "pivovar": "Raven",
+      "nazev": "Aurora",
+      "stupen": "",
+      "alkohol": "6.8",
+      "styl": "IPA - Other",
+      "dalsi": "",
+      "raw": "Aurora | IPA - Other | 6.8% ABV | Pivovar Raven / CZ"
+    },
+    {
+      "pozice": 21,
+      "pivovar": "Kasteel Brouwerij Vanhonsebrouck",
+      "nazev": "Kasteel Rouge",
+      "stupen": "",
+      "alkohol": "8",
+      "styl": "Fruit Beer",
+      "dalsi": "",
+      "raw": "Kasteel Rouge | Fruit Beer | 8% ABV | Kasteel Brouwerij Vanhonsebrouck / BE"
+    },
+    {
+      "pozice": 22,
+      "pivovar": "FALKON",
+      "nazev": "BOCHÁNEK",
+      "stupen": "",
+      "alkohol": "10.1",
+      "styl": "Stout - Russian Imperial",
+      "dalsi": "",
+      "raw": "BOCHÁNEK | Stout - Russian Imperial | 10.1% ABV | FALKON / CZ"
+    }
+  ]
+}

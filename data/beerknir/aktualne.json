@@ -1,0 +1,67 @@
+{
+  "zdroj": "https://beerknir.cz/",
+  "zmeneno": "2026-10-30 11:04",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Moucha",
+      "nazev": "Česká moucha",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "Světlý ležák",
+      "dalsi": "",
+      "raw": "Česká moucha 11° | Světlý ležák | 11° | 4.5% | Pivovar Moucha"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Knír",
+      "nazev": "Barber",
+      "stupen": "12",
+      "alkohol": "5.5",
+      "styl": "IPL (Jupiter/Juno/Sorachi Ace)",
+      "dalsi": "",
+      "raw": "Barber 12° | IPL (Jupiter/Juno/Sorachi Ace) | 12° | 5.5% | Pivovar Knír"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Knír",
+      "nazev": "Shave me Simcoe",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "APA s chmelem Simcoe",
+      "dalsi": "",
+      "raw": "Shave me 12° Simcoe | APA s chmelem Simcoe | 12° | 5.1% | Pivovar Knír"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Sibeeria",
+      "nazev": "Margherita Juice",
+      "stupen": "13",
+      "alkohol": "4.5",
+      "styl": "Gose s rajčaty a bazalkou",
+      "dalsi": "",
+      "raw": "Margherita Juice 13° | Gose s rajčaty a bazalkou | 13° | 4.5% | Pivovar Sibeeria"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "NOZIB",
+      "nazev": "BONE DRY",
+      "stupen": "14",
+      "alkohol": "6.6",
+      "styl": "NEIPA Nelson Sauvin + Motueka",
+      "dalsi": "",
+      "raw": "BONE DRY 14° | NEIPA Nelson Sauvin + Motueka | 14° | 6.6% | Pivovar NOZIB"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Václav",
+      "nazev": "Bitter Bush",
+      "stupen": "14",
+      "alkohol": "6.0",
+      "styl": "West Coast IPA",
+      "dalsi": "",
+      "raw": "Bitter Bush 14° | West Coast IPA | 14° | 6.0% | Pivovar Václav"
+    }
+  ]
+}

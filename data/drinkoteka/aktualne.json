@@ -1,0 +1,87 @@
+{
+  "zdroj": "https://drinkoteka.cz/",
+  "zmeneno": "2026-10-30 11:04",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Vault City",
+      "nazev": "Dripping In Mango",
+      "stupen": "",
+      "alkohol": "5.5",
+      "styl": "Milkshake Pale Ale",
+      "dalsi": "",
+      "raw": "Dripping In Mango | Milkshake Pale Ale | 5.5% ABV | 🏴󠁧󠁢󠁳󠁣󠁴󠁿Vault City"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Einsiedler",
+      "nazev": "Helles",
+      "stupen": "",
+      "alkohol": "5.2",
+      "styl": "Ležák - Lager",
+      "dalsi": "",
+      "raw": "Helles | Ležák - Lager | 5.2% ABV | Einsiedler"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Ārpus",
+      "nazev": "TDH Motueka X Riwaka X Citra",
+      "stupen": "",
+      "alkohol": "8",
+      "styl": "Double New England",
+      "dalsi": "",
+      "raw": "TDH Motueka X Riwaka X Citra | Double New England | 8% ABV | 🇱🇻Ārpus"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Verdant",
+      "nazev": "Chromaticity",
+      "stupen": "",
+      "alkohol": "5.2",
+      "styl": "New England",
+      "dalsi": "",
+      "raw": "Chromaticity | New England | 5.2% ABV | 🇬🇧Verdant"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "NOZIB",
+      "nazev": "HAZY CITRA",
+      "stupen": "",
+      "alkohol": "5.5",
+      "styl": "New England IPA",
+      "dalsi": "",
+      "raw": "HAZY CITRA | New England IPA | 5.5% ABV | 🇨🇿NOZIB"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Ārpus",
+      "nazev": "TDH Nelson Sauvin X Riwaka",
+      "stupen": "",
+      "alkohol": "7.2",
+      "styl": "New Zealand IPA",
+      "dalsi": "",
+      "raw": "TDH Nelson Sauvin X Riwaka | New Zealand IPA | 7.2% ABV | 🇱🇻Ārpus"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Ārpus",
+      "nazev": "West Coast Pilsner",
+      "stupen": "",
+      "alkohol": "4.4",
+      "styl": "",
+      "dalsi": "",
+      "raw": "West Coast Pilsner | 4.4% ABV | 🇱🇻Ārpus"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Wild Creatures",
+      "nazev": "Meditation (2020)",
+      "stupen": "",
+      "alkohol": "7",
+      "styl": "Lambic - Gueuze",
+      "dalsi": "",
+      "raw": "Meditation (2020) | Lambic - Gueuze | 7% ABV | 🇨🇿Wild Creatures"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "zdroj": "https://beerspotprague.cz/beer-list/",
+  "zmeneno": "2026-10-30 11:04",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "JungBerg",
+      "nazev": "300 Kurven",
+      "stupen": "10",
+      "alkohol": "4.1",
+      "styl": "Pilsner - Czech",
+      "dalsi": "",
+      "raw": "300 Kurven 10° | Pilsner - Czech | 4.1% ABV | Pivovar JungBerg"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Kladno Kročehlavy",
+      "nazev": "Kladenský ležák",
+      "stupen": "12",
+      "alkohol": "5.2",
+      "styl": "Pilsner - Czech",
+      "dalsi": "",
+      "raw": "Kladenský ležák 12° | Pilsner - Czech | 5.2% ABV | Pivovar Kladno Kročehlavy"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Pivečka",
+      "nazev": "Rauchbier",
+      "stupen": "",
+      "alkohol": "5.5",
+      "styl": "Rauchbier",
+      "dalsi": "",
+      "raw": "Rauchbier | Rauchbier | 5.5% ABV | Pivovar Pivečka"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Černokostelecký pivovar",
+      "nazev": "Černá svině",
+      "stupen": "",
+      "alkohol": "5.8",
+      "styl": "Lager - Tmavé (Czech Dark)",
+      "dalsi": "",
+      "raw": "Černá svině | Lager - Tmavé (Czech Dark) | 5.8% ABV | Černokostelecký pivovar"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Akciový pivovar Libertas",
+      "nazev": "Libertas Hefe Weizen",
+      "stupen": "11",
+      "alkohol": "4.9",
+      "styl": "Wheat Beer - Hefeweizen",
+      "dalsi": "",
+      "raw": "Libertas 11° Hefe Weizen | Wheat Beer - Hefeweizen | 4.9% ABV | Akciový pivovar Libertas"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Matuška",
+      "nazev": "California",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "Pale Ale - American",
+      "dalsi": "",
+      "raw": "California 12° | Pale Ale - American | 5.3% ABV | Pivovar Matuška"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Sibeeria",
+      "nazev": "Glynnis",
+      "stupen": "",
+      "alkohol": "4.3",
+      "styl": "IPA - Session",
+      "dalsi": "",
+      "raw": "Glynnis | IPA - Session | 4.3% ABV | Sibeeria Brewery"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Garp",
+      "nazev": "Garp 811 - Raspberry Sour",
+      "stupen": "",
+      "alkohol": "4.2",
+      "styl": "Sour - Fruited",
+      "dalsi": "",
+      "raw": "Garp 811 - Raspberry Sour | Sour - Fruited | 4.2% ABV | Pivovar Garp"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Garp",
+      "nazev": "Garp 410",
+      "stupen": "",
+      "alkohol": "4.7",
+      "styl": "IPA - Session",
+      "dalsi": "",
+      "raw": "Garp 410 | IPA - Session | 4.7% ABV | Pivovar Garp"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Kasteel Brouwerij Vanhonsebrouck",
+      "nazev": "Kasteel Rouge",
+      "stupen": "",
+      "alkohol": "8",
+      "styl": "Fruit Beer",
+      "dalsi": "",
+      "raw": "Kasteel Rouge | Fruit Beer | 8% ABV | Kasteel Brouwerij Vanhonsebrouck"
+    }
+  ]
+}

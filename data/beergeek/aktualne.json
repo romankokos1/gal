@@ -1,0 +1,297 @@
+{
+  "zdroj": "https://beergeek.cz/menu/",
+  "zmeneno": "2026-10-30 11:04",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Fehér Nyúl",
+      "nazev": "Good Omen",
+      "stupen": "",
+      "alkohol": "8.2",
+      "styl": "Imperial Pastry Stout",
+      "dalsi": "",
+      "raw": "Fehér Nyúl Good Omen | Imperial Pastry Stout, 8.2% ABV, HU"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Fehér Nyúl & Metalhead",
+      "nazev": "Down In A Hole",
+      "stupen": "",
+      "alkohol": "8.5",
+      "styl": "Double IPA",
+      "dalsi": "",
+      "raw": "Fehér Nyúl/Metalhead Down In A Hole | Double IPA, 8.5% ABV, HU"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Parom",
+      "nazev": "Veles",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "Session IPA",
+      "dalsi": "",
+      "raw": "Parom Veles | Session IPA, 11°, 4.5% ABV, SK"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Parom",
+      "nazev": "Öjebyn",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "Blackcurrant Sour Ale",
+      "dalsi": "",
+      "raw": "Parom Öjebyn | Blackcurrant Sour Ale, 11°, 4.6% ABV, SK"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Parom",
+      "nazev": "Kračúň",
+      "stupen": "15",
+      "alkohol": "6.5",
+      "styl": "Nitro Milk White Stout",
+      "dalsi": "",
+      "raw": "Parom Kračúň | Nitro Milk White Stout, 15°, 6.5% ABV, SK"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Parom",
+      "nazev": "Mangolica",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "Calamansi & Mango APA",
+      "dalsi": "",
+      "raw": "Parom Mangolica | Calamansi & Mango APA, 12°, 5.3% ABV, SK"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Boon",
+      "nazev": "Foeder #101",
+      "stupen": "",
+      "alkohol": "6.5",
+      "styl": "2-Year Unblended Oude Lambiek",
+      "dalsi": "",
+      "raw": "Boon Foeder #101 | 2-Year Unblended Oude Lambiek, 6.5% ABV, BE"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Fehér Nyúl",
+      "nazev": "RAFA",
+      "stupen": "",
+      "alkohol": "6.8",
+      "styl": "Sour IPA",
+      "dalsi": "",
+      "raw": "Fehér Nyúl RAFA | Sour IPA, 6.8% ABV, HU"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Vanhonsebrouck",
+      "nazev": "Kasteel Rouge",
+      "stupen": "",
+      "alkohol": "8",
+      "styl": "Belgian Strong Cherry Ale",
+      "dalsi": "",
+      "raw": "Vanhonsebrouck Kasteel Rouge | Belgian Strong Cherry Ale, 8% ABV, BE"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Schlenkerla & PINTA",
+      "nazev": "á la Grodziskie",
+      "stupen": "",
+      "alkohol": "2.9",
+      "styl": "Grodziskie",
+      "dalsi": "",
+      "raw": "Schlenkerla/PINTA á la Grodziskie | Grodziskie, 2.9% ABV, DE"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "Pinta",
+      "nazev": "Bullseye",
+      "stupen": "",
+      "alkohol": "3.5",
+      "styl": "Ordinary Bitter",
+      "dalsi": "",
+      "raw": "Pinta Bullseye | Ordinary Bitter, 3.5% ABV, PL"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "The Kernel",
+      "nazev": "London Brick",
+      "stupen": "",
+      "alkohol": "7",
+      "styl": "Red Rye Ale",
+      "dalsi": "",
+      "raw": "The Kernel London Brick | Red Rye Ale, 7% ABV, GB"
+    },
+    {
+      "pozice": 13,
+      "pivovar": "Fehér Nyúl & Blech",
+      "nazev": "Brut Paranormal",
+      "stupen": "",
+      "alkohol": "9.2",
+      "styl": "Triple NEIPA",
+      "dalsi": "",
+      "raw": "Fehér Nyúl/Blech Brut Paranormal | Triple NEIPA, 9.2% ABV, HU"
+    },
+    {
+      "pozice": 14,
+      "pivovar": "Fehér Nyúl",
+      "nazev": "Almond Liqueur BA Imp. Stout",
+      "stupen": "",
+      "alkohol": "12.3",
+      "styl": "BA Imperial Stout",
+      "dalsi": "",
+      "raw": "Fehér Nyúl Almond Liqueur BA Imp. Stout | BA Imperial Stout, 12.3% ABV, HU"
+    },
+    {
+      "pozice": 15,
+      "pivovar": "Černý Potoka",
+      "nazev": "Sirius",
+      "stupen": "",
+      "alkohol": "5.2",
+      "styl": "Bohemian Pilsner",
+      "dalsi": "",
+      "raw": "Černý Potoka Sirius | Bohemian Pilsner, 5.2% ABV, CZ"
+    },
+    {
+      "pozice": 16,
+      "pivovar": "Clock",
+      "nazev": "Lazarus",
+      "stupen": "",
+      "alkohol": "0.5",
+      "styl": "Alcohol-Free Passion fruit Sour Ale",
+      "dalsi": "",
+      "raw": "Clock Lazarus | Alcohol-Free Passion fruit Sour Ale, 0.5% ABV, CZ"
+    },
+    {
+      "pozice": 17,
+      "pivovar": "Pioneer Beer",
+      "nazev": "Nordis",
+      "stupen": "",
+      "alkohol": "5.9",
+      "styl": "Northern IPA",
+      "dalsi": "",
+      "raw": "Pioneer Beer Nordis | Northern IPA, 5.9% ABV, CZ"
+    },
+    {
+      "pozice": 18,
+      "pivovar": "Vinohradský Pivovar",
+      "nazev": "Seaman",
+      "stupen": "",
+      "alkohol": "3.9",
+      "styl": "Traditional Gose",
+      "dalsi": "",
+      "raw": "Vinohradský Pivovar Seaman | Traditional Gose, 3.9% ABV, CZ"
+    },
+    {
+      "pozice": 19,
+      "pivovar": "Obora",
+      "nazev": "Ty Jantare!",
+      "stupen": "",
+      "alkohol": "7",
+      "styl": "BA Fruited Wild Ale",
+      "dalsi": "",
+      "raw": "Obora Ty Jantare! | BA Fruited Wild Ale, 7% ABV, CZ"
+    },
+    {
+      "pozice": 20,
+      "pivovar": "Obora",
+      "nazev": "Palm Drive",
+      "stupen": "",
+      "alkohol": "5.4",
+      "styl": "Session IPA",
+      "dalsi": "",
+      "raw": "Obora Palm Drive | Session IPA, 5.4% ABV, CZ"
+    },
+    {
+      "pozice": 21,
+      "pivovar": "Kročehlavy",
+      "nazev": "Kladenské světlé",
+      "stupen": "10",
+      "alkohol": "4.2",
+      "styl": "Pale Lager",
+      "dalsi": "",
+      "raw": "Kročehlavy Kladenské světlé 10° | Pale Lager, 4.2% ABV, CZ"
+    },
+    {
+      "pozice": 22,
+      "pivovar": "Čestmír",
+      "nazev": "Ratamahatta",
+      "stupen": "",
+      "alkohol": "7",
+      "styl": "American IPA",
+      "dalsi": "",
+      "raw": "Čestmír Ratamahatta | American IPA, 7% ABV, CZ"
+    },
+    {
+      "pozice": 23,
+      "pivovar": "Sibeeria",
+      "nazev": "Liquid Luck",
+      "stupen": "11",
+      "alkohol": "4.3",
+      "styl": "American Pale Ale",
+      "dalsi": "",
+      "raw": "Sibeeria Liquid Luck | American Pale Ale, 11°, 4.3% ABV, CZ"
+    },
+    {
+      "pozice": 24,
+      "pivovar": "Sibeeria & Fehér Nyúl",
+      "nazev": "One Makes You Larger",
+      "stupen": "",
+      "alkohol": "6",
+      "styl": "Pastry Sour Ale w/Lemon",
+      "dalsi": "",
+      "raw": "Sibeeria/Fehér Nyúl One Makes You Larger | Pastry Sour Ale w/Lemon, 6% ABV, CZ"
+    },
+    {
+      "pozice": 25,
+      "pivovar": "Sibeeria",
+      "nazev": "Coco",
+      "stupen": "",
+      "alkohol": "4.7",
+      "styl": "Porter w/ Coconut & Vanilla",
+      "dalsi": "",
+      "raw": "Sibeeria Coco | Porter w/ Coconut & Vanilla, 4.7% ABV, CZ"
+    },
+    {
+      "pozice": 26,
+      "pivovar": "Sibeeria",
+      "nazev": "Fresh Hop Czech Pale Ale 2025",
+      "stupen": "",
+      "alkohol": "4.8",
+      "styl": "Fresh Hop Pale Ale",
+      "dalsi": "",
+      "raw": "Sibeeria Fresh Hop Czech Pale Ale 2025 | Fresh Hop Pale Ale, 4.8% ABV, CZ"
+    },
+    {
+      "pozice": 27,
+      "pivovar": "Sibeeria",
+      "nazev": "Big Maple Tree",
+      "stupen": "30",
+      "alkohol": "10.8",
+      "styl": "Imperial Stout w/Maple Syrup",
+      "dalsi": "",
+      "raw": "Sibeeria Big Maple Tree | Imperial Stout w/Maple Syrup, 30°, 10.8% ABV, CZ"
+    },
+    {
+      "pozice": 28,
+      "pivovar": "Sibeeria",
+      "nazev": "Hopnotic",
+      "stupen": "",
+      "alkohol": "8",
+      "styl": "DDH Double IPA",
+      "dalsi": "",
+      "raw": "Sibeeria Hopnotic | DDH Double IPA, 8% ABV, CZ"
+    },
+    {
+      "pozice": 29,
+      "pivovar": "Sibeeria",
+      "nazev": "Yummy Pineapple, Papaya & Coconut",
+      "stupen": "",
+      "alkohol": "6.1",
+      "styl": "FROZEN Pastry Sour Ale",
+      "dalsi": "",
+      "raw": "Sibeeria Yummy Pineapple, Papaya & Coconut | FROZEN Pastry Sour Ale, 6.1% ABV, CZ"
+    }
+  ]
+}

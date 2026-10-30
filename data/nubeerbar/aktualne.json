@@ -1,0 +1,117 @@
+{
+  "zdroj": "https://nubeerbar.cz/online-menu",
+  "zmeneno": "2026-10-30 11:04",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "KLENOT",
+      "nazev": "SVETLÝ LEŽÁK",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "PILSNER",
+      "dalsi": "",
+      "raw": "KLENOT SVETLÝ LEŽÁK 12° | PILSNER | 4.8%"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "VIK",
+      "nazev": "GROOVY STORM",
+      "stupen": "15",
+      "alkohol": "5.6",
+      "styl": "NEW ZELAND NEIPA",
+      "dalsi": "",
+      "raw": "VIK GROOVY STORM 15° | NEW ZELAND NEIPA | 5.6%"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "PHILLY",
+      "nazev": "WEISE",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "SOUR",
+      "dalsi": "",
+      "raw": "PHILLY WEISE 12° | SOUR | 5%"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "NUBEERBAR",
+      "nazev": "RADLER",
+      "stupen": "10",
+      "alkohol": "3.3",
+      "styl": "CITRUS RADLER",
+      "dalsi": "",
+      "raw": "NUBEERBAR RADLER 10° | CITRUS RADLER | 3.3%"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "KRKONOŠSKÝ MEDVĚD",
+      "nazev": "EARLY EVENING ALE",
+      "stupen": "11",
+      "alkohol": "4.4",
+      "styl": "APA",
+      "dalsi": "",
+      "raw": "KRKONOŠSKÝ MEDVĚD EARLY EVENING ALE 11° | APA | 4.4%"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "CHROUST",
+      "nazev": "BALTIC EXPREESS",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "HAZY SESSION IPA",
+      "dalsi": "",
+      "raw": "CHROUST BALTIC EXPREESS 12° | HAZY SESSION IPA | 4.8%"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "ČESTMÍR",
+      "nazev": "NINE",
+      "stupen": "14",
+      "alkohol": "6",
+      "styl": "IPA",
+      "dalsi": "",
+      "raw": "ČESTMÍR NINE 14° | IPA | 6%"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "RAVEN",
+      "nazev": "ORANGE IPA",
+      "stupen": "15",
+      "alkohol": "6.3",
+      "styl": "IPA+ORANGE",
+      "dalsi": "",
+      "raw": "RAVEN ORANGE IPA 15° | IPA+ORANGE | 6.3%"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "MADCAT",
+      "nazev": "PURE HAZE 076",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "HAZY IPA",
+      "dalsi": "",
+      "raw": "MADCAT PURE HAZE 076 12° | HAZY IPA | 5.3%"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "AMITY",
+      "nazev": "SEMI-DRY CIDER",
+      "stupen": "",
+      "alkohol": "4.5",
+      "styl": "SEMI-DRY CIDER",
+      "dalsi": "",
+      "raw": "AMITY SEMI-DRY CIDER | SEMI-DRY CIDER | 4.5%"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "MAZÁK",
+      "nazev": "BALTIC PORTER",
+      "stupen": "18",
+      "alkohol": "6.8",
+      "styl": "PORTER",
+      "dalsi": "",
+      "raw": "MAZÁK BALTIC PORTER 18° | PORTER | 6.8%"
+    }
+  ]
+}
