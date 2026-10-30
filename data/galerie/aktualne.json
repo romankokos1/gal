@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-30 17:41",
+  "zmeneno": "2026-10-30 21:12",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "PREISLER",
-      "nazev": "Tvrdá Práce",
+      "pivovar": "MATUŠKA",
+      "nazev": "Dvanáctka",
       "stupen": "12",
-      "alkohol": "5.2",
+      "alkohol": "5.1",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "PREISLER – Tvrdá Práce 12°/5,2% světlý ležák"
+      "raw": "MATUŠKA – Dvanáctka 12°/5,1% světlý ležák"
     },
     {
       "pozice": 2,

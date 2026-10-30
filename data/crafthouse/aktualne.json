@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-10-30 11:04",
+  "zmeneno": "2026-10-30 21:12",
   "metoda": "selektor",
   "piva": [
     {
@@ -185,16 +185,6 @@
     },
     {
       "pozice": 19,
-      "pivovar": "Volt",
-      "nazev": "Blackout",
-      "stupen": "",
-      "alkohol": "6.5",
-      "styl": "Stout - Irish Dry",
-      "dalsi": "",
-      "raw": "Blackout | Stout - Irish Dry | 6.5% ABV | Pivovar Volt / CZ"
-    },
-    {
-      "pozice": 20,
       "pivovar": "Raven",
       "nazev": "Aurora",
       "stupen": "",
@@ -204,7 +194,7 @@
       "raw": "Aurora | IPA - Other | 6.8% ABV | Pivovar Raven / CZ"
     },
     {
-      "pozice": 21,
+      "pozice": 20,
       "pivovar": "Kasteel Brouwerij Vanhonsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "",
@@ -214,7 +204,7 @@
       "raw": "Kasteel Rouge | Fruit Beer | 8% ABV | Kasteel Brouwerij Vanhonsebrouck / BE"
     },
     {
-      "pozice": 22,
+      "pozice": 21,
       "pivovar": "FALKON",
       "nazev": "BOCHÁNEK",
       "stupen": "",

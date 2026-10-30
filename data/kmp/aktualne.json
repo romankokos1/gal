@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-30 19:11",
+  "zmeneno": "2026-10-30 21:12",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "SQBRU",
-      "nazev": "Apricot Eclipse",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "kyseláč s meruňkami, calamansi a černým rybízem",
+      "pivovar": "Volt",
+      "nazev": "Elektra",
+      "stupen": "15",
+      "alkohol": "6.5",
+      "styl": "višňový kyseláč s koriandrem a himalájskou solí",
       "dalsi": "",
-      "raw": "SQBRU - Apricot Eclipse, kyseláč s meruňkami, calamansi a černým rybízem, 11° sv. nef., 4, 5% vol. Alc"
+      "raw": "Volt - Elektra, višňový kyseláč s koriandrem a himalájskou solí, 15° sv. nef., 6, 5% vol. Alc, 18 IBU"
     },
     {
       "pozice": 9,
