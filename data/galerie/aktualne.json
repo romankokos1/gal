@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-30 14:06",
+  "zmeneno": "2026-10-30 16:07",
   "metoda": "nadpis",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "SEVEN ISLANDS (GRE) & HARLAND (USA)",
-      "nazev": "Coastal Dominion",
-      "stupen": "",
-      "alkohol": "8",
-      "styl": "DDH Double NEIPA (citra ,strata, krush)",
+      "pivovar": "CLOCK",
+      "nazev": "No idols! Pineapple Session IPA",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "Session IPA infuzovaná",
       "dalsi": "",
-      "raw": "SEVEN ISLANDS (GRE) & HARLAND (USA) – Coastal Dominion 8%/25 IBU DDH Double NEIPA (citra ,strata, krush)"
+      "raw": "CLOCK – No idols! Pineapple Session IPA 11°/4,5% Session IPA infuzovaná"
     },
     {
       "pozice": 5,
