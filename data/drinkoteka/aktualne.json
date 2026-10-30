@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-10-30 11:04",
+  "zmeneno": "2026-10-30 17:07",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,6 +15,16 @@
     },
     {
       "pozice": 2,
+      "pivovar": "Ārpus",
+      "nazev": "Mango X Pineapple Gose",
+      "stupen": "",
+      "alkohol": "4.5",
+      "styl": "Fruited Gose",
+      "dalsi": "",
+      "raw": "Mango X Pineapple Gose | Fruited Gose | 4.5% ABV | 🇱🇻Ārpus"
+    },
+    {
+      "pozice": 3,
       "pivovar": "Einsiedler",
       "nazev": "Helles",
       "stupen": "",
@@ -24,7 +34,7 @@
       "raw": "Helles | Ležák - Lager | 5.2% ABV | Einsiedler"
     },
     {
-      "pozice": 3,
+      "pozice": 4,
       "pivovar": "Ārpus",
       "nazev": "TDH Motueka X Riwaka X Citra",
       "stupen": "",
@@ -34,7 +44,7 @@
       "raw": "TDH Motueka X Riwaka X Citra | Double New England | 8% ABV | 🇱🇻Ārpus"
     },
     {
-      "pozice": 4,
+      "pozice": 5,
       "pivovar": "Verdant",
       "nazev": "Chromaticity",
       "stupen": "",
@@ -44,7 +54,7 @@
       "raw": "Chromaticity | New England | 5.2% ABV | 🇬🇧Verdant"
     },
     {
-      "pozice": 5,
+      "pozice": 6,
       "pivovar": "NOZIB",
       "nazev": "HAZY CITRA",
       "stupen": "",
@@ -54,7 +64,7 @@
       "raw": "HAZY CITRA | New England IPA | 5.5% ABV | 🇨🇿NOZIB"
     },
     {
-      "pozice": 6,
+      "pozice": 7,
       "pivovar": "Ārpus",
       "nazev": "TDH Nelson Sauvin X Riwaka",
       "stupen": "",
@@ -64,7 +74,7 @@
       "raw": "TDH Nelson Sauvin X Riwaka | New Zealand IPA | 7.2% ABV | 🇱🇻Ārpus"
     },
     {
-      "pozice": 7,
+      "pozice": 8,
       "pivovar": "Ārpus",
       "nazev": "West Coast Pilsner",
       "stupen": "",
@@ -74,7 +84,7 @@
       "raw": "West Coast Pilsner | 4.4% ABV | 🇱🇻Ārpus"
     },
     {
-      "pozice": 8,
+      "pozice": 9,
       "pivovar": "Wild Creatures",
       "nazev": "Meditation (2020)",
       "stupen": "",
