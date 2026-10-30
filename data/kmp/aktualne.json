@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-29 23:38",
+  "zmeneno": "2026-10-30 19:11",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Permon",
-      "nazev": "Zelený chmel",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "světlý ležák se zeleným chmelem",
+      "pivovar": "Poutník",
+      "nazev": "Kvasnicový",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Permon - Zelený chmel, světlý ležák se zeleným chmelem, 11° sv. nef., 4, 5% vol. Alc, 37 IBU"
+      "raw": "Poutník - Kvasnicový, světlý ležák, 12° sv., 5% vol. Alc"
     },
     {
       "pozice": 4,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Brewdog",
-      "nazev": "Black Heart",
-      "stupen": "11",
-      "alkohol": "4.1",
-      "styl": "Irish Dry Stout",
+      "pivovar": "The Barn Beer Co.",
+      "nazev": "Švarcík",
+      "stupen": "12",
+      "alkohol": "4.5",
+      "styl": "Wet Hop Schwarzbier",
       "dalsi": "",
-      "raw": "Brewdog - Black Heart, Irish Dry Stout, 11° tm., 4, 1% vol. Alc"
+      "raw": "The Barn Beer Co. - Švarcík, Wet Hop Schwarzbier, 12° tm. nef., 4, 5% vol. Alc, 25 IBU"
     },
     {
       "pozice": 6,
