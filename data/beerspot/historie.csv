@@ -1,7 +1,7 @@
 klic,pivovar,nazev,stupen,alkohol,styl,raw,narazeno,docepovano,dalsi,odhad
 jungberg|300 kurven,JungBerg,300 Kurven,10,4.1,Pilsner - Czech,300 Kurven 10° | Pilsner - Czech | 4.1% ABV | Pivovar JungBerg,2026-10-30 11:04,,,
-kladno krocehlavy|kladensky lezak,Kladno Kročehlavy,Kladenský ležák,12,5.2,Pilsner - Czech,Kladenský ležák 12° | Pilsner - Czech | 5.2% ABV | Pivovar Kladno Kročehlavy,2026-10-30 11:04,,,
-pivecka|rauchbier,Pivečka,Rauchbier,,5.5,Rauchbier,Rauchbier | Rauchbier | 5.5% ABV | Pivovar Pivečka,2026-10-30 11:04,,,
+kladno krocehlavy|kladensky lezak,Kladno Kročehlavy,Kladenský ležák,12,5.2,Pilsner - Czech,Kladenský ležák 12° | Pilsner - Czech | 5.2% ABV | Pivovar Kladno Kročehlavy,2026-10-30 11:04,2026-10-30 15:06,,
+pivecka|rauchbier,Pivečka,Rauchbier,,5.5,Rauchbier,Rauchbier | Rauchbier | 5.5% ABV | Pivovar Pivečka,2026-10-30 11:04,2026-10-30 15:06,,
 cernokostelecky pivovar|cerna svine,Černokostelecký pivovar,Černá svině,,5.8,Lager - Tmavé (Czech Dark),Černá svině | Lager - Tmavé (Czech Dark) | 5.8% ABV | Černokostelecký pivovar,2026-10-30 11:04,,,
 akciovy pivovar libertas|libertas hefe weizen,Akciový pivovar Libertas,Libertas Hefe Weizen,11,4.9,Wheat Beer - Hefeweizen,Libertas 11° Hefe Weizen | Wheat Beer - Hefeweizen | 4.9% ABV | Akciový pivovar Libertas,2026-10-30 11:04,,,
 matuska|california,Matuška,California,12,5.3,Pale Ale - American,California 12° | Pale Ale - American | 5.3% ABV | Pivovar Matuška,2026-10-30 11:04,,,
@@ -9,3 +9,5 @@ sibeeria|glynnis,Sibeeria,Glynnis,,4.3,IPA - Session,Glynnis | IPA - Session | 4
 garp|garp 811 raspberry sour,Garp,Garp 811 - Raspberry Sour,,4.2,Sour - Fruited,Garp 811 - Raspberry Sour | Sour - Fruited | 4.2% ABV | Pivovar Garp,2026-10-30 11:04,,,
 garp|garp 410,Garp,Garp 410,,4.7,IPA - Session,Garp 410 | IPA - Session | 4.7% ABV | Pivovar Garp,2026-10-30 11:04,,,
 kasteel brouwerij vanhonsebrouck|kasteel rouge,Kasteel Brouwerij Vanhonsebrouck,Kasteel Rouge,,8,Fruit Beer,Kasteel Rouge | Fruit Beer | 8% ABV | Kasteel Brouwerij Vanhonsebrouck,2026-10-30 11:04,,,
+akciovy pivovar libertas|libertas bohemian lager,Akciový pivovar Libertas,Libertas Bohemian Lager,11,4.4,Lager - Pale,Libertas 11° Bohemian Lager | Lager - Pale | 4.4% ABV | Akciový pivovar Libertas,2026-10-30 15:06,,,
+sibeeria|one festival,Sibeeria,One Festival,,5.3,Pilsner - Other,One Festival | Pilsner - Other | 5.3% ABV | Sibeeria Brewery,2026-10-30 15:06,,,

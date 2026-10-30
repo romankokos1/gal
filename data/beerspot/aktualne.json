@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerspotprague.cz/beer-list/",
-  "zmeneno": "2026-10-30 11:04",
+  "zmeneno": "2026-10-30 15:06",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,23 +15,23 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Kladno Kročehlavy",
-      "nazev": "Kladenský ležák",
-      "stupen": "12",
-      "alkohol": "5.2",
-      "styl": "Pilsner - Czech",
+      "pivovar": "Akciový pivovar Libertas",
+      "nazev": "Libertas Bohemian Lager",
+      "stupen": "11",
+      "alkohol": "4.4",
+      "styl": "Lager - Pale",
       "dalsi": "",
-      "raw": "Kladenský ležák 12° | Pilsner - Czech | 5.2% ABV | Pivovar Kladno Kročehlavy"
+      "raw": "Libertas 11° Bohemian Lager | Lager - Pale | 4.4% ABV | Akciový pivovar Libertas"
     },
     {
       "pozice": 3,
-      "pivovar": "Pivečka",
-      "nazev": "Rauchbier",
+      "pivovar": "Sibeeria",
+      "nazev": "One Festival",
       "stupen": "",
-      "alkohol": "5.5",
-      "styl": "Rauchbier",
+      "alkohol": "5.3",
+      "styl": "Pilsner - Other",
       "dalsi": "",
-      "raw": "Rauchbier | Rauchbier | 5.5% ABV | Pivovar Pivečka"
+      "raw": "One Festival | Pilsner - Other | 5.3% ABV | Sibeeria Brewery"
     },
     {
       "pozice": 4,
