@@ -87,28 +87,55 @@ PODNIKY = [
     {"id": "falkenstejn", "nazev": "Falkenštejn",
      "url": "https://www.pivofalkenstejn.cz/restaurace/napojovy-listek.html",
      "pivovar": "Falkenštejn", "bez_objemu": True},
+
+    # ---- Praha, přidáno 30. 10. 2026 podle hromadného průzkumu ----
+    # BeerGeek: tabulka #ONTAP, „Fehér Nyúl Good Omen“ + „Imperial Pastry Stout, 8.2% ABV, HU“
+    {"id": "beergeek", "nazev": "BeerGeek Bar", "url": "https://beergeek.cz/menu/",
+     "polozky": "#ONTAP tr", "pole": ["h3", "h3 + div"],
+     "format": "pivovar nazev|popis", "jen_selektor": True},
+    # Craft House: 27 kohoutů z Untappdu, „Unicorn Milk“ | „IPA - Milkshake“ | „Pivovar Raven / CZ“
+    {"id": "crafthouse", "nazev": "Craft House", "url": "https://www.crafthouse.cz/en/",
+     "polozky": ".tap-column .table-row",
+     "pole": [".title-line h1", ".title-line span", ".abv", ".brewed-by"],
+     "format": "nazev|styl|…|pivovar", "jen_selektor": True},
+    # Nubeerbar: ChoiceQR, sekce „Dnes na čepu“, „VIK GROOVY STORM 15°“ | „NEW ZELAND NEIPA“ | „5.6%“
+    {"id": "nubeerbar", "nazev": "Nubeerbar", "url": "https://nubeerbar.cz/online-menu",
+     "polozky": '[data-url^="section:pivni-listek/dnes-na-cepu/"]',
+     "pole": ['[class*="menuItemTitle"]', '[class*="CollapsedText_text"]', '[class*="menuLabel__"]'],
+     "format": "pivovar nazev|popis", "jen_selektor": True},
+    # Beer Knír: obyčejné stažení odmítá (401), proto prohlížeč; první záložka menu = na čepu
+    {"id": "beerknir", "nazev": "Beer Knír", "url": "https://beerknir.cz/",
+     "polozky": "#menu .bt_bb_tab_item:first-child .bt_bb_menu_item",
+     "pole": [".bt_bb_menu_item_title", ".bt_bb_menu_item_description"],
+     "format": "nazev|styl|…|pivovar", "cesta": "prohlizec", "jen_selektor": True},
+    # Decentní dýně: „0,5L Session NEIPA 12° (Čestmír)“ – pivovar v závorce, objem na začátku
+    {"id": "dcdyne", "nazev": "Decentní dýně", "url": "https://dcdyne.com/",
+     "polozky": "#dnes-na-vycepu table tr", "pole": ["td:first-child"],
+     "jen_s_objemem": True, "bez_duplicit": True, "format": "nazev (pivovar)", "jen_selektor": True},
+    # The Beer Spot a Drinkøtéka: Untappd menu vkládané skriptem → prohlížeč, jen sekce s čepy
+    {"id": "beerspot", "nazev": "The Beer Spot", "url": "https://beerspotprague.cz/beer-list/",
+     "polozky": 'div.section:has(.section-name:-soup-contains("na čepu")) .menu-item',
+     "pole": [".item-name span[id]", ".item-category", ".item-abv", ".brewery"],
+     "format": "nazev|styl|…|pivovar", "cesta": "prohlizec", "cekat_ms": 6000, "jen_piva": True,
+     "jen_selektor": True},
+    {"id": "drinkoteka", "nazev": "Drinkøtéka", "url": "https://drinkoteka.cz/",
+     "polozky": 'div.section:has(.section-name:-soup-contains("Tap Menu")) .menu-item',
+     "pole": [".item-name span[id]", ".item-category", ".item-abv", ".brewery"],
+     "format": "nazev|styl|…|pivovar", "cesta": "prohlizec", "cekat_ms": 6000, "bez_duplicit": True,
+     "jen_piva": True, "jen_selektor": True},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
 # (obyčejně i přes prohlížeč) do data/_pruzkum/<id>/, nic nesbírá a na stránce se neukáže.
 # Až bude podnik nastavený v PODNIKY, řádek odsud smaž.
 PRUZKUM = [
-    # hromadný průzkum pražských podniků (29. 10. 2026)
-    {"id": "beergeek", "url": "https://beergeek.cz/menu/"},
-    {"id": "crafthouse", "url": "https://www.crafthouse.cz/en/"},
-    {"id": "nubeerbar", "url": "https://nubeerbar.cz/online-menu"},
-    {"id": "beerknir", "url": "https://beerknir.cz/"},
-    {"id": "dcdyne", "url": "https://dcdyne.com/"},
-    {"id": "zlycasy", "url": "https://zlycasy.eu/section:spodni-bar/cepovana-piva"},
-    {"id": "badflash-karlin", "url": "https://badflash-karlin.cz/menu"},
-    {"id": "badflash-krymska", "url": "https://badflash-krymska.cz/online-menu"},
-    {"id": "kulovyblesk", "url": "https://www.restauracekulovyblesk.cz/dnesnacepu"},
-    {"id": "praguebeermuseum", "url": "https://praguebeermuseum.cz/en/"},
-    {"id": "pivovarskyklub", "url": "http://www.pivovarskyklub.com/pivo/"},
-    {"id": "dvakohouti", "url": "https://www.dvakohouti.cz/"},
-    {"id": "beerspot", "url": "https://beerspotprague.cz/beer-list/"},
-    {"id": "drinkoteka", "url": "https://drinkoteka.cz/"},
-    {"id": "pivnici-praha", "url": "https://www.pivnici.cz/na-cepu/praha/podrobne/"},
+    # 3. kolo: ChoiceQR sekce (Zlý časy, Bad Flash) a Kulový blesk bez „www“
+    {"id": "zlycasy", "kolo": 3, "url": "https://zlycasy.eu/section:horni-bar"},
+    {"id": "zlycasy-prostredni", "kolo": 3, "url": "https://zlycasy.eu/section:prostredni-bar"},
+    {"id": "zlycasy-spodni", "kolo": 3, "url": "https://zlycasy.eu/section:spodni-bar"},
+    {"id": "badflash-karlin", "kolo": 3, "url": "https://badflash-karlin.cz/section:na-cepu"},
+    {"id": "badflash-krymska", "kolo": 3, "url": "https://badflash-krymska.cz/section:pivni-listek"},
+    {"id": "kulovyblesk", "kolo": 3, "url": "https://restauracekulovyblesk.cz/dnesnacepu"},
 ]
 
 ROOT = Path(__file__).parent / "data"
@@ -159,7 +186,7 @@ def _get(url: str, headers: dict) -> requests.Response:
     return r
 
 
-def fetch_browser(url: str) -> str:
+def fetch_browser(url: str, p: dict | None = None) -> str:
     """Poslední možnost: skutečný prohlížeč (Playwright), když web odmítá skripty."""
     try:
         from playwright.sync_api import sync_playwright
@@ -177,8 +204,9 @@ def fetch_browser(url: str) -> str:
         b = pw.chromium.launch()
         try:
             pg = b.new_page(locale="cs-CZ", user_agent=BROWSER_HEADERS["User-Agent"])
-            resp = pg.goto(url, wait_until="domcontentloaded", timeout=45000)
-            pg.wait_for_timeout(1500)
+            wait = (p or {}).get("cekat_ms")   # menu vkládané skriptem (Untappd) se načítá déle
+            resp = pg.goto(url, wait_until="networkidle" if wait else "domcontentloaded", timeout=60000)
+            pg.wait_for_timeout(wait or 1500)
             if resp and resp.status >= 400:
                 raise RuntimeError(f"prohlížeč dostal HTTP {resp.status}")
             return pg.content()
@@ -194,11 +222,13 @@ def fetch(url: str, p: dict | None = None) -> str:
     order = ["vlastni", "hlavicky", "prohlizec"]
     if p.get("_cesta") in ("hlavicky", "prohlizec"):  # minule vlastní hlavička neprošla
         order = order[1:]
+    if p.get("cesta") == "prohlizec":                # obsah vzniká až v prohlížeči
+        order = ["prohlizec"]
     for way in order:
         for _ in range(2 if way != "prohlizec" else 1):
             try:
                 if way == "prohlizec":
-                    html = fetch_browser(url)
+                    html = fetch_browser(url, p)
                 else:
                     r = _get(url, OWN_HEADERS if way == "vlastni" else BROWSER_HEADERS)
                     if r.status_code in BLOCKED:
@@ -233,6 +263,8 @@ def is_junk(line: str) -> bool:
     letters = re.findall(r"[^\W\d_]", line)
     if re.search(r"na\s+čepu|on\s+tap", line, re.I) and not re.search(r"\d", line):
         return True    # nadpis sekce („TENTO TÝDEN NA ČEPU / ON TAP THIS WEEK“)
+    if re.search(r"\btap is empty\b|\bempty tap\b", line, re.I):
+        return True    # „27 Tap is empty“ (Craft House)
     return len(letters) < 2 or bool(re.fullmatch(r"\s*(prázdn\w*|volno|empty|tbd)\s*", line, re.I))
 
 
@@ -376,7 +408,15 @@ def extract_lines(html: str, p: dict) -> tuple[list[str], str]:
     if p.get("bez_objemu"):          # „Světák 11° | 0,5 l | 0,3 l“ → „Světák 11°“
         lines = [clean(re.sub(r"\s*\|?\s*\b\d+(?:[.,]\d+)?\s*l\b\.?|\s*\|\s*(?=\||$)", " ", l)).strip(" |")
                  for l in lines]
-        lines = list(dict.fromkeys(lines))   # stejné pivo v řádku 0,5 l i 0,3 l = jedno pivo
+    if p.get("bez_objemu") or p.get("bez_duplicit"):
+        lines = list(dict.fromkeys(lines))   # stejné pivo vícekrát (0,5 l i 0,3 l, kopie menu) = jedno
+    if p.get("jen_piva"):            # „BEER TASTING SET“ apod. – bez stupňů i procent to není pivo
+        lines = [l for l in lines if BEER_HINT.search(l)]
+    if p.get("jen_s_objemem"):       # „0,5L Session NEIPA 12° (Čestmír)“ – jiné řádky tabulky nejsou piva
+        lines = [re.sub(r"^\s*\d+[.,]\d+\s*l\b\s*", "", l, flags=re.I) for l in lines
+                 if re.match(r"^\s*\d+[.,]\d+\s*l\b", l, re.I) and not re.search(r"pet|lahv", l, re.I)]
+        if p.get("bez_duplicit"):
+            lines = list(dict.fromkeys(lines))
     return [l for l in lines if not is_junk(l)], method
 
 
@@ -456,6 +496,8 @@ MULTI_BREWERIES = [
     "Dva kohouti", "Černá hora", "Nová Paka", "Velké Popovice", "Pivovarský dvůr", "Bad Flash",
     "Hostomický ječmínek", "Magic Road", "Mad Scientist", "To Øl",
     "Svatý Norbert", "U Fleků", "Kamenice nad Lipou", "Starý Plzenec", "Velký Rybník",
+    "Fehér Nyúl", "Pioneer Beer", "Vinohradský pivovar", "The Kernel", "Krkonošský medvěd",
+    "Hradecký klenot", "Malt Worm", "Wild Creatures", "Vault City", "Garage Beer",
 ]
 _MULTI_N = sorted((norm(b) for b in MULTI_BREWERIES if " " in b), key=len, reverse=True)
 KMP_NOISE = re.compile(r"\b(?:sv|svě?tl|tm|tmav|polotm|pol|nef|nefiltr|filtr)\.", re.I)
@@ -476,6 +518,7 @@ def split_brewery(text: str) -> tuple[str, str]:
     return " ".join(words[:k]), " ".join(words[k:])
 
 
+FLAGS = re.compile("[\U0001F1E6-\U0001F1FF\U0001F3F4\U000E0020-\U000E007F]")
 NSB = re.compile(r"^(?P<nazev>.+?)\s+[–—-]\s+(?P<styl>.*?)\s*\((?P<pivovar>[^()]+)\)\s*(?P<rest>.*)$")
 
 
@@ -518,6 +561,73 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
         a = PCT.search(parts[3]) if len(parts) > 3 else None
         if d:
             out["stupen"] = d.group(1).replace(",", ".")
+        if a:
+            out["alkohol"] = a.group(1).replace(",", ".")
+        return out
+
+    if fmt == "pivovar nazev|popis":
+        # „Fehér Nyúl/Metalhead Down In A Hole | Double IPA, 8.5% ABV, HU“ (BeerGeek)
+        # „VIK GROOVY STORM 15° | NEW ZELAND NEIPA | 5.6%“ (Nubeerbar)
+        title, _, desc = main.partition(" | ")
+        m = re.match(r"^([^\s/]+(?:\s[^\s/]+)?)/(.+)$", title)
+        if m and len(m.group(1).split()) <= 2:              # kolaborace „A/B …“
+            b2, rest = split_brewery(m.group(2))
+            out["pivovar"], name = f"{m.group(1)} & {b2}", rest
+        else:
+            out["pivovar"], name = split_brewery(title)
+        d = DEG.search(title) or DEG.search(desc)
+        if d:
+            out["stupen"] = d.group(1).replace(",", ".")
+        dn = DEG.search(name)
+        out["nazev"] = clean((name[:dn.start()] + name[dn.end():]) if dn else name).strip(" ,")
+        a = ABV_LABEL.search(desc) or re.search(NUM + r"\s*%", desc)
+        if a:
+            out["alkohol"] = a.group(1).replace(",", ".")
+        bits = [x.strip() for x in re.split(r"\s*[,|]\s*", desc) if x.strip()]
+        out["styl"] = next((x for x in bits if not re.search(r"\d\s*[%°]|ABV", x)
+                            and not re.fullmatch(r"[A-Z]{2}", x)), "")
+        if not out["pivovar"] and default_brewery:
+            out["pivovar"] = default_brewery
+        return out
+
+    if fmt == "nazev|styl|…|pivovar":
+        # „Unicorn Milk | IPA - Milkshake | 5.5% ABV | Pivovar Raven / CZ“ (Craft House, Untappd)
+        # „Česká moucha 11° | Světlý ležák | 11° | 4.5% | Pivovar Moucha“ (Beer Knír)
+        parts = [x.strip() for x in main.split(" | ") if x.strip()]
+        name = parts[0] if parts else ""
+        brew = parts[-1] if len(parts) > 2 and not re.search(r"\d\s*[°%]", parts[-1]) else ""
+        mid = parts[1:-1] if brew else parts[1:]
+        brew = re.sub(r"\s*/\s*[A-Z]{0,3}\s*$", "", FLAGS.sub("", brew)).strip()   # „🇨🇿…“, „/ CZ“
+        brew = re.sub(r"^(?:pivovar|minipivovar)\s+", "", brew, flags=re.I)
+        brew = re.sub(r"\s+(?:brewery|brewing(?: co\.?| company)?)$", "", brew, flags=re.I)
+        out["pivovar"] = brew or default_brewery
+        rest = " ".join(mid)
+        d = DEG.search(name) or DEG.search(rest)
+        if d:
+            out["stupen"] = d.group(1).replace(",", ".")
+        dn = DEG.search(name)
+        out["nazev"] = clean((name[:dn.start()] + name[dn.end():]) if dn else name).strip(" ,")
+        a = ABV_LABEL.search(rest) or PCT.search(rest)
+        if a:
+            out["alkohol"] = a.group(1).replace(",", ".")
+        out["styl"] = next((x for x in mid if not re.search(r"\d", x)), "")
+        return out
+
+    if fmt == "nazev (pivovar)":
+        # „Session NEIPA 12° (Čestmír)“, „300 Kurven 10° - výčepní (Jungberg)“
+        m = re.match(r"^(.*?)\s*\(([^()]+)\)\s*$", main)
+        body, brew = (m.group(1), m.group(2)) if m else (main, "")
+        out["pivovar"] = re.sub(r"^(?:pivovar|minipivovar)\s+", "", brew.strip(), flags=re.I) or default_brewery
+        d = DEG.search(body)
+        if d:
+            out["stupen"] = d.group(1).replace(",", ".")
+            out["nazev"] = body[:d.start()].strip(" ,-")
+            out["styl"] = body[d.end():].strip(" ,-–")
+        else:
+            out["nazev"] = re.sub(r"^nealko\s*-?\s*", "", body, flags=re.I).strip(" -")
+            if re.match(r"^nealko", body, re.I):
+                out["styl"] = "Nealko"
+        a = PCT.search(body)
         if a:
             out["alkohol"] = a.group(1).replace(",", ".")
         return out
@@ -878,7 +988,7 @@ def replay(log: list[dict], p: dict):
     Vrací (historie, výsledek posledního kroku)."""
     hist, ann, prev, last = [], {}, "", None
     for e in log:
-        radky = list(dict.fromkeys(e["radky"])) if p.get("bez_objemu") else e["radky"]
+        radky = list(dict.fromkeys(e["radky"])) if (p.get("bez_objemu") or p.get("bez_duplicit")) else e["radky"]
         last = apply_state(hist, radky, e["cas"], quiet=True,
                            default_brewery=p.get("pivovar", ""), fmt=p.get("format", ""),
                            upcoming=e.get("pripraveno", []), ann=ann, prev_when=prev)
