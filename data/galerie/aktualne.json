@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-30 16:07",
+  "zmeneno": "2026-10-30 17:41",
   "metoda": "nadpis",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "CLOCK",
-      "nazev": "No idols! Pineapple Session IPA",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "Session IPA infuzovaná",
+      "pivovar": "SKJUBRU",
+      "nazev": "Tohle se Muselo Stout",
+      "stupen": "13",
+      "alkohol": "6.2",
+      "styl": "stout s malinama a čokoládou",
       "dalsi": "",
-      "raw": "CLOCK – No idols! Pineapple Session IPA 11°/4,5% Session IPA infuzovaná"
+      "raw": "SKJUBRU – Tohle se Muselo Stout 13°/6,2% stout s malinama a čokoládou"
     },
     {
       "pozice": 5,
