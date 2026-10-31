@@ -1,30 +1,20 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-10-30 15:06",
+  "zmeneno": "2026-10-31 11:24",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Jílovice",
-      "nazev": "",
+      "pivovar": "Petrovický",
+      "nazev": "Kilián",
       "stupen": "10",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Jílovice 10° sv.nef."
+      "raw": "Petrovický Kilián 10° sv.nef."
     },
     {
       "pozice": 2,
-      "pivovar": "->",
-      "nazev": "Petrovický Kilián",
-      "stupen": "10",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "-> Petrovický Kilián 10° sv.nef."
-    },
-    {
-      "pozice": 3,
       "pivovar": "Mazák",
       "nazev": "EXTRA HOŘKÁ",
       "stupen": "11",
@@ -32,6 +22,16 @@
       "styl": "",
       "dalsi": "",
       "raw": "Mazák EXTRA HOŘKÁ 11° sv.nef."
+    },
+    {
+      "pozice": 3,
+      "pivovar": "->",
+      "nazev": "Habakuk ležák",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Ležák",
+      "dalsi": "",
+      "raw": "-> Habakuk ležák 11° sv.nef."
     },
     {
       "pozice": 4,
@@ -45,6 +45,16 @@
     },
     {
       "pozice": 5,
+      "pivovar": "->",
+      "nazev": "Jílovice ležák",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Ležák",
+      "dalsi": "",
+      "raw": "-> Jílovice ležák 11° sv.nef."
+    },
+    {
+      "pozice": 6,
       "pivovar": "Rampušák",
       "nazev": "IPL",
       "stupen": "11",
@@ -54,7 +64,7 @@
       "raw": "Rampušák IPL 11° sv.nef."
     },
     {
-      "pozice": 6,
+      "pozice": 7,
       "pivovar": "Hulvát",
       "nazev": "ležák",
       "stupen": "12",
@@ -64,7 +74,7 @@
       "raw": "Hulvát ležák 12° sv.nef."
     },
     {
-      "pozice": 7,
+      "pozice": 8,
       "pivovar": "Zlatá kráva",
       "nazev": "PLNOTUČNÁ",
       "stupen": "12",
@@ -74,7 +84,7 @@
       "raw": "Zlatá kráva PLNOTUČNÁ 12° sv.nef."
     },
     {
-      "pozice": 8,
+      "pozice": 9,
       "pivovar": "Kamenice nad Lipou",
       "nazev": "",
       "stupen": "13",
@@ -84,7 +94,7 @@
       "raw": "Kamenice nad Lipou 13° polotm.nef."
     },
     {
-      "pozice": 9,
+      "pozice": 10,
       "pivovar": "Schneider",
       "nazev": "Weisse TAP7",
       "stupen": "13",
@@ -94,7 +104,7 @@
       "raw": "Schneider Weisse TAP7 13° pšeničné"
     },
     {
-      "pozice": 10,
+      "pozice": 11,
       "pivovar": "Cobolis",
       "nazev": "NEVADA",
       "stupen": "11",
@@ -104,7 +114,7 @@
       "raw": "Cobolis NEVADA 11° APA"
     },
     {
-      "pozice": 11,
+      "pozice": 12,
       "pivovar": "Pioneer",
       "nazev": "NZ Hopline",
       "stupen": "12",
@@ -114,7 +124,17 @@
       "raw": "Pioneer NZ Hopline 12° New Zealand Pale ALE"
     },
     {
-      "pozice": 12,
+      "pozice": 13,
+      "pivovar": "->",
+      "nazev": "Kocour SAMURAI",
+      "stupen": "14",
+      "alkohol": "",
+      "styl": "IPA",
+      "dalsi": "",
+      "raw": "-> Kocour SAMURAI 14° IPA"
+    },
+    {
+      "pozice": 14,
       "pivovar": "BrewDog",
       "nazev": "Elvis Juice",
       "stupen": "",
@@ -124,7 +144,7 @@
       "raw": "BrewDog Elvis Juice 6,5%Alc. Citrus IPA (UK - Skotsko)"
     },
     {
-      "pozice": 13,
+      "pozice": 15,
       "pivovar": "Čestmír",
       "nazev": "TIWANAKU",
       "stupen": "17",
@@ -134,7 +154,17 @@
       "raw": "Čestmír TIWANAKU 17° NEIPA"
     },
     {
-      "pozice": 14,
+      "pozice": 16,
+      "pivovar": "->",
+      "nazev": "Matuška RAPTOR",
+      "stupen": "15",
+      "alkohol": "",
+      "styl": "IPA",
+      "dalsi": "",
+      "raw": "-> Matuška RAPTOR 15° IPA"
+    },
+    {
+      "pozice": 17,
       "pivovar": "Chroust",
       "nazev": "Ice Tea SOUR",
       "stupen": "11",
@@ -144,7 +174,7 @@
       "raw": "Chroust Ice Tea SOUR 11°"
     },
     {
-      "pozice": 15,
+      "pozice": 18,
       "pivovar": "FunkyFluid",
       "nazev": "Gelato: Passion Fruit",
       "stupen": "",
@@ -154,17 +184,7 @@
       "raw": "FunkyFluid Gelato: Passion Fruit, Mango, Peach 5,5%Alc. Pastry SOUR (PL)"
     },
     {
-      "pozice": 16,
-      "pivovar": "Mazák",
-      "nazev": "Baltic PORTER",
-      "stupen": "18",
-      "alkohol": "",
-      "styl": "tmavé",
-      "dalsi": "",
-      "raw": "Mazák Baltic PORTER 18° tmavé nef."
-    },
-    {
-      "pozice": 17,
+      "pozice": 19,
       "pivovar": "MadCat",
       "nazev": "PUMPKIN ALE",
       "stupen": "12",
@@ -174,7 +194,7 @@
       "raw": "MadCat PUMPKIN ALE 12°"
     },
     {
-      "pozice": 18,
+      "pozice": 20,
       "pivovar": "Tvarg",
       "nazev": "PUMPKIN ALE",
       "stupen": "13",
@@ -184,7 +204,7 @@
       "raw": "Tvarg PUMPKIN ALE 13°"
     },
     {
-      "pozice": 19,
+      "pozice": 21,
       "pivovar": "Permon",
       "nazev": "PUMPKIN ALE 15",
       "stupen": "",
@@ -194,7 +214,7 @@
       "raw": "Permon PUMPKIN ALE 15"
     },
     {
-      "pozice": 20,
+      "pozice": 22,
       "pivovar": "Brewnicorn",
       "nazev": "PUMPKIN Space Latte",
       "stupen": "13",
@@ -204,7 +224,7 @@
       "raw": "Brewnicorn PUMPKIN Space Latte 13° Sour ALE"
     },
     {
-      "pozice": 21,
+      "pozice": 23,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",

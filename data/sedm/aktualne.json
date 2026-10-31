@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-29 21:20",
+  "zmeneno": "2026-10-31 11:24",
   "metoda": "selektor",
   "piva": [
     {
@@ -76,12 +76,12 @@
     {
       "pozice": 8,
       "pivovar": "Nozib",
-      "nazev": "bone dry",
+      "nazev": "cold as ekuanot",
       "stupen": "14",
-      "alkohol": "6.6",
-      "styl": "neipa",
+      "alkohol": "6.5",
+      "styl": "cold ipa",
       "dalsi": "",
-      "raw": "Nozib - bone dry | 14% | neipa, ABV 6,6%"
+      "raw": "Nozib - cold as ekuanot | 14% | cold ipa, ABV 6,5%"
     }
   ]
 }
