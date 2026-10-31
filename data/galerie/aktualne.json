@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-30 21:12",
+  "zmeneno": "2026-10-31 13:57",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,23 +15,23 @@
     },
     {
       "pozice": 2,
-      "pivovar": "SIBEERIA",
-      "nazev": "Fresh Hop Czech Pale Ale 2026",
+      "pivovar": "HAKSNA",
+      "nazev": "Season Harvest",
       "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "Pale Ale (juno, ceres)",
+      "alkohol": "5.2",
+      "styl": "Session NEIPA (mosaic, citra cryo)",
       "dalsi": "",
-      "raw": "SIBEERIA – Fresh Hop Czech Pale Ale 2026 12°/5,1% Pale Ale (juno, ceres)"
+      "raw": "HAKSNA – Season Harvest 12°/5,2% Session NEIPA (mosaic, citra cryo)"
     },
     {
       "pozice": 3,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Juicy Lucy",
+      "pivovar": "SIBEERIA",
+      "nazev": "Lollihop",
       "stupen": "15",
-      "alkohol": "6.5",
-      "styl": "NEIPA",
+      "alkohol": "6.6",
+      "styl": "West Coast IPA (citra, mosaic)",
       "dalsi": "",
-      "raw": "ZICHOVEC – Juicy Lucy 15°/6,5% NEIPA"
+      "raw": "SIBEERIA – Lollihop 15°/6,6% West Coast IPA (citra, mosaic)"
     },
     {
       "pozice": 4,
