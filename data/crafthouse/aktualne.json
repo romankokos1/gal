@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-10-31 17:29",
+  "zmeneno": "2026-10-31 19:30",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Čestmír",
-      "nazev": "Světlý ležák MÍR",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "Pilsner - Czech / Bohemian",
+      "pivovar": "Sibeeria",
+      "nazev": "One Festival",
+      "stupen": "",
+      "alkohol": "5.3",
+      "styl": "West Coast Pilsner - Lager",
       "dalsi": "",
-      "raw": "Světlý ležák 12° MÍR | Pilsner - Czech / Bohemian | 5% ABV | Pivovar Čestmír / CZ"
+      "raw": "One Festival | West Coast Pilsner - Lager | 5.3% ABV | Sibeeria Brewery / CZ"
     },
     {
       "pozice": 2,

@@ -1,9 +1,10 @@
 {
   "zpusob_stazeni": "prohlizec",
-  "chyby_v_rade": 0,
+  "chyby_v_rade": 1,
   "posledni_kontrola": "2026-10-31",
   "metoda": "selektor",
   "pocet_piv": 6,
   "posledni_zmena": "2026-10-31 17:29",
-  "posledni_chyba": "2026-10-31 11:24"
+  "posledni_chyba": "2026-10-31 19:30",
+  "chyba": "Stránku se nepodařilo stáhnout: Page.goto: net::ERR_TIMED_OUT at https://beerknir.cz/\nCall log:\n  - navigating to \"https://beerknir.cz/\", waiting until \"domcontentloaded\"\n (prohlizec)"
 }
