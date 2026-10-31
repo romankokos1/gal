@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-10-31 13:26",
+  "zmeneno": "2026-10-31 15:27",
   "metoda": "nadpis",
   "piva": [
     {
@@ -26,6 +26,16 @@
     {
       "pozice": 3,
       "pivovar": "Clock",
+      "nazev": "BlackCurrant",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "Sour Ale",
+      "dalsi": "",
+      "raw": "12° BlackCurrant (Sour Ale)"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Clock",
       "nazev": "Clock",
       "stupen": "12",
       "alkohol": "",
@@ -34,24 +44,14 @@
       "raw": "12° Clock (American Pale Ale)"
     },
     {
-      "pozice": 4,
-      "pivovar": "Clock",
-      "nazev": "Jackpot",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "Infused Pale Ale",
-      "dalsi": "",
-      "raw": "12° Jackpot (Infused Pale Ale)"
-    },
-    {
       "pozice": 5,
       "pivovar": "Clock",
-      "nazev": "Red Baron",
-      "stupen": "13",
+      "nazev": "Double IPA",
+      "stupen": "19",
       "alkohol": "",
-      "styl": "Smoked Lager",
+      "styl": "No Idols!",
       "dalsi": "",
-      "raw": "13° Red Baron (Smoked Lager)"
+      "raw": "19° Double IPA (No Idols!)"
     },
     {
       "pozice": 6,
@@ -66,12 +66,12 @@
     {
       "pozice": 7,
       "pivovar": "Clock",
-      "nazev": "Leviticus",
+      "nazev": "Krystus",
       "stupen": "",
       "alkohol": "",
       "styl": "Alcohol Free",
       "dalsi": "",
-      "raw": "Leviticus (Alcohol Free)"
+      "raw": "Krystus (Alcohol Free)"
     }
   ]
 }
