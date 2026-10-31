@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-30 21:12",
+  "zmeneno": "2026-10-31 21:32",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,23 +25,23 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Poutník",
-      "nazev": "Kvasnicový",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "světlý ležák",
+      "pivovar": "Bakalář",
+      "nazev": "Svatováclavský speciál",
+      "stupen": "13",
+      "alkohol": "5.2",
+      "styl": "světlý ležák se zeleným chmelem",
       "dalsi": "",
-      "raw": "Poutník - Kvasnicový, světlý ležák, 12° sv., 5% vol. Alc"
+      "raw": "Bakalář - Svatováclavský speciál, světlý ležák se zeleným chmelem, 13° sv., 5, 2% vol. Alc, 34 IBU"
     },
     {
       "pozice": 4,
-      "pivovar": "Plzeňský Bandita",
-      "nazev": "Most Wanted IPA",
-      "stupen": "14",
-      "alkohol": "6.2",
-      "styl": "sv.",
+      "pivovar": "Zhůřák",
+      "nazev": "Deus Ex Machina",
+      "stupen": "15",
+      "alkohol": "6.9",
+      "styl": "American IPA",
       "dalsi": "",
-      "raw": "Plzeňský Bandita - Most Wanted IPA, 14° sv.nef., 6, 2% vol. Alc"
+      "raw": "Zhůřák - Deus Ex Machina, American IPA, 15° sv. nef., 6, 9% vol. Alc, 67 IBU"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "",
-      "nazev": "Plzeňský Bandita",
+      "pivovar": "Zlatá Kráva",
+      "nazev": "Farm APA",
       "stupen": "11",
       "alkohol": "4.6",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Plzeňský Bandita, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc, 40 IBU"
+      "raw": "Zlatá Kráva - Farm APA, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc, 46 IBU"
     },
     {
       "pozice": 7,

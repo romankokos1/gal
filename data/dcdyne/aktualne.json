@@ -1,6 +1,6 @@
 {
   "zdroj": "https://dcdyne.com/",
-  "zmeneno": "2026-10-30 11:04",
+  "zmeneno": "2026-10-31 21:32",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Čestmír",
-      "nazev": "Ananas, mango, maracuja SOUR",
+      "pivovar": "Bubeneč",
+      "nazev": "Černý rybíz SOUR",
       "stupen": "",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Ananas, mango, maracuja SOUR (Čestmír)"
+      "raw": "Černý rybíz SOUR (Bubeneč)"
     },
     {
       "pozice": 3,
@@ -46,12 +46,12 @@
     {
       "pozice": 5,
       "pivovar": "Jungberg",
-      "nazev": "Decentní ALE",
-      "stupen": "11",
+      "nazev": "Lotus APA",
+      "stupen": "12",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Decentní ALE 11° (pivovar Jungberg)"
+      "raw": "Lotus APA 12° (Jungberg)"
     },
     {
       "pozice": 6,
