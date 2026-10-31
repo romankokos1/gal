@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-31 16:28",
+  "zmeneno": "2026-10-31 18:00",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "CHROUST",
-      "nazev": "Ostružinový kompot",
-      "stupen": "11",
-      "alkohol": "4.7",
-      "styl": "Sour Ale s ostružinou",
+      "pivovar": "MATUŠKA",
+      "nazev": "Žemlovka",
+      "stupen": "17",
+      "alkohol": "6.3",
+      "styl": "kyseláč s jablečným, hruškovým a broskvovým pyré",
       "dalsi": "",
-      "raw": "CHROUST – Ostružinový kompot 11°/4,7% Sour Ale s ostružinou"
+      "raw": "MATUŠKA – Žemlovka 17°/6,3% kyseláč s jablečným, hruškovým a broskvovým pyré"
     }
   ]
 }
