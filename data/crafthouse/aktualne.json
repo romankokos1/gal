@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-10-30 21:12",
+  "zmeneno": "2026-10-31 17:29",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Potmehúd",
-      "nazev": "Acid Theory",
+      "pivovar": "FALKON",
+      "nazev": "BOTANIK",
       "stupen": "",
-      "alkohol": "5.5",
-      "styl": "IPA - Sour",
+      "alkohol": "4.1",
+      "styl": "Sour - Traditional Gose",
       "dalsi": "",
-      "raw": "Acid Theory | IPA - Sour | 5.5% ABV | Pivovar Potmehúd / CZ"
+      "raw": "BOTANIK | Sour - Traditional Gose | 4.1% ABV | FALKON / CZ"
     },
     {
       "pozice": 6,
