@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-10-31 21:32",
+  "zmeneno": "2026-11-01 18:22",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -31,7 +31,7 @@
       "alkohol": "5.2",
       "styl": "světlý ležák se zeleným chmelem",
       "dalsi": "",
-      "raw": "Bakalář - Svatováclavský speciál, světlý ležák se zeleným chmelem, 13° sv., 5, 2% vol. Alc, 34 IBU"
+      "raw": "Bakalář - Svatováclavský speciál, světlý ležák se zeleným chmelem, 13° sv., 5,2% vol. Alc, 34 IBU"
     },
     {
       "pozice": 4,
@@ -41,7 +41,7 @@
       "alkohol": "6.9",
       "styl": "American IPA",
       "dalsi": "",
-      "raw": "Zhůřák - Deus Ex Machina, American IPA, 15° sv. nef., 6, 9% vol. Alc, 67 IBU"
+      "raw": "Zhůřák - Deus Ex Machina, American IPA, 15° sv. nef., 6,9% vol. Alc, 67 IBU"
     },
     {
       "pozice": 5,
@@ -51,7 +51,7 @@
       "alkohol": "4.5",
       "styl": "Wet Hop Schwarzbier",
       "dalsi": "",
-      "raw": "The Barn Beer Co. - Švarcík, Wet Hop Schwarzbier, 12° tm. nef., 4, 5% vol. Alc, 25 IBU"
+      "raw": "The Barn Beer Co. - Švarcík, Wet Hop Schwarzbier, 12° tm. nef., 4,5% vol. Alc, 25 IBU"
     },
     {
       "pozice": 6,
@@ -61,7 +61,7 @@
       "alkohol": "4.6",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Zlatá Kráva - Farm APA, American Pale Ale, 11° sv. nef., 4, 6% vol. Alc, 46 IBU"
+      "raw": "Zlatá Kráva - Farm APA, American Pale Ale, 11° sv. nef., 4,6% vol. Alc, 46 IBU"
     },
     {
       "pozice": 7,
@@ -71,7 +71,7 @@
       "alkohol": "5.5",
       "styl": "Hazy Pale Ale",
       "dalsi": "",
-      "raw": "Permon - Hazy Citra, Hazy Pale Ale, 13° sv. nef., 5, 5% vol. Alc, 20 IBU"
+      "raw": "Permon - Hazy Citra, Hazy Pale Ale, 13° sv. nef., 5,5% vol. Alc, 20 IBU"
     },
     {
       "pozice": 8,
@@ -81,7 +81,7 @@
       "alkohol": "6.5",
       "styl": "višňový kyseláč s koriandrem a himalájskou solí",
       "dalsi": "",
-      "raw": "Volt - Elektra, višňový kyseláč s koriandrem a himalájskou solí, 15° sv. nef., 6, 5% vol. Alc, 18 IBU"
+      "raw": "Volt - Elektra, višňový kyseláč s koriandrem a himalájskou solí, 15° sv. nef., 6,5% vol. Alc, 18 IBU"
     },
     {
       "pozice": 9,
@@ -91,7 +91,7 @@
       "alkohol": "5.6",
       "styl": "India Pale Lager",
       "dalsi": "",
-      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5, 6% vol. Alc"
+      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5,6% vol. Alc"
     },
     {
       "pozice": 10,
@@ -101,7 +101,7 @@
       "alkohol": "3.8",
       "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3, 8% vol. Alc, 34 IBU"
+      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3,8% vol. Alc, 34 IBU"
     }
   ]
 }
