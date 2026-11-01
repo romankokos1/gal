@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-01 20:23",
+  "zmeneno": "2026-11-01 22:24",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "MATUŠKA",
-      "nazev": "Žemlovka",
-      "stupen": "17",
-      "alkohol": "6.3",
-      "styl": "kyseláč s jablečným, hruškovým a broskvovým pyré",
+      "pivovar": "PACOV",
+      "nazev": "Tartlab #1",
+      "stupen": "",
+      "alkohol": "5.8",
+      "styl": "kyseláč s čokoládou a malinou",
       "dalsi": "",
-      "raw": "MATUŠKA – Žemlovka 17°/6,3% kyseláč s jablečným, hruškovým a broskvovým pyré"
+      "raw": "PACOV – Tartlab #1 5,8% kyseláč s čokoládou a malinou"
     }
   ]
 }
