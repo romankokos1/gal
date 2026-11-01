@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerknir.cz/",
-  "zmeneno": "2026-10-31 17:29",
+  "zmeneno": "2026-11-01 20:23",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Václav",
-      "nazev": "Bitter Bush",
-      "stupen": "14",
-      "alkohol": "6.0",
-      "styl": "West Coast IPA",
+      "pivovar": "Valeč",
+      "nazev": "Vilma",
+      "stupen": "13",
+      "alkohol": "6.5",
+      "styl": "Czech West Coast IPA",
       "dalsi": "",
-      "raw": "Bitter Bush 14° | West Coast IPA | 14° | 6.0% | Pivovar Václav"
+      "raw": "Vilma 13° | Czech West Coast IPA | 13° | 6.5% | Pivovar Valeč"
     }
   ]
 }

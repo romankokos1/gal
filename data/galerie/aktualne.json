@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-01 19:23",
+  "zmeneno": "2026-11-01 20:23",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "SKJUBRU",
-      "nazev": "Fresh Lager",
+      "pivovar": "HULVÁT",
+      "nazev": "Dvanáctka",
       "stupen": "12",
-      "alkohol": "4.9",
-      "styl": "světlý ležák z čerstvého chmele",
+      "alkohol": "4.8",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "SKJUBRU – Fresh Lager 12°/4,9% světlý ležák z čerstvého chmele"
+      "raw": "HULVÁT – Dvanáctka 12°/4,8% světlý ležák"
     },
     {
       "pozice": 2,
