@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-10-30 11:04",
+  "zmeneno": "2026-11-01 16:20",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "PHILLY",
-      "nazev": "WEISE",
+      "pivovar": "ZICHOVEC",
+      "nazev": "MOSAIC ALE",
       "stupen": "12",
-      "alkohol": "5",
-      "styl": "SOUR",
+      "alkohol": "5.2",
+      "styl": "APA",
       "dalsi": "",
-      "raw": "PHILLY WEISE 12° | SOUR | 5%"
+      "raw": "ZICHOVEC MOSAIC ALE 12° | APA | 5.2%"
     },
     {
       "pozice": 4,
