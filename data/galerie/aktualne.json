@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-01 15:20",
+  "zmeneno": "2026-11-01 16:51",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "PREISLER",
-      "nazev": "Tvrdá Práce",
+      "pivovar": "SKJUBRU",
+      "nazev": "Fresh Lager",
       "stupen": "12",
-      "alkohol": "5.2",
-      "styl": "světlý ležák",
-      "dalsi": "SKJUBRU – Fresh Lager 12°/4,9% světlý ležák z čerstvého chmele",
-      "raw": "PREISLER – Tvrdá Práce 12°/5,2% světlý ležák //NEXT// SKJUBRU – Fresh Lager 12°/4,9% světlý ležák z čerstvého chmele"
+      "alkohol": "4.9",
+      "styl": "světlý ležák z čerstvého chmele",
+      "dalsi": "",
+      "raw": "SKJUBRU – Fresh Lager 12°/4,9% světlý ležák z čerstvého chmele"
     },
     {
       "pozice": 2,
