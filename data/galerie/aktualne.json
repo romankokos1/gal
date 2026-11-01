@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-01 16:51",
+  "zmeneno": "2026-11-01 17:52",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,23 +25,23 @@
     },
     {
       "pozice": 3,
-      "pivovar": "SIBEERIA",
-      "nazev": "Lollihop",
-      "stupen": "15",
-      "alkohol": "6.6",
-      "styl": "West Coast IPA (citra, mosaic)",
+      "pivovar": "ZICHOVEC",
+      "nazev": "Pour Decision: Bästa Pětka",
+      "stupen": "14",
+      "alkohol": "6.5",
+      "styl": "West Coast IPA (citra, galaxy, riwaka, nelson)",
       "dalsi": "ČIERNY KAMEŇ (SK) – Random Pinquin 14°/5,6% NEIPA (cryo pop, cryo krush)",
-      "raw": "SIBEERIA – Lollihop 15°/6,6% West Coast IPA (citra, mosaic) //NEXT// ČIERNY KAMEŇ (SK) – Random Pinquin 14°/5,6% NEIPA (cryo pop, cryo krush)"
+      "raw": "ZICHOVEC – Pour Decision: Bästa Pětka 14°/6,5% West Coast IPA (citra, galaxy, riwaka, nelson) //NEXT// ČIERNY KAMEŇ (SK) – Random Pinquin 14°/5,6% NEIPA (cryo pop, cryo krush)"
     },
     {
       "pozice": 4,
-      "pivovar": "SKJUBRU",
-      "nazev": "Tohle se Muselo Stout",
-      "stupen": "13",
-      "alkohol": "6.2",
-      "styl": "stout s malinama a čokoládou",
-      "dalsi": "SIBEERIA – Wondrous Whale 18°/8,6% Imperial NEIPA (simcoe, rakau, citra, hbc 630",
-      "raw": "SKJUBRU – Tohle se Muselo Stout 13°/6,2% stout s malinama a čokoládou //NEXT// SIBEERIA – Wondrous Whale 18°/8,6% Imperial NEIPA (simcoe, rakau, citra, hbc 630"
+      "pivovar": "SIBEERIA",
+      "nazev": "Wondrous Whale",
+      "stupen": "18",
+      "alkohol": "8.6",
+      "styl": "Imperial NEIPA (simcoe, rakau, citra, hbc 630",
+      "dalsi": "",
+      "raw": "SIBEERIA – Wondrous Whale 18°/8,6% Imperial NEIPA (simcoe, rakau, citra, hbc 630"
     },
     {
       "pozice": 5,
