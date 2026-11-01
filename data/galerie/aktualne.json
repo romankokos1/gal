@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-10-31 18:00",
+  "zmeneno": "2026-11-01 15:20",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,8 +10,8 @@
       "stupen": "12",
       "alkohol": "5.2",
       "styl": "světlý ležák",
-      "dalsi": "",
-      "raw": "PREISLER – Tvrdá Práce 12°/5,2% světlý ležák"
+      "dalsi": "SKJUBRU – Fresh Lager 12°/4,9% světlý ležák z čerstvého chmele",
+      "raw": "PREISLER – Tvrdá Práce 12°/5,2% světlý ležák //NEXT// SKJUBRU – Fresh Lager 12°/4,9% světlý ležák z čerstvého chmele"
     },
     {
       "pozice": 2,
@@ -20,8 +20,8 @@
       "stupen": "12",
       "alkohol": "5.2",
       "styl": "Session NEIPA (mosaic, citra cryo)",
-      "dalsi": "",
-      "raw": "HAKSNA – Season Harvest 12°/5,2% Session NEIPA (mosaic, citra cryo)"
+      "dalsi": "CHROUST – You Shall Not Pils 2 12°/5,2% New Zealand Pils",
+      "raw": "HAKSNA – Season Harvest 12°/5,2% Session NEIPA (mosaic, citra cryo) //NEXT// CHROUST – You Shall Not Pils 2 12°/5,2% New Zealand Pils"
     },
     {
       "pozice": 3,
@@ -30,8 +30,8 @@
       "stupen": "15",
       "alkohol": "6.6",
       "styl": "West Coast IPA (citra, mosaic)",
-      "dalsi": "",
-      "raw": "SIBEERIA – Lollihop 15°/6,6% West Coast IPA (citra, mosaic)"
+      "dalsi": "ČIERNY KAMEŇ (SK) – Random Pinquin 14°/5,6% NEIPA (cryo pop, cryo krush)",
+      "raw": "SIBEERIA – Lollihop 15°/6,6% West Coast IPA (citra, mosaic) //NEXT// ČIERNY KAMEŇ (SK) – Random Pinquin 14°/5,6% NEIPA (cryo pop, cryo krush)"
     },
     {
       "pozice": 4,
@@ -40,8 +40,8 @@
       "stupen": "13",
       "alkohol": "6.2",
       "styl": "stout s malinama a čokoládou",
-      "dalsi": "",
-      "raw": "SKJUBRU – Tohle se Muselo Stout 13°/6,2% stout s malinama a čokoládou"
+      "dalsi": "SIBEERIA – Wondrous Whale 18°/8,6% Imperial NEIPA (simcoe, rakau, citra, hbc 630",
+      "raw": "SKJUBRU – Tohle se Muselo Stout 13°/6,2% stout s malinama a čokoládou //NEXT// SIBEERIA – Wondrous Whale 18°/8,6% Imperial NEIPA (simcoe, rakau, citra, hbc 630"
     },
     {
       "pozice": 5,

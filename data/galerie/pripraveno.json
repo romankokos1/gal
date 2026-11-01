@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "pivovar": "SKJUBRU",
+    "nazev": "Fresh Lager",
+    "stupen": "12",
+    "alkohol": "4.9",
+    "styl": "světlý ležák z čerstvého chmele",
+    "raw": "SKJUBRU – Fresh Lager 12°/4,9% světlý ležák z čerstvého chmele"
+  },
+  {
+    "pivovar": "CHROUST",
+    "nazev": "You Shall Not Pils 2",
+    "stupen": "12",
+    "alkohol": "5.2",
+    "styl": "New Zealand Pils",
+    "raw": "CHROUST – You Shall Not Pils 2 12°/5,2% New Zealand Pils"
+  },
+  {
+    "pivovar": "ČIERNY KAMEŇ (SK)",
+    "nazev": "Random Pinquin",
+    "stupen": "14",
+    "alkohol": "5.6",
+    "styl": "NEIPA (cryo pop, cryo krush)",
+    "raw": "ČIERNY KAMEŇ (SK) – Random Pinquin 14°/5,6% NEIPA (cryo pop, cryo krush)"
+  },
+  {
+    "pivovar": "SIBEERIA",
+    "nazev": "Wondrous Whale",
+    "stupen": "18",
+    "alkohol": "8.6",
+    "styl": "Imperial NEIPA (simcoe, rakau, citra, hbc 630",
+    "raw": "SIBEERIA – Wondrous Whale 18°/8,6% Imperial NEIPA (simcoe, rakau, citra, hbc 630"
+  }
+]
