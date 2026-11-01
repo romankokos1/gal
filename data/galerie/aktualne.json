@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-01 17:52",
+  "zmeneno": "2026-11-01 19:23",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "HAKSNA",
-      "nazev": "Season Harvest",
+      "pivovar": "CHROUST",
+      "nazev": "You Shall Not Pils 2",
       "stupen": "12",
       "alkohol": "5.2",
-      "styl": "Session NEIPA (mosaic, citra cryo)",
-      "dalsi": "CHROUST – You Shall Not Pils 2 12°/5,2% New Zealand Pils",
-      "raw": "HAKSNA – Season Harvest 12°/5,2% Session NEIPA (mosaic, citra cryo) //NEXT// CHROUST – You Shall Not Pils 2 12°/5,2% New Zealand Pils"
+      "styl": "New Zealand Pils",
+      "dalsi": "",
+      "raw": "CHROUST – You Shall Not Pils 2 12°/5,2% New Zealand Pils"
     },
     {
       "pozice": 3,
