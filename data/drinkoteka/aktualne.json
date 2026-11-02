@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-10-31 19:30",
+  "zmeneno": "2026-11-02 15:29",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,6 +65,16 @@
     },
     {
       "pozice": 7,
+      "pivovar": "ZICHOVEC",
+      "nazev": "Vánoční Zmrzka",
+      "stupen": "",
+      "alkohol": "5",
+      "styl": "Pastry Sour",
+      "dalsi": "",
+      "raw": "Vánoční Zmrzka | Pastry Sour | 5% ABV | 🇨🇿ZICHOVEC"
+    },
+    {
+      "pozice": 8,
       "pivovar": "Ārpus",
       "nazev": "West Coast Pilsner",
       "stupen": "",
@@ -74,7 +84,7 @@
       "raw": "West Coast Pilsner | 4.4% ABV | 🇱🇻Ārpus"
     },
     {
-      "pozice": 8,
+      "pozice": 9,
       "pivovar": "Wild Creatures",
       "nazev": "Meditation (2020)",
       "stupen": "",

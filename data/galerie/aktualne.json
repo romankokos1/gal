@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-01 22:24",
+  "zmeneno": "2026-11-02 15:29",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "CHROUST",
-      "nazev": "You Shall Not Pils 2",
-      "stupen": "12",
-      "alkohol": "5.2",
-      "styl": "New Zealand Pils",
+      "pivovar": "SIBEERIA",
+      "nazev": "One Festival",
+      "stupen": "11",
+      "alkohol": "5.3",
+      "styl": "West Coast Pilsner (riwaka, strata, cascade, wakatu)",
       "dalsi": "",
-      "raw": "CHROUST – You Shall Not Pils 2 12°/5,2% New Zealand Pils"
+      "raw": "SIBEERIA – One Festival 11°/5,3% West Coast Pilsner (riwaka, strata, cascade, wakatu)"
     },
     {
       "pozice": 3,
@@ -47,11 +47,11 @@
       "pozice": 5,
       "pivovar": "PACOV",
       "nazev": "Tartlab #1",
-      "stupen": "",
+      "stupen": "13",
       "alkohol": "5.8",
       "styl": "kyseláč s čokoládou a malinou",
       "dalsi": "",
-      "raw": "PACOV – Tartlab #1 5,8% kyseláč s čokoládou a malinou"
+      "raw": "PACOV – Tartlab #1 13°/5,8% kyseláč s čokoládou a malinou"
     }
   ]
 }
