@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-02 15:29",
+  "zmeneno": "2026-11-02 18:32",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "HULVÁT",
-      "nazev": "Dvanáctka",
+      "pivovar": "TWINBERG",
+      "nazev": "Živa",
       "stupen": "12",
       "alkohol": "4.8",
-      "styl": "světlý ležák",
+      "styl": "světlý ležák z čerstvého chmele",
       "dalsi": "",
-      "raw": "HULVÁT – Dvanáctka 12°/4,8% světlý ležák"
+      "raw": "TWINBERG – Živa 12°/4,8% světlý ležák z čerstvého chmele"
     },
     {
       "pozice": 2,
