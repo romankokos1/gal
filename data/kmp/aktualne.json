@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-01 20:23",
+  "zmeneno": "2026-11-02 13:28",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Plzeňský Bandita",
-      "nazev": "Most Wanted IPA",
-      "stupen": "14",
-      "alkohol": "6.2",
-      "styl": "sv.",
+      "pivovar": "Zhůřák",
+      "nazev": "Deus Ex Machina",
+      "stupen": "15",
+      "alkohol": "6.9",
+      "styl": "American IPA",
       "dalsi": "",
-      "raw": "Plzeňský Bandita - Most Wanted IPA, 14° sv.nef., 6, 2% vol. Alc"
+      "raw": "Zhůřák - Deus Ex Machina, American IPA, 15° sv. nef., 6, 9% vol. Alc, 67 IBU"
     },
     {
       "pozice": 5,

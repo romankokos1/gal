@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
-  "zmeneno": "2026-11-01 12:17",
+  "zmeneno": "2026-11-02 13:28",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Matuška",
-      "nazev": "ŽEMLOVKA",
-      "stupen": "17",
-      "alkohol": "6.3",
-      "styl": "SOUR ALE",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "7",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "ŽEMLOVKA | SOUR ALE | 17° | 6,3 %"
+      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "7",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "NACHMELENÁ OPICE",
+      "nazev": "PASTRY KYSELÁČ",
+      "stupen": "15",
+      "alkohol": "",
+      "styl": "PASTRY SOUR",
       "dalsi": "",
-      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
+      "raw": "NACHMELENÁ OPICE - PASTRY KYSELÁČ | PASTRY SOUR | 15° | 0.048"
     },
     {
       "pozice": 7,
