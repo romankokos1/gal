@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-10-31 11:24",
+  "zmeneno": "2026-11-02 17:30",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "kamenice",
-      "nazev": "kamenická",
+      "pivovar": "Kamenice",
+      "nazev": "Kamenická",
       "stupen": "10",
       "alkohol": "4.2",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "kamenice - kamenická | 10% | Lager, ABV 4,2%"
+      "raw": "Kamenice - Kamenická | 10% | Lager, ABV 4,2%"
     },
     {
       "pozice": 2,
-      "pivovar": "vik x sedm",
-      "nazev": "7vikend with the hunters",
+      "pivovar": "Vik x Sedm°",
+      "nazev": "7vikend with the Hunters",
       "stupen": "13",
       "alkohol": "5.3",
       "styl": "sour",
       "dalsi": "",
-      "raw": "vik x sedm - 7vikend with the hunters | 13% | sour, ABV 5,3%"
+      "raw": "Vik x Sedm° - 7vikend with the Hunters | 13% | sour, ABV 5,3%"
     },
     {
       "pozice": 3,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "obora",
-      "nazev": "švarc",
+      "pivovar": "Obora",
+      "nazev": "Švarc",
       "stupen": "12",
       "alkohol": "4.7",
       "styl": "dark lager",
       "dalsi": "",
-      "raw": "obora - švarc | 12% | dark lager, ABV 4,7%"
+      "raw": "Obora - Švarc | 12% | dark lager, ABV 4,7%"
     },
     {
       "pozice": 5,
@@ -55,23 +55,23 @@
     },
     {
       "pozice": 6,
-      "pivovar": "blud",
-      "nazev": "crispy džus",
+      "pivovar": "Nozib",
+      "nazev": "Stencil",
       "stupen": "14",
-      "alkohol": "6.4",
-      "styl": "west coast IPA",
+      "alkohol": "6.7",
+      "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "blud - crispy džus | 14% | west coast IPA, ABV 6,4%"
+      "raw": "Nozib - Stencil | 14% | West Coast IPA, ABV 6,7%"
     },
     {
       "pozice": 7,
-      "pivovar": "jungberg",
-      "nazev": "lotus",
+      "pivovar": "Jungberg",
+      "nazev": "Lotus",
       "stupen": "12",
       "alkohol": "5.1",
-      "styl": "pale ale",
+      "styl": "Pale Ale",
       "dalsi": "",
-      "raw": "jungberg - lotus | 12% | pale ale, ABV 5,1%"
+      "raw": "Jungberg - Lotus | 12% | Pale Ale, ABV 5,1%"
     },
     {
       "pozice": 8,

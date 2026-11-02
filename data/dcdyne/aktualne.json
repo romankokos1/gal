@@ -1,6 +1,6 @@
 {
   "zdroj": "https://dcdyne.com/",
-  "zmeneno": "2026-10-31 21:32",
+  "zmeneno": "2026-11-02 17:30",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Čestmír",
-      "nazev": "Session NEIPA",
+      "pivovar": "Bubeneč",
+      "nazev": "Stout",
       "stupen": "12",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Session NEIPA 12° (Čestmír)"
+      "raw": "Stout 12° (Bubeneč)"
     },
     {
       "pozice": 4,
