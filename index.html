@@ -53,6 +53,7 @@ body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 var(--sans);-
 header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
 h1{font-size:20px;margin:0;font-weight:600}
 h1 span{color:var(--accent)}
+h1{cursor:pointer}
 .sub{color:var(--muted);font-family:var(--mono);font-size:12px;flex:1;min-width:200px}
 .sub b{color:var(--text-2);font-weight:500}
 h2{font-size:13px;margin:0 0 10px;font-weight:600;color:var(--text-2);text-transform:uppercase;letter-spacing:.06em}
@@ -66,6 +67,9 @@ h3{font-size:12px;margin:0 0 6px;font-weight:600;color:var(--muted);text-transfo
   .ov{grid-template-columns:repeat(3,1fr);grid-template-areas:"now brew style" "now abv style" "rec rec rec"}
   .ov>.a-now{grid-area:now}.ov>.a-brew{grid-area:brew}.ov>.a-style{grid-area:style}.ov>.a-abv{grid-area:abv}.ov>.a-rec{grid-area:rec}
   .ov .recs{grid-template-columns:repeat(3,1fr)}
+  /* velký podnik (víc než 12 kohoutů): seznam čepů na dvě třetiny šířky ve dvou sloupcích */
+  .ov.big{grid-template-areas:"now now brew" "now now style" "now now abv" "rec rec rec"}
+  .ov.big .taps{grid-template-columns:1fr 1fr;column-gap:8px}
 }
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:14px}
 .kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px}
@@ -96,15 +100,40 @@ input[type=search]:focus{outline:1px solid var(--accent);border-color:var(--acce
 .link{background:none;border:0;padding:0;color:inherit;font:inherit;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
 .link:hover{text-decoration-color:var(--accent)}
 
-/* na čepu */
-.taps{display:grid;gap:8px}
-.tap{display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center;background:var(--surface-2);border-radius:8px;padding:8px 12px;cursor:pointer;border:1px solid transparent}
+/* na čepu – kompaktní řádky: číslo · pivo · pivovar · styl · °/% */
+.taps{display:grid;gap:3px}
+.tap{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:10px;align-items:center;background:var(--surface-2);border-radius:6px;padding:5px 10px;cursor:pointer;border:1px solid transparent}
 .tap:hover{border-color:var(--line)}
-.tap .n{font:600 16px var(--mono);color:var(--accent)}
+.tap .n{font:600 13px var(--mono);color:var(--accent);text-align:right}
+.tap .mid{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tap .nm{font-weight:600}
-.tap .br{color:var(--text-2);font-size:12px}
-.tap .st{color:var(--muted);font-size:12px}
-.tap .nx{color:var(--accent-ink);font-size:12px;margin-top:2px}
+.tap .br{color:var(--text-2);font-size:12.5px;margin-left:8px}
+.tap .st{color:var(--muted);font-size:12px;margin-left:8px}
+.tap .nx{color:var(--accent-ink);font-size:12px;white-space:normal}
+.tap.is-new{border-color:var(--accent-soft);background:linear-gradient(90deg,var(--accent-soft),var(--surface-2) 60%)}
+.badge{display:inline-block;font:600 10px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--on-accent);background:var(--accent);border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:1px}
+
+/* úvod: všechny podniky */
+#home .feat{margin-bottom:14px}
+.feat-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:10px}
+.feat-head .t{font-size:20px;font-weight:600;cursor:pointer}
+.feat-head .t:hover{color:var(--accent-ink)}
+.vstat{font:12px var(--mono);color:var(--muted)}
+.vstat b{color:var(--text-2);font-weight:500}
+.vstat .up{color:var(--c3)}.vstat .dn{color:var(--c2)}
+.feat .taps{grid-template-columns:repeat(auto-fill,minmax(420px,1fr));column-gap:8px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.vcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;cursor:pointer;display:flex;flex-direction:column;gap:6px;min-width:0}
+.vcard:hover{border-color:var(--accent)}
+.vcard .t{font-weight:600;font-size:15px;line-height:1.25}
+.vcard .big{font:600 22px var(--mono);line-height:1}
+.vcard .big small{font:12px var(--sans);color:var(--muted);margin-left:4px}
+.vcard .news{font-size:12px;color:var(--text-2);display:grid;gap:1px}
+.vcard .news>span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vcard .news>span::before{content:"+ ";color:var(--accent)}
+.vcard .vstat{display:flex;flex-direction:column}
+.vcard .bad,.feat .bad{font-size:12px;color:var(--warn-text);background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:6px;padding:2px 8px;align-self:flex-start}
+.vcard.off{opacity:.6}
 .soon{margin-top:14px;border-top:1px dashed var(--line);padding-top:10px}
 .soon h3{margin-bottom:6px}
 .soon div{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:3px 0;color:var(--text-2)}
@@ -255,6 +284,13 @@ table.cards caption{display:none}
 
 /* ---------- mobil jako appka ---------- */
 @media (max-width:640px){
+  .tap{align-items:start}
+  .tap .nm{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .tap .br{margin-left:0}
+  .feat .taps{grid-template-columns:1fr}
+  .vgrid{grid-template-columns:1fr 1fr;gap:8px}
+  .vcard{padding:10px 12px}
+  .vcard .t{font-size:14px}
   .wrap{padding:14px 12px calc(84px + env(safe-area-inset-bottom))}
   header{gap:8px}
   h1{font-size:18px}
@@ -298,6 +334,11 @@ table.cards caption{display:none}
     <input type="file" id="file" accept=".csv">
   </div>
 
+  <section id="home" class="hidden">
+    <div class="card feat" id="hFeat"></div>
+    <div class="vgrid" id="hGrid"></div>
+  </section>
+
   <div id="app" class="hidden">
     <div class="bar">
       <nav class="tabs" id="tabs"></nav>
@@ -316,7 +357,7 @@ table.cards caption{display:none}
     <section data-p="prehled">
       <div class="kpis" id="kpis"></div>
       <div class="grid g2 ov">
-        <div class="card a-now"><h2>Teď na čepu</h2><div class="taps" id="now"></div><div id="soon"></div></div>
+        <div class="card a-now"><h2>Teď na čepu <span class="dim" id="nowN"></span></h2><div class="taps" id="now"></div><div id="soon"></div></div>
         <div class="card a-brew"><h2>Pivovary · počet naražení</h2><div class="hbars" id="chBrew"></div><div class="note">Kolaborace se počítají každému pivovaru zvlášť. Klik = karta pivovaru.</div></div>
         <div class="card a-style"><h2>Styly · počet naražení</h2><div class="hbars" id="chStyle"></div><div class="note">Styl je odvozený z popisu podle klíčových slov. Klik = filtr.</div></div>
         <div class="card a-abv"><h2>Síla · % alkoholu</h2><div class="hbars" id="chAbv"></div></div>
@@ -533,21 +574,26 @@ async function boot(){
   }));
   ALLX = VENUES.flatMap(v=>DATA[v.id].rows);
   const vb=$("#venue"), vs=$("#venueSel");
-  vb.innerHTML = VENUES.map(v=>`<button data-v="${esc(v.id)}">${esc(v.nazev)}</button>`).join("");
-  vs.innerHTML = VENUES.map(v=>`<option value="${esc(v.id)}">${esc(v.nazev)}</option>`).join("");
+  // Galerie vždy první, před ní volba „Všechny podniky“ = úvodní přehled
+  VENUES.sort((a,b)=>(b.id===FEATURED)-(a.id===FEATURED));
+  vb.innerHTML = `<button data-v="">Vše</button>` + VENUES.map(v=>`<button data-v="${esc(v.id)}">${esc(v.nazev)}</button>`).join("");
+  vs.innerHTML = `<option value="">Všechny podniky</option>` + VENUES.map(v=>`<option value="${esc(v.id)}">${esc(v.nazev)}</option>`).join("");
   if(VENUES.length>1){ vb.classList.remove("hidden"); vs.classList.remove("hidden"); }
   // víc podniků se do řady tlačítek nevejde → i na desktopu rozbalovací seznam
   document.querySelector("header").classList.toggle("many", VENUES.length>5);
-  vb.onclick = e => { const b=e.target.closest("button"); if(b) selectVenue(b.dataset.v); };
-  vs.onchange = () => selectVenue(vs.value);
+  vb.onclick = e => { const b=e.target.closest("button"); if(b) b.dataset.v ? selectVenue(b.dataset.v) : showHome(); };
+  vs.onchange = () => vs.value ? selectVenue(vs.value) : showHome();
   const want = decodeURIComponent(location.hash.slice(1));
-  selectVenue(VENUES.some(v=>v.id===want) ? want : VENUES[0].id);
+  if(VENUES.some(v=>v.id===want)) selectVenue(want);
+  else if(VENUES.length>1) showHome();
+  else selectVenue(VENUES[0].id);
 }
 $("#file").onchange = e => { const f=e.target.files[0]; if(f) f.text().then(t=>{
   const v=VENUE||{id:"",nazev:"Soubor"}; DATA[v.id]={rows:build(t,v),stav:null,ok:true}; ALLX=VENUES.flatMap(x=>DATA[x.id]?.rows||[]); selectVenue(v.id); }) };
 
 function selectVenue(id){
   VENUE = VENUES.find(v=>v.id===id) || VENUES[0];
+  $("#home").classList.add("hidden");
   document.querySelectorAll("#venue button").forEach(b=>b.classList.toggle("on", b.dataset.v===VENUE.id));
   $("#venueSel").value = VENUE.id;
   if(VENUE.id) history.replaceState(null,"","#"+encodeURIComponent(VENUE.id));
@@ -700,6 +746,63 @@ function render(){
   if(TAB==="osa") timeline(R);
 }
 
+/* ---------- nová piva a úvodní přehled ---------- */
+const FEATURED = "galerie";                     // Galerie má na úvodu výsadní místo
+const vStart = id => { const r=DATA[id]?.rows; return r&&r.length ? +r[0].from : 0; };   // první stažení podniku
+// nově naražené = za posledních 24 h a ne jen zachycené při prvním stažení podniku
+const isNew = r => r.from && NOW - r.from < DAY && +r.from !== vStart(r.venue) && !r.odhad;
+function tapRows(open, vid){
+  return [...open].sort((a,b)=>(+a.pozice||0)-(+b.pozice||0)).map((r,i)=>{ const nw=isNew(r);
+    return `<div class="tap${nw?" is-new":""}" data-beer="${esc(r.beerKey)}"><span class="n">${i+1}</span>
+      <div class="mid"><span class="nm">${esc(r.label)}${nw?'<span class="badge">nové</span>':""}</span><span class="br">${esc(r.pivovar||"")}</span><span class="st">${esc(r.styl||"")}</span>${r.dalsi?`<div class="nx">→ potom: ${esc(nice(r.dalsi,"nazev"))}</div>`:""}</div>
+      <div class="num">${r.deg?fmtN(r.deg,1).replace(/,0$/,"")+"°":""} ${r.abv?fmtN(r.abv)+" %":""} <span class="dim">${r.days!=null?fmtN(r.days)+" d":""}</span></div></div>`; }).join("");
+}
+function venueInfo(v){
+  const d=DATA[v.id]||{rows:[]}, rows=d.rows||[];
+  const today=new Date(NOW); today.setHours(0,0,0,0);
+  const open=rows.filter(r=>r.open);
+  const added=rows.filter(r=>r.from>=today && +r.from!==vStart(v.id) && !r.odhad);
+  const gone=rows.filter(r=>r.to && r.to>=today && !r.odhad);
+  const vb=BEH&&BEH.podniky ? BEH.podniky[v.id] : null;
+  const check=vb&&vb.cas ? parseDate(vb.cas) : null;
+  let bad="";
+  if(!d.ok || !rows.length) bad="zatím bez dat";
+  // jedna chyba se toleruje (krátký výpadek webu), od druhé v řadě se ukáže
+  else if((d.stav&&d.stav.chyby_v_rade)>=2 || (vb&&vb.stav==="chyba")) bad=`nestahuje se (${d.stav.chyby_v_rade}× chyba po sobě)`;
+  else if(check && (NOW-check)/DAY>1.1) bad=`kontrola naposled ${fmtD(check)}`;
+  return {open, added, gone, check, bad};
+}
+const vStat = (i, sep=" · ") => `<span class="vstat"><span>${i.added.length||i.gone.length ? `dnes <b class="up">+${i.added.length}</b> / <b class="dn">−${i.gone.length}</b>` : "dnes beze změny"}</span>${i.check?`<span>${sep.trim()?sep:""}kontrola <b>${fmtWhen(i.check)}</b></span>`:""}</span>`;
+function showHome(){
+  VENUE=null; $("#app").classList.add("hidden"); $("#loadfail").classList.add("hidden");
+  $("#home").classList.remove("hidden");
+  $("#venueSel").value=""; document.querySelectorAll("#venue button").forEach(b=>b.classList.toggle("on", !b.dataset.v));
+  history.replaceState(null,"",location.pathname+location.search);
+  document.title="Hlídač čepů";
+  const last=Math.max(0,...VENUES.map(v=>{const c=venueInfo(v).check; return c?+c:0;}));
+  $("#meta").innerHTML = `<span>${VENUES.length} podniků</span>${last?` · poslední kontrola <b>${fmtWhen(new Date(last))}</b>`:""}`;
+  const feat=VENUES.find(v=>v.id===FEATURED) || VENUES[0];
+  const fi=venueInfo(feat);
+  $("#hFeat").innerHTML = `<div class="feat-head"><span class="t" data-v="${esc(feat.id)}">${esc(feat.nazev)}</span>
+      <span class="vstat"><b>${fi.open.length}</b> na čepu</span>${vStat(fi)}${fi.bad?`<span class="bad">${esc(fi.bad)}</span>`:""}</div>
+    <div class="taps">${fi.open.length?tapRows(fi.open, feat.id):'<div class="empty">nic</div>'}</div>`;
+  $("#hGrid").innerHTML = VENUES.filter(v=>v!==feat).map(v=>{ const i=venueInfo(v);
+    const news=i.added.slice(-3).reverse();
+    return `<div class="vcard${i.bad&&!i.open.length?" off":""}" data-v="${esc(v.id)}">
+      <div class="t">${esc(v.nazev)}</div>
+      <div class="big">${i.open.length}<small>na čepu</small></div>
+      ${vStat(i,"")}
+      ${news.length?`<div class="news">${news.map(r=>`<span>${esc(r.label)} <span class="dim">· ${esc(r.pivovar||"")}</span></span>`).join("")}</div>`:""}
+      ${i.bad?`<span class="bad">${esc(i.bad)}</span>`:""}</div>`; }).join("");
+}
+$("#home").onclick = e => {
+  if(e.target.closest("[data-beer]")) return;          // karta piva se otevře společným posluchačem
+  const c=e.target.closest("[data-v]"); if(c) selectVenue(c.dataset.v);
+};
+document.querySelector("header h1").onclick = () => showHome();
+addEventListener("hashchange", () => { const id=decodeURIComponent(location.hash.slice(1));
+  if(VENUES.some(v=>v.id===id)) { if(!VENUE||VENUE.id!==id) selectVenue(id); } else if(VENUE) showHome(); });
+
 function renderPrehled(R){
   const open=ALL.filter(r=>r.open);
   const closed=R.filter(r=>!r.open&&r.days!=null);
@@ -716,11 +819,9 @@ function renderPrehled(R){
 
   // teď na čepu (nezávisle na filtrech)
   const now=$("#now");
-  now.innerHTML = open.length ? open.sort((a,b)=>(+a.pozice||0)-(+b.pozice||0)).map((r,i)=>`
-    <div class="tap" data-beer="${esc(r.beerKey)}"><span class="n">${i+1}</span>
-      <div><div class="nm">${esc(r.label)}</div><div class="br">${esc(r.pivovar||"")}</div><div class="st">${esc(r.styl||"")}</div>${r.dalsi?`<div class="nx">→ potom: ${esc(nice(r.dalsi,"nazev"))}</div>`:""}</div>
-      <div class="num">${r.deg?r.deg+"°":""} ${r.abv?fmtN(r.abv)+" %":""}<br><span class="dim">${fmtN(r.days)} d</span></div></div>`).join("")
-    : `<div class="empty">nic</div>`;
+  now.innerHTML = open.length ? tapRows(open, VENUE.id) : `<div class="empty">nic</div>`;
+  document.querySelector("section[data-p=prehled] .ov").classList.toggle("big", open.length>12);
+  $("#nowN").textContent = open.length ? `· ${open.length}` : "";
   const soon = DATA[VENUE.id].soon || [];
   $("#soon").innerHTML = soon.length ? `<div class="soon"><h3>Připraveno k naražení</h3>${soon.map(b=>`<div><span><b>${esc(nice(b.nazev,"nazev")||b.raw)}</b>${b.pivovar?` · ${esc(nice(b.pivovar,"pivovar"))}`:""}${b.styl?` <span class="dim">· ${esc(nice(b.styl,"styl"))}</span>`:""}</span><span class="m">${b.stupen?esc(b.stupen)+"° ":""}${b.alkohol?fmtN(+b.alkohol)+" %":""}</span></div>`).join("")}</div>` : "";
 
