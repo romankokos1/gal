@@ -144,7 +144,7 @@ HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
              "raw", "narazeno", "docepovano", "dalsi", "odhad"]
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
-PARSER_VERSION = 10
+PARSER_VERSION = 11
 FAILS_BEFORE_ERROR = 3            # tolik neúspěšných stažení po sobě se toleruje
 DEFAULT_INTERVAL_MIN = 120        # podniky bez interval_min se stahují po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
@@ -529,6 +529,7 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
     nx = NEXT_RE.split(raw, maxsplit=1)
     if len(nx) == 2:
         main, out["dalsi"] = nx[0].strip(), nx[1].strip()
+    main = re.sub(r"^\s*(?:->|→|»|>)\s*", "", main)   # „-> Kamenice nad Lipou JANTAR“ (šipka = nově naraženo)
     out["main"] = main
     main = DEC_SPACE.sub(r"\1,\2", main)
     rest = main
@@ -757,6 +758,8 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
         st = re.sub(r"\s*,\s*(?:,\s*)+", ", ", re.sub(r"\s+", " ", st))
         out["styl"] = st.strip(" ,|/-")
 
+    if fmt == "pivovar nazev" and not out["nazev"] and out["pivovar"]:
+        out["nazev"] = out["pivovar"]               # „Kynšperský ZAJÍC 12°“ – značka je i název
     if fmt == "pivovar nazev" and not out["styl"]:
         m = re.search(r"ležák|výčepní|polotmav|tmav|pšeni", out["nazev"], re.I)
         if m:                                      # „Habakuk ležák 11° sv.nef.“
