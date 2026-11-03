@@ -102,14 +102,21 @@ input[type=search]:focus{outline:1px solid var(--accent);border-color:var(--acce
 
 /* na čepu – kompaktní řádky: číslo · pivo · pivovar · styl · °/% */
 .taps{display:grid;gap:3px}
-.tap{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:10px;align-items:center;background:var(--surface-2);border-radius:6px;padding:5px 10px;cursor:pointer;border:1px solid transparent}
+.tap{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:2px 10px;align-items:start;background:var(--surface-2);border-radius:6px;padding:6px 10px;cursor:pointer;border:1px solid transparent;line-height:1.35}
 .tap:hover{border-color:var(--line)}
-.tap .n{font:600 13px var(--mono);color:var(--accent);text-align:right}
-.tap .mid{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tap .n{font:600 13px var(--mono);color:var(--accent);text-align:right;padding-top:1px}
+.tap .mid{min-width:0}
+.tap .l1,.tap .l2{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tap .nm{font-weight:600}
-.tap .br{color:var(--text-2);font-size:12.5px;margin-left:8px}
-.tap .st{color:var(--muted);font-size:12px;margin-left:8px}
-.tap .nx{color:var(--accent-ink);font-size:12px;white-space:normal}
+.tap .l2{font-size:12.5px}
+.tap .br{color:var(--text-2)}
+.tap .st{color:var(--muted)}
+.tap .br+.st::before{content:" · "}
+.tap .nx{color:var(--accent-ink);font-size:12px;margin-top:1px}
+.tap .num{display:flex;flex-direction:column;align-items:flex-end;white-space:nowrap}
+.tap .num .abv{font:600 13px var(--mono);color:var(--text)}
+.tap .num .abv.none{color:var(--muted);font-weight:400}
+.tap .num .sm{font:11.5px var(--mono);color:var(--muted)}
 .tap.is-new{border-color:var(--accent-soft);background:linear-gradient(90deg,var(--accent-soft),var(--surface-2) 60%)}
 .badge{display:inline-block;font:600 10px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--on-accent);background:var(--accent);border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:1px}
 
@@ -139,7 +146,6 @@ input[type=search]:focus{outline:1px solid var(--accent);border-color:var(--acce
 .soon div{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:3px 0;color:var(--text-2)}
 .soon b{font-weight:600;color:var(--text)}
 .soon span.m{font:12px var(--mono);color:var(--muted);white-space:nowrap}
-.tap .num{font:500 12px var(--mono);color:var(--text-2);text-align:right;white-space:nowrap}
 
 /* vodorovné sloupce */
 .hbars{display:grid;gap:4px}
@@ -284,9 +290,6 @@ table.cards caption{display:none}
 
 /* ---------- mobil jako appka ---------- */
 @media (max-width:640px){
-  .tap{align-items:start}
-  .tap .nm{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .tap .br{margin-left:0}
   .feat .taps{grid-template-columns:1fr}
   .vgrid{grid-template-columns:1fr 1fr;gap:8px}
   .vcard{padding:10px 12px}
@@ -754,8 +757,10 @@ const isNew = r => r.from && NOW - r.from < DAY && +r.from !== vStart(r.venue) &
 function tapRows(open, vid){
   return [...open].sort((a,b)=>(+a.pozice||0)-(+b.pozice||0)).map((r,i)=>{ const nw=isNew(r);
     return `<div class="tap${nw?" is-new":""}" data-beer="${esc(r.beerKey)}"><span class="n">${i+1}</span>
-      <div class="mid"><span class="nm">${esc(r.label)}${nw?'<span class="badge">nové</span>':""}</span><span class="br">${esc(r.pivovar||"")}</span><span class="st">${esc(r.styl||"")}</span>${r.dalsi?`<div class="nx">→ potom: ${esc(nice(r.dalsi,"nazev"))}</div>`:""}</div>
-      <div class="num">${r.deg?fmtN(r.deg,1).replace(/,0$/,"")+"°":""} ${r.abv?fmtN(r.abv)+" %":""} <span class="dim">${r.days!=null?fmtN(r.days)+" d":""}</span></div></div>`; }).join("");
+      <div class="mid"><div class="l1"><span class="nm">${esc(r.label)}</span>${nw?'<span class="badge">nové</span>':""}</div>
+        <div class="l2">${r.pivovar?`<span class="br">${esc(r.pivovar)}</span>`:""}${r.styl?`<span class="st">${esc(r.styl)}</span>`:""}</div>
+        ${r.dalsi?`<div class="nx">→ potom: ${esc(nice(r.dalsi,"nazev"))}</div>`:""}</div>
+      <div class="num"><span class="abv${r.abv?"":" none"}">${r.abv?fmtN(r.abv)+" %":"– %"}</span><span class="sm">${[r.deg?fmtN(r.deg,1).replace(/,0$/,"")+"°":"", r.days!=null?fmtN(r.days)+" d":""].filter(Boolean).join(" · ")}</span></div></div>`; }).join("");
 }
 function venueInfo(v){
   const d=DATA[v.id]||{rows:[]}, rows=d.rows||[];
