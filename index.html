@@ -241,8 +241,15 @@ svg.line .hit{fill:transparent;cursor:default}
 #tip span{font-family:var(--mono);opacity:.8}
 
 .warn{background:var(--warn-bg);border:1px solid var(--warn-line);color:var(--warn-text);border-radius:var(--radius);padding:10px 14px;margin-bottom:14px;font-size:13px}
-.dups{background:var(--surface-2);border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:12px;color:var(--text-2)}
-.dups code{font-family:var(--mono);color:var(--accent-ink)}
+.check{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:8px;padding:8px 12px;margin-bottom:12px;font-size:13px;color:var(--text-2)}
+.check summary{cursor:pointer;color:var(--warn-text);font-weight:600}
+.check summary b{font-family:var(--mono)}
+.check h3{margin:12px 0 4px;color:var(--warn-text)}
+.check .ck{display:grid;gap:2px}
+.check .ck>div{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:3px 0;border-bottom:1px dashed var(--warn-line);flex-wrap:wrap}
+.check code{font-family:var(--mono);color:var(--accent-ink)}
+.check code.al{font-size:12px;background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--text);user-select:all}
+.check p{margin:10px 0 8px;font-size:12px}
 .summary{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
 .summary .kpi{padding:8px 12px;flex:1;min-width:140px}
 .summary .kpi b{font-size:18px}
@@ -576,6 +583,7 @@ async function boot(){
     DATA[v.id] = {rows: csv ? build(csv, v) : [], stav: st, ok: !!csv, soon: Array.isArray(soon) ? soon : []};
   }));
   ALLX = VENUES.flatMap(v=>DATA[v.id].rows);
+  inferBreweries();
   const vb=$("#venue"), vs=$("#venueSel");
   // Galerie vždy první, před ní volba „Všechny podniky“ = úvodní přehled
   VENUES.sort((a,b)=>(b.id===FEATURED)-(a.id===FEATURED));
@@ -655,16 +663,50 @@ function warnings(){
 function lev(a,b){ const d=Array.from({length:a.length+1},(_,i)=>[i]); for(let j=1;j<=b.length;j++) d[0][j]=j;
   for(let i=1;i<=a.length;i++) for(let j=1;j<=b.length;j++) d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));
   return d[a.length][b.length]; }
+// panel „Ke kontrole“: co hlídač nejspíš rozparsoval špatně + návrh řádku do aliasy.json
 function dupes(){
-  const ks=[...new Set(ALLX.flatMap(r=>r.brews))], out=[];
+  const cnt={}; ALLX.forEach(r=>r.brews.forEach(k=>cnt[k]=(cnt[k]||0)+1));
+  const ks=Object.keys(cnt), pairs=[];
   for(let i=0;i<ks.length;i++) for(let j=i+1;j<ks.length;j++){
     const a=ks[i], b=ks[j], m=Math.min(a.length,b.length);
     if(m<4) continue;
-    if(lev(a,b) <= (m>=8?2:1) || a.startsWith(b+" ") || b.startsWith(a+" ")) out.push([a,b]);
+    if(lev(a,b) <= (m>=8?2:1) || a.startsWith(b) || b.startsWith(a)) pairs.push([a,b]);
   }
-  if(!out.length) return "";
-  return `<div class="dups">Možná jde o stejný pivovar: ${out.map(([a,b])=>`<code>${esc(brewDisplay[a])}</code> ↔ <code>${esc(brewDisplay[b])}</code>`).join(", ")}.
-    Sloučíš je v souboru <code>aliasy.json</code> v repu.</div>`;
+  // podivné názvy pivovarů (šipky, znaky, čísla, moc slov) – jak je napsal web
+  const raws={};
+  ALLX.forEach(r=>brewSplit(r.pivovarRaw).forEach(b=>{ (raws[b]=raws[b]||[]).push(r); }));
+  const weird=Object.entries(raws).filter(([b])=>/[<>→←|%"„“]|->|^[^\p{L}]|\d{2,}/u.test(b) || b.split(/\s+/).length>4);
+  const noBrew=uniqBeer(ALLX.filter(r=>!r.brews.length));
+  const noName=uniqBeer(ALLX.filter(r=>!r.nazev && r.brews.length));
+  const n=pairs.length+weird.length+noBrew.length+noName.length;
+  if(!n) return "";
+  const line=(from,to)=>`"${from.replace(/"/g,'\\"')}": "${to.replace(/"/g,'\\"')}",`;
+  const lines=[];
+  const where=rs=>[...new Set(rs.map(r=>r.venueName))].join(", ");
+  let h=`<details class="check"><summary>Ke kontrole <b>${n}</b> <span class="dim">· možná chyby v datech z webů</span></summary>`;
+  if(pairs.length){
+    h+=`<h3>Možná stejný pivovar</h3><div class="ck">`+pairs.map(([a,b])=>{
+      const [to,from]=cnt[a]>=cnt[b]?[a,b]:[b,a];                // sjednotit na častější tvar
+      const l=line(brewDisplay[from],brewDisplay[to]); lines.push(l);
+      return `<div><span><code>${esc(brewDisplay[from])}</code> (${cnt[from]}×) ↔ <code>${esc(brewDisplay[to])}</code> (${cnt[to]}×)</span><code class="al">${esc(l)}</code></div>`;}).join("")+`</div>`;
+  }
+  if(weird.length){
+    h+=`<h3>Podivný název pivovaru</h3><div class="ck">`+weird.map(([b,rs])=>{
+      const guess=b.replace(/^[^\p{L}]+/u,"").replace(/\s*(?:->|→).*$/,"").trim();
+      const l=guess&&guess!==b ? line(b,guess) : ""; if(l) lines.push(l);
+      return `<div><span><code>${esc(b)}</code> <span class="dim">· ${esc(where(rs))} · „${esc(rs[0].raw)}“</span></span>${l?`<code class="al">${esc(l)}</code>`:`<span class="dim">opravit v hlídači</span>`}</div>`;}).join("")+`</div>`;
+  }
+  if(noBrew.length){
+    h+=`<h3>Pivo bez pivovaru</h3><div class="ck">`+noBrew.map(r=>`<div><span>${esc(r.label)} <span class="dim">· ${esc(r.venueName)} · „${esc(r.raw)}“</span></span><span class="dim">opravit v hlídači</span></div>`).join("")+`</div>`;
+  }
+  if(noName.length){
+    h+=`<h3>Pivo bez názvu</h3><div class="ck">`+noName.map(r=>`<div><span>${esc(r.pivovar)} <span class="dim">· ${esc(r.venueName)} · „${esc(r.raw)}“</span></span><span class="dim">opravit v hlídači</span></div>`).join("")+`</div>`;
+  }
+  h+=`<p class="dim">Řádky vlevo dole vlož do <code>aliasy.json</code> do části <code>"pivovary"</code> (nejdřív zkontroluj, že je to opravdu stejný pivovar). Položky „opravit v hlídači“ aliasy nespraví, ty je potřeba upravit v <code>scrape.py</code>.</p>`;
+  if(lines.length) h+=`<button class="btn" id="ckCopy">Kopírovat ${lines.length} ${lines.length===1?"řádek":lines.length<5?"řádky":"řádků"} pro aliasy.json</button>`;
+  h+=`</details>`;
+  setTimeout(()=>{ const b=$("#ckCopy"); if(b) b.onclick=()=>{ navigator.clipboard.writeText(lines.join("\n")).then(()=>{ b.textContent="Zkopírováno ✓"; }); }; });
+  return h;
 }
 
 /* ---------- filtry ---------- */
@@ -747,6 +789,31 @@ function render(){
   if(TAB==="napric") renderNapric();
   if(TAB==="historie") table("#tHist", R, HIST_COLS, "from", r=>openBeer(r.beerKey));
   if(TAB==="osa") timeline(R);
+}
+
+/* ---------- pivo bez pivovaru: doplnit podle pivovarů, které už hlídač někde viděl ---------- */
+// „Kasteel Rouge, belgický višňový speciál“ (KMP Plzeň bez pomlčky) → pivovar Kasteel, pivo Rouge.
+// Jen zobrazení, data v repu se nemění. Když po značce nic nezbude („Plzeňský Bandita, pšeničné“),
+// název piva je styl, aby se různá piva téhož pivovaru neslila do jednoho.
+function inferBreweries(){
+  const known=new Set(ALLX.flatMap(r=>r.brews));
+  for(const r of ALLX){
+    if(r.brews.length || !r.nazev) continue;
+    const words=r.nazev.trim().split(/\s+/);
+    for(let n=Math.min(3,words.length); n>=1; n--){
+      const brand=words.slice(0,n).join(" "), key=brewCanon(brand);
+      if(key.length<3 || !known.has(key)) continue;
+      const rest=words.slice(n).join(" ").replace(/^[\s,\-–]+/,"");
+      r.brews=[key]; r.collab=false; r.odvozeno=true;
+      if(!brewDisplay[key]) brewDisplay[key]=nice(brand,"pivovar");
+      r.pivovar=brewDisplay[key];
+      const nm=rest || r.styl || brand;
+      r.label=/[A-Z]\.[A-Z]/.test(nm) ? nm : nice(nm, "nazev");      // zkratky „P.I.P.A.“ nechat
+      r.beerKey=key+"|"+norm(rest || r.styl || brand);
+      r.hay=norm([r.raw,r.pivovar,r.label,r.styl].join(" "));
+      break;
+    }
+  }
 }
 
 /* ---------- nová piva a úvodní přehled ---------- */
