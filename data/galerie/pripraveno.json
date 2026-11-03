@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "pivovar": "KROČEHLAVY",
+    "nazev": "Kladenský",
+    "stupen": "12",
+    "alkohol": "5.2",
+    "styl": "světlý ležák",
+    "raw": "KROČEHLAVY – Kladenský 12°/5,2%/42IBU světlý ležák"
+  },
+  {
+    "pivovar": "ZICHOVEC",
+    "nazev": "Robin Na Grepu",
+    "stupen": "12",
+    "alkohol": "5.1",
+    "styl": "APA s grepem (simcoe, citra)",
+    "raw": "ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)"
+  },
+  {
+    "pivovar": "TULETORN (EE) + SIBEERIA",
+    "nazev": "Kompott",
+    "stupen": "26",
+    "alkohol": "5.5",
+    "styl": "Pastry Sour w. apples, blackcurrants and cherries",
+    "raw": "TULETORN (EE) + SIBEERIA – Kompott 26°/5,5% Pastry Sour w. apples, blackcurrants and cherries"
+  }
+]

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-03 22:08",
+  "zmeneno": "2026-11-03 23:41",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,8 +10,8 @@
       "stupen": "11",
       "alkohol": "5.1",
       "styl": "Helles aka světlý ležák (žpč, hallertau mittelfrüh)",
-      "dalsi": "",
-      "raw": "CHROUST – Světlé 11°/5,1%/20IBU Helles aka světlý ležák (žpč, hallertau mittelfrüh)"
+      "dalsi": "KROČEHLAVY – Kladenský 12°/5,2%/42IBU světlý ležák",
+      "raw": "CHROUST – Světlé 11°/5,1%/20IBU Helles aka světlý ležák (žpč, hallertau mittelfrüh) //NEXT// KROČEHLAVY – Kladenský 12°/5,2%/42IBU světlý ležák"
     },
     {
       "pozice": 2,
@@ -20,8 +20,8 @@
       "stupen": "13",
       "alkohol": "5.4",
       "styl": "Single Hop Cold IPA",
-      "dalsi": "",
-      "raw": "HOPE – Call Me Ceres 13°/5,4% Single Hop Cold IPA"
+      "dalsi": "ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)",
+      "raw": "HOPE – Call Me Ceres 13°/5,4% Single Hop Cold IPA //NEXT// ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)"
     },
     {
       "pozice": 3,
@@ -50,8 +50,8 @@
       "stupen": "13",
       "alkohol": "5.8",
       "styl": "kyseláč s čokoládou a malinou",
-      "dalsi": "",
-      "raw": "PACOV – Tartlab #1 13°/5,8% kyseláč s čokoládou a malinou"
+      "dalsi": "TULETORN (EE) + SIBEERIA – Kompott 26°/5,5% Pastry Sour w. apples, blackcurrants and cherries",
+      "raw": "PACOV – Tartlab #1 13°/5,8% kyseláč s čokoládou a malinou //NEXT// TULETORN (EE) + SIBEERIA – Kompott 26°/5,5% Pastry Sour w. apples, blackcurrants and cherries"
     }
   ]
 }
