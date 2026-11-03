@@ -158,7 +158,7 @@ HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
              "raw", "narazeno", "docepovano", "dalsi", "odhad"]
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
-PARSER_VERSION = 11
+PARSER_VERSION = 12
 FAILS_BEFORE_ERROR = 3            # tolik neúspěšných stažení po sobě se toleruje
 DEFAULT_INTERVAL_MIN = 120        # podniky bez interval_min se stahují po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
@@ -493,7 +493,7 @@ def _extract(html: str, p: dict) -> tuple[list[str], str]:
 
 # ---------- rozparsování jedné položky (vše volitelné) ----------
 
-SEP = re.compile(r"\s+[–—-]\s+|\s*[–—]\s*")
+SEP = re.compile(r"\s+[–—-]\s+|\s*[–—]\s*|(?<=[^\W\d_])-\s+")   # „Obora- ale ne“ = pivovar Obora
 COLON = re.compile(r"^([^\d:]{2,30}):\s+(.+)$")      # „PINTA: El Bandido 12°…“
 # „… //NEXT// další pivo“ – poznámka, co poteče potom; do údajů piva nepatří
 DEC_SPACE = re.compile(r"(\d),\s+(\d{1,2})(?=\s*%)")   # „4, 8%“ → „4,8%“
@@ -549,6 +549,7 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
     if len(nx) == 2:
         main, out["dalsi"] = nx[0].strip(), nx[1].strip()
     main = re.sub(r"^\s*(?:->|→|»|>)\s*", "", main)   # „-> Kamenice nad Lipou JANTAR“ (šipka = nově naraženo)
+    main = re.sub(r"\s*(?:<-|[←⬅])\s*", " ", main).strip()  # „NOZIB <-, Oak Aged…“ (šipka = značka obsluhy)
     out["main"] = main
     main = DEC_SPACE.sub(r"\1,\2", main)
     rest = main
@@ -775,6 +776,7 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
     # „Název, styl, …“ – styl je za první čárkou názvu
     if ", " in out["nazev"]:
         out["nazev"], extra = out["nazev"].split(", ", 1)
+        out["nazev"] = out["nazev"].strip()
         out["styl"] = ", ".join(x for x in (extra.strip(" ,"), out["styl"]) if x)
     if out["styl"]:
         st = STYLE_NOISE.sub(" ", out["styl"])
