@@ -6,273 +6,340 @@
 <meta name="theme-color" content="#121211">
 <title>Hlídač čepů</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script>
   // motiv hned na začátku, ať stránka neproblikne
   try{ const t=localStorage.getItem("theme"); if(t) document.documentElement.dataset.theme=t; }catch(e){}
 </script>
 <style>
-/* ---------- barvy: světlý základ, tmavý podle systému nebo přepínače ---------- */
+/* =====================================================================
+   Hlídač čepů – vzhled
+   Neutrální grafitová škála, jeden akcent (jantar = pivo), vlasové linky,
+   žádné stíny. Data jsou nejvýraznější věc na stránce.
+   ===================================================================== */
 :root{
   color-scheme: light;
-  --bg:#f3f2ee; --surface:#fcfcfb; --surface-2:#efeee9; --line:#e0ded6;
-  --text:#1a1a18; --text-2:#52514e; --muted:#77756d;
-  --accent:#c98500; --accent-ink:#8a5a00; --accent-soft:#c9850022; --on-accent:#1a1405;
-  --warn-bg:#fdf1dc; --warn-line:#f0cf92; --warn-text:#6b4608;
-  --tip-bg:#1a1a18f0; --tip-text:#f4f3ee;
-  --c1:#2a78d6; --c2:#eb6834; --c3:#1baf7a; --c4:#eda100; --c5:#e87ba4; --c-other:#b9b7ae;
-  --shadow:0 10px 40px #0002;
+  --bg:#f5f5f6; --surface:#ffffff; --surface-2:#f4f4f5; --surface-3:#ececee;
+  --line:rgba(15,16,20,.07); --line-2:rgba(15,16,20,.12);
+  --text:#0e0f12; --text-2:#4d505a; --muted:rgba(14,15,18,.46); --faint:rgba(14,15,18,.30);
+  --accent:#e8930c; --accent-ink:#a35f00; --accent-soft:rgba(232,147,12,.12); --on-accent:#1b1100;
+  --bar:#dfdfe3; --bar-hover:#cdcdd3;
+  --ok:#1f9d63; --warn:#d98a00; --bad:#e0383e;
+  --warn-bg:rgba(217,138,0,.07); --warn-line:rgba(217,138,0,.28); --warn-text:#7a4a00;
+  --tip-bg:#0e0f12; --tip-text:#f4f4f5;
+  /* styly v čase – ověřená paleta (barvoslepost, odstup sousedů) */
+  --c1:#d48a1a; --c2:#25a18e; --c3:#4f6bdc; --c4:#c2477a; --c5:#9a86e6; --c-other:rgba(14,15,18,.16);
+  --vl:44%; --vt:.06; --vtx:#fff;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     color-scheme: dark;
-    --bg:#121211; --surface:#1a1a19; --surface-2:#232321; --line:#2e2e2b;
-    --text:#f4f3ee; --text-2:#c3c2b7; --muted:#8a8980;
-    --accent:#e2a93b; --accent-ink:#f2c96b; --accent-soft:#e2a93b2e; --on-accent:#1a1405;
-    --warn-bg:#3a2a12; --warn-line:#6b4b1a; --warn-text:#f5d9a6;
-    --tip-bg:#000000e6; --tip-text:#f4f3ee;
-    --c1:#3987e5; --c2:#d95926; --c3:#199e70; --c4:#c98500; --c5:#d55181; --c-other:#55544f;
-    --shadow:0 10px 40px #0008;
+    --bg:#08080a; --surface:#101013; --surface-2:#16161a; --surface-3:#1d1d22;
+    --line:rgba(255,255,255,.05); --line-2:rgba(255,255,255,.09);
+    --text:#ededf0; --text-2:#a3a4ad; --muted:rgba(237,237,240,.42); --faint:rgba(237,237,240,.26);
+    --accent:#ffad2e; --accent-ink:#ffc565; --accent-soft:rgba(255,173,46,.12); --on-accent:#1b1100;
+    --bar:#2a2a30; --bar-hover:#3a3a42;
+    --ok:#3ccf8e; --warn:#ffb224; --bad:#ff5a5f;
+    --warn-bg:rgba(255,178,36,.06); --warn-line:rgba(255,178,36,.22); --warn-text:#ffd08a;
+    --tip-bg:#1d1d22; --tip-text:#ededf0;
+    --c1:#c4801c; --c2:#2a9e88; --c3:#5e76e0; --c4:#cc5a84; --c5:#8c79dc; --c-other:rgba(255,255,255,.14);
+    --vl:62%; --vt:.09; --vtx:#121215;
   }
 }
 :root[data-theme="dark"]{
   color-scheme: dark;
-  --bg:#121211; --surface:#1a1a19; --surface-2:#232321; --line:#2e2e2b;
-  --text:#f4f3ee; --text-2:#c3c2b7; --muted:#8a8980;
-  --accent:#e2a93b; --accent-ink:#f2c96b; --accent-soft:#e2a93b2e; --on-accent:#1a1405;
-  --warn-bg:#3a2a12; --warn-line:#6b4b1a; --warn-text:#f5d9a6;
-  --tip-bg:#000000e6; --tip-text:#f4f3ee;
-  --c1:#3987e5; --c2:#d95926; --c3:#199e70; --c4:#c98500; --c5:#d55181; --c-other:#55544f;
-  --shadow:0 10px 40px #0008;
+  --bg:#08080a; --surface:#101013; --surface-2:#16161a; --surface-3:#1d1d22;
+  --line:rgba(255,255,255,.05); --line-2:rgba(255,255,255,.09);
+  --text:#ededf0; --text-2:#a3a4ad; --muted:rgba(237,237,240,.42); --faint:rgba(237,237,240,.26);
+  --accent:#ffad2e; --accent-ink:#ffc565; --accent-soft:rgba(255,173,46,.12); --on-accent:#1b1100;
+  --bar:#2a2a30; --bar-hover:#3a3a42;
+  --ok:#3ccf8e; --warn:#ffb224; --bad:#ff5a5f;
+  --warn-bg:rgba(255,178,36,.06); --warn-line:rgba(255,178,36,.22); --warn-text:#ffd08a;
+  --tip-bg:#1d1d22; --tip-text:#ededf0;
+  --c1:#c4801c; --c2:#2a9e88; --c3:#5e76e0; --c4:#cc5a84; --c5:#8c79dc; --c-other:rgba(255,255,255,.14);
+  --vl:62%; --vt:.09; --vtx:#121215;
 }
-:root{ --radius:10px; --mono:"IBM Plex Mono",ui-monospace,monospace; --sans:"IBM Plex Sans",system-ui,sans-serif; }
+:root{ --radius:14px; --r-in:8px;
+  --sans:"Geist",system-ui,-apple-system,sans-serif; --mono:"Geist Mono",ui-monospace,monospace; }
 
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 var(--sans);-webkit-tap-highlight-color:transparent}
-.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 60px}
-header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
-h1{font-size:20px;margin:0;font-weight:600}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 var(--sans);font-variant-numeric:tabular-nums;
+  -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1200px;margin:0 auto;padding:22px 20px 64px}
+
+/* ---------- hlavička ---------- */
+header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+h1{font-size:17px;margin:0;font-weight:700;letter-spacing:-.02em;cursor:pointer}
 h1 span{color:var(--accent)}
-h1{cursor:pointer}
-.sub{color:var(--muted);font-family:var(--mono);font-size:12px;flex:1;min-width:200px}
+.sub{color:var(--muted);font-size:12.5px;flex:1;min-width:200px}
 .sub b{color:var(--text-2);font-weight:500}
-h2{font-size:13px;margin:0 0 10px;font-weight:600;color:var(--text-2);text-transform:uppercase;letter-spacing:.06em}
-h3{font-size:12px;margin:0 0 6px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;min-width:0}
-.grid{display:grid;gap:14px}
+h2{font-size:13px;margin:0 0 14px;font-weight:500;color:var(--text-2);letter-spacing:-.005em}
+h2 .dim{font-weight:400}
+h3{font-size:12px;margin:0 0 8px;font-weight:500;color:var(--muted)}
+
+/* ---------- stavové tečky ---------- */
+.sd{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--faint);margin-right:7px;vertical-align:1px;flex:none}
+.sd.ok{background:var(--ok);box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 18%,transparent),0 0 8px color-mix(in srgb,var(--ok) 55%,transparent)}
+.sd.warn{background:var(--warn);box-shadow:0 0 0 3px color-mix(in srgb,var(--warn) 18%,transparent),0 0 8px color-mix(in srgb,var(--warn) 55%,transparent)}
+.sd.bad{background:var(--bad);box-shadow:0 0 0 3px color-mix(in srgb,var(--bad) 18%,transparent),0 0 8px color-mix(in srgb,var(--bad) 55%,transparent)}
+.sd.live{background:var(--accent);box-shadow:0 0 0 3px var(--accent-soft),0 0 8px color-mix(in srgb,var(--accent) 60%,transparent)}
+
+/* ---------- karty a mřížky ---------- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;min-width:0}
+.grid{display:grid;gap:12px}
 .g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
 .span-all{grid-column:1/-1}
 .g2x{grid-template-columns:1fr 1fr}
 @media (min-width:1000px){
+  /* bento: seznam čepů je dlouhý sloupec, grafy menší dlaždice vedle */
   .ov{grid-template-columns:repeat(3,1fr);grid-template-areas:"now brew style" "now abv style" "rec rec rec"}
   .ov>.a-now{grid-area:now}.ov>.a-brew{grid-area:brew}.ov>.a-style{grid-area:style}.ov>.a-abv{grid-area:abv}.ov>.a-rec{grid-area:rec}
   .ov .recs{grid-template-columns:repeat(3,1fr)}
-  /* velký podnik (víc než 12 kohoutů): seznam čepů na dvě třetiny šířky ve dvou sloupcích */
   .ov.big{grid-template-areas:"now now brew" "now now style" "now now abv" "rec rec rec"}
-  .ov.big .taps{grid-template-columns:1fr 1fr;column-gap:8px}
+  .ov.big .taps{grid-template-columns:1fr 1fr;column-gap:20px}
+  /* vývoj: dvě široké dlaždice a dvě úzké, střídavě */
+  .bento-vy{grid-template-columns:2fr 1fr;grid-template-areas:"count abv" "style days"}
+  .bento-vy>.v-count{grid-area:count}.bento-vy>.v-abv{grid-area:abv}.bento-vy>.v-style{grid-area:style}.bento-vy>.v-days{grid-area:days}
 }
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:14px}
-.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px}
-.kpi b{display:block;font:600 22px var(--mono);color:var(--text)}
-.kpi small{color:var(--muted);font-size:12px}
-.icon-btn{background:var(--surface);border:1px solid var(--line);color:var(--text-2);border-radius:8px;width:34px;height:34px;display:grid;place-items:center;cursor:pointer;font-size:16px;padding:0}
-.icon-btn:hover{color:var(--text)}
 
-/* ovládání */
-.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px;position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0}
-.tabs{display:flex;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:3px}
-.tabs button,.seg button{background:none;border:0;color:var(--text-2);font:500 13px var(--sans);padding:6px 12px;border-radius:6px;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:6px}
-.tabs button svg{width:15px;height:15px;flex:none;opacity:.8}
-.tabs button.on,.seg button.on{background:var(--surface-2);color:var(--text)}
-.seg{display:flex;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:3px}
+/* ---------- metriky ---------- */
+.kpis{display:grid;grid-template-columns:minmax(0,1.7fr);grid-auto-columns:minmax(0,1fr);grid-auto-flow:column;gap:12px;margin-bottom:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.kpi b{order:2;font:800 34px/1 var(--sans);letter-spacing:-.045em;color:var(--text)}
+.kpi small{order:1;color:var(--muted);font-size:12px}
+.kpis .kpi:first-child{background:linear-gradient(135deg,var(--accent-soft),transparent 60%),var(--surface)}
+.kpis .kpi:first-child b{font-size:52px;letter-spacing:-.055em}
+.icon-btn{background:transparent;border:1px solid var(--line-2);color:var(--text-2);border-radius:9px;width:34px;height:34px;display:grid;place-items:center;cursor:pointer;font-size:15px;padding:0}
+.icon-btn:hover{color:var(--text);background:var(--surface-2)}
+
+/* ---------- ovládání ---------- */
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:16px;position:sticky;top:0;z-index:5;
+  background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:8px 0}
+.tabs{display:flex;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:3px}
+.tabs button,.seg button{background:none;border:0;color:var(--muted);font:500 13px var(--sans);padding:6px 12px;border-radius:7px;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.tabs button:hover,.seg button:hover{color:var(--text)}
+.tabs button svg{width:15px;height:15px;flex:none;opacity:.75}
+.tabs button.on,.seg button.on{background:var(--surface-3);color:var(--text)}
+.seg{display:flex;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:3px}
 .venue button{font-weight:600}
 .venue button.on{background:var(--accent);color:var(--on-accent)}
 header.many .venue{display:none!important}
 header.many select.venue-sel{display:block}
-select.venue-sel{display:none;background:var(--accent);color:var(--on-accent);border:0;border-radius:8px;padding:7px 10px;font:600 14px var(--sans)}
-input[type=search]{background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:7px 10px;font:13px var(--sans);min-width:200px;flex:1;max-width:320px}
-input[type=search]:focus{outline:1px solid var(--accent);border-color:var(--accent)}
+select.venue-sel{display:none;background:var(--surface);color:var(--text);border:1px solid var(--line-2);border-radius:9px;padding:7px 12px;font:600 14px var(--sans);letter-spacing:-.01em}
+select.venue-sel[data-hue]{background:var(--vc);color:var(--vtx);border-color:transparent}
+input[type=search]{background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:8px 12px;font:13px var(--sans);min-width:200px;flex:1;max-width:320px}
+input[type=search]::placeholder{color:var(--faint)}
+input[type=search]:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
 .chip{display:inline-flex;gap:6px;align-items:center;background:var(--accent-soft);color:var(--accent-ink);border-radius:999px;padding:3px 10px;font-size:12px}
 .chip button{background:none;border:0;color:inherit;cursor:pointer;font-size:14px;padding:0}
-.btn{background:var(--surface);border:1px solid var(--line);color:var(--text-2);border-radius:8px;padding:6px 12px;font:500 12px var(--sans);cursor:pointer}
-.btn:hover{color:var(--text);border-color:var(--muted)}
+.btn{background:transparent;border:1px solid var(--line-2);color:var(--text-2);border-radius:9px;padding:6px 12px;font:500 12.5px var(--sans);cursor:pointer}
+.btn:hover{color:var(--text);background:var(--surface-2)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
-.link{background:none;border:0;padding:0;color:inherit;font:inherit;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.link{background:none;border:0;padding:0;color:inherit;font:inherit;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:var(--line-2);text-underline-offset:3px}
 .link:hover{text-decoration-color:var(--accent)}
 
-/* na čepu – kompaktní řádky: číslo · pivo · pivovar · styl · °/% */
-.taps{display:grid;gap:3px}
-.tap{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:2px 10px;align-items:start;background:var(--surface-2);border-radius:6px;padding:6px 10px;cursor:pointer;border:1px solid transparent;line-height:1.35}
-.tap:hover{border-color:var(--line)}
-.tap .n{font:600 13px var(--mono);color:var(--accent);text-align:right;padding-top:1px}
+/* ---------- na čepu ---------- */
+.taps{display:grid;gap:0}
+.tap{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:2px 12px;align-items:start;padding:9px 8px;cursor:pointer;
+  border-bottom:1px solid var(--line);border-radius:0;line-height:1.35;position:relative}
+.tap:hover{background:var(--surface-2);border-radius:var(--r-in)}
+.tap .n{font:500 12px/1.6 var(--sans);color:var(--faint);text-align:right}
 .tap .mid{min-width:0}
 .tap .l1,.tap .l2{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tap .nm{font-weight:600}
-.tap .l2{font-size:12.5px}
+.tap .nm{font-weight:600;letter-spacing:-.01em}
+.tap .l2{font-size:12.5px;margin-top:1px}
 .tap .br{color:var(--text-2)}
 .tap .st{color:var(--muted)}
-.tap .br+.st::before{content:" · "}
-.tap .nx{color:var(--accent-ink);font-size:12px;margin-top:1px}
+.tap .br+.st::before{content:" · ";color:var(--faint)}
+.tap .nx{color:var(--accent-ink);font-size:12px;margin-top:3px}
 .tap .num{display:flex;flex-direction:column;align-items:flex-end;white-space:nowrap}
-.tap .num .abv{font:600 13px var(--mono);color:var(--text)}
-.tap .num .abv.none{color:var(--muted);font-weight:400}
-.tap .num .sm{font:11.5px var(--mono);color:var(--muted)}
-.tap.is-new{border-color:var(--accent-soft);background:linear-gradient(90deg,var(--accent-soft),var(--surface-2) 60%)}
-.badge{display:inline-block;font:600 10px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--on-accent);background:var(--accent);border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:1px}
+.tap .num .abv{font:700 14px var(--sans);letter-spacing:-.02em;color:var(--text)}
+.tap .num .abv.none{color:var(--faint);font-weight:500}
+.tap .num .sm{font-size:11.5px;color:var(--muted)}
+.tap.is-new::before{content:"";position:absolute;left:0;top:9px;bottom:9px;width:2px;border-radius:2px;background:var(--accent);box-shadow:0 0 8px color-mix(in srgb,var(--accent) 60%,transparent)}
+.tap.is-new .n{color:var(--accent)}
+.badge{display:inline-block;font:600 10.5px var(--sans);color:var(--accent-ink);background:var(--accent-soft);border-radius:999px;padding:1px 7px;margin-left:8px;vertical-align:1px}
 
-/* úvod: všechny podniky */
-#home .feat{margin-bottom:14px}
-.feat-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:10px}
-.feat-head .t{font-size:20px;font-weight:600;cursor:pointer}
+/* ---------- úvod: všechny podniky ---------- */
+#home .feat{margin-bottom:12px;padding:22px 24px}
+.feat-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+.feat-head .t{font-size:24px;font-weight:700;letter-spacing:-.03em;cursor:pointer}
 .feat-head .t:hover{color:var(--accent-ink)}
-.vstat{font:12px var(--mono);color:var(--muted)}
-.vstat b{color:var(--text-2);font-weight:500}
-.vstat .up{color:var(--c3)}.vstat .dn{color:var(--c2)}
-.feat .taps{grid-template-columns:repeat(auto-fill,minmax(420px,1fr));column-gap:8px}
-.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
-.vcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;cursor:pointer;display:flex;flex-direction:column;gap:6px;min-width:0}
-.vcard:hover{border-color:var(--accent)}
-.vcard .t{font-weight:600;font-size:15px;line-height:1.25}
-.vcard .big{font:600 22px var(--mono);line-height:1}
-.vcard .big small{font:12px var(--sans);color:var(--muted);margin-left:4px}
-.vcard .news{font-size:12px;color:var(--text-2);display:grid;gap:1px}
+.vstat{font-size:12px;color:var(--muted)}
+.feat-head .vstat>span{margin-right:10px}
+.vstat b{color:var(--text-2);font-weight:600}
+.vstat .up{color:var(--ok)}.vstat .dn{color:var(--bad)}
+.feat .taps{grid-template-columns:repeat(auto-fill,minmax(420px,1fr));column-gap:24px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.vcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;cursor:pointer;display:flex;flex-direction:column;gap:8px;min-width:0;transition:border-color .15s}
+.vcard:hover{border-color:var(--line-2)}
+.vcard .t{font-weight:600;font-size:14.5px;line-height:1.25;letter-spacing:-.01em}
+.vcard .big{font:800 38px/1 var(--sans);letter-spacing:-.05em;margin-top:2px}
+.vcard .big small{font:400 12px var(--sans);letter-spacing:0;color:var(--muted);margin-left:6px}
+.vcard .news{font-size:12px;color:var(--text-2);display:grid;gap:2px;border-top:1px solid var(--line);padding-top:8px}
 .vcard .news>span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.vcard .news>span::before{content:"+ ";color:var(--accent)}
-.vcard .vstat{display:flex;flex-direction:column}
-.vcard .bad,.feat .bad{font-size:12px;color:var(--warn-text);background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:6px;padding:2px 8px;align-self:flex-start}
-.vcard.off{opacity:.6}
-.soon{margin-top:14px;border-top:1px dashed var(--line);padding-top:10px}
-.soon h3{margin-bottom:6px}
-.soon div{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:3px 0;color:var(--text-2)}
+.vcard .news>span::before{content:"+ ";color:var(--accent);font-weight:600}
+.vcard .vstat{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+.vcard .vstat>span{display:block}
+.vcard .bad,.feat .bad{font-size:12px;color:var(--text-2);display:inline-flex;align-items:center;align-self:flex-start}
+.vcard.off{opacity:.55}
+/* barva podniku */
+[data-hue]{--vc:hsl(var(--h) 62% var(--vl))}
+.vcard[data-hue] .t::before,.feat-head .t::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--vc);margin-right:8px;vertical-align:2px}
+.vcard[data-hue]{background:radial-gradient(120% 80% at 0 0,hsl(var(--h) 70% 55% / var(--vt)),transparent 60%),var(--surface)}
+.pill[data-hue]::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--vc);margin-right:6px;vertical-align:1px}
+
+.soon{margin-top:16px;border-top:1px solid var(--line);padding-top:12px}
+.soon h3{margin-bottom:8px}
+.soon div{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:5px 0;color:var(--text-2)}
 .soon b{font-weight:600;color:var(--text)}
-.soon span.m{font:12px var(--mono);color:var(--muted);white-space:nowrap}
+.soon span.m{font-size:12px;color:var(--muted);white-space:nowrap}
 
-/* vodorovné sloupce */
-.hbars{display:grid;gap:4px}
-.hb{display:grid;grid-template-columns:minmax(90px,38%) 1fr 44px;gap:8px;align-items:center;cursor:pointer;padding:2px 4px;border-radius:6px}
+/* ---------- vodorovné sloupce (jedna barva, nejvyšší hodnota akcent) ---------- */
+.hbars{display:grid;gap:2px}
+.hb{display:grid;grid-template-columns:minmax(90px,38%) 1fr 40px;gap:10px;align-items:center;cursor:pointer;padding:4px 6px;border-radius:7px}
 .hb:hover{background:var(--surface-2)}
+.hb:hover .f{background:var(--bar-hover)}
 .hb .l{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--text-2);font-size:13px}
-.hb .t{height:14px;position:relative}
-.hb .f{position:absolute;left:0;top:0;bottom:0;background:var(--accent);border-radius:0 4px 4px 0;min-width:2px}
-.hb .v{font:500 12px var(--mono);color:var(--text);text-align:right}
-.note{color:var(--muted);font-size:12px;margin-top:8px}
+.hb .t{height:8px;position:relative;background:var(--surface-2);border-radius:4px}
+.hb .f{position:absolute;left:0;top:0;bottom:0;background:var(--bar);border-radius:4px;min-width:3px}
+.hb:first-child .f{background:var(--accent);box-shadow:0 0 10px color-mix(in srgb,var(--accent) 35%,transparent)}
+.hb .v{font-weight:600;font-size:12.5px;color:var(--text);text-align:right}
+.note{color:var(--muted);font-size:12px;margin-top:10px;line-height:1.5}
 
-/* žebříčky */
-.recs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px 20px}
-.rec ol{list-style:none;margin:0;padding:0;display:grid;gap:2px}
-.rec li{display:grid;grid-template-columns:18px 1fr auto;gap:8px;align-items:baseline;padding:4px 6px;border-radius:6px;cursor:pointer}
-.rec li:hover{background:var(--surface-2)}
-.rec .i{font:500 11px var(--mono);color:var(--muted)}
+/* ---------- žebříčky ---------- */
+.recs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px 28px}
+.rec ol{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.rec li{display:grid;grid-template-columns:18px 1fr auto;gap:8px;align-items:baseline;padding:7px 6px;border-bottom:1px solid var(--line);cursor:pointer}
+.rec li:last-child{border-bottom:0}
+.rec li:hover{background:var(--surface-2);border-radius:var(--r-in)}
+.rec .i{font-size:11px;color:var(--faint)}
 .rec .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .rec .nm small{color:var(--muted);margin-left:6px}
-.rec .v{font:600 13px var(--mono);color:var(--text)}
+.rec .v{font-weight:700;font-size:13.5px;letter-spacing:-.02em;color:var(--text)}
 .rec .none{color:var(--muted);font-size:12px;padding:4px 6px}
 
-/* tabulky */
-.tw{overflow-x:auto}
+/* ---------- tabulky: bez svislých čar, vlasová linka mezi řádky ---------- */
+.tw{overflow-x:auto;margin:0 -6px}
 table{width:100%;border-collapse:collapse;font-size:13px}
-th{text-align:left;color:var(--muted);font-weight:500;font-size:12px;padding:6px 8px;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none}
+th{text-align:left;color:var(--muted);font-weight:500;font-size:12px;padding:10px 14px;border-bottom:1px solid var(--line-2);cursor:pointer;white-space:nowrap;user-select:none}
 th:hover{color:var(--text)}
+th.s{color:var(--text-2)}
 th.s::after{content:" ↓";color:var(--accent)}
 th.s.asc::after{content:" ↑"}
-td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-td.m{font-family:var(--mono);white-space:nowrap;color:var(--text-2)}
+td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+td.m{white-space:nowrap;color:var(--text-2)}
 td.r,th.r{text-align:right}
 tr.click{cursor:pointer}
 tr.click:hover td{background:var(--surface-2)}
-.live{color:var(--accent-ink);font-size:11px;font-family:var(--mono);white-space:nowrap}
+.live{color:var(--text-2);font-size:12px;white-space:nowrap;display:inline-flex;align-items:center}
 .dim{color:var(--muted)}
-.xhead{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.xhead{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap}
 .xhead h2{margin:0}.xhead .seg button{padding:4px 10px;font-size:12px}
-td.heat{font-variant-numeric:tabular-nums}
-.pill{display:inline-block;font-size:11px;padding:1px 7px;border-radius:999px;background:var(--surface-2);color:var(--text-2);margin:1px 4px 1px 0;white-space:nowrap;border:1px solid var(--line)}
+td.heat{font-variant-numeric:tabular-nums;font-weight:500}
+.pill{display:inline-flex;align-items:center;font-size:11.5px;padding:2px 9px;border-radius:999px;background:var(--surface-2);color:var(--text-2);margin:1px 4px 1px 0;white-space:nowrap;border:1px solid var(--line)}
 .pill.acc{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
 
-/* vývoj v čase */
+/* ---------- vývoj v čase ---------- */
 .chart{position:relative}
-.cols{display:flex;align-items:flex-end;gap:2px;height:170px;border-bottom:1px solid var(--line);position:relative;margin-right:30px}
+.cols{display:flex;align-items:flex-end;gap:3px;height:180px;position:relative;margin-right:30px}
 .cols .c{position:relative;z-index:1;flex:1;display:flex;flex-direction:column-reverse;gap:2px;height:100%;justify-content:flex-start;min-width:3px;cursor:default}
 .cols .c .s{border-radius:0;min-height:2px}
 .cols .c .s:last-child{border-radius:4px 4px 0 0}
-.cols .c:hover .s{filter:brightness(1.08)}
-.cols .gl{position:absolute;left:0;right:0;border-top:1px dashed var(--line);pointer-events:none}
-.cols .gl{right:-30px}
-.cols .gl span{position:absolute;right:0;top:-8px;font:11px var(--mono);color:var(--muted)}
-.xlab{display:flex;gap:2px;margin-top:4px;height:16px}
+.cols .c:hover .s{filter:brightness(1.12)}
+#chCount .cols .c .s{background:var(--bar)!important}
+#chCount .cols .c:hover .s{background:var(--bar-hover)!important;filter:none}
+#chCount .cols .c:last-child .s{background:var(--accent)!important;box-shadow:0 0 14px color-mix(in srgb,var(--accent) 35%,transparent)}
+.cols .gl{position:absolute;left:0;right:-30px;border-top:1px solid var(--line);pointer-events:none}
+.cols .gl span{position:absolute;right:0;top:-8px;font-size:11px;color:var(--faint)}
+.xlab{display:flex;gap:3px;margin-top:8px;height:16px}
 .cols+.xlab{margin-right:30px}
-.xlab span{flex:1;font:11px var(--mono);color:var(--muted);white-space:nowrap;overflow:visible;min-width:3px}
-.legend{display:flex;flex-wrap:wrap;gap:4px 14px;margin:-2px 0 10px;font-size:12px;color:var(--text-2)}
-.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.xlab span{flex:1;font-size:11px;color:var(--faint);white-space:nowrap;overflow:visible;min-width:3px}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;margin:-4px 0 14px;font-size:12px;color:var(--text-2)}
+.legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:0}
 svg.line{display:block;width:100%;overflow:visible}
-svg.line text{font:11px var(--mono);fill:var(--muted)}
-svg.line .grid{stroke:var(--line);stroke-dasharray:3 3}
+svg.line text{font:11px var(--sans);fill:var(--faint)}
+svg.line .grid{stroke:var(--line);stroke-width:1}
+svg.line .area{stroke:none}
 svg.line .ln{fill:none;stroke:var(--accent);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
-svg.line .dot{fill:var(--accent);stroke:var(--surface);stroke-width:2}
+svg.line .dot{fill:var(--surface);stroke:var(--accent);stroke-width:2}
 svg.line .hit{fill:transparent;cursor:default}
+svg.line .hit:hover{fill:var(--accent-soft)}
 
-/* časová osa */
-.tl-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+/* ---------- časová osa ---------- */
+.tl-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
 .tl-bar .note{margin:0}
-.tl-wrap{overflow-x:auto;overflow-y:hidden;border:1px solid var(--line);border-radius:8px;-webkit-overflow-scrolling:touch}
+.tl-wrap{overflow-x:auto;overflow-y:hidden;border:1px solid var(--line);border-radius:var(--r-in);-webkit-overflow-scrolling:touch}
 .tl-in{position:relative;min-width:100%}
 .tl-grid{position:absolute;top:0;bottom:0;pointer-events:none}
 .tl-grid .d{position:absolute;top:0;bottom:0;border-left:1px solid var(--line)}
 .tl-grid .d.we{background:var(--surface-2)}
-.tl-grid .h{position:absolute;top:34px;bottom:0;border-left:1px dashed var(--line);opacity:.6}
-.tl-grid .now{position:absolute;top:0;bottom:0;border-left:2px solid var(--c2);z-index:3}
-.tl-head{display:flex;position:sticky;top:0;z-index:4;height:34px;background:var(--surface);border-bottom:1px solid var(--line)}
+.tl-grid .h{position:absolute;top:34px;bottom:0;border-left:1px dashed var(--line);opacity:.7}
+.tl-grid .now{position:absolute;top:0;bottom:0;border-left:1.5px solid var(--bad);z-index:3;box-shadow:0 0 8px color-mix(in srgb,var(--bad) 50%,transparent)}
+.tl-head{display:flex;position:sticky;top:0;z-index:4;height:34px;background:var(--surface);border-bottom:1px solid var(--line-2)}
 .tl-head .lc,.tl-row .lc{position:sticky;left:0;z-index:5;background:var(--surface);flex:none;width:var(--lw);border-right:1px solid var(--line)}
 .tl-head .ax{position:relative;flex:none}
-.tl-head .ax span{position:absolute;top:4px;font:11px/1.25 var(--mono);color:var(--muted);white-space:nowrap;padding-left:5px}
-.tl-head .ax span b{display:block;color:var(--text-2);font-weight:500}
+.tl-head .ax span{position:absolute;top:4px;font:11px/1.25 var(--sans);color:var(--muted);white-space:nowrap;padding-left:5px}
+.tl-head .ax span b{display:block;color:var(--text-2);font-weight:600}
 .tl-head .ax span.hr{top:18px;font-size:10px;opacity:.8}
-.tl-row{display:flex;height:24px;align-items:center;position:relative}
-.tl-row .lc{font-size:12px;color:var(--text-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 8px;line-height:24px;height:24px}
+.tl-row{display:flex;height:26px;align-items:center;position:relative}
+.tl-row .lc{font-size:12px;color:var(--text-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 10px;line-height:26px;height:26px}
 .tl-row .t{position:relative;height:100%;flex:none}
-.tl-row .f{position:absolute;height:14px;background:var(--accent);border-radius:4px;min-width:4px;cursor:pointer;z-index:2;overflow:hidden;
-  font:500 10px/14px var(--sans);color:var(--on-accent);padding:0 5px;white-space:nowrap;text-overflow:ellipsis}
+.tl-row .f{position:absolute;height:14px;background:color-mix(in srgb,var(--accent) 70%,var(--surface));border-radius:4px;min-width:4px;cursor:pointer;z-index:2;overflow:hidden;
+  font:600 10px/14px var(--sans);color:var(--on-accent);padding:0 6px;white-space:nowrap;text-overflow:ellipsis}
 .tl-row .f.est{background:transparent;border:1.5px dashed var(--accent);color:var(--accent-ink)}
-.tl-row .f.open{background:var(--accent-ink);border-radius:4px 0 0 4px}
+.tl-row .f.open{background:var(--accent);border-radius:4px 0 0 4px;box-shadow:0 0 10px color-mix(in srgb,var(--accent) 40%,transparent)}
 .tl-row:hover .lc{color:var(--text)}
-.tl-row:hover .t{background:color-mix(in srgb,var(--accent) 6%,transparent)}
+.tl-row:hover .t{background:color-mix(in srgb,var(--accent) 5%,transparent)}
 
-#tip{position:fixed;pointer-events:none;background:var(--tip-bg);color:var(--tip-text);padding:6px 9px;border-radius:6px;font-size:12px;max-width:320px;z-index:60;display:none}
-#tip b{display:block}
-#tip span{font-family:var(--mono);opacity:.8}
+#tip{position:fixed;pointer-events:none;background:var(--tip-bg);color:var(--tip-text);padding:8px 11px;border-radius:9px;font-size:12px;max-width:320px;z-index:60;display:none;border:1px solid var(--line-2)}
+#tip b{display:block;font-weight:600}
+#tip span{opacity:.75}
 
-.warn{background:var(--warn-bg);border:1px solid var(--warn-line);color:var(--warn-text);border-radius:var(--radius);padding:10px 14px;margin-bottom:14px;font-size:13px}
-.check{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:8px;padding:8px 12px;margin-bottom:12px;font-size:13px;color:var(--text-2)}
-.check summary{cursor:pointer;color:var(--warn-text);font-weight:600}
-.check summary b{font-family:var(--mono)}
-.check h3{margin:12px 0 4px;color:var(--warn-text)}
-.check .ck{display:grid;gap:2px}
-.check .ck>div{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:3px 0;border-bottom:1px dashed var(--warn-line);flex-wrap:wrap}
-.check code{font-family:var(--mono);color:var(--accent-ink)}
-.check code.al{font-size:12px;background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--text);user-select:all}
-.check p{margin:10px 0 8px;font-size:12px}
-.summary{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
-.summary .kpi{padding:8px 12px;flex:1;min-width:140px}
-.summary .kpi b{font-size:18px}
+/* ---------- upozornění a kontrola ---------- */
+.warn{background:var(--warn-bg);border:1px solid var(--warn-line);color:var(--warn-text);border-radius:var(--r-in);padding:11px 14px;margin-bottom:14px;font-size:13px;display:flex;align-items:baseline;gap:2px}
+.warn::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--warn);margin-right:9px;transform:translateY(-1px);box-shadow:0 0 0 3px color-mix(in srgb,var(--warn) 18%,transparent),0 0 8px color-mix(in srgb,var(--warn) 55%,transparent)}
+.check{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:var(--r-in);padding:11px 14px;margin-bottom:16px;font-size:13px;color:var(--text-2)}
+.check summary{cursor:pointer;color:var(--warn-text);font-weight:600;list-style:none;display:flex;align-items:center}
+.check summary::-webkit-details-marker{display:none}
+.check summary::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--warn);margin-right:10px;box-shadow:0 0 0 3px color-mix(in srgb,var(--warn) 18%,transparent),0 0 8px color-mix(in srgb,var(--warn) 55%,transparent)}
+.check summary b{margin:0 4px}
+.check h3{margin:14px 0 4px;color:var(--warn-text)}
+.check .ck{display:grid;gap:0}
+.check .ck>div{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--warn-line);flex-wrap:wrap}
+.check .ck>div:last-child{border-bottom:0}
+.check code{font-family:var(--mono);font-size:12px;color:var(--accent-ink)}
+.check code.al{background:var(--surface);border:1px solid var(--line-2);border-radius:6px;padding:2px 7px;color:var(--text);user-select:all}
+.check p{margin:12px 0 10px;font-size:12px}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:12px}
+.summary .kpi{padding:14px 16px}
+.summary .kpi b{font-size:28px}
+.summary .kpi:first-child{background:linear-gradient(135deg,var(--accent-soft),transparent 60%),var(--surface)}
 .empty{padding:40px;text-align:center;color:var(--muted)}
 .hidden{display:none!important}
 
-/* tabulky jako karty na mobilu */
+/* ---------- tabulky jako karty na mobilu ---------- */
 table.cards caption{display:none}
 @media (max-width:640px){
+  .tw{margin:0}
   table.cards{display:block}
   table.cards thead{display:none}
   table.cards caption{display:flex;gap:6px;align-items:center;margin-bottom:10px;caption-side:top;font-size:12px;color:var(--muted)}
-  table.cards caption select{flex:1;min-width:0;background:var(--surface-2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 8px;font:13px var(--sans)}
-  table.cards caption button{background:var(--surface-2);color:var(--text);border:1px solid var(--line);border-radius:8px;width:34px;height:32px;font-size:15px}
-  table.cards tbody{display:grid;gap:8px}
-  table.cards tr{display:flex;flex-wrap:wrap;gap:3px 14px;background:var(--surface-2);border-radius:10px;padding:9px 12px;border:1px solid transparent}
-  table.cards tr.click:active{border-color:var(--accent)}
+  table.cards caption select{flex:1;min-width:0;background:var(--surface-2);color:var(--text);border:1px solid var(--line);border-radius:9px;padding:6px 8px;font:13px var(--sans)}
+  table.cards caption button{background:var(--surface-2);color:var(--text);border:1px solid var(--line);border-radius:9px;width:34px;height:32px;font-size:15px}
+  table.cards tbody{display:grid;gap:0}
+  table.cards tr{display:flex;flex-wrap:wrap;gap:3px 14px;padding:12px 4px;border-bottom:1px solid var(--line)}
+  table.cards tr:last-child{border-bottom:0}
+  table.cards tr.click:active{background:var(--surface-2)}
   table.cards tr.click:hover td{background:none}
   table.cards td{display:block;border:0;padding:0;font-size:12px;color:var(--text-2);text-align:left!important}
   table.cards td.hide-m{display:block}
   table.cards td.nil{display:none!important}
-  table.cards td.heat{padding:0 5px;border-radius:5px}
-  table.cards td[data-l]:not([data-l=""])::before{content:attr(data-l) " ";color:var(--muted);font-family:var(--sans)}
+  table.cards td.heat{padding:0 6px;border-radius:5px}
+  table.cards td[data-l]:not([data-l=""])::before{content:attr(data-l) " ";color:var(--muted)}
   table.cards td[data-u]::after{content:attr(data-u)}
   table.cards td.pm{order:-2;flex-basis:100%;font-size:14px;font-weight:600;color:var(--text)}
   table.cards td.sm{order:-1;flex-basis:100%;font-size:12px;color:var(--text-2);margin-top:-2px}
@@ -280,53 +347,58 @@ table.cards caption{display:none}
   table.cards td.empty{flex-basis:100%;text-align:center!important}
 }
 
-/* karta (pivovar / pivo) */
-#sheet{position:fixed;inset:0;z-index:50;background:#0006;display:flex;align-items:flex-start;justify-content:center;padding:6vh 16px;overflow:auto}
-#sheet .panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);width:100%;max-width:780px;padding:18px 20px 22px}
-.panel-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+/* ---------- karta (pivovar / pivo) ---------- */
+#sheet{position:fixed;inset:0;z-index:50;background:color-mix(in srgb,var(--bg) 70%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding:6vh 16px;overflow:auto}
+#sheet .panel{background:var(--surface);border:1px solid var(--line-2);border-radius:18px;width:100%;max-width:780px;padding:22px 24px 26px}
+.panel-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
 .panel-head .t{flex:1;min-width:0}
-.panel-head .kind{font:600 11px var(--sans);text-transform:uppercase;letter-spacing:.08em;color:var(--accent-ink)}
-.panel-head h4{margin:2px 0 0;font-size:22px;line-height:1.2;font-weight:600}
-.panel-head .meta{color:var(--text-2);font-size:13px;margin-top:4px}
-.mstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin:12px 0 16px}
-.mstats div{background:var(--surface-2);border-radius:8px;padding:8px 10px}
-.mstats b{display:block;font:600 17px var(--mono)}
-.mstats small{color:var(--muted);font-size:11px}
-.panel section{margin-top:16px}
-.raw{font:12px var(--mono);color:var(--text-2);background:var(--surface-2);border-radius:6px;padding:6px 8px;margin:4px 0;word-break:break-word}
+.panel-head .kind{font:500 12px var(--sans);color:var(--accent-ink)}
+.panel-head h4{margin:3px 0 0;font-size:26px;line-height:1.15;font-weight:700;letter-spacing:-.03em}
+.panel-head .meta{color:var(--text-2);font-size:13px;margin-top:6px}
+.mstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin:14px 0 18px}
+.mstats div{background:var(--surface-2);border-radius:var(--r-in);padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.mstats b{order:2;font:800 24px/1 var(--sans);letter-spacing:-.04em}
+.mstats small{order:1;color:var(--muted);font-size:11.5px}
+.panel section{margin-top:18px}
+.raw{font:12px var(--mono);color:var(--text-2);background:var(--surface-2);border-radius:var(--r-in);padding:7px 10px;margin:4px 0;word-break:break-word}
 
 /* ---------- mobil jako appka ---------- */
 @media (max-width:640px){
   .feat .taps{grid-template-columns:1fr}
   .vgrid{grid-template-columns:1fr 1fr;gap:8px}
-  .vcard{padding:10px 12px}
-  .vcard .t{font-size:14px}
-  .wrap{padding:14px 12px calc(84px + env(safe-area-inset-bottom))}
+  .vcard{padding:12px 14px}
+  .vcard .t{font-size:13.5px}
+  .vcard .big{font-size:30px}
+  .feat-head .t{font-size:21px}
+  #home .feat{padding:16px}
+  .wrap{padding:14px 12px calc(88px + env(safe-area-inset-bottom))}
   header{gap:8px}
-  h1{font-size:18px}
+  h1{font-size:17px}
   .sub{order:5;flex-basis:100%;min-width:0}
   .venue{display:none!important}
   header{flex-wrap:wrap}
   select.venue-sel{display:block;flex:1 1 0;min-width:0;max-width:none}
-  .bar{position:static;padding:0}
+  .bar{position:static;padding:0;background:none;backdrop-filter:none}
   .seg#range{flex:1}.seg#range button{flex:1;justify-content:center;padding:6px 4px}
   input[type=search]{min-width:0;max-width:none;flex-basis:100%}
-  /* záložky jako spodní lišta aplikace */
   .tabs{position:fixed;left:0;right:0;bottom:0;z-index:40;border-radius:0;border-width:1px 0 0;padding:4px 2px calc(4px + env(safe-area-inset-bottom));
-        background:var(--surface);box-shadow:0 -4px 20px #0002;gap:0}
-  .tabs button{flex:1;flex-direction:column;gap:2px;font-size:10px;padding:6px 0;min-width:0;border-radius:8px}
+        background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);gap:0}
+  .tabs button{flex:1;flex-direction:column;gap:3px;font-size:10px;padding:6px 0;min-width:0;border-radius:8px}
   .tabs button svg{width:20px;height:20px}
   .tabs button.on{background:none;color:var(--accent-ink)}
   .tabs button.on svg{opacity:1}
-  .kpis{grid-template-columns:1fr 1fr;gap:8px}
-  .kpi{padding:8px 12px}.kpi b{font-size:19px}
+  .kpis{grid-template-columns:1fr 1fr;grid-auto-flow:row;gap:8px}
+  .kpis .kpi:first-child{grid-column:span 2}
+  .kpis .kpi:first-child b{font-size:42px}
+  .kpi{padding:12px 14px}.kpi b{font-size:26px}
   .g2,.g2x{grid-template-columns:1fr}
-  .card{padding:12px}
+  .card{padding:14px}
   #sheet{padding:0;align-items:flex-end}
-  #sheet .panel{border-radius:16px 16px 0 0;max-height:92vh;overflow:auto;padding:14px 14px calc(24px + env(safe-area-inset-bottom));border-width:1px 0 0}
-  .panel-head h4{font-size:19px}
+  #sheet .panel{border-radius:18px 18px 0 0;max-height:92vh;overflow:auto;padding:16px 16px calc(24px + env(safe-area-inset-bottom));border-width:1px 0 0}
+  .panel-head h4{font-size:22px}
   .hide-m{display:none}
 }
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
@@ -368,19 +440,19 @@ table.cards caption{display:none}
       <div class="kpis" id="kpis"></div>
       <div class="grid g2 ov">
         <div class="card a-now"><h2>Teď na čepu <span class="dim" id="nowN"></span></h2><div class="taps" id="now"></div><div id="soon"></div></div>
-        <div class="card a-brew"><h2>Pivovary · počet naražení</h2><div class="hbars" id="chBrew"></div><div class="note">Kolaborace se počítají každému pivovaru zvlášť. Klik = karta pivovaru.</div></div>
-        <div class="card a-style"><h2>Styly · počet naražení</h2><div class="hbars" id="chStyle"></div><div class="note">Styl je odvozený z popisu podle klíčových slov. Klik = filtr.</div></div>
-        <div class="card a-abv"><h2>Síla · % alkoholu</h2><div class="hbars" id="chAbv"></div></div>
+        <div class="card a-brew"><h2>Pivovary podle počtu naražení</h2><div class="hbars" id="chBrew"></div><div class="note">Kolaborace se počítají každému pivovaru zvlášť. Klik = karta pivovaru.</div></div>
+        <div class="card a-style"><h2>Styly podle počtu naražení</h2><div class="hbars" id="chStyle"></div><div class="note">Styl je odvozený z popisu podle klíčových slov. Klik = filtr.</div></div>
+        <div class="card a-abv"><h2>Síla piv</h2><div class="hbars" id="chAbv"></div></div>
         <div class="card span-all a-rec"><h2>Žebříčky</h2><div class="recs" id="recs"></div></div>
       </div>
     </section>
 
     <section data-p="vyvoj" class="hidden">
-      <div class="grid g2x">
-        <div class="card span-all"><h2 id="vyTitle">Naražení za týden</h2><div class="chart" id="chCount"></div></div>
-        <div class="card span-all"><h2>Styly v čase</h2><div class="legend" id="lgStyle"></div><div class="chart" id="chStyleTime"></div><div class="note">Podíl stylů mezi naraženými pivy. Pět nejčastějších stylů, zbytek je „Ostatní“.</div></div>
-        <div class="card"><h2>Ø % alkoholu</h2><div class="chart" id="chAbvTime"></div></div>
-        <div class="card"><h2>Ø dní na čepu</h2><div class="chart" id="chDaysTime"></div><div class="note">Jen piva, která už dotekla.</div></div>
+      <div class="grid g2x bento-vy">
+        <div class="card v-count"><h2 id="vyTitle">Naražení za týden</h2><div class="chart" id="chCount"></div></div>
+        <div class="card v-style"><h2>Styly v čase</h2><div class="legend" id="lgStyle"></div><div class="chart" id="chStyleTime"></div><div class="note">Podíl stylů mezi naraženými pivy. Pět nejčastějších stylů, zbytek je „Ostatní“.</div></div>
+        <div class="card v-abv"><h2>Ø % alkoholu</h2><div class="chart" id="chAbvTime"></div></div>
+        <div class="card v-days"><h2>Ø dní na čepu</h2><div class="chart" id="chDaysTime"></div><div class="note">Jen piva, která už dotekla.</div></div>
       </div>
       <div class="note" id="vyNote"></div>
     </section>
@@ -605,6 +677,7 @@ $("#file").onchange = e => { const f=e.target.files[0]; if(f) f.text().then(t=>{
 function selectVenue(id){
   VENUE = VENUES.find(v=>v.id===id) || VENUES[0];
   $("#home").classList.add("hidden");
+  const vsel=$("#venueSel"); vsel.setAttribute("data-hue",""); vsel.style.setProperty("--h", Math.round(hueOf(VENUE.id)));
   document.querySelectorAll("#venue button").forEach(b=>b.classList.toggle("on", b.dataset.v===VENUE.id));
   $("#venueSel").value = VENUE.id;
   if(VENUE.id) history.replaceState(null,"","#"+encodeURIComponent(VENUE.id));
@@ -641,7 +714,7 @@ function metaLine(){
   const check = vcas ? parseDate(vcas) : (STAV&&STAV.posledni_kontrola ? new Date(STAV.posledni_kontrola+"T00:00") : null);
   const exact = !!vcas;
   const bad = (vb==="chyba" || (vb&&vb.stav==="chyba")) || (STAV&&STAV.chyby_v_rade>0);
-  return `<span title="Kdy hlídač naposled stáhl web podniku">kontrola <b>${check?(exact?fmtWhen(check):fmtD(check)):"?"}</b>${bad?' <span style="color:var(--c2)">⚠</span>':""}</span>`
+  return `<span title="Kdy hlídač naposled stáhl web podniku"><i class="sd ${bad?"bad":"ok"}"></i>kontrola <b>${check?(exact?fmtWhen(check):fmtD(check)):"?"}</b></span>`
     + ` · <span title="Kdy se naposled změnila nabídka na čepu">změna nabídky <b>${fmtWhen(lastChange)}</b></span>`
     + ` · <span class="dim">od ${fmtD(ALL[0].from)}, ${ALL.length} naražení</span>`;
 }
@@ -774,7 +847,11 @@ function byBeer(R){
 }
 function count(R,fn){ const m={}; R.forEach(r=>{ const k=fn(r); if(k!=null) m[k]=(m[k]||0)+1 }); return m; }
 const venueName = id => (VENUES.find(v=>v.id===id)||{}).nazev || id;
-const venuePills = obj => Object.keys(obj).map(id=>`<span class="pill">${esc(venueName(id))}</span>`).join("");
+// odstín podniku podle pořadí v seznamu (zlatý úhel → sousední podniky se barevně liší),
+// Galerie = jantar stránky; nový podnik na konci seznamu ostatním barvy nemění
+function hueOf(id){ const i=Math.max(0,VENUES.findIndex(v=>v.id===id)); return (38 + i*137.508)%360; }
+const hueAttr = id => `data-hue style="--h:${Math.round(hueOf(id))}"`;
+const venuePills = obj => Object.keys(obj).map(id=>`<span class="pill" ${hueAttr(id)}>${esc(venueName(id))}</span>`).join("");
 const brewLinks = keys => keys.map(k=>`<button class="link" data-brew="${esc(k)}">${esc(brewDisplay[k]||k)}</button>`).join(" & ");
 
 /* ---------- vykreslení ---------- */
@@ -821,13 +898,20 @@ const FEATURED = "galerie";                     // Galerie má na úvodu výsadn
 const vStart = id => { const r=DATA[id]?.rows; return r&&r.length ? +r[0].from : 0; };   // první stažení podniku
 // nově naražené = za posledních 24 h a ne jen zachycené při prvním stažení podniku
 const isNew = r => r.from && NOW - r.from < DAY && +r.from !== vStart(r.venue) && !r.odhad;
+// délka na čepu: „5 h“, „1 d 19 h“, „12 d“ (celé dny bez hodin)
+function fmtDur(days){
+  const h=Math.round(days*24);
+  if(h<1) return "<1 h";
+  const d=Math.floor(h/24), r=h%24;
+  return d ? (r ? `${d} d ${r} h` : `${d} d`) : `${r} h`;
+}
 function tapRows(open, vid){
   return [...open].sort((a,b)=>(+a.pozice||0)-(+b.pozice||0)).map((r,i)=>{ const nw=isNew(r);
     return `<div class="tap${nw?" is-new":""}" data-beer="${esc(r.beerKey)}"><span class="n">${i+1}</span>
       <div class="mid"><div class="l1"><span class="nm">${esc(r.label)}</span>${nw?'<span class="badge">nové</span>':""}</div>
         <div class="l2">${r.pivovar?`<span class="br">${esc(r.pivovar)}</span>`:""}${r.styl?`<span class="st">${esc(r.styl)}</span>`:""}</div>
         ${r.dalsi?`<div class="nx">→ potom: ${esc(nice(r.dalsi,"nazev"))}</div>`:""}</div>
-      <div class="num"><span class="abv${r.abv?"":" none"}">${r.abv?fmtN(r.abv)+" %":"– %"}</span><span class="sm">${[r.deg?fmtN(r.deg,1).replace(/,0$/,"")+"°":"", r.days!=null?fmtN(r.days)+" d":""].filter(Boolean).join(" · ")}</span></div></div>`; }).join("");
+      <div class="num"><span class="abv${r.abv?"":" none"}">${r.abv?fmtN(r.abv)+" %":"– %"}</span><span class="sm">${[r.deg?fmtN(r.deg,1).replace(/,0$/,"")+"°":"", r.days!=null?fmtDur(r.days):""].filter(Boolean).join(" · ")}</span></div></div>`; }).join("");
 }
 function venueInfo(v){
   const d=DATA[v.id]||{rows:[]}, rows=d.rows||[];
@@ -844,28 +928,29 @@ function venueInfo(v){
   else if(check && (NOW-check)/DAY>1.1) bad=`kontrola naposled ${fmtD(check)}`;
   return {open, added, gone, check, bad};
 }
-const vStat = (i, sep=" · ") => `<span class="vstat"><span>${i.added.length||i.gone.length ? `dnes <b class="up">+${i.added.length}</b> / <b class="dn">−${i.gone.length}</b>` : "dnes beze změny"}</span>${i.check?`<span>${sep.trim()?sep:""}kontrola <b>${fmtWhen(i.check)}</b></span>`:""}</span>`;
+const vStat = (i, sep=" · ") => `<span class="vstat"><span>${i.added.length||i.gone.length ? `dnes <b class="up">+${i.added.length}</b>&nbsp;/&nbsp;<b class="dn">−${i.gone.length}</b>` : "dnes beze změny"}</span>${i.check?`<span>${sep.trim()?sep:""}<i class="sd ${i.bad?"bad":"ok"}"></i>kontrola <b>${fmtWhen(i.check)}</b></span>`:""}</span>`;
 function showHome(){
   VENUE=null; $("#app").classList.add("hidden"); $("#loadfail").classList.add("hidden");
   $("#home").classList.remove("hidden");
-  $("#venueSel").value=""; document.querySelectorAll("#venue button").forEach(b=>b.classList.toggle("on", !b.dataset.v));
+  $("#venueSel").value=""; $("#venueSel").removeAttribute("data-hue"); document.querySelectorAll("#venue button").forEach(b=>b.classList.toggle("on", !b.dataset.v));
   history.replaceState(null,"",location.pathname+location.search);
   document.title="Hlídač čepů";
   const last=Math.max(0,...VENUES.map(v=>{const c=venueInfo(v).check; return c?+c:0;}));
   $("#meta").innerHTML = `<span>${VENUES.length} podniků</span>${last?` · poslední kontrola <b>${fmtWhen(new Date(last))}</b>`:""}`;
   const feat=VENUES.find(v=>v.id===FEATURED) || VENUES[0];
   const fi=venueInfo(feat);
+  $("#hFeat").setAttribute("data-hue",""); $("#hFeat").style.setProperty("--h", Math.round(hueOf(feat.id)));
   $("#hFeat").innerHTML = `<div class="feat-head"><span class="t" data-v="${esc(feat.id)}">${esc(feat.nazev)}</span>
-      <span class="vstat"><b>${fi.open.length}</b> na čepu</span>${vStat(fi)}${fi.bad?`<span class="bad">${esc(fi.bad)}</span>`:""}</div>
+      <span class="vstat"><b>${fi.open.length}</b>&nbsp;na čepu</span>${vStat(fi)}${fi.bad?`<span class="bad"><i class="sd bad"></i>${esc(fi.bad)}</span>`:""}</div>
     <div class="taps">${fi.open.length?tapRows(fi.open, feat.id):'<div class="empty">nic</div>'}</div>`;
   $("#hGrid").innerHTML = VENUES.filter(v=>v!==feat).map(v=>{ const i=venueInfo(v);
     const news=i.added.slice(-3).reverse();
-    return `<div class="vcard${i.bad&&!i.open.length?" off":""}" data-v="${esc(v.id)}">
+    return `<div class="vcard${i.bad&&!i.open.length?" off":""}" data-v="${esc(v.id)}" ${hueAttr(v.id)}>
       <div class="t">${esc(v.nazev)}</div>
       <div class="big">${i.open.length}<small>na čepu</small></div>
       ${vStat(i,"")}
       ${news.length?`<div class="news">${news.map(r=>`<span>${esc(r.label)} <span class="dim">· ${esc(r.pivovar||"")}</span></span>`).join("")}</div>`:""}
-      ${i.bad?`<span class="bad">${esc(i.bad)}</span>`:""}</div>`; }).join("");
+      ${i.bad?`<span class="bad"><i class="sd bad"></i>${esc(i.bad)}</span>`:""}</div>`; }).join("");
 }
 $("#home").onclick = e => {
   if(e.target.closest("[data-beer]")) return;          // karta piva se otevře společným posluchačem
@@ -893,7 +978,7 @@ function renderPrehled(R){
   const now=$("#now");
   now.innerHTML = open.length ? tapRows(open, VENUE.id) : `<div class="empty">nic</div>`;
   document.querySelector("section[data-p=prehled] .ov").classList.toggle("big", open.length>12);
-  $("#nowN").textContent = open.length ? `· ${open.length}` : "";
+  $("#nowN").textContent = open.length ? String(open.length) : "";
   const soon = DATA[VENUE.id].soon || [];
   $("#soon").innerHTML = soon.length ? `<div class="soon"><h3>Připraveno k naražení</h3>${soon.map(b=>`<div><span><b>${esc(nice(b.nazev,"nazev")||b.raw)}</b>${b.pivovar?` · ${esc(nice(b.pivovar,"pivovar"))}`:""}${b.styl?` <span class="dim">· ${esc(nice(b.styl,"styl"))}</span>`:""}</span><span class="m">${b.stupen?esc(b.stupen)+"° ":""}${b.alkohol?fmtN(+b.alkohol)+" %":""}</span></div>`).join("")}</div>` : "";
 
@@ -968,7 +1053,7 @@ function renderVyvoj(R){
   // 1) počet naražení
   const max=Math.max(1,...list.map(b=>b.rows.length)), nice=Math.ceil(max*1.1);
   $("#chCount").innerHTML = `<div class="cols">${gridLines(nice)}${list.map(b=>`<div class="c" ${T(`<b>${esc(b.range)}</b><span>${b.rows.length}× naraženo · ${new Set(b.rows.map(r=>r.beerKey)).size} různých piv</span>`)}>
-      ${b.rows.length?`<div class="s" style="height:${b.rows.length/nice*100}%;background:var(--accent)"></div>`:""}</div>`).join("")}</div>${xLabels(list)}`;
+      ${b.rows.length?`<div class="s" style="height:${b.rows.length/nice*100}%"></div>`:""}</div>`).join("")}</div>${xLabels(list)}`;
 
   // 2) podíl stylů – top 5 + ostatní, barvy podle pevného pořadí
   const tot=count(R,r=>r.style);
@@ -993,11 +1078,16 @@ function lineChart(sel, pts, fmt){
   if(!vals.length){ el.innerHTML='<div class="empty">zatím žádná data</div>'; return; }
   let lo=Math.min(...vals), hi=Math.max(...vals); if(hi-lo<0.5){ lo-=0.5; hi+=0.5; } const pad=(hi-lo)*0.15; lo=Math.max(0,lo-pad); hi+=pad;
   const n=pts.length, x=i=> pl + (n===1 ? (W-pl-pr)/2 : i*(W-pl-pr)/(n-1)), y=v=> pt + (1-(v-lo)/(hi-lo))*(H-pt-pb);
-  let path="", pen=false;
-  pts.forEach((p,i)=>{ if(p.v==null){ pen=false; return; } path+=(pen?"L":"M")+x(i).toFixed(1)+" "+y(p.v).toFixed(1); pen=true; });
+  let path="", pen=false, area="", seg=[];
+  const flush=()=>{ if(seg.length) area+=`M${seg[0][0]} ${H-pb}`+seg.map(([a,b])=>`L${a} ${b}`).join("")+`L${seg[seg.length-1][0]} ${H-pb}Z`; seg=[]; };
+  pts.forEach((p,i)=>{ if(p.v==null){ pen=false; flush(); return; } const X=x(i).toFixed(1), Y=y(p.v).toFixed(1); path+=(pen?"L":"M")+X+" "+Y; seg.push([X,Y]); pen=true; });
+  flush();
+  const gid="g"+sel.replace(/\W/g,"");
   const ticks=[lo+(hi-lo)*0.2, lo+(hi-lo)*0.5, lo+(hi-lo)*0.8];
   el.innerHTML = `<svg class="line" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+    <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--accent);stop-opacity:.3"/><stop offset="1" style="stop-color:var(--accent);stop-opacity:0"/></linearGradient></defs>
     ${ticks.map(t=>`<line class="grid" x1="${pl}" x2="${W-pr+6}" y1="${y(t)}" y2="${y(t)}"/><text x="${W-pr+10}" y="${y(t)+4}">${fmtN(t)}</text>`).join("")}
+    <path class="area" d="${area}" fill="url(#${gid})"/>
     <path class="ln" d="${path}"/>
     ${pts.map((p,i)=>p.v==null?"":`<circle class="dot" cx="${x(i)}" cy="${y(p.v)}" r="${n>30?2.5:4}"/>`).join("")}
     ${pts.map((p,i)=>p.v==null?"":`<circle class="hit" cx="${x(i)}" cy="${y(p.v)}" r="12" ${T(`<b>${esc(p.b.range)}</b><span>${fmt(p.v)}</span>`)}/>`).join("")}
@@ -1019,7 +1109,7 @@ function renderPivovary(R){
 }
 function renderPiva(R){
   table("#tBeer", byBeer(R), [
-    {k:"name",t:"Pivo",pm:1,f:(v,o)=>esc(v)+(o.open?' <span class="live">● na čepu</span>':"")},
+    {k:"name",t:"Pivo",pm:1,f:(v,o)=>esc(v)+(o.open?' <span class="live"><i class="sd live"></i>na čepu</span>':"")},
     {k:"pivovar",t:"Pivovar",sm:1},
     {k:"style",t:"Styl",h:1,lm:""},
     {k:"deg",t:"°",n:1,m:1,f:v=>v??"–",lm:"",u:"°"},
@@ -1031,7 +1121,7 @@ function renderPiva(R){
 }
 const HIST_COLS=[
   {k:"from",t:"Naraženo",n:1,m:1,f:(v,o)=>(o.odhad?'<span title="Odhad: pivo bylo ohlášené jako další a mezi kontrolami se stihlo narazit i dopít">≈ </span>':"")+fmtDT(v),lm:"od"},
-  {k:"to",t:"Dočepováno",n:1,m:1,f:(v)=>v?fmtDT(v):'<span class="live">● na čepu</span>',h:1,lm:"do"},
+  {k:"to",t:"Dočepováno",n:1,m:1,f:(v)=>v?fmtDT(v):'<span class="live"><i class="sd live"></i>na čepu</span>',h:1,lm:"do"},
   {k:"days",t:"Dní",n:1,f:v=>fmtN(v),lm:"",u:" d"},
   {k:"pivovar",t:"Pivovar",sm:1},
   {k:"label",t:"Pivo",pm:1},
@@ -1108,7 +1198,7 @@ function renderNovinky(){
     {k:"venueName",t:"Podnik",lm:""},
     {k:"style",t:"Styl",lm:"",h:1},
     {k:"from",t:"Naraženo",n:1,m:1,f:fmtWhen,lm:""},
-    {k:"open",t:"Stav",f:x=>x?'<span class="pill acc">na čepu</span>':'<span class="dim">dopito</span>',lm:""},
+    {k:"open",t:"Stav",f:x=>x?'<span class="live"><i class="sd live"></i>na čepu</span>':'<span class="live dim"><i class="sd"></i>dopito</span>',lm:""},
     {k:"novelty",t:"Novinka",n:1,lm:"",f:(x,o)=> x===2 ? '<span class="pill acc">poprvé</span>'
       : `<span class="dim">dřív v:</span> ${o.before.map(id=>`<span class="pill">${esc(venueName(id))}</span>`).join("")}`},
   ], "from", o=>openBeer(o.beerKey));
@@ -1282,7 +1372,7 @@ function openBeer(key){
     ])
     + (R.some(r=>r.odhad)?`<section class="note">≈ = odhad: pivo bylo ohlášené jako další a mezi dvěma kontrolami se stihlo narazit i dopít, přesný čas neznáme.</section>`:"")
     + `<section><h3>Kdy a kde teklo</h3><div class="tw"><table><thead><tr><th>Podnik</th><th class="r">Naraženo</th><th class="r">Dočepováno</th><th class="r">Dní</th></tr></thead><tbody>
-      ${R.map(r=>`<tr><td>${esc(r.venueName)}</td><td class="r m">${r.odhad?"≈ ":""}${fmtDT(r.from)}</td><td class="r m">${r.to?fmtDT(r.to):'<span class="live">● na čepu</span>'}</td><td class="r">${fmtN(r.days)}</td></tr>`).join("")}</tbody></table></div></section>`
+      ${R.map(r=>`<tr><td>${esc(r.venueName)}</td><td class="r m">${r.odhad?"≈ ":""}${fmtDT(r.from)}</td><td class="r m">${r.to?fmtDT(r.to):'<span class="live"><i class="sd live"></i>na čepu</span>'}</td><td class="r">${fmtN(r.days)}</td></tr>`).join("")}</tbody></table></div></section>`
     + (others.length?`<section><h3>Další piva pivovaru</h3>${others.map(b=>`<button class="pill link" data-beer="${esc(b.key)}" style="text-decoration:none">${esc(b.name)}</button>`).join("")}</section>`:"")
     + `<section><h3>Jak to bylo napsané na webu</h3>${raws.map(t=>`<div class="raw">${esc(t)}</div>`).join("")}</section>`);
 }
