@@ -1,0 +1,157 @@
+{
+  "zdroj": "https://badflash-karlin.cz/section:na-cepu",
+  "zmeneno": "2026-11-03 18:01",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Bad Flash",
+      "nazev": "Prostě Ležák",
+      "stupen": "12",
+      "alkohol": "4.9",
+      "styl": "Světlý Ležák",
+      "dalsi": "",
+      "raw": "Bad Flash Prostě Ležák 12° | Světlý Ležák | 0,5l 4.9%"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Bad Flash",
+      "nazev": "Mini Boss",
+      "stupen": "9",
+      "alkohol": "3.5",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "Bad Flash Mini Boss 9° | NEIPA | 0,5l 3.5%"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Bad Flash",
+      "nazev": "Bikini Ale",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "Session IPA",
+      "dalsi": "",
+      "raw": "Bad Flash Bikini Ale 11° | Session IPA | 0.5l 4.5%"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Bad Flash",
+      "nazev": "Citra IPL",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "India Pale Lager",
+      "dalsi": "",
+      "raw": "Bad Flash Citra IPL 12° | India Pale Lager | 0,5l 5%"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Bad Flash",
+      "nazev": "Namrdávák",
+      "stupen": "21",
+      "alkohol": "8",
+      "styl": "Beer Coctail - Torpid Mind Stout and Kasteel Rouge cherry",
+      "dalsi": "",
+      "raw": "Bad Flash Namrdávák 21° | Beer Coctail - Torpid Mind Stout and Kasteel Rouge cherry | 0,3l 8%"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Bad Flash",
+      "nazev": "Torpid Mind",
+      "stupen": "24",
+      "alkohol": "9.3",
+      "styl": "Imperial Stout",
+      "dalsi": "",
+      "raw": "Bad Flash Torpid Mind 24° | Imperial Stout | 0,5l 9.3%"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Budvar",
+      "nazev": "33\" světlý ležák",
+      "stupen": "",
+      "alkohol": "4.6",
+      "styl": "Světlý ležák",
+      "dalsi": "",
+      "raw": "Budvar ,,33\" světlý ležák | Světlý ležák | 0,5l 4.6%"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Haksna",
+      "nazev": "Step by Step 10",
+      "stupen": "",
+      "alkohol": "4",
+      "styl": "Pale Ale",
+      "dalsi": "",
+      "raw": "Haksna Step by Step 10 | Pale Ale | 4%"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Madcat",
+      "nazev": "Pumpkin Ale 12",
+      "stupen": "",
+      "alkohol": "5",
+      "styl": "APA",
+      "dalsi": "",
+      "raw": "Madcat Pumpkin Ale 12 | APA | 0,5l 5%"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Tátův Sad",
+      "nazev": "Cider",
+      "stupen": "",
+      "alkohol": "5.4",
+      "styl": "Apple Dry Cider",
+      "dalsi": "",
+      "raw": "Tátův Sad Cider | Apple Dry Cider | 0,5l 5.4%"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "Kasteel",
+      "nazev": "Rouge Cherry special",
+      "stupen": "",
+      "alkohol": "8",
+      "styl": "Cherry Special",
+      "dalsi": "",
+      "raw": "Kasteel Rouge Cherry special | Cherry Special | 0,5l 8%"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "Ten",
+      "nazev": "Hands Farjestad 13",
+      "stupen": "",
+      "alkohol": "6",
+      "styl": "West Coast IPA",
+      "dalsi": "",
+      "raw": "Ten Hands Farjestad 13 | West Coast IPA | 6%"
+    },
+    {
+      "pozice": 13,
+      "pivovar": "Ten",
+      "nazev": "Hands Helix 15",
+      "stupen": "",
+      "alkohol": "7",
+      "styl": "West Coast IPA",
+      "dalsi": "",
+      "raw": "Ten Hands Helix 15 | West Coast IPA | 7%"
+    },
+    {
+      "pozice": 14,
+      "pivovar": "Ten",
+      "nazev": "Hands Mosaic Meteor 17",
+      "stupen": "",
+      "alkohol": "7",
+      "styl": "DDH Hazy IPA",
+      "dalsi": "",
+      "raw": "Ten Hands Mosaic Meteor 17 | DDH Hazy IPA | 7%"
+    },
+    {
+      "pozice": 15,
+      "pivovar": "Ten",
+      "nazev": "Hands / Shapes&Objects Berry the Castel 19",
+      "stupen": "",
+      "alkohol": "6",
+      "styl": "Fruited Sour",
+      "dalsi": "",
+      "raw": "Ten Hands / Shapes&Objects Berry the Castel 19 | Fruited Sour | 6%"
+    }
+  ]
+}

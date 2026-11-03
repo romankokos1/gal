@@ -1,0 +1,107 @@
+{
+  "zdroj": "https://zlycasy.eu/section:horni-bar",
+  "zmeneno": "2026-11-03 18:01",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Bad Flash",
+      "nazev": "Bikini Ale",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Bikini Ale 11°"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Bad Flash",
+      "nazev": "Rock Café APA",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Rock Café 11° APA"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Budvar",
+      "nazev": "33 světlý ležák",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Budvar 33 světlý ležák 11°"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Bad Flash",
+      "nazev": "Blackcurrant & Pink Pepper Sour Ale",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Blackcurrant & Pink Pepper 12° Sour Ale | 0,3l"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Schneider",
+      "nazev": "Blonde",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Schneider Blonde 12°"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Zvíkovská",
+      "nazev": "Zlatá Labuť světlý ležák",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Zvíkovská Zlatá Labuť světlý ležák 11°"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Bad Flash",
+      "nazev": "Fotbalová jedenáctka světlý ležák",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Fotbalová jedenáctka 11° světlý ležák"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Poupě",
+      "nazev": "APA",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Poupě APA 11° | 0,4l"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Beskydské",
+      "nazev": "hořké IPA",
+      "stupen": "14",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Beskydské hořké 14° IPA | 0,4l"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Trojan",
+      "nazev": "Sotto Spass Pale Ale",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Trojan Sotto Spass 11° Pale Ale | 0,4l"
+    }
+  ]
+}

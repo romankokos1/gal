@@ -88,5 +88,25 @@
     "id": "drinkoteka",
     "nazev": "Drinkøtéka",
     "url": "https://drinkoteka.cz/"
+  },
+  {
+    "id": "zlycasy-horni",
+    "nazev": "Zlý časy – horní bar",
+    "url": "https://zlycasy.eu/section:horni-bar"
+  },
+  {
+    "id": "zlycasy-prostredni",
+    "nazev": "Zlý časy – prostřední bar",
+    "url": "https://zlycasy.eu/section:prostredni-bar"
+  },
+  {
+    "id": "badflash-karlin",
+    "nazev": "Bad Flash Karlín",
+    "url": "https://badflash-karlin.cz/section:na-cepu"
+  },
+  {
+    "id": "badflash-krymska",
+    "nazev": "Bad Flash Krymská",
+    "url": "https://badflash-krymska.cz/section:pivni-listek"
   }
 ]

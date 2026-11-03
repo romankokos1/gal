@@ -1,0 +1,127 @@
+{
+  "zdroj": "https://zlycasy.eu/section:prostredni-bar",
+  "zmeneno": "2026-11-03 18:01",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Budvar",
+      "nazev": "33 ležák",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Světlý ležák",
+      "dalsi": "",
+      "raw": "Budvar 33 ležák 11° | Světlý ležák"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Bad Flash",
+      "nazev": "Bikini Ale",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Session Pale Ale",
+      "dalsi": "",
+      "raw": "Bad Flash Bikini Ale 11° | Session Pale Ale"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Bad Flash",
+      "nazev": "Mango Chilli Sour Ale",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Mango Chilli Sour Ale 12° | 0.3l"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Zvíkovská",
+      "nazev": "Zlatá Labuť",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Světlý ležák",
+      "dalsi": "",
+      "raw": "Zvíkovská Zlatá Labuť 11° | Světlý ležák"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Bad Flash",
+      "nazev": "Podél plotu sour Ale",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Podél plotu sour Ale 12° | 0,3l"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Bad Flash",
+      "nazev": "Fanatic Sabro Neipa",
+      "stupen": "14",
+      "alkohol": "",
+      "styl": "New England India Pale Ale",
+      "dalsi": "",
+      "raw": "Bad Flash Fanatic Sabro Neipa 14° | New England India Pale Ale | 0,4l"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Bad Flash",
+      "nazev": "Rock Café APA",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Rock Café APA 11°"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Knoblach",
+      "nazev": "Keller Bier",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Knoblach 12° Keller Bier | světlý ležák"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Budvar",
+      "nazev": "Tmavý ležák",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Budvar Tmavý ležák 12°"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Bad Flash",
+      "nazev": "Mini Boss NEIPA",
+      "stupen": "9",
+      "alkohol": "",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "Bad Flash Mini Boss NEIPA 9° | NEIPA | 0,4l"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "Kocour",
+      "nazev": "Mango Maracuja NealkoIPA",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Alkohol Free ochucená IPA",
+      "dalsi": "",
+      "raw": "Kocour Mango Maracuja NealkoIPA | Alkohol Free ochucená IPA"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "Raven",
+      "nazev": "Infused Orange IPA",
+      "stupen": "15",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Raven Infused Orange IPA 15° | 0,4l"
+    }
+  ]
+}
