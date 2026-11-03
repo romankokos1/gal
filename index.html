@@ -448,7 +448,7 @@ const brewDisplay = {};  // kanonický klíč -> zobrazený název
 function setAliases(a){
   if(!a) return;
   const use = o => Object.entries(o||{}).filter(([k,v])=>!k.startsWith("_") && typeof v==="string" && v.trim());
-  for(const [k,v] of use(a.pivovary)){ const t=norm(v); ALIAS_B[norm(k)]=t; brewDisplay[t]=v; ALIAS_T.add(t); }
+  for(const [k,v] of use(a.pivovary)){ const t=baseKey(norm(v)); ALIAS_B[norm(k)]=t; ALIAS_B[baseKey(norm(k))]=t; brewDisplay[t]=v; ALIAS_T.add(t); }
   ALIAS_S = use(a.styly).map(([k,v])=>[norm(k),v]).filter(([k])=>k);
 }
 const styleOf = r => {
@@ -458,12 +458,14 @@ const styleOf = r => {
 // kolaborace rozdělit, zemi v závorce odstranit
 const brewSplit = p => (p||"").split(/\s*(?:&|\+|\bx\b|\/|,)\s*/i)
   .map(s=>s.replace(/\(\s*[A-Za-z]{2,3}\s*\)/g,"").trim()).filter(Boolean);
-// „Pivovar Clock“ = „Clock“; ruční aliasy mají přednost
-const GENERIC=/\b(pivovar|minipivovar|rodinny|mestsky|pivovarek|brewery|brewing|brewers|brewhouse|company|co|craft)\b/g;
+// „Pivovar Clock“ = „Clock“, „Nomu Brew Co.“ = „Nomu“, „HoppyDog“ = „Hoppy Dog“; ruční aliasy mají přednost
+const GENERIC=/\b(pivovar|minipivovar|rodinny|mestsky|pivovarek|brewery|brewing|brewers|brewhouse|brew|brews|beer|special|brouwerij|brasserie|brauerei|birrificio|browar|company|co|craft)\b/g;
+// klíč pivovaru: bez obecných slov a bez mezer (přehled porovnává pivovary podle něj)
+function baseKey(n){ const s=n.replace(GENERIC," ").replace(/\s+/g," ").trim()||n; return s.replace(/ /g,""); }
 function brewCanon(name){
   const n=norm(name); if(ALIAS_B[n]) return ALIAS_B[n];
-  const s=n.replace(GENERIC," ").replace(/\s+/g," ").trim()||n;
-  return ALIAS_B[s]||s;
+  const b=baseKey(n);
+  return ALIAS_B[b]||b;
 }
 
 /* ---------- sjednocení velikosti písmen (jen zobrazení, data se nemění) ---------- */
