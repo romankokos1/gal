@@ -1,10 +1,34 @@
 [
   {
+    "pivovar": "CHROUST",
+    "nazev": "Světlé",
+    "stupen": "11",
+    "alkohol": "5.1",
+    "styl": "Helles aka světlý ležák (žpč, hallertau mittelfrüh)",
+    "raw": "CHROUST – Světlé 11°/5,1%/20IBU Helles aka světlý ležák (žpč, hallertau mittelfrüh)"
+  },
+  {
+    "pivovar": "HOPE",
+    "nazev": "Call Me Ceres",
+    "stupen": "13",
+    "alkohol": "5.4",
+    "styl": "Single Hop Cold IPA",
+    "raw": "HOPE – Call Me Ceres 13°/5,4% Single Hop Cold IPA"
+  },
+  {
     "pivovar": "ČIERNY KAMEŇ (SK)",
     "nazev": "Random Pinquin",
     "stupen": "14",
     "alkohol": "5.6",
     "styl": "NEIPA (cryo pop, cryo krush)",
     "raw": "ČIERNY KAMEŇ (SK) – Random Pinquin 14°/5,6% NEIPA (cryo pop, cryo krush)"
+  },
+  {
+    "pivovar": "MAZÁK",
+    "nazev": "Halloween",
+    "stupen": "9",
+    "alkohol": "4",
+    "styl": "Amber Ale s bergamotem, skořicí, zázvorem a mušk. oříškem",
+    "raw": "MAZÁK – Halloween 9°/4% polotm. Amber Ale s bergamotem, skořicí, zázvorem a mušk. oříškem"
   }
 ]
