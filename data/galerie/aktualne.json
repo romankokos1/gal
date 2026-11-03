@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-03 16:29",
+  "zmeneno": "2026-11-03 16:59",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,23 +15,23 @@
     },
     {
       "pozice": 2,
-      "pivovar": "SIBEERIA",
-      "nazev": "One Festival",
-      "stupen": "11",
-      "alkohol": "5.3",
-      "styl": "West Coast Pilsner (riwaka, strata, cascade, wakatu)",
-      "dalsi": "HOPE – Call Me Ceres 13°/5,4% Single Hop Cold IPA",
-      "raw": "SIBEERIA – One Festival 11°/5,3% West Coast Pilsner (riwaka, strata, cascade, wakatu) //NEXT// HOPE – Call Me Ceres 13°/5,4% Single Hop Cold IPA"
+      "pivovar": "HOPE",
+      "nazev": "Call Me Ceres",
+      "stupen": "13",
+      "alkohol": "5.4",
+      "styl": "Single Hop Cold IPA",
+      "dalsi": "",
+      "raw": "HOPE – Call Me Ceres 13°/5,4% Single Hop Cold IPA"
     },
     {
       "pozice": 3,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Pour Decision: Bästa Pětka",
+      "pivovar": "ČIERNY KAMEŇ (SK)",
+      "nazev": "Random Pinquin",
       "stupen": "14",
-      "alkohol": "6.5",
-      "styl": "West Coast IPA (citra, galaxy, riwaka, nelson)",
-      "dalsi": "ČIERNY KAMEŇ (SK) – Random Pinquin 14°/5,6% NEIPA (cryo pop, cryo krush)",
-      "raw": "ZICHOVEC – Pour Decision: Bästa Pětka 14°/6,5% West Coast IPA (citra, galaxy, riwaka, nelson) //NEXT// ČIERNY KAMEŇ (SK) – Random Pinquin 14°/5,6% NEIPA (cryo pop, cryo krush)"
+      "alkohol": "5.6",
+      "styl": "NEIPA (cryo pop, cryo krush)",
+      "dalsi": "",
+      "raw": "ČIERNY KAMEŇ (SK) – Random Pinquin 14°/5,6% NEIPA (cryo pop, cryo krush)"
     },
     {
       "pozice": 4,
