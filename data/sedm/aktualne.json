@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-02 17:30",
+  "zmeneno": "2026-11-03 23:09",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Kamenice",
-      "nazev": "Kamenická",
-      "stupen": "10",
-      "alkohol": "4.2",
+      "pivovar": "Kynšperský Zajíc",
+      "nazev": "Světlý Ležák",
+      "stupen": "12",
+      "alkohol": "5.2",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Kamenice - Kamenická | 10% | Lager, ABV 4,2%"
+      "raw": "Kynšperský Zajíc - Světlý Ležák | 12% | Lager, ABV 5,2%"
     },
     {
       "pozice": 2,

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-02 15:29",
+  "zmeneno": "2026-11-03 23:09",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,16 +55,6 @@
     },
     {
       "pozice": 6,
-      "pivovar": "NOZIB",
-      "nazev": "HAZY CITRA",
-      "stupen": "",
-      "alkohol": "5.5",
-      "styl": "New England IPA",
-      "dalsi": "",
-      "raw": "HAZY CITRA | New England IPA | 5.5% ABV | 🇨🇿NOZIB"
-    },
-    {
-      "pozice": 7,
       "pivovar": "ZICHOVEC",
       "nazev": "Vánoční Zmrzka",
       "stupen": "",
@@ -74,7 +64,7 @@
       "raw": "Vánoční Zmrzka | Pastry Sour | 5% ABV | 🇨🇿ZICHOVEC"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Ārpus",
       "nazev": "West Coast Pilsner",
       "stupen": "",
@@ -84,7 +74,7 @@
       "raw": "West Coast Pilsner | 4.4% ABV | 🇱🇻Ārpus"
     },
     {
-      "pozice": 9,
+      "pozice": 8,
       "pivovar": "Wild Creatures",
       "nazev": "Meditation (2020)",
       "stupen": "",
