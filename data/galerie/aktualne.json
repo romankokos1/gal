@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-03 16:59",
+  "zmeneno": "2026-11-03 17:31",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "TWINBERG",
-      "nazev": "Živa",
-      "stupen": "12",
+      "pivovar": "CHROUST",
+      "nazev": "Světlé",
+      "stupen": "11",
       "alkohol": "5.1",
-      "styl": "světlý ležák z čerstvého chmele",
-      "dalsi": "CHROUST – Světlé 11°/5,1%/20IBU Helles aka světlý ležák (žpč, hallertau mittelfrüh)",
-      "raw": "TWINBERG – Živa 12°/5,1% světlý ležák z čerstvého chmele //NEXT// CHROUST – Světlé 11°/5,1%/20IBU Helles aka světlý ležák (žpč, hallertau mittelfrüh)"
+      "styl": "Helles aka světlý ležák (žpč, hallertau mittelfrüh)",
+      "dalsi": "",
+      "raw": "CHROUST – Světlé 11°/5,1%/20IBU Helles aka světlý ležák (žpč, hallertau mittelfrüh)"
     },
     {
       "pozice": 2,
