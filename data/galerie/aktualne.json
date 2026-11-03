@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-03 17:31",
+  "zmeneno": "2026-11-03 22:08",
   "metoda": "nadpis",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "SIBEERIA",
-      "nazev": "Wondrous Whale",
-      "stupen": "18",
-      "alkohol": "8.6",
-      "styl": "Imperial NEIPA (simcoe, rakau, citra, hbc 630)",
-      "dalsi": "MAZÁK – Halloween 9°/4% polotm. Amber Ale s bergamotem, skořicí, zázvorem a mušk. oříškem",
-      "raw": "SIBEERIA – Wondrous Whale 18°/8,6% Imperial NEIPA (simcoe, rakau, citra, hbc 630) //NEXT// MAZÁK – Halloween 9°/4% polotm. Amber Ale s bergamotem, skořicí, zázvorem a mušk. oříškem"
+      "pivovar": "MAZÁK",
+      "nazev": "Halloween",
+      "stupen": "9",
+      "alkohol": "4",
+      "styl": "Amber Ale s bergamotem, skořicí, zázvorem a mušk. oříškem",
+      "dalsi": "",
+      "raw": "MAZÁK – Halloween 9°/4% polotm. Amber Ale s bergamotem, skořicí, zázvorem a mušk. oříškem"
     },
     {
       "pozice": 5,
