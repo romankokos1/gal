@@ -123,19 +123,33 @@ PODNIKY = [
      "pole": [".item-name span[id]", ".item-category", ".item-abv", ".brewery"],
      "format": "nazev|styl|…|pivovar", "cesta": "prohlizec", "cekat_ms": 6000, "bez_duplicit": True,
      "jen_piva": True, "jen_selektor": True},
+
+    # ---- Zlý časy a Bad Flash (ChoiceQR, obsah vzniká až v prohlížeči), přidáno 3. 11. 2026 ----
+    # „Bad Flash Torpid Mind 24° Imperial Stout“ | popis | štítky („0,3l“, „9.3%“); spodní pivnice je zavřená
+    {"id": "zlycasy-horni", "nazev": "Zlý časy – horní bar", "url": "https://zlycasy.eu/section:horni-bar",
+     "polozky": '[data-url^="section:horni-bar/cepovana-piva"]', "pole": ['[class*="menuItemTitle"]', '[class*="CollapsedText_text"]', '[class*="menuLabelList"]'],
+     "format": "pivovar nazev|popis", "cesta": "prohlizec", "cekat_ms": 4000, "jen_selektor": True},
+    {"id": "zlycasy-prostredni", "nazev": "Zlý časy – prostřední bar", "url": "https://zlycasy.eu/section:prostredni-bar",
+     "polozky": '[data-url^="section:prostredni-bar/cepovana-piva"]', "pole": ['[class*="menuItemTitle"]', '[class*="CollapsedText_text"]', '[class*="menuLabelList"]'],
+     "format": "pivovar nazev|popis", "cesta": "prohlizec", "cekat_ms": 4000, "jen_selektor": True},
+    # Bad Flash: vlastní piva jsou občas bez značky („Mini Boss“, „PODÉL PLOTU 10°“) → doplní se „Bad Flash“
+    {"id": "badflash-karlin", "nazev": "Bad Flash Karlín", "url": "https://badflash-karlin.cz/section:na-cepu",
+     "polozky": '[data-url^="section:na-cepu/"]', "pole": ['[class*="menuItemTitle"]', '[class*="CollapsedText_text"]', '[class*="menuLabelList"]'],
+     "format": "pivovar nazev|popis", "cesta": "prohlizec", "cekat_ms": 4000, "bez_duplicit": True,
+     "vlastni": {"pivovar": "Bad Flash", "piva": ["Mini Boss", "Podél plotu", "Summer Sadness", "Torpid Mind", "Fanatic", "Bikini Ale",
+                          "Prostě ležák", "Citra IPL", "Mango Chilli", "Mango & Chilli", "Desítka", "Namrdávák"]}, "jen_selektor": True},
+    {"id": "badflash-krymska", "nazev": "Bad Flash Krymská", "url": "https://badflash-krymska.cz/section:pivni-listek",
+     "polozky": '[data-url^="section:pivni-listek/"]', "pole": ['[class*="menuItemTitle"]', '[class*="CollapsedText_text"]', '[class*="menuLabelList"]'],
+     "format": "pivovar nazev|popis", "cesta": "prohlizec", "cekat_ms": 4000,
+     "vlastni": {"pivovar": "Bad Flash", "piva": ["Mini Boss", "Podél plotu", "Summer Sadness", "Torpid Mind", "Fanatic", "Bikini Ale",
+                          "Prostě ležák", "Citra IPL", "Mango Chilli", "Mango & Chilli", "Desítka", "Namrdávák"]}, "jen_selektor": True},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
 # (obyčejně i přes prohlížeč) do data/_pruzkum/<id>/, nic nesbírá a na stránce se neukáže.
 # Až bude podnik nastavený v PODNIKY, řádek odsud smaž.
 PRUZKUM = [
-    # 3. kolo: ChoiceQR sekce (Zlý časy, Bad Flash) a Kulový blesk bez „www“
-    {"id": "zlycasy", "kolo": 3, "url": "https://zlycasy.eu/section:horni-bar"},
-    {"id": "zlycasy-prostredni", "kolo": 3, "url": "https://zlycasy.eu/section:prostredni-bar"},
-    {"id": "zlycasy-spodni", "kolo": 3, "url": "https://zlycasy.eu/section:spodni-bar"},
-    {"id": "badflash-karlin", "kolo": 3, "url": "https://badflash-karlin.cz/section:na-cepu"},
-    {"id": "badflash-krymska", "kolo": 3, "url": "https://badflash-krymska.cz/section:pivni-listek"},
-    {"id": "kulovyblesk", "kolo": 3, "url": "https://restauracekulovyblesk.cz/dnesnacepu"},
+    # {"id": "novy-podnik", "url": "https://…"},
 ]
 
 ROOT = Path(__file__).parent / "data"
@@ -410,6 +424,11 @@ def extract_lines(html: str, p: dict) -> tuple[list[str], str]:
                  for l in lines]
     if p.get("bez_objemu") or p.get("bez_duplicit"):
         lines = list(dict.fromkeys(lines))   # stejné pivo vícekrát (0,5 l i 0,3 l, kopie menu) = jedno
+    if p.get("vlastni"):             # vlastní pivo bez značky → doplnit pivovar podniku
+        v = p["vlastni"]
+        known = [norm(x) for x in v["piva"]]
+        lines = [l if norm(l).startswith(norm(v["pivovar"])) or not any(norm(l).startswith(k) for k in known)
+                 else f'{v["pivovar"]} {l}' for l in lines]
     if p.get("jen_piva"):            # „BEER TASTING SET“ apod. – bez stupňů i procent to není pivo
         lines = [l for l in lines if BEER_HINT.search(l)]
     if p.get("jen_s_objemem"):       # „0,5L Session NEIPA 12° (Čestmír)“ – jiné řádky tabulky nejsou piva
@@ -497,7 +516,7 @@ MULTI_BREWERIES = [
     "Hostomický ječmínek", "Magic Road", "Mad Scientist", "To Øl",
     "Svatý Norbert", "U Fleků", "Kamenice nad Lipou", "Starý Plzenec", "Velký Rybník",
     "Fehér Nyúl", "Pioneer Beer", "Vinohradský pivovar", "The Kernel", "Krkonošský medvěd",
-    "Hradecký klenot", "Malt Worm", "Wild Creatures", "Vault City", "Garage Beer",
+    "Hradecký klenot", "Malt Worm", "Wild Creatures", "Vault City", "Garage Beer", "Tátův sad",
 ]
 _MULTI_N = sorted((norm(b) for b in MULTI_BREWERIES if " " in b), key=len, reverse=True)
 KMP_NOISE = re.compile(r"\b(?:sv|svě?tl|tm|tmav|polotm|pol|nef|nefiltr|filtr)\.", re.I)
@@ -570,6 +589,8 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
         # „Fehér Nyúl/Metalhead Down In A Hole | Double IPA, 8.5% ABV, HU“ (BeerGeek)
         # „VIK GROOVY STORM 15° | NEW ZELAND NEIPA | 5.6%“ (Nubeerbar)
         title, _, desc = main.partition(" | ")
+        title = re.sub(r"(\d)\s*'(?=\s|$)", r"\1°", title)          # „STUPICKÁ 12'“ = 12°
+        desc = re.sub(r"\b\d+[.,]\d+\s*l\b", " ", desc, flags=re.I)  # štítek „0,3l“ není údaj o pivu
         m = re.match(r"^([^\s/]+(?:\s[^\s/]+)?)/(.+)$", title)
         if m and len(m.group(1).split()) <= 2:              # kolaborace „A/B …“
             b2, rest = split_brewery(m.group(2))
@@ -580,12 +601,14 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
         if d:
             out["stupen"] = d.group(1).replace(",", ".")
         dn = DEG.search(name)
-        out["nazev"] = clean((name[:dn.start()] + name[dn.end():]) if dn else name).strip(" ,")
+        out["nazev"] = clean((name[:dn.start()] + name[dn.end():]) if dn else name).strip(" ,-–")
         a = ABV_LABEL.search(desc) or re.search(NUM + r"\s*%", desc)
         if a:
             out["alkohol"] = a.group(1).replace(",", ".")
-        bits = [x.strip() for x in re.split(r"\s*[,|]\s*", desc) if x.strip()]
-        out["styl"] = next((x for x in bits if not re.search(r"\d\s*[%°]|ABV", x)
+        # „Imperial stout 10,5%“ – desetinná čárka není oddělovač, procenta do stylu nepatří
+        bits = [re.sub(r"\s*\d+(?:[.,]\d+)?\s*%.*$", "", x).strip()
+                for x in re.split(r"\s*\|\s*|,\s+", desc)]
+        out["styl"] = next((x for x in bits if x and not re.search(r"\d\s*[%°]|ABV", x)
                             and not re.fullmatch(r"[A-Z]{2}", x)), "")
         if not out["pivovar"] and default_brewery:
             out["pivovar"] = default_brewery
