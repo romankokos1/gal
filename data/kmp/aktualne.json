@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-02 19:32",
+  "zmeneno": "2026-11-03 12:57",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,16 +75,6 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Stadioner",
-      "nazev": "Maorihead",
-      "stupen": "13",
-      "alkohol": "5.6",
-      "styl": "India Pale Lager",
-      "dalsi": "",
-      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5, 6% vol. Alc"
-    },
-    {
-      "pozice": 9,
       "pivovar": "",
       "nazev": "U Lenocha",
       "stupen": "10",
