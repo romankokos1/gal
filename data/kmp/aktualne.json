@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-03 12:57",
+  "zmeneno": "2026-11-04 13:11",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Bakalář",
-      "nazev": "Svatováclavský speciál",
-      "stupen": "13",
-      "alkohol": "5.2",
-      "styl": "světlý ležák se zeleným chmelem",
+      "pivovar": "Volt",
+      "nazev": "Elektra",
+      "stupen": "15",
+      "alkohol": "6.5",
+      "styl": "višňový kyseláč s koriandrem a himalájskou solí",
       "dalsi": "",
-      "raw": "Bakalář - Svatováclavský speciál, světlý ležák se zeleným chmelem, 13° sv., 5, 2% vol. Alc, 34 IBU"
+      "raw": "Volt - Elektra, višňový kyseláč s koriandrem a himalájskou solí, 15° sv. nef., 6, 5% vol. Alc, 18 IBU"
     },
     {
       "pozice": 4,
@@ -65,16 +65,6 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Volt",
-      "nazev": "Elektra",
-      "stupen": "15",
-      "alkohol": "6.5",
-      "styl": "višňový kyseláč s koriandrem a himalájskou solí",
-      "dalsi": "",
-      "raw": "Volt - Elektra, višňový kyseláč s koriandrem a himalájskou solí, 15° sv. nef., 6, 5% vol. Alc, 18 IBU"
-    },
-    {
-      "pozice": 8,
       "pivovar": "",
       "nazev": "U Lenocha",
       "stupen": "10",
