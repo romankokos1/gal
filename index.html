@@ -712,7 +712,7 @@ function metaLine(){
   const check = vcas ? parseDate(vcas) : (STAV&&STAV.posledni_kontrola ? new Date(STAV.posledni_kontrola+"T00:00") : null);
   const exact = !!vcas;
   const bad = (vb==="chyba" || (vb&&vb.stav==="chyba")) || (STAV&&STAV.chyby_v_rade>0);
-  if(VENUE.rucne) return `<span title="Podnik píše nabídku jen na Facebook – data jsou přepsaná ze screenshotů"><i class="sd"></i>doplňováno ručně z Facebooku, poslední příspěvek <b>${check?fmtD(check):"?"}</b></span>`
+  if(VENUE.rucne) return `<span title="Podnik píše nabídku jen na Facebook – hlídač ji čte přes RSS, starší dny jsou přepsané ze screenshotů"><i class="sd"></i>nabídka z Facebooku, poslední příspěvek <b>${check?fmtD(check):"?"}</b></span>`
     + ` · <span class="dim">od ${fmtD(ALL[0].from)}, ${ALL.length} naražení</span>`;
   return `<span title="Kdy hlídač naposled stáhl web podniku"><i class="sd ${bad?"bad":"ok"}"></i>kontrola <b>${check?(exact?fmtWhen(check):fmtD(check)):"?"}</b></span>`
     + ` · <span title="Kdy se naposled změnila nabídka na čepu">změna nabídky <b>${fmtWhen(lastChange)}</b></span>`
@@ -929,7 +929,7 @@ function venueInfo(v){
   else if(check && (NOW-check)/DAY>1.1 && !v.rucne) bad=`kontrola naposled ${fmtD(check)}`;
   return {open, added, gone, check, bad, rucne:!!v.rucne};
 }
-const vStat = (i, sep=" · ") => `<span class="vstat"><span>${i.added.length||i.gone.length ? `dnes <b class="up">+${i.added.length}</b>&nbsp;/&nbsp;<b class="dn">−${i.gone.length}</b>` : "dnes beze změny"}</span>${i.check?`<span>${sep.trim()?sep:""}<i class="sd ${i.bad?"bad":i.rucne?"":"ok"}"></i>${i.rucne?"ručně, příspěvek":"kontrola"} <b>${i.rucne?fmtD(i.check):fmtWhen(i.check)}</b></span>`:""}</span>`;
+const vStat = (i, sep=" · ") => `<span class="vstat"><span>${i.added.length||i.gone.length ? `dnes <b class="up">+${i.added.length}</b>&nbsp;/&nbsp;<b class="dn">−${i.gone.length}</b>` : "dnes beze změny"}</span>${i.check?`<span>${sep.trim()?sep:""}<i class="sd ${i.bad?"bad":i.rucne?"":"ok"}"></i>${i.rucne?"z Facebooku, příspěvek":"kontrola"} <b>${i.rucne?fmtD(i.check):fmtWhen(i.check)}</b></span>`:""}</span>`;
 function showHome(){
   VENUE=null; $("#app").classList.add("hidden"); $("#loadfail").classList.add("hidden");
   $("#home").classList.remove("hidden");
