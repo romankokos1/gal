@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-04 20:00",
+  "zmeneno": "2026-11-05 00:04",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -21,7 +21,7 @@
       "alkohol": "5.6",
       "styl": "India Pale Lager",
       "dalsi": "",
-      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5, 6% vol. Alc"
+      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5,6% vol. Alc"
     },
     {
       "pozice": 3,
@@ -31,7 +31,7 @@
       "alkohol": "6.5",
       "styl": "višňový kyseláč s koriandrem a himalájskou solí",
       "dalsi": "",
-      "raw": "Volt - Elektra, višňový kyseláč s koriandrem a himalájskou solí, 15° sv. nef., 6, 5% vol. Alc, 18 IBU"
+      "raw": "Volt - Elektra, višňový kyseláč s koriandrem a himalájskou solí, 15° sv. nef., 6,5% vol. Alc, 18 IBU"
     },
     {
       "pozice": 4,
@@ -41,7 +41,7 @@
       "alkohol": "6.9",
       "styl": "American IPA",
       "dalsi": "",
-      "raw": "Zhůřák - Deus Ex Machina, American IPA, 15° sv. nef., 6, 9% vol. Alc, 67 IBU"
+      "raw": "Zhůřák - Deus Ex Machina, American IPA, 15° sv. nef., 6,9% vol. Alc, 67 IBU"
     },
     {
       "pozice": 5,
@@ -51,7 +51,7 @@
       "alkohol": "4.5",
       "styl": "Wet Hop Schwarzbier",
       "dalsi": "",
-      "raw": "The Barn Beer Co. - Švarcík, Wet Hop Schwarzbier, 12° tm. nef., 4, 5% vol. Alc, 25 IBU"
+      "raw": "The Barn Beer Co. - Švarcík, Wet Hop Schwarzbier, 12° tm. nef., 4,5% vol. Alc, 25 IBU"
     },
     {
       "pozice": 6,
@@ -61,7 +61,7 @@
       "alkohol": "4.1",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Vik - Beach Club, American Pale Ale, 10° sv. nef., 4, 1% vol. Alc, 27 IBU"
+      "raw": "Vik - Beach Club, American Pale Ale, 10° sv. nef., 4,1% vol. Alc, 27 IBU"
     },
     {
       "pozice": 7,
@@ -71,7 +71,7 @@
       "alkohol": "6.6",
       "styl": "New England IPA",
       "dalsi": "",
-      "raw": "Vik - Full Nelson, New England IPA, 15° sv. nef., 6, 6% vol. Alc, 35 IBU"
+      "raw": "Vik - Full Nelson, New England IPA, 15° sv. nef., 6,6% vol. Alc, 35 IBU"
     },
     {
       "pozice": 8,
@@ -81,7 +81,7 @@
       "alkohol": "6.3",
       "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "Vik - Lost in Strata, West Coast IPA, 14° sv. nef., 6, 3% vol. Alc, 58 IBU"
+      "raw": "Vik - Lost in Strata, West Coast IPA, 14° sv. nef., 6,3% vol. Alc, 58 IBU"
     },
     {
       "pozice": 9,
@@ -101,7 +101,7 @@
       "alkohol": "4.6",
       "styl": "světlý ležák s čerstvým chmelem",
       "dalsi": "",
-      "raw": "Vik - Gumboot #6, světlý ležák s čerstvým chmelem, 11° sv. nef., 4, 6% vol. Alc., 32 IBU"
+      "raw": "Vik - Gumboot #6, světlý ležák s čerstvým chmelem, 11° sv. nef., 4,6% vol. Alc., 32 IBU"
     }
   ]
 }

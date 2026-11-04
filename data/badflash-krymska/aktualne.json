@@ -1,6 +1,6 @@
 {
   "zdroj": "https://badflash-krymska.cz/section:pivni-listek",
-  "zmeneno": "2026-11-03 18:01",
+  "zmeneno": "2026-11-05 00:04",
   "metoda": "selektor",
   "piva": [
     {
@@ -26,6 +26,16 @@
     {
       "pozice": 3,
       "pivovar": "BAD FLASH",
+      "nazev": "ROCK CAFÉ",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "BAD FLASH ROCK CAFÉ 11'"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "BAD FLASH",
       "nazev": "SUMMER SADNESS",
       "stupen": "10",
       "alkohol": "4",
@@ -34,7 +44,7 @@
       "raw": "BAD FLASH SUMMER SADNESS 10' | session IPA | 4%"
     },
     {
-      "pozice": 4,
+      "pozice": 5,
       "pivovar": "Bad Flash",
       "nazev": "MINI BOSS NEIPA",
       "stupen": "9",
@@ -44,7 +54,7 @@
       "raw": "Bad Flash MINI BOSS 9' NEIPA | session NEIPA | 3.5%"
     },
     {
-      "pozice": 5,
+      "pozice": 6,
       "pivovar": "BUDVAR",
       "nazev": "33",
       "stupen": "11",
@@ -54,7 +64,7 @@
       "raw": "BUDVAR 33 11°"
     },
     {
-      "pozice": 6,
+      "pozice": 7,
       "pivovar": "BAD FLASH",
       "nazev": "DESÍTKA",
       "stupen": "10",
@@ -64,7 +74,7 @@
       "raw": "BAD FLASH DESÍTKA 10°"
     },
     {
-      "pozice": 7,
+      "pozice": 8,
       "pivovar": "BAD FLASH",
       "nazev": "CITRA IPL",
       "stupen": "12",
@@ -74,7 +84,7 @@
       "raw": "BAD FLASH CITRA IPL 12°"
     },
     {
-      "pozice": 8,
+      "pozice": 9,
       "pivovar": "STAROČESKÁ",
       "nazev": "STUPICKÁ",
       "stupen": "12",
@@ -84,7 +94,7 @@
       "raw": "STAROČESKÁ STUPICKÁ 12' | světlý ležák/lager"
     },
     {
-      "pozice": 9,
+      "pozice": 10,
       "pivovar": "Bad Flash",
       "nazev": "PODÉL PLOTU",
       "stupen": "10",
@@ -92,16 +102,6 @@
       "styl": "",
       "dalsi": "",
       "raw": "Bad Flash PODÉL PLOTU 10°"
-    },
-    {
-      "pozice": 10,
-      "pivovar": "BAD FLASH",
-      "nazev": "MANGO & CHILLI",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "SOUR ALE",
-      "dalsi": "",
-      "raw": "BAD FLASH MANGO & CHILLI 12° | SOUR ALE"
     },
     {
       "pozice": 11,
