@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-04 13:11",
+  "zmeneno": "2026-11-04 15:13",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,6 +65,36 @@
     },
     {
       "pozice": 7,
+      "pivovar": "Vik",
+      "nazev": "Full Nelson",
+      "stupen": "15",
+      "alkohol": "6.6",
+      "styl": "New England IPA",
+      "dalsi": "",
+      "raw": "Vik - Full Nelson, New England IPA, 15° sv. nef., 6, 6% vol. Alc, 35 IBU"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Vik",
+      "nazev": "Lost in Strata",
+      "stupen": "14",
+      "alkohol": "6.3",
+      "styl": "West Coast IPA",
+      "dalsi": "",
+      "raw": "Vik - Lost in Strata, West Coast IPA, 14° sv. nef., 6, 3% vol. Alc, 58 IBU"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Vik",
+      "nazev": "Chocolate Cherry Brownie",
+      "stupen": "25",
+      "alkohol": "9",
+      "styl": "Imperial Stout s višněmi a kakaovými boby",
+      "dalsi": "",
+      "raw": "Vik - Chocolate Cherry Brownie, Imperial Stout s višněmi a kakaovými boby, 25° tm. nef., 9% vol. Alc, 8 IBU"
+    },
+    {
+      "pozice": 10,
       "pivovar": "",
       "nazev": "U Lenocha",
       "stupen": "10",

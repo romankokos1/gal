@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-03 23:09",
+  "zmeneno": "2026-11-04 15:13",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,6 +55,16 @@
     },
     {
       "pozice": 6,
+      "pivovar": "Piggy",
+      "nazev": "Hoppy Quest",
+      "stupen": "",
+      "alkohol": "6",
+      "styl": "Hazy Pale Ale / Strata · Mosaic",
+      "dalsi": "",
+      "raw": "Hoppy Quest | Hazy Pale Ale / Strata · Mosaic | 6% ABV | 🇫🇷Piggy"
+    },
+    {
+      "pozice": 7,
       "pivovar": "ZICHOVEC",
       "nazev": "Vánoční Zmrzka",
       "stupen": "",
@@ -64,7 +74,7 @@
       "raw": "Vánoční Zmrzka | Pastry Sour | 5% ABV | 🇨🇿ZICHOVEC"
     },
     {
-      "pozice": 7,
+      "pozice": 8,
       "pivovar": "Ārpus",
       "nazev": "West Coast Pilsner",
       "stupen": "",
@@ -74,7 +84,7 @@
       "raw": "West Coast Pilsner | 4.4% ABV | 🇱🇻Ārpus"
     },
     {
-      "pozice": 8,
+      "pozice": 9,
       "pivovar": "Wild Creatures",
       "nazev": "Meditation (2020)",
       "stupen": "",
