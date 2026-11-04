@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-04 18:16",
+  "zmeneno": "2026-11-04 19:29",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "HOPE",
-      "nazev": "Call Me Ceres",
-      "stupen": "13",
-      "alkohol": "5.4",
-      "styl": "Single Hop Cold IPA",
-      "dalsi": "ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)",
-      "raw": "HOPE – Call Me Ceres 13°/5,4% Single Hop Cold IPA //NEXT// ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)"
+      "pivovar": "ZICHOVEC",
+      "nazev": "Robin Na Grepu",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "APA s grepem (simcoe, citra)",
+      "dalsi": "",
+      "raw": "ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)"
     },
     {
       "pozice": 3,

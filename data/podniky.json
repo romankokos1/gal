@@ -108,5 +108,11 @@
     "id": "badflash-krymska",
     "nazev": "Bad Flash Krymská",
     "url": "https://badflash-krymska.cz/section:pivni-listek"
+  },
+  {
+    "id": "napalme",
+    "nazev": "Bar Na Palmě",
+    "url": "https://www.facebook.com/barnapalme/",
+    "rucne": true
   }
 ]

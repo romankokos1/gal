@@ -1,0 +1,127 @@
+{
+  "zdroj": "https://www.facebook.com/barnapalme/",
+  "zmeneno": "2026-11-02 12:00",
+  "metoda": "rucne",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Únětice",
+      "nazev": "Únětice 10°",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Únětice 10"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Únětice",
+      "nazev": "Únětice 12°",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Únětice 12"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Mazák",
+      "nazev": "Halloween Amber Ale",
+      "stupen": "9",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Mazák Halloween Amber Ale 9"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Vik",
+      "nazev": "Easy Aussie Bezlepková Australská Session IPA",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Vik Easy Aussie Bezlepková Australská Session IPA 11"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Clock",
+      "nazev": "Emily Bezlepkový Sour",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Clock Emily Bezlepkový Sour 11"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Sibeeria",
+      "nazev": "One Festival West Coast Pilsner",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Sibeeria One Festival West Coast Pilsner 11"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Ovipistán",
+      "nazev": "Plutokrat IPL",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Ovipistán Plutokrat IPL 12"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Napalmě",
+      "nazev": "Cannabis Gose",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Napalmě Cannabis Gose 12"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Hope",
+      "nazev": "Call Me Ceres Cold IPA",
+      "stupen": "",
+      "alkohol": "5.4",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Hope Call Me Ceres Cold IPA 5,4%"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Nozib",
+      "nazev": "Bone Dry NEIPA",
+      "stupen": "14",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Nozib Bone Dry NEIPA 14"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "SQBRU/Firstep",
+      "nazev": "Hops Garden IPA",
+      "stupen": "15",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "SQBRU/Firstep Hops Garden IPA 15"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "Barn",
+      "nazev": "DIZZY LIZZY Sour Milkshake IPA",
+      "stupen": "17",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Barn DIZZY LIZZY Sour Milkshake IPA 17"
+    }
+  ]
+}

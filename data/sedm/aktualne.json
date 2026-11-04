@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-03 23:09",
+  "zmeneno": "2026-11-04 19:29",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Chroust",
-      "nazev": "hoptopia",
+      "pivovar": "Vik",
+      "nazev": "Porn Hop Edition: Rhapzody",
       "stupen": "12",
-      "alkohol": "5.3",
-      "styl": "APA",
+      "alkohol": "5",
+      "styl": "Hazy Pale Ale",
       "dalsi": "",
-      "raw": "Chroust - hoptopia | 12% | APA, ABV 5,3%"
+      "raw": "Vik - Porn Hop Edition: Rhapzody | 12% | Hazy Pale Ale, ABV 5%"
     },
     {
       "pozice": 4,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Jungberg",
-      "nazev": "Lotus",
+      "pivovar": "Fracek",
+      "nazev": "No Compass",
       "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "Pale Ale",
+      "alkohol": "5",
+      "styl": "New Zealand Lager",
       "dalsi": "",
-      "raw": "Jungberg - Lotus | 12% | Pale Ale, ABV 5,1%"
+      "raw": "Fracek - No Compass | 12% | New Zealand Lager, ABV 5%"
     },
     {
       "pozice": 8,
