@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-03 23:41",
+  "zmeneno": "2026-11-04 16:44",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "CHROUST",
-      "nazev": "Světlé",
-      "stupen": "11",
-      "alkohol": "5.1",
-      "styl": "Helles aka světlý ležák (žpč, hallertau mittelfrüh)",
-      "dalsi": "KROČEHLAVY – Kladenský 12°/5,2%/42IBU světlý ležák",
-      "raw": "CHROUST – Světlé 11°/5,1%/20IBU Helles aka světlý ležák (žpč, hallertau mittelfrüh) //NEXT// KROČEHLAVY – Kladenský 12°/5,2%/42IBU světlý ležák"
+      "pivovar": "KROČEHLAVY",
+      "nazev": "Kladenský",
+      "stupen": "12",
+      "alkohol": "5.2",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "KROČEHLAVY – Kladenský 12°/5,2%/42IBU světlý ležák"
     },
     {
       "pozice": 2,
