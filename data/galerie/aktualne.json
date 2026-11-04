@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-04 16:44",
+  "zmeneno": "2026-11-04 18:16",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "PACOV",
-      "nazev": "Tartlab #1",
-      "stupen": "13",
-      "alkohol": "5.8",
-      "styl": "kyseláč s čokoládou a malinou",
-      "dalsi": "TULETORN (EE) + SIBEERIA – Kompott 26°/5,5% Pastry Sour w. apples, blackcurrants and cherries",
-      "raw": "PACOV – Tartlab #1 13°/5,8% kyseláč s čokoládou a malinou //NEXT// TULETORN (EE) + SIBEERIA – Kompott 26°/5,5% Pastry Sour w. apples, blackcurrants and cherries"
+      "pivovar": "TULETORN (EE) + SIBEERIA",
+      "nazev": "Kompott",
+      "stupen": "26",
+      "alkohol": "5.5",
+      "styl": "Pastry Sour w. apples, blackcurrants and cherries",
+      "dalsi": "",
+      "raw": "TULETORN (EE) + SIBEERIA – Kompott 26°/5,5% Pastry Sour w. apples, blackcurrants and cherries"
     }
   ]
 }
