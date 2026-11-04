@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-04 15:13",
+  "zmeneno": "2026-11-04 17:14",
   "metoda": "selektor",
   "piva": [
     {
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "",
-      "nazev": "U Lenocha",
-      "stupen": "10",
-      "alkohol": "3.8",
-      "styl": "světlé výčepní",
+      "pivovar": "Vik",
+      "nazev": "Gumboot #6",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "světlý ležák s čerstvým chmelem",
       "dalsi": "",
-      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3, 8% vol. Alc, 34 IBU"
+      "raw": "Vik - Gumboot #6, světlý ležák s čerstvým chmelem, 11° sv. nef., 4, 6% vol. Alc., 32 IBU"
     }
   ]
 }
