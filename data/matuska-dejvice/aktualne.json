@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
-  "zmeneno": "2026-11-02 23:34",
+  "zmeneno": "2026-11-04 22:02",
   "metoda": "selektor",
   "piva": [
     {
@@ -96,12 +96,12 @@
     {
       "pozice": 10,
       "pivovar": "Matuška",
-      "nazev": "AUTOMAT IV",
+      "nazev": "AUTOMAT OG IV.",
       "stupen": "14",
       "alkohol": "",
       "styl": "COLD IPA",
       "dalsi": "",
-      "raw": "AUTOMAT IV | COLD IPA | 14° | 0.059"
+      "raw": "AUTOMAT OG IV. | COLD IPA | 14° | 0.059"
     }
   ]
 }
