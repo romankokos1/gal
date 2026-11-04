@@ -712,6 +712,8 @@ function metaLine(){
   const check = vcas ? parseDate(vcas) : (STAV&&STAV.posledni_kontrola ? new Date(STAV.posledni_kontrola+"T00:00") : null);
   const exact = !!vcas;
   const bad = (vb==="chyba" || (vb&&vb.stav==="chyba")) || (STAV&&STAV.chyby_v_rade>0);
+  if(VENUE.rucne) return `<span title="Podnik píše nabídku jen na Facebook – data jsou přepsaná ze screenshotů"><i class="sd"></i>doplňováno ručně z Facebooku, poslední příspěvek <b>${check?fmtD(check):"?"}</b></span>`
+    + ` · <span class="dim">od ${fmtD(ALL[0].from)}, ${ALL.length} naražení</span>`;
   return `<span title="Kdy hlídač naposled stáhl web podniku"><i class="sd ${bad?"bad":"ok"}"></i>kontrola <b>${check?(exact?fmtWhen(check):fmtD(check)):"?"}</b></span>`
     + ` · <span title="Kdy se naposled změnila nabídka na čepu">změna nabídky <b>${fmtWhen(lastChange)}</b></span>`
     + ` · <span class="dim">od ${fmtD(ALL[0].from)}, ${ALL.length} naražení</span>`;
@@ -719,6 +721,7 @@ function metaLine(){
 
 /* ---------- kontrola zdraví dat ---------- */
 function warnings(){
+  if(VENUE.rucne) return "";          // ručně doplňovaný podnik: hlídač ho nestahuje, není co hlídat
   const w=[];
   const lastChange = ALL.reduce((m,r)=>Math.max(m,+r.from,+(r.to||0)),0);
   if(STAV){
@@ -923,10 +926,10 @@ function venueInfo(v){
   if(!d.ok || !rows.length) bad="zatím bez dat";
   // jedna chyba se toleruje (krátký výpadek webu), od druhé v řadě se ukáže
   else if((d.stav&&d.stav.chyby_v_rade)>=2 || (vb&&vb.stav==="chyba")) bad=`nestahuje se (${d.stav.chyby_v_rade}× chyba po sobě)`;
-  else if(check && (NOW-check)/DAY>1.1) bad=`kontrola naposled ${fmtD(check)}`;
-  return {open, added, gone, check, bad};
+  else if(check && (NOW-check)/DAY>1.1 && !v.rucne) bad=`kontrola naposled ${fmtD(check)}`;
+  return {open, added, gone, check, bad, rucne:!!v.rucne};
 }
-const vStat = (i, sep=" · ") => `<span class="vstat"><span>${i.added.length||i.gone.length ? `dnes <b class="up">+${i.added.length}</b>&nbsp;/&nbsp;<b class="dn">−${i.gone.length}</b>` : "dnes beze změny"}</span>${i.check?`<span>${sep.trim()?sep:""}<i class="sd ${i.bad?"bad":"ok"}"></i>kontrola <b>${fmtWhen(i.check)}</b></span>`:""}</span>`;
+const vStat = (i, sep=" · ") => `<span class="vstat"><span>${i.added.length||i.gone.length ? `dnes <b class="up">+${i.added.length}</b>&nbsp;/&nbsp;<b class="dn">−${i.gone.length}</b>` : "dnes beze změny"}</span>${i.check?`<span>${sep.trim()?sep:""}<i class="sd ${i.bad?"bad":i.rucne?"":"ok"}"></i>${i.rucne?"ručně, příspěvek":"kontrola"} <b>${i.rucne?fmtD(i.check):fmtWhen(i.check)}</b></span>`:""}</span>`;
 function showHome(){
   VENUE=null; $("#app").classList.add("hidden"); $("#loadfail").classList.add("hidden");
   $("#home").classList.remove("hidden");
