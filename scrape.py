@@ -148,7 +148,11 @@ PODNIKY = [
     # ze screenshotů do napalme_rucne.txt (blok = datum + piva). „Mazák Halloween Amber Ale 9“:
     # pivovar první slovo, číslo na konci = stupně.
     {"id": "napalme", "nazev": "Bar Na Palmě", "url": "https://www.facebook.com/barnapalme/",
-     "rucne": "napalme_rucne.txt", "format": "pivovar nazev stupne"},
+     "rucne": "napalme_rucne.txt", "format": "pivovar nazev stupne",
+     # RSS z RSS.app (příspěvky z jejich Facebooku). Kanál drží jen pár posledních příspěvků,
+     # proto se každý stažený příspěvek ukládá do data/napalme/rss_archiv.jsonl a už se neztratí.
+     # Den, který je v archivu RSS, má přednost před ručním zápisem.
+     "rss": "https://rss.app/feeds/dREP3sp0Y4heJotl.xml"},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
@@ -1053,6 +1057,34 @@ def rebuild() -> int:
 
 # ---------- jeden podnik ----------
 
+def rss_posts(url: str) -> list[dict]:
+    """Příspěvky „Dnes na čepu“ z RSS kanálu → [{cas, radky}]. Prázdný kanál = prázdný seznam."""
+    import xml.etree.ElementTree as ET
+    from email.utils import parsedate_to_datetime
+    r = _get(url, BROWSER_HEADERS)
+    r.raise_for_status()
+    root = ET.fromstring(r.content)
+    out = []
+    for it in root.iter("item"):
+        raw = it.findtext("description") or it.findtext("title") or ""
+        txt = re.sub(r"<br\s*/?>|</p>|</div>", "\n", raw, flags=re.I)
+        txt = BeautifulSoup(txt, "html.parser").get_text()
+        # nabídka = řádky začínající pomlčkou („- Únětice 10“); úvod se mění
+        # („Dnes na čepu:“, „Dnes jsme pro Vás připravili…“), proto se podle něj nepozná
+        lines = [re.sub(r"^\s*[-–•*]\s*", "", l).strip() for l in txt.splitlines()
+                 if re.match(r"^\s*[-–•*]\s*\S", l)]
+        lines = [l for l in lines if len(re.findall(r"[^\W\d_]", l)) >= 2]
+        if len(lines) < 4 or sum(bool(re.search(r"\d", l)) for l in lines) < len(lines) / 2:
+            continue                                   # jiný příspěvek (akce, zavřeno…)
+        try:
+            when = parsedate_to_datetime(it.findtext("pubDate") or "").astimezone(TZ)
+        except (TypeError, ValueError):
+            continue
+        if lines:
+            out.append({"cas": when.strftime("%Y-%m-%d %H:%M"), "radky": lines, "metoda": "rss"})
+    return out
+
+
 def run_manual(p: dict) -> str:
     """Ručně doplňovaný podnik: log se celý skládá ze souboru s přepsanými příspěvky.
     Vrací čas posledního příspěvku (pro stránku jako „doplněno ručně“)."""
@@ -1076,7 +1108,28 @@ def run_manual(p: dict) -> str:
             entries.append(cur)
         elif cur is not None:
             cur["radky"].append(re.sub(r"^[-–•*]\s*", "", t))
-    entries = sorted((e for e in entries if e["radky"]), key=lambda e: e["cas"])
+    entries = [e for e in entries if e["radky"]]
+    if p.get("rss"):
+        arch_f = st.dir / "rss_archiv.jsonl"
+        arch = {}
+        if arch_f.exists():
+            for line in arch_f.read_text(encoding="utf-8").splitlines():
+                try:
+                    e = json.loads(line); arch[e["cas"]] = e
+                except ValueError:
+                    pass
+        try:
+            feed = rss_posts(p["rss"])
+            for e in feed:
+                arch[e["cas"]] = e                     # opravený příspěvek přepíše starší verzi
+            print(f"{p['nazev']}: RSS {len(feed)} příspěvků s nabídkou, v archivu {len(arch)}")
+        except Exception as e:                     # výpadek RSS nevadí, zůstane archiv a ruční zápis
+            warn(f"{p['nazev']}: RSS se nepodařilo načíst: {e}")
+        arch_list = sorted(arch.values(), key=lambda e: e["cas"])
+        write_if_changed(arch_f, "".join(json.dumps(e, ensure_ascii=False) + "\n" for e in arch_list))
+        days = {e["cas"][:10] for e in arch_list}
+        entries = [e for e in entries if e["cas"][:10] not in days] + arch_list   # RSS má přednost
+    entries = sorted(entries, key=lambda e: e["cas"])
     log = [e for i, e in enumerate(entries) if i == 0 or e["radky"] != entries[i - 1]["radky"]]
     write_if_changed(st.log, "".join(json.dumps(e, ensure_ascii=False) + "\n" for e in log))
     if not log:
