@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-04 19:29",
+  "zmeneno": "2026-11-04 23:03",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "KROČEHLAVY",
-      "nazev": "Kladenský",
-      "stupen": "12",
-      "alkohol": "5.2",
-      "styl": "světlý ležák",
+      "pivovar": "",
+      "nazev": "x°/y% světlý ležák",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
       "dalsi": "",
-      "raw": "KROČEHLAVY – Kladenský 12°/5,2%/42IBU světlý ležák"
+      "raw": "x°/y% světlý ležák"
     },
     {
       "pozice": 2,
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "ČIERNY KAMEŇ (SK)",
-      "nazev": "Random Pinquin",
-      "stupen": "14",
-      "alkohol": "5.6",
-      "styl": "NEIPA (cryo pop, cryo krush)",
+      "pivovar": "",
+      "nazev": "x°/y%",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
       "dalsi": "",
-      "raw": "ČIERNY KAMEŇ (SK) – Random Pinquin 14°/5,6% NEIPA (cryo pop, cryo krush)"
+      "raw": "x°/y%"
     },
     {
       "pozice": 4,
