@@ -143,6 +143,12 @@ PODNIKY = [
      "format": "pivovar nazev|popis", "cesta": "prohlizec", "cekat_ms": 4000,
      "vlastni": {"pivovar": "Bad Flash", "piva": ["Mini Boss", "Podél plotu", "Summer Sadness", "Torpid Mind", "Fanatic", "Bikini Ale",
                           "Prostě ležák", "Citra IPL", "Mango Chilli", "Mango & Chilli", "Desítka", "Namrdávák"]}, "jen_selektor": True},
+    # ---- ručně doplňované (nabídka jen na Facebooku) ----
+    # Bar Na Palmě píše každý den příspěvek „Dnes na čepu“. Nestahuje se – piva se přepisují
+    # ze screenshotů do napalme_rucne.txt (blok = datum + piva). „Mazák Halloween Amber Ale 9“:
+    # pivovar první slovo, číslo na konci = stupně.
+    {"id": "napalme", "nazev": "Bar Na Palmě", "url": "https://www.facebook.com/barnapalme/",
+     "rucne": "napalme_rucne.txt", "format": "pivovar nazev stupne"},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
@@ -158,7 +164,7 @@ HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
              "raw", "narazeno", "docepovano", "dalsi", "odhad"]
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
-PARSER_VERSION = 12
+PARSER_VERSION = 13
 FAILS_BEFORE_ERROR = 3            # tolik neúspěšných stažení po sobě se toleruje
 DEFAULT_INTERVAL_MIN = 120        # podniky bez interval_min se stahují po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
@@ -549,6 +555,9 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
     if len(nx) == 2:
         main, out["dalsi"] = nx[0].strip(), nx[1].strip()
     main = re.sub(r"^\s*(?:->|→|»|>)\s*", "", main)   # „-> Kamenice nad Lipou JANTAR“ (šipka = nově naraženo)
+    if fmt == "pivovar nazev stupne":                 # „Zichovec Pšenice 12“ – holé číslo na konci = stupně
+        main = re.sub(r"\s(\d{1,2}(?:[.,]\d)?)\s*$", r" \1°", main)
+        fmt = "pivovar nazev"
     main = re.sub(r"\s*(?:<-|[←⬅])\s*", " ", main).strip()  # „NOZIB <-, Oak Aged…“ (šipka = značka obsluhy)
     out["main"] = main
     main = DEC_SPACE.sub(r"\1,\2", main)
@@ -784,7 +793,8 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
         out["styl"] = st.strip(" ,|/-")
 
     if fmt == "pivovar nazev" and not out["nazev"] and out["pivovar"]:
-        out["nazev"] = out["pivovar"]               # „Kynšperský ZAJÍC 12°“ – značka je i název
+        # „Kynšperský ZAJÍC 12°“, „Únětice 10“ – značka je i název; stupně ho odliší (10 vs. 12)
+        out["nazev"] = f'{out["pivovar"]} {out["stupen"].replace(".", ",")}°' if out["stupen"] else out["pivovar"]
     if fmt == "pivovar nazev" and not out["styl"]:
         m = re.search(r"ležák|výčepní|polotmav|tmav|pšeni", out["nazev"], re.I)
         if m:                                      # „Habakuk ležák 11° sv.nef.“
@@ -1040,6 +1050,49 @@ def rebuild() -> int:
 
 # ---------- jeden podnik ----------
 
+def run_manual(p: dict) -> str:
+    """Ručně doplňovaný podnik: log se celý skládá ze souboru s přepsanými příspěvky.
+    Vrací čas posledního příspěvku (pro stránku jako „doplněno ručně“)."""
+    src = Path(__file__).parent / p["rucne"]
+    st = Store(p["id"])
+    st.dir.mkdir(parents=True, exist_ok=True)
+    if not src.exists():
+        warn(f"{p['nazev']}: soubor {p['rucne']} chybí")
+        return ""
+    entries, cur = [], None
+    for line in src.read_text(encoding="utf-8").splitlines():
+        t = line.strip()
+        if t.startswith("#"):
+            continue
+        if not t:
+            cur = None
+            continue
+        m = re.fullmatch(r"(\d{4}-\d{2}-\d{2})(?:\s+(\d{1,2}:\d{2}))?", t)
+        if m:
+            cur = {"cas": f"{m.group(1)} {m.group(2) or '12:00'}", "radky": [], "metoda": "rucne"}
+            entries.append(cur)
+        elif cur is not None:
+            cur["radky"].append(re.sub(r"^[-–•*]\s*", "", t))
+    entries = sorted((e for e in entries if e["radky"]), key=lambda e: e["cas"])
+    log = [e for i, e in enumerate(entries) if i == 0 or e["radky"] != entries[i - 1]["radky"]]
+    write_if_changed(st.log, "".join(json.dumps(e, ensure_ascii=False) + "\n" for e in log))
+    if not log:
+        return ""
+    hist, (beers, *_rest) = replay(log, p)
+    st.save_history(hist)
+    last = entries[-1]["cas"]
+    write_if_changed(st.dir / "aktualne.json", json.dumps({
+        "zdroj": p["url"], "zmeneno": log[-1]["cas"], "metoda": "rucne",
+        "piva": [{k: b[k] for k in ("pozice", "pivovar", "nazev", "stupen", "alkohol", "styl", "dalsi", "raw")}
+                 for b in beers]}, ensure_ascii=False, indent=2) + "\n")
+    write_if_changed(st.dir / "pripraveno.json", "[]\n")
+    write_if_changed(st.stav, json.dumps({"chyby_v_rade": 0, "posledni_kontrola": last[:10], "metoda": "rucne",
+                                          "pocet_piv": len(beers), "posledni_zmena": log[-1]["cas"]},
+                                         ensure_ascii=False, indent=2) + "\n")
+    print(f"{p['nazev']}: ručně doplněno {len(entries)} příspěvků, poslední {last}.")
+    return last
+
+
 def run_venue(p: dict, now_dt: datetime) -> bool:
     """Vrací False, když podnik selhává déle, než je tolerance."""
     name = p["nazev"]
@@ -1209,7 +1262,8 @@ def main() -> int:
         rebuild()
         ver.write_text(f"{PARSER_VERSION}\n")
     write_if_changed(ROOT / "podniky.json", json.dumps(
-        [{k: p[k] for k in ("id", "nazev", "url")} for p in PODNIKY],
+        [{**{k: p[k] for k in ("id", "nazev", "url")}, **({"rucne": True} if p.get("rucne") else {})}
+         for p in PODNIKY],
         ensure_ascii=False, indent=2) + "\n")
     now_dt = datetime.now(TZ)
     now = now_dt.strftime("%Y-%m-%d %H:%M")
@@ -1218,6 +1272,13 @@ def main() -> int:
     prev = load_json(beh_file, {}).get("podniky", {})
     ok, vysledky = True, {}
     for p in PODNIKY:          # jeden rozbitý podnik neblokuje ostatní
+        if p.get("rucne"):     # nic se nestahuje, jen se ze souboru postaví historie
+            try:
+                vysledky[p["id"]] = {"cas": run_manual(p), "stav": "rucne"}
+            except Exception as e:
+                print(f"::error::{p['nazev']}: neočekávaná chyba: {e}")
+                vysledky[p["id"]] = {"cas": "", "stav": "chyba"}
+            continue
         last = prev.get(p["id"]) if isinstance(prev.get(p["id"]), dict) else {}
         interval = p.get("interval_min", DEFAULT_INTERVAL_MIN)
         if not force and last.get("cas"):
