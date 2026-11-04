@@ -551,6 +551,14 @@ FLAGS = re.compile("[\U0001F1E6-\U0001F1FF\U0001F3F4\U000E0020-\U000E007F]")
 NSB = re.compile(r"^(?P<nazev>.+?)\s+[–—-]\s+(?P<styl>.*?)\s*\((?P<pivovar>[^()]+)\)\s*(?P<rest>.*)$")
 
 
+# slova, ze kterých se skládá název stylu („Bezlepková Australská Session IPA“, „světlý ležák“)
+STYLE_WORDS = set(norm("""ipa neipa dipa tipa ipl apa ale pale amber session sour gose imperial cold west coast
+    double triple milkshake pastry pilsner pils lager ležák lezak světlý svetly tmavý polotmavý výčepní
+    bezlepkový bezlepková bezlepkove australská american americká hazy juicy czech fresh hop dunkel stout
+    porter weizen wheat saison brut red black rye nealko alkohol free fruit fruited smoothie bock
+    india new england zealand belgian tripel dubbel quad barleywine radler berliner weisse""").split())
+
+
 def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: str = "") -> dict:
     out = {"raw": raw, "pivovar": "", "nazev": "", "stupen": "",
            "alkohol": "", "styl": "", "dalsi": ""}
@@ -559,7 +567,8 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
     if len(nx) == 2:
         main, out["dalsi"] = nx[0].strip(), nx[1].strip()
     main = re.sub(r"^\s*(?:->|→|»|>)\s*", "", main)   # „-> Kamenice nad Lipou JANTAR“ (šipka = nově naraženo)
-    if fmt == "pivovar nazev stupne":                 # „Zichovec Pšenice 12“ – holé číslo na konci = stupně
+    styl_z_nazvu = fmt == "pivovar nazev stupne"
+    if styl_z_nazvu:                                  # „Zichovec Pšenice 12“ – holé číslo na konci = stupně
         main = re.sub(r"\s(\d{1,2}(?:[.,]\d)?)\s*$", r" \1°", main)
         fmt = "pivovar nazev"
     main = re.sub(r"\s*(?:<-|[←⬅])\s*", " ", main).strip()  # „NOZIB <-, Oak Aged…“ (šipka = značka obsluhy)
@@ -805,6 +814,15 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
             out["styl"] = {"ležák": "Ležák", "výčepní": "Výčepní",
                            "polotmav": "Polotmavé", "tmav": "Tmavé", "pšeni": "Pšeničné"
                            }[m.group(0).lower()]
+
+    if styl_z_nazvu:
+        # „Halloween Amber Ale“ → název Halloween, styl Amber Ale: konec názvu ze slov stylu
+        words = out["nazev"].split()
+        k = len(words)
+        while k > 1 and norm(words[k - 1]) in STYLE_WORDS:
+            k -= 1
+        if k < len(words):
+            out["nazev"], out["styl"] = " ".join(words[:k]), " ".join(words[k:])
 
     if not out["pivovar"] and default_brewery:
         out["pivovar"] = default_brewery
