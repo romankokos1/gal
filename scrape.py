@@ -164,7 +164,7 @@ HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
              "raw", "narazeno", "docepovano", "dalsi", "odhad"]
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
-PARSER_VERSION = 13
+PARSER_VERSION = 14
 FAILS_BEFORE_ERROR = 3            # tolik neúspěšných stažení po sobě se toleruje
 DEFAULT_INTERVAL_MIN = 120        # podniky bez interval_min se stahují po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
@@ -914,6 +914,9 @@ def same_beer(row: dict, b: dict) -> bool:
     """Je nový řádek z webu totéž pivo jako řádek, který je v historii na čepu?"""
     if row["klic"] == b["klic"]:
         return True
+    rs, bs = (row.get("stupen") or "").strip(), (b.get("stupen") or "").strip()
+    if rs and bs and rs != bs:
+        return False             # jiné stupně = jiné pivo („Premiér 11°“ ≠ „President 12°“)
     rn, bn = norm(row["nazev"]), norm(b["nazev"])
     rp, bp = norm(row["pivovar"]), norm(b["pivovar"])
     if rn and bn:
