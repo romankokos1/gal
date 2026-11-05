@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:horni-bar",
-  "zmeneno": "2026-11-03 18:01",
+  "zmeneno": "2026-11-05 17:28",
   "metoda": "selektor",
   "piva": [
     {
@@ -36,6 +36,16 @@
     {
       "pozice": 4,
       "pivovar": "Bad Flash",
+      "nazev": "Torpid Mind Imperial Stout",
+      "stupen": "24",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Torpid Mind 24° Imperial Stout | 0,3l"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Bad Flash",
       "nazev": "Blackcurrant & Pink Pepper Sour Ale",
       "stupen": "12",
       "alkohol": "",
@@ -44,7 +54,7 @@
       "raw": "Bad Flash Blackcurrant & Pink Pepper 12° Sour Ale | 0,3l"
     },
     {
-      "pozice": 5,
+      "pozice": 6,
       "pivovar": "Schneider",
       "nazev": "Blonde",
       "stupen": "12",
@@ -54,47 +64,17 @@
       "raw": "Schneider Blonde 12°"
     },
     {
-      "pozice": 6,
-      "pivovar": "Zvíkovská",
-      "nazev": "Zlatá Labuť světlý ležák",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Zvíkovská Zlatá Labuť světlý ležák 11°"
-    },
-    {
       "pozice": 7,
       "pivovar": "Bad Flash",
-      "nazev": "Fotbalová jedenáctka světlý ležák",
-      "stupen": "11",
+      "nazev": "Summer Sadness Pale Ale",
+      "stupen": "10",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Bad Flash Fotbalová jedenáctka 11° světlý ležák"
+      "raw": "Bad Flash Summer Sadness 10° Pale Ale"
     },
     {
       "pozice": 8,
-      "pivovar": "Poupě",
-      "nazev": "APA",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Poupě APA 11° | 0,4l"
-    },
-    {
-      "pozice": 9,
-      "pivovar": "Beskydské",
-      "nazev": "hořké IPA",
-      "stupen": "14",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Beskydské hořké 14° IPA | 0,4l"
-    },
-    {
-      "pozice": 10,
       "pivovar": "Trojan",
       "nazev": "Sotto Spass Pale Ale",
       "stupen": "11",
@@ -102,6 +82,26 @@
       "styl": "",
       "dalsi": "",
       "raw": "Trojan Sotto Spass 11° Pale Ale | 0,4l"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Bad Flash",
+      "nazev": "Stupická světlý ležák",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Stupická 12° světlý ležák"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Trojan",
+      "nazev": "Chmelová brigáda světlý ležák",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Trojan Chmelová brigáda 11° světlý ležák"
     }
   ]
 }

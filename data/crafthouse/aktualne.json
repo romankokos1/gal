@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-01 20:23",
+  "zmeneno": "2026-11-05 17:28",
   "metoda": "selektor",
   "piva": [
     {
@@ -185,6 +185,16 @@
     },
     {
       "pozice": 19,
+      "pivovar": "Cobolis",
+      "nazev": "Bezedný kotel",
+      "stupen": "",
+      "alkohol": "7.2",
+      "styl": "Stout - Irish Extra",
+      "dalsi": "",
+      "raw": "Bezedný kotel | Stout - Irish Extra | 7.2% ABV | Cobolis / CZ"
+    },
+    {
+      "pozice": 20,
       "pivovar": "Raven",
       "nazev": "Aurora",
       "stupen": "",
@@ -194,7 +204,7 @@
       "raw": "Aurora | IPA - Other | 6.8% ABV | Pivovar Raven / CZ"
     },
     {
-      "pozice": 20,
+      "pozice": 21,
       "pivovar": "Kasteel Brouwerij Vanhonsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "",
@@ -204,7 +214,7 @@
       "raw": "Kasteel Rouge | Fruit Beer | 8% ABV | Kasteel Brouwerij Vanhonsebrouck / BE"
     },
     {
-      "pozice": 21,
+      "pozice": 22,
       "pivovar": "FALKON",
       "nazev": "BOCHÁNEK",
       "stupen": "",
