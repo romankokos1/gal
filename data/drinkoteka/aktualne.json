@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-05 19:31",
+  "zmeneno": "2026-11-05 21:44",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,16 +15,6 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Ārpus",
-      "nazev": "Mango X Pineapple Gose",
-      "stupen": "",
-      "alkohol": "4.5",
-      "styl": "Fruited Gose",
-      "dalsi": "",
-      "raw": "Mango X Pineapple Gose | Fruited Gose | 4.5% ABV | 🇱🇻Ārpus"
-    },
-    {
-      "pozice": 3,
       "pivovar": "Einsiedler",
       "nazev": "Helles",
       "stupen": "",
@@ -34,7 +24,7 @@
       "raw": "Helles | Ležák - Lager | 5.2% ABV | Einsiedler"
     },
     {
-      "pozice": 4,
+      "pozice": 3,
       "pivovar": "Ārpus",
       "nazev": "TDH Motueka X Riwaka X Citra",
       "stupen": "",
@@ -44,7 +34,7 @@
       "raw": "TDH Motueka X Riwaka X Citra | Double New England | 8% ABV | 🇱🇻Ārpus"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "Piggy",
       "nazev": "Hoppy Quest",
       "stupen": "",
@@ -54,7 +44,7 @@
       "raw": "Hoppy Quest | Hazy Pale Ale / Strata · Mosaic | 6% ABV | 🇫🇷Piggy"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Ārpus",
       "nazev": "West Coast Pilsner",
       "stupen": "",
@@ -64,7 +54,7 @@
       "raw": "West Coast Pilsner | 4.4% ABV | 🇱🇻Ārpus"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Wild Creatures",
       "nazev": "Femme Fanale 2024",
       "stupen": "",
