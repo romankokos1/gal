@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-05 17:28",
+  "zmeneno": "2026-11-05 19:31",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,16 +45,6 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Verdant",
-      "nazev": "Chromaticity",
-      "stupen": "",
-      "alkohol": "5.2",
-      "styl": "New England",
-      "dalsi": "",
-      "raw": "Chromaticity | New England | 5.2% ABV | 🇬🇧Verdant"
-    },
-    {
-      "pozice": 6,
       "pivovar": "Piggy",
       "nazev": "Hoppy Quest",
       "stupen": "",
@@ -64,17 +54,7 @@
       "raw": "Hoppy Quest | Hazy Pale Ale / Strata · Mosaic | 6% ABV | 🇫🇷Piggy"
     },
     {
-      "pozice": 7,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Vánoční Zmrzka",
-      "stupen": "",
-      "alkohol": "5",
-      "styl": "Pastry Sour",
-      "dalsi": "",
-      "raw": "Vánoční Zmrzka | Pastry Sour | 5% ABV | 🇨🇿ZICHOVEC"
-    },
-    {
-      "pozice": 8,
+      "pozice": 6,
       "pivovar": "Ārpus",
       "nazev": "West Coast Pilsner",
       "stupen": "",
@@ -84,7 +64,7 @@
       "raw": "West Coast Pilsner | 4.4% ABV | 🇱🇻Ārpus"
     },
     {
-      "pozice": 9,
+      "pozice": 7,
       "pivovar": "Wild Creatures",
       "nazev": "Femme Fanale 2024",
       "stupen": "",
