@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerspotprague.cz/beer-list/",
-  "zmeneno": "2026-10-30 15:06",
+  "zmeneno": "2026-11-05 15:26",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Matuška",
-      "nazev": "California",
-      "stupen": "12",
-      "alkohol": "5.3",
+      "pivovar": "Clock",
+      "nazev": "Fresh Hop Ale Most 2026",
+      "stupen": "",
+      "alkohol": "5",
       "styl": "Pale Ale - American",
       "dalsi": "",
-      "raw": "California 12° | Pale Ale - American | 5.3% ABV | Pivovar Matuška"
+      "raw": "Fresh Hop Ale Most 2026 | Pale Ale - American | 5% ABV | Pivovar Clock"
     },
     {
       "pozice": 7,
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Garp",
-      "nazev": "Garp 410",
+      "pivovar": "Brewnicorn",
+      "nazev": "New Cipland",
       "stupen": "",
-      "alkohol": "4.7",
-      "styl": "IPA - Session",
+      "alkohol": "5.9",
+      "styl": "IPA - Milkshake",
       "dalsi": "",
-      "raw": "Garp 410 | IPA - Session | 4.7% ABV | Pivovar Garp"
+      "raw": "New Cipland | IPA - Milkshake | 5.9% ABV | Brewnicorn"
     },
     {
       "pozice": 10,

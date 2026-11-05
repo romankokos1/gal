@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-05 13:24",
+  "zmeneno": "2026-11-05 15:26",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "KRKONOŠSKÝ MEDVĚD",
-      "nazev": "EARLY EVENING ALE",
-      "stupen": "11",
-      "alkohol": "4.4",
-      "styl": "APA",
+      "pivovar": "AGENT",
+      "nazev": "APRION",
+      "stupen": "0",
+      "alkohol": "0.5",
+      "styl": "NON-ALCOHOL PEACH SOUR",
       "dalsi": "",
-      "raw": "KRKONOŠSKÝ MEDVĚD EARLY EVENING ALE 11° | APA | 4.4%"
+      "raw": "AGENT APRION 0° | NON-ALCOHOL PEACH SOUR | 0.5%"
     },
     {
       "pozice": 6,

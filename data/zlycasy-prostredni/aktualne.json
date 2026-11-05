@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:prostredni-bar",
-  "zmeneno": "2026-11-03 18:01",
+  "zmeneno": "2026-11-05 15:26",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,16 +16,6 @@
     {
       "pozice": 2,
       "pivovar": "Bad Flash",
-      "nazev": "Bikini Ale",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Session Pale Ale",
-      "dalsi": "",
-      "raw": "Bad Flash Bikini Ale 11° | Session Pale Ale"
-    },
-    {
-      "pozice": 3,
-      "pivovar": "Bad Flash",
       "nazev": "Mango Chilli Sour Ale",
       "stupen": "12",
       "alkohol": "",
@@ -34,7 +24,7 @@
       "raw": "Bad Flash Mango Chilli Sour Ale 12° | 0.3l"
     },
     {
-      "pozice": 4,
+      "pozice": 3,
       "pivovar": "Zvíkovská",
       "nazev": "Zlatá Labuť",
       "stupen": "11",
@@ -44,7 +34,7 @@
       "raw": "Zvíkovská Zlatá Labuť 11° | Světlý ležák"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "Bad Flash",
       "nazev": "Podél plotu sour Ale",
       "stupen": "12",
@@ -52,6 +42,16 @@
       "styl": "",
       "dalsi": "",
       "raw": "Bad Flash Podél plotu sour Ale 12° | 0,3l"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Zvíkovský",
+      "nazev": "Rarášek pšeničné",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Zvíkovský Rarášek 11° pšeničné"
     },
     {
       "pozice": 6,
@@ -65,16 +65,6 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Bad Flash",
-      "nazev": "Rock Café APA",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Bad Flash Rock Café APA 11°"
-    },
-    {
-      "pozice": 8,
       "pivovar": "Knoblach",
       "nazev": "Keller Bier",
       "stupen": "12",
@@ -82,6 +72,16 @@
       "styl": "světlý ležák",
       "dalsi": "",
       "raw": "Knoblach 12° Keller Bier | světlý ležák"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Bad Flash",
+      "nazev": "Summer Sadness",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "Pale Ale",
+      "dalsi": "",
+      "raw": "Bad Flash Summer Sadness 10° | Pale Ale"
     },
     {
       "pozice": 9,

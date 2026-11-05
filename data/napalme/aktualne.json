@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-03 13:36",
+  "zmeneno": "2026-11-05 14:08",
   "metoda": "rucne",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Vik",
-      "nazev": "Easy Aussie",
-      "stupen": "11",
+      "pivovar": "Clock",
+      "nazev": "Glee",
+      "stupen": "1",
       "alkohol": "",
-      "styl": "Bezlepková Australská Session IPA",
+      "styl": "bezlepkový Ale",
       "dalsi": "",
-      "raw": "Vik Easy Aussie Bezlepková Australská Session IPA 11"
+      "raw": "Clock Glee bezlepkový Ale 1"
     },
     {
       "pozice": 5,
@@ -86,25 +86,15 @@
     {
       "pozice": 9,
       "pivovar": "Hope",
-      "nazev": "Call Me Ceres",
+      "nazev": "Tattoo You #1 Ta Moko",
       "stupen": "",
       "alkohol": "5.4",
-      "styl": "Cold IPA",
+      "styl": "Rye IPA",
       "dalsi": "",
-      "raw": "Hope Call Me Ceres Cold IPA 5,4%"
+      "raw": "Hope Tattoo You #1 Ta Moko Rye IPA 5,4 %"
     },
     {
       "pozice": 10,
-      "pivovar": "Nozib",
-      "nazev": "Bone Dry",
-      "stupen": "14",
-      "alkohol": "",
-      "styl": "NEIPA",
-      "dalsi": "",
-      "raw": "Nozib Bone Dry NEIPA 14"
-    },
-    {
-      "pozice": 11,
       "pivovar": "SQBRU/Firstep",
       "nazev": "Hops Garden",
       "stupen": "15",
@@ -112,6 +102,16 @@
       "styl": "IPA",
       "dalsi": "",
       "raw": "SQBRU/Firstep Hops Garden IPA 15"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "BLUD",
+      "nazev": "Bludfog CIP076",
+      "stupen": "15",
+      "alkohol": "",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "BLUD Bludfog CIP076 NEIPA 15"
     },
     {
       "pozice": 12,
