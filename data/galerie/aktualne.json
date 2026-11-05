@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-04 23:03",
+  "zmeneno": "2026-11-05 14:26",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "",
-      "nazev": "x°/y% světlý ležák",
-      "stupen": "",
-      "alkohol": "",
-      "styl": "",
+      "pivovar": "HAKSNA",
+      "nazev": "Our Lager",
+      "stupen": "12",
+      "alkohol": "4.7",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "x°/y% světlý ležák"
+      "raw": "HAKSNA – Our Lager 12°/4,7% světlý ležák"
     },
     {
       "pozice": 2,
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "",
-      "nazev": "x°/y%",
-      "stupen": "",
-      "alkohol": "",
-      "styl": "",
+      "pivovar": "ČESTMÍR",
+      "nazev": "Nocturno",
+      "stupen": "13",
+      "alkohol": "5.7",
+      "styl": "IPA",
       "dalsi": "",
-      "raw": "x°/y%"
+      "raw": "ČESTMÍR – Nocturno 13°/5,7% IPA"
     },
     {
       "pozice": 4,
