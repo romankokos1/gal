@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-03 19:02",
+  "zmeneno": "2026-11-05 13:24",
   "metoda": "selektor",
   "piva": [
     {
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "MADCAT",
-      "nazev": "PURE HAZE 076",
-      "stupen": "12",
-      "alkohol": "5.3",
-      "styl": "HAZY IPA",
+      "pivovar": "CVIKOV",
+      "nazev": "VERY CHERRY",
+      "stupen": "11",
+      "alkohol": "4.3",
+      "styl": "CHERRY INFUSED LAGER",
       "dalsi": "",
-      "raw": "MADCAT PURE HAZE 076 12° | HAZY IPA | 5.3%"
+      "raw": "CVIKOV VERY CHERRY 11° | CHERRY INFUSED LAGER | 4.3%"
     },
     {
       "pozice": 10,

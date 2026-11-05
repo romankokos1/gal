@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-11-02 23:34",
+  "zmeneno": "2026-11-05 13:24",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,6 +15,16 @@
     },
     {
       "pozice": 2,
+      "pivovar": "Jílovice",
+      "nazev": "Jílovice 10°",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "-> Jílovice 10° sv.nef."
+    },
+    {
+      "pozice": 3,
       "pivovar": "Habakuk",
       "nazev": "ležák",
       "stupen": "11",
@@ -24,24 +34,14 @@
       "raw": "Habakuk ležák 11° sv.nef."
     },
     {
-      "pozice": 3,
-      "pivovar": "Jílovice",
-      "nazev": "ležák",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Ležák",
-      "dalsi": "",
-      "raw": "Jílovice ležák 11° sv.nef."
-    },
-    {
       "pozice": 4,
-      "pivovar": "Rampušák",
-      "nazev": "IPL",
+      "pivovar": "Clock",
+      "nazev": "ANEŽKA",
       "stupen": "11",
       "alkohol": "",
-      "styl": "",
+      "styl": "(GF)",
       "dalsi": "",
-      "raw": "Rampušák IPL 11° sv.nef."
+      "raw": "Clock ANEŽKA 11° sv.nef. (GF)"
     },
     {
       "pozice": 5,
@@ -65,8 +65,18 @@
     },
     {
       "pozice": 7,
+      "pivovar": "Popelín",
+      "nazev": "JANTAR",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "-> Popelín JANTAR 12° sv.nef."
+    },
+    {
+      "pozice": 8,
       "pivovar": "Kamenice nad Lipou",
-      "nazev": "",
+      "nazev": "Kamenice nad Lipou 13°",
       "stupen": "13",
       "alkohol": "",
       "styl": "",
@@ -74,7 +84,7 @@
       "raw": "Kamenice nad Lipou 13° polotm.nef."
     },
     {
-      "pozice": 8,
+      "pozice": 9,
       "pivovar": "Schneider",
       "nazev": "Weisse TAP7",
       "stupen": "13",
@@ -84,7 +94,7 @@
       "raw": "Schneider Weisse TAP7 13° pšeničné"
     },
     {
-      "pozice": 9,
+      "pozice": 10,
       "pivovar": "Cobolis",
       "nazev": "NEVADA",
       "stupen": "11",
@@ -92,16 +102,6 @@
       "styl": "APA",
       "dalsi": "",
       "raw": "Cobolis NEVADA 11° APA"
-    },
-    {
-      "pozice": 10,
-      "pivovar": "Pioneer",
-      "nazev": "NZ Hopline",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "New Zealand Pale ALE",
-      "dalsi": "",
-      "raw": "Pioneer NZ Hopline 12° New Zealand Pale ALE"
     },
     {
       "pozice": 11,
@@ -115,6 +115,16 @@
     },
     {
       "pozice": 12,
+      "pivovar": "HoppyDog",
+      "nazev": "NewDogOnTheHop LUNA",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "HoppyDog NewDogOnTheHop LUNA 13° NEIPA"
+    },
+    {
+      "pozice": 13,
       "pivovar": "Tvarg",
       "nazev": "PUMPKIN ALE",
       "stupen": "13",
@@ -124,7 +134,7 @@
       "raw": "Tvarg PUMPKIN ALE 13°"
     },
     {
-      "pozice": 13,
+      "pozice": 14,
       "pivovar": "BrewDog",
       "nazev": "Elvis Juice",
       "stupen": "",
@@ -134,17 +144,17 @@
       "raw": "BrewDog Elvis Juice 6,5%Alc. Citrus IPA (UK - Skotsko)"
     },
     {
-      "pozice": 14,
+      "pozice": 15,
       "pivovar": "Permon",
-      "nazev": "PUMPKIN ALE 15",
-      "stupen": "",
+      "nazev": "PUMPKIN ALE",
+      "stupen": "15",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Permon PUMPKIN ALE 15"
+      "raw": "Permon PUMPKIN ALE 15°"
     },
     {
-      "pozice": 15,
+      "pozice": 16,
       "pivovar": "Matuška",
       "nazev": "RAPTOR",
       "stupen": "15",
@@ -154,7 +164,7 @@
       "raw": "Matuška RAPTOR 15° IPA"
     },
     {
-      "pozice": 16,
+      "pozice": 17,
       "pivovar": "Pioneer",
       "nazev": "Sour Pop #3 Malina & Ostružina",
       "stupen": "",
@@ -164,7 +174,7 @@
       "raw": "Pioneer Sour Pop #3 Malina & Ostružina 4,5%Alc."
     },
     {
-      "pozice": 17,
+      "pozice": 18,
       "pivovar": "Brewnicorn",
       "nazev": "PUMPKIN Space Latte",
       "stupen": "13",
@@ -174,7 +184,7 @@
       "raw": "Brewnicorn PUMPKIN Space Latte 13° Sour ALE"
     },
     {
-      "pozice": 18,
+      "pozice": 19,
       "pivovar": "FunkyFluid",
       "nazev": "Gelato: Passion Fruit",
       "stupen": "",
@@ -184,7 +194,7 @@
       "raw": "FunkyFluid Gelato: Passion Fruit, Mango, Peach 5,5%Alc. Pastry SOUR (PL)"
     },
     {
-      "pozice": 19,
+      "pozice": 20,
       "pivovar": "Čestmír",
       "nazev": "ASTRO Creep",
       "stupen": "14",
@@ -194,7 +204,17 @@
       "raw": "Čestmír ASTRO Creep 14° STOUT"
     },
     {
-      "pozice": 20,
+      "pozice": 21,
+      "pivovar": "Kasteel",
+      "nazev": "Rouge",
+      "stupen": "",
+      "alkohol": "8",
+      "styl": "(BELGIE - VIŠEŇ)",
+      "dalsi": "",
+      "raw": "Kasteel Rouge 8%Alc. (BELGIE - VIŠEŇ)"
+    },
+    {
+      "pozice": 22,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",
