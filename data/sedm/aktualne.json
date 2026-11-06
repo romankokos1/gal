@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-04 19:29",
+  "zmeneno": "2026-11-06 21:18",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Fracek",
-      "nazev": "No Compass",
+      "pivovar": "Thrills",
+      "nazev": "SamoSebou",
       "stupen": "12",
-      "alkohol": "5",
-      "styl": "New Zealand Lager",
+      "alkohol": "5.4",
+      "styl": "West Coast Pale Ale",
       "dalsi": "",
-      "raw": "Fracek - No Compass | 12% | New Zealand Lager, ABV 5%"
+      "raw": "Thrills - SamoSebou | 12% | West Coast Pale Ale, ABV 5,4%"
     },
     {
       "pozice": 8,

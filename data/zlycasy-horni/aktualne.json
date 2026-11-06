@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:horni-bar",
-  "zmeneno": "2026-11-05 17:28",
+  "zmeneno": "2026-11-06 21:18",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,16 +55,6 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Schneider",
-      "nazev": "Blonde",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Schneider Blonde 12°"
-    },
-    {
-      "pozice": 7,
       "pivovar": "Bad Flash",
       "nazev": "Summer Sadness Pale Ale",
       "stupen": "10",
@@ -74,7 +64,7 @@
       "raw": "Bad Flash Summer Sadness 10° Pale Ale"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Trojan",
       "nazev": "Sotto Spass Pale Ale",
       "stupen": "11",
@@ -84,7 +74,7 @@
       "raw": "Trojan Sotto Spass 11° Pale Ale | 0,4l"
     },
     {
-      "pozice": 9,
+      "pozice": 8,
       "pivovar": "Bad Flash",
       "nazev": "Stupická světlý ležák",
       "stupen": "12",
@@ -94,7 +84,7 @@
       "raw": "Bad Flash Stupická 12° světlý ležák"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Trojan",
       "nazev": "Chmelová brigáda světlý ležák",
       "stupen": "11",

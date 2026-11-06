@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-06 19:17",
+  "zmeneno": "2026-11-06 21:18",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Vik",
-      "nazev": "Beach Club",
-      "stupen": "10",
-      "alkohol": "4.1",
+      "pivovar": "Volt",
+      "nazev": "Adaptér",
+      "stupen": "11",
+      "alkohol": "4.5",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Vik - Beach Club, American Pale Ale, 10° sv. nef., 4, 1% vol. Alc, 27 IBU"
+      "raw": "Volt - Adaptér, American Pale Ale, 11° sv. nef., 4, 5% vol. Alc"
     },
     {
       "pozice": 7,

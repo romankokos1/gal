@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-06 13:08",
+  "zmeneno": "2026-11-06 21:18",
   "metoda": "nadpis",
   "piva": [
     {
@@ -26,12 +26,12 @@
     {
       "pozice": 3,
       "pivovar": "Clock",
-      "nazev": "Clock",
+      "nazev": "Black Dog",
       "stupen": "12",
       "alkohol": "",
-      "styl": "American Pale Ale",
+      "styl": "DDH Lager",
       "dalsi": "",
-      "raw": "12° Clock (American Pale Ale)"
+      "raw": "12° Black Dog (DDH Lager)"
     },
     {
       "pozice": 4,
@@ -55,16 +55,6 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Clock",
-      "nazev": "Bezovka",
-      "stupen": "",
-      "alkohol": "",
-      "styl": "Limonáda",
-      "dalsi": "",
-      "raw": "Bezovka (Limonáda)"
-    },
-    {
-      "pozice": 7,
       "pivovar": "Clock",
       "nazev": "Krystus",
       "stupen": "",
