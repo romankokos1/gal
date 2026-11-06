@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-05 14:26",
+  "zmeneno": "2026-11-06 14:41",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "HAKSNA",
-      "nazev": "Our Lager",
-      "stupen": "12",
-      "alkohol": "4.7",
+      "pivovar": "SIBEERIA",
+      "nazev": "Ležák Třírmutový",
+      "stupen": "13",
+      "alkohol": "5.5",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "HAKSNA – Our Lager 12°/4,7% světlý ležák"
+      "raw": "SIBEERIA – Ležák Třírmutový 13°/5,5% světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Robin Na Grepu",
+      "pivovar": "NOZIB",
+      "nazev": "Cali Twist",
       "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "APA s grepem (simcoe, citra)",
+      "alkohol": "5.7",
+      "styl": "California Ale (chinook, nz cascade)",
       "dalsi": "",
-      "raw": "ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)"
+      "raw": "NOZIB – Cali Twist 12°/5,7% California Ale (chinook, nz cascade)"
     },
     {
       "pozice": 3,
@@ -36,12 +36,12 @@
     {
       "pozice": 4,
       "pivovar": "MAZÁK",
-      "nazev": "Halloween",
-      "stupen": "9",
-      "alkohol": "4",
-      "styl": "Amber Ale s bergamotem, skořicí, zázvorem a mušk. oříškem",
+      "nazev": "Baltic Porter",
+      "stupen": "18",
+      "alkohol": "7",
+      "styl": "Baltic Porter",
       "dalsi": "",
-      "raw": "MAZÁK – Halloween 9°/4% polotm. Amber Ale s bergamotem, skořicí, zázvorem a mušk. oříškem"
+      "raw": "MAZÁK – Baltic Porter 18°/7% Baltic Porter"
     },
     {
       "pozice": 5,
