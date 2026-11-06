@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-05 13:24",
+  "zmeneno": "2026-11-06 15:11",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,23 +35,23 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Zhůřák",
-      "nazev": "Deus Ex Machina",
-      "stupen": "15",
-      "alkohol": "6.9",
-      "styl": "American IPA",
+      "pivovar": "",
+      "nazev": "Kasteel Rouge",
+      "stupen": "18",
+      "alkohol": "8",
+      "styl": "belgický višňový speciál",
       "dalsi": "",
-      "raw": "Zhůřák - Deus Ex Machina, American IPA, 15° sv. nef., 6, 9% vol. Alc, 67 IBU"
+      "raw": "Kasteel Rouge, belgický višňový speciál, 18° tm., 8% vol. Alc"
     },
     {
       "pozice": 5,
-      "pivovar": "Vik",
-      "nazev": "Gumboot #6",
-      "stupen": "11",
-      "alkohol": "4.6",
-      "styl": "světlý ležák s čerstvým chmelem",
+      "pivovar": "",
+      "nazev": "KMP Husa #6",
+      "stupen": "13",
+      "alkohol": "5.2",
+      "styl": "polotmavý speciál, polo.",
       "dalsi": "",
-      "raw": "Vik - Gumboot #6, světlý ležák s čerstvým chmelem, 11° sv. nef., 4, 6% vol. Alc., 32 IBU"
+      "raw": "KMP Husa #6, polotmavý speciál, 13° polo. nef., 5, 2% vol. Alc"
     },
     {
       "pozice": 6,
