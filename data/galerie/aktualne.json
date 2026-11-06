@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-06 14:41",
+  "zmeneno": "2026-11-06 16:44",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "ČESTMÍR",
-      "nazev": "Nocturno",
+      "pivovar": "PREISLER",
+      "nazev": "Problém trpaslíků v mlze",
       "stupen": "13",
-      "alkohol": "5.7",
-      "styl": "IPA",
+      "alkohol": "6.2",
+      "styl": "Hazy IPA (eris, ceres, pluto)",
       "dalsi": "",
-      "raw": "ČESTMÍR – Nocturno 13°/5,7% IPA"
+      "raw": "PREISLER – Problém trpaslíků v mlze 13°/6,2% Hazy IPA (eris, ceres, pluto)"
     },
     {
       "pozice": 4,
