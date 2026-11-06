@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerknir.cz/",
-  "zmeneno": "2026-11-04 13:11",
+  "zmeneno": "2026-11-06 17:14",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Valeč",
-      "nazev": "Vilma",
-      "stupen": "13",
-      "alkohol": "6.5",
-      "styl": "Czech West Coast IPA",
+      "pivovar": "Čestmír",
+      "nazev": "Ratamahatta",
+      "stupen": "16",
+      "alkohol": "7",
+      "styl": "IPA",
       "dalsi": "",
-      "raw": "Vilma 13° | Czech West Coast IPA | 13° | 6.5% | Pivovar Valeč"
+      "raw": "Ratamahatta 16° | IPA | 16° | 7% | Pivovar Čestmír"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-06 15:11",
+  "zmeneno": "2026-11-06 17:14",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Volt",
-      "nazev": "Elektra",
-      "stupen": "15",
-      "alkohol": "6.5",
-      "styl": "višňový kyseláč s koriandrem a himalájskou solí",
+      "pivovar": "Permon",
+      "nazev": "Okurkovej Sour",
+      "stupen": "12",
+      "alkohol": "5.8",
+      "styl": "kyseláč s chutí kyselých okurek",
       "dalsi": "",
-      "raw": "Volt - Elektra, višňový kyseláč s koriandrem a himalájskou solí, 15° sv. nef., 6, 5% vol. Alc, 18 IBU"
+      "raw": "Permon - Okurkovej Sour, kyseláč s chutí kyselých okurek, 12° sv. nef., 5, 8% vol. Alc"
     },
     {
       "pozice": 4,
