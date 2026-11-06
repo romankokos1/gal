@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:prostredni-bar",
-  "zmeneno": "2026-11-05 15:26",
+  "zmeneno": "2026-11-06 13:08",
   "metoda": "selektor",
   "piva": [
     {
@@ -56,12 +56,12 @@
     {
       "pozice": 6,
       "pivovar": "Bad Flash",
-      "nazev": "Fanatic Sabro Neipa",
+      "nazev": "Lost Chance",
       "stupen": "14",
-      "alkohol": "",
-      "styl": "New England India Pale Ale",
+      "alkohol": "6",
+      "styl": "India Pale Ale",
       "dalsi": "",
-      "raw": "Bad Flash Fanatic Sabro Neipa 14° | New England India Pale Ale | 0,4l"
+      "raw": "Bad Flash Lost Chance 14° | India Pale Ale | 6%"
     },
     {
       "pozice": 7,
@@ -115,13 +115,13 @@
     },
     {
       "pozice": 12,
-      "pivovar": "Raven",
-      "nazev": "Infused Orange IPA",
-      "stupen": "15",
+      "pivovar": "Máša",
+      "nazev": "Elani APA",
+      "stupen": "11",
       "alkohol": "",
-      "styl": "",
+      "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Raven Infused Orange IPA 15° | 0,4l"
+      "raw": "Máša Elani 11° APA | American Pale Ale | 0,4l"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-05 17:28",
+  "zmeneno": "2026-11-06 13:08",
   "metoda": "selektor",
   "piva": [
     {
@@ -165,16 +165,6 @@
     },
     {
       "pozice": 17,
-      "pivovar": "Permon",
-      "nazev": "Sherpa",
-      "stupen": "",
-      "alkohol": "7.5",
-      "styl": "IPA - American",
-      "dalsi": "",
-      "raw": "Sherpa | IPA - American | 7.5% ABV | Pivovar Permon / CZ"
-    },
-    {
-      "pozice": 18,
       "pivovar": "The Barn Beer Co.",
       "nazev": "Dizzy Lizzy",
       "stupen": "",
@@ -184,7 +174,7 @@
       "raw": "Dizzy Lizzy | IPA - Sour | 7% ABV | The Barn Beer Co. / CZ"
     },
     {
-      "pozice": 19,
+      "pozice": 18,
       "pivovar": "Cobolis",
       "nazev": "Bezedný kotel",
       "stupen": "",
@@ -194,7 +184,7 @@
       "raw": "Bezedný kotel | Stout - Irish Extra | 7.2% ABV | Cobolis / CZ"
     },
     {
-      "pozice": 20,
+      "pozice": 19,
       "pivovar": "Raven",
       "nazev": "Aurora",
       "stupen": "",
@@ -204,7 +194,7 @@
       "raw": "Aurora | IPA - Other | 6.8% ABV | Pivovar Raven / CZ"
     },
     {
-      "pozice": 21,
+      "pozice": 20,
       "pivovar": "Kasteel Brouwerij Vanhonsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "",
@@ -214,7 +204,7 @@
       "raw": "Kasteel Rouge | Fruit Beer | 8% ABV | Kasteel Brouwerij Vanhonsebrouck / BE"
     },
     {
-      "pozice": 22,
+      "pozice": 21,
       "pivovar": "FALKON",
       "nazev": "BOCHÁNEK",
       "stupen": "",

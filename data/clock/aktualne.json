@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-04 19:29",
+  "zmeneno": "2026-11-06 13:08",
   "metoda": "nadpis",
   "piva": [
     {
@@ -46,12 +46,12 @@
     {
       "pozice": 5,
       "pivovar": "Clock",
-      "nazev": "Double IPA",
-      "stupen": "19",
+      "nazev": "WestCoastIPA",
+      "stupen": "14",
       "alkohol": "",
       "styl": "No Idols!",
       "dalsi": "",
-      "raw": "19° Double IPA (No Idols!)"
+      "raw": "14° WestCoastIPA (No Idols!)"
     },
     {
       "pozice": 6,

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-05 14:08",
+  "zmeneno": "2026-11-06 11:53",
   "metoda": "rucne",
   "piva": [
     {
@@ -35,6 +35,16 @@
     },
     {
       "pozice": 4,
+      "pivovar": "Falkon",
+      "nazev": "Šlágr",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "Czech Pilsner",
+      "dalsi": "",
+      "raw": "Falkon Šlágr Czech Pilsner 10"
+    },
+    {
+      "pozice": 5,
       "pivovar": "Clock",
       "nazev": "Glee",
       "stupen": "1",
@@ -44,34 +54,24 @@
       "raw": "Clock Glee bezlepkový Ale 1"
     },
     {
-      "pozice": 5,
-      "pivovar": "Clock",
-      "nazev": "Emily",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Bezlepkový Sour",
-      "dalsi": "",
-      "raw": "Clock Emily Bezlepkový Sour 11"
-    },
-    {
       "pozice": 6,
-      "pivovar": "Sibeeria",
-      "nazev": "One Festival",
-      "stupen": "11",
+      "pivovar": "Valeč",
+      "nazev": "Juchajda Oak Aged",
+      "stupen": "12",
       "alkohol": "",
-      "styl": "West Coast Pilsner",
+      "styl": "Sour",
       "dalsi": "",
-      "raw": "Sibeeria One Festival West Coast Pilsner 11"
+      "raw": "Valeč Juchajda Oak Aged Sour 12"
     },
     {
       "pozice": 7,
-      "pivovar": "Ovipistán",
-      "nazev": "Plutokrat",
+      "pivovar": "Zichovec",
+      "nazev": "Kartel Hoplager Rakau Modern Hoplager",
       "stupen": "12",
       "alkohol": "",
-      "styl": "IPL",
+      "styl": "",
       "dalsi": "",
-      "raw": "Ovipistán Plutokrat IPL 12"
+      "raw": "Zichovec Kartel Hoplager Rakau Modern Hoplager 12"
     },
     {
       "pozice": 8,
@@ -95,16 +95,6 @@
     },
     {
       "pozice": 10,
-      "pivovar": "SQBRU/Firstep",
-      "nazev": "Hops Garden",
-      "stupen": "15",
-      "alkohol": "",
-      "styl": "IPA",
-      "dalsi": "",
-      "raw": "SQBRU/Firstep Hops Garden IPA 15"
-    },
-    {
-      "pozice": 11,
       "pivovar": "BLUD",
       "nazev": "Bludfog CIP076",
       "stupen": "15",
@@ -114,7 +104,7 @@
       "raw": "BLUD Bludfog CIP076 NEIPA 15"
     },
     {
-      "pozice": 12,
+      "pozice": 11,
       "pivovar": "Barn",
       "nazev": "DIZZY LIZZY",
       "stupen": "17",
@@ -122,6 +112,16 @@
       "styl": "Sour Milkshake IPA",
       "dalsi": "",
       "raw": "Barn DIZZY LIZZY Sour Milkshake IPA 17"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "Demon",
+      "nazev": "Vrosis Metalhead ( Bulharsko)",
+      "stupen": "35",
+      "alkohol": "",
+      "styl": "Imperial Pastry Stout",
+      "dalsi": "",
+      "raw": "Demon Vrosis Metalhead ( Bulharsko) Imperial Pastry Stout 35"
     }
   ]
 }
