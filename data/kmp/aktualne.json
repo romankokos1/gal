@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-06 17:14",
+  "zmeneno": "2026-11-06 19:17",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Stadioner",
-      "nazev": "Maorihead",
-      "stupen": "13",
-      "alkohol": "5.6",
-      "styl": "India Pale Lager",
+      "pivovar": "Volt",
+      "nazev": "Svatomartinský speciál",
+      "stupen": "11",
+      "alkohol": "4.3",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Stadioner - Maorihead, India Pale Lager, 13° sv. nef., 5, 6% vol. Alc"
+      "raw": "Volt - Svatomartinský speciál, světlý ležák, 11° sv. nef., 4, 3% vol. Alc, 45 IBU"
     },
     {
       "pozice": 3,

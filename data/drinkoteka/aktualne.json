@@ -1,80 +1,10 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-06 17:14",
+  "zmeneno": "2026-11-06 19:17",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "",
-      "nazev": "Liquid Fat Bûche / Imperial Pastry Gose",
-      "stupen": "",
-      "alkohol": "8",
-      "styl": "Blueberries, Blackcurrants, Cacao",
-      "dalsi": "",
-      "raw": "Liquid Fat Bûche / Imperial Pastry Gose | Blueberries, Blackcurrants, Cacao | 8% ABV"
-    },
-    {
-      "pozice": 2,
-      "pivovar": "",
-      "nazev": "Elani Warm Up",
-      "stupen": "",
-      "alkohol": "6",
-      "styl": "NEIPA / Citra · Elani",
-      "dalsi": "",
-      "raw": "Elani Warm Up | NEIPA / Citra · Elani | 6% ABV"
-    },
-    {
-      "pozice": 3,
-      "pivovar": "",
-      "nazev": "Polar Juice",
-      "stupen": "",
-      "alkohol": "6",
-      "styl": "Cold IPA / Talus · Dolcita · Mosaic",
-      "dalsi": "",
-      "raw": "Polar Juice | Cold IPA / Talus · Dolcita · Mosaic | 6% ABV"
-    },
-    {
-      "pozice": 4,
-      "pivovar": "",
-      "nazev": "Elani Impulse",
-      "stupen": "",
-      "alkohol": "8",
-      "styl": "Double New England / Elani · Mosaic",
-      "dalsi": "",
-      "raw": "Elani Impulse | Double New England / Elani · Mosaic | 8% ABV"
-    },
-    {
-      "pozice": 5,
-      "pivovar": "",
-      "nazev": "Eroica Blanche",
-      "stupen": "",
-      "alkohol": "6",
-      "styl": "Hazy Pale Ale / Citra·Simcoe",
-      "dalsi": "",
-      "raw": "Eroica Blanche | Hazy Pale Ale / Citra·Simcoe | 6% ABV"
-    },
-    {
-      "pozice": 6,
-      "pivovar": "",
-      "nazev": "Hoppy Quest",
-      "stupen": "",
-      "alkohol": "6",
-      "styl": "Hazy Pale Ale / Strata · Mosaic",
-      "dalsi": "",
-      "raw": "Hoppy Quest | Hazy Pale Ale / Strata · Mosaic | 6% ABV"
-    },
-    {
-      "pozice": 7,
-      "pivovar": "",
-      "nazev": "Colossal Juice",
-      "stupen": "",
-      "alkohol": "8",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Colossal Juice | Double New England/ Bru-1 · idaho · Mosaic | 8% ABV"
-    },
-    {
-      "pozice": 8,
       "pivovar": "",
       "nazev": "Electric Banana",
       "stupen": "",
@@ -84,14 +14,84 @@
       "raw": "Electric Banana | Imperial Stout | 11% ABV"
     },
     {
-      "pozice": 9,
-      "pivovar": "Ārpus",
-      "nazev": "West Coast Pilsner",
+      "pozice": 2,
+      "pivovar": "",
+      "nazev": "Liquid Fat Bûche / Imperial Pastry Gose",
       "stupen": "",
-      "alkohol": "4.4",
+      "alkohol": "8",
+      "styl": "Blueberries, Blackcurrants, Cacao",
+      "dalsi": "",
+      "raw": "Liquid Fat Bûche / Imperial Pastry Gose | Blueberries, Blackcurrants, Cacao | 8% ABV"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "",
+      "nazev": "Elani Warm Up",
+      "stupen": "",
+      "alkohol": "6",
+      "styl": "NEIPA / Citra · Elani",
+      "dalsi": "",
+      "raw": "Elani Warm Up | NEIPA / Citra · Elani | 6% ABV"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "",
+      "nazev": "Polar Juice",
+      "stupen": "",
+      "alkohol": "6",
+      "styl": "Cold IPA / Talus · Dolcita · Mosaic",
+      "dalsi": "",
+      "raw": "Polar Juice | Cold IPA / Talus · Dolcita · Mosaic | 6% ABV"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "",
+      "nazev": "Elani Impulse",
+      "stupen": "",
+      "alkohol": "8",
+      "styl": "Double New England / Elani · Mosaic",
+      "dalsi": "",
+      "raw": "Elani Impulse | Double New England / Elani · Mosaic | 8% ABV"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "",
+      "nazev": "Eroica Blanche",
+      "stupen": "",
+      "alkohol": "6",
+      "styl": "Hazy Pale Ale / Citra·Simcoe",
+      "dalsi": "",
+      "raw": "Eroica Blanche | Hazy Pale Ale / Citra·Simcoe | 6% ABV"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "",
+      "nazev": "Hoppy Quest",
+      "stupen": "",
+      "alkohol": "6",
+      "styl": "Hazy Pale Ale / Strata · Mosaic",
+      "dalsi": "",
+      "raw": "Hoppy Quest | Hazy Pale Ale / Strata · Mosaic | 6% ABV"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "",
+      "nazev": "Colossal Juice",
+      "stupen": "",
+      "alkohol": "8",
       "styl": "",
       "dalsi": "",
-      "raw": "West Coast Pilsner | 4.4% ABV | 🇱🇻Ārpus"
+      "raw": "Colossal Juice | Double New England/ Bru-1 · idaho · Mosaic | 8% ABV"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Einsiedler",
+      "nazev": "Helles",
+      "stupen": "",
+      "alkohol": "5.2",
+      "styl": "Ležák - Lager",
+      "dalsi": "",
+      "raw": "Helles | Ležák - Lager | 5.2% ABV | Einsiedler"
     }
   ]
 }

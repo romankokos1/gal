@@ -1,10 +1,9 @@
 {
   "zpusob_stazeni": "prohlizec",
-  "chyby_v_rade": 3,
-  "posledni_kontrola": "2026-11-05",
+  "chyby_v_rade": 0,
+  "posledni_kontrola": "2026-11-06",
   "metoda": "selektor",
   "pocet_piv": 10,
   "posledni_zmena": "2026-11-05 15:26",
-  "posledni_chyba": "2026-11-06 17:14",
-  "chyba": "Stránku se nepodařilo stáhnout: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://beerspotprague.cz/beer-list/\", waiting until \"networkidle\"\n (prohlizec)"
+  "posledni_chyba": "2026-11-06 17:14"
 }
