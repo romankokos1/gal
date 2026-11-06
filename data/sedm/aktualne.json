@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-06 21:18",
+  "zmeneno": "2026-11-06 23:20",
   "metoda": "selektor",
   "piva": [
     {
@@ -76,12 +76,12 @@
     {
       "pozice": 8,
       "pivovar": "Nozib",
-      "nazev": "cold as ekuanot",
-      "stupen": "14",
-      "alkohol": "6.5",
-      "styl": "cold ipa",
+      "nazev": "Cali Twist",
+      "stupen": "12",
+      "alkohol": "5.7",
+      "styl": "California Ale",
       "dalsi": "",
-      "raw": "Nozib - cold as ekuanot | 14% | cold ipa, ABV 6,5%"
+      "raw": "Nozib - Cali Twist | 12% | California Ale ABV 5,7%"
     }
   ]
 }
