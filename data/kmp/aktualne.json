@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-06 21:18",
+  "zmeneno": "2026-11-07 14:07",
   "metoda": "selektor",
   "piva": [
     {
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Radouš",
-      "nazev": "Stodolní",
-      "stupen": "10",
-      "alkohol": "4",
-      "styl": "světlé výčepní",
+      "pivovar": "Hubertus Kácov",
+      "nazev": "Medium",
+      "stupen": "11",
+      "alkohol": "4.4",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Radouš - Stodolní, světlé výčepní, 10° sv. nef., 4% vol. Alc, 28 IBU"
+      "raw": "Hubertus Kácov - Medium, světlý ležák, 11° sv. nef., 4, 4% vol. Alc, 31 IBU"
     }
   ]
 }
