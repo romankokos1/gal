@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-05 15:26",
+  "zmeneno": "2026-11-07 16:08",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "CHROUST",
-      "nazev": "BALTIC EXPREESS",
+      "pivovar": "MAISEL’S",
+      "nazev": "WEISSE ORIGINAL",
       "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "HAZY SESSION IPA",
+      "alkohol": "5.2",
+      "styl": "HEFEWEIZEN",
       "dalsi": "",
-      "raw": "CHROUST BALTIC EXPREESS 12° | HAZY SESSION IPA | 4.8%"
+      "raw": "MAISEL’S WEISSE ORIGINAL 12° | HEFEWEIZEN | 5.2%"
     },
     {
       "pozice": 7,

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-07 14:07",
+  "zmeneno": "2026-11-07 16:08",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Vik",
-      "nazev": "Lost in Strata",
+      "pivovar": "CLOCK",
+      "nazev": "No Idols!",
       "stupen": "14",
-      "alkohol": "6.3",
+      "alkohol": "6.1",
       "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "Vik - Lost in Strata, West Coast IPA, 14° sv. nef., 6, 3% vol. Alc, 58 IBU"
+      "raw": "CLOCK - No Idols!, West Coast IPA, 14° sv. nef., 6, 1% vol. Alc, 65 IBU"
     },
     {
       "pozice": 9,

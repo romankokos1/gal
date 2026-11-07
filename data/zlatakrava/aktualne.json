@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zk.vhost.cz/",
-  "zmeneno": "2026-10-22 11:26",
+  "zmeneno": "2026-11-07 16:08",
   "metoda": "selektor",
   "piva": [
     {
@@ -36,22 +36,22 @@
     {
       "pozice": 4,
       "pivovar": "Zlatá kráva",
-      "nazev": "LOW CARB ALE N0 COW",
+      "nazev": "YELLOW COW",
       "stupen": "",
       "alkohol": "",
-      "styl": "Svrchně kvašený Farm House ALE s jemnou a tropickou hořkostí chmelů Azacca, Tango a Citra",
+      "styl": "Svrchně kvašené pivo typu APA, neobyčejné spojení sladů, chmele a citronů",
       "dalsi": "",
-      "raw": "Zlatá kráva | LOW CARB ALE N0 COW | Svrchně kvašený Farm House ALE s jemnou a tropickou hořkostí chmelů Azacca, Tango a Citra."
+      "raw": "Zlatá kráva | YELLOW COW | Svrchně kvašené pivo typu APA, neobyčejné spojení sladů, chmele a citronů"
     },
     {
       "pozice": 5,
       "pivovar": "Zlatá kráva",
-      "nazev": "KISS THE COW",
+      "nazev": "BLACK IPA",
       "stupen": "",
       "alkohol": "",
-      "styl": "Malinovo rybízový kyseláč",
+      "styl": "Svrchně kvašený tmavý speciál",
       "dalsi": "",
-      "raw": "Zlatá kráva | KISS THE COW | Malinovo rybízový kyseláč"
+      "raw": "Zlatá kráva | BLACK IPA | Svrchně kvašený tmavý speciál. Vyznačuje se výrazně kávově-čokoládovými tóny v kombinaci s citrusovo-grepovým aroma."
     },
     {
       "pozice": 6,
