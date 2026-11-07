@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-07 12:05",
+  "zmeneno": "2026-11-07 14:38",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,23 +15,23 @@
     },
     {
       "pozice": 2,
-      "pivovar": "NOZIB",
-      "nazev": "Cali Twist",
-      "stupen": "12",
-      "alkohol": "5.7",
-      "styl": "California Ale (chinook, nz cascade)",
+      "pivovar": "BARN",
+      "nazev": "Xxtravagnza",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "Northern Extra Pale Ale (nectaron)",
       "dalsi": "",
-      "raw": "NOZIB – Cali Twist 12°/5,7% California Ale (chinook, nz cascade)"
+      "raw": "BARN – Xxtravagnza 13°/5,5% Northern Extra Pale Ale (nectaron)"
     },
     {
       "pozice": 3,
-      "pivovar": "PREISLER",
-      "nazev": "Problém trpaslíků v mlze",
-      "stupen": "13",
-      "alkohol": "6.2",
-      "styl": "Hazy IPA (eris, ceres, pluto)",
+      "pivovar": "CLOCK",
+      "nazev": "No Idols! West Coast IPA",
+      "stupen": "14",
+      "alkohol": "6.1",
+      "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "PREISLER – Problém trpaslíků v mlze 13°/6,2% Hazy IPA (eris, ceres, pluto)"
+      "raw": "CLOCK – No Idols! West Coast IPA 14°/6,1% West Coast IPA"
     },
     {
       "pozice": 4,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "TULETORN (EE) + SIBEERIA",
-      "nazev": "Kompott",
-      "stupen": "26",
-      "alkohol": "5.5",
-      "styl": "Pastry Sour w. apples, blackcurrants and cherries",
+      "pivovar": "RAVEN",
+      "nazev": "Upside Down Cake",
+      "stupen": "16",
+      "alkohol": "6",
+      "styl": "Pastry Sour Ale s ananasem, třešněma a karamelem",
       "dalsi": "",
-      "raw": "TULETORN (EE) + SIBEERIA – Kompott 26°/5,5% Pastry Sour w. apples, blackcurrants and cherries"
+      "raw": "RAVEN – Upside Down Cake 16°/6% Pastry Sour Ale s ananasem, třešněma a karamelem"
     }
   ]
 }
