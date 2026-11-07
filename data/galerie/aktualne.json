@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-07 14:38",
+  "zmeneno": "2026-11-07 18:11",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "CHROUST",
-      "nazev": "Světlé",
-      "stupen": "11",
-      "alkohol": "5.1",
+      "pivovar": "JUNGBERG",
+      "nazev": "PP",
+      "stupen": "12",
+      "alkohol": "4.9",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "CHROUST – Světlé 11°/5,1% světlý ležák"
+      "raw": "JUNGBERG – PP 12°/4,9% světlý ležák"
     },
     {
       "pozice": 2,
