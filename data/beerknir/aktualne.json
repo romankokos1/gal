@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerknir.cz/",
-  "zmeneno": "2026-11-06 17:14",
+  "zmeneno": "2026-11-07 12:05",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Chroust",
-      "nazev": "Ice Tea Sour",
-      "stupen": "11",
+      "pivovar": "The Barn",
+      "nazev": "Švarcík",
+      "stupen": "12",
       "alkohol": "4.5",
-      "styl": "Lime Green Ice Tea Sour",
+      "styl": "Schwarzbier Saturn Wet Hop",
       "dalsi": "",
-      "raw": "Ice Tea Sour 11° | Lime Green Ice Tea Sour | 11° | 4.5% | Pivovar Chroust"
+      "raw": "Švarcík 12° | Schwarzbier Saturn Wet Hop | 12° | 4.5% | Pivovar The Barn"
     },
     {
       "pozice": 5,

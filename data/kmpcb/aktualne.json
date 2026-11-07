@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-11-06 13:08",
+  "zmeneno": "2026-11-07 12:05",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,26 +55,6 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Kamenice nad Lipou",
-      "nazev": "Kamenice nad Lipou 13°",
-      "stupen": "13",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Kamenice nad Lipou 13° polotm.nef."
-    },
-    {
-      "pozice": 7,
-      "pivovar": "Schneider",
-      "nazev": "Weisse TAP7",
-      "stupen": "13",
-      "alkohol": "",
-      "styl": "pšeničné",
-      "dalsi": "",
-      "raw": "Schneider Weisse TAP7 13° pšeničné"
-    },
-    {
-      "pozice": 8,
       "pivovar": "Cobolis",
       "nazev": "NEVADA",
       "stupen": "11",
@@ -84,7 +64,7 @@
       "raw": "Cobolis NEVADA 11° APA"
     },
     {
-      "pozice": 9,
+      "pozice": 7,
       "pivovar": "MadCat",
       "nazev": "PUMPKIN ALE",
       "stupen": "12",
@@ -94,7 +74,7 @@
       "raw": "MadCat PUMPKIN ALE 12°"
     },
     {
-      "pozice": 10,
+      "pozice": 8,
       "pivovar": "HoppyDog",
       "nazev": "NewDogOnTheHop LUNA",
       "stupen": "13",
@@ -104,7 +84,7 @@
       "raw": "HoppyDog NewDogOnTheHop LUNA 13° NEIPA"
     },
     {
-      "pozice": 11,
+      "pozice": 9,
       "pivovar": "Tvarg",
       "nazev": "PUMPKIN ALE",
       "stupen": "13",
@@ -114,7 +94,7 @@
       "raw": "Tvarg PUMPKIN ALE 13°"
     },
     {
-      "pozice": 12,
+      "pozice": 10,
       "pivovar": "Kocour",
       "nazev": "SAMURAJ",
       "stupen": "14",
@@ -124,7 +104,7 @@
       "raw": "-> Kocour SAMURAJ 14° IPA"
     },
     {
-      "pozice": 13,
+      "pozice": 11,
       "pivovar": "BrewDog",
       "nazev": "Elvis Juice",
       "stupen": "",
@@ -134,7 +114,7 @@
       "raw": "BrewDog Elvis Juice 6,5%Alc. Citrus IPA (UK - Skotsko)"
     },
     {
-      "pozice": 14,
+      "pozice": 12,
       "pivovar": "Permon",
       "nazev": "PUMPKIN ALE",
       "stupen": "15",
@@ -144,7 +124,7 @@
       "raw": "Permon PUMPKIN ALE 15°"
     },
     {
-      "pozice": 15,
+      "pozice": 13,
       "pivovar": "Matuška",
       "nazev": "RAPTOR",
       "stupen": "15",
@@ -154,7 +134,7 @@
       "raw": "Matuška RAPTOR 15° IPA"
     },
     {
-      "pozice": 16,
+      "pozice": 14,
       "pivovar": "Pioneer",
       "nazev": "Sour Pop #3 Malina & Ostružina",
       "stupen": "",
@@ -164,7 +144,7 @@
       "raw": "Pioneer Sour Pop #3 Malina & Ostružina 4,5%Alc."
     },
     {
-      "pozice": 17,
+      "pozice": 15,
       "pivovar": "Brewnicorn",
       "nazev": "PUMPKIN Space Latte",
       "stupen": "13",
@@ -174,7 +154,7 @@
       "raw": "Brewnicorn PUMPKIN Space Latte 13° Sour ALE"
     },
     {
-      "pozice": 18,
+      "pozice": 16,
       "pivovar": "FunkyFluid",
       "nazev": "Gelato: White Fluff",
       "stupen": "",
@@ -184,7 +164,7 @@
       "raw": "FunkyFluid Gelato: White Fluff 5,5%Alc. Pastry SOUR (PL)"
     },
     {
-      "pozice": 19,
+      "pozice": 17,
       "pivovar": "Čestmír",
       "nazev": "ASTRO Creep",
       "stupen": "14",
@@ -194,7 +174,7 @@
       "raw": "Čestmír ASTRO Creep 14° STOUT"
     },
     {
-      "pozice": 20,
+      "pozice": 18,
       "pivovar": "Kasteel",
       "nazev": "Rouge",
       "stupen": "",
@@ -204,7 +184,7 @@
       "raw": "Kasteel Rouge 8%Alc. (BELGIE - VIŠEŇ)"
     },
     {
-      "pozice": 21,
+      "pozice": 19,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",
