@@ -1,17 +1,17 @@
 {
   "zdroj": "https://beerknir.cz/",
-  "zmeneno": "2026-11-07 12:05",
+  "zmeneno": "2026-11-07 22:14",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Břevnov",
-      "nazev": "Čerstvý chmel",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "Fresh hop lager",
+      "pivovar": "Moucha",
+      "nazev": "Česká moucha",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "Světlý ležák",
       "dalsi": "",
-      "raw": "Čerstvý chmel 12° | Fresh hop lager | 12° | 5% | Pivovar Břevnov"
+      "raw": "Česká moucha 11° | Světlý ležák | 11° | 4.5% | Pivovar Moucha"
     },
     {
       "pozice": 2,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Falkon",
-      "nazev": "ALL-IN NECTARON",
-      "stupen": "14",
-      "alkohol": "6",
-      "styl": "NEIPA s chmelem Nectaron",
+      "pivovar": "Zichovec",
+      "nazev": "Kometa",
+      "stupen": "20",
+      "alkohol": "9",
+      "styl": "Double NEIPA",
       "dalsi": "",
-      "raw": "ALL-IN NECTARON 14° | NEIPA s chmelem Nectaron | 14° | 6% | Pivovar Falkon"
+      "raw": "Kometa 20° | Double NEIPA | 20° | 9% | Pivovar Zichovec"
     },
     {
       "pozice": 6,
