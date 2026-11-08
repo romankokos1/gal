@@ -1,40 +1,30 @@
 {
   "zdroj": "https://zlycasy.eu/section:prostredni-bar",
-  "zmeneno": "2026-11-06 13:08",
+  "zmeneno": "2026-11-08 18:23",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Budvar",
-      "nazev": "33 ležák",
-      "stupen": "11",
+      "pivovar": "Kocour",
+      "nazev": "Mango Maracuja NealkoIPA",
+      "stupen": "",
       "alkohol": "",
-      "styl": "Světlý ležák",
+      "styl": "Alkohol Free ochucená IPA",
       "dalsi": "",
-      "raw": "Budvar 33 ležák 11° | Světlý ležák"
+      "raw": "Kocour Mango Maracuja NealkoIPA | Alkohol Free ochucená IPA"
     },
     {
       "pozice": 2,
-      "pivovar": "Bad Flash",
-      "nazev": "Mango Chilli Sour Ale",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "",
+      "pivovar": "Knoblach",
+      "nazev": "Hans im Glück",
+      "stupen": "9",
+      "alkohol": "3.1",
+      "styl": "Světlé výčepní pivo",
       "dalsi": "",
-      "raw": "Bad Flash Mango Chilli Sour Ale 12° | 0.3l"
+      "raw": "Knoblach Hans im Glück 9° | Světlé výčepní pivo | 3.1%"
     },
     {
       "pozice": 3,
-      "pivovar": "Zvíkovská",
-      "nazev": "Zlatá Labuť",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Světlý ležák",
-      "dalsi": "",
-      "raw": "Zvíkovská Zlatá Labuť 11° | Světlý ležák"
-    },
-    {
-      "pozice": 4,
       "pivovar": "Bad Flash",
       "nazev": "Podél plotu sour Ale",
       "stupen": "12",
@@ -44,7 +34,7 @@
       "raw": "Bad Flash Podél plotu sour Ale 12° | 0,3l"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "Zvíkovský",
       "nazev": "Rarášek pšeničné",
       "stupen": "11",
@@ -52,6 +42,16 @@
       "styl": "",
       "dalsi": "",
       "raw": "Zvíkovský Rarášek 11° pšeničné"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Bad Flash",
+      "nazev": "Mango Chilli Sour Ale",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Mango Chilli Sour Ale 12° | 0.3l"
     },
     {
       "pozice": 6,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Knoblach",
-      "nazev": "Keller Bier",
-      "stupen": "12",
+      "pivovar": "Bad Flash",
+      "nazev": "Mini Boss NEIPA",
+      "stupen": "9",
       "alkohol": "",
-      "styl": "světlý ležák",
+      "styl": "NEIPA",
       "dalsi": "",
-      "raw": "Knoblach 12° Keller Bier | světlý ležák"
+      "raw": "Bad Flash Mini Boss NEIPA 9° | NEIPA | 0,4l"
     },
     {
       "pozice": 8,
@@ -85,6 +85,16 @@
     },
     {
       "pozice": 9,
+      "pivovar": "Máša",
+      "nazev": "Elani APA",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "American Pale Ale",
+      "dalsi": "",
+      "raw": "Máša Elani 11° APA | American Pale Ale | 0,4l"
+    },
+    {
+      "pozice": 10,
       "pivovar": "Budvar",
       "nazev": "Tmavý ležák",
       "stupen": "12",
@@ -94,34 +104,24 @@
       "raw": "Budvar Tmavý ležák 12°"
     },
     {
-      "pozice": 10,
-      "pivovar": "Bad Flash",
-      "nazev": "Mini Boss NEIPA",
-      "stupen": "9",
-      "alkohol": "",
-      "styl": "NEIPA",
-      "dalsi": "",
-      "raw": "Bad Flash Mini Boss NEIPA 9° | NEIPA | 0,4l"
-    },
-    {
       "pozice": 11,
-      "pivovar": "Kocour",
-      "nazev": "Mango Maracuja NealkoIPA",
-      "stupen": "",
+      "pivovar": "Budvar",
+      "nazev": "33 ležák",
+      "stupen": "11",
       "alkohol": "",
-      "styl": "Alkohol Free ochucená IPA",
+      "styl": "Světlý ležák",
       "dalsi": "",
-      "raw": "Kocour Mango Maracuja NealkoIPA | Alkohol Free ochucená IPA"
+      "raw": "Budvar 33 ležák 11° | Světlý ležák"
     },
     {
       "pozice": 12,
-      "pivovar": "Máša",
-      "nazev": "Elani APA",
+      "pivovar": "Zvíkovská",
+      "nazev": "Zlatá Labuť",
       "stupen": "11",
       "alkohol": "",
-      "styl": "American Pale Ale",
+      "styl": "Světlý ležák",
       "dalsi": "",
-      "raw": "Máša Elani 11° APA | American Pale Ale | 0,4l"
+      "raw": "Zvíkovská Zlatá Labuť 11° | Světlý ležák"
     }
   ]
 }
