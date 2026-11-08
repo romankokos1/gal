@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-07 16:08",
+  "zmeneno": "2026-11-08 12:18",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "Volt",
-      "nazev": "Svatomartinský speciál",
-      "stupen": "11",
-      "alkohol": "4.3",
+      "nazev": "Zdroj",
+      "stupen": "12",
+      "alkohol": "5",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Volt - Svatomartinský speciál, světlý ležák, 11° sv. nef., 4, 3% vol. Alc, 45 IBU"
+      "raw": "Volt - Zdroj, světlý ležák, 12° sv. nef., 5% vol. Alc, 45 IBU"
     },
     {
       "pozice": 3,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Vik",
-      "nazev": "Full Nelson",
-      "stupen": "15",
-      "alkohol": "6.6",
+      "pivovar": "The Barn Beer Co.",
+      "nazev": "Suavamente",
+      "stupen": "16",
+      "alkohol": "6",
       "styl": "New England IPA",
       "dalsi": "",
-      "raw": "Vik - Full Nelson, New England IPA, 15° sv. nef., 6, 6% vol. Alc, 35 IBU"
+      "raw": "The Barn Beer Co. - Suavamente, New England IPA, 16° sv. nef., 6% vol. Alc, 25 IBU"
     },
     {
       "pozice": 8,
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Vik",
-      "nazev": "Chocolate Cherry Brownie",
-      "stupen": "25",
-      "alkohol": "9",
-      "styl": "Imperial Stout s višněmi a kakaovými boby",
+      "pivovar": "Bergquell",
+      "nazev": "Brauerei Löbau",
+      "stupen": "14",
+      "alkohol": "4.2",
+      "styl": "jahodový porter",
       "dalsi": "",
-      "raw": "Vik - Chocolate Cherry Brownie, Imperial Stout s višněmi a kakaovými boby, 25° tm. nef., 9% vol. Alc, 8 IBU"
+      "raw": "Bergquell - Brauerei Löbau, jahodový porter, 14° tm., 4, 2% vol. Alc"
     },
     {
       "pozice": 10,

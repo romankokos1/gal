@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-06 21:18",
+  "zmeneno": "2026-11-08 12:18",
   "metoda": "nadpis",
   "piva": [
     {
@@ -55,6 +55,16 @@
     },
     {
       "pozice": 6,
+      "pivovar": "Clock",
+      "nazev": "Bezovka",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Limonáda",
+      "dalsi": "",
+      "raw": "Bezovka (Limonáda)"
+    },
+    {
+      "pozice": 7,
       "pivovar": "Clock",
       "nazev": "Krystus",
       "stupen": "",
