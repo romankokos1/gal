@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-07 12:47",
+  "zmeneno": "2026-11-08 13:22",
   "metoda": "rucne",
   "piva": [
     {
@@ -105,13 +105,13 @@
     },
     {
       "pozice": 11,
-      "pivovar": "Barn",
-      "nazev": "DIZZY LIZZY",
-      "stupen": "17",
+      "pivovar": "SQBRU",
+      "nazev": "Coco Loco Oatmeal",
+      "stupen": "16",
       "alkohol": "",
-      "styl": "Sour Milkshake IPA",
+      "styl": "IPA",
       "dalsi": "",
-      "raw": "Barn DIZZY LIZZY Sour Milkshake IPA 17"
+      "raw": "SQBRU Coco Loco Oatmeal IPA 16"
     },
     {
       "pozice": 12,
