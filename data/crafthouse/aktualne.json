@@ -1,20 +1,10 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-06 19:17",
+  "zmeneno": "2026-11-08 20:25",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Sibeeria",
-      "nazev": "One Festival",
-      "stupen": "",
-      "alkohol": "5.3",
-      "styl": "West Coast Pilsner - Lager",
-      "dalsi": "",
-      "raw": "One Festival | West Coast Pilsner - Lager | 5.3% ABV | Sibeeria Brewery / CZ"
-    },
-    {
-      "pozice": 2,
       "pivovar": "Raven",
       "nazev": "Unicorn Milk",
       "stupen": "",
@@ -24,7 +14,7 @@
       "raw": "Unicorn Milk | IPA - Milkshake | 5.5% ABV | Pivovar Raven / CZ"
     },
     {
-      "pozice": 3,
+      "pozice": 2,
       "pivovar": "Vik",
       "nazev": "WILLY WONKA - Dark Lager",
       "stupen": "",
@@ -34,7 +24,7 @@
       "raw": "WILLY WONKA - Dark Lager | Lager - Dark | 5.3% ABV | Pivovar Vik / CZ"
     },
     {
-      "pozice": 4,
+      "pozice": 3,
       "pivovar": "The Barn Beer Co.",
       "nazev": "Blue Lagoon",
       "stupen": "",
@@ -44,7 +34,7 @@
       "raw": "Blue Lagoon | Sour - Smoothie / Pastry | 4.6% ABV | The Barn Beer Co. /"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "FALKON",
       "nazev": "BOTANIK",
       "stupen": "",
@@ -54,7 +44,7 @@
       "raw": "BOTANIK | Sour - Traditional Gose | 4.1% ABV | FALKON / CZ"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "ZICHOVEC",
       "nazev": "Robin na Grepu 12",
       "stupen": "",
@@ -64,17 +54,7 @@
       "raw": "Robin na Grepu 12 | Pale Ale - American | 5.1% ABV | Pivovar ZICHOVEC / CZ"
     },
     {
-      "pozice": 7,
-      "pivovar": "Vik",
-      "nazev": "Gumboot #5",
-      "stupen": "",
-      "alkohol": "4.6",
-      "styl": "Sour - Fruited Gose",
-      "dalsi": "",
-      "raw": "Gumboot #5 | Sour - Fruited Gose | 4.6% ABV | Pivovar Vik /"
-    },
-    {
-      "pozice": 8,
+      "pozice": 6,
       "pivovar": "Clock",
       "nazev": "Twist",
       "stupen": "",
@@ -84,7 +64,7 @@
       "raw": "Twist | IPA - Red | 5.8% ABV | Pivovar Clock / CZ"
     },
     {
-      "pozice": 9,
+      "pozice": 7,
       "pivovar": "Volt",
       "nazev": "Reaktor",
       "stupen": "",
@@ -94,7 +74,7 @@
       "raw": "Reaktor | IPA - Brut | 7.3% ABV | Pivovar Volt / CZ"
     },
     {
-      "pozice": 10,
+      "pozice": 8,
       "pivovar": "Sibeeria",
       "nazev": "Radiant Noise",
       "stupen": "",
@@ -104,7 +84,7 @@
       "raw": "Radiant Noise | IPA - New England / Hazy | 6.8% ABV | Sibeeria Brewery / CZ"
     },
     {
-      "pozice": 11,
+      "pozice": 9,
       "pivovar": "NOZIB Special Brews",
       "nazev": "CALI TWIST NZ Chinook + NZ Cascade",
       "stupen": "",
@@ -114,7 +94,7 @@
       "raw": "CALI TWIST NZ Chinook + NZ Cascade | Pale Ale - American | 5.7% ABV | NOZIB Special Brews / CZ"
     },
     {
-      "pozice": 12,
+      "pozice": 10,
       "pivovar": "Chroust",
       "nazev": "Age of Krush Fresh Hop",
       "stupen": "",
@@ -124,7 +104,7 @@
       "raw": "Age of Krush Fresh Hop | IPA - American | 5.8% ABV | Chroust / CZ"
     },
     {
-      "pozice": 13,
+      "pozice": 11,
       "pivovar": "Potmehúd",
       "nazev": "Weizenbock",
       "stupen": "",
@@ -134,7 +114,7 @@
       "raw": "Weizenbock | Bock - Weizenbock | 7.3% ABV | Pivovar Potmehúd /"
     },
     {
-      "pozice": 14,
+      "pozice": 12,
       "pivovar": "Čestmír",
       "nazev": "NZ NEIPA – KORU (Riwaka / Nelson Sauvin / Motueka)",
       "stupen": "",
@@ -144,7 +124,7 @@
       "raw": "NZ NEIPA – KORU (Riwaka / Nelson Sauvin / Motueka) | IPA - New England / Hazy | 4.5% ABV | Pivovar Čestmír / CZ"
     },
     {
-      "pozice": 15,
+      "pozice": 13,
       "pivovar": "ZICHOVEC",
       "nazev": "Nectar of Happiness 17",
       "stupen": "",
@@ -154,7 +134,7 @@
       "raw": "Nectar of Happiness 17 | IPA - New England / Hazy | 7% ABV | Pivovar ZICHOVEC / CZ"
     },
     {
-      "pozice": 16,
+      "pozice": 14,
       "pivovar": "Sibeeria",
       "nazev": "Smoke Lady",
       "stupen": "",
@@ -164,7 +144,7 @@
       "raw": "Smoke Lady | Rauchbier | 5.5% ABV | Sibeeria Brewery / CZ"
     },
     {
-      "pozice": 17,
+      "pozice": 15,
       "pivovar": "Mazák",
       "nazev": "Rainbow of Death",
       "stupen": "",
@@ -174,7 +154,7 @@
       "raw": "Rainbow of Death | IPA - American | 6.5% ABV | Pivovar Mazák / CZ"
     },
     {
-      "pozice": 18,
+      "pozice": 16,
       "pivovar": "The Barn Beer Co.",
       "nazev": "Dizzy Lizzy",
       "stupen": "",
@@ -184,7 +164,7 @@
       "raw": "Dizzy Lizzy | IPA - Sour | 7% ABV | The Barn Beer Co. / CZ"
     },
     {
-      "pozice": 19,
+      "pozice": 17,
       "pivovar": "Cobolis",
       "nazev": "Bezedný kotel",
       "stupen": "",
@@ -194,7 +174,7 @@
       "raw": "Bezedný kotel | Stout - Irish Extra | 7.2% ABV | Cobolis / CZ"
     },
     {
-      "pozice": 20,
+      "pozice": 18,
       "pivovar": "Raven",
       "nazev": "Aurora",
       "stupen": "",
@@ -204,7 +184,7 @@
       "raw": "Aurora | IPA - Other | 6.8% ABV | Pivovar Raven / CZ"
     },
     {
-      "pozice": 21,
+      "pozice": 19,
       "pivovar": "Kasteel Brouwerij Vanhonsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "",
@@ -214,7 +194,7 @@
       "raw": "Kasteel Rouge | Fruit Beer | 8% ABV | Kasteel Brouwerij Vanhonsebrouck / BE"
     },
     {
-      "pozice": 22,
+      "pozice": 20,
       "pivovar": "FALKON",
       "nazev": "BOCHÁNEK",
       "stupen": "",
