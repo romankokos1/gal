@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-11-04 19:29",
+  "zmeneno": "2026-11-08 22:28",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "6",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "Matuška",
+      "nazev": "BYLINNÝ BLAŽENEC",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "BOTANICAL GOSE",
       "dalsi": "",
-      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
+      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
     },
     {
       "pozice": 5,
@@ -55,26 +55,16 @@
     },
     {
       "pozice": 6,
-      "pivovar": "OBORA",
-      "nazev": "MANGO MARAKUJA",
-      "stupen": "12",
-      "alkohol": "4.5",
-      "styl": "PHILADELPHIA SOUR",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "6",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "OBORA: MANGO MARAKUJA | PHILADELPHIA SOUR | 12° | 4,5 %"
+      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
     },
     {
       "pozice": 7,
-      "pivovar": "Matuška",
-      "nazev": "APOLLO GALAXY",
-      "stupen": "13",
-      "alkohol": "5.5",
-      "styl": "PALE ALE",
-      "dalsi": "",
-      "raw": "APOLLO GALAXY | PALE ALE | 13° | 5,5 %"
-    },
-    {
-      "pozice": 8,
       "pivovar": "Matuška",
       "nazev": "RAPTOR",
       "stupen": "15",
@@ -82,6 +72,16 @@
       "styl": "INDIA PALE ALE",
       "dalsi": "",
       "raw": "RAPTOR | INDIA PALE ALE | 15° | 6,3 %"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Matuška",
+      "nazev": "SV. MARTIN",
+      "stupen": "16",
+      "alkohol": "6.3",
+      "styl": "LAGER",
+      "dalsi": "",
+      "raw": "SV. MARTIN | LAGER | 16° | 6,3 %"
     }
   ]
 }
