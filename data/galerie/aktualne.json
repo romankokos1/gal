@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-07 18:11",
+  "zmeneno": "2026-11-08 14:20",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "BARN",
-      "nazev": "Xxtravagnza",
-      "stupen": "13",
-      "alkohol": "5.5",
-      "styl": "Northern Extra Pale Ale (nectaron)",
+      "pivovar": "MADCAT",
+      "nazev": "Pure Haze 076",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "Session NEIPA",
       "dalsi": "",
-      "raw": "BARN – Xxtravagnza 13°/5,5% Northern Extra Pale Ale (nectaron)"
+      "raw": "MADCAT – Pure Haze 076 12°/5,3% Session NEIPA"
     },
     {
       "pozice": 3,
