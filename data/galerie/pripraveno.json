@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "pivovar": "MORDÝŘ",
+    "nazev": "Riwaka",
+    "stupen": "12",
+    "alkohol": "4.9",
+    "styl": "Single Hop Single Malt Pale Ale",
+    "raw": "MORDÝŘ – Riwaka 12°/4,9%/42IBU Single Hop Single Malt Pale Ale"
+  },
+  {
+    "pivovar": "HOPE BREWING",
+    "nazev": "Evermore",
+    "stupen": "15",
+    "alkohol": "6.1",
+    "styl": "IPA s kakaovými boby (riwaka, centennial)",
+    "raw": "HOPE BREWING – Evermore 15°/6,1% IPA s kakaovými boby (riwaka, centennial)"
+  },
+  {
+    "pivovar": "THE BARN BEER",
+    "nazev": "Gosebumps: Pina Colada",
+    "stupen": "12",
+    "alkohol": "4.5",
+    "styl": "Gose s ananasem, limetkou a kokosem",
+    "raw": "THE BARN BEER – Gosebumps: Pina Colada 12°/4,5% Gose s ananasem, limetkou a kokosem"
+  }
+]

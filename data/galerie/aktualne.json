@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-09 13:55",
+  "zmeneno": "2026-11-09 14:57",
   "metoda": "nadpis",
   "piva": [
     {
@@ -9,9 +9,9 @@
       "nazev": "Svatomartinský",
       "stupen": "11",
       "alkohol": "4.4",
-      "styl": "Světlý ležák",
+      "styl": "světlý ležák z čerstvého chmele (vital, saaz shine, sládek)",
       "dalsi": "",
-      "raw": "MAZÁK – Svatomartinský 11°/4,4% Světlý ležák"
+      "raw": "MAZÁK – Svatomartinský 11°/4,4%/30IBU světlý ležák z čerstvého chmele (vital, saaz shine, sládek)"
     },
     {
       "pozice": 2,
@@ -19,29 +19,29 @@
       "nazev": "Pure Haze 076",
       "stupen": "12",
       "alkohol": "5.3",
-      "styl": "Session NEIPA",
-      "dalsi": "",
-      "raw": "MADCAT – Pure Haze 076 12°/5,3% Session NEIPA"
+      "styl": "session NEIPA",
+      "dalsi": "MORDÝŘ – Riwaka 12°/4,9%/42IBU Single Hop Single Malt Pale Ale",
+      "raw": "MADCAT – Pure Haze 076 12°/5,3% session NEIPA //NEXT// MORDÝŘ – Riwaka 12°/4,9%/42IBU Single Hop Single Malt Pale Ale"
     },
     {
       "pozice": 3,
-      "pivovar": "PREISLER",
-      "nazev": "Geralt z Riwaky",
+      "pivovar": "PIVO PREISLER",
+      "nazev": "Geralt Z Riwaky",
       "stupen": "16",
       "alkohol": "7",
-      "styl": "New England IPA",
+      "styl": "New England IPA (riwaka, rhapzody, nelson)",
       "dalsi": "",
-      "raw": "PREISLER – Geralt z Riwaky 16°/7% New England IPA"
+      "raw": "PIVO PREISLER – Geralt Z Riwaky 16°/7%/20IBU New England IPA (riwaka, rhapzody, nelson) //NEXT//"
     },
     {
       "pozice": 4,
-      "pivovar": "MAZÁK",
-      "nazev": "Baltic Porter",
-      "stupen": "18",
-      "alkohol": "7",
-      "styl": "Baltic Porter",
-      "dalsi": "",
-      "raw": "MAZÁK – Baltic Porter 18°/7% Baltic Porter"
+      "pivovar": "BREWDOG (SCO)",
+      "nazev": "Wingman",
+      "stupen": "",
+      "alkohol": "4.3",
+      "styl": "session IPA (cascade, loral, citra, simcoe, talus, mosaic)",
+      "dalsi": "HOPE BREWING – Evermore 15°/6,1% IPA s kakaovými boby (riwaka, centennial)",
+      "raw": "BREWDOG (SCO) – Wingman 4,3%/50IBU session IPA (cascade, loral, citra, simcoe, talus, mosaic) //NEXT// HOPE BREWING – Evermore 15°/6,1% IPA s kakaovými boby (riwaka, centennial)"
     },
     {
       "pozice": 5,
@@ -49,9 +49,9 @@
       "nazev": "Upside Down Cake",
       "stupen": "16",
       "alkohol": "6",
-      "styl": "Pastry Sour Ale s ananasem, třešněma a karamelem",
-      "dalsi": "",
-      "raw": "RAVEN – Upside Down Cake 16°/6% Pastry Sour Ale s ananasem, třešněma a karamelem"
+      "styl": "Pastry Sour Ale s ananasem, třešní a karamelem",
+      "dalsi": "THE BARN BEER – Gosebumps: Pina Colada 12°/4,5% Gose s ananasem, limetkou a kokosem",
+      "raw": "RAVEN – Upside Down Cake 16°/6% Pastry Sour Ale s ananasem, třešní a karamelem //NEXT// THE BARN BEER – Gosebumps: Pina Colada 12°/4,5% Gose s ananasem, limetkou a kokosem"
     }
   ]
 }
