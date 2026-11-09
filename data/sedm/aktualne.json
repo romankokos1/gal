@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-09 17:59",
+  "zmeneno": "2026-11-09 20:01",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Nozib",
-      "nazev": "Stencil",
+      "pivovar": "Mad Cat",
+      "nazev": "West Is The Best",
       "stupen": "14",
-      "alkohol": "6.7",
+      "alkohol": "6.3",
       "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "Nozib - Stencil | 14% | West Coast IPA, ABV 6,7%"
+      "raw": "Mad Cat - West Is The Best | 14% | West Coast IPA, ABV 6,3%"
     },
     {
       "pozice": 7,

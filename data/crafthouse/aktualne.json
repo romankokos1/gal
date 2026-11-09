@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-09 17:59",
+  "zmeneno": "2026-11-09 20:01",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "The Barn Beer Co.",
-      "nazev": "Blue Lagoon",
+      "pivovar": "Hradecký Klenot",
+      "nazev": "Apricot Symphony",
       "stupen": "",
-      "alkohol": "4.6",
+      "alkohol": "6.2",
       "styl": "Sour - Smoothie / Pastry",
       "dalsi": "",
-      "raw": "Blue Lagoon | Sour - Smoothie / Pastry | 4.6% ABV | The Barn Beer Co. /"
+      "raw": "Apricot Symphony | Sour - Smoothie / Pastry | 6.2% ABV | Hradecký Klenot /"
     },
     {
       "pozice": 5,
