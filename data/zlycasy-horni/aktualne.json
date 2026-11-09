@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:horni-bar",
-  "zmeneno": "2026-11-07 18:11",
+  "zmeneno": "2026-11-09 15:57",
   "metoda": "selektor",
   "piva": [
     {
@@ -105,16 +105,6 @@
     },
     {
       "pozice": 11,
-      "pivovar": "Bad Flash",
-      "nazev": "Stupická světlý ležák",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Bad Flash Stupická 12° světlý ležák"
-    },
-    {
-      "pozice": 12,
       "pivovar": "Permon",
       "nazev": "Sherpa IPA",
       "stupen": "16",
@@ -122,6 +112,16 @@
       "styl": "",
       "dalsi": "",
       "raw": "Permon Sherpa 16° IPA | 0,4l"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "Chotěboř",
+      "nazev": "Svatomartinský speciál",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Chotěboř Svatomartinský speciál 13°"
     }
   ]
 }
