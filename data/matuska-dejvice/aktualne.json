@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
-  "zmeneno": "2026-11-07 14:07",
+  "zmeneno": "2026-11-09 17:59",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Matuška",
-      "nazev": "ŽEMLOVKA",
-      "stupen": "17",
-      "alkohol": "6.3",
-      "styl": "SOUR ALE",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "7",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "ŽEMLOVKA | SOUR ALE | 17° | 6,3 %"
+      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "7",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "SIBEERIA",
+      "nazev": "MANGO MARAKUJA SORBET",
+      "stupen": "11",
+      "alkohol": "3.9",
+      "styl": "SOUR ALE",
       "dalsi": "",
-      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
+      "raw": "SIBEERIA - MANGO MARAKUJA SORBET | SOUR ALE | 11° | 3,9 %"
     },
     {
       "pozice": 7,

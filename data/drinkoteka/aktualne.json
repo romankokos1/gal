@@ -1,27 +1,27 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-09 13:55",
+  "zmeneno": "2026-11-09 17:59",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "",
-      "nazev": "Liquid Fat Bûche / Imperial Pastry Gose",
+      "pivovar": "Piggy",
+      "nazev": "Liquid Fat Bûche",
       "stupen": "",
       "alkohol": "8",
-      "styl": "Blueberries, Blackcurrants, Cacao",
+      "styl": "Pastry Gose",
       "dalsi": "",
-      "raw": "Liquid Fat Bûche / Imperial Pastry Gose | Blueberries, Blackcurrants, Cacao | 8% ABV"
+      "raw": "Liquid Fat Bûche | Pastry Gose | 8% ABV | Piggy"
     },
     {
       "pozice": 2,
-      "pivovar": "",
-      "nazev": "Elani Warm Up",
+      "pivovar": "ZICHOVEC",
+      "nazev": "Vánoční Zmrzka",
       "stupen": "",
-      "alkohol": "6",
-      "styl": "NEIPA / Citra · Elani",
+      "alkohol": "5",
+      "styl": "Pastry Sour",
       "dalsi": "",
-      "raw": "Elani Warm Up | NEIPA / Citra · Elani | 6% ABV"
+      "raw": "Vánoční Zmrzka | Pastry Sour | 5% ABV | 🇨🇿ZICHOVEC"
     },
     {
       "pozice": 3,

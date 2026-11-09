@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-06 23:20",
+  "zmeneno": "2026-11-09 17:59",
   "metoda": "selektor",
   "piva": [
     {
@@ -81,7 +81,7 @@
       "alkohol": "5.7",
       "styl": "California Ale",
       "dalsi": "",
-      "raw": "Nozib - Cali Twist | 12% | California Ale ABV 5,7%"
+      "raw": "Nozib - Cali Twist | 12% | California Ale, ABV 5,7%"
     }
   ]
 }
