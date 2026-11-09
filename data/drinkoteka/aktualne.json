@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-07 12:05",
+  "zmeneno": "2026-11-09 13:55",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "",
-      "nazev": "Elani Impulse",
+      "pivovar": "Ārpus",
+      "nazev": "TDH Motueka X Riwaka X Citra",
       "stupen": "",
       "alkohol": "8",
-      "styl": "Double New England / Elani · Mosaic",
+      "styl": "Double New England",
       "dalsi": "",
-      "raw": "Elani Impulse | Double New England / Elani · Mosaic | 8% ABV"
+      "raw": "TDH Motueka X Riwaka X Citra | Double New England | 8% ABV | 🇱🇻Ārpus"
     },
     {
       "pozice": 5,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "",
-      "nazev": "Colossal Juice",
+      "pivovar": "ZICHOVEC",
+      "nazev": "Tectonic Desire",
       "stupen": "",
-      "alkohol": "8",
-      "styl": "",
+      "alkohol": "7",
+      "styl": "New zealand IPA",
       "dalsi": "",
-      "raw": "Colossal Juice | Double New England/ Bru-1 · idaho · Mosaic | 8% ABV"
+      "raw": "Tectonic Desire | New zealand IPA | 7% ABV | 🇨🇿ZICHOVEC"
     },
     {
       "pozice": 8,
@@ -92,6 +92,16 @@
       "styl": "Imperial Stout",
       "dalsi": "",
       "raw": "Electric Banana | Imperial Stout | 11% ABV"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Wild Creatures",
+      "nazev": "Femme Fanale 2024",
+      "stupen": "",
+      "alkohol": "6.4",
+      "styl": "🇨🇿 Wild Ale",
+      "dalsi": "",
+      "raw": "Femme Fanale 2024 | 🇨🇿 Wild Ale | 6.4% ABV | Wild Creatures"
     }
   ]
 }

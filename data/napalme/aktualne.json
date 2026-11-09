@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-08 13:22",
+  "zmeneno": "2026-11-09 12:33",
   "metoda": "rucne",
   "piva": [
     {
@@ -25,16 +25,6 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Falkon",
-      "nazev": "Šlágr",
-      "stupen": "10",
-      "alkohol": "",
-      "styl": "Czech Pilsner",
-      "dalsi": "",
-      "raw": "Falkon Šlágr Czech Pilsner 10"
-    },
-    {
-      "pozice": 4,
       "pivovar": "Clock",
       "nazev": "Glee",
       "stupen": "11",
@@ -44,27 +34,27 @@
       "raw": "Clock Glee bezlepkový Ale 11"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "Falkon",
       "nazev": "Halcón Mexican Lager s limetkovou šťávou a solí",
-      "stupen": "",
+      "stupen": "11",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Falkon Halcón Mexican Lager s limetkovou šťávou a solí"
+      "raw": "Falkon Halcón Mexican Lager s limetkovou šťávou a solí 11"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Vik",
+      "nazev": "Gumboot #6",
+      "stupen": "",
+      "alkohol": "4.6",
+      "styl": "Fresh Hop Lager",
+      "dalsi": "",
+      "raw": "Vik Gumboot #6 Fresh Hop Lager 4,6%"
     },
     {
       "pozice": 6,
-      "pivovar": "Valeč",
-      "nazev": "Juchajda Oak Aged",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "Sour",
-      "dalsi": "",
-      "raw": "Valeč Juchajda Oak Aged Sour 12"
-    },
-    {
-      "pozice": 7,
       "pivovar": "Napalmě",
       "nazev": "Cannabis",
       "stupen": "12",
@@ -74,24 +64,34 @@
       "raw": "Napalmě Cannabis Gose 12"
     },
     {
-      "pozice": 8,
-      "pivovar": "Hope",
-      "nazev": "Tattoo You #1 Ta Moko",
-      "stupen": "",
-      "alkohol": "5.4",
-      "styl": "Rye IPA",
+      "pozice": 7,
+      "pivovar": "Matuška",
+      "nazev": "Apollo Galaxy",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "Pale Ale",
       "dalsi": "",
-      "raw": "Hope Tattoo You #1 Ta Moko Rye IPA 5,4 %"
+      "raw": "Matuška Apollo Galaxy Pale Ale 13"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Barn",
+      "nazev": "Xxtravaganza Northern Extra",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "Pale Ale",
+      "dalsi": "",
+      "raw": "Barn Xxtravaganza Northern Extra Pale Ale 13"
     },
     {
       "pozice": 9,
-      "pivovar": "Matuška",
-      "nazev": "Raptor",
-      "stupen": "15",
+      "pivovar": "Nozib",
+      "nazev": "Goseteria # 11",
+      "stupen": "14",
       "alkohol": "",
-      "styl": "IPA",
+      "styl": "Gose",
       "dalsi": "",
-      "raw": "Matuška Raptor IPA 15"
+      "raw": "Nozib Goseteria # 11 Gose 14"
     },
     {
       "pozice": 10,

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-07 16:08",
+  "zmeneno": "2026-11-09 13:55",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "ZICHOVEC",
-      "nazev": "MOSAIC ALE",
-      "stupen": "12",
-      "alkohol": "5.2",
-      "styl": "APA",
+      "pivovar": "VACLAV",
+      "nazev": "SEXY HAFANANA",
+      "stupen": "17",
+      "alkohol": "6.9",
+      "styl": "DOUBLE IPA",
       "dalsi": "",
-      "raw": "ZICHOVEC MOSAIC ALE 12° | APA | 5.2%"
+      "raw": "VACLAV SEXY HAFANANA 17° | DOUBLE IPA | 6.9%"
     },
     {
       "pozice": 4,
@@ -65,33 +65,33 @@
     },
     {
       "pozice": 7,
-      "pivovar": "ČESTMÍR",
-      "nazev": "NINE",
-      "stupen": "14",
-      "alkohol": "6",
-      "styl": "IPA",
+      "pivovar": "AGENT",
+      "nazev": "FENOMÉN APA",
+      "stupen": "12",
+      "alkohol": "5.7",
+      "styl": "APA",
       "dalsi": "",
-      "raw": "ČESTMÍR NINE 14° | IPA | 6%"
+      "raw": "AGENT FENOMÉN APA 12° | APA | 5.7%"
     },
     {
       "pozice": 8,
-      "pivovar": "RAVEN",
-      "nazev": "ORANGE IPA",
-      "stupen": "15",
-      "alkohol": "6.3",
-      "styl": "IPA+ORANGE",
+      "pivovar": "PERMON",
+      "nazev": "SHERPA",
+      "stupen": "16",
+      "alkohol": "7.5",
+      "styl": "IPA",
       "dalsi": "",
-      "raw": "RAVEN ORANGE IPA 15° | IPA+ORANGE | 6.3%"
+      "raw": "PERMON SHERPA 16° | IPA | 7.5%"
     },
     {
       "pozice": 9,
-      "pivovar": "CVIKOV",
-      "nazev": "VERY CHERRY",
-      "stupen": "11",
-      "alkohol": "4.3",
-      "styl": "CHERRY INFUSED LAGER",
+      "pivovar": "MADCAT",
+      "nazev": "WEST IS THE BEST",
+      "stupen": "13",
+      "alkohol": "6.3",
+      "styl": "WEST COAST IPA",
       "dalsi": "",
-      "raw": "CVIKOV VERY CHERRY 11° | CHERRY INFUSED LAGER | 4.3%"
+      "raw": "MADCAT WEST IS THE BEST 13° | WEST COAST IPA | 6.3%"
     },
     {
       "pozice": 10,
