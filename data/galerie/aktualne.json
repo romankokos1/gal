@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-09 21:32",
+  "zmeneno": "2026-11-09 22:02",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "MAZÁK",
-      "nazev": "Svatomartinský",
+      "pivovar": "VARGA BROTHERS",
+      "nazev": "My Fair Ležák",
       "stupen": "11",
-      "alkohol": "4.4",
-      "styl": "světlý ležák z čerstvého chmele (vital, saaz shine, sládek)",
+      "alkohol": "4.5",
+      "styl": "světlý ležák (žpč, saaz shine, saaz special)",
       "dalsi": "",
-      "raw": "MAZÁK – Svatomartinský 11°/4,4%/30IBU světlý ležák z čerstvého chmele (vital, saaz shine, sládek)"
+      "raw": "VARGA BROTHERS – My Fair Ležák 11°/4,5%/34IBU světlý ležák (žpč, saaz shine, saaz special)"
     },
     {
       "pozice": 2,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "BREWDOG (SCO)",
-      "nazev": "Wingman",
-      "stupen": "",
-      "alkohol": "4.3",
-      "styl": "session IPA (cascade, loral, citra, simcoe, talus, mosaic)",
-      "dalsi": "HOPE BREWING – Evermore 15°/6,1% IPA s kakaovými boby (riwaka, centennial)",
-      "raw": "BREWDOG (SCO) – Wingman 4,3%/50IBU session IPA (cascade, loral, citra, simcoe, talus, mosaic) //NEXT// HOPE BREWING – Evermore 15°/6,1% IPA s kakaovými boby (riwaka, centennial)"
+      "pivovar": "HOPE BREWING",
+      "nazev": "Evermore",
+      "stupen": "15",
+      "alkohol": "6.1",
+      "styl": "IPA s kakaovými boby (riwaka, centennial)",
+      "dalsi": "",
+      "raw": "HOPE BREWING – Evermore 15°/6,1% IPA s kakaovými boby (riwaka, centennial)"
     },
     {
       "pozice": 5,

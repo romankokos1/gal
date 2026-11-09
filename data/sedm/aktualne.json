@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-09 20:01",
+  "zmeneno": "2026-11-09 22:02",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Kynšperský Zajíc",
-      "nazev": "Světlý Ležák",
-      "stupen": "12",
-      "alkohol": "5.2",
+      "pivovar": "Jungberg",
+      "nazev": "300 Kurven",
+      "stupen": "10",
+      "alkohol": "4.1",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Kynšperský Zajíc - Světlý Ležák | 12% | Lager, ABV 5,2%"
+      "raw": "Jungberg - 300 Kurven | 10% | Lager, ABV 4,1%"
     },
     {
       "pozice": 2,
