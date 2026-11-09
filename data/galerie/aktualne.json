@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-09 17:59",
+  "zmeneno": "2026-11-09 21:32",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "RAVEN",
-      "nazev": "Upside Down Cake",
-      "stupen": "16",
-      "alkohol": "6",
-      "styl": "Pastry Sour Ale s ananasem, třešní a karamelem",
-      "dalsi": "THE BARN BEER – Gosebumps: Pina Colada 12°/4,5% Gose s ananasem, limetkou a kokosem",
-      "raw": "RAVEN – Upside Down Cake 16°/6% Pastry Sour Ale s ananasem, třešní a karamelem //NEXT// THE BARN BEER – Gosebumps: Pina Colada 12°/4,5% Gose s ananasem, limetkou a kokosem"
+      "pivovar": "THE BARN BEER",
+      "nazev": "Gosebumps: Pina Colada",
+      "stupen": "12",
+      "alkohol": "4.5",
+      "styl": "Gose s ananasem, limetkou a kokosem",
+      "dalsi": "",
+      "raw": "THE BARN BEER – Gosebumps: Pina Colada 12°/4,5% Gose s ananasem, limetkou a kokosem"
     }
   ]
 }
