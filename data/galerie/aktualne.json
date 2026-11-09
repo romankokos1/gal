@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-09 15:27",
+  "zmeneno": "2026-11-09 17:28",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "MADCAT",
-      "nazev": "Pure Haze 076",
+      "pivovar": "MORDÝŘ",
+      "nazev": "Riwaka",
       "stupen": "12",
-      "alkohol": "5.3",
-      "styl": "session NEIPA",
-      "dalsi": "MORDÝŘ – Riwaka 12°/4,9%/42IBU Single Hop Single Malt Pale Ale",
-      "raw": "MADCAT – Pure Haze 076 12°/5,3% session NEIPA //NEXT// MORDÝŘ – Riwaka 12°/4,9%/42IBU Single Hop Single Malt Pale Ale"
+      "alkohol": "4.9",
+      "styl": "Single Hop Single Malt Pale Ale",
+      "dalsi": "",
+      "raw": "MORDÝŘ – Riwaka 12°/4,9%/42IBU Single Hop Single Malt Pale Ale"
     },
     {
       "pozice": 3,
