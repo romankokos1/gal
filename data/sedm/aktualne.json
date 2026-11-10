@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-10 17:44",
+  "zmeneno": "2026-11-10 23:51",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Obora",
-      "nazev": "Švarc",
-      "stupen": "12",
-      "alkohol": "4.7",
-      "styl": "dark lager",
+      "pivovar": "VIk",
+      "nazev": "Irish Dry Stout",
+      "stupen": "10",
+      "alkohol": "4.2",
+      "styl": "Irish Dry Stout",
       "dalsi": "",
-      "raw": "Obora - Švarc | 12% | dark lager, ABV 4,7%"
+      "raw": "VIk - Irish Dry Stout | 10% | Irish Dry Stout, ABV 4,2%"
     },
     {
       "pozice": 5,
