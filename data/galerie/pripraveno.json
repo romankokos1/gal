@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "pivovar": "ČERNÝ POTOKA",
+    "nazev": "Plecháč 242",
+    "stupen": "11",
+    "alkohol": "4.8",
+    "styl": "session IPA (cryo pop, idaho 7, citra, ctz)",
+    "raw": "ČERNÝ POTOKA – Plecháč 242 11°/4,8% session IPA (cryo pop, idaho 7, citra, ctz)"
+  },
+  {
+    "pivovar": "ČESTMÍR",
+    "nazev": "Ratamahatta",
+    "stupen": "16",
+    "alkohol": "7",
+    "styl": "IPA (ekuanot, simcoe, citra, mosaic, magnum)",
+    "raw": "ČESTMÍR – Ratamahatta 16°/7%/49IBU IPA (ekuanot, simcoe, citra, mosaic, magnum)"
+  }
+]
