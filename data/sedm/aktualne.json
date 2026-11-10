@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-09 22:02",
+  "zmeneno": "2026-11-10 17:44",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Vik",
-      "nazev": "Porn Hop Edition: Rhapzody",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "Hazy Pale Ale",
+      "pivovar": "Černý Potoka",
+      "nazev": "Cold Fish",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "Session Hazy IPA",
       "dalsi": "",
-      "raw": "Vik - Porn Hop Edition: Rhapzody | 12% | Hazy Pale Ale, ABV 5%"
+      "raw": "Černý Potoka - Cold Fish | 11% | Session Hazy IPA, ABV 4,6%"
     },
     {
       "pozice": 4,
