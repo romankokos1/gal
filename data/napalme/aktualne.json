@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-09 12:33",
+  "zmeneno": "2026-11-10 12:52",
   "metoda": "rucne",
   "piva": [
     {
@@ -65,6 +65,16 @@
     },
     {
       "pozice": 7,
+      "pivovar": "MadCat",
+      "nazev": "Pure Haze 076",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "MadCat Pure Haze 076 NEIPA 12"
+    },
+    {
+      "pozice": 8,
       "pivovar": "Matuška",
       "nazev": "Apollo Galaxy",
       "stupen": "13",
@@ -74,7 +84,7 @@
       "raw": "Matuška Apollo Galaxy Pale Ale 13"
     },
     {
-      "pozice": 8,
+      "pozice": 9,
       "pivovar": "Barn",
       "nazev": "Xxtravaganza Northern Extra",
       "stupen": "13",
@@ -84,7 +94,7 @@
       "raw": "Barn Xxtravaganza Northern Extra Pale Ale 13"
     },
     {
-      "pozice": 9,
+      "pozice": 10,
       "pivovar": "Nozib",
       "nazev": "Goseteria # 11",
       "stupen": "14",
@@ -92,16 +102,6 @@
       "styl": "Gose",
       "dalsi": "",
       "raw": "Nozib Goseteria # 11 Gose 14"
-    },
-    {
-      "pozice": 10,
-      "pivovar": "Vik",
-      "nazev": "Full Nelson",
-      "stupen": "15",
-      "alkohol": "",
-      "styl": "NEIPA",
-      "dalsi": "",
-      "raw": "Vik Full Nelson NEIPA 15"
     },
     {
       "pozice": 11,
