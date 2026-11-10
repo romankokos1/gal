@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerknir.cz/",
-  "zmeneno": "2026-11-10 15:42",
+  "zmeneno": "2026-11-10 19:46",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "The Barn",
-      "nazev": "Švarcík",
+      "pivovar": "Valeč",
+      "nazev": "Valeč - Juchajda (",
       "stupen": "12",
-      "alkohol": "4.5",
-      "styl": "Schwarzbier Saturn Wet Hop",
+      "alkohol": "4.9",
+      "styl": "Oak Aged Gose s šípkem a zázvorem",
       "dalsi": "",
-      "raw": "Švarcík 12° | Schwarzbier Saturn Wet Hop | 12° | 4.5% | Pivovar The Barn"
+      "raw": "Valeč - Juchajda 12° ( | Oak Aged Gose s šípkem a zázvorem | 12° | 4.9% | Pivovar Valeč"
     },
     {
       "pozice": 5,

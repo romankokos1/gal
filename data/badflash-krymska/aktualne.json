@@ -1,6 +1,6 @@
 {
   "zdroj": "https://badflash-krymska.cz/section:pivni-listek",
-  "zmeneno": "2026-11-05 00:04",
+  "zmeneno": "2026-11-10 19:46",
   "metoda": "selektor",
   "piva": [
     {
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Bad Flash",
-      "nazev": "PODÉL PLOTU",
-      "stupen": "10",
+      "pivovar": "BAD FLASH",
+      "nazev": "MANGO & CHILLI",
+      "stupen": "12",
       "alkohol": "",
-      "styl": "",
+      "styl": "SOUR ALE",
       "dalsi": "",
-      "raw": "Bad Flash PODÉL PLOTU 10°"
+      "raw": "BAD FLASH MANGO & CHILLI 12° | SOUR ALE"
     },
     {
       "pozice": 11,

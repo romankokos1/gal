@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-10 13:41",
+  "zmeneno": "2026-11-10 19:46",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Ārpus",
-      "nazev": "TDH Motueka X Riwaka X Citra",
+      "pivovar": "NOZIB",
+      "nazev": "STENCIL / Simcoe + Strata",
       "stupen": "",
-      "alkohol": "8",
-      "styl": "Double New England",
+      "alkohol": "6.7",
+      "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "TDH Motueka X Riwaka X Citra | Double New England | 8% ABV | 🇱🇻Ārpus"
+      "raw": "STENCIL / Simcoe + Strata | West Coast IPA | 6.7% ABV | 🇨🇿NOZIB"
     },
     {
       "pozice": 5,
