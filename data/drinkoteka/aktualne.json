@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-09 17:59",
+  "zmeneno": "2026-11-10 13:41",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "8",
       "styl": "Pastry Gose",
       "dalsi": "",
-      "raw": "Liquid Fat Bûche | Pastry Gose | 8% ABV | Piggy"
+      "raw": "Liquid Fat Bûche | Pastry Gose | 8% ABV | 🇫🇷Piggy"
     },
     {
       "pozice": 2,
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "",
+      "pivovar": "Piggy",
       "nazev": "Polar Juice",
       "stupen": "",
       "alkohol": "6",
-      "styl": "Cold IPA / Talus · Dolcita · Mosaic",
+      "styl": "Cold IPA / Talus · Dolcita",
       "dalsi": "",
-      "raw": "Polar Juice | Cold IPA / Talus · Dolcita · Mosaic | 6% ABV"
+      "raw": "Polar Juice | Cold IPA / Talus · Dolcita | 6% ABV | 🇫🇷Piggy"
     },
     {
       "pozice": 4,
@@ -45,23 +45,23 @@
     },
     {
       "pozice": 5,
-      "pivovar": "",
+      "pivovar": "Piggy",
       "nazev": "Eroica Blanche",
       "stupen": "",
       "alkohol": "6",
       "styl": "Hazy Pale Ale / Citra·Simcoe",
       "dalsi": "",
-      "raw": "Eroica Blanche | Hazy Pale Ale / Citra·Simcoe | 6% ABV"
+      "raw": "Eroica Blanche | Hazy Pale Ale / Citra·Simcoe | 6% ABV | 🇫🇷Piggy"
     },
     {
       "pozice": 6,
-      "pivovar": "",
+      "pivovar": "Piggy",
       "nazev": "Hoppy Quest",
       "stupen": "",
       "alkohol": "6",
-      "styl": "Hazy Pale Ale / Strata · Mosaic",
+      "styl": "New England / Strata · Mosaic",
       "dalsi": "",
-      "raw": "Hoppy Quest | Hazy Pale Ale / Strata · Mosaic | 6% ABV"
+      "raw": "Hoppy Quest | New England / Strata · Mosaic | 6% ABV | 🇫🇷Piggy"
     },
     {
       "pozice": 7,
@@ -99,9 +99,9 @@
       "nazev": "Femme Fanale 2024",
       "stupen": "",
       "alkohol": "6.4",
-      "styl": "🇨🇿 Wild Ale",
+      "styl": "Wild Ale",
       "dalsi": "",
-      "raw": "Femme Fanale 2024 | 🇨🇿 Wild Ale | 6.4% ABV | Wild Creatures"
+      "raw": "Femme Fanale 2024 | Wild Ale | 6.4% ABV | 🇨🇿Wild Creatures"
     }
   ]
 }

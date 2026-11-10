@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-10 00:04",
+  "zmeneno": "2026-11-10 13:41",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -31,7 +31,7 @@
       "alkohol": "5.8",
       "styl": "kyseláč s chutí kyselých okurek",
       "dalsi": "",
-      "raw": "Permon - Okurkovej Sour, kyseláč s chutí kyselých okurek, 12° sv. nef., 5,8% vol. Alc"
+      "raw": "Permon - Okurkovej Sour, kyseláč s chutí kyselých okurek, 12° sv. nef., 5, 8% vol. Alc"
     },
     {
       "pozice": 4,
@@ -51,7 +51,7 @@
       "alkohol": "5.2",
       "styl": "polotmavý speciál, polo.",
       "dalsi": "",
-      "raw": "KMP Husa #6, polotmavý speciál, 13° polo. nef., 5,2% vol. Alc"
+      "raw": "KMP Husa #6, polotmavý speciál, 13° polo. nef., 5, 2% vol. Alc"
     },
     {
       "pozice": 6,
@@ -61,7 +61,7 @@
       "alkohol": "4.5",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Volt - Adaptér, American Pale Ale, 11° sv. nef., 4,5% vol. Alc"
+      "raw": "Volt - Adaptér, American Pale Ale, 11° sv. nef., 4, 5% vol. Alc"
     },
     {
       "pozice": 7,
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "CLOCK",
-      "nazev": "No Idols!",
-      "stupen": "14",
-      "alkohol": "6.1",
-      "styl": "West Coast IPA",
+      "pivovar": "Sibeeria",
+      "nazev": "Lollihop",
+      "stupen": "15",
+      "alkohol": "6.6",
+      "styl": "West Coast IPA, nef",
       "dalsi": "",
-      "raw": "CLOCK - No Idols!, West Coast IPA, 14° sv. nef., 6,1% vol. Alc, 65 IBU"
+      "raw": "Sibeeria - Lollihop, West Coast IPA, 15° sv. nef, 6, 6% vol. Alc, 75 IBU"
     },
     {
       "pozice": 9,
@@ -91,7 +91,7 @@
       "alkohol": "4.2",
       "styl": "jahodový porter",
       "dalsi": "",
-      "raw": "Bergquell - Brauerei Löbau, jahodový porter, 14° tm., 4,2% vol. Alc"
+      "raw": "Bergquell - Brauerei Löbau, jahodový porter, 14° tm., 4, 2% vol. Alc"
     },
     {
       "pozice": 10,
@@ -101,7 +101,7 @@
       "alkohol": "4.4",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Hubertus Kácov - Medium, světlý ležák, 11° sv. nef., 4,4% vol. Alc, 31 IBU"
+      "raw": "Hubertus Kácov - Medium, světlý ležák, 11° sv. nef., 4, 4% vol. Alc, 31 IBU"
     }
   ]
 }
