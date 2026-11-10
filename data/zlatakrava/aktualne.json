@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zk.vhost.cz/",
-  "zmeneno": "2026-11-07 16:08",
+  "zmeneno": "2026-11-10 21:48",
   "metoda": "selektor",
   "piva": [
     {
@@ -26,12 +26,12 @@
     {
       "pozice": 3,
       "pivovar": "Zlatá kráva",
-      "nazev": "MÄRZEN DOG",
-      "stupen": "13",
+      "nazev": "SV. JANA NEPOMUCKÉHO",
+      "stupen": "12",
       "alkohol": "",
-      "styl": "Spodně kvašený bavorský pivní styl",
+      "styl": "Pivo se silnou intenzitou ovocné banánové a hřebíčkové vůně i chuti s nízkou intenzitou…",
       "dalsi": "",
-      "raw": "Zlatá kráva | 13 MÄRZEN DOG | Spodně kvašený bavorský pivní styl. Bohatá sladová vůně s tóny vídeňského sladu. Barva je tmavě zlatá. V chuti je dominantní sladová sladkost, chmelová hořkost je střední."
+      "raw": "Zlatá kráva | 12 SV. JANA NEPOMUCKÉHO | Pivo se silnou intenzitou ovocné banánové a hřebíčkové vůně i chuti s nízkou intenzitou hořkosti jemného charakteru."
     },
     {
       "pozice": 4,

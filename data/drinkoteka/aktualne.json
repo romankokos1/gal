@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-10 19:46",
+  "zmeneno": "2026-11-10 21:48",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,16 +55,6 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Piggy",
-      "nazev": "Hoppy Quest",
-      "stupen": "",
-      "alkohol": "6",
-      "styl": "New England / Strata · Mosaic",
-      "dalsi": "",
-      "raw": "Hoppy Quest | New England / Strata · Mosaic | 6% ABV | 🇫🇷Piggy"
-    },
-    {
-      "pozice": 7,
       "pivovar": "ZICHOVEC",
       "nazev": "Tectonic Desire",
       "stupen": "",
@@ -74,7 +64,7 @@
       "raw": "Tectonic Desire | New zealand IPA | 7% ABV | 🇨🇿ZICHOVEC"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Einsiedler",
       "nazev": "Helles",
       "stupen": "",
@@ -84,7 +74,7 @@
       "raw": "Helles | Ležák - Lager | 5.2% ABV | Einsiedler"
     },
     {
-      "pozice": 9,
+      "pozice": 8,
       "pivovar": "",
       "nazev": "Electric Banana",
       "stupen": "",
@@ -94,7 +84,7 @@
       "raw": "Electric Banana | Imperial Stout | 11% ABV"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Wild Creatures",
       "nazev": "Femme Fanale 2024",
       "stupen": "",

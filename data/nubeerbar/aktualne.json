@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-09 13:55",
+  "zmeneno": "2026-11-10 21:48",
   "metoda": "selektor",
   "piva": [
     {
@@ -46,12 +46,12 @@
     {
       "pozice": 5,
       "pivovar": "AGENT",
-      "nazev": "APRION",
-      "stupen": "0",
-      "alkohol": "0.5",
-      "styl": "NON-ALCOHOL PEACH SOUR",
+      "nazev": "CHICAGO IPL",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "INDIA PALE LAGER",
       "dalsi": "",
-      "raw": "AGENT APRION 0° | NON-ALCOHOL PEACH SOUR | 0.5%"
+      "raw": "AGENT CHICAGO IPL 13° | INDIA PALE LAGER | 5.5%"
     },
     {
       "pozice": 6,
