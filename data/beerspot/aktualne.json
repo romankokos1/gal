@@ -1,20 +1,10 @@
 {
   "zdroj": "https://beerspotprague.cz/beer-list/",
-  "zmeneno": "2026-11-05 15:26",
+  "zmeneno": "2026-11-10 15:42",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "JungBerg",
-      "nazev": "300 Kurven",
-      "stupen": "10",
-      "alkohol": "4.1",
-      "styl": "Pilsner - Czech",
-      "dalsi": "",
-      "raw": "300 Kurven 10° | Pilsner - Czech | 4.1% ABV | Pivovar JungBerg"
-    },
-    {
-      "pozice": 2,
       "pivovar": "Akciový pivovar Libertas",
       "nazev": "Libertas Bohemian Lager",
       "stupen": "11",
@@ -24,14 +14,24 @@
       "raw": "Libertas 11° Bohemian Lager | Lager - Pale | 4.4% ABV | Akciový pivovar Libertas"
     },
     {
-      "pozice": 3,
-      "pivovar": "Sibeeria",
-      "nazev": "One Festival",
-      "stupen": "",
-      "alkohol": "5.3",
-      "styl": "Pilsner - Other",
+      "pozice": 2,
+      "pivovar": "Volt",
+      "nazev": "Svatomartinský speciál",
+      "stupen": "11",
+      "alkohol": "4.3",
+      "styl": "Pilsner - Czech",
       "dalsi": "",
-      "raw": "One Festival | Pilsner - Other | 5.3% ABV | Sibeeria Brewery"
+      "raw": "Svatomartinský speciál 11° | Pilsner - Czech | 4.3% ABV | Pivovar Volt"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "SQBRU [skjuːbru]",
+      "nazev": "Brezza Luppolata",
+      "stupen": "",
+      "alkohol": "5.9",
+      "styl": "Lager - IPL (India Pale Lager)",
+      "dalsi": "",
+      "raw": "Brezza Luppolata | Lager - IPL (India Pale Lager) | 5.9% ABV | SQBRU [skjuːbru]"
     },
     {
       "pozice": 4,
@@ -65,33 +65,33 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Sibeeria",
-      "nazev": "Glynnis",
+      "pivovar": "Chroust",
+      "nazev": "Age of Krush Fresh Hop",
       "stupen": "",
-      "alkohol": "4.3",
-      "styl": "IPA - Session",
+      "alkohol": "5.8",
+      "styl": "IPA - American",
       "dalsi": "",
-      "raw": "Glynnis | IPA - Session | 4.3% ABV | Sibeeria Brewery"
+      "raw": "Age of Krush Fresh Hop | IPA - American | 5.8% ABV | Chroust"
     },
     {
       "pozice": 8,
-      "pivovar": "Garp",
-      "nazev": "Garp 811 - Raspberry Sour",
+      "pivovar": "Chroust",
+      "nazev": "Narozeninový Mrkvový Dort",
       "stupen": "",
-      "alkohol": "4.2",
-      "styl": "Sour - Fruited",
+      "alkohol": "6",
+      "styl": "Sour - Smoothie",
       "dalsi": "",
-      "raw": "Garp 811 - Raspberry Sour | Sour - Fruited | 4.2% ABV | Pivovar Garp"
+      "raw": "Narozeninový Mrkvový Dort | Sour - Smoothie | 6% ABV | Chroust"
     },
     {
       "pozice": 9,
-      "pivovar": "Brewnicorn",
-      "nazev": "New Cipland",
+      "pivovar": "Hope",
+      "nazev": "Call Me Ceres",
       "stupen": "",
-      "alkohol": "5.9",
-      "styl": "IPA - Milkshake",
+      "alkohol": "5.4",
+      "styl": "IPA - Cold",
       "dalsi": "",
-      "raw": "New Cipland | IPA - Milkshake | 5.9% ABV | Brewnicorn"
+      "raw": "Call Me Ceres | IPA - Cold | 5.4% ABV | Hope Brewing Co."
     },
     {
       "pozice": 10,

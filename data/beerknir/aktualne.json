@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerknir.cz/",
-  "zmeneno": "2026-11-07 22:14",
+  "zmeneno": "2026-11-10 15:42",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Čestmír",
-      "nazev": "Ratamahatta",
-      "stupen": "16",
-      "alkohol": "7",
+      "pivovar": "Mazák",
+      "nazev": "Podzimní IPA",
+      "stupen": "15",
+      "alkohol": "6.4",
       "styl": "IPA",
       "dalsi": "",
-      "raw": "Ratamahatta 16° | IPA | 16° | 7% | Pivovar Čestmír"
+      "raw": "Podzimní IPA 15° | IPA | 15° | 6.4% | Pivovar Mazák"
     }
   ]
 }
