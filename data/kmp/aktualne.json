@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-11 12:53",
+  "zmeneno": "2026-11-11 23:03",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "CLOCK",
-      "nazev": "Glee",
-      "stupen": "11",
-      "alkohol": "4.8",
-      "styl": "Gluten Reduced Pale Ale",
+      "pivovar": "Zichovec",
+      "nazev": "Mosaic",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "CLOCK - Glee, Gluten Reduced Pale Ale, 11° sv. nef., 4, 8% vol. Alc, 30 IBU"
+      "raw": "Zichovec - Mosaic, American Pale Ale, 12° sv. nef., 5, 1% vol. Alc, 40 IBU"
     },
     {
       "pozice": 7,
