@@ -1,6 +1,6 @@
 {
   "zdroj": "https://badflash-krymska.cz/section:pivni-listek",
-  "zmeneno": "2026-11-10 19:46",
+  "zmeneno": "2026-11-11 18:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -112,6 +112,16 @@
       "styl": "Imperial stout",
       "dalsi": "",
       "raw": "BAD FLASH TORPID MIND 24° | Imperial stout 10,5%"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "BUDVAR",
+      "nazev": "TMAVÝ",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "tmavý ležák/schwarzbier",
+      "dalsi": "",
+      "raw": "BUDVAR TMAVÝ 12' | tmavý ležák/schwarzbier"
     }
   ]
 }
