@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-10 12:52",
+  "zmeneno": "2026-11-11 10:49",
   "metoda": "rucne",
   "piva": [
     {
@@ -45,16 +45,6 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Vik",
-      "nazev": "Gumboot #6",
-      "stupen": "",
-      "alkohol": "4.6",
-      "styl": "Fresh Hop Lager",
-      "dalsi": "",
-      "raw": "Vik Gumboot #6 Fresh Hop Lager 4,6%"
-    },
-    {
-      "pozice": 6,
       "pivovar": "Napalmě",
       "nazev": "Cannabis",
       "stupen": "12",
@@ -64,7 +54,7 @@
       "raw": "Napalmě Cannabis Gose 12"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "MadCat",
       "nazev": "Pure Haze 076",
       "stupen": "12",
@@ -74,7 +64,7 @@
       "raw": "MadCat Pure Haze 076 NEIPA 12"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Matuška",
       "nazev": "Apollo Galaxy",
       "stupen": "13",
@@ -84,7 +74,7 @@
       "raw": "Matuška Apollo Galaxy Pale Ale 13"
     },
     {
-      "pozice": 9,
+      "pozice": 8,
       "pivovar": "Barn",
       "nazev": "Xxtravaganza Northern Extra",
       "stupen": "13",
@@ -94,7 +84,7 @@
       "raw": "Barn Xxtravaganza Northern Extra Pale Ale 13"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Nozib",
       "nazev": "Goseteria # 11",
       "stupen": "14",
@@ -102,6 +92,16 @@
       "styl": "Gose",
       "dalsi": "",
       "raw": "Nozib Goseteria # 11 Gose 14"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Matuška",
+      "nazev": "Martin",
+      "stupen": "16",
+      "alkohol": "",
+      "styl": "Lager",
+      "dalsi": "",
+      "raw": "Matuška Sv.Martin Lager 16"
     },
     {
       "pozice": 11,

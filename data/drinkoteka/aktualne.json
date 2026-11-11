@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-10 21:48",
+  "zmeneno": "2026-11-11 12:53",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,6 +55,16 @@
     },
     {
       "pozice": 6,
+      "pivovar": "Ārpus",
+      "nazev": "West Coast Pilsner",
+      "stupen": "",
+      "alkohol": "4.4",
+      "styl": "",
+      "dalsi": "",
+      "raw": "West Coast Pilsner | 4.4% ABV | 🇱🇻Ārpus"
+    },
+    {
+      "pozice": 7,
       "pivovar": "ZICHOVEC",
       "nazev": "Tectonic Desire",
       "stupen": "",
@@ -64,7 +74,7 @@
       "raw": "Tectonic Desire | New zealand IPA | 7% ABV | 🇨🇿ZICHOVEC"
     },
     {
-      "pozice": 7,
+      "pozice": 8,
       "pivovar": "Einsiedler",
       "nazev": "Helles",
       "stupen": "",
@@ -74,7 +84,7 @@
       "raw": "Helles | Ležák - Lager | 5.2% ABV | Einsiedler"
     },
     {
-      "pozice": 8,
+      "pozice": 9,
       "pivovar": "",
       "nazev": "Electric Banana",
       "stupen": "",
@@ -84,7 +94,7 @@
       "raw": "Electric Banana | Imperial Stout | 11% ABV"
     },
     {
-      "pozice": 9,
+      "pozice": 10,
       "pivovar": "Wild Creatures",
       "nazev": "Femme Fanale 2024",
       "stupen": "",
@@ -92,6 +102,16 @@
       "styl": "Wild Ale",
       "dalsi": "",
       "raw": "Femme Fanale 2024 | Wild Ale | 6.4% ABV | 🇨🇿Wild Creatures"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "Nelson X Riwaka Eggers X Selected Citra",
+      "nazev": "PATEK 13.11: colab SOMA🇪🇸X🇱🇻Ārpus",
+      "stupen": "",
+      "alkohol": "6.5",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "PATEK 13.11: colab SOMA🇪🇸X🇱🇻Ārpus | NEIPA | 6.5% ABV | Nelson X Riwaka Eggers X Selected Citra"
     }
   ]
 }

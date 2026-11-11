@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-10 13:41",
+  "zmeneno": "2026-11-11 12:53",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Volt",
-      "nazev": "Zdroj",
+      "pivovar": "Zlatá Kráva",
+      "nazev": "Plnotučná",
       "stupen": "12",
       "alkohol": "5",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Volt - Zdroj, světlý ležák, 12° sv. nef., 5% vol. Alc, 45 IBU"
+      "raw": "Zlatá Kráva - Plnotučná, světlý ležák, 12° sv. nef., 5% vol. Alc, 40 IBU"
     },
     {
       "pozice": 3,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Volt",
-      "nazev": "Adaptér",
+      "pivovar": "CLOCK",
+      "nazev": "Glee",
       "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "American Pale Ale",
+      "alkohol": "4.8",
+      "styl": "Gluten Reduced Pale Ale",
       "dalsi": "",
-      "raw": "Volt - Adaptér, American Pale Ale, 11° sv. nef., 4, 5% vol. Alc"
+      "raw": "CLOCK - Glee, Gluten Reduced Pale Ale, 11° sv. nef., 4, 8% vol. Alc, 30 IBU"
     },
     {
       "pozice": 7,
