@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:prostredni-bar",
-  "zmeneno": "2026-11-08 18:23",
+  "zmeneno": "2026-11-11 14:55",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Bad Flash",
-      "nazev": "Lost Chance",
-      "stupen": "14",
-      "alkohol": "6",
-      "styl": "India Pale Ale",
+      "pivovar": "Chotěboř",
+      "nazev": "Svatomartinský čtyřsladový speciál",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "Jantarový speciál",
       "dalsi": "",
-      "raw": "Bad Flash Lost Chance 14° | India Pale Ale | 6%"
+      "raw": "Chotěboř Svatomartinský čtyřsladový speciál 13° | Jantarový speciál"
     },
     {
       "pozice": 7,
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Máša",
-      "nazev": "Elani APA",
-      "stupen": "11",
+      "pivovar": "Bad Flash",
+      "nazev": "Torpid Mind Imperial Stout",
+      "stupen": "24",
       "alkohol": "",
-      "styl": "American Pale Ale",
+      "styl": "",
       "dalsi": "",
-      "raw": "Máša Elani 11° APA | American Pale Ale | 0,4l"
+      "raw": "Bad Flash Torpid Mind 24° Imperial Stout | 0,3l"
     },
     {
       "pozice": 10,
