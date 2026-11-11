@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-10 22:51",
+  "zmeneno": "2026-11-11 16:27",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "VARGA BROTHERS",
-      "nazev": "My Fair Ležák",
-      "stupen": "11",
+      "pivovar": "RADOUŠ",
+      "nazev": "Ilgner",
+      "stupen": "12",
       "alkohol": "4.5",
-      "styl": "světlý ležák (žpč, saaz shine, saaz special)",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "VARGA BROTHERS – My Fair Ležák 11°/4,5%/34IBU světlý ležák (žpč, saaz shine, saaz special)"
+      "raw": "RADOUŠ – Ilgner 12°/4,5%/34IBU světlý ležák"
     },
     {
       "pozice": 2,
