@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-11 16:27",
+  "zmeneno": "2026-11-11 21:02",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "SIBEERIA",
-      "nazev": "10th Anniversary",
-      "stupen": "15",
-      "alkohol": "6.7",
-      "styl": "NEIPA (nectaron, simcoe, krush)",
-      "dalsi": "ČESTMÍR – Ratamahatta 16°/7%/49IBU IPA (ekuanot, simcoe, citra, mosaic, magnum)",
-      "raw": "SIBEERIA – 10th Anniversary 15°/6,7% NEIPA (nectaron, simcoe, krush) //NEXT// ČESTMÍR – Ratamahatta 16°/7%/49IBU IPA (ekuanot, simcoe, citra, mosaic, magnum)"
+      "pivovar": "ČESTMÍR",
+      "nazev": "Ratamahatta",
+      "stupen": "16",
+      "alkohol": "7",
+      "styl": "IPA (ekuanot, simcoe, citra, mosaic, magnum)",
+      "dalsi": "",
+      "raw": "ČESTMÍR – Ratamahatta 16°/7%/49IBU IPA (ekuanot, simcoe, citra, mosaic, magnum)"
     },
     {
       "pozice": 4,
