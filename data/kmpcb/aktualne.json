@@ -1,50 +1,130 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-11-11 12:53",
+  "zmeneno": "2026-11-12 13:45",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Jílovice",
-      "nazev": "Jílovice 10°",
+      "pivovar": "HABAKUK",
+      "nazev": "Světlé výčepní",
       "stupen": "10",
       "alkohol": "",
-      "styl": "",
+      "styl": "Výčepní",
       "dalsi": "",
-      "raw": "Jílovice 10° sv.nef."
+      "raw": "HABAKUK Světlé výčepní 10° sv.nef."
     },
     {
       "pozice": 2,
-      "pivovar": "Mazák",
-      "nazev": "EXTRA HOŘKÁ",
+      "pivovar": "HABAKUK",
+      "nazev": "Světlá ležák",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Ležák",
+      "dalsi": "",
+      "raw": "HABAKUK Světlá ležák 11° sv.nef."
+    },
+    {
+      "pozice": 3,
+      "pivovar": "HABAKUK",
+      "nazev": "India Pale Lager",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "(Comet, Mosaic)",
+      "dalsi": "",
+      "raw": "HABAKUK India Pale Lager 11° sv.nef. (Comet, Mosaic)"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "HABAKUK",
+      "nazev": "Řezaná",
       "stupen": "11",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Mazák EXTRA HOŘKÁ 11° sv.nef."
-    },
-    {
-      "pozice": 3,
-      "pivovar": "Kynšperský ZAJÍC",
-      "nazev": "Kynšperský ZAJÍC 12°",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Kynšperský ZAJÍC 12° sv.nef."
-    },
-    {
-      "pozice": 4,
-      "pivovar": "Popelín",
-      "nazev": "JANTAR",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Popelín JANTAR 12° sv.nef."
+      "raw": "HABAKUK Řezaná 11° polotm.nef."
     },
     {
       "pozice": 5,
+      "pivovar": "HABAKUK",
+      "nazev": "Vous na KÁVĚ",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "(Coffee Dark Lager)",
+      "dalsi": "",
+      "raw": "HABAKUK Vous na KÁVĚ 12° tm.nef. (Coffee Dark Lager)"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "HABAKUK",
+      "nazev": "Nakuřovaný ležák",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "Ležák",
+      "dalsi": "",
+      "raw": "HABAKUK Nakuřovaný ležák 13° nef."
+    },
+    {
+      "pozice": 7,
+      "pivovar": "HABAKUK",
+      "nazev": "Vousatá MERUŇKA",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "(Infuze meruněk do tmavého ležáku)",
+      "dalsi": "",
+      "raw": "HABAKUK Vousatá MERUŇKA 12° tm.nef. (Infuze meruněk do tmavého ležáku)"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "HABAKUK",
+      "nazev": "Rye APA",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "HABAKUK Rye APA 13°"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "HABAKUK",
+      "nazev": "Saison",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "ALE",
+      "dalsi": "",
+      "raw": "HABAKUK Saison 13° ALE"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "HABAKUK",
+      "nazev": "Milkshake NEIPA",
+      "stupen": "15",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "HABAKUK Milkshake NEIPA 15°"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "HABAKUK",
+      "nazev": "Malinový SOUR",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "HABAKUK Malinový SOUR 11°"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "HABAKUK",
+      "nazev": "Cider POLOSUCHÝ",
+      "stupen": "",
+      "alkohol": "6.2",
+      "styl": "",
+      "dalsi": "",
+      "raw": "HABAKUK Cider POLOSUCHÝ 6,2%Alc."
+    },
+    {
+      "pozice": 13,
       "pivovar": "Maisel's",
       "nazev": "Weisse",
       "stupen": "12",
@@ -54,7 +134,7 @@
       "raw": "Maisel's Weisse 12° pšeničné"
     },
     {
-      "pozice": 6,
+      "pozice": 14,
       "pivovar": "Č.Potoka",
       "nazev": "Cold Fish",
       "stupen": "11",
@@ -64,37 +144,17 @@
       "raw": "Č.Potoka Cold Fish 11° Hazy Session IPA"
     },
     {
-      "pozice": 7,
-      "pivovar": "HoppyDog",
-      "nazev": "NewDogOnTheHop LUNA",
-      "stupen": "13",
-      "alkohol": "",
-      "styl": "NEIPA",
-      "dalsi": "",
-      "raw": "HoppyDog NewDogOnTheHop LUNA 13° NEIPA"
-    },
-    {
-      "pozice": 8,
+      "pozice": 15,
       "pivovar": "Kocour",
-      "nazev": "SAMURAJ",
+      "nazev": "SAMURAI",
       "stupen": "14",
       "alkohol": "",
       "styl": "IPA",
       "dalsi": "",
-      "raw": "Kocour SAMURAJ 14° IPA"
+      "raw": "Kocour SAMURAI 14° IPA"
     },
     {
-      "pozice": 9,
-      "pivovar": "BrewDog",
-      "nazev": "Elvis Juice",
-      "stupen": "",
-      "alkohol": "6.5",
-      "styl": "Citrus IPA (UK - Skotsko)",
-      "dalsi": "",
-      "raw": "BrewDog Elvis Juice 6,5%Alc. Citrus IPA (UK - Skotsko)"
-    },
-    {
-      "pozice": 10,
+      "pozice": 16,
       "pivovar": "Matuška",
       "nazev": "RAPTOR",
       "stupen": "15",
@@ -104,17 +164,7 @@
       "raw": "Matuška RAPTOR 15° IPA"
     },
     {
-      "pozice": 11,
-      "pivovar": "Zichovec",
-      "nazev": "SOUR",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "Passion Fruit",
-      "dalsi": "",
-      "raw": "Zichovec SOUR 12° Passion Fruit"
-    },
-    {
-      "pozice": 12,
+      "pozice": 17,
       "pivovar": "Brewnicorn",
       "nazev": "PUMPKIN Space Latte",
       "stupen": "13",
@@ -124,7 +174,7 @@
       "raw": "Brewnicorn PUMPKIN Space Latte 13° Sour ALE"
     },
     {
-      "pozice": 13,
+      "pozice": 18,
       "pivovar": "FunkyFluid",
       "nazev": "Gelato: White Fluff",
       "stupen": "",
@@ -134,17 +184,7 @@
       "raw": "FunkyFluid Gelato: White Fluff 5,5%Alc. Pastry SOUR (PL)"
     },
     {
-      "pozice": 14,
-      "pivovar": "Čestmír",
-      "nazev": "ASTRO Creep",
-      "stupen": "14",
-      "alkohol": "",
-      "styl": "STOUT",
-      "dalsi": "",
-      "raw": "Čestmír ASTRO Creep 14° STOUT"
-    },
-    {
-      "pozice": 15,
+      "pozice": 19,
       "pivovar": "Kasteel",
       "nazev": "Rouge",
       "stupen": "",
@@ -154,7 +194,7 @@
       "raw": "Kasteel Rouge 8%Alc. (BELGIE - VIŠEŇ)"
     },
     {
-      "pozice": 16,
+      "pozice": 20,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",

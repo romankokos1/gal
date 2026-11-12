@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-11 21:02",
+  "zmeneno": "2026-11-12 13:45",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "RADOUŠ",
-      "nazev": "Ilgner",
-      "stupen": "12",
+      "pivovar": "MADCAT",
+      "nazev": "Jedenáctka",
+      "stupen": "11",
       "alkohol": "4.5",
-      "styl": "světlý ležák",
+      "styl": "světlý ležák (žpč, sládek, magnum)",
       "dalsi": "",
-      "raw": "RADOUŠ – Ilgner 12°/4,5%/34IBU světlý ležák"
+      "raw": "MADCAT – Jedenáctka 11°/4,5% světlý ležák (žpč, sládek, magnum)"
     },
     {
       "pozice": 2,
@@ -20,8 +20,8 @@
       "stupen": "11",
       "alkohol": "4.8",
       "styl": "session IPA (cryo pop, idaho 7, citra, ctz)",
-      "dalsi": "",
-      "raw": "ČERNÝ POTOKA – Plecháč 242 11°/4,8% session IPA (cryo pop, idaho 7, citra, ctz)"
+      "dalsi": "ČERNÝ POTOKA + SQBRU + SIBEERIA – No Signal From Most 11°/4,7% session IPA (most, mosaic, chinook, citra)",
+      "raw": "ČERNÝ POTOKA – Plecháč 242 11°/4,8% session IPA (cryo pop, idaho 7, citra, ctz) //NEXT// ČERNÝ POTOKA + SQBRU + SIBEERIA – No Signal From Most 11°/4,7% session IPA (most, mosaic, chinook, citra)"
     },
     {
       "pozice": 3,
@@ -50,8 +50,8 @@
       "stupen": "12",
       "alkohol": "4.5",
       "styl": "Gose s ananasem, limetkou a kokosem",
-      "dalsi": "",
-      "raw": "THE BARN BEER – Gosebumps: Pina Colada 12°/4,5% Gose s ananasem, limetkou a kokosem"
+      "dalsi": "RAVEN – Kyselý Zelí 12°/4,8% Vegetable Gose with zelí, sůl a koriandr",
+      "raw": "THE BARN BEER – Gosebumps: Pina Colada 12°/4,5% Gose s ananasem, limetkou a kokosem //NEXT// RAVEN – Kyselý Zelí 12°/4,8% Vegetable Gose with zelí, sůl a koriandr"
     }
   ]
 }

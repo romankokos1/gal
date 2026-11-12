@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-10 21:48",
+  "zmeneno": "2026-11-12 13:45",
   "metoda": "selektor",
   "piva": [
     {
@@ -106,12 +106,12 @@
     {
       "pozice": 11,
       "pivovar": "MAZÁK",
-      "nazev": "BALTIC PORTER",
-      "stupen": "18",
-      "alkohol": "6.8",
-      "styl": "PORTER",
+      "nazev": "HOUSE OF SIN",
+      "stupen": "15",
+      "alkohol": "6.9",
+      "styl": "NEIPA",
       "dalsi": "",
-      "raw": "MAZÁK BALTIC PORTER 18° | PORTER | 6.8%"
+      "raw": "MAZÁK HOUSE OF SIN 15° | NEIPA | 6.9%"
     }
   ]
 }
