@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-12 16:18",
+  "zmeneno": "2026-11-12 23:54",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "ČERNÝ POTOKA + SQBRU + SIBEERIA",
-      "nazev": "No Signal From Most",
+      "pivovar": "CHROUST + MOON LARK (PL)",
+      "nazev": "Baltic Express",
       "stupen": "11",
-      "alkohol": "4.7",
-      "styl": "session IPA (most, mosaic, chinook, citra)",
+      "alkohol": "4.8",
+      "styl": "session Hazy IPA (idaho 7, galaxy, citra)",
       "dalsi": "",
-      "raw": "ČERNÝ POTOKA + SQBRU + SIBEERIA – No Signal From Most 11°/4,7% session IPA (most, mosaic, chinook, citra)"
+      "raw": "CHROUST + MOON LARK (PL) – Baltic Express 11°/4,8% session Hazy IPA (idaho 7, galaxy, citra)"
     },
     {
       "pozice": 3,
@@ -35,16 +35,6 @@
     },
     {
       "pozice": 4,
-      "pivovar": "HOPE BREWING",
-      "nazev": "Evermore",
-      "stupen": "15",
-      "alkohol": "6.1",
-      "styl": "IPA s kakaovými boby (riwaka, centennial)",
-      "dalsi": "",
-      "raw": "HOPE BREWING – Evermore 15°/6,1% IPA s kakaovými boby (riwaka, centennial)"
-    },
-    {
-      "pozice": 5,
       "pivovar": "RAVEN",
       "nazev": "Kyselý Zelí",
       "stupen": "12",

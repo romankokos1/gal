@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-11-08 22:28",
+  "zmeneno": "2026-11-12 23:54",
   "metoda": "selektor",
   "piva": [
     {
@@ -36,12 +36,12 @@
     {
       "pozice": 4,
       "pivovar": "Matuška",
-      "nazev": "BYLINNÝ BLAŽENEC",
-      "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "BOTANICAL GOSE",
+      "nazev": "ŽEMLOVKA",
+      "stupen": "17",
+      "alkohol": "6.3",
+      "styl": "PASTRY SOUR ALE",
       "dalsi": "",
-      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
+      "raw": "ŽEMLOVKA | PASTRY SOUR ALE | 17° | 6,3 %"
     },
     {
       "pozice": 5,

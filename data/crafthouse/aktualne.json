@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-12 21:52",
+  "zmeneno": "2026-11-12 23:54",
   "metoda": "selektor",
   "piva": [
     {
@@ -105,6 +105,16 @@
     },
     {
       "pozice": 11,
+      "pivovar": "The Barn Beer Co.",
+      "nazev": "Xxtravaganza",
+      "stupen": "",
+      "alkohol": "5.5",
+      "styl": "Pale Ale - XPA (Extra Pale)",
+      "dalsi": "",
+      "raw": "Xxtravaganza | Pale Ale - XPA (Extra Pale) | 5.5% ABV | The Barn Beer Co. / CZ"
+    },
+    {
+      "pozice": 12,
       "pivovar": "Chroust",
       "nazev": "Age of Krush Fresh Hop",
       "stupen": "",
@@ -114,7 +124,7 @@
       "raw": "Age of Krush Fresh Hop | IPA - American | 5.8% ABV | Chroust / CZ"
     },
     {
-      "pozice": 12,
+      "pozice": 13,
       "pivovar": "Potmehúd",
       "nazev": "Weizenbock",
       "stupen": "",
@@ -124,7 +134,7 @@
       "raw": "Weizenbock | Bock - Weizenbock | 7.3% ABV | Pivovar Potmehúd /"
     },
     {
-      "pozice": 13,
+      "pozice": 14,
       "pivovar": "Čestmír",
       "nazev": "Session NEIPA (Superdelic - Mosaic - Galaxy)",
       "stupen": "",
@@ -134,7 +144,7 @@
       "raw": "Session NEIPA (Superdelic - Mosaic - Galaxy) | IPA - New England / Hazy | 5% ABV | Pivovar Čestmír / CZ"
     },
     {
-      "pozice": 14,
+      "pozice": 15,
       "pivovar": "ZICHOVEC",
       "nazev": "Nectar of Happiness 17",
       "stupen": "",
@@ -144,7 +154,7 @@
       "raw": "Nectar of Happiness 17 | IPA - New England / Hazy | 7% ABV | Pivovar ZICHOVEC / CZ"
     },
     {
-      "pozice": 15,
+      "pozice": 16,
       "pivovar": "Sibeeria",
       "nazev": "Smoke Lady",
       "stupen": "",
@@ -154,7 +164,7 @@
       "raw": "Smoke Lady | Rauchbier | 5.5% ABV | Sibeeria Brewery / CZ"
     },
     {
-      "pozice": 16,
+      "pozice": 17,
       "pivovar": "Mazák",
       "nazev": "Rainbow of Death",
       "stupen": "",
@@ -164,7 +174,7 @@
       "raw": "Rainbow of Death | IPA - American | 6.5% ABV | Pivovar Mazák / CZ"
     },
     {
-      "pozice": 17,
+      "pozice": 18,
       "pivovar": "The Barn Beer Co.",
       "nazev": "Dizzy Lizzy",
       "stupen": "",
@@ -174,7 +184,7 @@
       "raw": "Dizzy Lizzy | IPA - Sour | 7% ABV | The Barn Beer Co. / CZ"
     },
     {
-      "pozice": 18,
+      "pozice": 19,
       "pivovar": "Cobolis",
       "nazev": "Bezedný kotel",
       "stupen": "",
@@ -184,7 +194,7 @@
       "raw": "Bezedný kotel | Stout - Irish Extra | 7.2% ABV | Cobolis / CZ"
     },
     {
-      "pozice": 19,
+      "pozice": 20,
       "pivovar": "Raven",
       "nazev": "Aurora",
       "stupen": "",
@@ -194,7 +204,7 @@
       "raw": "Aurora | IPA - Other | 6.8% ABV | Pivovar Raven / CZ"
     },
     {
-      "pozice": 20,
+      "pozice": 21,
       "pivovar": "Kasteel Brouwerij Vanhonsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "",
@@ -204,7 +214,7 @@
       "raw": "Kasteel Rouge | Fruit Beer | 8% ABV | Kasteel Brouwerij Vanhonsebrouck / BE"
     },
     {
-      "pozice": 21,
+      "pozice": 22,
       "pivovar": "FALKON",
       "nazev": "BOCHÁNEK",
       "stupen": "",
