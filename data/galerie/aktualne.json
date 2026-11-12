@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-12 14:47",
+  "zmeneno": "2026-11-12 16:18",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "THE BARN BEER",
-      "nazev": "Gosebumps: Pina Colada",
+      "pivovar": "RAVEN",
+      "nazev": "Kyselý Zelí",
       "stupen": "12",
-      "alkohol": "4.5",
-      "styl": "Gose s ananasem, limetkou a kokosem",
-      "dalsi": "RAVEN – Kyselý Zelí 12°/4,8% Vegetable Gose with zelí, sůl a koriandr",
-      "raw": "THE BARN BEER – Gosebumps: Pina Colada 12°/4,5% Gose s ananasem, limetkou a kokosem //NEXT// RAVEN – Kyselý Zelí 12°/4,8% Vegetable Gose with zelí, sůl a koriandr"
+      "alkohol": "4.8",
+      "styl": "Vegetable Gose with zelí, sůl a koriandr",
+      "dalsi": "",
+      "raw": "RAVEN – Kyselý Zelí 12°/4,8% Vegetable Gose with zelí, sůl a koriandr"
     }
   ]
 }
