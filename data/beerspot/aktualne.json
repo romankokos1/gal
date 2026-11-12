@@ -1,20 +1,30 @@
 {
   "zdroj": "https://beerspotprague.cz/beer-list/",
-  "zmeneno": "2026-11-10 15:42",
+  "zmeneno": "2026-11-12 19:50",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Akciový pivovar Libertas",
-      "nazev": "Libertas Bohemian Lager",
-      "stupen": "11",
-      "alkohol": "4.4",
-      "styl": "Lager - Pale",
+      "pivovar": "Matuška",
+      "nazev": "California",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "Pale Ale - American",
       "dalsi": "",
-      "raw": "Libertas 11° Bohemian Lager | Lager - Pale | 4.4% ABV | Akciový pivovar Libertas"
+      "raw": "California 12° | Pale Ale - American | 5.3% ABV | Pivovar Matuška"
     },
     {
       "pozice": 2,
+      "pivovar": "JungBerg",
+      "nazev": "300 Kurven",
+      "stupen": "10",
+      "alkohol": "4.1",
+      "styl": "Pilsner - Czech",
+      "dalsi": "",
+      "raw": "300 Kurven 10° | Pilsner - Czech | 4.1% ABV | Pivovar JungBerg"
+    },
+    {
+      "pozice": 3,
       "pivovar": "Volt",
       "nazev": "Svatomartinský speciál",
       "stupen": "11",
@@ -24,7 +34,7 @@
       "raw": "Svatomartinský speciál 11° | Pilsner - Czech | 4.3% ABV | Pivovar Volt"
     },
     {
-      "pozice": 3,
+      "pozice": 4,
       "pivovar": "SQBRU [skjuːbru]",
       "nazev": "Brezza Luppolata",
       "stupen": "",
@@ -34,7 +44,7 @@
       "raw": "Brezza Luppolata | Lager - IPL (India Pale Lager) | 5.9% ABV | SQBRU [skjuːbru]"
     },
     {
-      "pozice": 4,
+      "pozice": 5,
       "pivovar": "Černokostelecký pivovar",
       "nazev": "Černá svině",
       "stupen": "",
@@ -44,7 +54,7 @@
       "raw": "Černá svině | Lager - Tmavé (Czech Dark) | 5.8% ABV | Černokostelecký pivovar"
     },
     {
-      "pozice": 5,
+      "pozice": 6,
       "pivovar": "Akciový pivovar Libertas",
       "nazev": "Libertas Hefe Weizen",
       "stupen": "11",
@@ -54,7 +64,7 @@
       "raw": "Libertas 11° Hefe Weizen | Wheat Beer - Hefeweizen | 4.9% ABV | Akciový pivovar Libertas"
     },
     {
-      "pozice": 6,
+      "pozice": 7,
       "pivovar": "Clock",
       "nazev": "Fresh Hop Ale Most 2026",
       "stupen": "",
@@ -64,7 +74,7 @@
       "raw": "Fresh Hop Ale Most 2026 | Pale Ale - American | 5% ABV | Pivovar Clock"
     },
     {
-      "pozice": 7,
+      "pozice": 8,
       "pivovar": "Chroust",
       "nazev": "Age of Krush Fresh Hop",
       "stupen": "",
@@ -74,7 +84,7 @@
       "raw": "Age of Krush Fresh Hop | IPA - American | 5.8% ABV | Chroust"
     },
     {
-      "pozice": 8,
+      "pozice": 9,
       "pivovar": "Chroust",
       "nazev": "Narozeninový Mrkvový Dort",
       "stupen": "",
@@ -84,7 +94,7 @@
       "raw": "Narozeninový Mrkvový Dort | Sour - Smoothie | 6% ABV | Chroust"
     },
     {
-      "pozice": 9,
+      "pozice": 10,
       "pivovar": "Hope",
       "nazev": "Call Me Ceres",
       "stupen": "",
@@ -94,7 +104,7 @@
       "raw": "Call Me Ceres | IPA - Cold | 5.4% ABV | Hope Brewing Co."
     },
     {
-      "pozice": 10,
+      "pozice": 11,
       "pivovar": "Kasteel Brouwerij Vanhonsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "",
