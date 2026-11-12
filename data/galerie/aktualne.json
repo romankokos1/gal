@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-12 13:45",
+  "zmeneno": "2026-11-12 14:47",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "ČERNÝ POTOKA",
-      "nazev": "Plecháč 242",
+      "pivovar": "ČERNÝ POTOKA + SQBRU + SIBEERIA",
+      "nazev": "No Signal From Most",
       "stupen": "11",
-      "alkohol": "4.8",
-      "styl": "session IPA (cryo pop, idaho 7, citra, ctz)",
-      "dalsi": "ČERNÝ POTOKA + SQBRU + SIBEERIA – No Signal From Most 11°/4,7% session IPA (most, mosaic, chinook, citra)",
-      "raw": "ČERNÝ POTOKA – Plecháč 242 11°/4,8% session IPA (cryo pop, idaho 7, citra, ctz) //NEXT// ČERNÝ POTOKA + SQBRU + SIBEERIA – No Signal From Most 11°/4,7% session IPA (most, mosaic, chinook, citra)"
+      "alkohol": "4.7",
+      "styl": "session IPA (most, mosaic, chinook, citra)",
+      "dalsi": "",
+      "raw": "ČERNÝ POTOKA + SQBRU + SIBEERIA – No Signal From Most 11°/4,7% session IPA (most, mosaic, chinook, citra)"
     },
     {
       "pozice": 3,
