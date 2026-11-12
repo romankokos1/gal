@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-12 15:47",
+  "zmeneno": "2026-11-12 21:52",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,23 +65,23 @@
     },
     {
       "pozice": 7,
-      "pivovar": "The Barn Beer Co.",
-      "nazev": "Suavamente",
-      "stupen": "16",
-      "alkohol": "6",
-      "styl": "New England IPA",
+      "pivovar": "The Barn / Falkon",
+      "nazev": "Ummagumma London Fog Edition",
+      "stupen": "17",
+      "alkohol": "7",
+      "styl": "TDH New England IPA",
       "dalsi": "",
-      "raw": "The Barn Beer Co. - Suavamente, New England IPA, 16° sv. nef., 6% vol. Alc, 25 IBU"
+      "raw": "The Barn / Falkon - Ummagumma London Fog Edition, TDH New England IPA, 17° sv. nef., 7% vol. Alc"
     },
     {
       "pozice": 8,
-      "pivovar": "Sibeeria",
-      "nazev": "Lollihop",
+      "pivovar": "Zhůřák",
+      "nazev": "Deus Ex Machina",
       "stupen": "15",
-      "alkohol": "6.6",
-      "styl": "West Coast IPA, nef",
+      "alkohol": "6.9",
+      "styl": "American IPA",
       "dalsi": "",
-      "raw": "Sibeeria - Lollihop, West Coast IPA, 15° sv. nef, 6, 6% vol. Alc, 75 IBU"
+      "raw": "Zhůřák - Deus Ex Machina, American IPA, 15° sv. nef., 6, 9% vol. Alc, 67 IBU"
     },
     {
       "pozice": 9,
