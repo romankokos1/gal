@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-11 12:53",
+  "zmeneno": "2026-11-12 17:49",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Ārpus",
-      "nazev": "West Coast Pilsner",
+      "pivovar": "",
+      "nazev": "Elani Warm Up",
       "stupen": "",
-      "alkohol": "4.4",
-      "styl": "",
+      "alkohol": "6",
+      "styl": "NEIPA / Citra · Elani",
       "dalsi": "",
-      "raw": "West Coast Pilsner | 4.4% ABV | 🇱🇻Ārpus"
+      "raw": "Elani Warm Up | NEIPA / Citra · Elani | 6% ABV"
     },
     {
       "pozice": 7,
@@ -76,12 +76,12 @@
     {
       "pozice": 8,
       "pivovar": "Einsiedler",
-      "nazev": "Helles",
+      "nazev": "Schwarzbier",
       "stupen": "",
-      "alkohol": "5.2",
-      "styl": "Ležák - Lager",
+      "alkohol": "5",
+      "styl": "Schwarzbier",
       "dalsi": "",
-      "raw": "Helles | Ležák - Lager | 5.2% ABV | Einsiedler"
+      "raw": "Schwarzbier | Schwarzbier | 5% ABV | Einsiedler"
     },
     {
       "pozice": 9,

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-08 12:18",
+  "zmeneno": "2026-11-12 17:49",
   "metoda": "nadpis",
   "piva": [
     {
@@ -36,22 +36,22 @@
     {
       "pozice": 4,
       "pivovar": "Clock",
-      "nazev": "Fresh hop",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "Fresh Hop",
-      "dalsi": "",
-      "raw": "12° Fresh hop (Fresh Hop)"
-    },
-    {
-      "pozice": 5,
-      "pivovar": "Clock",
       "nazev": "WestCoastIPA",
       "stupen": "14",
       "alkohol": "",
       "styl": "No Idols!",
       "dalsi": "",
       "raw": "14° WestCoastIPA (No Idols!)"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Clock",
+      "nazev": "Double IPA",
+      "stupen": "19",
+      "alkohol": "",
+      "styl": "No Idols!",
+      "dalsi": "",
+      "raw": "19° Double IPA (No Idols!)"
     },
     {
       "pozice": 6,

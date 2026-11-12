@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-09 20:01",
+  "zmeneno": "2026-11-12 17:49",
   "metoda": "selektor",
   "piva": [
     {
@@ -136,12 +136,12 @@
     {
       "pozice": 14,
       "pivovar": "Čestmír",
-      "nazev": "NZ NEIPA – KORU (Riwaka / Nelson Sauvin / Motueka)",
+      "nazev": "Session NEIPA (Superdelic - Mosaic - Galaxy)",
       "stupen": "",
-      "alkohol": "4.5",
+      "alkohol": "5",
       "styl": "IPA - New England / Hazy",
       "dalsi": "",
-      "raw": "NZ NEIPA – KORU (Riwaka / Nelson Sauvin / Motueka) | IPA - New England / Hazy | 4.5% ABV | Pivovar Čestmír / CZ"
+      "raw": "Session NEIPA (Superdelic - Mosaic - Galaxy) | IPA - New England / Hazy | 5% ABV | Pivovar Čestmír / CZ"
     },
     {
       "pozice": 15,
