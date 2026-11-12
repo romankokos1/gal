@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-11 23:03",
+  "zmeneno": "2026-11-12 15:47",
   "metoda": "selektor",
   "piva": [
     {
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Hubertus Kácov",
-      "nazev": "Medium",
-      "stupen": "11",
-      "alkohol": "4.4",
-      "styl": "světlý ležák",
+      "pivovar": "",
+      "nazev": "U Lenocha",
+      "stupen": "10",
+      "alkohol": "3.8",
+      "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "Hubertus Kácov - Medium, světlý ležák, 11° sv. nef., 4, 4% vol. Alc, 31 IBU"
+      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3, 8% vol. Alc, 34 IBU"
     }
   ]
 }
