@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-13 22:31",
+  "zmeneno": "2026-11-13 23:08",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "CHROUST",
-      "nazev": "Hoptopia",
-      "stupen": "12",
-      "alkohol": "5.3",
-      "styl": "APA (citra, mosaic)",
+      "pivovar": "ČESTMÍR",
+      "nazev": "Ratamahatta",
+      "stupen": "16",
+      "alkohol": "7",
+      "styl": "APA IPA (ekuanot, simcoe, citra, mosaic, magnum)",
       "dalsi": "",
-      "raw": "CHROUST – Hoptopia 12°/5,3% APA (citra, mosaic)"
+      "raw": "ČESTMÍR – Ratamahatta 16°/7% APA IPA (ekuanot, simcoe, citra, mosaic, magnum)"
     },
     {
       "pozice": 4,
