@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-11 10:49",
+  "zmeneno": "2026-11-13 12:05",
   "metoda": "rucne",
   "piva": [
     {
@@ -25,23 +25,23 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Clock",
-      "nazev": "Glee",
+      "pivovar": "Opatovický",
+      "nazev": "poklad Bella Citra",
       "stupen": "11",
       "alkohol": "",
-      "styl": "bezlepkový Ale",
+      "styl": "APA",
       "dalsi": "",
-      "raw": "Clock Glee bezlepkový Ale 11"
+      "raw": "Opatovický poklad Bella Citra APA 11"
     },
     {
       "pozice": 4,
-      "pivovar": "Falkon",
-      "nazev": "Halcón Mexican Lager s limetkovou šťávou a solí",
+      "pivovar": "SQBRU",
+      "nazev": "Orange Yourself",
       "stupen": "11",
       "alkohol": "",
-      "styl": "",
+      "styl": "Sour Ale",
       "dalsi": "",
-      "raw": "Falkon Halcón Mexican Lager s limetkovou šťávou a solí 11"
+      "raw": "SQBRU Orange Yourself Sour Ale 11"
     },
     {
       "pozice": 5,
@@ -55,46 +55,36 @@
     },
     {
       "pozice": 6,
-      "pivovar": "MadCat",
-      "nazev": "Pure Haze 076",
+      "pivovar": "Zichovec",
+      "nazev": "Kartel Hoplager Rakau Modern Hoplager",
       "stupen": "12",
       "alkohol": "",
-      "styl": "NEIPA",
+      "styl": "",
       "dalsi": "",
-      "raw": "MadCat Pure Haze 076 NEIPA 12"
+      "raw": "Zichovec Kartel Hoplager Rakau Modern Hoplager 12"
     },
     {
       "pozice": 7,
-      "pivovar": "Matuška",
-      "nazev": "Apollo Galaxy",
-      "stupen": "13",
+      "pivovar": "Barn",
+      "nazev": "Svěží Eris # 2",
+      "stupen": "12",
       "alkohol": "",
-      "styl": "Pale Ale",
+      "styl": "Session Hazy IPA",
       "dalsi": "",
-      "raw": "Matuška Apollo Galaxy Pale Ale 13"
+      "raw": "Barn Svěží Eris # 2 Session Hazy IPA 12"
     },
     {
       "pozice": 8,
-      "pivovar": "Barn",
-      "nazev": "Xxtravaganza Northern Extra",
-      "stupen": "13",
+      "pivovar": "Clock",
+      "nazev": "Antonio",
+      "stupen": "14",
       "alkohol": "",
-      "styl": "Pale Ale",
+      "styl": "bezlepková Brut IPA",
       "dalsi": "",
-      "raw": "Barn Xxtravaganza Northern Extra Pale Ale 13"
+      "raw": "Clock Antonio bezlepková Brut IPA 14"
     },
     {
       "pozice": 9,
-      "pivovar": "Nozib",
-      "nazev": "Goseteria # 11",
-      "stupen": "14",
-      "alkohol": "",
-      "styl": "Gose",
-      "dalsi": "",
-      "raw": "Nozib Goseteria # 11 Gose 14"
-    },
-    {
-      "pozice": 10,
       "pivovar": "Matuška",
       "nazev": "Martin",
       "stupen": "16",
@@ -104,7 +94,7 @@
       "raw": "Matuška Sv.Martin Lager 16"
     },
     {
-      "pozice": 11,
+      "pozice": 10,
       "pivovar": "SQBRU",
       "nazev": "Coco Loco Oatmeal",
       "stupen": "16",
@@ -112,6 +102,16 @@
       "styl": "IPA",
       "dalsi": "",
       "raw": "SQBRU Coco Loco Oatmeal IPA 16"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "Zichovec",
+      "nazev": "Ježíšek",
+      "stupen": "18",
+      "alkohol": "",
+      "styl": "Double IPA",
+      "dalsi": "",
+      "raw": "Zichovec Ježíšek Double IPA 18"
     },
     {
       "pozice": 12,
