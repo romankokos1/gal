@@ -149,10 +149,12 @@ PODNIKY = [
     # pivovar první slovo, číslo na konci = stupně.
     {"id": "napalme", "nazev": "Bar Na Palmě", "url": "https://www.facebook.com/barnapalme/",
      "rucne": "napalme_rucne.txt", "format": "pivovar nazev stupne",
-     # RSS z RSS.app (příspěvky z jejich Facebooku). Kanál drží jen pár posledních příspěvků,
-     # proto se každý stažený příspěvek ukládá do data/napalme/rss_archiv.jsonl a už se neztratí.
-     # Den, který je v archivu RSS, má přednost před ručním zápisem.
-     "rss": "https://rss.app/feeds/dREP3sp0Y4heJotl.xml"},
+     # Příspěvky z jejich Facebooku přes Apify (actor bez přihlášení, platí se za příspěvek,
+     # vejde se do bezplatného kreditu). Token je v secrets jako APIFY_TOKEN; bez něj se nestahuje.
+     # Volá se jen jednou za pár hodin a jen dokud dnešní příspěvek chybí – viz fb_posts().
+     # Každý stažený příspěvek se ukládá do data/napalme/rss_archiv.jsonl (název z dob RSS.app)
+     # a už se neztratí. Den, který je v archivu, má přednost před ručním zápisem.
+     "facebook": "alfalfa~facebook-posts-scraper"},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
@@ -1075,31 +1077,48 @@ def rebuild() -> int:
 
 # ---------- jeden podnik ----------
 
-def rss_posts(url: str) -> list[dict]:
-    """Příspěvky „Dnes na čepu“ z RSS kanálu → [{cas, radky}]. Prázdný kanál = prázdný seznam."""
-    import xml.etree.ElementTree as ET
-    from email.utils import parsedate_to_datetime
-    r = _get(url, BROWSER_HEADERS)
+def tap_lines(txt: str) -> list[str]:
+    """Nabídka z textu příspěvku = řádky začínající pomlčkou („- Únětice 10“). Úvod se mění
+    („Dnes na čepu:“, „Dnes jsme pro Vás připravili…“), proto se podle něj nepozná.
+    Jiný příspěvek (akce, zavřeno…) → prázdný seznam."""
+    lines = [re.sub(r"^\s*[-–•*]\s*", "", l).strip() for l in txt.splitlines()
+             if re.match(r"^\s*[-–•*]\s*\S", l)]
+    lines = [l for l in lines if len(re.findall(r"[^\W\d_]", l)) >= 2]
+    if len(lines) < 4 or sum(bool(re.search(r"\d", l)) for l in lines) < len(lines) / 2:
+        return []
+    return lines
+
+
+FB_OD, FB_ROZESTUP_H = 10, 3      # Na Palmě píše kolem 10–11 h; pak nejvýš jednou za 3 h, dokud příspěvek nepřijde
+
+
+def fb_posts(p: dict, st: "Store", have_days: set) -> list[dict] | None:
+    """Poslední příspěvky z Facebooku přes Apify → [{cas, radky}]. None = tentokrát se nestahovalo."""
+    token = os.environ.get("APIFY_TOKEN")
+    now = datetime.now(TZ)
+    if not token or now.strftime("%Y-%m-%d") in have_days or now.hour < FB_OD:
+        return None
+    pokus_f = st.dir / "fb_pokus.txt"
+    try:
+        last = datetime.strptime(pokus_f.read_text().strip(), "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
+        if (now - last).total_seconds() < FB_ROZESTUP_H * 3600:
+            return None
+    except (OSError, ValueError):
+        pass
+    pokus_f.write_text(now.strftime("%Y-%m-%d %H:%M") + "\n")
+    r = requests.post(f"https://api.apify.com/v2/acts/{p['facebook']}/run-sync-get-dataset-items",
+                      params={"token": token}, timeout=300,
+                      json={"startUrls": [{"url": p["url"]}], "resultsLimit": 3})
     r.raise_for_status()
-    root = ET.fromstring(r.content)
     out = []
-    for it in root.iter("item"):
-        raw = it.findtext("description") or it.findtext("title") or ""
-        txt = re.sub(r"<br\s*/?>|</p>|</div>", "\n", raw, flags=re.I)
-        txt = BeautifulSoup(txt, "html.parser").get_text()
-        # nabídka = řádky začínající pomlčkou („- Únětice 10“); úvod se mění
-        # („Dnes na čepu:“, „Dnes jsme pro Vás připravili…“), proto se podle něj nepozná
-        lines = [re.sub(r"^\s*[-–•*]\s*", "", l).strip() for l in txt.splitlines()
-                 if re.match(r"^\s*[-–•*]\s*\S", l)]
-        lines = [l for l in lines if len(re.findall(r"[^\W\d_]", l)) >= 2]
-        if len(lines) < 4 or sum(bool(re.search(r"\d", l)) for l in lines) < len(lines) / 2:
-            continue                                   # jiný příspěvek (akce, zavřeno…)
+    for it in r.json():
+        lines = tap_lines(it.get("text") or "")
         try:
-            when = parsedate_to_datetime(it.findtext("pubDate") or "").astimezone(TZ)
-        except (TypeError, ValueError):
+            when = datetime.fromisoformat((it.get("time") or "").replace("Z", "+00:00")).astimezone(TZ)
+        except ValueError:
             continue
         if lines:
-            out.append({"cas": when.strftime("%Y-%m-%d %H:%M"), "radky": lines, "metoda": "rss"})
+            out.append({"cas": when.strftime("%Y-%m-%d %H:%M"), "radky": lines, "metoda": "facebook"})
     return out
 
 
@@ -1127,7 +1146,7 @@ def run_manual(p: dict) -> str:
         elif cur is not None:
             cur["radky"].append(re.sub(r"^[-–•*]\s*", "", t))
     entries = [e for e in entries if e["radky"]]
-    if p.get("rss"):
+    if p.get("facebook"):
         arch_f = st.dir / "rss_archiv.jsonl"
         arch = {}
         if arch_f.exists():
@@ -1137,12 +1156,13 @@ def run_manual(p: dict) -> str:
                 except ValueError:
                     pass
         try:
-            feed = rss_posts(p["rss"])
-            for e in feed:
+            feed = fb_posts(p, st, {k[:10] for k in arch})
+            for e in feed or []:
                 arch[e["cas"]] = e                     # opravený příspěvek přepíše starší verzi
-            print(f"{p['nazev']}: RSS {len(feed)} příspěvků s nabídkou, v archivu {len(arch)}")
-        except Exception as e:                     # výpadek RSS nevadí, zůstane archiv a ruční zápis
-            warn(f"{p['nazev']}: RSS se nepodařilo načíst: {e}")
+            if feed is not None:
+                print(f"{p['nazev']}: Facebook {len(feed)} příspěvků s nabídkou, v archivu {len(arch)}")
+        except Exception as e:                     # výpadek nevadí, zůstane archiv a ruční zápis
+            warn(f"{p['nazev']}: Facebook se nepodařilo načíst: {e}")
         arch_list = sorted(arch.values(), key=lambda e: e["cas"])
         write_if_changed(arch_f, "".join(json.dumps(e, ensure_ascii=False) + "\n" for e in arch_list))
         days = {e["cas"][:10] for e in arch_list}
