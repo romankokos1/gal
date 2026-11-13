@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-13 13:15",
+  "zmeneno": "2026-11-13 16:25",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Zlatá Kráva",
-      "nazev": "Plnotučná",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "světlý ležák",
+      "pivovar": "Bakalář",
+      "nazev": "Svatováclavský speciál",
+      "stupen": "13",
+      "alkohol": "5.2",
+      "styl": "světlý ležák se zeleným chmelem",
       "dalsi": "",
-      "raw": "Zlatá Kráva - Plnotučná, světlý ležák, 12° sv. nef., 5% vol. Alc, 40 IBU"
+      "raw": "Bakalář - Svatováclavský speciál, světlý ležák se zeleným chmelem, 13° sv., 5, 2% vol. Alc, 34 IBU"
     },
     {
       "pozice": 3,
@@ -56,12 +56,12 @@
     {
       "pozice": 6,
       "pivovar": "Zichovec",
-      "nazev": "Mosaic",
+      "nazev": "Robin",
       "stupen": "12",
       "alkohol": "5.1",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Zichovec - Mosaic, American Pale Ale, 12° sv. nef., 5, 1% vol. Alc, 40 IBU"
+      "raw": "Zichovec - Robin, American Pale Ale, 12° sv. nef., 5, 1% vol. Alc, 40 IBU"
     },
     {
       "pozice": 7,
