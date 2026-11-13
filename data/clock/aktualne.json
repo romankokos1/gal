@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-12 17:49",
+  "zmeneno": "2026-11-13 20:29",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
       "pivovar": "Clock",
-      "nazev": "Hektor",
-      "stupen": "10",
+      "nazev": "Anežka",
+      "stupen": "11",
       "alkohol": "",
-      "styl": "Výčepní",
+      "styl": "Pilsner",
       "dalsi": "",
-      "raw": "10° Hektor (Výčepní)"
+      "raw": "11° Anežka (Pilsner)"
     },
     {
       "pozice": 2,
