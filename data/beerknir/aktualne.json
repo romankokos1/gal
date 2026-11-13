@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerknir.cz/",
-  "zmeneno": "2026-11-10 19:46",
+  "zmeneno": "2026-11-13 13:15",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Zichovec",
-      "nazev": "Kometa",
-      "stupen": "20",
-      "alkohol": "9",
-      "styl": "Double NEIPA",
+      "pivovar": "The Barn",
+      "nazev": "Dizzy Lizzy",
+      "stupen": "17",
+      "alkohol": "6",
+      "styl": "Sour Milkshake IPA s kokosem",
       "dalsi": "",
-      "raw": "Kometa 20° | Double NEIPA | 20° | 9% | Pivovar Zichovec"
+      "raw": "Dizzy Lizzy 17° | Sour Milkshake IPA s kokosem | 17° | 6% | Pivovar The Barn"
     },
     {
       "pozice": 6,
