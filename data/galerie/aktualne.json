@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-13 16:57",
+  "zmeneno": "2026-11-13 19:29",
   "metoda": "nadpis",
   "piva": [
     {
@@ -26,12 +26,12 @@
     {
       "pozice": 3,
       "pivovar": "CHROUST",
-      "nazev": "Mandarinkotopia",
+      "nazev": "Hoptopia",
       "stupen": "12",
       "alkohol": "5.3",
-      "styl": "Hoptopia infuzovaná bio mandarinkami (cotra, mosaic)",
+      "styl": "APA (citra, mosaic)",
       "dalsi": "",
-      "raw": "CHROUST – Mandarinkotopia 12°/5,3% Hoptopia infuzovaná bio mandarinkami (cotra, mosaic)"
+      "raw": "CHROUST – Hoptopia 12°/5,3% APA (citra, mosaic)"
     },
     {
       "pozice": 4,
