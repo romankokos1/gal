@@ -170,7 +170,7 @@ HIST_COLS = ["klic", "pivovar", "nazev", "stupen", "alkohol", "styl",
              "raw", "narazeno", "docepovano", "dalsi", "odhad"]
 # Zvýšit při každé změně parsování/párování → historie se při příštím běhu
 # sama přepočítá z logu (log se nikdy nemění).
-PARSER_VERSION = 14
+PARSER_VERSION = 15
 FAILS_BEFORE_ERROR = 3            # tolik neúspěšných stažení po sobě se toleruje
 DEFAULT_INTERVAL_MIN = 120        # podniky bez interval_min se stahují po 2 h
 STALE_DAYS = 10                   # tak dlouho beze změny = podezřelé
@@ -529,24 +529,39 @@ MULTI_BREWERIES = [
     "Svatý Norbert", "U Fleků", "Kamenice nad Lipou", "Starý Plzenec", "Velký Rybník",
     "Fehér Nyúl", "Pioneer Beer", "Vinohradský pivovar", "The Kernel", "Krkonošský medvěd",
     "Hradecký klenot", "Malt Worm", "Wild Creatures", "Vault City", "Garage Beer", "Tátův sad",
+    "Opatovický poklad", "Lomnické pivo", "Orca Brau & Monnik",
 ]
 _MULTI_N = sorted((norm(b) for b in MULTI_BREWERIES if " " in b), key=len, reverse=True)
 KMP_NOISE = re.compile(r"\b(?:sv|svě?tl|tm|tmav|polotm|pol|nef|nefiltr|filtr)\.", re.I)
 
 
-def split_brewery(text: str) -> tuple[str, str]:
-    """„Zlatá kráva Farm APA 11°“ → („Zlatá kráva“, „Farm APA 11°“); jinak první slovo.
-    „Pivovar X …“ bere i další slovo."""
+def _split_one(text: str) -> tuple[str, str]:
     words = text.split()
     if not words:
         return "", ""
     n = norm(text)
     for b in _MULTI_N:
         if n == b or n.startswith(b + " "):
-            k = len(b.split())
+            k = next(i for i in range(1, len(words) + 1) if norm(" ".join(words[:i])) == b)
             return " ".join(words[:k]), " ".join(words[k:])
     k = 2 if norm(words[0]) in ("pivovar", "minipivovar") and len(words) > 2 else 1
     return " ".join(words[:k]), " ".join(words[k:])
+
+
+def split_brewery(text: str) -> tuple[str, str]:
+    """„Zlatá kráva Farm APA 11°“ → („Zlatá kráva“, „Farm APA 11°“); jinak první slovo.
+    „Pivovar X …“ bere i další slovo. Kolaborace přes lomítko („Barn/ Čestmír Angel of Haze“,
+    „SQBRU/ Černý potoka/ Sibeeria No signal…“) → („Barn/Čestmír“, „Angel of Haze“)."""
+    parts, rest = [], re.sub(r"\s*/\s*", " / ", text.strip())
+    while len(parts) < 5:
+        b, tail = _split_one(rest)
+        parts.append(b)
+        if not tail.startswith("/ "):
+            break
+        rest = tail[2:]
+    if len(parts) == 1:
+        return _split_one(text)
+    return "/".join(parts), tail
 
 
 FLAGS = re.compile("[\U0001F1E6-\U0001F1FF\U0001F3F4\U000E0020-\U000E007F]")
@@ -558,7 +573,8 @@ STYLE_WORDS = set(norm("""ipa neipa dipa tipa ipl apa ale pale amber session sou
     double triple milkshake pastry pilsner pils lager ležák lezak světlý svetly tmavý polotmavý výčepní
     bezlepkový bezlepková bezlepkove australská american americká hazy juicy czech fresh hop dunkel stout
     porter weizen wheat saison brut red black rye nealko alkohol free fruit fruited smoothie bock
-    india new england zealand belgian tripel dubbel quad barleywine radler berliner weisse""").split())
+    india new england zealand belgian tripel dubbel quad barleywine radler berliner weisse
+    california common""").split())
 
 
 def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: str = "") -> dict:
