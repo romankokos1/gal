@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-13 15:03",
+  "zmeneno": "2026-11-13 18:27",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "",
-      "nazev": "Elani Warm Up",
+      "pivovar": "SOMAXĀrpus",
+      "nazev": "Riwaka Eggers X Nelson",
       "stupen": "",
-      "alkohol": "6",
-      "styl": "NEIPA / Citra · Elani",
+      "alkohol": "6.5",
+      "styl": "NEIPA",
       "dalsi": "",
-      "raw": "Elani Warm Up | NEIPA / Citra · Elani | 6% ABV"
+      "raw": "Riwaka Eggers X Nelson | NEIPA | 6.5% ABV | SOMA🇪🇸X🇱🇻Ārpus"
     },
     {
       "pozice": 7,

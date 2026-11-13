@@ -1,10 +1,20 @@
 {
   "zdroj": "https://zlycasy.eu/section:horni-bar",
-  "zmeneno": "2026-11-13 13:15",
+  "zmeneno": "2026-11-13 18:27",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
+      "pivovar": "Bad Flash",
+      "nazev": "Bikini Ale",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Bikini Ale 11°"
+    },
+    {
+      "pozice": 2,
       "pivovar": "Bad Flash",
       "nazev": "Mango-Chilli Sour Ale",
       "stupen": "12",
@@ -14,7 +24,7 @@
       "raw": "Bad Flash Mango-Chilli 12° Sour Ale | 0,3l"
     },
     {
-      "pozice": 2,
+      "pozice": 3,
       "pivovar": "Budvar",
       "nazev": "33 světlý ležák",
       "stupen": "11",
@@ -24,7 +34,7 @@
       "raw": "Budvar 33 světlý ležák 11°"
     },
     {
-      "pozice": 3,
+      "pozice": 4,
       "pivovar": "Bad Flash",
       "nazev": "Torpid Mind Imperial Stout",
       "stupen": "24",
@@ -34,7 +44,7 @@
       "raw": "Bad Flash Torpid Mind 24° Imperial Stout | 0,3l"
     },
     {
-      "pozice": 4,
+      "pozice": 5,
       "pivovar": "Schneider",
       "nazev": "Weisse Original",
       "stupen": "13",
@@ -44,7 +54,7 @@
       "raw": "Schneider Weisse Original 13°"
     },
     {
-      "pozice": 5,
+      "pozice": 6,
       "pivovar": "Bad Flash",
       "nazev": "Blackcurrant & Pink Pepper Sour Ale",
       "stupen": "12",
@@ -54,7 +64,17 @@
       "raw": "Bad Flash Blackcurrant & Pink Pepper 12° Sour Ale | 0,3l"
     },
     {
-      "pozice": 6,
+      "pozice": 7,
+      "pivovar": "Clock",
+      "nazev": "APA",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Clock APA 12° | 0,4l"
+    },
+    {
+      "pozice": 8,
       "pivovar": "Bad Flash",
       "nazev": "Summer Sadness Pale Ale",
       "stupen": "10",
@@ -64,7 +84,7 @@
       "raw": "Bad Flash Summer Sadness 10° Pale Ale"
     },
     {
-      "pozice": 7,
+      "pozice": 9,
       "pivovar": "Permon",
       "nazev": "Sherpa IPA",
       "stupen": "16",
@@ -74,7 +94,7 @@
       "raw": "Permon Sherpa 16° IPA | 0,4l"
     },
     {
-      "pozice": 8,
+      "pozice": 10,
       "pivovar": "Chotěboř",
       "nazev": "Svatomartinský speciál",
       "stupen": "13",

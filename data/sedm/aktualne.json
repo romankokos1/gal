@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-12 21:52",
+  "zmeneno": "2026-11-13 18:27",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Jungberg",
-      "nazev": "300 Kurven",
-      "stupen": "10",
-      "alkohol": "4.1",
+      "pivovar": "Preisler",
+      "nazev": "trvdá práce",
+      "stupen": "12",
+      "alkohol": "5.1",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Jungberg - 300 Kurven | 10% | Lager, ABV 4,1%"
+      "raw": "Preisler - trvdá práce | 12% | Lager, ABV 5,1%"
     },
     {
       "pozice": 2,
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Černý Potoka",
-      "nazev": "Cold Fish",
-      "stupen": "11",
-      "alkohol": "4.6",
-      "styl": "Session Hazy IPA",
+      "pivovar": "vik x dno pytle",
+      "nazev": "weizen",
+      "stupen": "12",
+      "alkohol": "5.2",
+      "styl": "weizen",
       "dalsi": "",
-      "raw": "Černý Potoka - Cold Fish | 11% | Session Hazy IPA, ABV 4,6%"
+      "raw": "vik x dno pytle - weizen | 12% | weizen, ABV 5,2%"
     },
     {
       "pozice": 4,
