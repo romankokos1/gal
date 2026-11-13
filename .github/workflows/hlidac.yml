@@ -39,6 +39,7 @@ jobs:
         id: scrape
         env:
           RUCNE: ${{ github.event_name == 'workflow_dispatch' && github.actor != 'github-actions[bot]' }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
         run: |
           git config user.name  "hlidac-bot"
           git config user.email "hlidac-bot@users.noreply.github.com"
