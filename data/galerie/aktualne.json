@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-13 21:31",
+  "zmeneno": "2026-11-13 22:01",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "CHROUST",
-      "nazev": "Chilli-višňový kompot",
+      "pivovar": "RAVEN",
+      "nazev": "Kyselý zelí",
       "stupen": "11",
-      "alkohol": "5.35",
-      "styl": "Ostružinový Kompot infuzovaný Chillivišňovkou",
+      "alkohol": "5",
+      "styl": "Vegetable Gose",
       "dalsi": "",
-      "raw": "CHROUST – Chilli-višňový kompot 11°/5,35% Ostružinový Kompot infuzovaný Chillivišňovkou"
+      "raw": "RAVEN – Kyselý zelí 11°/5% Vegetable Gose"
     }
   ]
 }
