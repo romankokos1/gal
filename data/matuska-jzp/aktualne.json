@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-11-12 23:54",
+  "zmeneno": "2026-11-14 00:38",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "Matuška",
-      "nazev": "WET HOP",
-      "stupen": "13",
-      "alkohol": "5.5",
-      "styl": "WET HOP LAGER",
+      "nazev": "ŽEMLOVKA",
+      "stupen": "17",
+      "alkohol": "6.3",
+      "styl": "PASTRY SOUR ALE",
       "dalsi": "",
-      "raw": "WET HOP | WET HOP LAGER | 13° | 5,5 %"
+      "raw": "ŽEMLOVKA | PASTRY SOUR ALE | 17° | 6,3 %"
     },
     {
       "pozice": 3,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Matuška",
-      "nazev": "ŽEMLOVKA",
-      "stupen": "17",
-      "alkohol": "6.3",
-      "styl": "PASTRY SOUR ALE",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "6",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "ŽEMLOVKA | PASTRY SOUR ALE | 17° | 6,3 %"
+      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "6",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "U FLEKŮ",
+      "nazev": "TMAVÝ LEŽÁK",
+      "stupen": "13",
+      "alkohol": "4.6",
+      "styl": "SCHWARZ",
       "dalsi": "",
-      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
+      "raw": "U FLEKŮ: TMAVÝ LEŽÁK | SCHWARZ | 13° | 4,6 %"
     },
     {
       "pozice": 7,
