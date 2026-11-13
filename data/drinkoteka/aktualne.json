@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-13 18:27",
+  "zmeneno": "2026-11-13 22:31",
   "metoda": "selektor",
   "piva": [
     {
@@ -85,16 +85,6 @@
     },
     {
       "pozice": 9,
-      "pivovar": "",
-      "nazev": "Electric Banana",
-      "stupen": "",
-      "alkohol": "11",
-      "styl": "Imperial Stout",
-      "dalsi": "",
-      "raw": "Electric Banana | Imperial Stout | 11% ABV"
-    },
-    {
-      "pozice": 10,
       "pivovar": "Wild Creatures",
       "nazev": "Femme Fanale 2024",
       "stupen": "",

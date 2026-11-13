@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-13 22:01",
+  "zmeneno": "2026-11-13 22:31",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "CHROUST + MOON LARK (PL)",
-      "nazev": "Baltic Express",
-      "stupen": "11",
-      "alkohol": "4.8",
-      "styl": "session Hazy IPA (idaho 7, galaxy, citra)",
+      "pivovar": "CHROUST",
+      "nazev": "Hoptopia",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "APA (citra, mosaic)",
       "dalsi": "",
-      "raw": "CHROUST + MOON LARK (PL) – Baltic Express 11°/4,8% session Hazy IPA (idaho 7, galaxy, citra)"
+      "raw": "CHROUST – Hoptopia 12°/5,3% APA (citra, mosaic)"
     },
     {
       "pozice": 3,
