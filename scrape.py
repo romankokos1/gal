@@ -208,7 +208,13 @@ BLOCKED = {401, 403, 406, 429, 503}
 
 def _get(url: str, headers: dict) -> requests.Response:
     r = requests.get(url, timeout=30, headers=headers)
-    r.encoding = r.apparent_encoding or "utf-8"
+    # platné UTF-8 je skoro jistě UTF-8; odhad podle obsahu (apparent_encoding) se u krátkých
+    # českých stránek občas splete (KMPČB 13.11. jako MacRoman → „ńĆEPUJEME“)
+    try:
+        r.content.decode("utf-8")
+        r.encoding = "utf-8"
+    except UnicodeDecodeError:
+        r.encoding = r.apparent_encoding or "utf-8"
     return r
 
 
