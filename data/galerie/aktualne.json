@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-13 13:47",
+  "zmeneno": "2026-11-13 14:17",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,23 +25,33 @@
     },
     {
       "pozice": 3,
-      "pivovar": "ČESTMÍR",
-      "nazev": "Ratamahatta",
-      "stupen": "16",
-      "alkohol": "7",
-      "styl": "IPA (ekuanot, simcoe, citra, mosaic, magnum)",
+      "pivovar": "CHROUST",
+      "nazev": "Mandarinkotopia",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "Hoptopia infuzovaná bio mandarinkami (cotra, mosaic)",
       "dalsi": "",
-      "raw": "ČESTMÍR – Ratamahatta 16°/7%/49IBU IPA (ekuanot, simcoe, citra, mosaic, magnum)"
+      "raw": "CHROUST – Mandarinkotopia 12°/5,3% Hoptopia infuzovaná bio mandarinkami (cotra, mosaic)"
     },
     {
       "pozice": 4,
-      "pivovar": "RAVEN",
-      "nazev": "Kyselý Zelí",
+      "pivovar": "CHROUST",
+      "nazev": "Narozeninový Dort Kubík edition",
       "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "Vegetable Gose with zelí, sůl a koriandr",
+      "alkohol": "5.3",
+      "styl": "Narozeninový Mrkvový Dort vyšperkovaný bio mrkví a bio pomerančem",
       "dalsi": "",
-      "raw": "RAVEN – Kyselý Zelí 12°/4,8% Vegetable Gose with zelí, sůl a koriandr"
+      "raw": "CHROUST – Narozeninový Dort Kubík edition 12°/5,3% Narozeninový Mrkvový Dort vyšperkovaný bio mrkví a bio pomerančem"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "CHROUST",
+      "nazev": "Chilli-višňový kompot",
+      "stupen": "11",
+      "alkohol": "5.35",
+      "styl": "Ostružinový Kompot infuzovaný Chillivišňovkou",
+      "dalsi": "",
+      "raw": "CHROUST – Chilli-višňový kompot 11°/5,35% Ostružinový Kompot infuzovaný Chillivišňovkou"
     }
   ]
 }
