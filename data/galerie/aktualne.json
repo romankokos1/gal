@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-14 15:04",
+  "zmeneno": "2026-11-14 16:35",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "HOSTOMICE",
-      "nazev": "Fabián",
-      "stupen": "12",
-      "alkohol": "4.5",
+      "pivovar": "MAZÁK",
+      "nazev": "Extra Hořká",
+      "stupen": "11",
+      "alkohol": "4.4",
       "styl": "světlý ležák",
-      "dalsi": "MAZÁK – Extra Hořká 11°/4,4%/44IBU světlý ležák",
-      "raw": "HOSTOMICE – Fabián 12°/4,5% světlý ležák //NEXT// MAZÁK – Extra Hořká 11°/4,4%/44IBU světlý ležák"
+      "dalsi": "",
+      "raw": "MAZÁK – Extra Hořká 11°/4,4%/44IBU světlý ležák"
     },
     {
       "pozice": 2,

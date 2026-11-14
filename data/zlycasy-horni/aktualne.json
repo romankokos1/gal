@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:horni-bar",
-  "zmeneno": "2026-11-13 18:27",
+  "zmeneno": "2026-11-14 16:35",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,16 +45,6 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Schneider",
-      "nazev": "Weisse Original",
-      "stupen": "13",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Schneider Weisse Original 13°"
-    },
-    {
-      "pozice": 6,
       "pivovar": "Bad Flash",
       "nazev": "Blackcurrant & Pink Pepper Sour Ale",
       "stupen": "12",
@@ -62,6 +52,16 @@
       "styl": "",
       "dalsi": "",
       "raw": "Bad Flash Blackcurrant & Pink Pepper 12° Sour Ale | 0,3l"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Schneider",
+      "nazev": "Blonde",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Schneider Blonde 12°"
     },
     {
       "pozice": 7,
