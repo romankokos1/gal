@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-13 23:08",
+  "zmeneno": "2026-11-14 15:04",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,8 +10,8 @@
       "stupen": "12",
       "alkohol": "4.5",
       "styl": "světlý ležák",
-      "dalsi": "",
-      "raw": "HOSTOMICE – Fabián 12°/4,5% světlý ležák"
+      "dalsi": "MAZÁK – Extra Hořká 11°/4,4%/44IBU světlý ležák",
+      "raw": "HOSTOMICE – Fabián 12°/4,5% světlý ležák //NEXT// MAZÁK – Extra Hořká 11°/4,4%/44IBU světlý ležák"
     },
     {
       "pozice": 2,
@@ -20,28 +20,28 @@
       "stupen": "12",
       "alkohol": "5.3",
       "styl": "APA (citra, mosaic)",
-      "dalsi": "",
-      "raw": "CHROUST – Hoptopia 12°/5,3% APA (citra, mosaic)"
+      "dalsi": "ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)",
+      "raw": "CHROUST – Hoptopia 12°/5,3% APA (citra, mosaic) //NEXT// ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)"
     },
     {
       "pozice": 3,
-      "pivovar": "ČESTMÍR",
-      "nazev": "Ratamahatta",
-      "stupen": "16",
-      "alkohol": "7",
-      "styl": "APA IPA (ekuanot, simcoe, citra, mosaic, magnum)",
+      "pivovar": "FALKON",
+      "nazev": "Jéžišmarjá",
+      "stupen": "14",
+      "alkohol": "6",
+      "styl": "NEIPA (rhapzody, krush, riwaka, juno)",
       "dalsi": "",
-      "raw": "ČESTMÍR – Ratamahatta 16°/7% APA IPA (ekuanot, simcoe, citra, mosaic, magnum)"
+      "raw": "FALKON – Jéžišmarjá 14°/6% NEIPA (rhapzody, krush, riwaka, juno)"
     },
     {
       "pozice": 4,
-      "pivovar": "CHROUST",
-      "nazev": "Narozeninový Dort Kubík edition",
+      "pivovar": "",
+      "nazev": "SIBEERIA + CHROUST",
       "stupen": "20",
-      "alkohol": "5.3",
-      "styl": "Narozeninový Mrkvový Dort vyšperkovaný bio mrkví a bio pomerančem",
+      "alkohol": "8",
+      "styl": "Triple Milkshake IPA s laktózou (nectaron, citra, mosaic)",
       "dalsi": "",
-      "raw": "CHROUST – Narozeninový Dort Kubík edition 20°/5,3% Narozeninový Mrkvový Dort vyšperkovaný bio mrkví a bio pomerančem"
+      "raw": "SIBEERIA + CHROUST 20°/8% Triple Milkshake IPA s laktózou (nectaron, citra, mosaic)"
     },
     {
       "pozice": 5,
@@ -50,8 +50,8 @@
       "stupen": "11",
       "alkohol": "5",
       "styl": "Vegetable Gose",
-      "dalsi": "",
-      "raw": "RAVEN – Kyselý zelí 11°/5% Vegetable Gose"
+      "dalsi": "NOZIB – Goseteria #11 14°/5,9% Gose s višní, černým rybízem, citronem, estragonem, koriandrem a solí",
+      "raw": "RAVEN – Kyselý zelí 11°/5% Vegetable Gose //NEXT// NOZIB – Goseteria #11 14°/5,9% Gose s višní, černým rybízem, citronem, estragonem, koriandrem a solí"
     }
   ]
 }

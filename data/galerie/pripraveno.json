@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "pivovar": "MAZÁK",
+    "nazev": "Extra Hořká",
+    "stupen": "11",
+    "alkohol": "4.4",
+    "styl": "světlý ležák",
+    "raw": "MAZÁK – Extra Hořká 11°/4,4%/44IBU světlý ležák"
+  },
+  {
+    "pivovar": "ZICHOVEC",
+    "nazev": "Robin Na Grepu",
+    "stupen": "12",
+    "alkohol": "5.1",
+    "styl": "APA s grepem (simcoe, citra)",
+    "raw": "ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)"
+  },
+  {
+    "pivovar": "NOZIB",
+    "nazev": "Goseteria #11",
+    "stupen": "14",
+    "alkohol": "5.9",
+    "styl": "Gose s višní, černým rybízem, citronem, estragonem, koriandrem a solí",
+    "raw": "NOZIB – Goseteria #11 14°/5,9% Gose s višní, černým rybízem, citronem, estragonem, koriandrem a solí"
+  }
+]
