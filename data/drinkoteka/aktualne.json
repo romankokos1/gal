@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-13 22:31",
+  "zmeneno": "2026-11-14 12:30",
   "metoda": "selektor",
   "piva": [
     {
@@ -76,15 +76,25 @@
     {
       "pozice": 8,
       "pivovar": "Einsiedler",
-      "nazev": "Schwarzbier",
+      "nazev": "Schwarz bier",
       "stupen": "",
       "alkohol": "5",
       "styl": "Schwarzbier",
       "dalsi": "",
-      "raw": "Schwarzbier | Schwarzbier | 5% ABV | Einsiedler"
+      "raw": "Schwarz bier | Schwarzbier | 5% ABV | Einsiedler"
     },
     {
       "pozice": 9,
+      "pivovar": "Ārpus",
+      "nazev": "Mango X Pineapple Gose",
+      "stupen": "",
+      "alkohol": "4.5",
+      "styl": "Fruited Gose",
+      "dalsi": "",
+      "raw": "Mango X Pineapple Gose | Fruited Gose | 4.5% ABV | 🇱🇻Ārpus"
+    },
+    {
+      "pozice": 10,
       "pivovar": "Wild Creatures",
       "nazev": "Femme Fanale 2024",
       "stupen": "",

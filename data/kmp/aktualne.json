@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-13 16:25",
+  "zmeneno": "2026-11-14 12:30",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,23 +15,23 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Bakalář",
-      "nazev": "Svatováclavský speciál",
-      "stupen": "13",
-      "alkohol": "5.2",
-      "styl": "světlý ležák se zeleným chmelem",
+      "pivovar": "Stadioner",
+      "nazev": "Profesor",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Bakalář - Svatováclavský speciál, světlý ležák se zeleným chmelem, 13° sv., 5, 2% vol. Alc, 34 IBU"
+      "raw": "Stadioner - Profesor, světlý ležák, 12° sv. nef., 5, 1% vol. Alc"
     },
     {
       "pozice": 3,
       "pivovar": "Permon",
-      "nazev": "Okurkovej Sour",
+      "nazev": "Joe in the Garden Tropical Friends",
       "stupen": "12",
       "alkohol": "5.8",
-      "styl": "kyseláč s chutí kyselých okurek",
+      "styl": "kyseláč s mangem, marakujou a guavou",
       "dalsi": "",
-      "raw": "Permon - Okurkovej Sour, kyseláč s chutí kyselých okurek, 12° sv. nef., 5, 8% vol. Alc"
+      "raw": "Permon - Joe in the Garden Tropical Friends, kyseláč s mangem, marakujou a guavou, 12° sv. nef., 5, 8% vol. Alc, 6 IBU"
     },
     {
       "pozice": 4,

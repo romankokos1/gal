@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-12 13:45",
+  "zmeneno": "2026-11-14 12:30",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "CLOCK",
-      "nazev": "ANTONIO",
-      "stupen": "17",
-      "alkohol": "7.8",
-      "styl": "LOW-GLUTEN FRUIT BRUT IPA",
+      "nazev": "TWIST",
+      "stupen": "14",
+      "alkohol": "5.6",
+      "styl": "RED IPA",
       "dalsi": "",
-      "raw": "CLOCK ANTONIO 17° | LOW-GLUTEN FRUIT BRUT IPA | 7.8%"
+      "raw": "CLOCK TWIST 14° | RED IPA | 5.6%"
     },
     {
       "pozice": 3,
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "PERMON",
-      "nazev": "SHERPA",
+      "pivovar": "RAVEN",
+      "nazev": "SUN BLAST IPA",
       "stupen": "16",
-      "alkohol": "7.5",
-      "styl": "IPA",
+      "alkohol": "6.2",
+      "styl": "WEST COAST IPA",
       "dalsi": "",
-      "raw": "PERMON SHERPA 16° | IPA | 7.5%"
+      "raw": "RAVEN SUN BLAST IPA 16° | WEST COAST IPA | 6.2%"
     },
     {
       "pozice": 9,

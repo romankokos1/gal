@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-11-14 00:38",
+  "zmeneno": "2026-11-14 12:30",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,26 +35,6 @@
     },
     {
       "pozice": 4,
-      "pivovar": "HABAKUK",
-      "nazev": "India Pale Lager",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "(Comet, Mosaic)",
-      "dalsi": "",
-      "raw": "HABAKUK India Pale Lager 11° sv.nef. (Comet, Mosaic)"
-    },
-    {
-      "pozice": 5,
-      "pivovar": "HABAKUK",
-      "nazev": "Řezaná",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "HABAKUK Řezaná 11° polotm.nef."
-    },
-    {
-      "pozice": 6,
       "pivovar": "Kynšperkský",
       "nazev": "ZAJÍC",
       "stupen": "12",
@@ -64,7 +44,7 @@
       "raw": "Kynšperkský ZAJÍC 12° sv.nef."
     },
     {
-      "pozice": 7,
+      "pozice": 5,
       "pivovar": "Popelín",
       "nazev": "JANTAR",
       "stupen": "12",
@@ -74,7 +54,7 @@
       "raw": "Popelín JANTAR 12° sv.nef."
     },
     {
-      "pozice": 8,
+      "pozice": 6,
       "pivovar": "Maisel's",
       "nazev": "Weisse",
       "stupen": "12",
@@ -84,17 +64,7 @@
       "raw": "Maisel's Weisse 12° pšeničné"
     },
     {
-      "pozice": 9,
-      "pivovar": "Č.Potoka",
-      "nazev": "Cold Fish",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Hazy Session IPA",
-      "dalsi": "",
-      "raw": "Č.Potoka Cold Fish 11° Hazy Session IPA"
-    },
-    {
-      "pozice": 10,
+      "pozice": 7,
       "pivovar": "Clock",
       "nazev": "APA",
       "stupen": "12",
@@ -104,7 +74,7 @@
       "raw": "Clock APA 12° American Pale ALE"
     },
     {
-      "pozice": 11,
+      "pozice": 8,
       "pivovar": "Kocour",
       "nazev": "SAMURAI",
       "stupen": "14",
@@ -114,17 +84,7 @@
       "raw": "Kocour SAMURAI 14° IPA"
     },
     {
-      "pozice": 12,
-      "pivovar": "Matuška",
-      "nazev": "RAPTOR",
-      "stupen": "15",
-      "alkohol": "",
-      "styl": "IPA",
-      "dalsi": "",
-      "raw": "Matuška RAPTOR 15° IPA"
-    },
-    {
-      "pozice": 13,
+      "pozice": 9,
       "pivovar": "Zichovec",
       "nazev": "Nectar Of Happiness",
       "stupen": "17",
@@ -134,7 +94,7 @@
       "raw": "Zichovec Nectar Of Happiness 17° NEIPA"
     },
     {
-      "pozice": 14,
+      "pozice": 10,
       "pivovar": "Zichovec",
       "nazev": "SOUR",
       "stupen": "12",
@@ -144,7 +104,7 @@
       "raw": "Zichovec SOUR 12° Passion Fruit"
     },
     {
-      "pozice": 15,
+      "pozice": 11,
       "pivovar": "Brewnicorn",
       "nazev": "PUMPKIN Space Latte",
       "stupen": "13",
@@ -154,7 +114,7 @@
       "raw": "Brewnicorn PUMPKIN Space Latte 13° Sour ALE"
     },
     {
-      "pozice": 16,
+      "pozice": 12,
       "pivovar": "FunkyFluid",
       "nazev": "Gelato: White Fluff",
       "stupen": "",
@@ -164,7 +124,7 @@
       "raw": "FunkyFluid Gelato: White Fluff 5,5%Alc. Pastry SOUR (PL)"
     },
     {
-      "pozice": 17,
+      "pozice": 13,
       "pivovar": "Kasteel",
       "nazev": "Rouge",
       "stupen": "",
@@ -174,7 +134,7 @@
       "raw": "Kasteel Rouge 8%Alc. (BELGIE - VIŠEŇ)"
     },
     {
-      "pozice": 18,
+      "pozice": 14,
       "pivovar": "Čestmír",
       "nazev": "Astro Creep",
       "stupen": "14",
@@ -184,7 +144,7 @@
       "raw": "Čestmír Astro Creep 14° STOUT"
     },
     {
-      "pozice": 19,
+      "pozice": 15,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",
