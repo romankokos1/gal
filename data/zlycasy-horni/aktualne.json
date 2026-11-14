@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:horni-bar",
-  "zmeneno": "2026-11-14 22:41",
+  "zmeneno": "2026-11-15 00:43",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,16 +75,6 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Permon",
-      "nazev": "Sherpa IPA",
-      "stupen": "16",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Permon Sherpa 16° IPA | 0,4l"
-    },
-    {
-      "pozice": 9,
       "pivovar": "Chotěboř",
       "nazev": "Svatomartinský speciál",
       "stupen": "13",
