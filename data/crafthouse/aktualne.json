@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-14 20:39",
+  "zmeneno": "2026-11-14 22:41",
   "metoda": "selektor",
   "piva": [
     {
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Sibeeria",
-      "nazev": "Radiant Noise",
+      "pivovar": "The Barn Beer Co.",
+      "nazev": "Ummagumma",
       "stupen": "",
-      "alkohol": "6.8",
+      "alkohol": "7",
       "styl": "IPA - New England / Hazy",
       "dalsi": "",
-      "raw": "Radiant Noise | IPA - New England / Hazy | 6.8% ABV | Sibeeria Brewery / CZ"
+      "raw": "Ummagumma | IPA - New England / Hazy | 7% ABV | The Barn Beer Co. / CZ"
     },
     {
       "pozice": 11,

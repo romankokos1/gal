@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-14 12:30",
+  "zmeneno": "2026-11-14 22:41",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Zichovec",
-      "nazev": "Robin",
-      "stupen": "12",
-      "alkohol": "5.1",
+      "pivovar": "Permon",
+      "nazev": "Summer Ale",
+      "stupen": "10",
+      "alkohol": "4.1",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Zichovec - Robin, American Pale Ale, 12° sv. nef., 5, 1% vol. Alc, 40 IBU"
+      "raw": "Permon - Summer Ale, American Pale Ale, 10° sv. nef., 4, 1% vol. Alc, 40 IBU"
     },
     {
       "pozice": 7,

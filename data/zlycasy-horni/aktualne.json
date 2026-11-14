@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:horni-bar",
-  "zmeneno": "2026-11-14 16:35",
+  "zmeneno": "2026-11-14 22:41",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,16 +75,6 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Bad Flash",
-      "nazev": "Summer Sadness Pale Ale",
-      "stupen": "10",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Bad Flash Summer Sadness 10° Pale Ale"
-    },
-    {
-      "pozice": 9,
       "pivovar": "Permon",
       "nazev": "Sherpa IPA",
       "stupen": "16",
@@ -94,7 +84,7 @@
       "raw": "Permon Sherpa 16° IPA | 0,4l"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Chotěboř",
       "nazev": "Svatomartinský speciál",
       "stupen": "13",
