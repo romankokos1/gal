@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-13 12:05",
+  "zmeneno": "2026-11-14 12:42",
   "metoda": "rucne",
   "piva": [
     {
@@ -75,6 +75,16 @@
     },
     {
       "pozice": 8,
+      "pivovar": "Falkon",
+      "nazev": "Krasohled",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Falkon Krasohled světlý ležák 12"
+    },
+    {
+      "pozice": 9,
       "pivovar": "Clock",
       "nazev": "Antonio",
       "stupen": "14",
@@ -82,16 +92,6 @@
       "styl": "bezlepková Brut IPA",
       "dalsi": "",
       "raw": "Clock Antonio bezlepková Brut IPA 14"
-    },
-    {
-      "pozice": 9,
-      "pivovar": "Matuška",
-      "nazev": "Martin",
-      "stupen": "16",
-      "alkohol": "",
-      "styl": "Lager",
-      "dalsi": "",
-      "raw": "Matuška Sv.Martin Lager 16"
     },
     {
       "pozice": 10,
