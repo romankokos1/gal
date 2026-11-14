@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-14 16:35",
+  "zmeneno": "2026-11-14 20:09",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "CHROUST",
-      "nazev": "Hoptopia",
+      "pivovar": "ZICHOVEC",
+      "nazev": "Robin Na Grepu",
       "stupen": "12",
-      "alkohol": "5.3",
-      "styl": "APA (citra, mosaic)",
-      "dalsi": "ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)",
-      "raw": "CHROUST – Hoptopia 12°/5,3% APA (citra, mosaic) //NEXT// ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)"
+      "alkohol": "5.1",
+      "styl": "APA s grepem (simcoe, citra)",
+      "dalsi": "",
+      "raw": "ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)"
     },
     {
       "pozice": 3,
