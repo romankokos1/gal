@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-14 18:37",
+  "zmeneno": "2026-11-14 20:39",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Sibeeria",
-      "nazev": "One Festival",
-      "stupen": "",
-      "alkohol": "5.3",
-      "styl": "West Coast Pilsner - Lager",
+      "pivovar": "Čestmír",
+      "nazev": "Labský Světlý Ležák",
+      "stupen": "11",
+      "alkohol": "0",
+      "styl": "Pilsner - Czech / Bohemian",
       "dalsi": "",
-      "raw": "One Festival | West Coast Pilsner - Lager | 5.3% ABV | Sibeeria Brewery / CZ"
+      "raw": "Labský Světlý Ležák 11° | Pilsner - Czech / Bohemian | 0% ABV | Pivovar Čestmír / CZ"
     },
     {
       "pozice": 2,
@@ -205,13 +205,13 @@
     },
     {
       "pozice": 21,
-      "pivovar": "Kasteel Brouwerij Vanhonsebrouck",
-      "nazev": "Kasteel Rouge",
+      "pivovar": "Brouwerij De Brabandere",
+      "nazev": "Petrus Red",
       "stupen": "",
-      "alkohol": "8",
+      "alkohol": "8.5",
       "styl": "Fruit Beer",
       "dalsi": "",
-      "raw": "Kasteel Rouge | Fruit Beer | 8% ABV | Kasteel Brouwerij Vanhonsebrouck / BE"
+      "raw": "Petrus Red | Fruit Beer | 8.5% ABV | Brouwerij De Brabandere / BE"
     },
     {
       "pozice": 22,
