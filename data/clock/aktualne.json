@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-13 20:29",
+  "zmeneno": "2026-11-14 14:33",
   "metoda": "nadpis",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "Clock",
-      "nazev": "Hex",
+      "nazev": "Glee",
       "stupen": "11",
       "alkohol": "",
-      "styl": "Modern Pale Ale",
+      "styl": "Gluten Reduced PA",
       "dalsi": "",
-      "raw": "11° Hex (Modern Pale Ale)"
+      "raw": "11° Glee (Gluten Reduced PA)"
     },
     {
       "pozice": 3,
