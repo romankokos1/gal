@@ -237,7 +237,14 @@ def fetch_browser(url: str, p: dict | None = None) -> str:
         try:
             pg = b.new_page(locale="cs-CZ", user_agent=BROWSER_HEADERS["User-Agent"])
             wait = (p or {}).get("cekat_ms")   # menu vkládané skriptem (Untappd) se načítá déle
-            resp = pg.goto(url, wait_until="networkidle" if wait else "domcontentloaded", timeout=60000)
+            try:
+                resp = pg.goto(url, wait_until="networkidle" if wait else "domcontentloaded", timeout=60000)
+            except Exception:
+                # pomalý web (KMP Plzeň večer): stránka už často je, jen nedoběhly obrázky/skripty
+                html = pg.content()
+                if len(html) < 3000:
+                    raise
+                return html
             pg.wait_for_timeout(wait or 1500)
             if resp and resp.status >= 400:
                 raise RuntimeError(f"prohlížeč dostal HTTP {resp.status}")
@@ -250,7 +257,7 @@ def fetch(url: str, p: dict | None = None) -> str:
     """Stáhne stránku. Když web odmítne skript (401/403…), zkusí hlavičky prohlížeče
     a nakonec skutečný prohlížeč. Úspěšnou cestu si pamatuje v p['_cesta']."""
     p = p if p is not None else {}
-    last = None
+    last, errs = None, []
     order = ["vlastni", "hlavicky", "prohlizec"]
     if p.get("_cesta") in ("hlavicky", "prohlizec"):  # minule vlastní hlavička neprošla
         order = order[1:]
@@ -265,6 +272,7 @@ def fetch(url: str, p: dict | None = None) -> str:
                     r = _get(url, OWN_HEADERS if way == "vlastni" else BROWSER_HEADERS)
                     if r.status_code in BLOCKED:
                         last = f"HTTP {r.status_code} ({way})"
+                        errs.append(last)
                         break                         # opakovat stejně nemá smysl → další způsob
                     r.raise_for_status()
                     html = r.text
@@ -275,7 +283,8 @@ def fetch(url: str, p: dict | None = None) -> str:
                 break
             except Exception as e:                    # síť, timeout…
                 last = f"{e} ({way})"
-    raise RuntimeError(f"Stránku se nepodařilo stáhnout: {last}")
+                errs.append(f"{str(e).splitlines()[0][:120]} ({way})")
+    raise RuntimeError("Stránku se nepodařilo stáhnout: " + ("; ".join(errs) or str(last)))
 
 
 # ---------- vytažení řádků (víc strategií, od nejpřesnější) ----------
