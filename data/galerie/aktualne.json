@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-15 18:33",
+  "zmeneno": "2026-11-15 20:09",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "FALKON",
-      "nazev": "Jéžišmarjá",
-      "stupen": "14",
-      "alkohol": "6",
-      "styl": "NEIPA (rhapzody, krush, riwaka, juno)",
+      "pivovar": "CLOCK",
+      "nazev": "NO IDOLS",
+      "stupen": "19",
+      "alkohol": "7.6",
+      "styl": "DOUBLE IPA",
       "dalsi": "",
-      "raw": "FALKON – Jéžišmarjá 14°/6% NEIPA (rhapzody, krush, riwaka, juno)"
+      "raw": "CLOCK – NO IDOLS 19°/7,6% DOUBLE IPA"
     },
     {
       "pozice": 4,
