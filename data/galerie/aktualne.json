@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-14 20:09",
+  "zmeneno": "2026-11-15 12:58",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "RAVEN",
-      "nazev": "Kyselý zelí",
-      "stupen": "11",
-      "alkohol": "5",
-      "styl": "Vegetable Gose",
-      "dalsi": "NOZIB – Goseteria #11 14°/5,9% Gose s višní, černým rybízem, citronem, estragonem, koriandrem a solí",
-      "raw": "RAVEN – Kyselý zelí 11°/5% Vegetable Gose //NEXT// NOZIB – Goseteria #11 14°/5,9% Gose s višní, černým rybízem, citronem, estragonem, koriandrem a solí"
+      "pivovar": "NOZIB",
+      "nazev": "Goseteria #11",
+      "stupen": "14",
+      "alkohol": "5.9",
+      "styl": "Gose s višní, černým rybízem, citronem, estragonem, koriandrem a solí",
+      "dalsi": "",
+      "raw": "NOZIB – Goseteria #11 14°/5,9% Gose s višní, černým rybízem, citronem, estragonem, koriandrem a solí"
     }
   ]
 }

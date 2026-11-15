@@ -1,10 +1,10 @@
 {
   "zpusob_stazeni": "prohlizec",
-  "chyby_v_rade": 3,
+  "chyby_v_rade": 4,
   "posledni_kontrola": "2026-11-14",
   "metoda": "selektor",
   "pocet_piv": 10,
   "posledni_zmena": "2026-11-14 12:30",
-  "posledni_chyba": "2026-11-15 00:43",
+  "posledni_chyba": "2026-11-15 12:58",
   "chyba": "sekce „Dnes na čepu“ nenalezena"
 }

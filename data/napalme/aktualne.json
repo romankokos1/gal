@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-14 12:42",
+  "zmeneno": "2026-11-15 12:41",
   "metoda": "rucne",
   "piva": [
     {
@@ -25,16 +25,6 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Opatovický poklad",
-      "nazev": "Bella Citra",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "APA",
-      "dalsi": "",
-      "raw": "Opatovický poklad Bella Citra APA 11"
-    },
-    {
-      "pozice": 4,
       "pivovar": "SQBRU",
       "nazev": "Orange Yourself",
       "stupen": "11",
@@ -44,7 +34,37 @@
       "raw": "SQBRU Orange Yourself Sour Ale 11"
     },
     {
+      "pozice": 4,
+      "pivovar": "Falkon",
+      "nazev": "Krasohled",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Falkon Krasohled světlý ležák 12"
+    },
+    {
       "pozice": 5,
+      "pivovar": "Nozib",
+      "nazev": "Cali Twist",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "California Ale",
+      "dalsi": "",
+      "raw": "Nozib Cali Twist California Ale 12"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Blud",
+      "nazev": "Wet Hop AjPiEJ",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "Fresh Hop Session IPA",
+      "dalsi": "",
+      "raw": "Blud Wet Hop AjPiEJ Fresh Hop Session IPA 12"
+    },
+    {
+      "pozice": 7,
       "pivovar": "Napalmě",
       "nazev": "Cannabis",
       "stupen": "12",
@@ -54,34 +74,14 @@
       "raw": "Napalmě Cannabis Gose 12"
     },
     {
-      "pozice": 6,
-      "pivovar": "Zichovec",
-      "nazev": "Kartel Hoplager Rakau Modern Hoplager",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Zichovec Kartel Hoplager Rakau Modern Hoplager 12"
-    },
-    {
-      "pozice": 7,
-      "pivovar": "Barn",
-      "nazev": "Svěží Eris # 2",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "Session Hazy IPA",
-      "dalsi": "",
-      "raw": "Barn Svěží Eris # 2 Session Hazy IPA 12"
-    },
-    {
       "pozice": 8,
-      "pivovar": "Falkon",
-      "nazev": "Krasohled",
-      "stupen": "12",
+      "pivovar": "Zichovec",
+      "nazev": "Vánočka",
+      "stupen": "13",
       "alkohol": "",
-      "styl": "světlý ležák",
+      "styl": "Pale Lager",
       "dalsi": "",
-      "raw": "Falkon Krasohled světlý ležák 12"
+      "raw": "Zichovec Vánočka Pale Lager 13"
     },
     {
       "pozice": 9,
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "SQBRU",
-      "nazev": "Coco Loco Oatmeal",
-      "stupen": "16",
+      "pivovar": "Hope",
+      "nazev": "Evermore",
+      "stupen": "15",
       "alkohol": "",
       "styl": "IPA",
       "dalsi": "",
-      "raw": "SQBRU Coco Loco Oatmeal IPA 16"
+      "raw": "Hope Evermore IPA 15"
     },
     {
       "pozice": 11,
