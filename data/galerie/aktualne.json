@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-15 12:58",
+  "zmeneno": "2026-11-15 18:33",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "MAZÁK",
-      "nazev": "Extra Hořká",
-      "stupen": "11",
-      "alkohol": "4.4",
+      "pivovar": "PIVEČKA",
+      "nazev": "Rousínovská dvanáctka",
+      "stupen": "12",
+      "alkohol": "5",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "MAZÁK – Extra Hořká 11°/4,4%/44IBU světlý ležák"
+      "raw": "PIVEČKA – Rousínovská dvanáctka 12°/5% světlý ležák"
     },
     {
       "pozice": 2,
