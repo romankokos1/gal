@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
-  "zmeneno": "2026-11-11 23:03",
+  "zmeneno": "2026-11-16 21:56",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "Matuška",
-      "nazev": "SV. MARTIN",
-      "stupen": "16",
-      "alkohol": "6.3",
-      "styl": "LAGER",
+      "nazev": "ZLATÁ RAKETA",
+      "stupen": "17",
+      "alkohol": "7",
+      "styl": "INDIA PALE ALE",
       "dalsi": "",
-      "raw": "SV. MARTIN | LAGER | 16° | 6,3 %"
+      "raw": "ZLATÁ RAKETA | INDIA PALE ALE | 17° | 7 %"
     },
     {
       "pozice": 3,

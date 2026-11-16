@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-16 17:52",
+  "zmeneno": "2026-11-16 21:56",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Permon",
-      "nazev": "Joe in the Garden Tropical Friends",
+      "pivovar": "Matuška",
+      "nazev": "Bylinný Blaženec",
       "stupen": "12",
-      "alkohol": "5.8",
-      "styl": "kyseláč s mangem, marakujou a guavou",
+      "alkohol": "4.8",
+      "styl": "kyseláč s rozmarýnem, tymiánem, mátou a jalovcem",
       "dalsi": "",
-      "raw": "Permon - Joe in the Garden Tropical Friends, kyseláč s mangem, marakujou a guavou, 12° sv. nef., 5, 8% vol. Alc, 6 IBU"
+      "raw": "Matuška - Bylinný Blaženec, kyseláč s rozmarýnem, tymiánem, mátou a jalovcem, 12° sv. nef., 4, 8% vol. Alc, 15 IBU"
     },
     {
       "pozice": 4,
@@ -56,12 +56,12 @@
     {
       "pozice": 6,
       "pivovar": "Permon",
-      "nazev": "P.A.P.A.",
-      "stupen": "12",
-      "alkohol": "5",
+      "nazev": "Summer Ale",
+      "stupen": "10",
+      "alkohol": "4.1",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Permon - P.A.P.A., American Pale Ale, 12° sv. nef., 5% vol. Alc, 35 IBU"
+      "raw": "Permon - Summer Ale, American Pale Ale, 10° sv. nef., 4, 1% vol. Alc, 40 IBU"
     },
     {
       "pozice": 7,
