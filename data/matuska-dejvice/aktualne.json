@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
-  "zmeneno": "2026-11-16 21:56",
+  "zmeneno": "2026-11-16 23:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -36,12 +36,12 @@
     {
       "pozice": 4,
       "pivovar": "Matuška",
-      "nazev": "BYLINNÝ BLAŽENEC",
-      "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "BOTANICAL GOSE",
+      "nazev": "KYSELÁ MÁŇA",
+      "stupen": "10",
+      "alkohol": "4.4",
+      "styl": "RASPBERRY GOSE",
       "dalsi": "",
-      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
+      "raw": "KYSELÁ MÁŇA | RASPBERRY GOSE | 10° | 4,4 %"
     },
     {
       "pozice": 5,
@@ -56,12 +56,12 @@
     {
       "pozice": 6,
       "pivovar": "Matuška",
-      "nazev": "FLORIDA",
-      "stupen": "10",
-      "alkohol": "4.2",
-      "styl": "PALE ALE",
+      "nazev": "BYLINNÝ BLAŽENEC",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "BOTANICAL GOSE",
       "dalsi": "",
-      "raw": "FLORIDA | PALE ALE | 10° | 4,2 %"
+      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
     },
     {
       "pozice": 7,
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "7",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "Matuška",
+      "nazev": "FLORIDA",
+      "stupen": "10",
+      "alkohol": "4.2",
+      "styl": "PALE ALE",
       "dalsi": "",
-      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
+      "raw": "FLORIDA | PALE ALE | 10° | 4,2 %"
     },
     {
       "pozice": 9,
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Matuška",
-      "nazev": "AUTOMAT OG IV.",
-      "stupen": "14",
-      "alkohol": "",
-      "styl": "COLD IPA",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "7",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "AUTOMAT OG IV. | COLD IPA | 14° | 0.059"
+      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
     }
   ]
 }
