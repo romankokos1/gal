@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-16 21:26",
+  "zmeneno": "2026-11-16 22:28",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "",
-      "nazev": "PROKOPÁK Tatin",
-      "stupen": "12",
-      "alkohol": "5",
+      "pivovar": "MAZÁK",
+      "nazev": "Vaánoční ležák",
+      "stupen": "13",
+      "alkohol": "5.5",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "PROKOPÁK Tatin 12°/5% světlý ležák"
+      "raw": "MAZÁK – Vaánoční ležák 13°/5,5% světlý ležák"
     },
     {
       "pozice": 2,
