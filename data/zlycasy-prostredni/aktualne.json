@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:prostredni-bar",
-  "zmeneno": "2026-11-11 14:55",
+  "zmeneno": "2026-11-16 15:50",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Knoblach",
-      "nazev": "Hans im Glück",
-      "stupen": "9",
-      "alkohol": "3.1",
-      "styl": "Světlé výčepní pivo",
+      "pivovar": "Griess",
+      "nazev": "Keller Bier",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "Světlý nefiltrovaný ležák",
       "dalsi": "",
-      "raw": "Knoblach Hans im Glück 9° | Světlé výčepní pivo | 3.1%"
+      "raw": "Griess Keller Bier 12° | Světlý nefiltrovaný ležák"
     },
     {
       "pozice": 3,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Chotěboř",
-      "nazev": "Svatomartinský čtyřsladový speciál",
-      "stupen": "13",
+      "pivovar": "Kojetín",
+      "nazev": "Podpantoflák",
+      "stupen": "14",
       "alkohol": "",
-      "styl": "Jantarový speciál",
+      "styl": "India Pale Ale",
       "dalsi": "",
-      "raw": "Chotěboř Svatomartinský čtyřsladový speciál 13° | Jantarový speciál"
+      "raw": "Kojetín Podpantoflák 14° | India Pale Ale | 0,4l"
     },
     {
       "pozice": 7,
@@ -115,13 +115,13 @@
     },
     {
       "pozice": 12,
-      "pivovar": "Zvíkovská",
-      "nazev": "Zlatá Labuť",
-      "stupen": "11",
+      "pivovar": "Bad Flash",
+      "nazev": "Stupická světlý ležák",
+      "stupen": "12",
       "alkohol": "",
-      "styl": "Světlý ležák",
+      "styl": "",
       "dalsi": "",
-      "raw": "Zvíkovská Zlatá Labuť 11° | Světlý ležák"
+      "raw": "Bad Flash Stupická 12° světlý ležák"
     }
   ]
 }

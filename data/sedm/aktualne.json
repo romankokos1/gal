@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-13 18:27",
+  "zmeneno": "2026-11-16 15:50",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Preisler",
-      "nazev": "trvdá práce",
+      "pivovar": "Falkon",
+      "nazev": "Krasohled",
       "stupen": "12",
-      "alkohol": "5.1",
+      "alkohol": "4.9",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Preisler - trvdá práce | 12% | Lager, ABV 5,1%"
+      "raw": "Falkon - Krasohled | 12% | Lager, ABV 4,9%"
     },
     {
       "pozice": 2,
@@ -55,23 +55,23 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Mad Cat",
-      "nazev": "West Is The Best",
-      "stupen": "14",
-      "alkohol": "6.3",
-      "styl": "West Coast IPA",
+      "pivovar": "Hope",
+      "nazev": "Evermore",
+      "stupen": "15",
+      "alkohol": "6.1",
+      "styl": "IPA",
       "dalsi": "",
-      "raw": "Mad Cat - West Is The Best | 14% | West Coast IPA, ABV 6,3%"
+      "raw": "Hope - Evermore | 15% | IPA, ABV 6,1%"
     },
     {
       "pozice": 7,
-      "pivovar": "Thrills",
-      "nazev": "SamoSebou",
-      "stupen": "12",
+      "pivovar": "Hope",
+      "nazev": "Call Me Ceres",
+      "stupen": "13",
       "alkohol": "5.4",
-      "styl": "West Coast Pale Ale",
+      "styl": "Cold IPA",
       "dalsi": "",
-      "raw": "Thrills - SamoSebou | 12% | West Coast Pale Ale, ABV 5,4%"
+      "raw": "Hope - Call Me Ceres | 13% | Cold IPA, ABV 5,4%"
     },
     {
       "pozice": 8,

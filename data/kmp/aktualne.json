@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-14 22:41",
+  "zmeneno": "2026-11-16 15:50",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,26 +75,16 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Zhůřák",
-      "nazev": "Deus Ex Machina",
-      "stupen": "15",
-      "alkohol": "6.9",
-      "styl": "American IPA",
+      "pivovar": "Chroust",
+      "nazev": "Baltic Express",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "Session Hazy IPA",
       "dalsi": "",
-      "raw": "Zhůřák - Deus Ex Machina, American IPA, 15° sv. nef., 6, 9% vol. Alc, 67 IBU"
+      "raw": "Chroust - Baltic Express, Session Hazy IPA, 12° sv. nef., 4, 8% vol. Alc"
     },
     {
       "pozice": 9,
-      "pivovar": "",
-      "nazev": "Nachmelená Opice",
-      "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "Irish Dry Stout",
-      "dalsi": "",
-      "raw": "Nachmelená Opice, Irish Dry Stout, 12° tm. nef., 4, 8% vol. Alc, 38 IBU"
-    },
-    {
-      "pozice": 10,
       "pivovar": "",
       "nazev": "U Lenocha",
       "stupen": "10",
