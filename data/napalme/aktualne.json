@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-15 12:41",
+  "zmeneno": "2026-11-16 14:52",
   "metoda": "rucne",
   "piva": [
     {
@@ -25,16 +25,6 @@
     },
     {
       "pozice": 3,
-      "pivovar": "SQBRU",
-      "nazev": "Orange Yourself",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Sour Ale",
-      "dalsi": "",
-      "raw": "SQBRU Orange Yourself Sour Ale 11"
-    },
-    {
-      "pozice": 4,
       "pivovar": "Falkon",
       "nazev": "Krasohled",
       "stupen": "12",
@@ -42,6 +32,16 @@
       "styl": "světlý ležák",
       "dalsi": "",
       "raw": "Falkon Krasohled světlý ležák 12"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Napalmě",
+      "nazev": "Cannabis",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "gose",
+      "dalsi": "",
+      "raw": "Napalmě Cannabis gose 12"
     },
     {
       "pozice": 5,
@@ -65,6 +65,16 @@
     },
     {
       "pozice": 7,
+      "pivovar": "Vik",
+      "nazev": "Long Way Home",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "Sour Ale",
+      "dalsi": "",
+      "raw": "Vik Long Way Home Sour Ale 13"
+    },
+    {
+      "pozice": 8,
       "pivovar": "Napalmě",
       "nazev": "Cannabis",
       "stupen": "12",
@@ -74,7 +84,7 @@
       "raw": "Napalmě Cannabis Gose 12"
     },
     {
-      "pozice": 8,
+      "pozice": 9,
       "pivovar": "Zichovec",
       "nazev": "Vánočka",
       "stupen": "13",
@@ -84,7 +94,7 @@
       "raw": "Zichovec Vánočka Pale Lager 13"
     },
     {
-      "pozice": 9,
+      "pozice": 10,
       "pivovar": "Clock",
       "nazev": "Antonio",
       "stupen": "14",
@@ -94,7 +104,7 @@
       "raw": "Clock Antonio bezlepková Brut IPA 14"
     },
     {
-      "pozice": 10,
+      "pozice": 11,
       "pivovar": "Hope",
       "nazev": "Evermore",
       "stupen": "15",
@@ -104,7 +114,17 @@
       "raw": "Hope Evermore IPA 15"
     },
     {
-      "pozice": 11,
+      "pozice": 12,
+      "pivovar": "Mazák",
+      "nazev": "Vánoční",
+      "stupen": "16",
+      "alkohol": "",
+      "styl": "Stout",
+      "dalsi": "",
+      "raw": "Mazák Vánoční Stout 16"
+    },
+    {
+      "pozice": 13,
       "pivovar": "Zichovec",
       "nazev": "Ježíšek",
       "stupen": "18",
@@ -112,16 +132,6 @@
       "styl": "Double IPA",
       "dalsi": "",
       "raw": "Zichovec Ježíšek Double IPA 18"
-    },
-    {
-      "pozice": 12,
-      "pivovar": "Demon",
-      "nazev": "Vrosis Metalhead ( Bulharsko)",
-      "stupen": "35",
-      "alkohol": "",
-      "styl": "Imperial Pastry Stout",
-      "dalsi": "",
-      "raw": "Demon Vrosis Metalhead ( Bulharsko) Imperial Pastry Stout 35"
     }
   ]
 }
