@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-16 15:50",
+  "zmeneno": "2026-11-16 17:52",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Falkon",
-      "nazev": "Krasohled",
+      "pivovar": "Preisler",
+      "nazev": "Tvrdá Práce",
       "stupen": "12",
-      "alkohol": "4.9",
+      "alkohol": "5.2",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Falkon - Krasohled | 12% | Lager, ABV 4,9%"
+      "raw": "Preisler - Tvrdá Práce | 12% | Lager, ABV 5,2%"
     },
     {
       "pozice": 2,

@@ -1,37 +1,37 @@
 {
   "zdroj": "https://dcdyne.com/",
-  "zmeneno": "2026-11-11 18:58",
+  "zmeneno": "2026-11-16 17:52",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "CLOCK",
-      "nazev": "Leviticus ležák",
+      "pivovar": "Vinohradský piv.",
+      "nazev": "Liberator APA",
       "stupen": "",
       "alkohol": "",
       "styl": "Nealko",
       "dalsi": "",
-      "raw": "NEALKO -Leviticus ležák (CLOCK)"
+      "raw": "NEALKO -Liberator APA (Vinohradský piv.)"
     },
     {
       "pozice": 2,
-      "pivovar": "Obora",
-      "nazev": "Mango + Maracuja SOUR",
+      "pivovar": "Mad Cat",
+      "nazev": "Pina, coco, mango SOUR",
       "stupen": "",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Mango + Maracuja SOUR (Obora)"
+      "raw": "Pina, coco, mango SOUR (Mad Cat)"
     },
     {
       "pozice": 3,
       "pivovar": "VIK",
-      "nazev": "Porn hop edition NEIPA",
-      "stupen": "12",
+      "nazev": "Pšenice",
+      "stupen": "",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Porn hop edition NEIPA 12° (VIK)"
+      "raw": "Pšenice (VIK)"
     },
     {
       "pozice": 4,
@@ -45,16 +45,6 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Jungberg",
-      "nazev": "Lotus APA",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Lotus APA 12° (Jungberg)"
-    },
-    {
-      "pozice": 6,
       "pivovar": "Jungberg",
       "nazev": "300 Kurven",
       "stupen": "10",

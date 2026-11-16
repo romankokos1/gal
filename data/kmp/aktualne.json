@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-16 15:50",
+  "zmeneno": "2026-11-16 17:52",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Stadioner",
-      "nazev": "Profesor",
+      "pivovar": "Hubertus Kácov",
+      "nazev": "Zelený Chmel",
       "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "světlý ležák",
+      "alkohol": "4.7",
+      "styl": "světlý ležák s čerstvým chmelem",
       "dalsi": "",
-      "raw": "Stadioner - Profesor, světlý ležák, 12° sv. nef., 5, 1% vol. Alc"
+      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4, 7% vol. Alc"
     },
     {
       "pozice": 3,
@@ -56,12 +56,12 @@
     {
       "pozice": 6,
       "pivovar": "Permon",
-      "nazev": "Summer Ale",
-      "stupen": "10",
-      "alkohol": "4.1",
+      "nazev": "P.A.P.A.",
+      "stupen": "12",
+      "alkohol": "5",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Permon - Summer Ale, American Pale Ale, 10° sv. nef., 4, 1% vol. Alc, 40 IBU"
+      "raw": "Permon - P.A.P.A., American Pale Ale, 12° sv. nef., 5% vol. Alc, 35 IBU"
     },
     {
       "pozice": 7,

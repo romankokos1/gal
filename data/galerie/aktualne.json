@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-15 20:09",
+  "zmeneno": "2026-11-16 17:52",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "PIVEČKA",
-      "nazev": "Rousínovská dvanáctka",
+      "pivovar": "",
+      "nazev": "PROKOPÁK Tatin",
       "stupen": "12",
       "alkohol": "5",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "PIVEČKA – Rousínovská dvanáctka 12°/5% světlý ležák"
+      "raw": "PROKOPÁK Tatin 12°/5% světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Robin Na Grepu",
-      "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "APA s grepem (simcoe, citra)",
+      "pivovar": "VIK",
+      "nazev": "Fresh APA",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "APA",
       "dalsi": "",
-      "raw": "ZICHOVEC – Robin Na Grepu 12°/5,1% APA s grepem (simcoe, citra)"
+      "raw": "VIK – Fresh APA 11°/4,5% APA"
     },
     {
       "pozice": 3,
