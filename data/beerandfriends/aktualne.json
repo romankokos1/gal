@@ -1,50 +1,40 @@
 {
   "zdroj": "https://www.beerandfriends.eu/beer-and-friends",
-  "zmeneno": "2026-11-06 19:17",
+  "zmeneno": "2026-11-16 13:48",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Fracek",
-      "nazev": "FINA CERVA",
+      "pivovar": "Nozib",
+      "nazev": "GOSETERIA #11",
       "stupen": "",
-      "alkohol": "4.9",
-      "styl": "Catharina Sour",
+      "alkohol": "5.9",
+      "styl": "Fruited Gose",
       "dalsi": "",
-      "raw": "FINA CERVA – Catharina Sour (Fracek) · abv 4,9 %"
+      "raw": "GOSETERIA #11 – Fruited Gose (Nozib) · abv 5,9 %"
     },
     {
       "pozice": 2,
-      "pivovar": "Vik",
-      "nazev": "LOST IN STRATA",
+      "pivovar": "Čierny Kameň",
+      "nazev": "CHMELOKOCÚR",
       "stupen": "",
-      "alkohol": "6.3",
-      "styl": "American IPA",
+      "alkohol": "6.2",
+      "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "LOST IN STRATA – American IPA (Vik) · abv 6,3 %"
+      "raw": "CHMELOKOCÚR – West Coast IPA (Čierny Kameň) · abv 6,2 %"
     },
     {
       "pozice": 3,
-      "pivovar": "Nozib",
-      "nazev": "HAZY CITRA",
+      "pivovar": "Twinberg",
+      "nazev": "HOPPY WHALE 9",
       "stupen": "",
-      "alkohol": "5.5",
+      "alkohol": "5.6",
       "styl": "New England IPA",
       "dalsi": "",
-      "raw": "HAZY CITRA – New England IPA (Nozib) · abv 5,5 %"
+      "raw": "HOPPY WHALE 9 – New England IPA (Twinberg) · abv 5,6 %"
     },
     {
       "pozice": 4,
-      "pivovar": "Fracek",
-      "nazev": "NO COMPASS",
-      "stupen": "",
-      "alkohol": "5",
-      "styl": "New Zealand Pils",
-      "dalsi": "",
-      "raw": "NO COMPASS – New Zealand Pils (Fracek) · abv 5 %"
-    },
-    {
-      "pozice": 5,
       "pivovar": "Fracek",
       "nazev": "LAZY CHARBONNAY",
       "stupen": "",
@@ -54,7 +44,47 @@
       "raw": "LAZY CHARBONNAY – Grisette (Fracek) · abv 5 %"
     },
     {
+      "pozice": 5,
+      "pivovar": "The Barn",
+      "nazev": "ŠVARCÍK",
+      "stupen": "",
+      "alkohol": "4.5",
+      "styl": "Schwarzbier",
+      "dalsi": "",
+      "raw": "ŠVARCÍK – Schwarzbier (The Barn) · abv 4,5 %"
+    },
+    {
       "pozice": 6,
+      "pivovar": "Fracek",
+      "nazev": "FUSHKA",
+      "stupen": "",
+      "alkohol": "4",
+      "styl": "Light Lager",
+      "dalsi": "",
+      "raw": "FUSHKA – Light Lager (Fracek) · abv 4 %"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Václav",
+      "nazev": "VELKEJ HAZE",
+      "stupen": "",
+      "alkohol": "7",
+      "styl": "Double New England IPA",
+      "dalsi": "",
+      "raw": "VELKEJ HAZE – Double New England IPA (Václav) · abv 7 %"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Fracek",
+      "nazev": "NO COMPASS",
+      "stupen": "",
+      "alkohol": "5",
+      "styl": "New Zealand Pilsner",
+      "dalsi": "",
+      "raw": "NO COMPASS – New Zealand Pilsner (Fracek) · abv 5 %"
+    },
+    {
+      "pozice": 9,
       "pivovar": "Fracek",
       "nazev": "ORIGINÁL LEŽÁK 11",
       "stupen": "",
@@ -64,34 +94,34 @@
       "raw": "ORIGINÁL LEŽÁK 11 – Pilsner (Fracek) · abv 4,5 %"
     },
     {
-      "pozice": 7,
-      "pivovar": "Madcat",
-      "nazev": "WEST IS THE BEST",
+      "pozice": 10,
+      "pivovar": "Hope",
+      "nazev": "EVERMORE",
       "stupen": "",
-      "alkohol": "6.3",
-      "styl": "American IPA",
+      "alkohol": "6.1",
+      "styl": "IPA",
       "dalsi": "",
-      "raw": "WEST IS THE BEST – American IPA (Madcat) · abv 6,3 %"
+      "raw": "EVERMORE – IPA (Hope) · abv 6,1 %"
     },
     {
-      "pozice": 8,
+      "pozice": 11,
       "pivovar": "Fracek",
-      "nazev": "CANDY WAVE",
+      "nazev": "FINA CERVA",
       "stupen": "",
-      "alkohol": "5.7",
-      "styl": "Milkshake NE IPA",
+      "alkohol": "4.9",
+      "styl": "Catharina Sour",
       "dalsi": "",
-      "raw": "CANDY WAVE – Milkshake NE IPA (Fracek) · abv 5,7 %"
+      "raw": "FINA CERVA – Catharina Sour (Fracek) · abv 4,9 %"
     },
     {
-      "pozice": 9,
-      "pivovar": "The Barn",
-      "nazev": "ŠVARCÍK",
+      "pozice": 12,
+      "pivovar": "Fracek",
+      "nazev": "MYCOOLASS",
       "stupen": "",
-      "alkohol": "4.5",
-      "styl": "Schwarzbier",
+      "alkohol": "6.2",
+      "styl": "Bock",
       "dalsi": "",
-      "raw": "ŠVARCÍK – Schwarzbier (The Barn) · abv 4,5 %"
+      "raw": "MYCOOLASS – Bock (Fracek) · abv 6,2 %"
     }
   ]
 }

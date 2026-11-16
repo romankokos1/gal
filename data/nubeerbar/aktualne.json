@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-14 12:30",
+  "zmeneno": "2026-11-16 13:48",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,33 +45,33 @@
     },
     {
       "pozice": 5,
-      "pivovar": "AGENT",
-      "nazev": "CHICAGO IPL",
-      "stupen": "13",
-      "alkohol": "5.5",
-      "styl": "INDIA PALE LAGER",
+      "pivovar": "CVIKOV",
+      "nazev": "HVOZD",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "LAGER",
       "dalsi": "",
-      "raw": "AGENT CHICAGO IPL 13° | INDIA PALE LAGER | 5.5%"
+      "raw": "CVIKOV HVOZD 11° | LAGER | 4.5%"
     },
     {
       "pozice": 6,
-      "pivovar": "MAISEL’S",
-      "nazev": "WEISSE ORIGINAL",
-      "stupen": "12",
-      "alkohol": "5.2",
-      "styl": "HEFEWEIZEN",
+      "pivovar": "AGENT",
+      "nazev": "KOMPLIC",
+      "stupen": "13",
+      "alkohol": "5",
+      "styl": "AMERICAN WEIZEN",
       "dalsi": "",
-      "raw": "MAISEL’S WEISSE ORIGINAL 12° | HEFEWEIZEN | 5.2%"
+      "raw": "AGENT KOMPLIC 13° | AMERICAN WEIZEN | 5%"
     },
     {
       "pozice": 7,
-      "pivovar": "AGENT",
-      "nazev": "FENOMÉN APA",
-      "stupen": "12",
-      "alkohol": "5.7",
-      "styl": "APA",
+      "pivovar": "ČESTMÍR",
+      "nazev": "NEW ZELAND NEIPA",
+      "stupen": "14",
+      "alkohol": "4.5",
+      "styl": "NZ NEIPA",
       "dalsi": "",
-      "raw": "AGENT FENOMÉN APA 12° | APA | 5.7%"
+      "raw": "ČESTMÍR NEW ZELAND NEIPA 14° | NZ NEIPA | 4.5%"
     },
     {
       "pozice": 8,
