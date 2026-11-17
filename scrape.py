@@ -157,6 +157,13 @@ PODNIKY = [
      # Každý stažený příspěvek se ukládá do data/napalme/rss_archiv.jsonl (název z dob RSS.app)
      # a už se neztratí. Den, který je v archivu, má přednost před ručním zápisem.
      "facebook": "alfalfa~facebook-posts-scraper"},
+
+    # ---- Vinohradský pivovar – Korunní, přidáno 17. 11. 2026 ----
+    # Jen vlastní piva, „Káranská 9 SVĚTLÝ LEŽÁK 0,3 / 0,5 l 59 / 72 Kč“ (bez °). Kód stránky zatím
+    # neznámý: první běh skončí chybou a uloží stránku do data/vinohradsky/posledni_chyba.html,
+    # podle ní se doplní „polozky“ a „pole“.
+    {"id": "vinohradsky", "nazev": "Vinohradský pivovar", "url": "https://www.vinohradskypivovar.cz/cs/korunni/",
+     "pivovar": "Vinohradský", "jen_selektor": True},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
