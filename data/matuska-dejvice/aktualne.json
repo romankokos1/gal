@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
-  "zmeneno": "2026-11-16 23:58",
+  "zmeneno": "2026-11-17 14:21",
   "metoda": "selektor",
   "piva": [
     {
@@ -56,12 +56,12 @@
     {
       "pozice": 6,
       "pivovar": "Matuška",
-      "nazev": "BYLINNÝ BLAŽENEC",
-      "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "BOTANICAL GOSE",
+      "nazev": "FLORIDA",
+      "stupen": "10",
+      "alkohol": "4.2",
+      "styl": "PALE ALE",
       "dalsi": "",
-      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
+      "raw": "FLORIDA | PALE ALE | 10° | 4,2 %"
     },
     {
       "pozice": 7,
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Matuška",
-      "nazev": "FLORIDA",
-      "stupen": "10",
-      "alkohol": "4.2",
-      "styl": "PALE ALE",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "7",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "FLORIDA | PALE ALE | 10° | 4,2 %"
+      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
     },
     {
       "pozice": 9,
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "7",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "Matuška",
+      "nazev": "AUTOMAT OG IV.",
+      "stupen": "14",
+      "alkohol": "",
+      "styl": "COLD IPA",
       "dalsi": "",
-      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
+      "raw": "AUTOMAT OG IV. | COLD IPA | 14° | 0.059"
     }
   ]
 }

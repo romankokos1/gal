@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-17 10:09",
+  "zmeneno": "2026-11-17 14:21",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Ārpus",
-      "nazev": "Mango X Pineapple Gose",
+      "pivovar": "Vault City",
+      "nazev": "Dripping In Mango",
       "stupen": "",
-      "alkohol": "4.5",
-      "styl": "Fruited Gose",
+      "alkohol": "5.5",
+      "styl": "Milkshake Pale Ale",
       "dalsi": "",
-      "raw": "Mango X Pineapple Gose | Fruited Gose · 4.5% | Ārpus"
+      "raw": "Dripping In Mango | Milkshake Pale Ale · 5.5% | Vault City"
     },
     {
       "pozice": 9,
