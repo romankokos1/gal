@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-17 17:55",
+  "zmeneno": "2026-11-17 22:42",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,33 +15,33 @@
     },
     {
       "pozice": 2,
-      "pivovar": "VIK",
-      "nazev": "Fresh APA",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "APA",
+      "pivovar": "HOPPYDOG",
+      "nazev": "Sensei",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "Japanese Rice Lager",
       "dalsi": "",
-      "raw": "VIK – Fresh APA 11°/4,5% APA"
+      "raw": "HOPPYDOG – Sensei 12°/5,3% Japanese Rice Lager"
     },
     {
       "pozice": 3,
-      "pivovar": "CLOCK",
-      "nazev": "NO IDOLS",
-      "stupen": "19",
-      "alkohol": "7.6",
-      "styl": "DOUBLE IPA",
-      "dalsi": "BLUD – Bludfog Cip076 15°/6,5%/40IBU Single Hop NEIPA",
-      "raw": "CLOCK – NO IDOLS 19°/7,6% DOUBLE IPA ///NEXT// BLUD – Bludfog Cip076 15°/6,5%/40IBU Single Hop NEIPA"
+      "pivovar": "BLUD",
+      "nazev": "Bludfog Cip076",
+      "stupen": "15",
+      "alkohol": "6.5",
+      "styl": "Single Hop NEIPA",
+      "dalsi": "",
+      "raw": "BLUD – Bludfog Cip076 15°/6,5%/40IBU Single Hop NEIPA"
     },
     {
       "pozice": 4,
-      "pivovar": "",
-      "nazev": "SIBEERIA + CHROUST",
-      "stupen": "20",
-      "alkohol": "8",
-      "styl": "Triple Milkshake IPA s laktózou (nectaron, citra, mosaic)",
-      "dalsi": "SQBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,3% Stout s malinou a hořkou čokoládou",
-      "raw": "SIBEERIA + CHROUST 20°/8% Triple Milkshake IPA s laktózou (nectaron, citra, mosaic) ///NEXT// SQBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,3% Stout s malinou a hořkou čokoládou"
+      "pivovar": "SQBRU + GALERIE PIVA",
+      "nazev": "Tohle Se Muselo Stout",
+      "stupen": "13",
+      "alkohol": "6.3",
+      "styl": "Stout s malinou a hořkou čokoládou",
+      "dalsi": "",
+      "raw": "SQBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,3% Stout s malinou a hořkou čokoládou"
     },
     {
       "pozice": 5,
