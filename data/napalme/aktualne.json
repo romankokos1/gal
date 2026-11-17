@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-16 14:52",
+  "zmeneno": "2026-11-17 14:06",
   "metoda": "rucne",
   "piva": [
     {
@@ -25,16 +25,26 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Falkon",
-      "nazev": "Krasohled",
-      "stupen": "12",
+      "pivovar": "Chroust",
+      "nazev": "Štědrá",
+      "stupen": "11",
       "alkohol": "",
-      "styl": "světlý ležák",
+      "styl": "Session Hazy IPA",
       "dalsi": "",
-      "raw": "Falkon Krasohled světlý ležák 12"
+      "raw": "Chroust Štědrá Session Hazy IPA 11"
     },
     {
       "pozice": 4,
+      "pivovar": "SQBRU",
+      "nazev": "APA 810",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "SQBRU APA 810 11"
+    },
+    {
+      "pozice": 5,
       "pivovar": "Napalmě",
       "nazev": "Cannabis",
       "stupen": "12",
@@ -44,27 +54,7 @@
       "raw": "Napalmě Cannabis gose 12"
     },
     {
-      "pozice": 5,
-      "pivovar": "Nozib",
-      "nazev": "Cali Twist",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "California Ale",
-      "dalsi": "",
-      "raw": "Nozib Cali Twist California Ale 12"
-    },
-    {
       "pozice": 6,
-      "pivovar": "Blud",
-      "nazev": "Wet Hop AjPiEJ",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "Fresh Hop Session IPA",
-      "dalsi": "",
-      "raw": "Blud Wet Hop AjPiEJ Fresh Hop Session IPA 12"
-    },
-    {
-      "pozice": 7,
       "pivovar": "Vik",
       "nazev": "Long Way Home",
       "stupen": "13",
@@ -74,37 +64,17 @@
       "raw": "Vik Long Way Home Sour Ale 13"
     },
     {
-      "pozice": 8,
-      "pivovar": "Zichovec",
-      "nazev": "Vánočka",
-      "stupen": "13",
-      "alkohol": "",
-      "styl": "Pale Lager",
-      "dalsi": "",
-      "raw": "Zichovec Vánočka Pale Lager 13"
-    },
-    {
-      "pozice": 9,
-      "pivovar": "Clock",
-      "nazev": "Antonio",
+      "pozice": 7,
+      "pivovar": "Falkon",
+      "nazev": "Ježíšmarjá",
       "stupen": "14",
-      "alkohol": "",
-      "styl": "bezlepková Brut IPA",
-      "dalsi": "",
-      "raw": "Clock Antonio bezlepková Brut IPA 14"
-    },
-    {
-      "pozice": 10,
-      "pivovar": "Hope",
-      "nazev": "Evermore",
-      "stupen": "15",
       "alkohol": "",
       "styl": "IPA",
       "dalsi": "",
-      "raw": "Hope Evermore IPA 15"
+      "raw": "Falkon Ježíšmarjá IPA 14"
     },
     {
-      "pozice": 11,
+      "pozice": 8,
       "pivovar": "Mazák",
       "nazev": "Vánoční",
       "stupen": "16",
@@ -114,14 +84,14 @@
       "raw": "Mazák Vánoční Stout 16"
     },
     {
-      "pozice": 12,
+      "pozice": 9,
       "pivovar": "Zichovec",
-      "nazev": "Ježíšek",
-      "stupen": "18",
+      "nazev": "Kometa",
+      "stupen": "20",
       "alkohol": "",
-      "styl": "Double IPA",
+      "styl": "Double NEIPA",
       "dalsi": "",
-      "raw": "Zichovec Ježíšek Double IPA 18"
+      "raw": "Zichovec Kometa Double NEIPA 20"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-16 21:56",
+  "zmeneno": "2026-11-17 16:23",
   "metoda": "selektor",
   "piva": [
     {
@@ -56,22 +56,22 @@
     {
       "pozice": 6,
       "pivovar": "Permon",
-      "nazev": "Summer Ale",
-      "stupen": "10",
-      "alkohol": "4.1",
+      "nazev": "P.A.P.A.",
+      "stupen": "12",
+      "alkohol": "5",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Permon - Summer Ale, American Pale Ale, 10° sv. nef., 4, 1% vol. Alc, 40 IBU"
+      "raw": "Permon - P.A.P.A., American Pale Ale, 12° sv. nef., 5% vol. Alc, 35 IBU"
     },
     {
       "pozice": 7,
-      "pivovar": "The Barn / Falkon",
-      "nazev": "Ummagumma London Fog Edition",
-      "stupen": "17",
-      "alkohol": "7",
-      "styl": "TDH New England IPA",
+      "pivovar": "Matuška",
+      "nazev": "Apollo Galaxy",
+      "stupen": "13",
+      "alkohol": "5.5",
+      "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "The Barn / Falkon - Ummagumma London Fog Edition, TDH New England IPA, 17° sv. nef., 7% vol. Alc"
+      "raw": "Matuška - Apollo Galaxy, American Pale Ale, 13° sv. nef., 5, 5% vol. Alc, 45 IBU"
     },
     {
       "pozice": 8,
@@ -85,6 +85,16 @@
     },
     {
       "pozice": 9,
+      "pivovar": "Matuška",
+      "nazev": "Raptor",
+      "stupen": "15",
+      "alkohol": "6.3",
+      "styl": "India Pale Ale",
+      "dalsi": "",
+      "raw": "Matuška - Raptor, India Pale Ale, 15° sv. nef., 6, 3% vol. Alc, 60 IBU"
+    },
+    {
+      "pozice": 10,
       "pivovar": "",
       "nazev": "U Lenocha",
       "stupen": "10",
