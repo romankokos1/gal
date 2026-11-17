@@ -119,5 +119,10 @@
     "id": "vinohradsky",
     "nazev": "Vinohradský pivovar",
     "url": "https://www.vinohradskypivovar.cz/cs/korunni/"
+  },
+  {
+    "id": "beertime",
+    "nazev": "Beertime Pub",
+    "url": "https://www.beertime.pub/"
   }
 ]
