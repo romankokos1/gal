@@ -164,6 +164,12 @@ PODNIKY = [
     {"id": "vinohradsky", "nazev": "Vinohradský pivovar", "url": "https://www.vinohradskypivovar.cz/cs/korunni/",
      "polozky": '#beer .tab:has(> h3:-soup-contains("Na čepu")) dl > div', "pole": ["dt:not(.sub)", "dt.sub"],
      "format": "nazev stupne|styl", "pivovar": "Vinohradský", "jen_selektor": True},
+
+    # ---- Beertime Pub, přidáno 17. 11. 2026 ----
+    # Tabulka „BEERTIME Menu“: „KAMENICE Jedenáctka“ + „Světlý Ležák 11°, Alc. 4,7%, IBU 25“, ceny 0,3/0,5 l.
+    # Kód stránky zatím neznámý: první běh uloží stránku do data/beertime/posledni_chyba.html,
+    # podle ní se doplní „polozky“ a „pole“.
+    {"id": "beertime", "nazev": "Beertime Pub", "url": "https://www.beertime.pub/", "jen_selektor": True},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
