@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerspotprague.cz/beer-list/",
-  "zmeneno": "2026-11-13 13:15",
+  "zmeneno": "2026-11-17 12:19",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,22 +16,22 @@
     {
       "pozice": 2,
       "pivovar": "Volt",
-      "nazev": "Svatomartinský speciál",
-      "stupen": "11",
-      "alkohol": "4.3",
+      "nazev": "Zdroj 12",
+      "stupen": "",
+      "alkohol": "5",
       "styl": "Pilsner - Czech",
       "dalsi": "",
-      "raw": "Svatomartinský speciál 11° | Pilsner - Czech | 4.3% ABV | Pivovar Volt"
+      "raw": "Zdroj 12 | Pilsner - Czech | 5% ABV | Pivovar Volt"
     },
     {
       "pozice": 3,
-      "pivovar": "SQBRU [skjuːbru]",
-      "nazev": "Brezza Luppolata",
+      "pivovar": "Pivečka",
+      "nazev": "Rauchbier",
       "stupen": "",
-      "alkohol": "5.9",
-      "styl": "Lager - IPL (India Pale Lager)",
+      "alkohol": "5.5",
+      "styl": "Rauchbier",
       "dalsi": "",
-      "raw": "Brezza Luppolata | Lager - IPL (India Pale Lager) | 5.9% ABV | SQBRU [skjuːbru]"
+      "raw": "Rauchbier | Rauchbier | 5.5% ABV | Pivovar Pivečka"
     },
     {
       "pozice": 4,
@@ -65,36 +65,26 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Chroust",
-      "nazev": "Age of Krush Fresh Hop",
-      "stupen": "",
-      "alkohol": "5.8",
+      "pivovar": "Clock",
+      "nazev": "No Idols! West Coast IPA",
+      "stupen": "14",
+      "alkohol": "6.1",
       "styl": "IPA - American",
       "dalsi": "",
-      "raw": "Age of Krush Fresh Hop | IPA - American | 5.8% ABV | Chroust"
+      "raw": "No Idols! 14° West Coast IPA | IPA - American | 6.1% ABV | Pivovar Clock"
     },
     {
       "pozice": 8,
-      "pivovar": "Chroust",
-      "nazev": "Narozeninový Mrkvový Dort",
+      "pivovar": "Garp",
+      "nazev": "Garp 811 - Raspberry Sour",
       "stupen": "",
-      "alkohol": "6",
-      "styl": "Sour - Smoothie",
+      "alkohol": "4.2",
+      "styl": "Sour - Fruited",
       "dalsi": "",
-      "raw": "Narozeninový Mrkvový Dort | Sour - Smoothie | 6% ABV | Chroust"
+      "raw": "Garp 811 - Raspberry Sour | Sour - Fruited | 4.2% ABV | Pivovar Garp"
     },
     {
       "pozice": 9,
-      "pivovar": "Hope",
-      "nazev": "Call Me Ceres",
-      "stupen": "",
-      "alkohol": "5.4",
-      "styl": "IPA - Cold",
-      "dalsi": "",
-      "raw": "Call Me Ceres | IPA - Cold | 5.4% ABV | Hope Brewing Co."
-    },
-    {
-      "pozice": 10,
       "pivovar": "Kasteel Brouwerij Vanhonsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "",
