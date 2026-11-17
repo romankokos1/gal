@@ -150,7 +150,7 @@ PODNIKY = [
     # ze screenshotů do napalme_rucne.txt (blok = datum + piva). „Mazák Halloween Amber Ale 9“:
     # pivovar první slovo, číslo na konci = stupně.
     {"id": "napalme", "nazev": "Bar Na Palmě", "url": "https://www.facebook.com/barnapalme/",
-     "rucne": "napalme_rucne.txt", "format": "pivovar nazev stupne",
+     "rucne": "napalme_rucne.txt", "format": "pivovar nazev stupne", "bez_duplicit": True,
      # Příspěvky z jejich Facebooku přes Apify (actor bez přihlášení, platí se za příspěvek,
      # vejde se do bezplatného kreditu). Token je v secrets jako APIFY_TOKEN; bez něj se nestahuje.
      # Volá se jen jednou za pár hodin a jen dokud dnešní příspěvek chybí – viz fb_posts().
@@ -1092,7 +1092,11 @@ def replay(log: list[dict], p: dict):
     Vrací (historie, výsledek posledního kroku)."""
     hist, ann, prev, last = [], {}, "", None
     for e in log:
-        radky = list(dict.fromkeys(e["radky"])) if (p.get("bez_objemu") or p.get("bez_duplicit")) else e["radky"]
+        # stejný řádek dvakrát = jedno pivo, i když se liší jen velikostí písmen („Cannabis gose“ / „Gose“)
+        radky = e["radky"]
+        if p.get("bez_objemu") or p.get("bez_duplicit"):
+            seen = set()
+            radky = [r for r in radky if not (" ".join(r.lower().split()) in seen or seen.add(" ".join(r.lower().split())))]
         last = apply_state(hist, radky, e["cas"], quiet=True,
                            default_brewery=p.get("pivovar", ""), fmt=p.get("format", ""),
                            upcoming=e.get("pripraveno", []), ann=ann, prev_when=prev)
