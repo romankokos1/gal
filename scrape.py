@@ -119,8 +119,10 @@ PODNIKY = [
      "format": "nazev|styl|…|pivovar", "cesta": "prohlizec", "cekat_ms": 6000, "jen_piva": True,
      "jen_selektor": True},
     {"id": "drinkoteka", "nazev": "Drinkøtéka", "url": "https://drinkoteka.cz/",
-     "polozky": 'div.section:has(.section-name:-soup-contains("Tap Menu")) .menu-item',
-     "pole": [".item-name span[id]", ".item-category", ".item-abv", ".brewery"],
+     # web předělaný 14. 11. 2026: vlastní tabule „Na čepu“ (data z Untappd), styl a % v jednom poli
+     # „Pastry Gose · 8.0%“, pivovar „FR Piggy“ (vlajka jako text ve span.flag)
+     "polozky": "#dk-tap-board .brow",
+     "pole": [".brow__name", ".brow__style", ".brow__brewery span:not(.flag)"],
      "format": "nazev|styl|…|pivovar", "cesta": "prohlizec", "cekat_ms": 6000, "bez_duplicit": True,
      "jen_piva": True, "jen_selektor": True},
 
@@ -677,6 +679,12 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
         name = parts[0] if parts else ""
         brew = parts[-1] if len(parts) > 2 and not re.search(r"\d\s*[°%]", parts[-1]) else ""
         mid = parts[1:-1] if brew else parts[1:]
+        # „Pastry Gose · 8.0%“ (Drinkøtéka): oddělit jen % na konci, „Strata · Mosaic“ zůstává ve stylu
+        split = []
+        for x in mid:
+            m = re.match(r"(.*?)\s+·\s+(\d+(?:[.,]\d+)?\s*%)$", x)
+            split += [m.group(1), m.group(2)] if m else [x]
+        mid = split
         brew = re.sub(r"\s*/\s*[A-Z]{0,3}\s*$", "", FLAGS.sub("", brew)).strip()   # „🇨🇿…“, „/ CZ“
         brew = re.sub(r"^(?:pivovar|minipivovar)\s+", "", brew, flags=re.I)
         brew = re.sub(r"\s+(?:brewery|brewing(?: co\.?| company)?)$", "", brew, flags=re.I)
