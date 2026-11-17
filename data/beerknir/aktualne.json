@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerknir.cz/",
-  "zmeneno": "2026-11-13 13:15",
+  "zmeneno": "2026-11-17 18:25",
   "metoda": "selektor",
   "piva": [
     {
@@ -36,32 +36,32 @@
     {
       "pozice": 4,
       "pivovar": "Valeč",
-      "nazev": "Valeč - Juchajda (",
+      "nazev": "Valeč - Juchajda",
       "stupen": "12",
       "alkohol": "4.9",
       "styl": "Oak Aged Gose s šípkem a zázvorem",
       "dalsi": "",
-      "raw": "Valeč - Juchajda 12° ( | Oak Aged Gose s šípkem a zázvorem | 12° | 4.9% | Pivovar Valeč"
+      "raw": "Valeč - Juchajda 12° | Oak Aged Gose s šípkem a zázvorem | 12° | 4.9% | Pivovar Valeč"
     },
     {
       "pozice": 5,
-      "pivovar": "The Barn",
-      "nazev": "Dizzy Lizzy",
-      "stupen": "17",
-      "alkohol": "6",
-      "styl": "Sour Milkshake IPA s kokosem",
+      "pivovar": "Vik",
+      "nazev": "FULL NELSON",
+      "stupen": "15",
+      "alkohol": "6.6",
+      "styl": "NEIPA",
       "dalsi": "",
-      "raw": "Dizzy Lizzy 17° | Sour Milkshake IPA s kokosem | 17° | 6% | Pivovar The Barn"
+      "raw": "FULL NELSON 15° | NEIPA | 15° | 6.6% | Pivovar Vik"
     },
     {
       "pozice": 6,
-      "pivovar": "Mazák",
-      "nazev": "Podzimní IPA",
-      "stupen": "15",
-      "alkohol": "6.4",
-      "styl": "IPA",
+      "pivovar": "Zichovec",
+      "nazev": "Ježíšek",
+      "stupen": "18",
+      "alkohol": "8",
+      "styl": "Double IPA",
       "dalsi": "",
-      "raw": "Podzimní IPA 15° | IPA | 15° | 6.4% | Pivovar Mazák"
+      "raw": "Ježíšek 18° | Double IPA | 18° | 8% | Pivovar Zichovec"
     }
   ]
 }
