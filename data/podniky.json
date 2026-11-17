@@ -114,5 +114,10 @@
     "nazev": "Bar Na Palmě",
     "url": "https://www.facebook.com/barnapalme/",
     "rucne": true
+  },
+  {
+    "id": "vinohradsky",
+    "nazev": "Vinohradský pivovar",
+    "url": "https://www.vinohradskypivovar.cz/cs/korunni/"
   }
 ]

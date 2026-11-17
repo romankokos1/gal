@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-14 12:30",
+  "zmeneno": "2026-11-17 10:09",
   "metoda": "selektor",
   "piva": [
     {
@@ -8,100 +8,90 @@
       "pivovar": "Piggy",
       "nazev": "Liquid Fat Bûche",
       "stupen": "",
-      "alkohol": "8",
+      "alkohol": "8.0",
       "styl": "Pastry Gose",
       "dalsi": "",
-      "raw": "Liquid Fat Bûche | Pastry Gose | 8% ABV | 🇫🇷Piggy"
+      "raw": "Liquid Fat Bûche | Pastry Gose · 8.0% | Piggy"
     },
     {
       "pozice": 2,
       "pivovar": "ZICHOVEC",
-      "nazev": "Vánoční Zmrzka",
+      "nazev": "Euphoria Vera",
       "stupen": "",
-      "alkohol": "5",
-      "styl": "Pastry Sour",
+      "alkohol": "5.1",
+      "styl": "India Pale Lager",
       "dalsi": "",
-      "raw": "Vánoční Zmrzka | Pastry Sour | 5% ABV | 🇨🇿ZICHOVEC"
+      "raw": "Euphoria Vera | India Pale Lager · 5.1% | ZICHOVEC"
     },
     {
       "pozice": 3,
-      "pivovar": "Piggy",
-      "nazev": "Polar Juice",
+      "pivovar": "NOZIB",
+      "nazev": "BONE DRY / Nelson + Motueka",
       "stupen": "",
-      "alkohol": "6",
-      "styl": "Cold IPA / Talus · Dolcita",
+      "alkohol": "6.6",
+      "styl": "New England",
       "dalsi": "",
-      "raw": "Polar Juice | Cold IPA / Talus · Dolcita | 6% ABV | 🇫🇷Piggy"
+      "raw": "BONE DRY / Nelson + Motueka | New England · 6.6% | NOZIB"
     },
     {
       "pozice": 4,
-      "pivovar": "NOZIB",
-      "nazev": "STENCIL / Simcoe + Strata",
-      "stupen": "",
-      "alkohol": "6.7",
-      "styl": "West Coast IPA",
-      "dalsi": "",
-      "raw": "STENCIL / Simcoe + Strata | West Coast IPA | 6.7% ABV | 🇨🇿NOZIB"
-    },
-    {
-      "pozice": 5,
       "pivovar": "Piggy",
       "nazev": "Eroica Blanche",
       "stupen": "",
-      "alkohol": "6",
+      "alkohol": "6.0",
       "styl": "Hazy Pale Ale / Citra·Simcoe",
       "dalsi": "",
-      "raw": "Eroica Blanche | Hazy Pale Ale / Citra·Simcoe | 6% ABV | 🇫🇷Piggy"
+      "raw": "Eroica Blanche | Hazy Pale Ale / Citra·Simcoe · 6.0% | Piggy"
     },
     {
-      "pozice": 6,
-      "pivovar": "SOMAXĀrpus",
+      "pozice": 5,
+      "pivovar": "SOMA X Ārpus",
       "nazev": "Riwaka Eggers X Nelson",
       "stupen": "",
       "alkohol": "6.5",
       "styl": "NEIPA",
       "dalsi": "",
-      "raw": "Riwaka Eggers X Nelson | NEIPA | 6.5% ABV | SOMA🇪🇸X🇱🇻Ārpus"
+      "raw": "Riwaka Eggers X Nelson | NEIPA · 6.5% | SOMA X Ārpus"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Verdant",
+      "nazev": "Under the Same Sky",
+      "stupen": "",
+      "alkohol": "8.4",
+      "styl": "Double New England",
+      "dalsi": "",
+      "raw": "Under the Same Sky | Double New England · 8.4% | Verdant"
     },
     {
       "pozice": 7,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Tectonic Desire",
-      "stupen": "",
-      "alkohol": "7",
-      "styl": "New zealand IPA",
-      "dalsi": "",
-      "raw": "Tectonic Desire | New zealand IPA | 7% ABV | 🇨🇿ZICHOVEC"
-    },
-    {
-      "pozice": 8,
       "pivovar": "Einsiedler",
       "nazev": "Schwarz bier",
       "stupen": "",
-      "alkohol": "5",
+      "alkohol": "5.0",
       "styl": "Schwarzbier",
       "dalsi": "",
-      "raw": "Schwarz bier | Schwarzbier | 5% ABV | Einsiedler"
+      "raw": "Schwarz bier | Schwarzbier · 5.0% | Einsiedler"
     },
     {
-      "pozice": 9,
+      "pozice": 8,
       "pivovar": "Ārpus",
       "nazev": "Mango X Pineapple Gose",
       "stupen": "",
       "alkohol": "4.5",
       "styl": "Fruited Gose",
       "dalsi": "",
-      "raw": "Mango X Pineapple Gose | Fruited Gose | 4.5% ABV | 🇱🇻Ārpus"
+      "raw": "Mango X Pineapple Gose | Fruited Gose · 4.5% | Ārpus"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Wild Creatures",
-      "nazev": "Femme Fanale 2024",
+      "nazev": "Velvet Evolution 2024",
       "stupen": "",
-      "alkohol": "6.4",
+      "alkohol": "6.5",
       "styl": "Wild Ale",
       "dalsi": "",
-      "raw": "Femme Fanale 2024 | Wild Ale | 6.4% ABV | 🇨🇿Wild Creatures"
+      "raw": "Velvet Evolution 2024 | Wild Ale · 6.5% | Wild Creatures"
     }
   ]
 }
