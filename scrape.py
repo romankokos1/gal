@@ -159,11 +159,11 @@ PODNIKY = [
      "facebook": "alfalfa~facebook-posts-scraper"},
 
     # ---- Vinohradský pivovar – Korunní, přidáno 17. 11. 2026 ----
-    # Jen vlastní piva, „Káranská 9 SVĚTLÝ LEŽÁK 0,3 / 0,5 l 59 / 72 Kč“ (bez °). Kód stránky zatím
-    # neznámý: první běh skončí chybou a uloží stránku do data/vinohradsky/posledni_chyba.html,
-    # podle ní se doplní „polozky“ a „pole“.
+    # Jen vlastní piva. Záložka „Na čepu“ v #beer: <dt>Káranská 9</dt><dt class="sub">SVĚTLÝ LEŽÁK</dt>
+    # + objem a cena v <dd> (zahazují se). Stupně jen jako číslo v názvu („Vinohradská 11“).
     {"id": "vinohradsky", "nazev": "Vinohradský pivovar", "url": "https://www.vinohradskypivovar.cz/cs/korunni/",
-     "pivovar": "Vinohradský", "jen_selektor": True},
+     "polozky": '#beer .tab:has(> h3:-soup-contains("Na čepu")) dl > div', "pole": ["dt:not(.sub)", "dt.sub"],
+     "format": "nazev stupne|styl", "pivovar": "Vinohradský", "jen_selektor": True},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
@@ -706,6 +706,17 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
         if a:
             out["alkohol"] = a.group(1).replace(",", ".")
         out["styl"] = next((x for x in mid if not re.search(r"\d", x)), "")
+        return out
+
+    if fmt == "nazev stupne|styl":
+        # „Vinohradská 11 | světlý ležák“, „Seaman | Gose“ (Vinohradský pivovar – jen vlastní piva)
+        name, _, styl = main.partition(" | ")
+        out["pivovar"] = default_brewery
+        out["nazev"] = clean(name)
+        d = re.search(r"\s(\d{1,2}(?:[.,]\d)?)\s*°?$", name)
+        if d and 6 <= float(d.group(1).replace(",", ".")) <= 30:
+            out["stupen"] = d.group(1).replace(",", ".")
+        out["styl"] = clean(styl)
         return out
 
     if fmt == "nazev (pivovar)":
