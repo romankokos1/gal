@@ -1,5 +1,8 @@
 {
-  "chyby_v_rade": 1,
+  "chyby_v_rade": 0,
   "posledni_chyba": "2026-11-17 10:09",
-  "chyba": "sekce „Dnes na čepu“ nenalezena"
+  "posledni_kontrola": "2026-11-17",
+  "metoda": "selektor",
+  "pocet_piv": 13,
+  "posledni_zmena": "2026-11-17 10:17"
 }

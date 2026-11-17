@@ -1,0 +1,137 @@
+{
+  "zdroj": "https://www.vinohradskypivovar.cz/cs/korunni/",
+  "zmeneno": "2026-11-17 10:17",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "Vinohradský",
+      "nazev": "Káranská 9",
+      "stupen": "9",
+      "alkohol": "",
+      "styl": "SVĚTLÝ LEŽÁK",
+      "dalsi": "",
+      "raw": "Káranská 9 | SVĚTLÝ LEŽÁK"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Vinohradský",
+      "nazev": "Vinohradská 11",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Vinohradská 11 | světlý ležák"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Vinohradský",
+      "nazev": "Vinohradská 12",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Vinohradská 12 | světlý ležák"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Vinohradský",
+      "nazev": "Jantarová 13",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "ležák polotmavý",
+      "dalsi": "",
+      "raw": "Jantarová 13 | ležák polotmavý"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Vinohradský",
+      "nazev": "Black Panda",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "tmavý ležák",
+      "dalsi": "",
+      "raw": "Black Panda | tmavý ležák"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Vinohradský",
+      "nazev": "Seaman",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Gose",
+      "dalsi": "",
+      "raw": "Seaman | Gose"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Vinohradský",
+      "nazev": "Liberator",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "AMERICAN PALE ALE",
+      "dalsi": "",
+      "raw": "Liberator | AMERICAN PALE ALE"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Vinohradský",
+      "nazev": "Ahtanum",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "India Pale Ale",
+      "dalsi": "",
+      "raw": "Ahtanum | India Pale Ale"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Vinohradský",
+      "nazev": "Fern Enough",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "Fern Enough | NEIPA"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Vinohradský",
+      "nazev": "Hazy Galaxy",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Session IPA",
+      "dalsi": "",
+      "raw": "Hazy Galaxy | Session IPA"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "Vinohradský",
+      "nazev": "Vinohradská 12 Non-alcoholic",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Nealko Ležák",
+      "dalsi": "",
+      "raw": "Vinohradská 12 Non-alcoholic | Nealko Ležák"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "Vinohradský",
+      "nazev": "Seaman Non-alcoholic",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "Nealkoholické Gose",
+      "dalsi": "",
+      "raw": "Seaman Non-alcoholic | Nealkoholické Gose"
+    },
+    {
+      "pozice": 13,
+      "pivovar": "Vinohradský",
+      "nazev": "Liberator Non-alcoholic",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "NEALKO APA",
+      "dalsi": "",
+      "raw": "Liberator Non-alcoholic | NEALKO APA"
+    }
+  ]
+}
