@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "pivovar": "BLUD",
+    "nazev": "Bludfog Cip076",
+    "stupen": "15",
+    "alkohol": "6.5",
+    "styl": "Single Hop NEIPA",
+    "raw": "BLUD – Bludfog Cip076 15°/6,5%/40IBU Single Hop NEIPA"
+  },
+  {
+    "pivovar": "SQBRU + GALERIE PIVA",
+    "nazev": "Tohle Se Muselo Stout",
+    "stupen": "13",
+    "alkohol": "6.3",
+    "styl": "Stout s malinou a hořkou čokoládou",
+    "raw": "SQBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,3% Stout s malinou a hořkou čokoládou"
+  }
+]

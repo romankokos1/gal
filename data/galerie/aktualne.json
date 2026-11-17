@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-16 22:28",
+  "zmeneno": "2026-11-17 17:55",
   "metoda": "nadpis",
   "piva": [
     {
@@ -30,8 +30,8 @@
       "stupen": "19",
       "alkohol": "7.6",
       "styl": "DOUBLE IPA",
-      "dalsi": "",
-      "raw": "CLOCK – NO IDOLS 19°/7,6% DOUBLE IPA"
+      "dalsi": "BLUD – Bludfog Cip076 15°/6,5%/40IBU Single Hop NEIPA",
+      "raw": "CLOCK – NO IDOLS 19°/7,6% DOUBLE IPA ///NEXT// BLUD – Bludfog Cip076 15°/6,5%/40IBU Single Hop NEIPA"
     },
     {
       "pozice": 4,
@@ -40,8 +40,8 @@
       "stupen": "20",
       "alkohol": "8",
       "styl": "Triple Milkshake IPA s laktózou (nectaron, citra, mosaic)",
-      "dalsi": "",
-      "raw": "SIBEERIA + CHROUST 20°/8% Triple Milkshake IPA s laktózou (nectaron, citra, mosaic)"
+      "dalsi": "SQBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,3% Stout s malinou a hořkou čokoládou",
+      "raw": "SIBEERIA + CHROUST 20°/8% Triple Milkshake IPA s laktózou (nectaron, citra, mosaic) ///NEXT// SQBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,3% Stout s malinou a hořkou čokoládou"
     },
     {
       "pozice": 5,
