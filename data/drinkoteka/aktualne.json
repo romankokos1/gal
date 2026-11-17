@@ -1,30 +1,20 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-17 18:25",
+  "zmeneno": "2026-11-17 20:27",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Piggy",
-      "nazev": "Liquid Fat Bûche",
+      "pivovar": "Vault City",
+      "nazev": "Jaisoor",
       "stupen": "",
-      "alkohol": "8.0",
-      "styl": "Pastry Gose",
+      "alkohol": "5.0",
+      "styl": "Sour",
       "dalsi": "",
-      "raw": "Liquid Fat Bûche | Pastry Gose · 8.0% | Piggy"
+      "raw": "Jaisoor | Sour · 5.0% | Vault City"
     },
     {
       "pozice": 2,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Euphoria Vera",
-      "stupen": "",
-      "alkohol": "5.1",
-      "styl": "India Pale Lager",
-      "dalsi": "",
-      "raw": "Euphoria Vera | India Pale Lager · 5.1% | ZICHOVEC"
-    },
-    {
-      "pozice": 3,
       "pivovar": "NOZIB",
       "nazev": "BONE DRY / Nelson + Motueka",
       "stupen": "",
@@ -34,17 +24,17 @@
       "raw": "BONE DRY / Nelson + Motueka | New England · 6.6% | NOZIB"
     },
     {
-      "pozice": 4,
-      "pivovar": "Piggy",
-      "nazev": "Eroica Blanche",
+      "pozice": 3,
+      "pivovar": "",
+      "nazev": "Elani Impulse",
       "stupen": "",
-      "alkohol": "6.0",
-      "styl": "Hazy Pale Ale / Citra·Simcoe",
+      "alkohol": "8.0",
+      "styl": "Double New England / Elani · Mosaic",
       "dalsi": "",
-      "raw": "Eroica Blanche | Hazy Pale Ale / Citra·Simcoe · 6.0% | Piggy"
+      "raw": "Elani Impulse | Double New England / Elani · Mosaic · 8.0%"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "SOMA X Ārpus",
       "nazev": "Riwaka Eggers X Nelson",
       "stupen": "",
@@ -54,7 +44,7 @@
       "raw": "Riwaka Eggers X Nelson | NEIPA · 6.5% | SOMA X Ārpus"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Verdant",
       "nazev": "Under the Same Sky",
       "stupen": "",
@@ -64,7 +54,7 @@
       "raw": "Under the Same Sky | Double New England · 8.4% | Verdant"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Einsiedler",
       "nazev": "Schwarz bier",
       "stupen": "",
@@ -74,7 +64,7 @@
       "raw": "Schwarz bier | Schwarzbier · 5.0% | Einsiedler"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Vault City",
       "nazev": "Dripping In Mango",
       "stupen": "",
@@ -82,6 +72,16 @@
       "styl": "Milkshake Pale Ale",
       "dalsi": "",
       "raw": "Dripping In Mango | Milkshake Pale Ale · 5.5% | Vault City"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Wild Creatures",
+      "nazev": "Velvet Evolution 2024",
+      "stupen": "",
+      "alkohol": "6.5",
+      "styl": "Wild Ale",
+      "dalsi": "",
+      "raw": "Velvet Evolution 2024 | Wild Ale · 6.5% | Wild Creatures"
     },
     {
       "pozice": 9,
@@ -92,16 +92,6 @@
       "styl": "American Pale Ale",
       "dalsi": "",
       "raw": "DR:ink | American Pale Ale · 4.5% | Verdant"
-    },
-    {
-      "pozice": 10,
-      "pivovar": "Wild Creatures",
-      "nazev": "Velvet Evolution 2024",
-      "stupen": "",
-      "alkohol": "6.5",
-      "styl": "Wild Ale",
-      "dalsi": "",
-      "raw": "Velvet Evolution 2024 | Wild Ale · 6.5% | Wild Creatures"
     }
   ]
 }
