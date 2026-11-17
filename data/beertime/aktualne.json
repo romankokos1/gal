@@ -1,0 +1,157 @@
+{
+  "zdroj": "https://www.beertime.pub/",
+  "zmeneno": "2026-11-17 23:42",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "KAMENICE",
+      "nazev": "Jedenáctka",
+      "stupen": "11",
+      "alkohol": "4.7",
+      "styl": "Světlý Ležák",
+      "dalsi": "",
+      "raw": "KAMENICE | Jedenáctka | Světlý Ležák 11°, Alc. 4,7%, IBU 25"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "ÚNĚTICE",
+      "nazev": "Desítka",
+      "stupen": "10",
+      "alkohol": "4.1",
+      "styl": "Světlý ležák",
+      "dalsi": "",
+      "raw": "ÚNĚTICE | Desítka | Světlý ležák 10°, Alc. 4,1%, IBU 34"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "BEERTIME",
+      "nazev": "Dialogue:Talus+Cr.Centennial",
+      "stupen": "14",
+      "alkohol": "6",
+      "styl": "Dual Hop I.P.A.",
+      "dalsi": "",
+      "raw": "BEERTIME | Dialogue:Talus+Cr.Centennial | Dual Hop I.P.A. 14°, All. 6%, IBU 45"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "ZLATÁ KRÁVA",
+      "nazev": "12 Jana Nepomuckého",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "Hefeweizen",
+      "dalsi": "",
+      "raw": "ZLATÁ KRÁVA | 12 Jana Nepomuckého | Hefeweizen 12°, Alc. 5%, IBU 20"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "SIBEERIA",
+      "nazev": "Grapefruit Lollihop",
+      "stupen": "15",
+      "alkohol": "6.6",
+      "styl": "West Coast I.P.A.",
+      "dalsi": "",
+      "raw": "SIBEERIA | Grapefruit Lollihop | West Coast I.P.A. 15°, Alc. 6,6%"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "MATUŠKA",
+      "nazev": "Zlatá Raketa",
+      "stupen": "17",
+      "alkohol": "7",
+      "styl": "American I.P.A.",
+      "dalsi": "",
+      "raw": "MATUŠKA | Zlatá Raketa | American I.P.A. 17°, Alc. 7%"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "CLOCK",
+      "nazev": "Krystus",
+      "stupen": "7",
+      "alkohol": "0.5",
+      "styl": "Nealko I.P.A.",
+      "dalsi": "",
+      "raw": "CLOCK | Krystus | Nealko I.P.A. 7°, Alc. 0,5%, IBU 30"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "RAVEN",
+      "nazev": "Gunslinger",
+      "stupen": "15",
+      "alkohol": "6.4",
+      "styl": "West Coast IPA",
+      "dalsi": "",
+      "raw": "RAVEN | Gunslinger | West Coast IPA 15°, Alc. 6,4%, IBU 80"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "THRILLS",
+      "nazev": "Radio trip",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "Session I.P.A.",
+      "dalsi": "",
+      "raw": "THRILLS | Radio trip | Session I.P.A. 12°, Alc. 5,3%"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "HOPPYDOG",
+      "nazev": "Poodle",
+      "stupen": "11",
+      "alkohol": "4",
+      "styl": "Meruňka/Maracuja Sour",
+      "dalsi": "",
+      "raw": "HOPPYDOG | Poodle | Meruňka/Maracuja Sour 11°, Alc. 4%"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "LIBERTAS",
+      "nazev": "Irish Dry Stout",
+      "stupen": "11.5",
+      "alkohol": "5.1",
+      "styl": "Irish Dry Stout",
+      "dalsi": "",
+      "raw": "LIBERTAS | Irish Dry Stout | Irish Dry Stout 11,5°, Alc. 5,1%"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "POTMEHÚD",
+      "nazev": "Rhapzody",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "SMaSH A.P.A.",
+      "dalsi": "",
+      "raw": "POTMEHÚD | Rhapzody | SMaSH A.P.A. 12°, Alc. 5,3%, IBU 34"
+    },
+    {
+      "pozice": 13,
+      "pivovar": "ČESTMÍR",
+      "nazev": "New Zealand",
+      "stupen": "14",
+      "alkohol": "5.8",
+      "styl": "N.E.I.P.A.",
+      "dalsi": "",
+      "raw": "ČESTMÍR | New Zealand | N.E.I.P.A. 14°, Alc. 5,8%"
+    },
+    {
+      "pozice": 14,
+      "pivovar": "VAN HONSEBROUCK",
+      "nazev": "Kasteel Rouge",
+      "stupen": "18",
+      "alkohol": "8",
+      "styl": "Fruit Beer - Cherry",
+      "dalsi": "",
+      "raw": "VAN HONSEBROUCK | Kasteel Rouge | Fruit Beer - Cherry 18°, Alc 8%"
+    },
+    {
+      "pozice": 15,
+      "pivovar": "OUD BEERSEL",
+      "nazev": "Rebarber",
+      "stupen": "",
+      "alkohol": "5",
+      "styl": "Lambic with Rhubarb",
+      "dalsi": "",
+      "raw": "OUD BEERSEL | Rebarber | Lambic with Rhubarb, Alc. 5%"
+    }
+  ]
+}

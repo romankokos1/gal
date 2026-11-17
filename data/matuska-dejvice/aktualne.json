@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
-  "zmeneno": "2026-11-17 14:21",
+  "zmeneno": "2026-11-17 23:42",
   "metoda": "selektor",
   "piva": [
     {
@@ -36,12 +36,12 @@
     {
       "pozice": 4,
       "pivovar": "Matuška",
-      "nazev": "KYSELÁ MÁŇA",
-      "stupen": "10",
-      "alkohol": "4.4",
-      "styl": "RASPBERRY GOSE",
+      "nazev": "BYLINNÝ BLAŽENEC",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "BOTANICAL GOSE",
       "dalsi": "",
-      "raw": "KYSELÁ MÁŇA | RASPBERRY GOSE | 10° | 4,4 %"
+      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
     },
     {
       "pozice": 5,

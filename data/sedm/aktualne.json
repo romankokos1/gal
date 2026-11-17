@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-16 17:52",
+  "zmeneno": "2026-11-17 23:42",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Preisler",
-      "nazev": "Tvrdá Práce",
-      "stupen": "12",
-      "alkohol": "5.2",
+      "pivovar": "Vik",
+      "nazev": "Štěpánova",
+      "stupen": "11",
+      "alkohol": "4.7",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Preisler - Tvrdá Práce | 12% | Lager, ABV 5,2%"
+      "raw": "Vik - Štěpánova | 11% | Lager, ABV 4,7%"
     },
     {
       "pozice": 2,
