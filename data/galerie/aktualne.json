@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-17 22:42",
+  "zmeneno": "2026-11-18 00:13",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "MAZÁK",
-      "nazev": "Vaánoční ležák",
-      "stupen": "13",
-      "alkohol": "5.5",
-      "styl": "světlý ležák",
+      "pivovar": "",
+      "nazev": "x°/y% světlý ležák",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
       "dalsi": "",
-      "raw": "MAZÁK – Vaánoční ležák 13°/5,5% světlý ležák"
+      "raw": "x°/y% světlý ležák"
     },
     {
       "pozice": 2,
