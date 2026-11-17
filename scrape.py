@@ -167,9 +167,10 @@ PODNIKY = [
 
     # ---- Beertime Pub, přidáno 17. 11. 2026 ----
     # Tabulka „BEERTIME Menu“: „KAMENICE Jedenáctka“ + „Světlý Ležák 11°, Alc. 4,7%, IBU 25“, ceny 0,3/0,5 l.
-    # Kód stránky zatím neznámý: první běh uloží stránku do data/beertime/posledni_chyba.html,
-    # podle ní se doplní „polozky“ a „pole“.
-    {"id": "beertime", "nazev": "Beertime Pub", "url": "https://www.beertime.pub/", "jen_selektor": True},
+    # <tr class="polozka">: span.pivovar + span.nazev + span.popis. Degustační set (bez ° a %) vypadne.
+    {"id": "beertime", "nazev": "Beertime Pub", "url": "https://www.beertime.pub/",
+     "polozky": "tr.polozka", "pole": [".pivovar", ".nazev", ".popis"],
+     "format": "pivovar|nazev|styl stupne, alc", "jen_piva": True, "jen_selektor": True},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
@@ -637,6 +638,19 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
         a = ABV_LABEL.search(popis)
         if a:
             out["alkohol"] = a.group(1).replace(",", ".")
+        return out
+
+    if fmt == "pivovar|nazev|styl stupne, alc" and " | " in main:
+        # „KAMENICE | Jedenáctka | Světlý Ležák 11°, Alc. 4,7%, IBU 25“ (Beertime)
+        parts = [x.strip() for x in main.split(" | ")] + ["", ""]
+        out["pivovar"], out["nazev"], popis = parts[0], parts[1], parts[2]
+        d = DEG.search(popis)
+        if d:
+            out["stupen"] = d.group(1).replace(",", ".")
+        a = re.search(r"\b(?:Alc|All)\.?\s*(\d+(?:[.,]\d+)?)\s*%", popis, re.I) or re.search(NUM + r"\s*%", popis)
+        if a:
+            out["alkohol"] = a.group(1).replace(",", ".")
+        out["styl"] = clean(re.split(r"\s*\d+(?:[.,]\d+)?\s*°|,\s*(?:Alc|All|IBU)\b", popis, flags=re.I)[0]).strip(" ,")
         return out
 
     if fmt == "matuska" and " | " in main:
