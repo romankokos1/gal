@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-17 16:23",
+  "zmeneno": "2026-11-18 18:09",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Chroust",
-      "nazev": "Baltic Express",
-      "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "Session Hazy IPA",
+      "pivovar": "Matuška",
+      "nazev": "Florida",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "American Pale Ale, 4, 2°",
       "dalsi": "",
-      "raw": "Chroust - Baltic Express, Session Hazy IPA, 12° sv. nef., 4, 8% vol. Alc"
+      "raw": "Matuška - Florida, American Pale Ale, 10° sv. nef., 4, 2° vol. Alc, 38 IBU"
     },
     {
       "pozice": 9,
