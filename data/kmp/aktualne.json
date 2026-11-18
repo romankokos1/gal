@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-18 20:11",
+  "zmeneno": "2026-11-19 00:15",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -31,7 +31,7 @@
       "alkohol": "4.8",
       "styl": "kyseláč s rozmarýnem, tymiánem, mátou a jalovcem",
       "dalsi": "",
-      "raw": "Matuška - Bylinný Blaženec, kyseláč s rozmarýnem, tymiánem, mátou a jalovcem, 12° sv. nef., 4, 8% vol. Alc, 15 IBU"
+      "raw": "Matuška - Bylinný Blaženec, kyseláč s rozmarýnem, tymiánem, mátou a jalovcem, 12° sv. nef., 4,8% vol. Alc, 15 IBU"
     },
     {
       "pozice": 4,
@@ -51,7 +51,7 @@
       "alkohol": "5.2",
       "styl": "polotmavý speciál, polo.",
       "dalsi": "",
-      "raw": "KMP Husa #6, polotmavý speciál, 13° polo. nef., 5, 2% vol. Alc"
+      "raw": "KMP Husa #6, polotmavý speciál, 13° polo. nef., 5,2% vol. Alc"
     },
     {
       "pozice": 6,
@@ -61,7 +61,7 @@
       "alkohol": "5.2",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Matuška - California, American Pale Ale, 12° sv. nef., 5, 2% vol. Alc, 55 IBU"
+      "raw": "Matuška - California, American Pale Ale, 12° sv. nef., 5,2% vol. Alc, 55 IBU"
     },
     {
       "pozice": 7,
@@ -71,7 +71,7 @@
       "alkohol": "5.5",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Matuška - Apollo Galaxy, American Pale Ale, 13° sv. nef., 5, 5% vol. Alc, 45 IBU"
+      "raw": "Matuška - Apollo Galaxy, American Pale Ale, 13° sv. nef., 5,5% vol. Alc, 45 IBU"
     },
     {
       "pozice": 8,
@@ -79,9 +79,9 @@
       "nazev": "Florida",
       "stupen": "10",
       "alkohol": "",
-      "styl": "American Pale Ale, 4, 2°",
+      "styl": "American Pale Ale, 4,2°",
       "dalsi": "",
-      "raw": "Matuška - Florida, American Pale Ale, 10° sv. nef., 4, 2° vol. Alc, 38 IBU"
+      "raw": "Matuška - Florida, American Pale Ale, 10° sv. nef., 4,2° vol. Alc, 38 IBU"
     },
     {
       "pozice": 9,
@@ -91,7 +91,7 @@
       "alkohol": "6.3",
       "styl": "India Pale Ale",
       "dalsi": "",
-      "raw": "Matuška - Raptor, India Pale Ale, 15° sv. nef., 6, 3% vol. Alc, 60 IBU"
+      "raw": "Matuška - Raptor, India Pale Ale, 15° sv. nef., 6,3% vol. Alc, 60 IBU"
     },
     {
       "pozice": 10,
@@ -101,7 +101,7 @@
       "alkohol": "3.8",
       "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3, 8% vol. Alc, 34 IBU"
+      "raw": "U Lenocha, světlé výčepní, 10° sv. nef., 3,8% vol. Alc, 34 IBU"
     }
   ]
 }
