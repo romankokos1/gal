@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-18 20:11",
+  "zmeneno": "2026-11-18 22:13",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,16 +15,6 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Raven",
-      "nazev": "Unicorn Milk",
-      "stupen": "",
-      "alkohol": "5.5",
-      "styl": "IPA - Milkshake",
-      "dalsi": "",
-      "raw": "Unicorn Milk | IPA - Milkshake | 5.5% ABV | Pivovar Raven / CZ"
-    },
-    {
-      "pozice": 3,
       "pivovar": "Vik",
       "nazev": "WILLY WONKA - Dark Lager",
       "stupen": "",
@@ -34,7 +24,7 @@
       "raw": "WILLY WONKA - Dark Lager | Lager - Dark | 5.3% ABV | Pivovar Vik / CZ"
     },
     {
-      "pozice": 4,
+      "pozice": 3,
       "pivovar": "Hradecký Klenot",
       "nazev": "Apricot Symphony",
       "stupen": "",
@@ -44,7 +34,7 @@
       "raw": "Apricot Symphony | Sour - Smoothie / Pastry | 6.2% ABV | Hradecký Klenot /"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "FALKON",
       "nazev": "BOTANIK",
       "stupen": "",
@@ -54,7 +44,7 @@
       "raw": "BOTANIK | Sour - Traditional Gose | 4.1% ABV | FALKON / CZ"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Chroust",
       "nazev": "Glögg",
       "stupen": "",
@@ -64,7 +54,7 @@
       "raw": "Glögg | Sour - Fruited | 5.5% ABV | Chroust / CZ"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Chroust",
       "nazev": "Judo Jellyfish",
       "stupen": "",
@@ -74,7 +64,7 @@
       "raw": "Judo Jellyfish | IPA - Session | 4.9% ABV | Chroust / CZ"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Clock",
       "nazev": "Twist",
       "stupen": "",
@@ -84,7 +74,7 @@
       "raw": "Twist | IPA - Red | 5.8% ABV | Pivovar Clock / CZ"
     },
     {
-      "pozice": 9,
+      "pozice": 8,
       "pivovar": "Volt",
       "nazev": "Reaktor",
       "stupen": "",
@@ -94,7 +84,7 @@
       "raw": "Reaktor | IPA - Brut | 7.3% ABV | Pivovar Volt / CZ"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "The Barn Beer Co.",
       "nazev": "Ummagumma",
       "stupen": "",
@@ -104,17 +94,7 @@
       "raw": "Ummagumma | IPA - New England / Hazy | 7% ABV | The Barn Beer Co. / CZ"
     },
     {
-      "pozice": 11,
-      "pivovar": "The Barn Beer Co.",
-      "nazev": "Xxtravaganza",
-      "stupen": "",
-      "alkohol": "5.5",
-      "styl": "Pale Ale - XPA (Extra Pale)",
-      "dalsi": "",
-      "raw": "Xxtravaganza | Pale Ale - XPA (Extra Pale) | 5.5% ABV | The Barn Beer Co. / CZ"
-    },
-    {
-      "pozice": 12,
+      "pozice": 10,
       "pivovar": "Čestmír",
       "nazev": "IPA 16 – Ratamahatta",
       "stupen": "",
@@ -124,7 +104,7 @@
       "raw": "IPA 16 – Ratamahatta | IPA - American | 7% ABV | Pivovar Čestmír / CZ"
     },
     {
-      "pozice": 13,
+      "pozice": 11,
       "pivovar": "Potmehúd",
       "nazev": "Weizenbock",
       "stupen": "",
@@ -134,7 +114,7 @@
       "raw": "Weizenbock | Bock - Weizenbock | 7.3% ABV | Pivovar Potmehúd /"
     },
     {
-      "pozice": 14,
+      "pozice": 12,
       "pivovar": "Čestmír",
       "nazev": "Session NEIPA (Superdelic - Mosaic - Galaxy)",
       "stupen": "",
@@ -144,7 +124,7 @@
       "raw": "Session NEIPA (Superdelic - Mosaic - Galaxy) | IPA - New England / Hazy | 5% ABV | Pivovar Čestmír / CZ"
     },
     {
-      "pozice": 15,
+      "pozice": 13,
       "pivovar": "ZICHOVEC",
       "nazev": "Nectar of Happiness 17",
       "stupen": "",
@@ -154,7 +134,7 @@
       "raw": "Nectar of Happiness 17 | IPA - New England / Hazy | 7% ABV | Pivovar ZICHOVEC / CZ"
     },
     {
-      "pozice": 16,
+      "pozice": 14,
       "pivovar": "Sibeeria",
       "nazev": "Smoke Lady",
       "stupen": "",
@@ -164,7 +144,7 @@
       "raw": "Smoke Lady | Rauchbier | 5.5% ABV | Sibeeria Brewery / CZ"
     },
     {
-      "pozice": 17,
+      "pozice": 15,
       "pivovar": "Mazák",
       "nazev": "Rainbow of Death",
       "stupen": "",
@@ -174,7 +154,7 @@
       "raw": "Rainbow of Death | IPA - American | 6.5% ABV | Pivovar Mazák / CZ"
     },
     {
-      "pozice": 18,
+      "pozice": 16,
       "pivovar": "Raven",
       "nazev": "Sun Blast IPA",
       "stupen": "",
@@ -184,7 +164,7 @@
       "raw": "Sun Blast IPA | IPA - American | 6.2% ABV | Pivovar Raven / CZ"
     },
     {
-      "pozice": 19,
+      "pozice": 17,
       "pivovar": "Cobolis",
       "nazev": "Bezedný kotel",
       "stupen": "",
@@ -194,7 +174,7 @@
       "raw": "Bezedný kotel | Stout - Irish Extra | 7.2% ABV | Cobolis / CZ"
     },
     {
-      "pozice": 20,
+      "pozice": 18,
       "pivovar": "Mazák",
       "nazev": "Baltic Porter",
       "stupen": "",
@@ -204,7 +184,7 @@
       "raw": "Baltic Porter | Porter - Baltic | 6.8% ABV | Pivovar Mazák / CZ"
     },
     {
-      "pozice": 21,
+      "pozice": 19,
       "pivovar": "Brouwerij De Brabandere",
       "nazev": "Petrus Red",
       "stupen": "",
@@ -214,7 +194,7 @@
       "raw": "Petrus Red | Fruit Beer | 8.5% ABV | Brouwerij De Brabandere / BE"
     },
     {
-      "pozice": 22,
+      "pozice": 20,
       "pivovar": "FALKON",
       "nazev": "BOCHÁNEK",
       "stupen": "",

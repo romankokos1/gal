@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-18 20:11",
+  "zmeneno": "2026-11-18 22:13",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Hope",
-      "nazev": "Call Me Ceres",
-      "stupen": "13",
-      "alkohol": "5.4",
-      "styl": "Cold IPA",
+      "pivovar": "Mad Cat",
+      "nazev": "Ich Bin Ein Berliner",
+      "stupen": "10",
+      "alkohol": "4",
+      "styl": "Berliner Weisse",
       "dalsi": "",
-      "raw": "Hope - Call Me Ceres | 13% | Cold IPA, ABV 5,4%"
+      "raw": "Mad Cat - Ich Bin Ein Berliner | 10% | Berliner Weisse, ABV 4%"
     },
     {
       "pozice": 8,
