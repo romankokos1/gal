@@ -1,17 +1,17 @@
 {
   "zdroj": "https://zlycasy.eu/section:prostredni-bar",
-  "zmeneno": "2026-11-16 15:50",
+  "zmeneno": "2026-11-18 16:08",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Kocour",
-      "nazev": "Mango Maracuja NealkoIPA",
+      "pivovar": "Zvíkov",
+      "nazev": "Grep Sour Nealko",
       "stupen": "",
       "alkohol": "",
-      "styl": "Alkohol Free ochucená IPA",
+      "styl": "Ochucený Nealkoholický Sour Ale",
       "dalsi": "",
-      "raw": "Kocour Mango Maracuja NealkoIPA | Alkohol Free ochucená IPA"
+      "raw": "Zvíkov Grep Sour Nealko | Ochucený Nealkoholický Sour Ale"
     },
     {
       "pozice": 2,

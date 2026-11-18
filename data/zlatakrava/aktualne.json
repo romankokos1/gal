@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zk.vhost.cz/",
-  "zmeneno": "2026-11-10 21:48",
+  "zmeneno": "2026-11-18 16:08",
   "metoda": "selektor",
   "piva": [
     {
@@ -26,12 +26,12 @@
     {
       "pozice": 3,
       "pivovar": "Zlatá kráva",
-      "nazev": "SV. JANA NEPOMUCKÉHO",
-      "stupen": "12",
+      "nazev": "JUICY PAMELA",
+      "stupen": "13",
       "alkohol": "",
-      "styl": "Pivo se silnou intenzitou ovocné banánové a hřebíčkové vůně i chuti s nízkou intenzitou…",
+      "styl": "Šťavnatá zakalená IPA s výrazným aroma tropického ovoce a s nižší hořkostí",
       "dalsi": "",
-      "raw": "Zlatá kráva | 12 SV. JANA NEPOMUCKÉHO | Pivo se silnou intenzitou ovocné banánové a hřebíčkové vůně i chuti s nízkou intenzitou hořkosti jemného charakteru."
+      "raw": "Zlatá kráva | 13 JUICY PAMELA | Šťavnatá zakalená IPA s výrazným aroma tropického ovoce a s nižší hořkostí."
     },
     {
       "pozice": 4,
