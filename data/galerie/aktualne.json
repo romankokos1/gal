@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-18 15:08",
+  "zmeneno": "2026-11-18 21:43",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "SOLITÉR",
-      "nazev": "Pillz",
-      "stupen": "12",
-      "alkohol": "5",
+      "pivovar": "ČESTMÍR",
+      "nazev": "Čest",
+      "stupen": "11",
+      "alkohol": "4.5",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "SOLITÉR – Pillz 12°/5% světlý ležák"
+      "raw": "ČESTMÍR – Čest 11°/4,5% světlý ležák"
     },
     {
       "pozice": 2,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "SKJUBRU",
-      "nazev": "Breakfast of Champions",
-      "stupen": "14",
-      "alkohol": "6.4",
-      "styl": "Prostě fajn sour ale",
+      "pivovar": "URPUTNÉ PÍPY",
+      "nazev": "Brose",
+      "stupen": "11",
+      "alkohol": "4.7",
+      "styl": "Broskev, pomerančová kůra, koriandr, sůl",
       "dalsi": "",
-      "raw": "SKJUBRU – Breakfast of Champions 14°/6,4% Prostě fajn sour ale"
+      "raw": "URPUTNÉ PÍPY – Brose 11°/4,7% Broskev, pomerančová kůra, koriandr, sůl"
     }
   ]
 }
