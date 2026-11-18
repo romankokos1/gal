@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-18 18:09",
+  "zmeneno": "2026-11-18 20:11",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "VIk",
-      "nazev": "Irish Dry Stout",
-      "stupen": "10",
-      "alkohol": "4.2",
-      "styl": "Irish Dry Stout",
+      "pivovar": "Čestmír",
+      "nazev": "Koru",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "New Zealand NEIPA",
       "dalsi": "",
-      "raw": "VIk - Irish Dry Stout | 10% | Irish Dry Stout, ABV 4,2%"
+      "raw": "Čestmír - Koru | 11% | New Zealand NEIPA, ABV 4,5%"
     },
     {
       "pozice": 5,
