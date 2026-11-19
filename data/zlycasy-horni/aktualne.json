@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:horni-bar",
-  "zmeneno": "2026-11-16 17:52",
+  "zmeneno": "2026-11-19 18:18",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,25 +16,15 @@
     {
       "pozice": 2,
       "pivovar": "Bad Flash",
-      "nazev": "Prostě Ležák",
-      "stupen": "12",
+      "nazev": "Rock Café APA",
+      "stupen": "11",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Bad Flash Prostě Ležák 12°"
+      "raw": "Bad Flash Rock Café 11° APA"
     },
     {
       "pozice": 3,
-      "pivovar": "Bad Flash",
-      "nazev": "Mango-Chilli Sour Ale",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Bad Flash Mango-Chilli 12° Sour Ale | 0,3l"
-    },
-    {
-      "pozice": 4,
       "pivovar": "Budvar",
       "nazev": "33 světlý ležák",
       "stupen": "11",
@@ -44,7 +34,7 @@
       "raw": "Budvar 33 světlý ležák 11°"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "Bad Flash",
       "nazev": "Torpid Mind Imperial Stout",
       "stupen": "24",
@@ -54,7 +44,7 @@
       "raw": "Bad Flash Torpid Mind 24° Imperial Stout | 0,3l"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Bad Flash",
       "nazev": "Blackcurrant & Pink Pepper Sour Ale",
       "stupen": "12",
@@ -64,7 +54,7 @@
       "raw": "Bad Flash Blackcurrant & Pink Pepper 12° Sour Ale | 0,3l"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Schneider",
       "nazev": "Blonde",
       "stupen": "12",
@@ -74,7 +64,7 @@
       "raw": "Schneider Blonde 12°"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Clock",
       "nazev": "APA",
       "stupen": "12",
@@ -84,7 +74,7 @@
       "raw": "Clock APA 12° | 0,4l"
     },
     {
-      "pozice": 9,
+      "pozice": 8,
       "pivovar": "Holá",
       "nazev": "řiť Ipička IPA",
       "stupen": "15",
@@ -94,7 +84,7 @@
       "raw": "Holá řiť Ipička 15° IPA | 0,4l"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Bad Flash",
       "nazev": "Summer Sadness Pale Ale",
       "stupen": "10",
@@ -102,6 +92,16 @@
       "styl": "",
       "dalsi": "",
       "raw": "Bad Flash Summer Sadness 10° Pale Ale"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Bad Flash",
+      "nazev": "Fotbalová jedenáctka světlý ležák",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Fotbalová jedenáctka 11° světlý ležák"
     },
     {
       "pozice": 11,

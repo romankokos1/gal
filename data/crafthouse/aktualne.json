@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-19 00:15",
+  "zmeneno": "2026-11-19 18:18",
   "metoda": "selektor",
   "piva": [
     {
@@ -105,6 +105,16 @@
     },
     {
       "pozice": 11,
+      "pivovar": "ZICHOVEC",
+      "nazev": "Robin na Grepu 12",
+      "stupen": "",
+      "alkohol": "5.1",
+      "styl": "Pale Ale - American",
+      "dalsi": "",
+      "raw": "Robin na Grepu 12 | Pale Ale - American | 5.1% ABV | Pivovar ZICHOVEC / CZ"
+    },
+    {
+      "pozice": 12,
       "pivovar": "Čestmír",
       "nazev": "IPA 16 – Ratamahatta",
       "stupen": "",
@@ -114,7 +124,7 @@
       "raw": "IPA 16 – Ratamahatta | IPA - American | 7% ABV | Pivovar Čestmír / CZ"
     },
     {
-      "pozice": 12,
+      "pozice": 13,
       "pivovar": "Potmehúd",
       "nazev": "Weizenbock",
       "stupen": "",
@@ -124,7 +134,7 @@
       "raw": "Weizenbock | Bock - Weizenbock | 7.3% ABV | Pivovar Potmehúd /"
     },
     {
-      "pozice": 13,
+      "pozice": 14,
       "pivovar": "Čestmír",
       "nazev": "Session NEIPA (Superdelic - Mosaic - Galaxy)",
       "stupen": "",
@@ -134,7 +144,7 @@
       "raw": "Session NEIPA (Superdelic - Mosaic - Galaxy) | IPA - New England / Hazy | 5% ABV | Pivovar Čestmír / CZ"
     },
     {
-      "pozice": 14,
+      "pozice": 15,
       "pivovar": "ZICHOVEC",
       "nazev": "Nectar of Happiness 17",
       "stupen": "",
@@ -144,7 +154,7 @@
       "raw": "Nectar of Happiness 17 | IPA - New England / Hazy | 7% ABV | Pivovar ZICHOVEC / CZ"
     },
     {
-      "pozice": 15,
+      "pozice": 16,
       "pivovar": "Sibeeria",
       "nazev": "Smoke Lady",
       "stupen": "",
@@ -154,7 +164,7 @@
       "raw": "Smoke Lady | Rauchbier | 5.5% ABV | Sibeeria Brewery / CZ"
     },
     {
-      "pozice": 16,
+      "pozice": 17,
       "pivovar": "Mazák",
       "nazev": "Rainbow of Death",
       "stupen": "",
@@ -164,7 +174,7 @@
       "raw": "Rainbow of Death | IPA - American | 6.5% ABV | Pivovar Mazák / CZ"
     },
     {
-      "pozice": 17,
+      "pozice": 18,
       "pivovar": "Raven",
       "nazev": "Sun Blast IPA",
       "stupen": "",
@@ -174,7 +184,7 @@
       "raw": "Sun Blast IPA | IPA - American | 6.2% ABV | Pivovar Raven / CZ"
     },
     {
-      "pozice": 18,
+      "pozice": 19,
       "pivovar": "Cobolis",
       "nazev": "Bezedný kotel",
       "stupen": "",
@@ -184,7 +194,7 @@
       "raw": "Bezedný kotel | Stout - Irish Extra | 7.2% ABV | Cobolis / CZ"
     },
     {
-      "pozice": 19,
+      "pozice": 20,
       "pivovar": "Mazák",
       "nazev": "Baltic Porter",
       "stupen": "",
@@ -194,7 +204,7 @@
       "raw": "Baltic Porter | Porter - Baltic | 6.8% ABV | Pivovar Mazák / CZ"
     },
     {
-      "pozice": 20,
+      "pozice": 21,
       "pivovar": "Brouwerij De Brabandere",
       "nazev": "Petrus Red",
       "stupen": "",
@@ -204,7 +214,7 @@
       "raw": "Petrus Red | Fruit Beer | 8.5% ABV | Brouwerij De Brabandere / BE"
     },
     {
-      "pozice": 21,
+      "pozice": 22,
       "pivovar": "FALKON",
       "nazev": "BOCHÁNEK",
       "stupen": "",
