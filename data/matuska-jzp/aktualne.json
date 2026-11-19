@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-11-15 17:01",
+  "zmeneno": "2026-11-19 16:16",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Matuška",
-      "nazev": "BYLINNÝ BLAŽENEC",
-      "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "BOTANICAL GOSE",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "6",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
+      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
     },
     {
       "pozice": 3,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "6",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "U FLEKŮ",
+      "nazev": "TMAVÝ LEŽÁK",
+      "stupen": "13",
+      "alkohol": "4.6",
+      "styl": "SCHWARZ",
       "dalsi": "",
-      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
+      "raw": "U FLEKŮ: TMAVÝ LEŽÁK | SCHWARZ | 13° | 4,6 %"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "U FLEKŮ",
-      "nazev": "TMAVÝ LEŽÁK",
-      "stupen": "13",
-      "alkohol": "4.6",
-      "styl": "SCHWARZ",
+      "pivovar": "BOARD",
+      "nazev": "JÍZDA Z PIVA",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "GOSE",
       "dalsi": "",
-      "raw": "U FLEKŮ: TMAVÝ LEŽÁK | SCHWARZ | 13° | 4,6 %"
+      "raw": "BOARD: JÍZDA Z PIVA | GOSE | 11° | 0.045"
     },
     {
       "pozice": 7,

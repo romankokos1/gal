@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerspotprague.cz/beer-list/",
-  "zmeneno": "2026-11-17 12:19",
+  "zmeneno": "2026-11-19 16:16",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Volt",
-      "nazev": "Zdroj 12",
+      "pivovar": "Pioneer Beer",
+      "nazev": "Fresh Signal",
       "stupen": "",
-      "alkohol": "5",
-      "styl": "Pilsner - Czech",
+      "alkohol": "4.6",
+      "styl": "Pilsner - Other",
       "dalsi": "",
-      "raw": "Zdroj 12 | Pilsner - Czech | 5% ABV | Pivovar Volt"
+      "raw": "Fresh Signal | Pilsner - Other | 4.6% ABV | Pioneer Beer"
     },
     {
       "pozice": 3,
