@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-16 13:48",
+  "zmeneno": "2026-11-20 00:25",
   "metoda": "selektor",
   "piva": [
     {
@@ -105,13 +105,13 @@
     },
     {
       "pozice": 11,
-      "pivovar": "MAZÁK",
-      "nazev": "HOUSE OF SIN",
-      "stupen": "15",
-      "alkohol": "6.9",
-      "styl": "NEIPA",
+      "pivovar": "ELEKTRARNA",
+      "nazev": "KISSELÁČ VIŠEN",
+      "stupen": "11",
+      "alkohol": "5.1",
+      "styl": "CHERRY SOUR",
       "dalsi": "",
-      "raw": "MAZÁK HOUSE OF SIN 15° | NEIPA | 6.9%"
+      "raw": "ELEKTRARNA KISSELÁČ VIŠEN 11° | CHERRY SOUR | 5.1%"
     }
   ]
 }

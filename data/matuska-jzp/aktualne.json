@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-11-19 20:20",
+  "zmeneno": "2026-11-20 00:25",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "6",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "Matuška",
+      "nazev": "DŘEVO",
+      "stupen": "19",
+      "alkohol": "7.8",
+      "styl": "WOOD-AGED DOPPELBOCK",
       "dalsi": "",
-      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
+      "raw": "DŘEVO | WOOD-AGED DOPPELBOCK | 19° | 7,8 %"
     },
     {
       "pozice": 3,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "U FLEKŮ",
-      "nazev": "TMAVÝ LEŽÁK",
-      "stupen": "13",
-      "alkohol": "4.6",
-      "styl": "SCHWARZ",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "6",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "U FLEKŮ: TMAVÝ LEŽÁK | SCHWARZ | 13° | 4,6 %"
+      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "BOARD",
-      "nazev": "JÍZDA Z PIVA",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "GOSE",
+      "pivovar": "U FLEKŮ",
+      "nazev": "TMAVÝ LEŽÁK",
+      "stupen": "13",
+      "alkohol": "4.6",
+      "styl": "SCHWARZ",
       "dalsi": "",
-      "raw": "BOARD: JÍZDA Z PIVA | GOSE | 11° | 0.045"
+      "raw": "U FLEKŮ: TMAVÝ LEŽÁK | SCHWARZ | 13° | 4,6 %"
     },
     {
       "pozice": 7,
@@ -75,6 +75,16 @@
     },
     {
       "pozice": 8,
+      "pivovar": "BOARD",
+      "nazev": "JÍZDA Z PIVA",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "GOSE",
+      "dalsi": "",
+      "raw": "BOARD: JÍZDA Z PIVA | GOSE | 11° | 0.045"
+    },
+    {
+      "pozice": 9,
       "pivovar": "Matuška",
       "nazev": "SV. MARTIN",
       "stupen": "16",
