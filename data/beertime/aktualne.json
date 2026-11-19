@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.beertime.pub/",
-  "zmeneno": "2026-11-19 14:14",
+  "zmeneno": "2026-11-19 20:20",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,23 +75,23 @@
     },
     {
       "pozice": 8,
-      "pivovar": "RAVEN",
-      "nazev": "Gunslinger",
+      "pivovar": "MAZÁK",
+      "nazev": "Podzimní IPA",
       "stupen": "15",
-      "alkohol": "6.4",
-      "styl": "West Coast IPA",
+      "alkohol": "6.5",
+      "styl": "I.P.A.",
       "dalsi": "",
-      "raw": "RAVEN | Gunslinger | West Coast IPA 15°, Alc. 6,4%, IBU 80"
+      "raw": "MAZÁK | Podzimní IPA | I.P.A. 15°, Alc. 6,5%"
     },
     {
       "pozice": 9,
-      "pivovar": "THRILLS",
-      "nazev": "Radio trip",
-      "stupen": "12",
-      "alkohol": "5.3",
-      "styl": "Session I.P.A.",
+      "pivovar": "RAVEN",
+      "nazev": "Chill Factor",
+      "stupen": "14",
+      "alkohol": "6.4",
+      "styl": "Cold I.P.A.",
       "dalsi": "",
-      "raw": "THRILLS | Radio trip | Session I.P.A. 12°, Alc. 5,3%"
+      "raw": "RAVEN | Chill Factor | Cold I.P.A. 14°, Alc. 6,4%"
     },
     {
       "pozice": 10,
@@ -115,13 +115,13 @@
     },
     {
       "pozice": 12,
-      "pivovar": "POTMEHÚD",
-      "nazev": "Rhapzody",
+      "pivovar": "ZICHOVEC",
+      "nazev": "Robin Na Grepu",
       "stupen": "12",
-      "alkohol": "5.3",
-      "styl": "SMaSH A.P.A.",
+      "alkohol": "5.1",
+      "styl": "Grapefruit A.P.A.",
       "dalsi": "",
-      "raw": "POTMEHÚD | Rhapzody | SMaSH A.P.A. 12°, Alc. 5,3%, IBU 34"
+      "raw": "ZICHOVEC | Robin Na Grepu | Grapefruit A.P.A. 12°, Alc. 5,1%"
     },
     {
       "pozice": 13,

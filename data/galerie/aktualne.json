@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-18 21:43",
+  "zmeneno": "2026-11-19 20:20",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "ČESTMÍR",
-      "nazev": "Čest",
-      "stupen": "11",
-      "alkohol": "4.5",
+      "pivovar": "ZLOUN",
+      "nazev": "Nižborský ležák",
+      "stupen": "12",
+      "alkohol": "5.6",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "ČESTMÍR – Čest 11°/4,5% světlý ležák"
+      "raw": "ZLOUN – Nižborský ležák 12°/5,6% světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "HOPPYDOG",
-      "nazev": "Sensei",
+      "pivovar": "THRILLS",
+      "nazev": "Radio Trip",
       "stupen": "12",
       "alkohol": "5.3",
-      "styl": "Japanese Rice Lager",
+      "styl": "APA (cryo, t90. loral cryo, ekuanot cryo a pacific gem)",
       "dalsi": "",
-      "raw": "HOPPYDOG – Sensei 12°/5,3% Japanese Rice Lager"
+      "raw": "THRILLS – Radio Trip 12°/5,3% APA (cryo, t90. loral cryo, ekuanot cryo a pacific gem)"
     },
     {
       "pozice": 3,

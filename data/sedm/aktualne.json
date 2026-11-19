@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-18 22:13",
+  "zmeneno": "2026-11-19 20:20",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Blud",
-      "nazev": "Bludfog",
-      "stupen": "15",
+      "pivovar": "Falkon x The Barn",
+      "nazev": "Ummagumma Beta",
+      "stupen": "17",
       "alkohol": "6.5",
-      "styl": "NEIPA",
+      "styl": "TDH NEIPA",
       "dalsi": "",
-      "raw": "Blud - Bludfog | 15% | NEIPA, ABV 6,5%"
+      "raw": "Falkon x The Barn - Ummagumma Beta | 17% | TDH NEIPA, ABV 6,5%"
     }
   ]
 }
