@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.beertime.pub/",
-  "zmeneno": "2026-11-17 23:42",
+  "zmeneno": "2026-11-19 14:14",
   "metoda": "selektor",
   "piva": [
     {
@@ -31,7 +31,7 @@
       "alkohol": "6",
       "styl": "Dual Hop I.P.A.",
       "dalsi": "",
-      "raw": "BEERTIME | Dialogue:Talus+Cr.Centennial | Dual Hop I.P.A. 14°, All. 6%, IBU 45"
+      "raw": "BEERTIME | Dialogue:Talus+Cr.Centennial | Dual Hop I.P.A. 14°, Alc. 6%, IBU 45"
     },
     {
       "pozice": 4,
@@ -125,13 +125,13 @@
     },
     {
       "pozice": 13,
-      "pivovar": "ČESTMÍR",
-      "nazev": "New Zealand",
+      "pivovar": "MADCAT",
+      "nazev": "Misty Skywalker",
       "stupen": "14",
-      "alkohol": "5.8",
+      "alkohol": "6",
       "styl": "N.E.I.P.A.",
       "dalsi": "",
-      "raw": "ČESTMÍR | New Zealand | N.E.I.P.A. 14°, Alc. 5,8%"
+      "raw": "MADCAT | Misty Skywalker | N.E.I.P.A. 14°, Alc. 6%"
     },
     {
       "pozice": 14,

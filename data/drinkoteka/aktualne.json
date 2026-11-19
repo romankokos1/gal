@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-19 00:15",
+  "zmeneno": "2026-11-19 14:14",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "",
+      "pivovar": "Piggy",
       "nazev": "Elani Impulse",
       "stupen": "",
       "alkohol": "8.0",
-      "styl": "Double New England / Elani · Mosaic",
+      "styl": "Double NEIPA / Elani · Mosaic",
       "dalsi": "",
-      "raw": "Elani Impulse | Double New England / Elani · Mosaic · 8.0%"
+      "raw": "Elani Impulse | Double NEIPA / Elani · Mosaic · 8.0% | Piggy"
     },
     {
       "pozice": 5,
@@ -75,6 +75,16 @@
     },
     {
       "pozice": 8,
+      "pivovar": "Vault City",
+      "nazev": "Apple Maple Pecan",
+      "stupen": "",
+      "alkohol": "8.0",
+      "styl": "Imperial Pastry Sour",
+      "dalsi": "",
+      "raw": "Apple Maple Pecan | Imperial Pastry Sour · 8.0% | Vault City"
+    },
+    {
+      "pozice": 9,
       "pivovar": "Wild Creatures",
       "nazev": "Velvet Evolution 2024",
       "stupen": "",
@@ -84,7 +94,7 @@
       "raw": "Velvet Evolution 2024 | Wild Ale · 6.5% | Wild Creatures"
     },
     {
-      "pozice": 9,
+      "pozice": 10,
       "pivovar": "Verdant",
       "nazev": "DR:ink",
       "stupen": "",
