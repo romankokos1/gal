@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:prostredni-bar",
-  "zmeneno": "2026-11-18 16:08",
+  "zmeneno": "2026-11-20 15:59",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Griess",
-      "nazev": "Keller Bier",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "Světlý nefiltrovaný ležák",
+      "pivovar": "Bad Flash",
+      "nazev": "Lost Chance",
+      "stupen": "14",
+      "alkohol": "6",
+      "styl": "India Pale Ale",
       "dalsi": "",
-      "raw": "Griess Keller Bier 12° | Světlý nefiltrovaný ležák"
+      "raw": "Bad Flash Lost Chance 14° | India Pale Ale | 6%"
     },
     {
       "pozice": 3,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Zvíkovský",
-      "nazev": "Rarášek pšeničné",
+      "pivovar": "Lomnický",
+      "nazev": "ležák",
       "stupen": "11",
       "alkohol": "",
-      "styl": "",
+      "styl": "Světlý ležák",
       "dalsi": "",
-      "raw": "Zvíkovský Rarášek 11° pšeničné"
+      "raw": "Lomnický ležák 11° | Světlý ležák"
     },
     {
       "pozice": 5,
@@ -56,12 +56,12 @@
     {
       "pozice": 6,
       "pivovar": "Kojetín",
-      "nazev": "Podpantoflák",
-      "stupen": "14",
+      "nazev": "Piňa Colada",
+      "stupen": "13",
       "alkohol": "",
-      "styl": "India Pale Ale",
+      "styl": "3l",
       "dalsi": "",
-      "raw": "Kojetín Podpantoflák 14° | India Pale Ale | 0,4l"
+      "raw": "Kojetín Piňa Colada 13° | 3l"
     },
     {
       "pozice": 7,
