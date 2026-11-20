@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-20 18:00",
+  "zmeneno": "2026-11-20 21:04",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "ZLOUN",
-      "nazev": "Nižborský ležák",
+      "pivovar": "SKJUBRU",
+      "nazev": "Fresh Hop Lager",
       "stupen": "12",
-      "alkohol": "5.6",
+      "alkohol": "5.1",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "ZLOUN – Nižborský ležák 12°/5,6% světlý ležák"
+      "raw": "SKJUBRU – Fresh Hop Lager 12°/5,1% světlý ležák"
     },
     {
       "pozice": 2,
