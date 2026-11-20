@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:horni-bar",
-  "zmeneno": "2026-11-19 18:18",
+  "zmeneno": "2026-11-20 22:04",
   "metoda": "selektor",
   "piva": [
     {
@@ -112,16 +112,6 @@
       "styl": "",
       "dalsi": "",
       "raw": "Postřižinské z čerstvého chmele 12°"
-    },
-    {
-      "pozice": 12,
-      "pivovar": "Bad Flash",
-      "nazev": "Mini Boss NEIPA",
-      "stupen": "9",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Bad Flash Mini Boss 9° NEIPA | 0,4l"
     }
   ]
 }

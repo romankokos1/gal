@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-19 14:14",
+  "zmeneno": "2026-11-20 22:04",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Matuška",
-      "nazev": "Florida",
-      "stupen": "10",
-      "alkohol": "",
-      "styl": "American Pale Ale, 4, 2°",
+      "pivovar": "Kompresor/Joe's Garage, Czech Pale Ale",
+      "nazev": "z novošlechtěných žateckých chmelů",
+      "stupen": "11",
+      "alkohol": "4.4",
+      "styl": "",
       "dalsi": "",
-      "raw": "Matuška - Florida, American Pale Ale, 10° sv. nef., 4, 2° vol. Alc, 38 IBU"
+      "raw": "Kompresor/Joe's Garage, Czech Pale Ale - z novošlechtěných žateckých chmelů 11° sv. nef., 4, 4% vol. Alc, 30 IBU"
     },
     {
       "pozice": 9,
