@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-19 18:18",
+  "zmeneno": "2026-11-20 20:02",
   "metoda": "selektor",
   "piva": [
     {
@@ -165,13 +165,13 @@
     },
     {
       "pozice": 17,
-      "pivovar": "Mazák",
-      "nazev": "Rainbow of Death",
+      "pivovar": "Brewnicorn",
+      "nazev": "Stromeček",
       "stupen": "",
-      "alkohol": "6.5",
-      "styl": "IPA - American",
+      "alkohol": "8.6",
+      "styl": "IPA - Imperial / Double",
       "dalsi": "",
-      "raw": "Rainbow of Death | IPA - American | 6.5% ABV | Pivovar Mazák / CZ"
+      "raw": "Stromeček | IPA - Imperial / Double | 8.6% ABV | Brewnicorn / CZ"
     },
     {
       "pozice": 18,

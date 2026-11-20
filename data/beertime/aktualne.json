@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.beertime.pub/",
-  "zmeneno": "2026-11-19 20:20",
+  "zmeneno": "2026-11-20 20:02",
   "metoda": "selektor",
   "piva": [
     {
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "HOPPYDOG",
-      "nazev": "Poodle",
-      "stupen": "11",
-      "alkohol": "4",
-      "styl": "Meruňka/Maracuja Sour",
+      "pivovar": "MUFLON",
+      "nazev": "Wildberries",
+      "stupen": "10",
+      "alkohol": "3.5",
+      "styl": "Sour Ale",
       "dalsi": "",
-      "raw": "HOPPYDOG | Poodle | Meruňka/Maracuja Sour 11°, Alc. 4%"
+      "raw": "MUFLON | Wildberries | Sour Ale 10°, Alc. 3,5%"
     },
     {
       "pozice": 11,
