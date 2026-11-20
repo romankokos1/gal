@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-19 20:20",
+  "zmeneno": "2026-11-20 18:00",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,23 +15,23 @@
     },
     {
       "pozice": 2,
-      "pivovar": "THRILLS",
-      "nazev": "Radio Trip",
-      "stupen": "12",
-      "alkohol": "5.3",
-      "styl": "APA (cryo, t90. loral cryo, ekuanot cryo a pacific gem)",
+      "pivovar": "ČESTMÍR",
+      "nazev": "Sundown",
+      "stupen": "11",
+      "alkohol": "4.7",
+      "styl": "Session IPA (citra, ekuanot, centennial)",
       "dalsi": "",
-      "raw": "THRILLS – Radio Trip 12°/5,3% APA (cryo, t90. loral cryo, ekuanot cryo a pacific gem)"
+      "raw": "ČESTMÍR – Sundown 11°/4,7% Session IPA (citra, ekuanot, centennial)"
     },
     {
       "pozice": 3,
-      "pivovar": "BLUD",
-      "nazev": "Bludfog Cip076",
-      "stupen": "15",
-      "alkohol": "6.5",
-      "styl": "Single Hop NEIPA",
+      "pivovar": "NOZIB",
+      "nazev": "Bone Dry",
+      "stupen": "14",
+      "alkohol": "6.6",
+      "styl": "NEIPA (nelson sauvin, motueka)",
       "dalsi": "",
-      "raw": "BLUD – Bludfog Cip076 15°/6,5%/40IBU Single Hop NEIPA"
+      "raw": "NOZIB – Bone Dry 14°/6,6% NEIPA (nelson sauvin, motueka)"
     },
     {
       "pozice": 4,
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "URPUTNÉ PÍPY",
-      "nazev": "Brose",
-      "stupen": "11",
-      "alkohol": "4.7",
-      "styl": "Broskev, pomerančová kůra, koriandr, sůl",
+      "pivovar": "FUNKY FLUID (PL)",
+      "nazev": "Gelato Wild Strawberry Blueberry & Rapsberry",
+      "stupen": "18",
+      "alkohol": "5.5",
+      "styl": "Pastry Sour s divokými jahody, borůvky a malinami",
       "dalsi": "",
-      "raw": "URPUTNÉ PÍPY – Brose 11°/4,7% Broskev, pomerančová kůra, koriandr, sůl"
+      "raw": "FUNKY FLUID (PL) – Gelato Wild Strawberry Blueberry & Rapsberry 18°/5,5% Pastry Sour s divokými jahody, borůvky a malinami"
     }
   ]
 }
