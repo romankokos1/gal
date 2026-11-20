@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-11-20 00:25",
+  "zmeneno": "2026-11-21 00:06",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "U FLEKŮ",
-      "nazev": "TMAVÝ LEŽÁK",
-      "stupen": "13",
-      "alkohol": "4.6",
-      "styl": "SCHWARZ",
+      "pivovar": "BOARD",
+      "nazev": "JÍZDA Z PIVA",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "GOSE",
       "dalsi": "",
-      "raw": "U FLEKŮ: TMAVÝ LEŽÁK | SCHWARZ | 13° | 4,6 %"
+      "raw": "BOARD: JÍZDA Z PIVA | GOSE | 11° | 0.045"
     },
     {
       "pozice": 7,
@@ -75,16 +75,6 @@
     },
     {
       "pozice": 8,
-      "pivovar": "BOARD",
-      "nazev": "JÍZDA Z PIVA",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "GOSE",
-      "dalsi": "",
-      "raw": "BOARD: JÍZDA Z PIVA | GOSE | 11° | 0.045"
-    },
-    {
-      "pozice": 9,
       "pivovar": "Matuška",
       "nazev": "SV. MARTIN",
       "stupen": "16",

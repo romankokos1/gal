@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerknir.cz/",
-  "zmeneno": "2026-11-17 18:25",
+  "zmeneno": "2026-11-21 00:06",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Valeč",
-      "nazev": "Valeč - Juchajda",
+      "pivovar": "Obora",
+      "nazev": "Gose Lemongrass",
       "stupen": "12",
       "alkohol": "4.9",
-      "styl": "Oak Aged Gose s šípkem a zázvorem",
+      "styl": "Gose",
       "dalsi": "",
-      "raw": "Valeč - Juchajda 12° | Oak Aged Gose s šípkem a zázvorem | 12° | 4.9% | Pivovar Valeč"
+      "raw": "Gose Lemongrass 12° | Gose | 12° | 4.9% | Pivovar Obora"
     },
     {
       "pozice": 5,
