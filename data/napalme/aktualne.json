@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-18 13:54",
+  "zmeneno": "2026-11-20 12:15",
   "metoda": "rucne",
   "piva": [
     {
@@ -35,16 +35,6 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Chroust",
-      "nazev": "Štědrá",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Session Hazy IPA",
-      "dalsi": "",
-      "raw": "Chroust Štědrá Session Hazy IPA 11"
-    },
-    {
-      "pozice": 5,
       "pivovar": "SQBRU",
       "nazev": "APA 810",
       "stupen": "11",
@@ -54,7 +44,27 @@
       "raw": "SQBRU APA 810 11"
     },
     {
+      "pozice": 5,
+      "pivovar": "Napalmě",
+      "nazev": "Krém Béčko bezlepkový NZ Cream",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Ale",
+      "dalsi": "",
+      "raw": "Napalmě Krém Béčko bezlepkový NZ Cream Ale 11"
+    },
+    {
       "pozice": 6,
+      "pivovar": "Čestmír",
+      "nazev": "Čest",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Čestmír Čest světlý ležák"
+    },
+    {
+      "pozice": 7,
       "pivovar": "Napalmě",
       "nazev": "Cannabis",
       "stupen": "12",
@@ -64,57 +74,37 @@
       "raw": "Napalmě Cannabis gose 12"
     },
     {
-      "pozice": 7,
-      "pivovar": "Čestmír",
-      "nazev": "Brandejs",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "světlý ležák",
-      "dalsi": "",
-      "raw": "Čestmír Brandejs světlý ležák 12"
-    },
-    {
       "pozice": 8,
-      "pivovar": "Vik",
-      "nazev": "Long Way Home",
+      "pivovar": "Matuška",
+      "nazev": "Apollo Galaxy",
       "stupen": "13",
       "alkohol": "",
-      "styl": "Sour Ale",
+      "styl": "Pale Ale",
       "dalsi": "",
-      "raw": "Vik Long Way Home Sour Ale 13"
+      "raw": "Matuška Apollo Galaxy Pale Ale 13"
     },
     {
       "pozice": 9,
-      "pivovar": "Falkon",
-      "nazev": "Ježíšmarjá",
+      "pivovar": "Chroust",
+      "nazev": "Štědrá Westka",
       "stupen": "14",
       "alkohol": "",
-      "styl": "IPA",
+      "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "Falkon Ježíšmarjá IPA 14"
+      "raw": "Chroust Štědrá Westka West Coast IPA 14"
     },
     {
       "pozice": 10,
-      "pivovar": "Hope",
-      "nazev": "Evermore",
-      "stupen": "15",
+      "pivovar": "Sibeeria",
+      "nazev": "The Candle Keeper",
+      "stupen": "19",
       "alkohol": "",
-      "styl": "IPA",
+      "styl": "Pastry Sour Ale",
       "dalsi": "",
-      "raw": "Hope Evermore IPA 15"
+      "raw": "Sibeeria The Candle Keeper Pastry Sour Ale 19"
     },
     {
       "pozice": 11,
-      "pivovar": "Mazák",
-      "nazev": "Vánoční",
-      "stupen": "16",
-      "alkohol": "",
-      "styl": "Stout",
-      "dalsi": "",
-      "raw": "Mazák Vánoční Stout 16"
-    },
-    {
-      "pozice": 12,
       "pivovar": "Zichovec",
       "nazev": "Kometa",
       "stupen": "20",
@@ -122,6 +112,16 @@
       "styl": "Double NEIPA",
       "dalsi": "",
       "raw": "Zichovec Kometa Double NEIPA 20"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "Zichovec",
+      "nazev": "Tichá noc Double Milk",
+      "stupen": "28",
+      "alkohol": "",
+      "styl": "Stout",
+      "dalsi": "",
+      "raw": "Zichovec Tichá noc Double Milk Stout 28"
     }
   ]
 }
