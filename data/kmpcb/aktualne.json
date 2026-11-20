@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-11-19 14:14",
+  "zmeneno": "2026-11-20 13:56",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Žumberk",
-      "nazev": "ležák",
+      "pivovar": "Mazák",
+      "nazev": "Extra HOŘKÁ",
       "stupen": "11",
       "alkohol": "",
-      "styl": "Ležák",
+      "styl": "",
       "dalsi": "",
-      "raw": "Žumberk ležák 11° sv.nef."
+      "raw": "-> Mazák Extra HOŘKÁ 11° sv.nef."
     },
     {
       "pozice": 4,
@@ -41,7 +41,7 @@
       "alkohol": "",
       "styl": "Ležák",
       "dalsi": "",
-      "raw": "-> Jílovice ležák 11° sv.nef."
+      "raw": "Jílovice ležák 11° sv.nef."
     },
     {
       "pozice": 5,
@@ -115,6 +115,16 @@
     },
     {
       "pozice": 12,
+      "pivovar": "Thrill's",
+      "nazev": "Sea Level",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "ALE",
+      "dalsi": "",
+      "raw": "-> Thrill's Sea Level 12° ALE"
+    },
+    {
+      "pozice": 13,
       "pivovar": "Pioneer",
       "nazev": "LUNAPARK",
       "stupen": "12",
@@ -124,7 +134,7 @@
       "raw": "Pioneer LUNAPARK 12° Session HAZY IPA"
     },
     {
-      "pozice": 13,
+      "pozice": 14,
       "pivovar": "Čestmír",
       "nazev": "NINE",
       "stupen": "14",
@@ -134,27 +144,27 @@
       "raw": "Čestmír NINE 14° IPA"
     },
     {
-      "pozice": 14,
+      "pozice": 15,
       "pivovar": "Zichovec",
-      "nazev": "Nectar Of Happiness",
-      "stupen": "17",
+      "nazev": "Juicy Lucy",
+      "stupen": "15",
       "alkohol": "",
       "styl": "NEIPA",
       "dalsi": "",
-      "raw": "Zichovec Nectar Of Happiness 17° NEIPA"
-    },
-    {
-      "pozice": 15,
-      "pivovar": "Zichovec",
-      "nazev": "SOUR",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "Passion Fruit",
-      "dalsi": "",
-      "raw": "Zichovec SOUR 12° Passion Fruit"
+      "raw": "Zichovec Juicy Lucy 15° NEIPA"
     },
     {
       "pozice": 16,
+      "pivovar": "Brewnicorn",
+      "nazev": "RASPBERRY",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Sour ALE",
+      "dalsi": "",
+      "raw": "Brewnicorn RASPBERRY 11° Sour ALE"
+    },
+    {
+      "pozice": 17,
       "pivovar": "Louka",
       "nazev": "Fresh Breakfast #007",
       "stupen": "13",
@@ -164,7 +174,7 @@
       "raw": "Louka Fresh Breakfast #007 13° Smoothie Sour (Hruška, Mirabelka, Papaja)"
     },
     {
-      "pozice": 17,
+      "pozice": 18,
       "pivovar": "FunkyFluid",
       "nazev": "Gelato: White Fluff",
       "stupen": "",
@@ -174,7 +184,7 @@
       "raw": "FunkyFluid Gelato: White Fluff 5,5%Alc. Pastry SOUR (PL)"
     },
     {
-      "pozice": 18,
+      "pozice": 19,
       "pivovar": "Kasteel",
       "nazev": "Rouge",
       "stupen": "",
@@ -184,7 +194,7 @@
       "raw": "Kasteel Rouge 8%Alc. (BELGIE - VIŠEŇ)"
     },
     {
-      "pozice": 19,
+      "pozice": 20,
       "pivovar": "Čestmír",
       "nazev": "Astro Creep",
       "stupen": "14",
@@ -194,7 +204,7 @@
       "raw": "Čestmír Astro Creep 14° STOUT"
     },
     {
-      "pozice": 20,
+      "pozice": 21,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",
