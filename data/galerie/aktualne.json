@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-20 21:04",
+  "zmeneno": "2026-11-21 12:11",
   "metoda": "nadpis",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "ČESTMÍR",
-      "nazev": "Sundown",
+      "nazev": "Warragul",
       "stupen": "11",
-      "alkohol": "4.7",
-      "styl": "Session IPA (citra, ekuanot, centennial)",
+      "alkohol": "4.5",
+      "styl": "Australian Pale Ale (enigma, galaxy)",
       "dalsi": "",
-      "raw": "ČESTMÍR – Sundown 11°/4,7% Session IPA (citra, ekuanot, centennial)"
+      "raw": "ČESTMÍR – Warragul 11°/4,5% Australian Pale Ale (enigma, galaxy)"
     },
     {
       "pozice": 3,

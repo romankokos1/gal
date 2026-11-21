@@ -124,5 +124,10 @@
     "id": "beertime",
     "nazev": "Beertime Pub",
     "url": "https://www.beertime.pub/"
+  },
+  {
+    "id": "maltworm",
+    "nazev": "Malt Worm",
+    "url": "https://maltworm.cz/dnes-na-cepu/"
   }
 ]

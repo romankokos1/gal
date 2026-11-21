@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-11-21 00:06",
+  "zmeneno": "2026-11-21 12:11",
   "metoda": "selektor",
   "piva": [
     {
@@ -58,10 +58,10 @@
       "pivovar": "BOARD",
       "nazev": "JÍZDA Z PIVA",
       "stupen": "11",
-      "alkohol": "",
+      "alkohol": "4.5",
       "styl": "GOSE",
       "dalsi": "",
-      "raw": "BOARD: JÍZDA Z PIVA | GOSE | 11° | 0.045"
+      "raw": "BOARD: JÍZDA Z PIVA | GOSE | 11° | 4,5 %"
     },
     {
       "pozice": 7,
