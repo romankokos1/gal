@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-21 12:11",
+  "zmeneno": "2026-11-21 20:47",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,16 +15,6 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Nieczajna",
-      "nazev": "Dark Lager (2026)",
-      "stupen": "14",
-      "alkohol": "5.3",
-      "styl": "New World Dark Lager",
-      "dalsi": "",
-      "raw": "Nieczajna Dark Lager (2026) | New World Dark Lager | 14° | 5,3% | Nieczajna"
-    },
-    {
-      "pozice": 3,
       "pivovar": "Šnajdr",
       "nazev": "Černokostelecká Černá svině",
       "stupen": "13.8",
@@ -34,7 +24,7 @@
       "raw": "Černokostelecká Černá svině | Dark Lager | 13.8° | 5,8% | Šnajdr"
     },
     {
-      "pozice": 4,
+      "pozice": 3,
       "pivovar": "Nieczajna",
       "nazev": "Polish Potato IPA",
       "stupen": "13",
@@ -44,17 +34,17 @@
       "raw": "Nieczajna Polish Potato IPA | Potatoe Pale Ale | 13° | 5,6% | Nieczajna"
     },
     {
-      "pozice": 5,
-      "pivovar": "Černý potoka",
-      "nazev": "Plecháč",
-      "stupen": "11",
-      "alkohol": "4.8",
+      "pozice": 4,
+      "pivovar": "Nachmelená opice",
+      "nazev": "Nectaron Hazy Pale Ale",
+      "stupen": "13",
+      "alkohol": "5.4",
       "styl": "New England Pale Ale",
       "dalsi": "",
-      "raw": "Černý Potoka Plecháč | New England Pale Ale | 11° | 4,8% | Černý potoka"
+      "raw": "Nachmelená opice Nectaron Hazy Pale Ale | New England Pale Ale | 13° | 5,4% | Nachmelená opice"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Nieczajna",
       "nazev": "Nieczajna Town",
       "stupen": "14",
@@ -64,7 +54,7 @@
       "raw": "Nieczajna Nieczajna Town | Rice IPA | 14° | 5,8% | Nieczajna"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Cobolis",
       "nazev": "Washington",
       "stupen": "17",
@@ -74,27 +64,17 @@
       "raw": "Cobolis Washington | New England IPA | 17° | 7,7% | Cobolis"
     },
     {
+      "pozice": 7,
+      "pivovar": "Haksna",
+      "nazev": "If You Like",
+      "stupen": "10",
+      "alkohol": "4.3",
+      "styl": "Pineapple & Coconut Sour Ale",
+      "dalsi": "",
+      "raw": "Haksna If You Like | Pineapple & Coconut Sour Ale | 10° | 4,3% | Haksna"
+    },
+    {
       "pozice": 8,
-      "pivovar": "Obora",
-      "nazev": "Philadelphia Sour Malina",
-      "stupen": "12.7",
-      "alkohol": "4.6",
-      "styl": "Raspberry Sour Ale",
-      "dalsi": "",
-      "raw": "Obora Philadelphia Sour Malina | Raspberry Sour Ale | 12.7° | 4,6% | Obora"
-    },
-    {
-      "pozice": 9,
-      "pivovar": "The Barn Beer Co.",
-      "nazev": "Gosebumps Yuzu & Meruňka edition",
-      "stupen": "14",
-      "alkohol": "4.2",
-      "styl": "Yuzu & Apricot Gose",
-      "dalsi": "",
-      "raw": "Barn Gosebumps Yuzu & Meruňka edition 14° | Yuzu & Apricot Gose | 14° | 4,2% | The Barn Beer Co."
-    },
-    {
-      "pozice": 10,
       "pivovar": "Nieczajna",
       "nazev": "Lagervulin Black Edition",
       "stupen": "16",
@@ -104,7 +84,7 @@
       "raw": "Nieczajna Lagervulin Black Edition | Rauchbock | 16° | 6,4% | Nieczajna"
     },
     {
-      "pozice": 11,
+      "pozice": 9,
       "pivovar": "Nieczajna",
       "nazev": "Alder Wood Smoked Oatmeal Stout",
       "stupen": "15",
@@ -114,7 +94,7 @@
       "raw": "Nieczajna Alder Wood Smoked Oatmeal Stout | Wood Aged Smoked Oatmeal Stout | 15° | 5,3% | Nieczajna"
     },
     {
-      "pozice": 12,
+      "pozice": 10,
       "pivovar": "Nieczajna/Golem",
       "nazev": "Black Swan",
       "stupen": "24",
@@ -124,7 +104,7 @@
       "raw": "Nieczajna Black Swan | Wild Imperial Stout | 24° | 10,5% | Nieczajna/Golem"
     },
     {
-      "pozice": 13,
+      "pozice": 11,
       "pivovar": "Nieczajna",
       "nazev": "Piwo w Stylu Grodziskim",
       "stupen": "7",
@@ -134,7 +114,7 @@
       "raw": "Nieczajna Piwo w Stylu Grodziskim | Grodziskie | 7° | 3,3% | Nieczajna"
     },
     {
-      "pozice": 14,
+      "pozice": 12,
       "pivovar": "Van Honsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "18",
@@ -144,7 +124,7 @@
       "raw": "Van Honsebrouck Kasteel Rouge | Belgian Strong Dark Ale/Kriek | 18° | 8% | Van Honsebrouck"
     },
     {
-      "pozice": 15,
+      "pozice": 13,
       "pivovar": "Johannes Cyder",
       "nazev": "Demi Sec",
       "stupen": "",
