@@ -129,5 +129,10 @@
     "id": "maltworm",
     "nazev": "Malt Worm",
     "url": "https://maltworm.cz/dnes-na-cepu/"
+  },
+  {
+    "id": "poupe",
+    "nazev": "Pivovarský dům Poupě",
+    "url": "https://www.pivovar-poupe.cz/"
   }
 ]

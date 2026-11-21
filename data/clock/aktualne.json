@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-17 14:21",
+  "zmeneno": "2026-11-21 12:40",
   "metoda": "nadpis",
   "piva": [
     {
@@ -36,22 +36,22 @@
     {
       "pozice": 4,
       "pivovar": "Clock",
+      "nazev": "Tekutý Kapr",
+      "stupen": "12",
+      "alkohol": "",
+      "styl": "West Coast IPA",
+      "dalsi": "",
+      "raw": "12° Tekutý Kapr (West Coast IPA)"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Clock",
       "nazev": "WestCoastIPA",
       "stupen": "14",
       "alkohol": "",
       "styl": "No Idols!",
       "dalsi": "",
       "raw": "14° WestCoastIPA (No Idols!)"
-    },
-    {
-      "pozice": 5,
-      "pivovar": "Clock",
-      "nazev": "Double IPA",
-      "stupen": "19",
-      "alkohol": "",
-      "styl": "No Idols!",
-      "dalsi": "",
-      "raw": "19° Double IPA (No Idols!)"
     },
     {
       "pozice": 6,

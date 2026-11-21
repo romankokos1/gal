@@ -1,0 +1,87 @@
+{
+  "zdroj": "https://www.pivovar-poupe.cz/",
+  "zmeneno": "2026-11-21 12:40",
+  "metoda": "selektor",
+  "piva": [
+    {
+      "pozice": 1,
+      "pivovar": "VIK",
+      "nazev": "Free Hazy IPA",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Free Hazy IPA (VIK)"
+    },
+    {
+      "pozice": 2,
+      "pivovar": "Poupě",
+      "nazev": "IPA",
+      "stupen": "14",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "IPA 14% (Poupě)"
+    },
+    {
+      "pozice": 3,
+      "pivovar": "Poupě",
+      "nazev": "Gose Ostružina",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Gose 10% - Ostružina (Poupě)"
+    },
+    {
+      "pozice": 4,
+      "pivovar": "Poupě",
+      "nazev": "Ejlík marakuja",
+      "stupen": "5",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Ejlík 5%, marakuja (Poupě)"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Dalešice",
+      "nazev": "Osvald",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Osvald 10% (Dalešice)"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Dalešice",
+      "nazev": "Dalešické májové",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Dalešické májové 13% (Dalešice)"
+    },
+    {
+      "pozice": 7,
+      "pivovar": "Poupě",
+      "nazev": "Poupětův Američan",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Poupětův Američan 11% (Poupě)"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Dalešice",
+      "nazev": "Dalešická tanková",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Dalešická tanková 11% (Dalešice)"
+    }
+  ]
+}
