@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.beertime.pub/",
-  "zmeneno": "2026-11-20 20:02",
+  "zmeneno": "2026-11-21 14:42",
   "metoda": "selektor",
   "piva": [
     {
@@ -105,13 +105,13 @@
     },
     {
       "pozice": 11,
-      "pivovar": "LIBERTAS",
-      "nazev": "Irish Dry Stout",
-      "stupen": "11.5",
-      "alkohol": "5.1",
-      "styl": "Irish Dry Stout",
+      "pivovar": "COBOLIS",
+      "nazev": "Bezedný Kotel",
+      "stupen": "18",
+      "alkohol": "7.2",
+      "styl": "Irish Extra Stout",
       "dalsi": "",
-      "raw": "LIBERTAS | Irish Dry Stout | Irish Dry Stout 11,5°, Alc. 5,1%"
+      "raw": "COBOLIS | Bezedný Kotel | Irish Extra Stout 18°, Alc. 7,2%"
     },
     {
       "pozice": 12,
