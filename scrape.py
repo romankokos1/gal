@@ -171,6 +171,17 @@ PODNIKY = [
     {"id": "beertime", "nazev": "Beertime Pub", "url": "https://www.beertime.pub/",
      "polozky": "tr.polozka", "pole": [".pivovar", ".nazev", ".popis"],
      "format": "pivovar|nazev|styl stupne, alc", "jen_piva": True, "jen_selektor": True},
+
+    # ---- Malt Worm (Brno), přidáno 21. 11. 2026 ----
+    # Elementor, jeden <article class="ecs-post-loop"> na kohout: nadpis „Nieczajna Black Swan“,
+    # seznam styl / stupně / % / IBU a seznam pivovar / místo („Nieczajna/Golem“). Pivovar je
+    # v nadpisu i zvlášť – z názvu se odřízne. Limonáda bez ° a % vypadne.
+    {"id": "maltworm", "nazev": "Malt Worm", "url": "https://maltworm.cz/dnes-na-cepu/",
+     "polozky": "article.ecs-post-loop",
+     "pole": [".elementor-widget-heading", ".elementor-element-84c7c3f li:nth-of-type(1)",
+              ".elementor-element-84c7c3f li:nth-of-type(2)", ".elementor-element-84c7c3f li:nth-of-type(3)",
+              ".elementor-element-273d7e0 li:nth-of-type(1)"],
+     "format": "nazev|styl|°|%|pivovar", "jen_piva": True, "jen_selektor": True},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
@@ -651,6 +662,31 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
         if a:
             out["alkohol"] = a.group(1).replace(",", ".")
         out["styl"] = clean(re.split(r"\s*\d+(?:[.,]\d+)?\s*°|,\s*(?:Alc|All|IBU)\b", popis, flags=re.I)[0]).strip(" ,")
+        return out
+
+    if fmt == "nazev|styl|°|%|pivovar" and " | " in main:
+        # „Nieczajna Black Swan | Wild Imperial Stout | 24° | 10,5% | Nieczajna/Golem“ (Malt Worm)
+        parts = [x.strip() for x in main.split(" | ")]
+        name, rest = parts[0], parts[1:]
+        brew = rest.pop() if rest and not re.search(r"\d\s*[°%]|^[°%]$", rest[-1]) else ""
+        for x in rest:
+            d, a = DEG.search(x), re.search(NUM + r"\s*%", x)
+            if d and not out["stupen"]:
+                out["stupen"] = d.group(1).replace(",", ".")
+            elif a and not out["alkohol"]:
+                out["alkohol"] = a.group(1).replace(",", ".")
+            elif not re.search(r"\d|^[°%]$", x) and not out["styl"]:
+                out["styl"] = clean(x)
+        dn = DEG.search(name)                        # „Gosebumps … edition 14°“
+        if dn:
+            name = name[:dn.start()].strip()
+        # pivovar je i na začátku názvu („Barn Gosebumps“ / „The Barn Beer Co.“) → odříznout
+        w, bn = name.split(), " " + norm(brew.replace("/", " ")) + " "
+        for k in range(min(3, len(w) - 1), 0, -1):
+            if " " + norm(" ".join(w[:k])) + " " in bn:
+                name = " ".join(w[k:])
+                break
+        out["pivovar"], out["nazev"] = brew or default_brewery, clean(name)
         return out
 
     if fmt == "matuska" and " | " in main:
