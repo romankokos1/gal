@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-21 12:11",
+  "zmeneno": "2026-11-21 15:13",
   "metoda": "nadpis",
   "piva": [
     {
@@ -20,8 +20,8 @@
       "stupen": "11",
       "alkohol": "4.5",
       "styl": "Australian Pale Ale (enigma, galaxy)",
-      "dalsi": "",
-      "raw": "ČESTMÍR – Warragul 11°/4,5% Australian Pale Ale (enigma, galaxy)"
+      "dalsi": "SIBEERIA – The Regifter 12°/4,8% session NEIPA (riwaka, citra cryo, ekuanot)",
+      "raw": "ČESTMÍR – Warragul 11°/4,5% Australian Pale Ale (enigma, galaxy) //NEXT// SIBEERIA – The Regifter 12°/4,8% session NEIPA (riwaka, citra cryo, ekuanot)"
     },
     {
       "pozice": 3,
@@ -30,18 +30,18 @@
       "stupen": "14",
       "alkohol": "6.6",
       "styl": "NEIPA (nelson sauvin, motueka)",
-      "dalsi": "",
-      "raw": "NOZIB – Bone Dry 14°/6,6% NEIPA (nelson sauvin, motueka)"
+      "dalsi": "WYWAR (SK) – Panská 14°/5,8%/50IBU Single Hop IPA (citra)",
+      "raw": "NOZIB – Bone Dry 14°/6,6% NEIPA (nelson sauvin, motueka) //NEXT// WYWAR (SK) – Panská 14°/5,8%/50IBU Single Hop IPA (citra)"
     },
     {
       "pozice": 4,
-      "pivovar": "SQBRU + GALERIE PIVA",
-      "nazev": "Tohle Se Muselo Stout",
-      "stupen": "13",
-      "alkohol": "6.3",
-      "styl": "Stout s malinou a hořkou čokoládou",
+      "pivovar": "SOLITÉR",
+      "nazev": "D10s",
+      "stupen": "10",
+      "alkohol": "4",
+      "styl": "Italian Pilsner (saphir, spalter select, vital)",
       "dalsi": "",
-      "raw": "SQBRU + GALERIE PIVA – Tohle Se Muselo Stout 13°/6,3% Stout s malinou a hořkou čokoládou"
+      "raw": "SOLITÉR – D10s 10°/4% Italian Pilsner (saphir, spalter select, vital)"
     },
     {
       "pozice": 5,
@@ -50,8 +50,8 @@
       "stupen": "18",
       "alkohol": "5.5",
       "styl": "Pastry Sour s divokými jahody, borůvky a malinami",
-      "dalsi": "",
-      "raw": "FUNKY FLUID (PL) – Gelato Wild Strawberry Blueberry & Rapsberry 18°/5,5% Pastry Sour s divokými jahody, borůvky a malinami"
+      "dalsi": "FUNKY FLUID (PL) – Gelato Xtreme: Bloody 30°/8% Pastry Sour s borůvkou, guávou, granátovým jablkem, červenou řepou a ibiškem",
+      "raw": "FUNKY FLUID (PL) – Gelato Wild Strawberry Blueberry & Rapsberry 18°/5,5% Pastry Sour s divokými jahody, borůvky a malinami //NEXT// FUNKY FLUID (PL) – Gelato Xtreme: Bloody 30°/8% Pastry Sour s borůvkou, guávou, granátovým jablkem, červenou řepou a ibiškem"
     }
   ]
 }
