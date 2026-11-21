@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:horni-bar",
-  "zmeneno": "2026-11-21 18:45",
+  "zmeneno": "2026-11-22 00:51",
   "metoda": "selektor",
   "piva": [
     {
@@ -85,16 +85,6 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Holá",
-      "nazev": "řiť Ipička IPA",
-      "stupen": "15",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Holá řiť Ipička 15° IPA | 0,4l"
-    },
-    {
-      "pozice": 10,
       "pivovar": "Bad Flash",
       "nazev": "Summer Sadness Pale Ale",
       "stupen": "10",
@@ -104,7 +94,7 @@
       "raw": "Bad Flash Summer Sadness 10° Pale Ale"
     },
     {
-      "pozice": 11,
+      "pozice": 10,
       "pivovar": "Postřižinské",
       "nazev": "z čerstvého chmele",
       "stupen": "12",

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-21 20:47",
+  "zmeneno": "2026-11-22 00:51",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,16 +35,6 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Piggy",
-      "nazev": "Elani Impulse",
-      "stupen": "",
-      "alkohol": "8.0",
-      "styl": "Double NEIPA / Elani · Mosaic",
-      "dalsi": "",
-      "raw": "Elani Impulse | Double NEIPA / Elani · Mosaic · 8.0% | Piggy"
-    },
-    {
-      "pozice": 5,
       "pivovar": "SOMA X Ārpus",
       "nazev": "Riwaka Eggers X Nelson",
       "stupen": "",
@@ -54,7 +44,7 @@
       "raw": "Riwaka Eggers X Nelson | NEIPA · 6.5% | SOMA X Ārpus"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Verdant",
       "nazev": "Under the Same Sky",
       "stupen": "",
@@ -64,7 +54,7 @@
       "raw": "Under the Same Sky | Double New England · 8.4% | Verdant"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Einsiedler",
       "nazev": "Schwarz bier",
       "stupen": "",
@@ -74,7 +64,7 @@
       "raw": "Schwarz bier | Schwarzbier · 5.0% | Einsiedler"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Transient Artisan Ales X Ārpus",
       "nazev": "Vanilla/Coffee Imperial Stout",
       "stupen": "",
@@ -84,7 +74,7 @@
       "raw": "Vanilla/Coffee Imperial Stout | 13.0% | Transient Artisan Ales X Ārpus"
     },
     {
-      "pozice": 9,
+      "pozice": 8,
       "pivovar": "Wild Creatures",
       "nazev": "Femme Fanale 2024",
       "stupen": "",
@@ -94,7 +84,7 @@
       "raw": "Femme Fanale 2024 | Wild Ale · 6.4% | Wild Creatures"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Verdant",
       "nazev": "DR:ink",
       "stupen": "",
