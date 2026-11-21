@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-21 16:13",
+  "zmeneno": "2026-11-21 19:17",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "ČESTMÍR",
-      "nazev": "Warragul",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "Australian Pale Ale (enigma, galaxy)",
-      "dalsi": "SIBEERIA – The Regifter 12°/4,8% session NEIPA (riwaka, citra cryo, ekuanot)",
-      "raw": "ČESTMÍR – Warragul 11°/4,5% Australian Pale Ale (enigma, galaxy) //NEXT// SIBEERIA – The Regifter 12°/4,8% session NEIPA (riwaka, citra cryo, ekuanot)"
+      "pivovar": "SIBEERIA",
+      "nazev": "The Regifter",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "session NEIPA (riwaka, citra cryo, ekuanot)",
+      "dalsi": "",
+      "raw": "SIBEERIA – The Regifter 12°/4,8% session NEIPA (riwaka, citra cryo, ekuanot)"
     },
     {
       "pozice": 3,
@@ -46,12 +46,12 @@
     {
       "pozice": 5,
       "pivovar": "FUNKY FLUID (PL)",
-      "nazev": "Gelato Wild Strawberry Blueberry & Rapsberry",
-      "stupen": "18",
-      "alkohol": "5.5",
-      "styl": "Pastry Sour s divokými jahody, borůvky a malinami",
-      "dalsi": "FUNKY FLUID (PL) – Gelato Xtreme: Bloody 30°/8% Pastry Sour s borůvkou, guávou, granátovým jablkem, červenou řepou a ibiškem",
-      "raw": "FUNKY FLUID (PL) – Gelato Wild Strawberry Blueberry & Rapsberry 18°/5,5% Pastry Sour s divokými jahody, borůvky a malinami //NEXT// FUNKY FLUID (PL) – Gelato Xtreme: Bloody 30°/8% Pastry Sour s borůvkou, guávou, granátovým jablkem, červenou řepou a ibiškem"
+      "nazev": "Gelato Xtreme: Bloody",
+      "stupen": "30",
+      "alkohol": "8",
+      "styl": "Pastry Sour s borůvkou, guávou, granátovým jablkem, červenou řepou a ibiškem",
+      "dalsi": "",
+      "raw": "FUNKY FLUID (PL) – Gelato Xtreme: Bloody 30°/8% Pastry Sour s borůvkou, guávou, granátovým jablkem, červenou řepou a ibiškem"
     }
   ]
 }
