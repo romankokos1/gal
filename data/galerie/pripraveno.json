@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "pivovar": "THRILLS",
+    "nazev": "Bully",
+    "stupen": "12",
+    "alkohol": "5",
+    "styl": "West Coast Pilsner (citra cryo, simcoe, centennial)",
+    "raw": "THRILLS – Bully 12°/5% West Coast Pilsner (citra cryo, simcoe, centennial)"
+  },
+  {
+    "pivovar": "MORDÝŘ",
+    "nazev": "Ježibaba",
+    "stupen": "14",
+    "alkohol": "5.9",
+    "styl": "NEIPA (mosaic, amarillo, el dorado)",
+    "raw": "MORDÝŘ – Ježibaba 14°/5,9%/30IBU NEIPA (mosaic, amarillo, el dorado)"
+  }
+]

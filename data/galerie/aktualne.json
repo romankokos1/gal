@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-21 20:47",
+  "zmeneno": "2026-11-21 23:51",
   "metoda": "nadpis",
   "piva": [
     {
@@ -20,8 +20,8 @@
       "stupen": "12",
       "alkohol": "4.8",
       "styl": "session NEIPA (riwaka, citra cryo, ekuanot)",
-      "dalsi": "",
-      "raw": "SIBEERIA – The Regifter 12°/4,8% session NEIPA (riwaka, citra cryo, ekuanot)"
+      "dalsi": "THRILLS – Bully 12°/5% West Coast Pilsner (citra cryo, simcoe, centennial)",
+      "raw": "SIBEERIA – The Regifter 12°/4,8% session NEIPA (riwaka, citra cryo, ekuanot) //NEXT// THRILLS – Bully 12°/5% West Coast Pilsner (citra cryo, simcoe, centennial)"
     },
     {
       "pozice": 3,
@@ -30,18 +30,18 @@
       "stupen": "14",
       "alkohol": "5.8",
       "styl": "Single Hop IPA (citra)",
-      "dalsi": "",
-      "raw": "WYWAR (SK) – Panská 14°/5,8%/50IBU Single Hop IPA (citra)"
+      "dalsi": "MORDÝŘ – Ježibaba 14°/5,9%/30IBU NEIPA (mosaic, amarillo, el dorado)",
+      "raw": "WYWAR (SK) – Panská 14°/5,8%/50IBU Single Hop IPA (citra) //NEXT// MORDÝŘ – Ježibaba 14°/5,9%/30IBU NEIPA (mosaic, amarillo, el dorado)"
     },
     {
       "pozice": 4,
-      "pivovar": "SOLITÉR",
-      "nazev": "D10s",
-      "stupen": "10",
-      "alkohol": "4",
-      "styl": "Italian Pilsner (saphir, spalter select, vital)",
+      "pivovar": "PIVEČKA",
+      "nazev": "Grapefruit Dry",
+      "stupen": "13",
+      "alkohol": "7.3",
+      "styl": "Brut IPA s grepovou infuzí (summit, citra, mosaic, amarillo)",
       "dalsi": "",
-      "raw": "SOLITÉR – D10s 10°/4% Italian Pilsner (saphir, spalter select, vital)"
+      "raw": "PIVEČKA – Grapefruit Dry 13°/7,3% Brut IPA s grepovou infuzí (summit, citra, mosaic, amarillo)"
     },
     {
       "pozice": 5,
