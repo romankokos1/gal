@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-21 20:47",
+  "zmeneno": "2026-11-21 22:49",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,6 +15,16 @@
     },
     {
       "pozice": 2,
+      "pivovar": "Rodinný pivovar Zichovec",
+      "nazev": "Krahulík",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "Pale Lager",
+      "dalsi": "",
+      "raw": "Zichovec Krahulík 11° | Pale Lager | 11° | 4,6% | Rodinný pivovar Zichovec"
+    },
+    {
+      "pozice": 3,
       "pivovar": "Šnajdr",
       "nazev": "Černokostelecká Černá svině",
       "stupen": "13.8",
@@ -24,7 +34,7 @@
       "raw": "Černokostelecká Černá svině | Dark Lager | 13.8° | 5,8% | Šnajdr"
     },
     {
-      "pozice": 3,
+      "pozice": 4,
       "pivovar": "Nieczajna",
       "nazev": "Polish Potato IPA",
       "stupen": "13",
@@ -34,7 +44,7 @@
       "raw": "Nieczajna Polish Potato IPA | Potatoe Pale Ale | 13° | 5,6% | Nieczajna"
     },
     {
-      "pozice": 4,
+      "pozice": 5,
       "pivovar": "Nachmelená opice",
       "nazev": "Nectaron Hazy Pale Ale",
       "stupen": "13",
@@ -44,7 +54,7 @@
       "raw": "Nachmelená opice Nectaron Hazy Pale Ale | New England Pale Ale | 13° | 5,4% | Nachmelená opice"
     },
     {
-      "pozice": 5,
+      "pozice": 6,
       "pivovar": "Nieczajna",
       "nazev": "Nieczajna Town",
       "stupen": "14",
@@ -54,7 +64,7 @@
       "raw": "Nieczajna Nieczajna Town | Rice IPA | 14° | 5,8% | Nieczajna"
     },
     {
-      "pozice": 6,
+      "pozice": 7,
       "pivovar": "Cobolis",
       "nazev": "Washington",
       "stupen": "17",
@@ -64,7 +74,7 @@
       "raw": "Cobolis Washington | New England IPA | 17° | 7,7% | Cobolis"
     },
     {
-      "pozice": 7,
+      "pozice": 8,
       "pivovar": "Haksna",
       "nazev": "If You Like",
       "stupen": "10",
@@ -74,7 +84,17 @@
       "raw": "Haksna If You Like | Pineapple & Coconut Sour Ale | 10° | 4,3% | Haksna"
     },
     {
-      "pozice": 8,
+      "pozice": 9,
+      "pivovar": "Sibeeria",
+      "nazev": "Mango & Passion Fruit Sorbet",
+      "stupen": "11",
+      "alkohol": "4.4",
+      "styl": "Mango & Passion Fruit Sour Ale",
+      "dalsi": "",
+      "raw": "Sibeeria Mango & Passion Fruit Sorbet | Mango & Passion Fruit Sour Ale | 11° | 4,4% | Sibeeria"
+    },
+    {
+      "pozice": 10,
       "pivovar": "Nieczajna",
       "nazev": "Lagervulin Black Edition",
       "stupen": "16",
@@ -84,7 +104,7 @@
       "raw": "Nieczajna Lagervulin Black Edition | Rauchbock | 16° | 6,4% | Nieczajna"
     },
     {
-      "pozice": 9,
+      "pozice": 11,
       "pivovar": "Nieczajna",
       "nazev": "Alder Wood Smoked Oatmeal Stout",
       "stupen": "15",
@@ -94,17 +114,17 @@
       "raw": "Nieczajna Alder Wood Smoked Oatmeal Stout | Wood Aged Smoked Oatmeal Stout | 15° | 5,3% | Nieczajna"
     },
     {
-      "pozice": 10,
-      "pivovar": "Nieczajna/Golem",
-      "nazev": "Black Swan",
-      "stupen": "24",
-      "alkohol": "10.5",
-      "styl": "Wild Imperial Stout",
+      "pozice": 12,
+      "pivovar": "Clock",
+      "nazev": "No Idols! Double IPA",
+      "stupen": "19",
+      "alkohol": "7.6",
+      "styl": "Double IPA",
       "dalsi": "",
-      "raw": "Nieczajna Black Swan | Wild Imperial Stout | 24° | 10,5% | Nieczajna/Golem"
+      "raw": "Clock No Idols! Double IPA | Double IPA | 19° | 7,6% | Clock"
     },
     {
-      "pozice": 11,
+      "pozice": 13,
       "pivovar": "Nieczajna",
       "nazev": "Piwo w Stylu Grodziskim",
       "stupen": "7",
@@ -114,7 +134,7 @@
       "raw": "Nieczajna Piwo w Stylu Grodziskim | Grodziskie | 7° | 3,3% | Nieczajna"
     },
     {
-      "pozice": 12,
+      "pozice": 14,
       "pivovar": "Van Honsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "18",
@@ -124,7 +144,7 @@
       "raw": "Van Honsebrouck Kasteel Rouge | Belgian Strong Dark Ale/Kriek | 18° | 8% | Van Honsebrouck"
     },
     {
-      "pozice": 13,
+      "pozice": 15,
       "pivovar": "Johannes Cyder",
       "nazev": "Demi Sec",
       "stupen": "",

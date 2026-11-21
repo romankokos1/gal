@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-21 20:47",
+  "zmeneno": "2026-11-21 22:49",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,6 +45,26 @@
     },
     {
       "pozice": 5,
+      "pivovar": "Sibeeria",
+      "nazev": "The Candle Keeper",
+      "stupen": "",
+      "alkohol": "6.8",
+      "styl": "Sour - Smoothie / Pastry",
+      "dalsi": "",
+      "raw": "The Candle Keeper | Sour - Smoothie / Pastry | 6.8% ABV | Sibeeria Brewery / CZ"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "ZICHOVEC",
+      "nazev": "Vánoční Zmrzka 18",
+      "stupen": "",
+      "alkohol": "5",
+      "styl": "Sour - Smoothie / Pastry",
+      "dalsi": "",
+      "raw": "Vánoční Zmrzka 18 | Sour - Smoothie / Pastry | 5% ABV | Pivovar ZICHOVEC / CZ"
+    },
+    {
+      "pozice": 7,
       "pivovar": "Chroust",
       "nazev": "Judo Jellyfish",
       "stupen": "",
@@ -54,7 +74,7 @@
       "raw": "Judo Jellyfish | IPA - Session | 4.9% ABV | Chroust / CZ"
     },
     {
-      "pozice": 6,
+      "pozice": 8,
       "pivovar": "Clock",
       "nazev": "Twist",
       "stupen": "",
@@ -64,7 +84,7 @@
       "raw": "Twist | IPA - Red | 5.8% ABV | Pivovar Clock / CZ"
     },
     {
-      "pozice": 7,
+      "pozice": 9,
       "pivovar": "Volt",
       "nazev": "Reaktor",
       "stupen": "",
@@ -74,7 +94,7 @@
       "raw": "Reaktor | IPA - Brut | 7.3% ABV | Pivovar Volt / CZ"
     },
     {
-      "pozice": 8,
+      "pozice": 10,
       "pivovar": "The Barn Beer Co.",
       "nazev": "Ummagumma",
       "stupen": "",
@@ -84,7 +104,7 @@
       "raw": "Ummagumma | IPA - New England / Hazy | 7% ABV | The Barn Beer Co. / CZ"
     },
     {
-      "pozice": 9,
+      "pozice": 11,
       "pivovar": "ZICHOVEC",
       "nazev": "Robin na Grepu 12",
       "stupen": "",
@@ -94,7 +114,7 @@
       "raw": "Robin na Grepu 12 | Pale Ale - American | 5.1% ABV | Pivovar ZICHOVEC / CZ"
     },
     {
-      "pozice": 10,
+      "pozice": 12,
       "pivovar": "Čestmír",
       "nazev": "IPA 16 – Ratamahatta",
       "stupen": "",
@@ -104,7 +124,7 @@
       "raw": "IPA 16 – Ratamahatta | IPA - American | 7% ABV | Pivovar Čestmír / CZ"
     },
     {
-      "pozice": 11,
+      "pozice": 13,
       "pivovar": "Potmehúd",
       "nazev": "Weizenbock",
       "stupen": "",
@@ -114,7 +134,7 @@
       "raw": "Weizenbock | Bock - Weizenbock | 7.3% ABV | Pivovar Potmehúd /"
     },
     {
-      "pozice": 12,
+      "pozice": 14,
       "pivovar": "Čestmír",
       "nazev": "Session NEIPA (Superdelic - Mosaic - Galaxy)",
       "stupen": "",
@@ -124,17 +144,7 @@
       "raw": "Session NEIPA (Superdelic - Mosaic - Galaxy) | IPA - New England / Hazy | 5% ABV | Pivovar Čestmír / CZ"
     },
     {
-      "pozice": 13,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Nectar of Happiness 17",
-      "stupen": "",
-      "alkohol": "7",
-      "styl": "IPA - New England / Hazy",
-      "dalsi": "",
-      "raw": "Nectar of Happiness 17 | IPA - New England / Hazy | 7% ABV | Pivovar ZICHOVEC / CZ"
-    },
-    {
-      "pozice": 14,
+      "pozice": 15,
       "pivovar": "Sibeeria",
       "nazev": "Smoke Lady",
       "stupen": "",
@@ -144,7 +154,7 @@
       "raw": "Smoke Lady | Rauchbier | 5.5% ABV | Sibeeria Brewery / CZ"
     },
     {
-      "pozice": 15,
+      "pozice": 16,
       "pivovar": "Brewnicorn",
       "nazev": "Stromeček",
       "stupen": "",
@@ -154,7 +164,7 @@
       "raw": "Stromeček | IPA - Imperial / Double | 8.6% ABV | Brewnicorn / CZ"
     },
     {
-      "pozice": 16,
+      "pozice": 17,
       "pivovar": "Raven",
       "nazev": "Sun Blast IPA",
       "stupen": "",
@@ -164,7 +174,7 @@
       "raw": "Sun Blast IPA | IPA - American | 6.2% ABV | Pivovar Raven / CZ"
     },
     {
-      "pozice": 17,
+      "pozice": 18,
       "pivovar": "Cobolis",
       "nazev": "Bezedný kotel",
       "stupen": "",
@@ -174,7 +184,7 @@
       "raw": "Bezedný kotel | Stout - Irish Extra | 7.2% ABV | Cobolis / CZ"
     },
     {
-      "pozice": 18,
+      "pozice": 19,
       "pivovar": "Mazák",
       "nazev": "Baltic Porter",
       "stupen": "",
@@ -184,7 +194,7 @@
       "raw": "Baltic Porter | Porter - Baltic | 6.8% ABV | Pivovar Mazák / CZ"
     },
     {
-      "pozice": 19,
+      "pozice": 20,
       "pivovar": "Brouwerij De Brabandere",
       "nazev": "Petrus Red",
       "stupen": "",
@@ -194,7 +204,7 @@
       "raw": "Petrus Red | Fruit Beer | 8.5% ABV | Brouwerij De Brabandere / BE"
     },
     {
-      "pozice": 20,
+      "pozice": 21,
       "pivovar": "FALKON",
       "nazev": "BOCHÁNEK",
       "stupen": "",
