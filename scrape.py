@@ -182,6 +182,13 @@ PODNIKY = [
               ".elementor-element-84c7c3f li:nth-of-type(2)", ".elementor-element-84c7c3f li:nth-of-type(3)",
               ".elementor-element-273d7e0 li:nth-of-type(1)"],
      "format": "nazev|styl|°|%|pivovar", "jen_piva": True, "jen_selektor": True},
+
+    # ---- Pivovarský dům Poupě (Brno), přidáno 21. 11. 2026 ----
+    # Webflow, sekce #pivo „AKTUÁLNĚ NA ČEPU“: „IPA 14% (Poupě)“ – procenta jsou tu stupně
+    # (staré značení), skutečný alkohol neuvádějí. Popis piva a ceny se nečtou.
+    {"id": "poupe", "nazev": "Pivovarský dům Poupě", "url": "https://www.pivovar-poupe.cz/",
+     "polozky": "#pivo .piva_wrap .w-dyn-item", "pole": [".jidlo_name"],
+     "format": "nazev (pivovar) %=°", "jen_selektor": True},
 ]
 
 # Průzkum nových webů, které odsud nejde stáhnout ručně: hlidač jednou uloží stránku
@@ -774,6 +781,12 @@ def parse_item(raw: str, quiet: bool = False, default_brewery: str = "", fmt: st
             out["stupen"] = d.group(1).replace(",", ".")
         out["styl"] = clean(styl)
         return out
+
+    if fmt == "nazev (pivovar) %=°":                 # „IPA 14% (Poupě)“ = 14°
+        main = re.sub(r"(\d{1,2}(?:[.,]\d)?)\s*%", r"\1°", main)
+        # text za stupni je příchuť, ne styl: „Gose 10% - Ostružina“ → název „Gose Ostružina“
+        main = re.sub(r"^(.*?)\s*(\d{1,2}(?:[.,]\d)?°)\s*[,\-–]?\s*([^()]*?)\s*(\([^()]+\))\s*$", r"\1 \3 \2 \4", main)
+        fmt = "nazev (pivovar)"
 
     if fmt == "nazev (pivovar)":
         # „Session NEIPA 12° (Čestmír)“, „300 Kurven 10° - výčepní (Jungberg)“
