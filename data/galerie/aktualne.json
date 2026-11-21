@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-21 15:13",
+  "zmeneno": "2026-11-21 16:13",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "NOZIB",
-      "nazev": "Bone Dry",
+      "pivovar": "WYWAR (SK)",
+      "nazev": "Panská",
       "stupen": "14",
-      "alkohol": "6.6",
-      "styl": "NEIPA (nelson sauvin, motueka)",
-      "dalsi": "WYWAR (SK) – Panská 14°/5,8%/50IBU Single Hop IPA (citra)",
-      "raw": "NOZIB – Bone Dry 14°/6,6% NEIPA (nelson sauvin, motueka) //NEXT// WYWAR (SK) – Panská 14°/5,8%/50IBU Single Hop IPA (citra)"
+      "alkohol": "5.8",
+      "styl": "Single Hop IPA (citra)",
+      "dalsi": "",
+      "raw": "WYWAR (SK) – Panská 14°/5,8%/50IBU Single Hop IPA (citra)"
     },
     {
       "pozice": 4,
