@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-22 19:43",
+  "zmeneno": "2026-11-22 21:45",
   "metoda": "selektor",
   "piva": [
     {
@@ -85,16 +85,6 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Vik",
-      "nazev": "Innocent Stout",
-      "stupen": "",
-      "alkohol": "0.5",
-      "styl": "Non-Alcoholic Stout",
-      "dalsi": "",
-      "raw": "Vik Innocent Stout | Non-Alcoholic Stout | ° | 0,5% | Vik"
-    },
-    {
-      "pozice": 10,
       "pivovar": "Nieczajna",
       "nazev": "Alder Wood Smoked Oatmeal Stout",
       "stupen": "15",
@@ -104,7 +94,7 @@
       "raw": "Nieczajna Alder Wood Smoked Oatmeal Stout | Wood Aged Smoked Oatmeal Stout | 15° | 5,3% | Nieczajna"
     },
     {
-      "pozice": 11,
+      "pozice": 10,
       "pivovar": "Clock",
       "nazev": "No Idols! Double IPA",
       "stupen": "19",
@@ -114,7 +104,7 @@
       "raw": "Clock No Idols! Double IPA | Double IPA | 19° | 7,6% | Clock"
     },
     {
-      "pozice": 12,
+      "pozice": 11,
       "pivovar": "Nieczajna",
       "nazev": "Piwo w Stylu Grodziskim",
       "stupen": "7",
@@ -124,7 +114,7 @@
       "raw": "Nieczajna Piwo w Stylu Grodziskim | Grodziskie | 7° | 3,3% | Nieczajna"
     },
     {
-      "pozice": 13,
+      "pozice": 12,
       "pivovar": "Van Honsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "18",
@@ -134,7 +124,7 @@
       "raw": "Van Honsebrouck Kasteel Rouge | Belgian Strong Dark Ale/Kriek | 18° | 8% | Van Honsebrouck"
     },
     {
-      "pozice": 14,
+      "pozice": 13,
       "pivovar": "Johannes Cyder",
       "nazev": "Demi Sec",
       "stupen": "",
