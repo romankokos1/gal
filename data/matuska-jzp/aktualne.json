@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-11-21 12:11",
+  "zmeneno": "2026-11-22 19:43",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "6",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "Matuška",
+      "nazev": "BYLINNÝ BLAŽENEC",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "BOTANICAL GOSE",
       "dalsi": "",
-      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
+      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "BOARD",
-      "nazev": "JÍZDA Z PIVA",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "GOSE",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "6",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "BOARD: JÍZDA Z PIVA | GOSE | 11° | 4,5 %"
+      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
     },
     {
       "pozice": 7,
