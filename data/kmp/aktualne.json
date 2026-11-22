@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-22 00:51",
+  "zmeneno": "2026-11-22 13:37",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -21,7 +21,7 @@
       "alkohol": "4.7",
       "styl": "světlý ležák s čerstvým chmelem",
       "dalsi": "",
-      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4,7% vol. Alc"
+      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4, 7% vol. Alc"
     },
     {
       "pozice": 3,
@@ -31,7 +31,7 @@
       "alkohol": "4.4",
       "styl": "Mango & Passion Fruit Sour",
       "dalsi": "",
-      "raw": "Sibeeria - Sorbet, Mango & Passion Fruit Sour, 11° sv. nef., 4,4% vol. Alc"
+      "raw": "Sibeeria - Sorbet, Mango & Passion Fruit Sour, 11° sv. nef., 4, 4% vol. Alc"
     },
     {
       "pozice": 4,
@@ -61,7 +61,7 @@
       "alkohol": "5.4",
       "styl": "New England IPA",
       "dalsi": "",
-      "raw": "Hoppy Dog - Luna, New England IPA, 13° sv. nef., 5,4% vol. Alc, 11 IBU"
+      "raw": "Hoppy Dog - Luna, New England IPA, 13° sv. nef., 5, 4% vol. Alc, 11 IBU"
     },
     {
       "pozice": 7,
@@ -81,7 +81,7 @@
       "alkohol": "4.4",
       "styl": "",
       "dalsi": "",
-      "raw": "Kompresor/Joe's Garage, Czech Pale Ale - z novošlechtěných žateckých chmelů 11° sv. nef., 4,4% vol. Alc, 30 IBU"
+      "raw": "Kompresor/Joe's Garage, Czech Pale Ale - z novošlechtěných žateckých chmelů 11° sv. nef., 4, 4% vol. Alc, 30 IBU"
     },
     {
       "pozice": 9,
@@ -91,7 +91,7 @@
       "alkohol": "5.6",
       "styl": "Black IPA",
       "dalsi": "",
-      "raw": "Zlatá Kráva, Black IPA, 14° tm. nef., 5,6% vol. Alc, 50 IBU"
+      "raw": "Zlatá Kráva, Black IPA, 14° tm. nef., 5, 6% vol. Alc, 50 IBU"
     },
     {
       "pozice": 10,

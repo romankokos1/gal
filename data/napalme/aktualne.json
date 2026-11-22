@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-20 12:15",
+  "zmeneno": "2026-11-22 13:05",
   "metoda": "rucne",
   "piva": [
     {
@@ -25,16 +25,26 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Sibeeria/Ten",
-      "nazev": "Hands ( Švédsko )",
-      "stupen": "11",
+      "pivovar": "Vik",
+      "nazev": "Hořká 10 světlé",
+      "stupen": "",
       "alkohol": "",
-      "styl": "Fresh hop Czech Pilsner",
+      "styl": "výčepní",
       "dalsi": "",
-      "raw": "Sibeeria/Ten Hands ( Švédsko ) Fresh hop Czech Pilsner 11"
+      "raw": "Vik Hořká 10 světlé výčepní"
     },
     {
       "pozice": 4,
+      "pivovar": "SQBRU",
+      "nazev": "Fresh",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Hop Lager",
+      "dalsi": "",
+      "raw": "SQBRU Fresh Hop Lager 11"
+    },
+    {
+      "pozice": 5,
       "pivovar": "SQBRU",
       "nazev": "APA 810",
       "stupen": "11",
@@ -44,7 +54,7 @@
       "raw": "SQBRU APA 810 11"
     },
     {
-      "pozice": 5,
+      "pozice": 6,
       "pivovar": "Napalmě",
       "nazev": "Krém Béčko bezlepkový NZ Cream",
       "stupen": "11",
@@ -52,16 +62,6 @@
       "styl": "Ale",
       "dalsi": "",
       "raw": "Napalmě Krém Béčko bezlepkový NZ Cream Ale 11"
-    },
-    {
-      "pozice": 6,
-      "pivovar": "Čestmír",
-      "nazev": "Čest",
-      "stupen": "",
-      "alkohol": "",
-      "styl": "světlý ležák",
-      "dalsi": "",
-      "raw": "Čestmír Čest světlý ležák"
     },
     {
       "pozice": 7,
@@ -85,16 +85,26 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Chroust",
-      "nazev": "Štědrá Westka",
+      "pivovar": "Čestmír",
+      "nazev": "New",
       "stupen": "14",
       "alkohol": "",
-      "styl": "West Coast IPA",
+      "styl": "Zealand IPA",
       "dalsi": "",
-      "raw": "Chroust Štědrá Westka West Coast IPA 14"
+      "raw": "Čestmír New Zealand IPA 14"
     },
     {
       "pozice": 10,
+      "pivovar": "Mazák",
+      "nazev": "Vánoční",
+      "stupen": "15",
+      "alkohol": "",
+      "styl": "IPA",
+      "dalsi": "",
+      "raw": "Mazák Vánoční IPA 15"
+    },
+    {
+      "pozice": 11,
       "pivovar": "Sibeeria",
       "nazev": "The Candle Keeper",
       "stupen": "19",
@@ -102,16 +112,6 @@
       "styl": "Pastry Sour Ale",
       "dalsi": "",
       "raw": "Sibeeria The Candle Keeper Pastry Sour Ale 19"
-    },
-    {
-      "pozice": 11,
-      "pivovar": "Zichovec",
-      "nazev": "Kometa",
-      "stupen": "20",
-      "alkohol": "",
-      "styl": "Double NEIPA",
-      "dalsi": "",
-      "raw": "Zichovec Kometa Double NEIPA 20"
     },
     {
       "pozice": 12,

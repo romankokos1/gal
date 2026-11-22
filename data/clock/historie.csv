@@ -35,7 +35,7 @@ clock|double ipa,Clock,Double IPA,19,,No Idols!,19° Double IPA (No Idols!),2026
 clock|krystus,Clock,Krystus,,,Alcohol Free,Krystus (Alcohol Free),2026-10-31 15:27,,,
 clock|hektor,Clock,Hektor,10,,Výčepní,10° Hektor (Výčepní),2026-11-04 15:13,2026-11-13 20:29,,
 clock|fresh hop,Clock,Fresh hop,12,,Fresh Hop,12° Fresh hop (Fresh Hop),2026-11-04 19:29,2026-11-12 17:49,,
-clock|westcoastipa,Clock,WestCoastIPA,14,,No Idols!,14° WestCoastIPA (No Idols!),2026-11-06 13:08,,,
+clock|westcoastipa,Clock,WestCoastIPA,14,,No Idols!,14° WestCoastIPA (No Idols!),2026-11-06 13:08,2026-11-22 13:37,,
 clock|black dog,Clock,Black Dog,12,,DDH Lager,12° Black Dog (DDH Lager),2026-11-06 21:18,2026-11-15 12:58,,
 clock|bezovka,Clock,Bezovka,,,Limonáda,Bezovka (Limonáda),2026-11-08 12:18,,,
 clock|double ipa,Clock,Double IPA,19,,No Idols!,19° Double IPA (No Idols!),2026-11-12 17:49,2026-11-21 12:40,,
@@ -46,3 +46,4 @@ clock|hektor,Clock,Hektor,10,,Výčepní,10° Hektor (Výčepní),2026-11-16 19:
 clock|clock,Clock,Clock,12,,American Pale Ale,12° Clock (American Pale Ale),2026-11-17 14:21,,,
 clock|tekuty kapr,Clock,Tekutý Kapr,12,,West Coast IPA,12° Tekutý Kapr (West Coast IPA),2026-11-21 12:40,,,
 clock|zlaty prase,Clock,Zlatý Prase,15,,NEIPA,15° Zlatý Prase (NEIPA),2026-11-21 18:45,,,
+clock|vanocnilezak,Clock,VánočníLežák,13,,Amber Ale,13° VánočníLežák (Amber Ale),2026-11-22 13:37,,,

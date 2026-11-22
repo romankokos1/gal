@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-21 14:42",
+  "zmeneno": "2026-11-22 13:37",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "PERMON",
-      "nazev": "SHERPA",
+      "pivovar": "RAVEN",
+      "nazev": "UNICORN MILK",
       "stupen": "16",
-      "alkohol": "7.5",
-      "styl": "IPA",
+      "alkohol": "5.5",
+      "styl": "MILKSHAKE IPA",
       "dalsi": "",
-      "raw": "PERMON SHERPA 16° | IPA | 7.5%"
+      "raw": "RAVEN UNICORN MILK 16° | MILKSHAKE IPA | 5.5%"
     },
     {
       "pozice": 9,

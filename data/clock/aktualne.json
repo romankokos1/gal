@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-21 18:45",
+  "zmeneno": "2026-11-22 13:37",
   "metoda": "nadpis",
   "piva": [
     {
@@ -36,12 +36,12 @@
     {
       "pozice": 4,
       "pivovar": "Clock",
-      "nazev": "WestCoastIPA",
-      "stupen": "14",
+      "nazev": "VánočníLežák",
+      "stupen": "13",
       "alkohol": "",
-      "styl": "No Idols!",
+      "styl": "Amber Ale",
       "dalsi": "",
-      "raw": "14° WestCoastIPA (No Idols!)"
+      "raw": "13° VánočníLežák (Amber Ale)"
     },
     {
       "pozice": 5,
