@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-22 13:37",
+  "zmeneno": "2026-11-22 15:39",
   "metoda": "nadpis",
   "piva": [
     {
@@ -39,9 +39,9 @@
       "nazev": "VánočníLežák",
       "stupen": "13",
       "alkohol": "",
-      "styl": "Amber Ale",
+      "styl": "Ležák",
       "dalsi": "",
-      "raw": "13° VánočníLežák (Amber Ale)"
+      "raw": "13° VánočníLežák (Ležák)"
     },
     {
       "pozice": 5,
