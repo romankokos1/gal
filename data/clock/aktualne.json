@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-22 15:39",
+  "zmeneno": "2026-11-22 17:41",
   "metoda": "nadpis",
   "piva": [
     {
@@ -39,9 +39,9 @@
       "nazev": "VánočníLežák",
       "stupen": "13",
       "alkohol": "",
-      "styl": "Ležák",
+      "styl": "Polotmavý ležák",
       "dalsi": "",
-      "raw": "13° VánočníLežák (Ležák)"
+      "raw": "13° VánočníLežák (Polotmavý ležák)"
     },
     {
       "pozice": 5,
