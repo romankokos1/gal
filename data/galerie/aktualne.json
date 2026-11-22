@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-22 17:41",
+  "zmeneno": "2026-11-22 18:12",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "SIBEERIA",
-      "nazev": "The Regifter",
+      "pivovar": "THRILLS",
+      "nazev": "Bully",
       "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "session NEIPA (riwaka, citra cryo, ekuanot)",
-      "dalsi": "THRILLS – Bully 12°/5% West Coast Pilsner (citra cryo, simcoe, centennial)",
-      "raw": "SIBEERIA – The Regifter 12°/4,8% session NEIPA (riwaka, citra cryo, ekuanot) //NEXT// THRILLS – Bully 12°/5% West Coast Pilsner (citra cryo, simcoe, centennial)"
+      "alkohol": "5",
+      "styl": "West Coast Pilsner (citra cryo, simcoe, centennial)",
+      "dalsi": "",
+      "raw": "THRILLS – Bully 12°/5% West Coast Pilsner (citra cryo, simcoe, centennial)"
     },
     {
       "pozice": 3,
