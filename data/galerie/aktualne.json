@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-22 18:12",
+  "zmeneno": "2026-11-22 22:47",
   "metoda": "nadpis",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "WYWAR (SK)",
-      "nazev": "Panská",
+      "pivovar": "MORDÝŘ",
+      "nazev": "Ježibaba",
       "stupen": "14",
-      "alkohol": "5.8",
-      "styl": "Single Hop IPA (citra)",
-      "dalsi": "MORDÝŘ – Ježibaba 14°/5,9%/30IBU NEIPA (mosaic, amarillo, el dorado)",
-      "raw": "WYWAR (SK) – Panská 14°/5,8%/50IBU Single Hop IPA (citra) //NEXT// MORDÝŘ – Ježibaba 14°/5,9%/30IBU NEIPA (mosaic, amarillo, el dorado)"
+      "alkohol": "5.9",
+      "styl": "NEIPA (mosaic, amarillo, el dorado)",
+      "dalsi": "",
+      "raw": "MORDÝŘ – Ježibaba 14°/5,9%/30IBU NEIPA (mosaic, amarillo, el dorado)"
     },
     {
       "pozice": 4,
