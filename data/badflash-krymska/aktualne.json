@@ -1,6 +1,6 @@
 {
   "zdroj": "https://badflash-krymska.cz/section:pivni-listek",
-  "zmeneno": "2026-11-20 20:02",
+  "zmeneno": "2026-11-23 19:46",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,16 +16,6 @@
     {
       "pozice": 2,
       "pivovar": "BAD FLASH",
-      "nazev": "ROCK CAFÉ",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "BAD FLASH ROCK CAFÉ 11'"
-    },
-    {
-      "pozice": 3,
-      "pivovar": "BAD FLASH",
       "nazev": "SUMMER SADNESS",
       "stupen": "10",
       "alkohol": "4",
@@ -34,7 +24,7 @@
       "raw": "BAD FLASH SUMMER SADNESS 10' | session IPA | 4%"
     },
     {
-      "pozice": 4,
+      "pozice": 3,
       "pivovar": "Bad Flash",
       "nazev": "MINI BOSS NEIPA",
       "stupen": "9",
@@ -44,17 +34,7 @@
       "raw": "Bad Flash MINI BOSS 9' NEIPA | session NEIPA | 3.5%"
     },
     {
-      "pozice": 5,
-      "pivovar": "BAD FLASH",
-      "nazev": "ŽITO ALE",
-      "stupen": "13",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "BAD FLASH ŽITO ALE 13'"
-    },
-    {
-      "pozice": 6,
+      "pozice": 4,
       "pivovar": "BUDVAR",
       "nazev": "33",
       "stupen": "11",
@@ -64,17 +44,7 @@
       "raw": "BUDVAR 33 11°"
     },
     {
-      "pozice": 7,
-      "pivovar": "BAD FLASH",
-      "nazev": "DESÍTKA",
-      "stupen": "10",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "BAD FLASH DESÍTKA 10°"
-    },
-    {
-      "pozice": 8,
+      "pozice": 5,
       "pivovar": "BAD FLASH",
       "nazev": "CITRA IPL",
       "stupen": "12",
@@ -84,7 +54,17 @@
       "raw": "BAD FLASH CITRA IPL 12°"
     },
     {
-      "pozice": 9,
+      "pozice": 6,
+      "pivovar": "BAD FLASH",
+      "nazev": "FOTBALOVÁ JEDENÁCTKA",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "BAD FLASH FOTBALOVÁ JEDENÁCTKA 11'"
+    },
+    {
+      "pozice": 7,
       "pivovar": "STAROČESKÁ",
       "nazev": "STUPICKÁ",
       "stupen": "12",
@@ -94,7 +74,7 @@
       "raw": "STAROČESKÁ STUPICKÁ 12' | světlý ležák/lager"
     },
     {
-      "pozice": 10,
+      "pozice": 8,
       "pivovar": "Bad Flash",
       "nazev": "PODÉL PLOTU",
       "stupen": "10",
