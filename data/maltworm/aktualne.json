@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-23 15:42",
+  "zmeneno": "2026-11-23 21:48",
   "metoda": "selektor",
   "piva": [
     {
@@ -105,13 +105,13 @@
     },
     {
       "pozice": 11,
-      "pivovar": "Nieczajna",
-      "nazev": "Alder Wood Smoked Oatmeal Stout",
-      "stupen": "15",
-      "alkohol": "5.3",
-      "styl": "Wood Aged Smoked Oatmeal Stout",
+      "pivovar": "Černokostelecký pivovar",
+      "nazev": "Černokostelecká Bílá svině",
+      "stupen": "11",
+      "alkohol": "4.8",
+      "styl": "Hefeweizen",
       "dalsi": "",
-      "raw": "Nieczajna Alder Wood Smoked Oatmeal Stout | Wood Aged Smoked Oatmeal Stout | 15° | 5,3% | Nieczajna"
+      "raw": "Černokostelecká Bílá svině | Hefeweizen | 11° | 4,8% | Černokostelecký pivovar"
     },
     {
       "pozice": 12,

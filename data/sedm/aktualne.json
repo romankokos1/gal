@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-23 17:44",
+  "zmeneno": "2026-11-23 21:48",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Čestmír",
-      "nazev": "Koru",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "New Zealand NEIPA",
+      "pivovar": "Blud",
+      "nazev": "Wet Hop AjPíEj",
+      "stupen": "12",
+      "alkohol": "5.2",
+      "styl": "Session IPA",
       "dalsi": "",
-      "raw": "Čestmír - Koru | 11% | New Zealand NEIPA, ABV 4,5%"
+      "raw": "Blud - Wet Hop AjPíEj | 12% | Session IPA, ABV 5,2%"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "vik",
-      "nazev": "southern hemisphere",
+      "pivovar": "Vik",
+      "nazev": "Southern Hemisphere",
       "stupen": "15",
       "alkohol": "6.5",
-      "styl": "pacific IPA",
+      "styl": "Pacific IPA",
       "dalsi": "",
-      "raw": "vik - southern hemisphere | 15% | pacific IPA, ABV 6,5%"
+      "raw": "Vik - Southern Hemisphere | 15% | Pacific IPA, ABV 6,5%"
     },
     {
       "pozice": 7,
