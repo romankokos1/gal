@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.vinohradskypivovar.cz/cs/korunni/",
-  "zmeneno": "2026-11-22 13:37",
+  "zmeneno": "2026-11-23 17:44",
   "metoda": "selektor",
   "piva": [
     {
@@ -76,22 +76,22 @@
     {
       "pozice": 8,
       "pivovar": "Vinohradský",
-      "nazev": "Fern Enough",
-      "stupen": "",
-      "alkohol": "",
-      "styl": "NEIPA",
-      "dalsi": "",
-      "raw": "Fern Enough | NEIPA"
-    },
-    {
-      "pozice": 9,
-      "pivovar": "Vinohradský",
       "nazev": "Ahtanum",
       "stupen": "",
       "alkohol": "",
       "styl": "India Pale Ale",
       "dalsi": "",
       "raw": "Ahtanum | India Pale Ale"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "Vinohradský",
+      "nazev": "Fern Enough",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "Fern Enough | NEIPA"
     },
     {
       "pozice": 10,

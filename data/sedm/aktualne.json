@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-19 20:20",
+  "zmeneno": "2026-11-23 17:44",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Hope",
-      "nazev": "Evermore",
+      "pivovar": "vik",
+      "nazev": "southern hemisphere",
       "stupen": "15",
-      "alkohol": "6.1",
-      "styl": "IPA",
+      "alkohol": "6.5",
+      "styl": "pacific IPA",
       "dalsi": "",
-      "raw": "Hope - Evermore | 15% | IPA, ABV 6,1%"
+      "raw": "vik - southern hemisphere | 15% | pacific IPA, ABV 6,5%"
     },
     {
       "pozice": 7,

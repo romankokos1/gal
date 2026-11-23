@@ -1,37 +1,37 @@
 {
   "zdroj": "https://dcdyne.com/",
-  "zmeneno": "2026-11-21 18:45",
+  "zmeneno": "2026-11-23 17:44",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Vinohradský piv.",
-      "nazev": "Liberator APA",
+      "pivovar": "Únětice",
+      "nazev": "Únulka IPA",
       "stupen": "",
       "alkohol": "",
       "styl": "Nealko",
       "dalsi": "",
-      "raw": "NEALKO -Liberator APA (Vinohradský piv.)"
+      "raw": "NEALKO -Únulka IPA (Únětice)"
     },
     {
       "pozice": 2,
       "pivovar": "Obora",
-      "nazev": "Jahoda SOUR",
+      "nazev": "Malina SOUR",
       "stupen": "",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Jahoda SOUR (Obora)"
+      "raw": "Malina SOUR (Obora)"
     },
     {
       "pozice": 3,
-      "pivovar": "VIK",
-      "nazev": "Pšenice",
-      "stupen": "",
+      "pivovar": "Čestmír",
+      "nazev": "Harakore NZ IPA",
+      "stupen": "12",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Pšenice (VIK)"
+      "raw": "Harakore NZ IPA 12° (Čestmír)"
     },
     {
       "pozice": 4,
