@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-22 13:05",
+  "zmeneno": "2026-11-23 13:24",
   "metoda": "rucne",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Vik",
-      "nazev": "Hořká 10 světlé",
-      "stupen": "",
+      "pivovar": "Sibeeria",
+      "nazev": "Iwa",
+      "stupen": "8",
       "alkohol": "",
-      "styl": "výčepní",
+      "styl": "New Zealand Pilsner",
       "dalsi": "",
-      "raw": "Vik Hořká 10 světlé výčepní"
+      "raw": "Sibeeria Iwa New Zealand Pilsner 8"
     },
     {
       "pozice": 4,

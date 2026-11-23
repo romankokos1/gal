@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-22 23:47",
+  "zmeneno": "2026-11-23 15:42",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "MAZÁK",
-      "nazev": "Vánoční Punč",
-      "stupen": "13",
-      "alkohol": "6.2",
-      "styl": "Gose s moštem odrůdy Frankovka, citrusovou kůrou, skořicí, řepou, zázvorem, badyánem, him. solí a kardamomem",
+      "pivovar": "ZLOUN",
+      "nazev": "Orange & Honey Sour",
+      "stupen": "11",
+      "alkohol": "3.5",
+      "styl": "kyseláč s pomerančem a medem",
       "dalsi": "",
-      "raw": "MAZÁK – Vánoční Punč 13°/6,2% Gose s moštem odrůdy Frankovka, citrusovou kůrou, skořicí, řepou, zázvorem, badyánem, him. solí a kardamomem"
+      "raw": "ZLOUN – Orange & Honey Sour 11°/3,5% kyseláč s pomerančem a medem"
     }
   ]
 }

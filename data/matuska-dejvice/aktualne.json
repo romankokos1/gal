@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbxr-NJuTt9ujr3HV01EbTPsczwLapK1ej_BzNaODyn9Jotj3iE_LzBcKvrsjbzV0kI/exec",
-  "zmeneno": "2026-11-17 23:42",
+  "zmeneno": "2026-11-23 15:42",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "Matuška",
-      "nazev": "ZLATÁ RAKETA",
-      "stupen": "17",
-      "alkohol": "7",
-      "styl": "INDIA PALE ALE",
+      "nazev": "BYLINNÝ BLAŽENEC",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "BOTANICAL GOSE",
       "dalsi": "",
-      "raw": "ZLATÁ RAKETA | INDIA PALE ALE | 17° | 7 %"
+      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
     },
     {
       "pozice": 3,
@@ -36,12 +36,12 @@
     {
       "pozice": 4,
       "pivovar": "Matuška",
-      "nazev": "BYLINNÝ BLAŽENEC",
-      "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "BOTANICAL GOSE",
+      "nazev": "FLORIDA",
+      "stupen": "10",
+      "alkohol": "4.2",
+      "styl": "PALE ALE",
       "dalsi": "",
-      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
+      "raw": "FLORIDA | PALE ALE | 10° | 4,2 %"
     },
     {
       "pozice": 5,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Matuška",
-      "nazev": "FLORIDA",
-      "stupen": "10",
-      "alkohol": "4.2",
-      "styl": "PALE ALE",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "7",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "FLORIDA | PALE ALE | 10° | 4,2 %"
+      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
     },
     {
       "pozice": 7,
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "7",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "Matuška",
+      "nazev": "AUTOMAT OG IV.",
+      "stupen": "14",
+      "alkohol": "",
+      "styl": "COLD IPA",
       "dalsi": "",
-      "raw": "CLOCK- KRYSTUS | ALC. FREE IPA | 7° | 0,5 %"
+      "raw": "AUTOMAT OG IV. | COLD IPA | 14° | 0.059"
     },
     {
       "pozice": 9,
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Matuška",
-      "nazev": "AUTOMAT OG IV.",
-      "stupen": "14",
+      "pivovar": "NACHMELENÁ OPICE",
+      "nazev": "NEIPA",
+      "stupen": "15",
       "alkohol": "",
-      "styl": "COLD IPA",
+      "styl": "NEIPA",
       "dalsi": "",
-      "raw": "AUTOMAT OG IV. | COLD IPA | 14° | 0.059"
+      "raw": "NACHMELENÁ OPICE - NEIPA | NEIPA | 15° | 0.06"
     }
   ]
 }

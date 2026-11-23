@@ -1,27 +1,27 @@
 {
   "zdroj": "https://beerspotprague.cz/beer-list/",
-  "zmeneno": "2026-11-19 16:16",
+  "zmeneno": "2026-11-23 15:42",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "JungBerg",
-      "nazev": "300 Kurven",
-      "stupen": "10",
-      "alkohol": "4.1",
-      "styl": "Pilsner - Czech",
+      "pivovar": "Akciový pivovar Libertas",
+      "nazev": "Libertas Bohemian Lager",
+      "stupen": "11",
+      "alkohol": "4.4",
+      "styl": "Lager - Pale",
       "dalsi": "",
-      "raw": "300 Kurven 10° | Pilsner - Czech | 4.1% ABV | Pivovar JungBerg"
+      "raw": "Libertas 11° Bohemian Lager | Lager - Pale | 4.4% ABV | Akciový pivovar Libertas"
     },
     {
       "pozice": 2,
-      "pivovar": "Pioneer Beer",
-      "nazev": "Fresh Signal",
+      "pivovar": "Vinohradský pivovar",
+      "nazev": "Jantarová 13",
       "stupen": "",
-      "alkohol": "4.6",
-      "styl": "Pilsner - Other",
+      "alkohol": "4.9",
+      "styl": "Lager - Polotmavé (Czech Amber)",
       "dalsi": "",
-      "raw": "Fresh Signal | Pilsner - Other | 4.6% ABV | Pioneer Beer"
+      "raw": "Jantarová 13 | Lager - Polotmavé (Czech Amber) | 4.9% ABV | Vinohradský pivovar"
     },
     {
       "pozice": 3,
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Matuška",
-      "nazev": "California",
-      "stupen": "12",
-      "alkohol": "5.3",
-      "styl": "Pale Ale - American",
+      "pivovar": "Mazák",
+      "nazev": "Wolves in the Taproom 12",
+      "stupen": "",
+      "alkohol": "5",
+      "styl": "IPA - Black",
       "dalsi": "",
-      "raw": "California 12° | Pale Ale - American | 5.3% ABV | Pivovar Matuška"
+      "raw": "Wolves in the Taproom 12 | IPA - Black | 5% ABV | Pivovar Mazák"
     },
     {
       "pozice": 7,

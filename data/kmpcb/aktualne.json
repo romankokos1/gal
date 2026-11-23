@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-11-21 12:11",
+  "zmeneno": "2026-11-23 15:42",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Kladenský",
-      "nazev": "ležák",
+      "pivovar": "Cobolis",
+      "nazev": "PRAOTEC",
       "stupen": "12",
       "alkohol": "",
-      "styl": "Ležák",
+      "styl": "",
       "dalsi": "",
-      "raw": "Kladenský ležák 12° sv.nef."
+      "raw": "Cobolis PRAOTEC 12° sv.nef."
     },
     {
       "pozice": 6,
@@ -95,26 +95,16 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Clock",
-      "nazev": "APA",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "American Pale ALE",
-      "dalsi": "",
-      "raw": "Clock APA 12° American Pale ALE"
-    },
-    {
-      "pozice": 11,
       "pivovar": "Thrill's",
       "nazev": "Sea Level",
       "stupen": "12",
       "alkohol": "",
       "styl": "ALE",
       "dalsi": "",
-      "raw": "-> Thrill's Sea Level 12° ALE"
+      "raw": "Thrill's Sea Level 12° ALE"
     },
     {
-      "pozice": 12,
+      "pozice": 11,
       "pivovar": "Pioneer",
       "nazev": "LUNAPARK",
       "stupen": "12",
@@ -124,7 +114,7 @@
       "raw": "Pioneer LUNAPARK 12° Session HAZY IPA"
     },
     {
-      "pozice": 13,
+      "pozice": 12,
       "pivovar": "Čestmír",
       "nazev": "NINE",
       "stupen": "14",
@@ -132,6 +122,16 @@
       "styl": "IPA",
       "dalsi": "",
       "raw": "Čestmír NINE 14° IPA"
+    },
+    {
+      "pozice": 13,
+      "pivovar": "Clock",
+      "nazev": "TWIST",
+      "stupen": "14",
+      "alkohol": "",
+      "styl": "Red IPA",
+      "dalsi": "",
+      "raw": "Clock TWIST 14° Red IPA"
     },
     {
       "pozice": 14,
@@ -185,13 +185,13 @@
     },
     {
       "pozice": 19,
-      "pivovar": "Čestmír",
-      "nazev": "Astro Creep",
+      "pivovar": "Hákův",
+      "nazev": "pivovar STOUT Šalvěj",
       "stupen": "14",
       "alkohol": "",
-      "styl": "STOUT",
+      "styl": "",
       "dalsi": "",
-      "raw": "Čestmír Astro Creep 14° STOUT"
+      "raw": "Hákův pivovar STOUT Šalvěj 14°"
     },
     {
       "pozice": 20,
