@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-23 15:42",
+  "zmeneno": "2026-11-23 16:14",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "FALKON",
-      "nazev": "Krasohled",
+      "pivovar": "PREISLER",
+      "nazev": "Tvrdá Práce",
       "stupen": "12",
-      "alkohol": "4.9",
+      "alkohol": "5.2",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "FALKON – Krasohled 12°/4,9%/35IBU světlý ležák"
+      "raw": "PREISLER- Tvrdá Práce 12°/5,2% světlý ležák"
     },
     {
       "pozice": 2,
