@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-24 19:58",
+  "zmeneno": "2026-11-24 22:00",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Rodinný pivovar Zichovec",
-      "nazev": "Krahulík",
+      "pivovar": "Sibeeria/Ten Hands",
+      "nazev": "Hands Fresh Hop Czech Pilsner",
       "stupen": "11",
-      "alkohol": "4.6",
-      "styl": "Pale Lager",
+      "alkohol": "4.7",
+      "styl": "Czech Pale Lager",
       "dalsi": "",
-      "raw": "Zichovec Krahulík 11° | Pale Lager | 11° | 4,6% | Rodinný pivovar Zichovec"
+      "raw": "Sibeeria & Ten Hands Fresh Hop Czech Pilsner | Czech Pale Lager | 11° | 4,7% | Sibeeria/Ten Hands"
     },
     {
       "pozice": 3,

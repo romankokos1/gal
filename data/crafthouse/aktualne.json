@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-24 17:56",
+  "zmeneno": "2026-11-24 22:00",
   "metoda": "selektor",
   "piva": [
     {
@@ -185,16 +185,6 @@
     },
     {
       "pozice": 19,
-      "pivovar": "Cobolis",
-      "nazev": "Bezedný kotel",
-      "stupen": "",
-      "alkohol": "7.2",
-      "styl": "Stout - Irish Extra",
-      "dalsi": "",
-      "raw": "Bezedný kotel | Stout - Irish Extra | 7.2% ABV | Cobolis / CZ"
-    },
-    {
-      "pozice": 20,
       "pivovar": "Mazák",
       "nazev": "Baltic Porter",
       "stupen": "",
@@ -204,7 +194,7 @@
       "raw": "Baltic Porter | Porter - Baltic | 6.8% ABV | Pivovar Mazák / CZ"
     },
     {
-      "pozice": 21,
+      "pozice": 20,
       "pivovar": "Brouwerij De Brabandere",
       "nazev": "Petrus Red",
       "stupen": "",
@@ -214,7 +204,7 @@
       "raw": "Petrus Red | Fruit Beer | 8.5% ABV | Brouwerij De Brabandere / BE"
     },
     {
-      "pozice": 22,
+      "pozice": 21,
       "pivovar": "FALKON",
       "nazev": "BOCHÁNEK",
       "stupen": "",

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-24 17:56",
+  "zmeneno": "2026-11-24 22:00",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "MADCAT",
-      "nazev": "Cyber Cat",
-      "stupen": "11",
-      "alkohol": "5",
-      "styl": "American Pale Ale",
+      "pivovar": "SQBRU",
+      "nazev": "Sicky Boy",
+      "stupen": "14",
+      "alkohol": "6.4",
+      "styl": "India Pale Ale",
       "dalsi": "",
-      "raw": "MADCAT - Cyber Cat, American Pale Ale, 11° sv. nef., 5% vol. Alc"
+      "raw": "SQBRU - Sicky Boy, India Pale Ale, 14° sv. nef., 6, 4% vol. Alc"
     },
     {
       "pozice": 7,
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Permon",
-      "nazev": "Sokolovská Desítka",
+      "pivovar": "Radouš",
+      "nazev": "Stodolní",
       "stupen": "10",
       "alkohol": "4",
       "styl": "světlé výčepní",
       "dalsi": "",
-      "raw": "Permon - Sokolovská Desítka, světlé výčepní, 10° sv. nef., 4% vol. Alc, 30 IBU"
+      "raw": "Radouš - Stodolní, světlé výčepní, 10° sv. nef., 4% vol. Alc, 28 IBU"
     }
   ]
 }
