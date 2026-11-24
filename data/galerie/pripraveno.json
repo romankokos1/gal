@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "pivovar": "SIBEERIA",
+    "nazev": "Patronus",
+    "stupen": "10",
+    "alkohol": "3.8",
+    "styl": "světlé výčepní",
+    "raw": "SIBEERIA – Patronus 10°/3,8% světlé výčepní"
+  },
+  {
+    "pivovar": "SIBEERIA",
+    "nazev": "The Toastmaster",
+    "stupen": "14",
+    "alkohol": "6.3",
+    "styl": "West Coast IPA (azacca, nectaron hop kief, mosaic, centennial)",
+    "raw": "SIBEERIA – The Toastmaster 14°/6,3% West Coast IPA (azacca, nectaron hop kief, mosaic, centennial)"
+  },
+  {
+    "pivovar": "CLOCK",
+    "nazev": "Vánoční Ležák",
+    "stupen": "13",
+    "alkohol": "5.5",
+    "styl": "American Amber Lager (sabro, mosaic)",
+    "raw": "CLOCK – Vánoční Ležák 13°/5,5%/42IBU American Amber Lager (sabro, mosaic)"
+  },
+  {
+    "pivovar": "ZICHOVEC",
+    "nazev": "Anything Gose: Dark Fruits",
+    "stupen": "16",
+    "alkohol": "7",
+    "styl": "Imperial Gose s višní, malinou, ostružinou, černým rybízem a solí",
+    "raw": "ZICHOVEC – Anything Gose: Dark Fruits 16°/7% Imperial Gose s višní, malinou, ostružinou, černým rybízem a solí"
+  }
+]

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-24 15:54",
+  "zmeneno": "2026-11-24 20:59",
   "metoda": "nadpis",
   "piva": [
     {
@@ -10,18 +10,18 @@
       "stupen": "12",
       "alkohol": "4.8",
       "styl": "světlý ležák",
-      "dalsi": "",
-      "raw": "HULVÁT – H12 12°/4,8%/36IBU světlý ležák"
+      "dalsi": "SIBEERIA – Patronus 10°/3,8% světlé výčepní",
+      "raw": "HULVÁT – H12 12°/4,8%/36IBU světlý ležák //NEXT// SIBEERIA – Patronus 10°/3,8% světlé výčepní"
     },
     {
       "pozice": 2,
-      "pivovar": "VINOHRADSKÝ PIVOVAR",
-      "nazev": "Liberator",
-      "stupen": "11",
-      "alkohol": "4.5",
-      "styl": "APA (mosaic, centennial)",
+      "pivovar": "TWINBERG",
+      "nazev": "Arabeerska",
+      "stupen": "13",
+      "alkohol": "5.3",
+      "styl": "NEIPA (mosaic, citra)",
       "dalsi": "",
-      "raw": "VINOHRADSKÝ PIVOVAR – Liberator 11°/4,5%/24IBU APA (mosaic, centennial)"
+      "raw": "TWINBERG – Arabeerska 13°/5,3% NEIPA (mosaic, citra)"
     },
     {
       "pozice": 3,
@@ -30,8 +30,8 @@
       "stupen": "14",
       "alkohol": "5.9",
       "styl": "NEIPA (mosaic, amarillo, el dorado)",
-      "dalsi": "",
-      "raw": "MORDÝŘ – Ježibaba 14°/5,9%/30IBU NEIPA (mosaic, amarillo, el dorado)"
+      "dalsi": "SIBEERIA – The Toastmaster 14°/6,3% West Coast IPA (azacca, nectaron hop kief, mosaic, centennial)",
+      "raw": "MORDÝŘ – Ježibaba 14°/5,9%/30IBU NEIPA (mosaic, amarillo, el dorado) //NEXT// SIBEERIA – The Toastmaster 14°/6,3% West Coast IPA (azacca, nectaron hop kief, mosaic, centennial)"
     },
     {
       "pozice": 4,
@@ -40,8 +40,8 @@
       "stupen": "13",
       "alkohol": "7.3",
       "styl": "Brut IPA s grepovou infuzí (summit, citra, mosaic, amarillo)",
-      "dalsi": "",
-      "raw": "PIVEČKA – Grapefruit Dry 13°/7,3% Brut IPA s grepovou infuzí (summit, citra, mosaic, amarillo)"
+      "dalsi": "CLOCK – Vánoční Ležák 13°/5,5%/42IBU American Amber Lager (sabro, mosaic)",
+      "raw": "PIVEČKA – Grapefruit Dry 13°/7,3% Brut IPA s grepovou infuzí (summit, citra, mosaic, amarillo) //NEXT// CLOCK – Vánoční Ležák 13°/5,5%/42IBU American Amber Lager (sabro, mosaic)"
     },
     {
       "pozice": 5,
@@ -50,8 +50,8 @@
       "stupen": "11",
       "alkohol": "3.5",
       "styl": "kyseláč s pomerančem a medem",
-      "dalsi": "",
-      "raw": "ZLOUN – Orange & Honey Sour 11°/3,5% kyseláč s pomerančem a medem"
+      "dalsi": "ZICHOVEC – Anything Gose: Dark Fruits 16°/7% Imperial Gose s višní, malinou, ostružinou, černým rybízem a solí",
+      "raw": "ZLOUN – Orange & Honey Sour 11°/3,5% kyseláč s pomerančem a medem //NEXT// ZICHOVEC – Anything Gose: Dark Fruits 16°/7% Imperial Gose s višní, malinou, ostružinou, černým rybízem a solí"
     }
   ]
 }
