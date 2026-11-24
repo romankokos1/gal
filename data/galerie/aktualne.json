@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-24 20:59",
+  "zmeneno": "2026-11-24 22:31",
   "metoda": "nadpis",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "PIVEČKA",
-      "nazev": "Grapefruit Dry",
+      "pivovar": "CLOCK",
+      "nazev": "Vánoční Ležák",
       "stupen": "13",
-      "alkohol": "7.3",
-      "styl": "Brut IPA s grepovou infuzí (summit, citra, mosaic, amarillo)",
-      "dalsi": "CLOCK – Vánoční Ležák 13°/5,5%/42IBU American Amber Lager (sabro, mosaic)",
-      "raw": "PIVEČKA – Grapefruit Dry 13°/7,3% Brut IPA s grepovou infuzí (summit, citra, mosaic, amarillo) //NEXT// CLOCK – Vánoční Ležák 13°/5,5%/42IBU American Amber Lager (sabro, mosaic)"
+      "alkohol": "5.5",
+      "styl": "American Amber Lager (sabro, mosaic)",
+      "dalsi": "",
+      "raw": "CLOCK – Vánoční Ležák 13°/5,5%/42IBU American Amber Lager (sabro, mosaic)"
     },
     {
       "pozice": 5,
