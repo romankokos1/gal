@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-23 21:48",
+  "zmeneno": "2026-11-24 17:56",
   "metoda": "selektor",
   "piva": [
     {
@@ -56,12 +56,12 @@
     {
       "pozice": 6,
       "pivovar": "Verdant",
-      "nazev": "Under the Same Sky",
+      "nazev": "High Fives",
       "stupen": "",
-      "alkohol": "8.4",
-      "styl": "Double New England",
+      "alkohol": "5.9",
+      "styl": "New England IPA",
       "dalsi": "",
-      "raw": "Under the Same Sky | Double New England · 8.4% | Verdant"
+      "raw": "High Fives | New England IPA · 5.9% | Verdant"
     },
     {
       "pozice": 7,

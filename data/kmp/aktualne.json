@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-22 13:37",
+  "zmeneno": "2026-11-24 17:56",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Hubertus Kácov",
-      "nazev": "Zelený Chmel",
+      "pivovar": "SQBRU",
+      "nazev": "Fresh Hop Lager",
       "stupen": "12",
-      "alkohol": "4.7",
-      "styl": "světlý ležák s čerstvým chmelem",
+      "alkohol": "5.1",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Hubertus Kácov - Zelený Chmel, světlý ležák s čerstvým chmelem 12° sv., 4, 7% vol. Alc"
+      "raw": "SQBRU - Fresh Hop Lager, světlý ležák, 12° sv. nef., 5, 1% vol. Alc"
     },
     {
       "pozice": 3,
@@ -45,16 +45,6 @@
     },
     {
       "pozice": 5,
-      "pivovar": "",
-      "nazev": "Kynšperský pivovar",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "Zajíc, jantarový ležák",
-      "dalsi": "",
-      "raw": "Kynšperský pivovar, Zajíc, jantarový ležák, 12° polotm. nef., 5% vol. Alc, 32 IBU"
-    },
-    {
-      "pozice": 6,
       "pivovar": "Hoppy Dog",
       "nazev": "Luna",
       "stupen": "13",
@@ -64,7 +54,7 @@
       "raw": "Hoppy Dog - Luna, New England IPA, 13° sv. nef., 5, 4% vol. Alc, 11 IBU"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "MADCAT",
       "nazev": "Cyber Cat",
       "stupen": "11",
@@ -74,17 +64,7 @@
       "raw": "MADCAT - Cyber Cat, American Pale Ale, 11° sv. nef., 5% vol. Alc"
     },
     {
-      "pozice": 8,
-      "pivovar": "Kompresor/Joe's Garage, Czech Pale Ale",
-      "nazev": "z novošlechtěných žateckých chmelů",
-      "stupen": "11",
-      "alkohol": "4.4",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Kompresor/Joe's Garage, Czech Pale Ale - z novošlechtěných žateckých chmelů 11° sv. nef., 4, 4% vol. Alc, 30 IBU"
-    },
-    {
-      "pozice": 9,
+      "pozice": 7,
       "pivovar": "",
       "nazev": "Zlatá Kráva",
       "stupen": "14",
@@ -94,7 +74,7 @@
       "raw": "Zlatá Kráva, Black IPA, 14° tm. nef., 5, 6% vol. Alc, 50 IBU"
     },
     {
-      "pozice": 10,
+      "pozice": 8,
       "pivovar": "Permon",
       "nazev": "Sokolovská Desítka",
       "stupen": "10",

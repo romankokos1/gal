@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-22 17:41",
+  "zmeneno": "2026-11-24 17:56",
   "metoda": "selektor",
   "piva": [
     {
@@ -145,6 +145,16 @@
     },
     {
       "pozice": 15,
+      "pivovar": "ZICHOVEC",
+      "nazev": "Nectar of Happiness 17",
+      "stupen": "",
+      "alkohol": "7",
+      "styl": "IPA - New England / Hazy",
+      "dalsi": "",
+      "raw": "Nectar of Happiness 17 | IPA - New England / Hazy | 7% ABV | Pivovar ZICHOVEC / CZ"
+    },
+    {
+      "pozice": 16,
       "pivovar": "Sibeeria",
       "nazev": "Smoke Lady",
       "stupen": "",
@@ -154,7 +164,7 @@
       "raw": "Smoke Lady | Rauchbier | 5.5% ABV | Sibeeria Brewery / CZ"
     },
     {
-      "pozice": 16,
+      "pozice": 17,
       "pivovar": "Brewnicorn",
       "nazev": "Stromeček",
       "stupen": "",
@@ -164,7 +174,7 @@
       "raw": "Stromeček | IPA - Imperial / Double | 8.6% ABV | Brewnicorn / CZ"
     },
     {
-      "pozice": 17,
+      "pozice": 18,
       "pivovar": "Raven",
       "nazev": "Sun Blast IPA",
       "stupen": "",
@@ -174,7 +184,7 @@
       "raw": "Sun Blast IPA | IPA - American | 6.2% ABV | Pivovar Raven / CZ"
     },
     {
-      "pozice": 18,
+      "pozice": 19,
       "pivovar": "Cobolis",
       "nazev": "Bezedný kotel",
       "stupen": "",
@@ -184,7 +194,7 @@
       "raw": "Bezedný kotel | Stout - Irish Extra | 7.2% ABV | Cobolis / CZ"
     },
     {
-      "pozice": 19,
+      "pozice": 20,
       "pivovar": "Mazák",
       "nazev": "Baltic Porter",
       "stupen": "",
@@ -194,7 +204,7 @@
       "raw": "Baltic Porter | Porter - Baltic | 6.8% ABV | Pivovar Mazák / CZ"
     },
     {
-      "pozice": 20,
+      "pozice": 21,
       "pivovar": "Brouwerij De Brabandere",
       "nazev": "Petrus Red",
       "stupen": "",
@@ -204,7 +214,7 @@
       "raw": "Petrus Red | Fruit Beer | 8.5% ABV | Brouwerij De Brabandere / BE"
     },
     {
-      "pozice": 21,
+      "pozice": 22,
       "pivovar": "FALKON",
       "nazev": "BOCHÁNEK",
       "stupen": "",
