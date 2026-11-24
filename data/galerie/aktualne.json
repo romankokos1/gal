@@ -1,17 +1,17 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-24 22:31",
+  "zmeneno": "2026-11-24 23:01",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "HULVÁT",
-      "nazev": "H12",
-      "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "světlý ležák",
-      "dalsi": "SIBEERIA – Patronus 10°/3,8% světlé výčepní",
-      "raw": "HULVÁT – H12 12°/4,8%/36IBU světlý ležák //NEXT// SIBEERIA – Patronus 10°/3,8% světlé výčepní"
+      "pivovar": "SIBEERIA",
+      "nazev": "Patronus",
+      "stupen": "10",
+      "alkohol": "3.8",
+      "styl": "světlé výčepní",
+      "dalsi": "",
+      "raw": "SIBEERIA – Patronus 10°/3,8% světlé výčepní"
     },
     {
       "pozice": 2,
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "MORDÝŘ",
-      "nazev": "Ježibaba",
-      "stupen": "14",
-      "alkohol": "5.9",
-      "styl": "NEIPA (mosaic, amarillo, el dorado)",
+      "pivovar": "PIVOVAR VIK",
+      "nazev": "Southern Hemisphere",
+      "stupen": "15",
+      "alkohol": "6.5",
+      "styl": "Pacific IPA (galaxy, nelson, rhapsody)",
       "dalsi": "SIBEERIA – The Toastmaster 14°/6,3% West Coast IPA (azacca, nectaron hop kief, mosaic, centennial)",
-      "raw": "MORDÝŘ – Ježibaba 14°/5,9%/30IBU NEIPA (mosaic, amarillo, el dorado) //NEXT// SIBEERIA – The Toastmaster 14°/6,3% West Coast IPA (azacca, nectaron hop kief, mosaic, centennial)"
+      "raw": "PIVOVAR VIK – Southern Hemisphere 15°/6,5%/40IBU Pacific IPA (galaxy, nelson, rhapsody) //NEXT// SIBEERIA – The Toastmaster 14°/6,3% West Coast IPA (azacca, nectaron hop kief, mosaic, centennial)"
     },
     {
       "pozice": 4,
