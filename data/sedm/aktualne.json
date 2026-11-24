@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-24 17:56",
+  "zmeneno": "2026-11-24 19:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "vik x dno pytle",
-      "nazev": "weizen",
-      "stupen": "12",
-      "alkohol": "5.2",
-      "styl": "weizen",
+      "pivovar": "Černý Potoka",
+      "nazev": "Plecháč 242",
+      "stupen": "11",
+      "alkohol": "4.8",
+      "styl": "Session IPA",
       "dalsi": "",
-      "raw": "vik x dno pytle - weizen | 12% | weizen, ABV 5,2%"
+      "raw": "Černý Potoka - Plecháč 242 | 11% | Session IPA, ABV 4,8%"
     },
     {
       "pozice": 4,

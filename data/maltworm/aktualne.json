@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-24 15:54",
+  "zmeneno": "2026-11-24 19:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Heller",
-      "nazev": "Aecht Schlenkerla Urbock",
-      "stupen": "17.5",
-      "alkohol": "6.5",
-      "styl": "Rauch Dunkel Bock",
+      "pivovar": "Kundmüller",
+      "nazev": "Weiherer Euer Festbier 2026",
+      "stupen": "13.5",
+      "alkohol": "5.6",
+      "styl": "Festbier",
       "dalsi": "",
-      "raw": "Aecht Schlenkerla Urbock | Rauch Dunkel Bock | 17.5° | 6,5% | Heller"
+      "raw": "Kundmüller Weiherer Euer Festbier 2026 | Festbier | 13.5° | 5,6% | Kundmüller"
     },
     {
       "pozice": 4,
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Sibeeria",
-      "nazev": "Mango & Passion Fruit Sorbet",
+      "pivovar": "Albert Michler",
+      "nazev": "Fruit Coctail",
       "stupen": "11",
-      "alkohol": "4.4",
-      "styl": "Mango & Passion Fruit Sour Ale",
+      "alkohol": "4.9",
+      "styl": "Apricot & Guava Sour ALe",
       "dalsi": "",
-      "raw": "Sibeeria Mango & Passion Fruit Sorbet | Mango & Passion Fruit Sour Ale | 11° | 4,4% | Sibeeria"
+      "raw": "Albert Michler Fruit Coctail | Apricot & Guava Sour ALe | 11° | 4,9% | Albert Michler"
     },
     {
       "pozice": 10,
@@ -126,12 +126,12 @@
     {
       "pozice": 13,
       "pivovar": "Nieczajna",
-      "nazev": "Piwo w Stylu Grodziskim",
-      "stupen": "7",
-      "alkohol": "3.3",
-      "styl": "Grodziskie",
+      "nazev": "Hoppy Grodziskie Superdelic",
+      "stupen": "7.7",
+      "alkohol": "3.2",
+      "styl": "Extra Hoppy Grodziskie",
       "dalsi": "",
-      "raw": "Nieczajna Piwo w Stylu Grodziskim | Grodziskie | 7° | 3,3% | Nieczajna"
+      "raw": "Nieczajna Hoppy Grodziskie Superdelic | Extra Hoppy Grodziskie | 7.7° | 3,2% | Nieczajna"
     },
     {
       "pozice": 14,
