@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-23 16:14",
+  "zmeneno": "2026-11-24 15:54",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "PREISLER",
-      "nazev": "Tvrdá Práce",
+      "pivovar": "HULVÁT",
+      "nazev": "H12",
       "stupen": "12",
-      "alkohol": "5.2",
+      "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "PREISLER- Tvrdá Práce 12°/5,2% světlý ležák"
+      "raw": "HULVÁT – H12 12°/4,8%/36IBU světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "THRILLS",
-      "nazev": "Bully",
-      "stupen": "12",
-      "alkohol": "5",
-      "styl": "West Coast Pilsner (citra cryo, simcoe, centennial)",
+      "pivovar": "VINOHRADSKÝ PIVOVAR",
+      "nazev": "Liberator",
+      "stupen": "11",
+      "alkohol": "4.5",
+      "styl": "APA (mosaic, centennial)",
       "dalsi": "",
-      "raw": "THRILLS – Bully 12°/5% West Coast Pilsner (citra cryo, simcoe, centennial)"
+      "raw": "VINOHRADSKÝ PIVOVAR – Liberator 11°/4,5%/24IBU APA (mosaic, centennial)"
     },
     {
       "pozice": 3,

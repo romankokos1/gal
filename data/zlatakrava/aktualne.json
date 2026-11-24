@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zk.vhost.cz/",
-  "zmeneno": "2026-11-18 18:09",
+  "zmeneno": "2026-11-24 15:54",
   "metoda": "selektor",
   "piva": [
     {
@@ -26,12 +26,12 @@
     {
       "pozice": 3,
       "pivovar": "Zlatá kráva",
-      "nazev": "JUICY PAMELA",
-      "stupen": "13",
+      "nazev": "COMBINE BRUT IPA",
+      "stupen": "",
       "alkohol": "",
-      "styl": "Šťavnatá zakalená IPA s výrazným aroma tropického ovoce a s nižší hořkostí",
+      "styl": "Pořádně prokvašený suchý kombajn s nízkým obsahem cukru",
       "dalsi": "",
-      "raw": "Zlatá kráva | 13 JUICY PAMELA | Šťavnatá zakalená IPA s výrazným aroma tropického ovoce a s nižší hořkostí."
+      "raw": "Zlatá kráva | COMBINE BRUT IPA | Pořádně prokvašený suchý kombajn s nízkým obsahem cukru. SINGLE HOP s výraznou chutí chmele Nelson Sauvin, krásně pitelné pivo skoro jako šampaňské"
     },
     {
       "pozice": 4,
@@ -46,22 +46,22 @@
     {
       "pozice": 5,
       "pivovar": "Zlatá kráva",
-      "nazev": "12. SV. JANA NEPOMUCKÉHO",
-      "stupen": "",
+      "nazev": "BLACK IPA",
+      "stupen": "14",
       "alkohol": "",
-      "styl": "Pšeničné pivo se silnou intenzitou ovocné banánové a hřebíčkové vůně i chuti s nízkou…",
+      "styl": "Svrchně kvašený tmavý speciál, který vznikl u příležitosti Vánoc a právě zimního období…",
       "dalsi": "",
-      "raw": "Zlatá kráva | 12. SV. JANA NEPOMUCKÉHO | Pšeničné pivo se silnou intenzitou ovocné banánové a hřebíčkové vůně i chuti s nízkou intenzitou hořkosti"
+      "raw": "Zlatá kráva | 14 BLACK IPA | Svrchně kvašený tmavý speciál, který vznikl u příležitosti Vánoc a právě zimního období, kdy je potřeba, aby nás pivo takzvaně zahřálo."
     },
     {
       "pozice": 6,
-      "pivovar": "Zlatá kráva",
-      "nazev": "VOODOO CRYO NEIPA VOL.7",
-      "stupen": "13",
+      "pivovar": "",
+      "nazev": "Zlatá kráva",
+      "stupen": "",
       "alkohol": "",
-      "styl": "7. varianta šťavnaté NEIPA nabouchaná chmely Trident a Cryo Motueka",
+      "styl": "",
       "dalsi": "",
-      "raw": "Zlatá kráva | 13 VOODOO CRYO NEIPA VOL.7 | 7. varianta šťavnaté NEIPA nabouchaná chmely Trident a Cryo Motueka."
+      "raw": "Zlatá kráva"
     },
     {
       "pozice": 7,

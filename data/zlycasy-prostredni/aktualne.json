@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:prostredni-bar",
-  "zmeneno": "2026-11-20 15:59",
+  "zmeneno": "2026-11-24 15:54",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,23 +35,23 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Lomnický",
-      "nazev": "ležák",
+      "pivovar": "Zvíkovský",
+      "nazev": "Rarášek pšeničné",
       "stupen": "11",
       "alkohol": "",
-      "styl": "Světlý ležák",
+      "styl": "",
       "dalsi": "",
-      "raw": "Lomnický ležák 11° | Světlý ležák"
+      "raw": "Zvíkovský Rarášek 11° pšeničné"
     },
     {
       "pozice": 5,
       "pivovar": "Bad Flash",
-      "nazev": "Mango Chilli Sour Ale",
-      "stupen": "12",
+      "nazev": "Rock Café APA",
+      "stupen": "11",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Bad Flash Mango Chilli Sour Ale 12° | 0.3l"
+      "raw": "Bad Flash Rock Café APA 11°"
     },
     {
       "pozice": 6,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Bad Flash",
-      "nazev": "Mini Boss NEIPA",
-      "stupen": "9",
+      "pivovar": "Holá",
+      "nazev": "Řiť Apička",
+      "stupen": "12",
       "alkohol": "",
-      "styl": "NEIPA",
+      "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Bad Flash Mini Boss NEIPA 9° | NEIPA | 0,4l"
+      "raw": "Holá Řiť Apička 12° | American Pale Ale | 0,4l"
     },
     {
       "pozice": 8,
@@ -85,16 +85,6 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Bad Flash",
-      "nazev": "Torpid Mind Imperial Stout",
-      "stupen": "24",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Bad Flash Torpid Mind 24° Imperial Stout | 0,3l"
-    },
-    {
-      "pozice": 10,
       "pivovar": "Budvar",
       "nazev": "Tmavý ležák",
       "stupen": "12",
@@ -104,7 +94,7 @@
       "raw": "Budvar Tmavý ležák 12°"
     },
     {
-      "pozice": 11,
+      "pozice": 10,
       "pivovar": "Budvar",
       "nazev": "33 ležák",
       "stupen": "11",
@@ -114,14 +104,14 @@
       "raw": "Budvar 33 ležák 11° | Světlý ležák"
     },
     {
-      "pozice": 12,
-      "pivovar": "Bad Flash",
-      "nazev": "Stupická světlý ležák",
-      "stupen": "12",
+      "pozice": 11,
+      "pivovar": "Zvíkovská",
+      "nazev": "Zlatá Labuť",
+      "stupen": "11",
       "alkohol": "",
-      "styl": "",
+      "styl": "Světlý ležák",
       "dalsi": "",
-      "raw": "Bad Flash Stupická 12° světlý ležák"
+      "raw": "Zvíkovská Zlatá Labuť 11° | Světlý ležák"
     }
   ]
 }

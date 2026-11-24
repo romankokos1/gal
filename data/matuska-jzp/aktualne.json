@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-11-23 17:44",
+  "zmeneno": "2026-11-24 15:54",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "Matuška",
-      "nazev": "BYLINNÝ BLAŽENEC",
-      "stupen": "12",
-      "alkohol": "4.8",
-      "styl": "BOTANICAL GOSE",
+      "nazev": "FLORIDA",
+      "stupen": "10",
+      "alkohol": "4.2",
+      "styl": "PALE ALE",
       "dalsi": "",
-      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
+      "raw": "FLORIDA | PALE ALE | 10° | 4,2 %"
     },
     {
       "pozice": 3,
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Matuška",
-      "nazev": "FLORIDA",
-      "stupen": "10",
-      "alkohol": "4.2",
-      "styl": "PALE ALE",
+      "pivovar": "CLOCK",
+      "nazev": "KRYSTUS",
+      "stupen": "6",
+      "alkohol": "0.5",
+      "styl": "ALC. FREE IPA",
       "dalsi": "",
-      "raw": "FLORIDA | PALE ALE | 10° | 4,2 %"
+      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
     },
     {
       "pozice": 5,
@@ -55,26 +55,16 @@
     },
     {
       "pozice": 6,
-      "pivovar": "CLOCK",
-      "nazev": "KRYSTUS",
-      "stupen": "6",
-      "alkohol": "0.5",
-      "styl": "ALC. FREE IPA",
+      "pivovar": "U FLEKŮ",
+      "nazev": "TMAVÝ LEŽÁK",
+      "stupen": "13",
+      "alkohol": "4.6",
+      "styl": "SCHWARZ",
       "dalsi": "",
-      "raw": "CLOCK: KRYSTUS | ALC. FREE IPA | 6° | 0,5 %"
+      "raw": "U FLEKŮ: TMAVÝ LEŽÁK | SCHWARZ | 13° | 4,6 %"
     },
     {
       "pozice": 7,
-      "pivovar": "Matuška",
-      "nazev": "SV. MARTIN",
-      "stupen": "16",
-      "alkohol": "6.3",
-      "styl": "LAGER",
-      "dalsi": "",
-      "raw": "SV. MARTIN | LAGER | 16° | 6,3 %"
-    },
-    {
-      "pozice": 8,
       "pivovar": "Matuška",
       "nazev": "DŘEVO",
       "stupen": "19",
@@ -82,6 +72,16 @@
       "styl": "WOOD-AGED DOPPELBOCK",
       "dalsi": "",
       "raw": "DŘEVO | WOOD-AGED DOPPELBOCK | 19° | 7,8 %"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Matuška",
+      "nazev": "BYLINNÝ BLAŽENEC",
+      "stupen": "12",
+      "alkohol": "4.8",
+      "styl": "BOTANICAL GOSE",
+      "dalsi": "",
+      "raw": "BYLINNÝ BLAŽENEC | BOTANICAL GOSE | 12° | 4,8 %"
     }
   ]
 }

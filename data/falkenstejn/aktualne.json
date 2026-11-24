@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivofalkenstejn.cz/restaurace/napojovy-listek.html",
-  "zmeneno": "2026-10-29 21:37",
+  "zmeneno": "2026-11-24 15:54",
   "metoda": "nadpis",
   "piva": [
     {
@@ -36,16 +36,6 @@
     {
       "pozice": 4,
       "pivovar": "Falkenštejn",
-      "nazev": "Svižnej Emil",
-      "stupen": "9",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Svižnej Emil 9°"
-    },
-    {
-      "pozice": 5,
-      "pivovar": "Falkenštejn",
       "nazev": "Deset!",
       "stupen": "10",
       "alkohol": "",
@@ -54,7 +44,7 @@
       "raw": "Deset! 10°"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Falkenštejn",
       "nazev": "Desperát",
       "stupen": "11",
@@ -64,7 +54,7 @@
       "raw": "Desperát 11°"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "Falkenštejn",
       "nazev": "Rudoch",
       "stupen": "13",

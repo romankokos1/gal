@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-23 13:24",
+  "zmeneno": "2026-11-24 13:41",
   "metoda": "rucne",
   "piva": [
     {
@@ -55,6 +55,16 @@
     },
     {
       "pozice": 6,
+      "pivovar": "Černý potoka",
+      "nazev": "Plecháč 242",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "Session IPA",
+      "dalsi": "",
+      "raw": "Černý potoka Plecháč 242 Session IPA 11"
+    },
+    {
+      "pozice": 7,
       "pivovar": "Napalmě",
       "nazev": "Krém Béčko bezlepkový NZ Cream",
       "stupen": "11",
@@ -64,7 +74,7 @@
       "raw": "Napalmě Krém Béčko bezlepkový NZ Cream Ale 11"
     },
     {
-      "pozice": 7,
+      "pozice": 8,
       "pivovar": "Napalmě",
       "nazev": "Cannabis",
       "stupen": "12",
@@ -72,16 +82,6 @@
       "styl": "gose",
       "dalsi": "",
       "raw": "Napalmě Cannabis gose 12"
-    },
-    {
-      "pozice": 8,
-      "pivovar": "Matuška",
-      "nazev": "Apollo Galaxy",
-      "stupen": "13",
-      "alkohol": "",
-      "styl": "Pale Ale",
-      "dalsi": "",
-      "raw": "Matuška Apollo Galaxy Pale Ale 13"
     },
     {
       "pozice": 9,
@@ -105,13 +105,13 @@
     },
     {
       "pozice": 11,
-      "pivovar": "Sibeeria",
-      "nazev": "The Candle Keeper",
-      "stupen": "19",
+      "pivovar": "Zichovec",
+      "nazev": "Vánoční Zmrzka Vegan Ice Cream",
+      "stupen": "18",
       "alkohol": "",
-      "styl": "Pastry Sour Ale",
+      "styl": "Sour",
       "dalsi": "",
-      "raw": "Sibeeria The Candle Keeper Pastry Sour Ale 19"
+      "raw": "Zichovec Vánoční Zmrzka Vegan Ice Cream Sour 18"
     },
     {
       "pozice": 12,
