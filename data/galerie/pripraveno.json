@@ -1,26 +1,10 @@
 [
   {
-    "pivovar": "ČERNÝ POTOKA",
-    "nazev": "Cold Fish Pink Grapefruit",
-    "stupen": "11",
-    "alkohol": "4.6",
-    "styl": "session NEIPA s repovou infuzí (columbus, citra cryo, enigma, vic secret)",
-    "raw": "ČERNÝ POTOKA – Cold Fish Pink Grapefruit 11°/4,6% session NEIPA s repovou infuzí (columbus, citra cryo, enigma, vic secret)"
-  },
-  {
     "pivovar": "PIVOVAR VIK",
     "nazev": "Southern Hemisphere",
     "stupen": "15",
     "alkohol": "6.5",
     "styl": "Pacific IPA (galaxy, nelson, rhapsody)",
     "raw": "PIVOVAR VIK – Southern Hemisphere 15°/6,5%/40IBU Pacific IPA (galaxy, nelson, rhapsody) //NEXT// SIBEERIA – The Toastmaster 14°/6,3% West Coast IPA (azacca, nectaron hop kief, mosaic, centennial)"
-  },
-  {
-    "pivovar": "ZICHOVEC",
-    "nazev": "Anything Gose: Dark Fruits",
-    "stupen": "16",
-    "alkohol": "7",
-    "styl": "Imperial Gose s višní, malinou, ostružinou, černým rybízem a solí",
-    "raw": "ZICHOVEC – Anything Gose: Dark Fruits 16°/7% Imperial Gose s višní, malinou, ostružinou, černým rybízem a solí"
   }
 ]
