@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-11-23 15:42",
+  "zmeneno": "2026-11-25 15:26",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,23 +55,23 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Petrovický",
-      "nazev": "Kilián",
+      "pivovar": "Hulvát",
+      "nazev": "ležák",
       "stupen": "12",
       "alkohol": "",
-      "styl": "",
+      "styl": "Ležák",
       "dalsi": "",
-      "raw": "Petrovický Kilián 12° sv.nef."
+      "raw": "Hulvát ležák 12° sv.nef."
     },
     {
       "pozice": 7,
-      "pivovar": "Stadioner",
-      "nazev": "MAORIHEAD IPL",
+      "pivovar": "Kamenice nad Lipou",
+      "nazev": "Kamenice nad Lipou 13°",
       "stupen": "13",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Stadioner MAORIHEAD IPL 13° sv.nef."
+      "raw": "Kamenice nad Lipou 13° polotm.nef."
     },
     {
       "pozice": 8,
@@ -105,13 +105,13 @@
     },
     {
       "pozice": 11,
-      "pivovar": "Pioneer",
-      "nazev": "LUNAPARK",
+      "pivovar": "Matuška",
+      "nazev": "CALIFORNIA",
       "stupen": "12",
       "alkohol": "",
-      "styl": "Session HAZY IPA",
+      "styl": "APA",
       "dalsi": "",
-      "raw": "Pioneer LUNAPARK 12° Session HAZY IPA"
+      "raw": "Matuška CALIFORNIA 12° APA"
     },
     {
       "pozice": 12,

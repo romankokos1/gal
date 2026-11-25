@@ -1,6 +1,6 @@
 {
   "zdroj": "https://beerknir.cz/",
-  "zmeneno": "2026-11-21 00:06",
+  "zmeneno": "2026-11-25 15:26",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,23 +45,23 @@
     },
     {
       "pozice": 5,
-      "pivovar": "Vik",
-      "nazev": "FULL NELSON",
-      "stupen": "15",
-      "alkohol": "6.6",
+      "pivovar": "Hoppydog",
+      "nazev": "New Dog: Luna",
+      "stupen": "13",
+      "alkohol": "5.4",
       "styl": "NEIPA",
       "dalsi": "",
-      "raw": "FULL NELSON 15° | NEIPA | 15° | 6.6% | Pivovar Vik"
+      "raw": "New Dog: Luna 13° | NEIPA | 13° | 5.4% | Pivovar Hoppydog"
     },
     {
       "pozice": 6,
-      "pivovar": "Zichovec",
-      "nazev": "Ježíšek",
-      "stupen": "18",
-      "alkohol": "8",
-      "styl": "Double IPA",
+      "pivovar": "SQBRU",
+      "nazev": "SICKY BOY",
+      "stupen": "14",
+      "alkohol": "6.4",
+      "styl": "IPA",
       "dalsi": "",
-      "raw": "Ježíšek 18° | Double IPA | 18° | 8% | Pivovar Zichovec"
+      "raw": "SICKY BOY 14° | IPA | 14° | 6.4% | Pivovar SQBRU"
     }
   ]
 }

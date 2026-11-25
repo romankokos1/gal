@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-24 23:01",
+  "zmeneno": "2026-11-25 15:26",
   "metoda": "nadpis",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "TWINBERG",
-      "nazev": "Arabeerska",
-      "stupen": "13",
-      "alkohol": "5.3",
-      "styl": "NEIPA (mosaic, citra)",
-      "dalsi": "",
-      "raw": "TWINBERG – Arabeerska 13°/5,3% NEIPA (mosaic, citra)"
+      "pivovar": "ZICHOVEC",
+      "nazev": "Robin Na Repu",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "APA s grepovou infuzí (simcoe, citra)",
+      "dalsi": "TWINBERG – Arabeerska 13°/5,3% NEIPA (mosaic, citra)",
+      "raw": "ZICHOVEC – Robin Na Repu 12°/5,1% APA s grepovou infuzí (simcoe, citra) //NEXT// TWINBERG – Arabeerska 13°/5,3% NEIPA (mosaic, citra)"
     },
     {
       "pozice": 3,

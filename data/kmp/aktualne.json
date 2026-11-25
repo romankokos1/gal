@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-25 00:02",
+  "zmeneno": "2026-11-25 15:26",
   "metoda": "selektor",
   "piva": [
     {
@@ -11,7 +11,7 @@
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4,8% vol. Alc, 35 IBU"
+      "raw": "KMP Ležák #73, světlý ležák, 12° sv. nef., 4, 8% vol. Alc, 35 IBU"
     },
     {
       "pozice": 2,
@@ -21,7 +21,7 @@
       "alkohol": "5.1",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "SQBRU - Fresh Hop Lager, světlý ležák, 12° sv. nef., 5,1% vol. Alc"
+      "raw": "SQBRU - Fresh Hop Lager, světlý ležák, 12° sv. nef., 5, 1% vol. Alc"
     },
     {
       "pozice": 3,
@@ -31,7 +31,7 @@
       "alkohol": "4.4",
       "styl": "Mango & Passion Fruit Sour",
       "dalsi": "",
-      "raw": "Sibeeria - Sorbet, Mango & Passion Fruit Sour, 11° sv. nef., 4,4% vol. Alc"
+      "raw": "Sibeeria - Sorbet, Mango & Passion Fruit Sour, 11° sv. nef., 4, 4% vol. Alc"
     },
     {
       "pozice": 4,
@@ -45,36 +45,56 @@
     },
     {
       "pozice": 5,
+      "pivovar": "SQBRU",
+      "nazev": "Lassi Milkshake Breakfast of Champions",
+      "stupen": "14",
+      "alkohol": "6.4",
+      "styl": "Kyseláč s jahodou, malinou, banánem a černým rybízem",
+      "dalsi": "",
+      "raw": "SQBRU - Lassi Milkshake Breakfast of Champions, Kyseláč s jahodou, malinou, banánem a černým rybízem , 14° sv. nef., 6, 4% vol. Alc"
+    },
+    {
+      "pozice": 6,
       "pivovar": "Hoppy Dog",
       "nazev": "Luna",
       "stupen": "13",
       "alkohol": "5.4",
       "styl": "New England IPA",
       "dalsi": "",
-      "raw": "Hoppy Dog - Luna, New England IPA, 13° sv. nef., 5,4% vol. Alc, 11 IBU"
+      "raw": "Hoppy Dog - Luna, New England IPA, 13° sv. nef., 5, 4% vol. Alc, 11 IBU"
     },
     {
-      "pozice": 6,
+      "pozice": 7,
       "pivovar": "SQBRU",
       "nazev": "Sicky Boy",
       "stupen": "14",
       "alkohol": "6.4",
       "styl": "India Pale Ale",
       "dalsi": "",
-      "raw": "SQBRU - Sicky Boy, India Pale Ale, 14° sv. nef., 6,4% vol. Alc"
+      "raw": "SQBRU - Sicky Boy, India Pale Ale, 14° sv. nef., 6, 4% vol. Alc"
     },
     {
-      "pozice": 7,
+      "pozice": 8,
+      "pivovar": "SQBRU & HOPFENNEBEL",
+      "nazev": "Hazy Pale Ale",
+      "stupen": "11",
+      "alkohol": "5.3",
+      "styl": "",
+      "dalsi": "",
+      "raw": "SQBRU- HOPFENNEBEL - Hazy Pale Ale, 11° sv. nef., 5, 3% vol. Alc"
+    },
+    {
+      "pozice": 9,
       "pivovar": "",
       "nazev": "Zlatá Kráva",
       "stupen": "14",
       "alkohol": "5.6",
       "styl": "Black IPA",
       "dalsi": "",
-      "raw": "Zlatá Kráva, Black IPA, 14° tm. nef., 5,6% vol. Alc, 50 IBU"
+      "raw": "Zlatá Kráva, Black IPA, 14° tm. nef., 5, 6% vol. Alc, 50 IBU"
     },
     {
-      "pozice": 8,
+      "pozice": 10,
       "pivovar": "Radouš",
       "nazev": "Stodolní",
       "stupen": "10",

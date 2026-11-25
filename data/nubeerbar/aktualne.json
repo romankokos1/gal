@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-24 15:54",
+  "zmeneno": "2026-11-25 15:26",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,23 +55,23 @@
     },
     {
       "pozice": 6,
-      "pivovar": "AGENT",
-      "nazev": "KOMPLIC",
-      "stupen": "13",
-      "alkohol": "5",
-      "styl": "AMERICAN WEIZEN",
+      "pivovar": "ZICHOVEC",
+      "nazev": "JUICY LUCY",
+      "stupen": "15",
+      "alkohol": "7",
+      "styl": "NEIPA",
       "dalsi": "",
-      "raw": "AGENT KOMPLIC 13° | AMERICAN WEIZEN | 5%"
+      "raw": "ZICHOVEC JUICY LUCY 15° | NEIPA | 7%"
     },
     {
       "pozice": 7,
-      "pivovar": "ČESTMÍR",
-      "nazev": "NEW ZELAND NEIPA",
-      "stupen": "14",
-      "alkohol": "4.5",
-      "styl": "NZ NEIPA",
+      "pivovar": "HENDRYCH",
+      "nazev": "H CRYO POP",
+      "stupen": "12",
+      "alkohol": "5.1",
+      "styl": "IPA",
       "dalsi": "",
-      "raw": "ČESTMÍR NEW ZELAND NEIPA 14° | NZ NEIPA | 4.5%"
+      "raw": "HENDRYCH H12° CRYO POP | IPA | 5.1%"
     },
     {
       "pozice": 8,
@@ -105,13 +105,13 @@
     },
     {
       "pozice": 11,
-      "pivovar": "ELEKTRARNA",
-      "nazev": "KISSELÁČ VIŠEN",
-      "stupen": "11",
-      "alkohol": "5.1",
-      "styl": "CHERRY SOUR",
+      "pivovar": "MAZAK",
+      "nazev": "STYRIAN DRAGON",
+      "stupen": "13",
+      "alkohol": "5.4",
+      "styl": "SINGLE HOP ALE",
       "dalsi": "",
-      "raw": "ELEKTRARNA KISSELÁČ VIŠEN 11° | CHERRY SOUR | 5.1%"
+      "raw": "MAZAK STYRIAN DRAGON 13° | SINGLE HOP ALE | 5.4%"
     }
   ]
 }
