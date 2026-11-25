@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-25 19:30",
+  "zmeneno": "2026-11-25 21:31",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,13 +35,13 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Černokostelecký pivovar",
-      "nazev": "West Coast",
-      "stupen": "12",
-      "alkohol": "5.2",
+      "pivovar": "Bad Flash",
+      "nazev": "Rock Café Ale",
+      "stupen": "11",
+      "alkohol": "4.5",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Černokostelecký pivovar West Coast | American Pale Ale | 12° | 5,2% | Černokostelecký pivovar"
+      "raw": "Bad Flash Rock Café Ale | American Pale Ale | 11° | 4,5% | Bad Flash"
     },
     {
       "pozice": 5,

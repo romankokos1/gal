@@ -1,6 +1,6 @@
 {
   "zdroj": "https://dcdyne.com/",
-  "zmeneno": "2026-11-23 17:44",
+  "zmeneno": "2026-11-25 21:31",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Čestmír",
-      "nazev": "Harakore NZ IPA",
+      "pivovar": "Únětice",
+      "nazev": "Xpa",
       "stupen": "12",
       "alkohol": "",
-      "styl": "",
+      "styl": "IPA",
       "dalsi": "",
-      "raw": "Harakore NZ IPA 12° (Čestmír)"
+      "raw": "Xpa 12° IPA (Únětice)"
     },
     {
       "pozice": 4,

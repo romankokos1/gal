@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-24 19:58",
+  "zmeneno": "2026-11-25 21:31",
   "metoda": "selektor",
   "piva": [
     {
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Falkon x The Barn",
-      "nazev": "Ummagumma Beta",
-      "stupen": "17",
-      "alkohol": "6.5",
-      "styl": "TDH NEIPA",
+      "pivovar": "Thrills x Schrott",
+      "nazev": "Good Company",
+      "stupen": "14",
+      "alkohol": "5.6",
+      "styl": "hazy IPA",
       "dalsi": "",
-      "raw": "Falkon x The Barn - Ummagumma Beta | 17% | TDH NEIPA, ABV 6,5%"
+      "raw": "Thrills x Schrott - Good Company | 14% | hazy IPA, ABV 5,6%"
     }
   ]
 }
