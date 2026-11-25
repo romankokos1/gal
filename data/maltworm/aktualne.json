@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-25 21:31",
+  "zmeneno": "2026-11-25 23:35",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,16 +15,6 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Sibeeria/Ten Hands",
-      "nazev": "Hands Fresh Hop Czech Pilsner",
-      "stupen": "11",
-      "alkohol": "4.7",
-      "styl": "Czech Pale Lager",
-      "dalsi": "",
-      "raw": "Sibeeria & Ten Hands Fresh Hop Czech Pilsner | Czech Pale Lager | 11° | 4,7% | Sibeeria/Ten Hands"
-    },
-    {
-      "pozice": 3,
       "pivovar": "Kundmüller",
       "nazev": "Weiherer Euer Festbier 2026",
       "stupen": "13.5",
@@ -34,7 +24,7 @@
       "raw": "Kundmüller Weiherer Euer Festbier 2026 | Festbier | 13.5° | 5,6% | Kundmüller"
     },
     {
-      "pozice": 4,
+      "pozice": 3,
       "pivovar": "Bad Flash",
       "nazev": "Rock Café Ale",
       "stupen": "11",
@@ -44,7 +34,7 @@
       "raw": "Bad Flash Rock Café Ale | American Pale Ale | 11° | 4,5% | Bad Flash"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "The Barn Beer Co.",
       "nazev": "Randy",
       "stupen": "11",
@@ -54,7 +44,7 @@
       "raw": "Barn Randy | American Pale Ale | 11° | 4,8% | The Barn Beer Co."
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Cobolis",
       "nazev": "Everglades",
       "stupen": "15",
@@ -64,7 +54,7 @@
       "raw": "Cobolis Everglades | American IPA | 15° | 6,7% | Cobolis"
     },
     {
-      "pozice": 7,
+      "pozice": 6,
       "pivovar": "The Barn Beer Co.",
       "nazev": "Suavamente",
       "stupen": "16",
@@ -74,7 +64,7 @@
       "raw": "Barn Suavamente | New England IPA | 16° | 6% | The Barn Beer Co."
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Haksna",
       "nazev": "If You Like",
       "stupen": "10",
@@ -84,7 +74,7 @@
       "raw": "Haksna If You Like | Pineapple & Coconut Sour Ale | 10° | 4,3% | Haksna"
     },
     {
-      "pozice": 9,
+      "pozice": 8,
       "pivovar": "Albert Michler",
       "nazev": "Fruit Coctail",
       "stupen": "11",
@@ -94,7 +84,7 @@
       "raw": "Albert Michler Fruit Coctail | Apricot & Guava Sour Ale | 11° | 4,9% | Albert Michler"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Vinohradský pivovar",
       "nazev": "Vinohradská",
       "stupen": "12",
@@ -104,7 +94,7 @@
       "raw": "Vinohradská 12° Nealko | Non-Alcoholic Czech Pale Lager | 12° | >0,5% | Vinohradský pivovar"
     },
     {
-      "pozice": 11,
+      "pozice": 10,
       "pivovar": "Černokostelecký pivovar",
       "nazev": "Černokostelecká Bílá svině",
       "stupen": "11",
@@ -114,7 +104,7 @@
       "raw": "Černokostelecká Bílá svině | Hefeweizen | 11° | 4,8% | Černokostelecký pivovar"
     },
     {
-      "pozice": 12,
+      "pozice": 11,
       "pivovar": "Raven",
       "nazev": "Upside Down Cake",
       "stupen": "15",
@@ -124,7 +114,7 @@
       "raw": "Raven Upside Down Cake | Pineapple & Cherries & Caramel Pastry Sour Ale | 15° | 6% | Raven"
     },
     {
-      "pozice": 13,
+      "pozice": 12,
       "pivovar": "Nieczajna",
       "nazev": "Hoppy Grodziskie Superdelic",
       "stupen": "7.7",
@@ -134,7 +124,7 @@
       "raw": "Nieczajna Hoppy Grodziskie Superdelic | Extra Hoppy Grodziskie | 7.7° | 3,2% | Nieczajna"
     },
     {
-      "pozice": 14,
+      "pozice": 13,
       "pivovar": "Van Honsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "18",
@@ -144,7 +134,7 @@
       "raw": "Van Honsebrouck Kasteel Rouge | Belgian Strong Dark Ale/Kriek | 18° | 8% | Van Honsebrouck"
     },
     {
-      "pozice": 15,
+      "pozice": 14,
       "pivovar": "Johannes Cyder",
       "nazev": "Demi Sec",
       "stupen": "",

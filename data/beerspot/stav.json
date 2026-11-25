@@ -1,10 +1,10 @@
 {
   "zpusob_stazeni": "prohlizec",
-  "chyby_v_rade": 1,
+  "chyby_v_rade": 2,
   "posledni_kontrola": "2026-11-25",
   "metoda": "selektor",
   "pocet_piv": 9,
   "posledni_zmena": "2026-11-23 15:42",
-  "posledni_chyba": "2026-11-25 21:31",
+  "posledni_chyba": "2026-11-25 23:35",
   "chyba": "Stránku se nepodařilo stáhnout: Page.content: Unable to retrieve content because the page is navigating and changing the content. (prohlizec)"
 }
