@@ -1,19 +1,19 @@
 [
   {
-    "pivovar": "TWINBERG",
-    "nazev": "Arabeerska",
-    "stupen": "13",
-    "alkohol": "5.3",
-    "styl": "NEIPA (mosaic, citra)",
-    "raw": "TWINBERG – Arabeerska 13°/5,3% NEIPA (mosaic, citra)"
+    "pivovar": "ČERNÝ POTOKA",
+    "nazev": "Cold Fish Pink Grapefruit",
+    "stupen": "11",
+    "alkohol": "4.6",
+    "styl": "session NEIPA s repovou infuzí (columbus, citra cryo, enigma, vic secret)",
+    "raw": "ČERNÝ POTOKA – Cold Fish Pink Grapefruit 11°/4,6% session NEIPA s repovou infuzí (columbus, citra cryo, enigma, vic secret)"
   },
   {
-    "pivovar": "SIBEERIA",
-    "nazev": "The Toastmaster",
-    "stupen": "14",
-    "alkohol": "6.3",
-    "styl": "West Coast IPA (azacca, nectaron hop kief, mosaic, centennial)",
-    "raw": "SIBEERIA – The Toastmaster 14°/6,3% West Coast IPA (azacca, nectaron hop kief, mosaic, centennial)"
+    "pivovar": "PIVOVAR VIK",
+    "nazev": "Southern Hemisphere",
+    "stupen": "15",
+    "alkohol": "6.5",
+    "styl": "Pacific IPA (galaxy, nelson, rhapsody)",
+    "raw": "PIVOVAR VIK – Southern Hemisphere 15°/6,5%/40IBU Pacific IPA (galaxy, nelson, rhapsody) //NEXT// SIBEERIA – The Toastmaster 14°/6,3% West Coast IPA (azacca, nectaron hop kief, mosaic, centennial)"
   },
   {
     "pivovar": "ZICHOVEC",

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-25 15:26",
+  "zmeneno": "2026-11-25 19:30",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "MadCat",
-      "nazev": "West Is The Best",
-      "stupen": "14",
-      "alkohol": "6.3",
+      "pivovar": "Cobolis",
+      "nazev": "Everglades",
+      "stupen": "15",
+      "alkohol": "6.7",
       "styl": "American IPA",
       "dalsi": "",
-      "raw": "MadCat West Is The Best | American IPA | 14° | 6,3% | MadCat"
+      "raw": "Cobolis Everglades | American IPA | 15° | 6,7% | Cobolis"
     },
     {
       "pozice": 7,
