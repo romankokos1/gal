@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-25 15:26",
+  "zmeneno": "2026-11-25 17:28",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Hoppy Dog",
-      "nazev": "Luna",
-      "stupen": "13",
-      "alkohol": "5.4",
-      "styl": "New England IPA",
+      "pivovar": "SQBRU",
+      "nazev": "Whiteout",
+      "stupen": "14",
+      "alkohol": "6.2",
+      "styl": "White Stout s kávou a kakaovými boby",
       "dalsi": "",
-      "raw": "Hoppy Dog - Luna, New England IPA, 13° sv. nef., 5, 4% vol. Alc, 11 IBU"
+      "raw": "SQBRU - Whiteout, White Stout s kávou a kakaovými boby, 14° sv. nef., 6, 2% vol. Alc"
     },
     {
       "pozice": 7,

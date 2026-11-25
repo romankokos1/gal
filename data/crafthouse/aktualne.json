@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-24 22:00",
+  "zmeneno": "2026-11-25 17:28",
   "metoda": "selektor",
   "piva": [
     {
@@ -135,13 +135,13 @@
     },
     {
       "pozice": 14,
-      "pivovar": "Čestmír",
-      "nazev": "Session NEIPA (Superdelic - Mosaic - Galaxy)",
+      "pivovar": "Obora",
+      "nazev": "Ale NE",
       "stupen": "",
       "alkohol": "5",
       "styl": "IPA - New England / Hazy",
       "dalsi": "",
-      "raw": "Session NEIPA (Superdelic - Mosaic - Galaxy) | IPA - New England / Hazy | 5% ABV | Pivovar Čestmír / CZ"
+      "raw": "Ale NE | IPA - New England / Hazy | 5% ABV | Pivovar Obora / CZ"
     },
     {
       "pozice": 15,
@@ -185,6 +185,16 @@
     },
     {
       "pozice": 19,
+      "pivovar": "Volt",
+      "nazev": "Blackout",
+      "stupen": "",
+      "alkohol": "6.5",
+      "styl": "Stout - Irish Dry",
+      "dalsi": "",
+      "raw": "Blackout | Stout - Irish Dry | 6.5% ABV | Pivovar Volt / CZ"
+    },
+    {
+      "pozice": 20,
       "pivovar": "Mazák",
       "nazev": "Baltic Porter",
       "stupen": "",
@@ -194,7 +204,7 @@
       "raw": "Baltic Porter | Porter - Baltic | 6.8% ABV | Pivovar Mazák / CZ"
     },
     {
-      "pozice": 20,
+      "pozice": 21,
       "pivovar": "Brouwerij De Brabandere",
       "nazev": "Petrus Red",
       "stupen": "",
@@ -204,7 +214,7 @@
       "raw": "Petrus Red | Fruit Beer | 8.5% ABV | Brouwerij De Brabandere / BE"
     },
     {
-      "pozice": 21,
+      "pozice": 22,
       "pivovar": "FALKON",
       "nazev": "BOCHÁNEK",
       "stupen": "",
