@@ -1,6 +1,6 @@
 {
   "zdroj": "https://script.google.com/macros/s/AKfycbwjbw54JsFO2Vt_HA8qMqidmMJyxUVEwJyGm_aVaUxD1BQdGj9gWBogD4i3ZZL8ZxBo/exec",
-  "zmeneno": "2026-11-26 21:01",
+  "zmeneno": "2026-11-26 23:03",
   "metoda": "selektor",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "Matuška",
-      "nazev": "FLORIDA",
-      "stupen": "10",
-      "alkohol": "4.2",
-      "styl": "PALE ALE",
+      "nazev": "DŘEVO",
+      "stupen": "19",
+      "alkohol": "7.8",
+      "styl": "WOOD-AGED DOPPELBOCK",
       "dalsi": "",
-      "raw": "FLORIDA | PALE ALE | 10° | 4,2 %"
+      "raw": "DŘEVO | WOOD-AGED DOPPELBOCK | 19° | 7,8 %"
     },
     {
       "pozice": 3,
@@ -46,12 +46,12 @@
     {
       "pozice": 5,
       "pivovar": "Matuška",
-      "nazev": "ZLATÁ RAKETA",
-      "stupen": "17",
-      "alkohol": "7",
-      "styl": "INDIA PALE ALE",
+      "nazev": "CALIFORNIA",
+      "stupen": "12",
+      "alkohol": "5.3",
+      "styl": "AMERICAN PALE ALE",
       "dalsi": "",
-      "raw": "ZLATÁ RAKETA | INDIA PALE ALE | 17° | 7 %"
+      "raw": "CALIFORNIA | AMERICAN PALE ALE | 12° | 5,3 %"
     },
     {
       "pozice": 6,
@@ -66,22 +66,22 @@
     {
       "pozice": 7,
       "pivovar": "Matuška",
+      "nazev": "ZLATÁ RAKETA",
+      "stupen": "17",
+      "alkohol": "7",
+      "styl": "INDIA PALE ALE",
+      "dalsi": "",
+      "raw": "ZLATÁ RAKETA | INDIA PALE ALE | 17° | 7 %"
+    },
+    {
+      "pozice": 8,
+      "pivovar": "Matuška",
       "nazev": "SV. MARTIN",
       "stupen": "16",
       "alkohol": "6.3",
       "styl": "LAGER",
       "dalsi": "",
       "raw": "SV. MARTIN | LAGER | 16° | 6,3 %"
-    },
-    {
-      "pozice": 8,
-      "pivovar": "Matuška",
-      "nazev": "DŘEVO",
-      "stupen": "19",
-      "alkohol": "7.8",
-      "styl": "WOOD-AGED DOPPELBOCK",
-      "dalsi": "",
-      "raw": "DŘEVO | WOOD-AGED DOPPELBOCK | 19° | 7,8 %"
     }
   ]
 }
