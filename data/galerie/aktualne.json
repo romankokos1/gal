@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-25 22:35",
+  "zmeneno": "2026-11-26 20:31",
   "metoda": "podle-obsahu",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "ČERNÝ POTOKA",
-      "nazev": "Cold Fish Pink Grapefruit",
+      "pivovar": "SIBEERIA",
+      "nazev": "Liquid Luck",
       "stupen": "11",
-      "alkohol": "4.6",
-      "styl": "session NEIPA s repovou infuzí (columbus, citra cryo, enigma, vic secret)",
+      "alkohol": "4.3",
+      "styl": "session IPA",
       "dalsi": "",
-      "raw": "ČERNÝ POTOKA – Cold Fish Pink Grapefruit 11°/4,6% session NEIPA s repovou infuzí (columbus, citra cryo, enigma, vic secret)"
+      "raw": "SIBEERIA – Liquid Luck 11°/4,3% session IPA"
     },
     {
       "pozice": 3,
