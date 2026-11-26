@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-24 13:41",
+  "zmeneno": "2026-11-26 14:07",
   "metoda": "rucne",
   "piva": [
     {
@@ -25,26 +25,16 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Sibeeria",
-      "nazev": "Iwa",
-      "stupen": "8",
+      "pivovar": "Zichovec",
+      "nazev": "The Irish Black Stout - infuze cherry cola",
+      "stupen": "11",
       "alkohol": "",
-      "styl": "New Zealand Pilsner",
+      "styl": "",
       "dalsi": "",
-      "raw": "Sibeeria Iwa New Zealand Pilsner 8"
+      "raw": "Zichovec The Irish Black Stout - infuze cherry cola 11"
     },
     {
       "pozice": 4,
-      "pivovar": "SQBRU",
-      "nazev": "Fresh",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Hop Lager",
-      "dalsi": "",
-      "raw": "SQBRU Fresh Hop Lager 11"
-    },
-    {
-      "pozice": 5,
       "pivovar": "SQBRU",
       "nazev": "APA 810",
       "stupen": "11",
@@ -54,17 +44,7 @@
       "raw": "SQBRU APA 810 11"
     },
     {
-      "pozice": 6,
-      "pivovar": "Černý potoka",
-      "nazev": "Plecháč 242",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "Session IPA",
-      "dalsi": "",
-      "raw": "Černý potoka Plecháč 242 Session IPA 11"
-    },
-    {
-      "pozice": 7,
+      "pozice": 5,
       "pivovar": "Napalmě",
       "nazev": "Krém Béčko bezlepkový NZ Cream",
       "stupen": "11",
@@ -74,7 +54,7 @@
       "raw": "Napalmě Krém Béčko bezlepkový NZ Cream Ale 11"
     },
     {
-      "pozice": 8,
+      "pozice": 6,
       "pivovar": "Napalmě",
       "nazev": "Cannabis",
       "stupen": "12",
@@ -84,44 +64,74 @@
       "raw": "Napalmě Cannabis gose 12"
     },
     {
-      "pozice": 9,
-      "pivovar": "Čestmír",
-      "nazev": "New",
-      "stupen": "14",
+      "pozice": 7,
+      "pivovar": "Preisler",
+      "nazev": "Tvrdá Práce",
+      "stupen": "12",
       "alkohol": "",
-      "styl": "Zealand IPA",
+      "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Čestmír New Zealand IPA 14"
+      "raw": "Preisler Tvrdá Práce světlý ležák 12"
     },
     {
-      "pozice": 10,
-      "pivovar": "Mazák",
-      "nazev": "Vánoční",
-      "stupen": "15",
+      "pozice": 8,
+      "pivovar": "Falkon",
+      "nazev": "Krasohled",
+      "stupen": "1",
+      "alkohol": "",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Falkon Krasohled světlý ležák 1"
+    },
+    {
+      "pozice": 9,
+      "pivovar": "SQBRU",
+      "nazev": "Sicky Boy",
+      "stupen": "14",
       "alkohol": "",
       "styl": "IPA",
       "dalsi": "",
-      "raw": "Mazák Vánoční IPA 15"
+      "raw": "SQBRU Sicky Boy IPA 14"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Černý potoka",
+      "nazev": "Cloud Scanner NEIPA - infuze mango",
+      "stupen": "",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Černý potoka Cloud Scanner NEIPA - infuze mango"
     },
     {
       "pozice": 11,
-      "pivovar": "Zichovec",
-      "nazev": "Vánoční Zmrzka Vegan Ice Cream",
-      "stupen": "18",
+      "pivovar": "To Øl",
+      "nazev": "( Dánsko ) Palm Fiction",
+      "stupen": "15",
       "alkohol": "",
-      "styl": "Sour",
+      "styl": "American IPA",
       "dalsi": "",
-      "raw": "Zichovec Vánoční Zmrzka Vegan Ice Cream Sour 18"
+      "raw": "To Øl ( Dánsko ) Palm Fiction American IPA 15"
     },
     {
       "pozice": 12,
-      "pivovar": "Zichovec",
-      "nazev": "Tichá noc Double Milk",
-      "stupen": "28",
+      "pivovar": "Sibeeria",
+      "nazev": "Triple",
+      "stupen": "20",
       "alkohol": "",
-      "styl": "Stout",
+      "styl": "Milkshake IPA",
       "dalsi": "",
-      "raw": "Zichovec Tichá noc Double Milk Stout 28"
+      "raw": "Sibeeria Triple Milkshake IPA 20"
+    },
+    {
+      "pozice": 13,
+      "pivovar": "To Øl",
+      "nazev": "( Dánsko ) X-MAS QUAD BA (2022) Belgian Quadrupel",
+      "stupen": "",
+      "alkohol": "10.7",
+      "styl": "",
+      "dalsi": "",
+      "raw": "To Øl ( Dánsko ) X-MAS QUAD BA (2022) Belgian Quadrupel 10,7%"
     }
   ]
 }

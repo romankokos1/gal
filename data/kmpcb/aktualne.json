@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-11-25 15:26",
+  "zmeneno": "2026-11-26 14:55",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Mazák",
-      "nazev": "Extra HOŘKÁ",
+      "pivovar": "Pioneer",
+      "nazev": "Fresh Signal",
       "stupen": "11",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Mazák Extra HOŘKÁ 11° sv.nef."
+      "raw": "Pioneer Fresh Signal 11° sv.nef."
     },
     {
       "pozice": 3,
@@ -75,13 +75,13 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Maisel's",
-      "nazev": "Weisse",
-      "stupen": "12",
+      "pivovar": "Potmehúd",
+      "nazev": "Weizenbock",
+      "stupen": "16",
       "alkohol": "",
-      "styl": "pšeničné",
+      "styl": "pšeníčné",
       "dalsi": "",
-      "raw": "Maisel's Weisse 12° pšeničné"
+      "raw": "Potmehúd Weizenbock 16° pšeníčné"
     },
     {
       "pozice": 9,
@@ -125,6 +125,16 @@
     },
     {
       "pozice": 13,
+      "pivovar": "Cobolis",
+      "nazev": "Převážně neškodná",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "Session IPA",
+      "dalsi": "",
+      "raw": "-> Cobolis Převážně neškodná 13° Session IPA"
+    },
+    {
+      "pozice": 14,
       "pivovar": "Clock",
       "nazev": "TWIST",
       "stupen": "14",
@@ -134,7 +144,7 @@
       "raw": "Clock TWIST 14° Red IPA"
     },
     {
-      "pozice": 14,
+      "pozice": 15,
       "pivovar": "Zichovec",
       "nazev": "Juicy Lucy",
       "stupen": "15",
@@ -144,7 +154,7 @@
       "raw": "Zichovec Juicy Lucy 15° NEIPA"
     },
     {
-      "pozice": 15,
+      "pozice": 16,
       "pivovar": "Brewnicorn",
       "nazev": "RASPBERRY",
       "stupen": "11",
@@ -154,7 +164,7 @@
       "raw": "Brewnicorn RASPBERRY 11° Sour ALE"
     },
     {
-      "pozice": 16,
+      "pozice": 17,
       "pivovar": "Louka",
       "nazev": "Fresh Breakfast #007",
       "stupen": "13",
@@ -164,7 +174,7 @@
       "raw": "Louka Fresh Breakfast #007 13° Smoothie Sour (Hruška, Mirabelka, Papaja)"
     },
     {
-      "pozice": 17,
+      "pozice": 18,
       "pivovar": "FunkyFluid",
       "nazev": "Gelato: White Fluff",
       "stupen": "",
@@ -174,7 +184,17 @@
       "raw": "FunkyFluid Gelato: White Fluff 5,5%Alc. Pastry SOUR (PL)"
     },
     {
-      "pozice": 18,
+      "pozice": 19,
+      "pivovar": "FunkyFluid",
+      "nazev": "Gelato: Guilty Pleasure",
+      "stupen": "",
+      "alkohol": "5.5",
+      "styl": "Pastry SOUR (PL)",
+      "dalsi": "",
+      "raw": "-> FunkyFluid Gelato: Guilty Pleasure 5,5%Alc. Pastry SOUR (PL)"
+    },
+    {
+      "pozice": 20,
       "pivovar": "Kasteel",
       "nazev": "Rouge",
       "stupen": "",
@@ -184,7 +204,7 @@
       "raw": "Kasteel Rouge 8%Alc. (BELGIE - VIŠEŇ)"
     },
     {
-      "pozice": 19,
+      "pozice": 21,
       "pivovar": "Hákův",
       "nazev": "pivovar STOUT Šalvěj",
       "stupen": "14",
@@ -194,7 +214,7 @@
       "raw": "Hákův pivovar STOUT Šalvěj 14°"
     },
     {
-      "pozice": 20,
+      "pozice": 22,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",

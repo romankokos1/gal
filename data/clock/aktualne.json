@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-24 22:00",
+  "zmeneno": "2026-11-26 14:55",
   "metoda": "nadpis",
   "piva": [
     {
@@ -36,22 +36,22 @@
     {
       "pozice": 4,
       "pivovar": "Clock",
+      "nazev": "Podzim",
+      "stupen": "13",
+      "alkohol": "",
+      "styl": "NEIPA",
+      "dalsi": "",
+      "raw": "13° Podzim (NEIPA)"
+    },
+    {
+      "pozice": 5,
+      "pivovar": "Clock",
       "nazev": "VánočníLežák",
       "stupen": "13",
       "alkohol": "",
       "styl": "Polotmavý ležák",
       "dalsi": "",
       "raw": "13° VánočníLežák (Polotmavý ležák)"
-    },
-    {
-      "pozice": 5,
-      "pivovar": "Clock",
-      "nazev": "Zlatý Prase",
-      "stupen": "15",
-      "alkohol": "",
-      "styl": "NEIPA",
-      "dalsi": "",
-      "raw": "15° Zlatý Prase (NEIPA)"
     },
     {
       "pozice": 6,
