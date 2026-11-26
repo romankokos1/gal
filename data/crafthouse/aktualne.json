@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-25 17:28",
+  "zmeneno": "2026-11-26 16:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Chroust",
-      "nazev": "Judo Jellyfish",
+      "pivovar": "Volt",
+      "nazev": "Senzor",
       "stupen": "",
-      "alkohol": "4.9",
-      "styl": "IPA - Session",
+      "alkohol": "6.2",
+      "styl": "IPA - Cold",
       "dalsi": "",
-      "raw": "Judo Jellyfish | IPA - Session | 4.9% ABV | Chroust / CZ"
+      "raw": "Senzor | IPA - Cold | 6.2% ABV | Pivovar Volt / CZ"
     },
     {
       "pozice": 8,

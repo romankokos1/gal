@@ -1,6 +1,6 @@
 {
   "zdroj": "https://drinkoteka.cz/",
-  "zmeneno": "2026-11-25 19:30",
+  "zmeneno": "2026-11-26 16:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Ārpus X Funky Fluid",
-      "nazev": "Cheesecake Ice Cream",
+      "pivovar": "Ārpus",
+      "nazev": "Apricot X Mango Fruited Gose",
       "stupen": "",
       "alkohol": "4.5",
-      "styl": "Smoothie Sour",
+      "styl": "Sour - Fruited Gose",
       "dalsi": "",
-      "raw": "Cheesecake Ice Cream | Smoothie Sour · 4.5% | Ārpus X Funky Fluid"
+      "raw": "Apricot X Mango Fruited Gose | Sour - Fruited Gose · 4.5% | Ārpus Brewing Co."
     },
     {
       "pozice": 3,
@@ -29,19 +29,19 @@
       "nazev": "Cloud Scanner (Motueka / Nelson)",
       "stupen": "",
       "alkohol": "6.5",
-      "styl": "IPA - New England",
+      "styl": "New England IPA",
       "dalsi": "",
-      "raw": "Cloud Scanner (Motueka / Nelson) | IPA - New England · 6.5% | černý potoka"
+      "raw": "Cloud Scanner (Motueka / Nelson) | New England IPA · 6.5% | černý potoka"
     },
     {
       "pozice": 4,
-      "pivovar": "",
-      "nazev": "Colossal Juice",
+      "pivovar": "Piggy",
+      "nazev": "Elani Warm Up",
       "stupen": "",
-      "alkohol": "8.0",
-      "styl": "",
+      "alkohol": "6.0",
+      "styl": "New England IPA",
       "dalsi": "",
-      "raw": "Colossal Juice | Double New England/ Bru-1 · idaho · Mosaic · 8.0%"
+      "raw": "Elani Warm Up | New England IPA · 6.0% | Piggy"
     },
     {
       "pozice": 5,

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:horni-bar",
-  "zmeneno": "2026-11-23 15:42",
+  "zmeneno": "2026-11-26 16:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,16 +35,6 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Bad Flash",
-      "nazev": "Rock Café APA",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Bad Flash Rock Café 11° APA"
-    },
-    {
-      "pozice": 5,
       "pivovar": "Permon",
       "nazev": "světlý ležák",
       "stupen": "12",
@@ -54,7 +44,7 @@
       "raw": "Permon světlý ležák 12°"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Budvar",
       "nazev": "33 světlý ležák",
       "stupen": "11",
@@ -64,17 +54,17 @@
       "raw": "Budvar 33 světlý ležák 11°"
     },
     {
-      "pozice": 7,
-      "pivovar": "Bad Flash",
-      "nazev": "Torpid Mind Imperial Stout",
-      "stupen": "24",
+      "pozice": 6,
+      "pivovar": "Schneider",
+      "nazev": "Weisse Original",
+      "stupen": "13",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Bad Flash Torpid Mind 24° Imperial Stout | 0,3l"
+      "raw": "Schneider Weisse Original 13°"
     },
     {
-      "pozice": 8,
+      "pozice": 7,
       "pivovar": "Bad Flash",
       "nazev": "Blackcurrant & Pink Pepper Sour Ale",
       "stupen": "12",
@@ -84,17 +74,17 @@
       "raw": "Bad Flash Blackcurrant & Pink Pepper 12° Sour Ale | 0,3l"
     },
     {
-      "pozice": 9,
-      "pivovar": "Schneider",
-      "nazev": "Blonde",
+      "pozice": 8,
+      "pivovar": "Bad Flash",
+      "nazev": "Citra IPL",
       "stupen": "12",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Schneider Blonde 12°"
+      "raw": "Bad Flash Citra IPL 12°"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Bad Flash",
       "nazev": "Summer Sadness Pale Ale",
       "stupen": "10",
@@ -102,6 +92,16 @@
       "styl": "",
       "dalsi": "",
       "raw": "Bad Flash Summer Sadness 10° Pale Ale"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Bad Flash",
+      "nazev": "Mini Boss NEIPA",
+      "stupen": "9",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Mini Boss 9° NEIPA | 0,4l"
     },
     {
       "pozice": 11,
@@ -112,6 +112,16 @@
       "styl": "",
       "dalsi": "",
       "raw": "Lomnický Bierzeit 11° světlý ležák"
+    },
+    {
+      "pozice": 12,
+      "pivovar": "Bad Flash",
+      "nazev": "Podél plotu Sour Ale",
+      "stupen": "10",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Podél plotu 10° Sour Ale | 0,3l"
     }
   ]
 }
