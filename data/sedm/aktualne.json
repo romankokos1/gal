@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-25 21:31",
+  "zmeneno": "2026-11-26 18:59",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Preisler",
-      "nazev": "Tvrdá Práce",
-      "stupen": "12",
-      "alkohol": "5.2",
+      "pivovar": "Kladno-Kročehlavy",
+      "nazev": "Kladenské Světlé",
+      "stupen": "10",
+      "alkohol": "4.2",
       "styl": "Lager",
       "dalsi": "",
-      "raw": "Preisler - Tvrdá Práce | 12% | Lager, ABV 5,2%"
+      "raw": "Kladno-Kročehlavy - Kladenské Světlé | 10% | Lager, ABV 4,2%"
     },
     {
       "pozice": 2,
-      "pivovar": "Vik x Sedm°",
-      "nazev": "7vikend with the Hunters",
-      "stupen": "13",
-      "alkohol": "5.3",
-      "styl": "Sour",
+      "pivovar": "Nozib",
+      "nazev": "Goseteria #11",
+      "stupen": "14",
+      "alkohol": "5.9",
+      "styl": "Gose",
       "dalsi": "",
-      "raw": "Vik x Sedm° - 7vikend with the Hunters | 13% | Sour, ABV 5,3%"
+      "raw": "Nozib - Goseteria #11 | 14% | Gose, ABV 5,9%"
     },
     {
       "pozice": 3,

@@ -1,57 +1,57 @@
 {
   "zdroj": "https://www.beerandfriends.eu/beer-and-friends",
-  "zmeneno": "2026-11-16 13:48",
+  "zmeneno": "2026-11-26 18:59",
   "metoda": "selektor",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "Nozib",
-      "nazev": "GOSETERIA #11",
+      "pivovar": "Fracek",
+      "nazev": "FINA CERVA",
       "stupen": "",
-      "alkohol": "5.9",
-      "styl": "Fruited Gose",
+      "alkohol": "4.9",
+      "styl": "Catharina Sour",
       "dalsi": "",
-      "raw": "GOSETERIA #11 – Fruited Gose (Nozib) · abv 5,9 %"
+      "raw": "FINA CERVA – Catharina Sour (Fracek) · abv 4,9 %"
     },
     {
       "pozice": 2,
-      "pivovar": "Čierny Kameň",
-      "nazev": "CHMELOKOCÚR",
+      "pivovar": "Hope",
+      "nazev": "EVERMORE",
       "stupen": "",
-      "alkohol": "6.2",
-      "styl": "West Coast IPA",
+      "alkohol": "6.1",
+      "styl": "IPA",
       "dalsi": "",
-      "raw": "CHMELOKOCÚR – West Coast IPA (Čierny Kameň) · abv 6,2 %"
+      "raw": "EVERMORE – IPA (Hope) · abv 6,1 %"
     },
     {
       "pozice": 3,
-      "pivovar": "Twinberg",
-      "nazev": "HOPPY WHALE 9",
+      "pivovar": "Vik",
+      "nazev": "FULL NELSON",
       "stupen": "",
-      "alkohol": "5.6",
+      "alkohol": "6.6",
       "styl": "New England IPA",
       "dalsi": "",
-      "raw": "HOPPY WHALE 9 – New England IPA (Twinberg) · abv 5,6 %"
+      "raw": "FULL NELSON – New England IPA (Vik) · abv 6,6 %"
     },
     {
       "pozice": 4,
       "pivovar": "Fracek",
-      "nazev": "LAZY CHARBONNAY",
+      "nazev": "WINTER CHARBONNAY",
       "stupen": "",
       "alkohol": "5",
       "styl": "Grisette",
       "dalsi": "",
-      "raw": "LAZY CHARBONNAY – Grisette (Fracek) · abv 5 %"
+      "raw": "WINTER CHARBONNAY – Grisette (Fracek) · abv 5 %"
     },
     {
       "pozice": 5,
-      "pivovar": "The Barn",
-      "nazev": "ŠVARCÍK",
+      "pivovar": "Fracek",
+      "nazev": "MYCOOLASS",
       "stupen": "",
-      "alkohol": "4.5",
-      "styl": "Schwarzbier",
+      "alkohol": "6.2",
+      "styl": "Bock",
       "dalsi": "",
-      "raw": "ŠVARCÍK – Schwarzbier (The Barn) · abv 4,5 %"
+      "raw": "MYCOOLASS – Bock (Fracek) · abv 6,2 %"
     },
     {
       "pozice": 6,
@@ -65,26 +65,16 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Václav",
-      "nazev": "VELKEJ HAZE",
+      "pivovar": "Černý Potoka",
+      "nazev": "CLOUD SCANNER",
       "stupen": "",
-      "alkohol": "7",
-      "styl": "Double New England IPA",
+      "alkohol": "6.6",
+      "styl": "New England IPA",
       "dalsi": "",
-      "raw": "VELKEJ HAZE – Double New England IPA (Václav) · abv 7 %"
+      "raw": "CLOUD SCANNER – New England IPA (Černý Potoka) · abv 6,6 %"
     },
     {
       "pozice": 8,
-      "pivovar": "Fracek",
-      "nazev": "NO COMPASS",
-      "stupen": "",
-      "alkohol": "5",
-      "styl": "New Zealand Pilsner",
-      "dalsi": "",
-      "raw": "NO COMPASS – New Zealand Pilsner (Fracek) · abv 5 %"
-    },
-    {
-      "pozice": 9,
       "pivovar": "Fracek",
       "nazev": "ORIGINÁL LEŽÁK 11",
       "stupen": "",
@@ -94,34 +84,44 @@
       "raw": "ORIGINÁL LEŽÁK 11 – Pilsner (Fracek) · abv 4,5 %"
     },
     {
-      "pozice": 10,
-      "pivovar": "Hope",
-      "nazev": "EVERMORE",
+      "pozice": 9,
+      "pivovar": "Fracek",
+      "nazev": "NO COMPASS",
       "stupen": "",
-      "alkohol": "6.1",
+      "alkohol": "5",
+      "styl": "New Zealand Pilsner",
+      "dalsi": "",
+      "raw": "NO COMPASS – New Zealand Pilsner (Fracek) · abv 5 %"
+    },
+    {
+      "pozice": 10,
+      "pivovar": "Fracek",
+      "nazev": "MAWAM",
+      "stupen": "",
+      "alkohol": "5.7",
       "styl": "IPA",
       "dalsi": "",
-      "raw": "EVERMORE – IPA (Hope) · abv 6,1 %"
+      "raw": "MAWAM – IPA (Fracek) · abv 5,7 %"
     },
     {
       "pozice": 11,
-      "pivovar": "Fracek",
-      "nazev": "FINA CERVA",
+      "pivovar": "Falkon",
+      "nazev": "HRUŠKA",
       "stupen": "",
-      "alkohol": "4.9",
-      "styl": "Catharina Sour",
+      "alkohol": "6",
+      "styl": "Fruited Gose",
       "dalsi": "",
-      "raw": "FINA CERVA – Catharina Sour (Fracek) · abv 4,9 %"
+      "raw": "HRUŠKA – Fruited Gose (Falkon) · abv 6 %"
     },
     {
       "pozice": 12,
-      "pivovar": "Fracek",
-      "nazev": "MYCOOLASS",
+      "pivovar": "Twinberg",
+      "nazev": "ARTUR",
       "stupen": "",
-      "alkohol": "6.2",
-      "styl": "Bock",
+      "alkohol": "5.3",
+      "styl": "New Zealand Pale Ale",
       "dalsi": "",
-      "raw": "MYCOOLASS – Bock (Fracek) · abv 6,2 %"
+      "raw": "ARTUR – New Zealand Pale Ale (Twinberg) · abv 5,3 %"
     }
   ]
 }
