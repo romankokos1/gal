@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-26 18:59",
+  "zmeneno": "2026-11-26 21:01",
   "metoda": "selektor",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "The Barn Beer Co.",
-      "nazev": "Randy",
-      "stupen": "11",
-      "alkohol": "4.8",
-      "styl": "American Pale Ale",
+      "pivovar": "Obora",
+      "nazev": "Ale NE",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "New England Pale Ale",
       "dalsi": "",
-      "raw": "Barn Randy | American Pale Ale | 11° | 4,8% | The Barn Beer Co."
+      "raw": "Obora Ale NE | New England Pale Ale | 12° | 5% | Obora"
     },
     {
       "pozice": 6,

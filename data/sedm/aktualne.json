@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-26 18:59",
+  "zmeneno": "2026-11-26 21:01",
   "metoda": "selektor",
   "piva": [
     {
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "Mad Cat",
-      "nazev": "Ich Bin Ein Berliner",
-      "stupen": "10",
-      "alkohol": "4",
-      "styl": "Berliner Weisse",
+      "pivovar": "Psychovar",
+      "nazev": "Juicy Mate Lager",
+      "stupen": "8",
+      "alkohol": "3.4",
+      "styl": "Mate Lager",
       "dalsi": "",
-      "raw": "Mad Cat - Ich Bin Ein Berliner | 10% | Berliner Weisse, ABV 4%"
+      "raw": "Psychovar - Juicy Mate Lager | 8% | Mate Lager, ABV 3,4%"
     },
     {
       "pozice": 8,

@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.klubmalychpivovaru.cz/",
-  "zmeneno": "2026-11-26 18:59",
+  "zmeneno": "2026-11-26 21:01",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Sibeeria",
-      "nazev": "Sorbet",
-      "stupen": "11",
-      "alkohol": "4.4",
-      "styl": "Mango & Passion Fruit Sour",
+      "pivovar": "Vik",
+      "nazev": "Jungle Juice",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "kyseláč ananas & marakuja & guava & pandan",
       "dalsi": "",
-      "raw": "Sibeeria - Sorbet, Mango & Passion Fruit Sour, 11° sv. nef., 4, 4% vol. Alc"
+      "raw": "Vik - Jungle Juice, kyseláč ananas & marakuja & guava & pandan, 12° sv. nef., 5% vol. Alc, 8 IBU"
     },
     {
       "pozice": 4,
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "",
-      "nazev": "Zlatá Kráva",
-      "stupen": "14",
-      "alkohol": "5.6",
-      "styl": "Black IPA",
+      "pivovar": "Cobolis",
+      "nazev": "Bezedný kotel",
+      "stupen": "18",
+      "alkohol": "7.2",
+      "styl": "Irish Extra Stout",
       "dalsi": "",
-      "raw": "Zlatá Kráva, Black IPA, 14° tm. nef., 5, 6% vol. Alc, 50 IBU"
+      "raw": "Cobolis - Bezedný kotel, Irish Extra Stout, 18° tm. nef., 7, 2% vol. Alc"
     },
     {
       "pozice": 10,
