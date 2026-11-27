@@ -1,27 +1,27 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-27 17:58",
+  "zmeneno": "2026-11-27 22:32",
   "metoda": "nadpis",
   "piva": [
     {
       "pozice": 1,
-      "pivovar": "THRILLS",
-      "nazev": "Věžák",
+      "pivovar": "CLOCK",
+      "nazev": "Anežka",
       "stupen": "11",
       "alkohol": "4.8",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "THRILLS – Věžák 11°/4,8% světlý ležák"
+      "raw": "CLOCK – Anežka 11°/4,8% světlý ležák"
     },
     {
       "pozice": 2,
-      "pivovar": "SIBEERIA",
-      "nazev": "Liquid Luck",
-      "stupen": "11",
-      "alkohol": "4.3",
-      "styl": "session IPA",
+      "pivovar": "CHROUST",
+      "nazev": "Judo Jellyfish",
+      "stupen": "12",
+      "alkohol": "4.9",
+      "styl": "West Coast Session IPA (straty, simcoe, amarilla, centennial)",
       "dalsi": "",
-      "raw": "SIBEERIA – Liquid Luck 11°/4,3% session IPA"
+      "raw": "CHROUST – Judo Jellyfish 12°/4,9% West Coast Session IPA (straty, simcoe, amarilla, centennial)"
     },
     {
       "pozice": 3,
