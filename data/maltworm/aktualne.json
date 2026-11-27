@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-27 18:58",
+  "zmeneno": "2026-11-27 21:00",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,13 +55,13 @@
     },
     {
       "pozice": 6,
-      "pivovar": "Cobolis",
-      "nazev": "Everglades",
-      "stupen": "15",
-      "alkohol": "6.7",
+      "pivovar": "Sibeeria",
+      "nazev": "The Toast Master",
+      "stupen": "14",
+      "alkohol": "6.3",
       "styl": "American IPA",
       "dalsi": "",
-      "raw": "Cobolis Everglades | American IPA | 15° | 6,7% | Cobolis"
+      "raw": "Sibeeria The Toast Master | American IPA | 14° | 6,3% | Sibeeria"
     },
     {
       "pozice": 7,
@@ -75,16 +75,6 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Bad Flash",
-      "nazev": "Podél plotu Sour Ale",
-      "stupen": "12",
-      "alkohol": "4.9",
-      "styl": "Black Currant & Red Currant & Gooseberry Sour Ale",
-      "dalsi": "",
-      "raw": "Bad Flash Podél plotu Sour Ale | Black Currant & Red Currant & Gooseberry Sour Ale | 12° | 4,9% | Bad Flash"
-    },
-    {
-      "pozice": 9,
       "pivovar": "Vik",
       "nazev": "Jungle Juice",
       "stupen": "12",
@@ -94,7 +84,7 @@
       "raw": "Vik Jungle Juice | Pineapple & Passion fruit & Guava & Pandan Sour Ale | 12° | 5% | Vik"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "Rodinný pivovar Vik",
       "nazev": "Free Hazy IPA",
       "stupen": "",
@@ -104,7 +94,7 @@
       "raw": "Vik Free Hazy IPA | Alcohol Free IPA | ° | 0% | Rodinný pivovar Vik"
     },
     {
-      "pozice": 11,
+      "pozice": 10,
       "pivovar": "Černokostelecký pivovar",
       "nazev": "Černokostelecká Bílá svině",
       "stupen": "11",
@@ -114,7 +104,7 @@
       "raw": "Černokostelecká Bílá svině | Hefeweizen | 11° | 4,8% | Černokostelecký pivovar"
     },
     {
-      "pozice": 12,
+      "pozice": 11,
       "pivovar": "Raven",
       "nazev": "Upside Down Cake",
       "stupen": "15",
@@ -124,7 +114,7 @@
       "raw": "Raven Upside Down Cake | Pineapple & Cherries & Caramel Pastry Sour Ale | 15° | 6% | Raven"
     },
     {
-      "pozice": 13,
+      "pozice": 12,
       "pivovar": "Nieczajna",
       "nazev": "Hoppy Grodziskie Superdelic",
       "stupen": "7.7",
@@ -134,7 +124,7 @@
       "raw": "Nieczajna Hoppy Grodziskie Superdelic | Extra Hoppy Grodziskie | 7.7° | 3,2% | Nieczajna"
     },
     {
-      "pozice": 14,
+      "pozice": 13,
       "pivovar": "Van Honsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "18",
@@ -144,7 +134,7 @@
       "raw": "Van Honsebrouck Kasteel Rouge | Belgian Strong Dark Ale/Kriek | 18° | 8% | Van Honsebrouck"
     },
     {
-      "pozice": 15,
+      "pozice": 14,
       "pivovar": "Johannes Cyder",
       "nazev": "Demi Sec",
       "stupen": "",
