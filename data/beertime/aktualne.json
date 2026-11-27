@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.beertime.pub/",
-  "zmeneno": "2026-11-25 19:30",
+  "zmeneno": "2026-11-27 14:54",
   "metoda": "selektor",
   "piva": [
     {
@@ -116,12 +116,12 @@
     {
       "pozice": 12,
       "pivovar": "ZHŮŘÁK",
-      "nazev": "Robin Na Grepu",
+      "nazev": "Classic Ale - Citra",
       "stupen": "12",
       "alkohol": "5.4",
       "styl": "Dry Hopped A.P.A.",
       "dalsi": "",
-      "raw": "ZHŮŘÁK | Robin Na Grepu | Dry Hopped A.P.A. 12°, Alc. 5,4%, IBU 35"
+      "raw": "ZHŮŘÁK | Classic Ale - Citra | Dry Hopped A.P.A. 12°, Alc. 5,4%, IBU 35"
     },
     {
       "pozice": 13,

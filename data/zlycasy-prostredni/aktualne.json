@@ -1,6 +1,6 @@
 {
   "zdroj": "https://zlycasy.eu/section:prostredni-bar",
-  "zmeneno": "2026-11-25 15:26",
+  "zmeneno": "2026-11-27 14:54",
   "metoda": "selektor",
   "piva": [
     {
@@ -26,12 +26,12 @@
     {
       "pozice": 3,
       "pivovar": "Bad Flash",
-      "nazev": "Podél plotu sour Ale",
+      "nazev": "Mango Chilli Sour Ale",
       "stupen": "12",
       "alkohol": "",
       "styl": "",
       "dalsi": "",
-      "raw": "Bad Flash Podél plotu sour Ale 12° | 0,3l"
+      "raw": "Bad Flash Mango Chilli Sour Ale 12° | 0.3l"
     },
     {
       "pozice": 4,
@@ -56,22 +56,22 @@
     {
       "pozice": 6,
       "pivovar": "Kojetín",
-      "nazev": "Piňa Colada",
-      "stupen": "13",
+      "nazev": "Frajer Session IPA",
+      "stupen": "10",
       "alkohol": "",
-      "styl": "3l",
+      "styl": "4l",
       "dalsi": "",
-      "raw": "Kojetín Piňa Colada 13° | 3l"
+      "raw": "Kojetín Frajer 10° Session IPA | 4l"
     },
     {
       "pozice": 7,
-      "pivovar": "Holá",
-      "nazev": "Řiť Apička",
-      "stupen": "12",
+      "pivovar": "Hendrych",
+      "nazev": "H11 světlý ležák",
+      "stupen": "",
       "alkohol": "",
-      "styl": "American Pale Ale",
+      "styl": "",
       "dalsi": "",
-      "raw": "Holá Řiť Apička 12° | American Pale Ale | 0,4l"
+      "raw": "Hendrych H11 světlý ležák"
     },
     {
       "pozice": 8,
@@ -85,6 +85,16 @@
     },
     {
       "pozice": 9,
+      "pivovar": "Bad Flash",
+      "nazev": "Torpid Mind Imperial Stout",
+      "stupen": "24",
+      "alkohol": "",
+      "styl": "",
+      "dalsi": "",
+      "raw": "Bad Flash Torpid Mind 24° Imperial Stout | 0,3l"
+    },
+    {
+      "pozice": 10,
       "pivovar": "Budvar",
       "nazev": "Tmavý ležák",
       "stupen": "12",
@@ -94,7 +104,7 @@
       "raw": "Budvar Tmavý ležák 12°"
     },
     {
-      "pozice": 10,
+      "pozice": 11,
       "pivovar": "Budvar",
       "nazev": "33 ležák",
       "stupen": "11",
@@ -104,7 +114,7 @@
       "raw": "Budvar 33 ležák 11° | Světlý ležák"
     },
     {
-      "pozice": 11,
+      "pozice": 12,
       "pivovar": "Zvíkovská",
       "nazev": "Zlatá Labuť",
       "stupen": "11",

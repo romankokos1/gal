@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-26 14:07",
+  "zmeneno": "2026-11-27 13:17",
   "metoda": "rucne",
   "piva": [
     {
@@ -25,6 +25,16 @@
     },
     {
       "pozice": 3,
+      "pivovar": "Sibeeria",
+      "nazev": "IWA",
+      "stupen": "9",
+      "alkohol": "",
+      "styl": "New Zealand Pilsner",
+      "dalsi": "",
+      "raw": "Sibeeria IWA New Zealand Pilsner 9"
+    },
+    {
+      "pozice": 4,
       "pivovar": "Zichovec",
       "nazev": "The Irish Black Stout - infuze cherry cola",
       "stupen": "11",
@@ -34,7 +44,7 @@
       "raw": "Zichovec The Irish Black Stout - infuze cherry cola 11"
     },
     {
-      "pozice": 4,
+      "pozice": 5,
       "pivovar": "SQBRU",
       "nazev": "APA 810",
       "stupen": "11",
@@ -44,7 +54,7 @@
       "raw": "SQBRU APA 810 11"
     },
     {
-      "pozice": 5,
+      "pozice": 6,
       "pivovar": "Napalmě",
       "nazev": "Krém Béčko bezlepkový NZ Cream",
       "stupen": "11",
@@ -54,7 +64,7 @@
       "raw": "Napalmě Krém Béčko bezlepkový NZ Cream Ale 11"
     },
     {
-      "pozice": 6,
+      "pozice": 7,
       "pivovar": "Napalmě",
       "nazev": "Cannabis",
       "stupen": "12",
@@ -64,24 +74,14 @@
       "raw": "Napalmě Cannabis gose 12"
     },
     {
-      "pozice": 7,
-      "pivovar": "Preisler",
-      "nazev": "Tvrdá Práce",
+      "pozice": 8,
+      "pivovar": "Falkon",
+      "nazev": "Krasohled",
       "stupen": "12",
       "alkohol": "",
       "styl": "světlý ležák",
       "dalsi": "",
-      "raw": "Preisler Tvrdá Práce světlý ležák 12"
-    },
-    {
-      "pozice": 8,
-      "pivovar": "Falkon",
-      "nazev": "Krasohled",
-      "stupen": "1",
-      "alkohol": "",
-      "styl": "světlý ležák",
-      "dalsi": "",
-      "raw": "Falkon Krasohled světlý ležák 1"
+      "raw": "Falkon Krasohled světlý ležák 12"
     },
     {
       "pozice": 9,
@@ -95,16 +95,6 @@
     },
     {
       "pozice": 10,
-      "pivovar": "Černý potoka",
-      "nazev": "Cloud Scanner NEIPA - infuze mango",
-      "stupen": "",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "Černý potoka Cloud Scanner NEIPA - infuze mango"
-    },
-    {
-      "pozice": 11,
       "pivovar": "To Øl",
       "nazev": "( Dánsko ) Palm Fiction",
       "stupen": "15",
@@ -112,6 +102,16 @@
       "styl": "American IPA",
       "dalsi": "",
       "raw": "To Øl ( Dánsko ) Palm Fiction American IPA 15"
+    },
+    {
+      "pozice": 11,
+      "pivovar": "Zichovec",
+      "nazev": "Vánoční Zmrzka Vegan Ice Cream",
+      "stupen": "18",
+      "alkohol": "",
+      "styl": "Sour",
+      "dalsi": "",
+      "raw": "Zichovec Vánoční Zmrzka Vegan Ice Cream Sour 18"
     },
     {
       "pozice": 12,

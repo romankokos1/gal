@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.kmpcb.cz/",
-  "zmeneno": "2026-11-26 14:55",
+  "zmeneno": "2026-11-27 14:54",
   "metoda": "selektor",
   "piva": [
     {
@@ -95,6 +95,16 @@
     },
     {
       "pozice": 10,
+      "pivovar": "Čestmír",
+      "nazev": "KORU",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "NZ NEIPA",
+      "dalsi": "",
+      "raw": "-> Čestmír KORU 11° NZ NEIPA"
+    },
+    {
+      "pozice": 11,
       "pivovar": "Thrill's",
       "nazev": "Sea Level",
       "stupen": "12",
@@ -104,7 +114,7 @@
       "raw": "Thrill's Sea Level 12° ALE"
     },
     {
-      "pozice": 11,
+      "pozice": 12,
       "pivovar": "Matuška",
       "nazev": "CALIFORNIA",
       "stupen": "12",
@@ -114,16 +124,6 @@
       "raw": "Matuška CALIFORNIA 12° APA"
     },
     {
-      "pozice": 12,
-      "pivovar": "Čestmír",
-      "nazev": "NINE",
-      "stupen": "14",
-      "alkohol": "",
-      "styl": "IPA",
-      "dalsi": "",
-      "raw": "Čestmír NINE 14° IPA"
-    },
-    {
       "pozice": 13,
       "pivovar": "Cobolis",
       "nazev": "Převážně neškodná",
@@ -131,7 +131,7 @@
       "alkohol": "",
       "styl": "Session IPA",
       "dalsi": "",
-      "raw": "-> Cobolis Převážně neškodná 13° Session IPA"
+      "raw": "Cobolis Převážně neškodná 13° Session IPA"
     },
     {
       "pozice": 14,
@@ -145,16 +145,6 @@
     },
     {
       "pozice": 15,
-      "pivovar": "Zichovec",
-      "nazev": "Juicy Lucy",
-      "stupen": "15",
-      "alkohol": "",
-      "styl": "NEIPA",
-      "dalsi": "",
-      "raw": "Zichovec Juicy Lucy 15° NEIPA"
-    },
-    {
-      "pozice": 16,
       "pivovar": "Brewnicorn",
       "nazev": "RASPBERRY",
       "stupen": "11",
@@ -164,7 +154,7 @@
       "raw": "Brewnicorn RASPBERRY 11° Sour ALE"
     },
     {
-      "pozice": 17,
+      "pozice": 16,
       "pivovar": "Louka",
       "nazev": "Fresh Breakfast #007",
       "stupen": "13",
@@ -174,7 +164,7 @@
       "raw": "Louka Fresh Breakfast #007 13° Smoothie Sour (Hruška, Mirabelka, Papaja)"
     },
     {
-      "pozice": 18,
+      "pozice": 17,
       "pivovar": "FunkyFluid",
       "nazev": "Gelato: White Fluff",
       "stupen": "",
@@ -184,7 +174,7 @@
       "raw": "FunkyFluid Gelato: White Fluff 5,5%Alc. Pastry SOUR (PL)"
     },
     {
-      "pozice": 19,
+      "pozice": 18,
       "pivovar": "FunkyFluid",
       "nazev": "Gelato: Guilty Pleasure",
       "stupen": "",
@@ -194,7 +184,7 @@
       "raw": "-> FunkyFluid Gelato: Guilty Pleasure 5,5%Alc. Pastry SOUR (PL)"
     },
     {
-      "pozice": 20,
+      "pozice": 19,
       "pivovar": "Kasteel",
       "nazev": "Rouge",
       "stupen": "",
@@ -204,7 +194,7 @@
       "raw": "Kasteel Rouge 8%Alc. (BELGIE - VIŠEŇ)"
     },
     {
-      "pozice": 21,
+      "pozice": 20,
       "pivovar": "Hákův",
       "nazev": "pivovar STOUT Šalvěj",
       "stupen": "14",
@@ -214,7 +204,7 @@
       "raw": "Hákův pivovar STOUT Šalvěj 14°"
     },
     {
-      "pozice": 22,
+      "pozice": 21,
       "pivovar": "Postřižiny",
       "nazev": "NYKOLA Grep",
       "stupen": "",

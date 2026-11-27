@@ -1,6 +1,6 @@
 {
   "zdroj": "https://nubeerbar.cz/online-menu",
-  "zmeneno": "2026-11-25 15:26",
+  "zmeneno": "2026-11-27 14:54",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,13 +25,13 @@
     },
     {
       "pozice": 3,
-      "pivovar": "BLUD",
-      "nazev": "HANÁCKÁ NEIPA",
-      "stupen": "12",
-      "alkohol": "5.1",
-      "styl": "NEIPA",
+      "pivovar": "MAISEL&FRIENDS",
+      "nazev": "HOPLANDER",
+      "stupen": "13",
+      "alkohol": "5.9",
+      "styl": "1-HOP IPA",
       "dalsi": "",
-      "raw": "BLUD HANÁCKÁ NEIPA 12° | NEIPA | 5.1%"
+      "raw": "MAISEL&FRIENDS HOPLANDER 13° | 1-HOP IPA | 5.9%"
     },
     {
       "pozice": 4,
