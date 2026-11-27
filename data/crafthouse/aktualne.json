@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.crafthouse.cz/en/",
-  "zmeneno": "2026-11-26 16:58",
+  "zmeneno": "2026-11-27 16:56",
   "metoda": "selektor",
   "piva": [
     {
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Volt",
-      "nazev": "Reaktor",
+      "pivovar": "černý potoka",
+      "nazev": "Cloud Scanner (Motueka / Nelson)",
       "stupen": "",
-      "alkohol": "7.3",
-      "styl": "IPA - Brut",
+      "alkohol": "6.5",
+      "styl": "IPA - New England / Hazy",
       "dalsi": "",
-      "raw": "Reaktor | IPA - Brut | 7.3% ABV | Pivovar Volt / CZ"
+      "raw": "Cloud Scanner (Motueka / Nelson) | IPA - New England / Hazy | 6.5% ABV | černý potoka / CZ"
     },
     {
       "pozice": 10,

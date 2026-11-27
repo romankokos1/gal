@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.beertime.pub/",
-  "zmeneno": "2026-11-27 14:54",
+  "zmeneno": "2026-11-27 16:56",
   "metoda": "selektor",
   "piva": [
     {
@@ -85,13 +85,13 @@
     },
     {
       "pozice": 9,
-      "pivovar": "RAVEN",
-      "nazev": "Chill Factor",
-      "stupen": "14",
-      "alkohol": "6.4",
-      "styl": "Cold I.P.A.",
+      "pivovar": "ČESTMÍR",
+      "nazev": "Ratamahatta",
+      "stupen": "16",
+      "alkohol": "7",
+      "styl": "American I.P.A.",
       "dalsi": "",
-      "raw": "RAVEN | Chill Factor | Cold I.P.A. 14°, Alc. 6,4%"
+      "raw": "ČESTMÍR | Ratamahatta | American I.P.A. 16°, Alc. 7%, IBU 49"
     },
     {
       "pozice": 10,
@@ -106,12 +106,12 @@
     {
       "pozice": 11,
       "pivovar": "COBOLIS",
-      "nazev": "Bezedný Kotel",
-      "stupen": "18",
-      "alkohol": "7.2",
-      "styl": "Irish Extra Stout",
+      "nazev": "Meč Světla",
+      "stupen": "24",
+      "alkohol": "10.5",
+      "styl": "Russian Imperial Stout",
       "dalsi": "",
-      "raw": "COBOLIS | Bezedný Kotel | Irish Extra Stout 18°, Alc. 7,2%"
+      "raw": "COBOLIS | Meč Světla | Russian Imperial Stout 24°, Alc. 10,5%"
     },
     {
       "pozice": 12,

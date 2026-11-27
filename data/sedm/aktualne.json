@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.sedmstupnu.cz/",
-  "zmeneno": "2026-11-26 21:01",
+  "zmeneno": "2026-11-27 16:56",
   "metoda": "selektor",
   "piva": [
     {
@@ -25,43 +25,43 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Černý Potoka",
-      "nazev": "Plecháč 242",
-      "stupen": "11",
-      "alkohol": "4.8",
-      "styl": "Session IPA",
+      "pivovar": "Čestmír",
+      "nazev": "Harakore",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "New Zealand",
       "dalsi": "",
-      "raw": "Černý Potoka - Plecháč 242 | 11% | Session IPA, ABV 4,8%"
+      "raw": "Čestmír - Harakore | 12% | New Zealand, ABV 5%"
     },
     {
       "pozice": 4,
       "pivovar": "Blud",
-      "nazev": "Wet Hop AjPíEj",
-      "stupen": "12",
-      "alkohol": "5.2",
-      "styl": "Session IPA",
+      "nazev": "Černota",
+      "stupen": "11",
+      "alkohol": "4.6",
+      "styl": "Irish Dry Stout",
       "dalsi": "",
-      "raw": "Blud - Wet Hop AjPíEj | 12% | Session IPA, ABV 5,2%"
+      "raw": "Blud - Černota | 11% | Irish Dry Stout, ABV 4,6%"
     },
     {
       "pozice": 5,
-      "pivovar": "Preisler x sedm x chiž",
-      "nazev": "problém trpaslíků v mlze",
+      "pivovar": "Preisler x Sedm° x CHIŽ",
+      "nazev": "Problém trpaslíků v mlze",
       "stupen": "13",
       "alkohol": "6.2",
-      "styl": "hazy ipa",
+      "styl": "Hazy IPA",
       "dalsi": "",
-      "raw": "Preisler x sedm x chiž - problém trpaslíků v mlze | 13% | hazy ipa, ABV 6,2%"
+      "raw": "Preisler x Sedm° x CHIŽ - Problém trpaslíků v mlze | 13% | Hazy IPA, ABV 6,2%"
     },
     {
       "pozice": 6,
-      "pivovar": "Vik",
-      "nazev": "Southern Hemisphere",
+      "pivovar": "Haksna",
+      "nazev": "Nest In West",
       "stupen": "15",
       "alkohol": "6.5",
-      "styl": "Pacific IPA",
+      "styl": "West Coast IPA",
       "dalsi": "",
-      "raw": "Vik - Southern Hemisphere | 15% | Pacific IPA, ABV 6,5%"
+      "raw": "Haksna - Nest In West | 15% | West Coast IPA, ABV 6,5%"
     },
     {
       "pozice": 7,
