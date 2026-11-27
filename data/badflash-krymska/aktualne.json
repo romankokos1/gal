@@ -1,6 +1,6 @@
 {
   "zdroj": "https://badflash-krymska.cz/section:pivni-listek",
-  "zmeneno": "2026-11-25 19:30",
+  "zmeneno": "2026-11-27 18:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -55,6 +55,16 @@
     },
     {
       "pozice": 6,
+      "pivovar": "BAD FLASH",
+      "nazev": "PROSTĚ LEŽÁK",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "BAD FLASH PROSTĚ LEŽÁK 12° | světlý ležák 5%"
+    },
+    {
+      "pozice": 7,
       "pivovar": "BUDVAR",
       "nazev": "33",
       "stupen": "11",
@@ -64,7 +74,7 @@
       "raw": "BUDVAR 33 11°"
     },
     {
-      "pozice": 7,
+      "pozice": 8,
       "pivovar": "BAD FLASH",
       "nazev": "CITRA IPL",
       "stupen": "12",
@@ -72,16 +82,6 @@
       "styl": "",
       "dalsi": "",
       "raw": "BAD FLASH CITRA IPL 12°"
-    },
-    {
-      "pozice": 8,
-      "pivovar": "BAD FLASH",
-      "nazev": "FOTBALOVÁ JEDENÁCTKA",
-      "stupen": "11",
-      "alkohol": "",
-      "styl": "",
-      "dalsi": "",
-      "raw": "BAD FLASH FOTBALOVÁ JEDENÁCTKA 11'"
     },
     {
       "pozice": 9,
@@ -95,13 +95,13 @@
     },
     {
       "pozice": 10,
-      "pivovar": "BAD FLASH",
-      "nazev": "MANGO & CHILLI",
-      "stupen": "12",
+      "pivovar": "Bad Flash",
+      "nazev": "PODÉL PLOTU",
+      "stupen": "10",
       "alkohol": "",
-      "styl": "SOUR ALE",
+      "styl": "",
       "dalsi": "",
-      "raw": "BAD FLASH MANGO & CHILLI 12° | SOUR ALE"
+      "raw": "Bad Flash PODÉL PLOTU 10°"
     },
     {
       "pozice": 11,

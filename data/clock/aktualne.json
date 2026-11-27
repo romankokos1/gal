@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.pivniceclock.cz/nabidka/",
-  "zmeneno": "2026-11-26 14:55",
+  "zmeneno": "2026-11-27 18:58",
   "metoda": "nadpis",
   "piva": [
     {
@@ -16,12 +16,12 @@
     {
       "pozice": 2,
       "pivovar": "Clock",
-      "nazev": "Clock",
-      "stupen": "12",
+      "nazev": "Pineapple",
+      "stupen": "11",
       "alkohol": "",
-      "styl": "American Pale Ale",
+      "styl": "Session IPA",
       "dalsi": "",
-      "raw": "12° Clock (American Pale Ale)"
+      "raw": "11° Pineapple (Session IPA)"
     },
     {
       "pozice": 3,

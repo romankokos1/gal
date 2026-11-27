@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-27 16:56",
+  "zmeneno": "2026-11-27 18:58",
   "metoda": "selektor",
   "piva": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "pozice": 2,
-      "pivovar": "Rodinný pivovar Vik",
-      "nazev": "Hořká",
+      "pivovar": "Libertas",
+      "nazev": "Bohemian Beer 10",
       "stupen": "10",
       "alkohol": "4",
-      "styl": "Czech Pale Lager",
+      "styl": "Pale Lager",
       "dalsi": "",
-      "raw": "Vik Hořká 10° | Czech Pale Lager | 10° | 4% | Rodinný pivovar Vik"
+      "raw": "Libertas Bohemian Beer 10 | Pale Lager | 10° | 4% | Libertas"
     },
     {
       "pozice": 3,
@@ -65,13 +65,13 @@
     },
     {
       "pozice": 7,
-      "pivovar": "The Barn Beer Co.",
-      "nazev": "Suavamente",
-      "stupen": "16",
+      "pivovar": "Ládví Cobolis",
+      "nazev": "Franklin",
+      "stupen": "14",
       "alkohol": "6",
-      "styl": "New England IPA",
+      "styl": "New England India Pale Ale",
       "dalsi": "",
-      "raw": "Barn Suavamente | New England IPA | 16° | 6% | The Barn Beer Co."
+      "raw": "Cobolis Franklin | New England India Pale Ale | 14° | 6% | Ládví Cobolis"
     },
     {
       "pozice": 8,
@@ -85,23 +85,23 @@
     },
     {
       "pozice": 9,
-      "pivovar": "Albert Michler",
-      "nazev": "Fruit Coctail",
-      "stupen": "11",
-      "alkohol": "4.9",
-      "styl": "Apricot & Guava Sour Ale",
+      "pivovar": "Vik",
+      "nazev": "Jungle Juice",
+      "stupen": "12",
+      "alkohol": "5",
+      "styl": "Pineapple & Passion fruit & Guava & Pandan Sour Ale",
       "dalsi": "",
-      "raw": "Albert Michler Fruit Coctail | Apricot & Guava Sour Ale | 11° | 4,9% | Albert Michler"
+      "raw": "Vik Jungle Juice | Pineapple & Passion fruit & Guava & Pandan Sour Ale | 12° | 5% | Vik"
     },
     {
       "pozice": 10,
-      "pivovar": "Vinohradský pivovar",
-      "nazev": "Vinohradská",
-      "stupen": "12",
-      "alkohol": "0.5",
-      "styl": "Non-Alcoholic Czech Pale Lager",
+      "pivovar": "Rodinný pivovar Vik",
+      "nazev": "Free Hazy IPA",
+      "stupen": "",
+      "alkohol": "0",
+      "styl": "Alcohol Free IPA",
       "dalsi": "",
-      "raw": "Vinohradská 12° Nealko | Non-Alcoholic Czech Pale Lager | 12° | >0,5% | Vinohradský pivovar"
+      "raw": "Vik Free Hazy IPA | Alcohol Free IPA | ° | 0% | Rodinný pivovar Vik"
     },
     {
       "pozice": 11,
