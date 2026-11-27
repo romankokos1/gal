@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-27 21:00",
+  "zmeneno": "2026-11-27 23:02",
   "metoda": "selektor",
   "piva": [
     {
@@ -35,23 +35,23 @@
     },
     {
       "pozice": 4,
-      "pivovar": "Bad Flash",
-      "nazev": "Rock Café Ale",
-      "stupen": "11",
-      "alkohol": "4.5",
+      "pivovar": "Radouš",
+      "nazev": "Magický motýl",
+      "stupen": "12",
+      "alkohol": "5",
       "styl": "American Pale Ale",
       "dalsi": "",
-      "raw": "Bad Flash Rock Café Ale | American Pale Ale | 11° | 4,5% | Bad Flash"
+      "raw": "Radouš Magický motýl | American Pale Ale | 12° | 5% | Radouš"
     },
     {
       "pozice": 5,
-      "pivovar": "Obora",
-      "nazev": "Ale NE",
+      "pivovar": "Sibeeria",
+      "nazev": "The Regifter",
       "stupen": "12",
-      "alkohol": "5",
+      "alkohol": "4.8",
       "styl": "New England Pale Ale",
       "dalsi": "",
-      "raw": "Obora Ale NE | New England Pale Ale | 12° | 5% | Obora"
+      "raw": "Sibeeria The Regifter | New England Pale Ale | 12° | 4,8% | Sibeeria"
     },
     {
       "pozice": 6,
@@ -75,6 +75,16 @@
     },
     {
       "pozice": 8,
+      "pivovar": "Obora",
+      "nazev": "Philadelphia Sour Marakuja a mango",
+      "stupen": "12",
+      "alkohol": "4.4",
+      "styl": "Passion Fruit & Mango Sour Ale",
+      "dalsi": "",
+      "raw": "Obora Philadelphia Sour Marakuja a mango | Passion Fruit & Mango Sour Ale | 12° | 4,4% | Obora"
+    },
+    {
+      "pozice": 9,
       "pivovar": "Vik",
       "nazev": "Jungle Juice",
       "stupen": "12",
@@ -84,7 +94,7 @@
       "raw": "Vik Jungle Juice | Pineapple & Passion fruit & Guava & Pandan Sour Ale | 12° | 5% | Vik"
     },
     {
-      "pozice": 9,
+      "pozice": 10,
       "pivovar": "Rodinný pivovar Vik",
       "nazev": "Free Hazy IPA",
       "stupen": "",
@@ -94,7 +104,7 @@
       "raw": "Vik Free Hazy IPA | Alcohol Free IPA | ° | 0% | Rodinný pivovar Vik"
     },
     {
-      "pozice": 10,
+      "pozice": 11,
       "pivovar": "Černokostelecký pivovar",
       "nazev": "Černokostelecká Bílá svině",
       "stupen": "11",
@@ -104,7 +114,7 @@
       "raw": "Černokostelecká Bílá svině | Hefeweizen | 11° | 4,8% | Černokostelecký pivovar"
     },
     {
-      "pozice": 11,
+      "pozice": 12,
       "pivovar": "Raven",
       "nazev": "Upside Down Cake",
       "stupen": "15",
@@ -114,7 +124,7 @@
       "raw": "Raven Upside Down Cake | Pineapple & Cherries & Caramel Pastry Sour Ale | 15° | 6% | Raven"
     },
     {
-      "pozice": 12,
+      "pozice": 13,
       "pivovar": "Nieczajna",
       "nazev": "Hoppy Grodziskie Superdelic",
       "stupen": "7.7",
@@ -124,7 +134,7 @@
       "raw": "Nieczajna Hoppy Grodziskie Superdelic | Extra Hoppy Grodziskie | 7.7° | 3,2% | Nieczajna"
     },
     {
-      "pozice": 13,
+      "pozice": 14,
       "pivovar": "Van Honsebrouck",
       "nazev": "Kasteel Rouge",
       "stupen": "18",
@@ -134,7 +144,7 @@
       "raw": "Van Honsebrouck Kasteel Rouge | Belgian Strong Dark Ale/Kriek | 18° | 8% | Van Honsebrouck"
     },
     {
-      "pozice": 14,
+      "pozice": 15,
       "pivovar": "Johannes Cyder",
       "nazev": "Demi Sec",
       "stupen": "",

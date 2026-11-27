@@ -1,6 +1,6 @@
 klic,pivovar,nazev,stupen,alkohol,styl,raw,narazeno,docepovano,dalsi,odhad
 kamenice|jedenactka,KAMENICE,Jedenáctka,11,4.7,Světlý Ležák,"KAMENICE | Jedenáctka | Světlý Ležák 11°, Alc. 4,7%, IBU 25",2026-11-17 23:42,,,
-unetice|desitka,ÚNĚTICE,Desítka,10,4.1,Světlý ležák,"ÚNĚTICE | Desítka | Světlý ležák 10°, Alc. 4,1%, IBU 34",2026-11-17 23:42,,,
+unetice|desitka,ÚNĚTICE,Desítka,10,4.1,Světlý ležák,"ÚNĚTICE | Desítka | Světlý ležák 10°, Alc. 4,1%, IBU 34",2026-11-17 23:42,2026-11-27 23:02,,
 beertime|dialogue talus cr centennial,BEERTIME,Dialogue:Talus+Cr.Centennial,14,6,Dual Hop I.P.A.,"BEERTIME | Dialogue:Talus+Cr.Centennial | Dual Hop I.P.A. 14°, Alc. 6%, IBU 45",2026-11-17 23:42,,,
 zlata krava|12 jana nepomuckeho,ZLATÁ KRÁVA,12 Jana Nepomuckého,12,5,Hefeweizen,"ZLATÁ KRÁVA | 12 Jana Nepomuckého | Hefeweizen 12°, Alc. 5%, IBU 20",2026-11-17 23:42,,,
 sibeeria|grapefruit lollihop,SIBEERIA,Grapefruit Lollihop,15,6.6,West Coast I.P.A.,"SIBEERIA | Grapefruit Lollihop | West Coast I.P.A. 15°, Alc. 6,6%",2026-11-17 23:42,,,
@@ -14,7 +14,7 @@ potmehud|rhapzody,POTMEHÚD,Rhapzody,12,5.3,SMaSH A.P.A.,"POTMEHÚD | Rhapzody |
 cestmir|new zealand,ČESTMÍR,New Zealand,14,5.8,N.E.I.P.A.,"ČESTMÍR | New Zealand | N.E.I.P.A. 14°, Alc. 5,8%",2026-11-17 23:42,2026-11-19 14:14,,
 van honsebrouck|kasteel rouge,VAN HONSEBROUCK,Kasteel Rouge,18,8,Fruit Beer - Cherry,"VAN HONSEBROUCK | Kasteel Rouge | Fruit Beer - Cherry 18°, Alc 8%",2026-11-17 23:42,,,
 oud beersel|rebarber,OUD BEERSEL,Rebarber,,5,Lambic with Rhubarb,"OUD BEERSEL | Rebarber | Lambic with Rhubarb, Alc. 5%",2026-11-17 23:42,,,
-madcat|misty skywalker,MADCAT,Misty Skywalker,14,6,N.E.I.P.A.,"MADCAT | Misty Skywalker | N.E.I.P.A. 14°, Alc. 6%",2026-11-19 14:14,,,
+madcat|misty skywalker,MADCAT,Misty Skywalker,14,6,N.E.I.P.A.,"MADCAT | Misty Skywalker | N.E.I.P.A. 14°, Alc. 6%",2026-11-19 14:14,2026-11-27 23:02,,
 mazak|podzimni ipa,MAZÁK,Podzimní IPA,15,6.5,I.P.A.,"MAZÁK | Podzimní IPA | I.P.A. 15°, Alc. 6,5%",2026-11-19 20:20,2026-11-25 19:30,,
 raven|chill factor,RAVEN,Chill Factor,14,6.4,Cold I.P.A.,"RAVEN | Chill Factor | Cold I.P.A. 14°, Alc. 6,4%",2026-11-19 20:20,2026-11-27 16:56,,
 zichovec|robin na grepu,ZICHOVEC,Robin Na Grepu,12,5.1,Grapefruit A.P.A.,"ZICHOVEC | Robin Na Grepu | Grapefruit A.P.A. 12°, Alc. 5,1%",2026-11-19 20:20,2026-11-25 19:30,,
@@ -26,3 +26,5 @@ zhurak|robin na grepu,ZHŮŘÁK,Robin Na Grepu,12,5.4,Dry Hopped A.P.A.,"ZHŮŘ�
 zhurak|classic ale citra,ZHŮŘÁK,Classic Ale - Citra,12,5.4,Dry Hopped A.P.A.,"ZHŮŘÁK | Classic Ale - Citra | Dry Hopped A.P.A. 12°, Alc. 5,4%, IBU 35",2026-11-27 14:54,,,
 cestmir|ratamahatta,ČESTMÍR,Ratamahatta,16,7,American I.P.A.,"ČESTMÍR | Ratamahatta | American I.P.A. 16°, Alc. 7%, IBU 49",2026-11-27 16:56,,,
 cobolis|mec svetla,COBOLIS,Meč Světla,24,10.5,Russian Imperial Stout,"COBOLIS | Meč Světla | Russian Imperial Stout 24°, Alc. 10,5%",2026-11-27 16:56,,,
+krocehlavy|kladenske svetle,KROČEHLAVY,Kladenské Světlé,10,4.2,Světlý ležák,"KROČEHLAVY | Kladenské Světlé | Světlý ležák 10°, Alc. 4,2%, IBU 31",2026-11-27 23:02,,,
+vik|full nelson,VIK,Full Nelson,15,6.6,Dry N.E.I.P.A.,"VIK | Full Nelson | Dry N.E.I.P.A. 15°, Alc. 6,6%, IBU 35",2026-11-27 23:02,,,
