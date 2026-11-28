@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.galeriepiva.cz/",
-  "zmeneno": "2026-11-27 22:32",
+  "zmeneno": "2026-11-28 15:33",
   "metoda": "nadpis",
   "piva": [
     {
@@ -45,13 +45,13 @@
     },
     {
       "pozice": 5,
-      "pivovar": "ZICHOVEC",
-      "nazev": "Anything Gose: Dark Fruits",
-      "stupen": "16",
-      "alkohol": "7",
-      "styl": "Imperial Gose s višní, malinou, ostružinou, černým rybízem a solí",
+      "pivovar": "PIVEČKA",
+      "nazev": "Grapefrruit and Rosemary",
+      "stupen": "11",
+      "alkohol": "4.7",
+      "styl": "Gose s grepem, rozmarýnem a solí",
       "dalsi": "",
-      "raw": "ZICHOVEC – Anything Gose: Dark Fruits 16°/7% Imperial Gose s višní, malinou, ostružinou, černým rybízem a solí"
+      "raw": "PIVEČKA – Grapefrruit and Rosemary 11°/4,7% Gose s grepem, rozmarýnem a solí"
     }
   ]
 }
