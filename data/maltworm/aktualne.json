@@ -1,6 +1,6 @@
 {
   "zdroj": "https://maltworm.cz/dnes-na-cepu/",
-  "zmeneno": "2026-11-27 23:02",
+  "zmeneno": "2026-11-28 14:01",
   "metoda": "selektor",
   "piva": [
     {
@@ -105,13 +105,13 @@
     },
     {
       "pozice": 11,
-      "pivovar": "Černokostelecký pivovar",
-      "nazev": "Černokostelecká Bílá svině",
-      "stupen": "11",
-      "alkohol": "4.8",
-      "styl": "Hefeweizen",
+      "pivovar": "Kundmüller",
+      "nazev": "Weiherer Bock",
+      "stupen": "16.3",
+      "alkohol": "6.6",
+      "styl": "Helles Bock",
       "dalsi": "",
-      "raw": "Černokostelecká Bílá svině | Hefeweizen | 11° | 4,8% | Černokostelecký pivovar"
+      "raw": "Kundmüller Weiherer Bock | Helles Bock | 16.3° | 6,6% | Kundmüller"
     },
     {
       "pozice": 12,

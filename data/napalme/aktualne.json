@@ -1,6 +1,6 @@
 {
   "zdroj": "https://www.facebook.com/barnapalme/",
-  "zmeneno": "2026-11-27 13:17",
+  "zmeneno": "2026-11-28 12:03",
   "metoda": "rucne",
   "piva": [
     {
@@ -25,16 +25,6 @@
     },
     {
       "pozice": 3,
-      "pivovar": "Sibeeria",
-      "nazev": "IWA",
-      "stupen": "9",
-      "alkohol": "",
-      "styl": "New Zealand Pilsner",
-      "dalsi": "",
-      "raw": "Sibeeria IWA New Zealand Pilsner 9"
-    },
-    {
-      "pozice": 4,
       "pivovar": "Zichovec",
       "nazev": "The Irish Black Stout - infuze cherry cola",
       "stupen": "11",
@@ -44,7 +34,7 @@
       "raw": "Zichovec The Irish Black Stout - infuze cherry cola 11"
     },
     {
-      "pozice": 5,
+      "pozice": 4,
       "pivovar": "SQBRU",
       "nazev": "APA 810",
       "stupen": "11",
@@ -54,7 +44,7 @@
       "raw": "SQBRU APA 810 11"
     },
     {
-      "pozice": 6,
+      "pozice": 5,
       "pivovar": "Napalmě",
       "nazev": "Krém Béčko bezlepkový NZ Cream",
       "stupen": "11",
@@ -62,6 +52,16 @@
       "styl": "Ale",
       "dalsi": "",
       "raw": "Napalmě Krém Béčko bezlepkový NZ Cream Ale 11"
+    },
+    {
+      "pozice": 6,
+      "pivovar": "Beránek",
+      "nazev": "Ovečka",
+      "stupen": "11",
+      "alkohol": "",
+      "styl": "světlý ležák",
+      "dalsi": "",
+      "raw": "Beránek Ovečka světlý ležák 11"
     },
     {
       "pozice": 7,
@@ -75,16 +75,6 @@
     },
     {
       "pozice": 8,
-      "pivovar": "Falkon",
-      "nazev": "Krasohled",
-      "stupen": "12",
-      "alkohol": "",
-      "styl": "světlý ležák",
-      "dalsi": "",
-      "raw": "Falkon Krasohled světlý ležák 12"
-    },
-    {
-      "pozice": 9,
       "pivovar": "SQBRU",
       "nazev": "Sicky Boy",
       "stupen": "14",
@@ -94,7 +84,7 @@
       "raw": "SQBRU Sicky Boy IPA 14"
     },
     {
-      "pozice": 10,
+      "pozice": 9,
       "pivovar": "To Øl",
       "nazev": "( Dánsko ) Palm Fiction",
       "stupen": "15",
@@ -104,7 +94,7 @@
       "raw": "To Øl ( Dánsko ) Palm Fiction American IPA 15"
     },
     {
-      "pozice": 11,
+      "pozice": 10,
       "pivovar": "Zichovec",
       "nazev": "Vánoční Zmrzka Vegan Ice Cream",
       "stupen": "18",
@@ -114,7 +104,7 @@
       "raw": "Zichovec Vánoční Zmrzka Vegan Ice Cream Sour 18"
     },
     {
-      "pozice": 12,
+      "pozice": 11,
       "pivovar": "Sibeeria",
       "nazev": "Triple",
       "stupen": "20",
@@ -124,7 +114,7 @@
       "raw": "Sibeeria Triple Milkshake IPA 20"
     },
     {
-      "pozice": 13,
+      "pozice": 12,
       "pivovar": "To Øl",
       "nazev": "( Dánsko ) X-MAS QUAD BA (2022) Belgian Quadrupel",
       "stupen": "",
